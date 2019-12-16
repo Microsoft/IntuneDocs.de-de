@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d15fd73a608c799745c92c4b07df4b9705d00106
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 178e1a3d0f58eb925c4d48be10bfa46e68c6b2c6
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490322"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955455"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Abrufen eines Apple-MDM-Push-Zertifikats
 
@@ -41,7 +41,7 @@ Wenn ein Pushzertifikat abläuft, müssen Sie dieses erneuern. Vergewissern Sie 
 
 
 ## <a name="steps-to-get-your-certificate"></a>Erforderliche Schritte, um Ihr Zertifikat abzurufen
-Melden Sie sich in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, wählen Sie die Option **Geräteregistrierung** > **Apple-Registrierung** > **Apple-MDM-Push-Zertifikat** aus, und führen Sie in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) die folgenden Schritte aus.
+Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an, navigieren Sie zu **Geräte** > **Geräte registrieren** > **Apple-Registrierung** > **Apple-MAD-Push-Zertifikat**, und führen Sie dann die folgenden Schritte aus.
 
 ### <a name="step-1-grant-microsoft-permission-to-send-user-and-device-information-to-apple"></a>Schritt 1: Erteilen Sie Microsoft die Berechtigung, Benutzer- und Geräteinformationen an Apple zu senden.
 Klicken Sie auf **Ich stimme zu.** , um Microsoft die Berechtigung zu erteilen, Daten an Apple zu senden.
@@ -68,7 +68,7 @@ Das Apple-MDM-Push-Zertifikat ist für ein Jahr gültig und muss jährlich erneu
 
 Das Zertifikat ist mit der Apple-ID verknüpft, die verwendet wurde, um es zu erstellen. Erneuern Sie das MDM-Push-Zertifikat mit derselben Apple-ID, mit der es erstellt wurde.
 
-1. Melden Sie sich in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, klicken Sie auf **Geräteregistrierung** > **Apple-Registrierung**, und wählen Sie dann im Detailbereich die Kachel **Apple-MDM-Push-Zertifikat** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an, und navigieren Sie zu **Geräte** > **Geräte registrieren** > **Apple-Registrierung** > **Apple-MAD-Push-Zertifikat**.
 2. Wählen Sie **CSR herunterladen** aus, um die CSR-Datei herunterzuladen und lokal zu speichern. Die Datei wird verwendet, um ein Vertrauensstellungszertifikat vom Apple Push Certificates-Portal anzufordern.
 3. Wählen Sie **Eigenes MDM-Push-Zertifikat erstellen** aus, um zum Apple Push Certificates Portal zu gelangen. Suchen Sie das Zertifikat, das Sie erneuern möchten, und wählen Sie **Erneuern** aus.
 4. Schreiben Sie auf dem Bildschirm **Push-Zertifikat erneuern** Notizen, die Ihnen zukünftig bei der Identifizierung des Zertifikats helfen. Klicken Sie auf **Datei auswählen**, um die neue Anforderungsdatei zu durchsuchen, die Sie heruntergeladen haben und dann auf **Hochladen**.

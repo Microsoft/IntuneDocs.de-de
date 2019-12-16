@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/15/2019
+ms.date: 12/04/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a1177a37ddbfa7f760339c4ad0cd7773d670540
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: d445b86359b2c5cde7b56a52a0cc6ee72a34c0ea
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199190"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832612"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Häufige Fragen, Probleme und entsprechende Behebungen mit Geräterichtlinien und -profilen in Microsoft Intune
 
@@ -50,7 +50,9 @@ Einige weitere Empfehlungen:
 
 Intune fordert das Gerät auf, beim Intune-Dienst einzuchecken. Der Zeitpunkt der Benachrichtigung kann zwischen unmittelbar nach der Zuweisung und einigen Stunden liegen. Unterschiede bestehen dabei auch zwischen den einzelnen Plattformen.
 
-Checkt ein Gerät nach der ersten Benachrichtigung nicht zum Abrufen der Richtlinie oder des Profils ein, unternimmt Intune drei weitere Versuche. Wenn das Gerät offline ist – z. B. ausgeschaltet oder nicht mit einem Netzwerk verbunden –, erhält es die Benachrichtigungen möglicherweise nicht. In diesem Fall ruft das Gerät die Richtlinie oder das Profil beim nächsten geplanten Einchecken beim Intune-Dienst ab. Dies erfolgt **etwa** in folgendem Rhythmus:
+Checkt ein Gerät nach der ersten Benachrichtigung nicht zum Abrufen der Richtlinie oder des Profils ein, unternimmt Intune drei weitere Versuche. Wenn das Gerät offline ist – z. B. ausgeschaltet oder nicht mit einem Netzwerk verbunden –, erhält es die Benachrichtigungen möglicherweise nicht. In diesem Fall ruft das Gerät die Richtlinie oder das Profil beim nächsten geplanten Check-In beim Intune-Dienst ab. Das gleiche gilt für die Überprüfung auf Nichtkonformität, einschließlich der Geräte, die von einem kompatiblen auf einen nicht konformen Zustand wechseln.
+
+**Geschätzte** Häufigkeiten:
 
 | Plattform | Aktualisierungszyklus|
 | --- | --- |
@@ -61,7 +63,7 @@ Checkt ein Gerät nach der ersten Benachrichtigung nicht zum Abrufen der Richtli
 | Windows Phone | Etwa alle 8 Stunden |
 | Windows 8.1 | Etwa alle 8 Stunden |
 
-Wenn das Gerät erst kürzlich registriert wurde, wird der Eincheckvorgang aus Konformitäts- und Konfigurationsgründen häufiger durchgeführt, **etwa** in folgendem Rhythmus:
+Wenn das Gerät erst kürzlich registriert wurde, wird der Eincheckvorgang aus Konformitäts-, Nichtkonformitäts- und Konfigurationsgründen häufiger durchgeführt, **etwa** in folgendem Rhythmus:
 
 | Plattform | Häufigkeit |
 | --- | --- |

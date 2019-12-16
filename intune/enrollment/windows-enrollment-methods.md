@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: 59ba9ab5fb0ddeb527ed852de042568920cf38e1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b6144767ee69de8c1ff14e5c189c078994a9dcf4
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509182"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74819714"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Intune-Registrierungsmethoden für Windows-Geräte
 
@@ -42,7 +42,7 @@ Benutzer können ihre Windows-Geräte mit einer dieser Methoden selbst registrie
 Wenn ein Administrator die automatische Registrierung, die in Azure AD Premium-Abonnements verfügbar ist, konfiguriert hat, muss der Benutzer lediglich einmal seine Anmeldeinformationen eingeben. Andernfalls müssen sie sich extra über eine reine MDM-Registrierung registrieren und ihre Anmeldeinformationen erneut eingeben.  
 - **MDM only enrollment** (Reine MDM-Registrierung): Diese Methode ermöglicht Benutzern, eine bestehende Arbeitsgruppe, Active Directory oder einen mit Azure Active Directory verknüpften Computer in Intune zu registrieren. Benutzer führen die Registrierung über die Einstellungen des bestehenden Windows-Computers durch. Diese Methode wird nicht empfohlen, da so das Gerät nicht in Azure Active Directory registriert wird. Außerdem können Features wie der bedingte Zugriff nicht verwendet werden.
 - [Azure Active Directory-Verknüpfung](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network): Verknüpft das Gerät mit Azure Active Directory und ermöglicht es Benutzern, sich mit ihren Azure AD-Anmeldeinformationen bei Windows anzumelden. Wenn die automatische Registrierung aktiviert ist, wird das Gerät automatisch in Intune registriert. Der Vorteil der automatischen Registrierung ist, dass der Prozess für den Benutzer aus nur einem Schritt besteht. Andernfalls müssen sie sich extra über eine reine MDM-Registrierung registrieren und ihre Anmeldeinformationen erneut eingeben. Benutzer verwenden diese Registrierungsmethode entweder während der ersten Windows-Einrichtung oder über die Einstellungen ihres PCs. Das Gerät wird als unternehmenseigenes Gerät in Intune gekennzeichnet.
-- [Autopilot:](enrollment-autopilot.md) Automatisiert die Azure Active Directory-Verknüpfung und registriert neue unternehmenseigene Geräte in Intune. Diese Methode vereinfacht die erste Einrichtung und macht es überflüssig, benutzerdefinierte Betriebssystemimages auf den Geräten anzuwenden. Wenn Administratoren Intune zum Verwalten von Autopilot-Geräten verwenden, können sie z. B. Richtlinien, Profile und Apps verwalten, nachdem diese registriert sind.  Es gibt vier Arten der Autopilot-Bereitstellung: [Self-Deployment-Modus](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (für Kioske, digitale Beschilderung oder ein freigegebenes Gerät), [User Driven Mode](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (benutzergesteuerter Modus für herkömmliche Benutzer), [White Glove] (https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) unterstützt Partner oder IT-Mitarbeiter dabei, einen Windows 10-Computer vorab bereitzustellen, damit dieser vollständig konfiguriert und betriebsbereit ist) und [Autopilot für vorhandene Geräte] (mit https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) können Sie die neueste Version von Windows 10 mühelos auf Ihren vorhandenen Geräten bereitstellen).
+- [Autopilot:](enrollment-autopilot.md) Automatisiert die Azure Active Directory-Verknüpfung und registriert neue unternehmenseigene Geräte in Intune. Diese Methode vereinfacht die erste Einrichtung und macht es überflüssig, benutzerdefinierte Betriebssystemimages auf den Geräten anzuwenden. Wenn Administratoren Intune zum Verwalten von Autopilot-Geräten verwenden, können sie z. B. Richtlinien, Profile und Apps verwalten, nachdem diese registriert sind.  Es gibt vier Arten der Autopilot-Bereitstellung: [Self-Deployment-Modus](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (für Kiosks, digitale Beschilderung oder ein freigegebenes Gerät), [User Driven Mode](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (benutzergesteuerter Modus für herkömmliche Benutzer), [White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) (unterstützt Partner oder IT-Mitarbeiter dabei, einen Windows 10-Computer vorab bereitzustellen, damit dieser vollständig konfiguriert und betriebsbereit ist) und [Autopilot für vorhandene Geräte](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) (damit können Sie die neueste Version von Windows 10 mühelos auf Ihren vorhandenen Geräten bereitstellen).
 
 ## <a name="administrator-based-enrollment-in-intune"></a>Administratorbasierte Registrierung in Intune
 

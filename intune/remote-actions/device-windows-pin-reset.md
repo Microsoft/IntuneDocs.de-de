@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b2390462376c88129435de30eb98020563f3878
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: b643ed41d01b70376dac32c26a66dcf9f9735ceb
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713100"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907218"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Zurücksetzen der Kennung auf Windows-Geräten mit Intune
 
@@ -66,7 +66,7 @@ Legen Sie den Wert diesen CSP auf **TRUE** fest.
 
 1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an. 
 2. Klicken Sie auf **Geräte** und dann auf **Alle Geräte**.
-3. Wählen Sie das Gerät aus, dessen Kennung Sie zurücksetzen möchten. Klicken Sie in den Geräteeigenschaften auf **Neue Kennung**.
+3. Wählen Sie das Gerät aus, dessen Kennung Sie zurücksetzen möchten. Klicken Sie in den Geräteeigenschaften auf **Kennung zurücksetzen**.
 4. Klicken Sie zum Bestätigen auf **Ja**. Die Kennung wird generiert und für die folgenden sieben Tage im Portal angezeigt.
 
 ## <a name="next-step"></a>Nächster Schritt

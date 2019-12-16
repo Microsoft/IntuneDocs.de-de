@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eff4ccdc8b40da4d72394001b88446653ff71bd0
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 2e7c9824711ecbfb43a7c7dde71cc01b306b7fab
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564245"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899415"
 ---
 # <a name="intune-discovered-apps"></a>Von Intune ermittelte Apps
 
@@ -60,12 +60,13 @@ In der folgenden Liste erhalten Sie Informationen zum Plattformtyp der App, zu d
 | Windows Phone 8 | Nur verwaltete Apps | Nur verwaltete Apps | Alle 7 Tage ab der Geräteregistrierung |
 | Windows RT | Nur verwaltete Apps | Nur verwaltete Apps | Alle 7 Tage ab der Geräteregistrierung |
 | iOS | Nur verwaltete Apps | Alle auf dem Gerät installierten Apps | Alle 7 Tage ab der Geräteregistrierung |
-| macOS | Alle auf dem Gerät installierten Apps | Alle auf dem Gerät installierten Apps | Alle 7 Tage ab der Geräteregistrierung |
+| macOS | Nur verwaltete Apps | Alle auf dem Gerät installierten Apps | Alle 7 Tage ab der Geräteregistrierung |
 | Android | Nur verwaltete Apps | Alle auf dem Gerät installierten Apps | Alle 7 Tage ab der Geräteregistrierung |
 | Android Enterprise | Nur verwaltete Apps | Nur im Arbeitsprofil installierte Apps | Alle 7 Tage ab der Geräteregistrierung |
 
 > [!NOTE]
-> In Windows 10 Azure AD Hybrid eingebundene Geräte erfassen, wie in der Arbeitsauslastung der App-Verwaltung im Configuration Manager gezeigt, gemäß dem obigen Zeitplan zurzeit keinen App-Bestand über den Eingabemethoden-Editor (IME). Um dieses Problem zu beheben, muss die Arbeitsauslastung der App-Verwaltung im Configuration Manager auf Intune umgestellt werden, damit der IME auf dem Gerät installiert werden kann (der IME ist für die Win32-Inventur und PowerShell-Bereitstellung erforderlich). Beachten Sie, dass jegliche Änderungen oder Aktualisierungen zu diesem Verhalten in [In der Entwicklung befindliche Microsoft Intune-Features](../fundamentals/in-development.md) und/oder in [Neuerungen](../fundamentals/whats-new.md) angekündigt werden.
+> - In Windows 10 Azure AD Hybrid eingebundene Geräte erfassen, wie in der Arbeitsauslastung der App-Verwaltung im Configuration Manager gezeigt, gemäß dem obigen Zeitplan zurzeit keinen App-Bestand über den Eingabemethoden-Editor (IME). Um dieses Problem zu beheben, muss die Arbeitsauslastung der App-Verwaltung im Configuration Manager auf Intune umgestellt werden, damit der IME auf dem Gerät installiert werden kann (der IME ist für die Win32-Inventur und PowerShell-Bereitstellung erforderlich). Beachten Sie, dass jegliche Änderungen oder Aktualisierungen zu diesem Verhalten unter [In der Entwicklung befindliche Microsoft Intune-Features](../fundamentals/in-development.md) und/oder unter [Neuerungen](../fundamentals/whats-new.md) angekündigt werden.
+> - Private macOS-Geräte, die vor November 2019 registriert wurden, zeigen möglicherweise weiterhin alle auf dem Gerät installierten Apps an, bis die Geräte neu registriert werden.
 
 Die Anzahl der ermittelten Apps stimmt mit der Statusanzahl von App-Installationen möglicherweise nicht überein. Es gibt folgende Möglichkeiten für Inkonsistenzen:
 

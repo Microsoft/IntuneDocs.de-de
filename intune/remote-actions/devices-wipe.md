@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ded91d72321257adc30d0321b5d01e74fa1d51a6
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 2d9fbbbb80cf25861b2e0afbf3d01cfca3ece5fd
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712205"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991766"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Entfernen von Geräten durch Zurücksetzen, Abkoppeln oder manuelles Aufheben der Registrierung des Geräts
 
@@ -47,6 +47,8 @@ Die Aktion **Zurücksetzen** setzt das Gerät auf die Werkseinstellungen zurück
 
 Die Option **Registrierungszustand und Benutzerkonto beibehalten** steht Ihnen nur für Windows 10, Version 1709 oder höher, zur Verfügung.
 
+Mit der Option **Perform protected wipe** (Geschütztes Zurücksetzen ausführen) wird sichergestellt, dass die Zurücksetzung nicht umgangen werden kann, indem das Gerät ausgeschaltet wird. Beim geschützten Zurücksetzen wird solange versucht, das Gerät zurückzusetzen, bis der Vorgang erfolgreich ist. In manchen Konfigurationen kann das Gerät aufgrund dieser Aktion nicht neu gestartet werden.
+
 MDM-Richtlinien werden beim nächsten Herstellen einer Verbindung des Geräts mit Intune erneut angewendet.
 
 Die Zurücksetzung eines Geräts auf Werkseinstellungen ist nützlich, bevor es an einen neuen Benutzer weitergegeben wird oder wenn es gestohlen wurde oder verloren gegangen ist. Überlegen Sie sich genau, ob Sie ein Gerät wirklich **zurücksetzen** möchten. Die Daten auf dem Gerät können anschließend nicht wiederhergestellt werden.
@@ -57,7 +59,7 @@ Die Zurücksetzung eines Geräts auf Werkseinstellungen ist nützlich, bevor es 
 3. Klicken Sie auf **Geräte** > **Alle Geräte**.
 4. Wählen Sie den Namen des Geräts aus, das Sie auf Werkseinstellungen zurücksetzen möchten.
 5. Klicken Sie im Bereich, der den Gerätenamen anzeigt, auf **Zurücksetzen**.
-6. Bei Windows 10 (Version 1709 oder höher) steht Ihnen ebenfalls die Option **Registrierungszustand und Benutzerkonto beibehalten** zur Verfügung. 
+6. Bei Windows 10 Version 1709 oder höher steht Ihnen ebenfalls die Option **Gerät zurücksetzen, aber Registrierungsstatus und zugeordnetes Benutzerkonto beibehalten** zur Verfügung. 
     
     |Bei Zurücksetzung beibehalten |Nicht beibehalten|
     | -------------|------------|

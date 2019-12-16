@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8393bbc012861199bd99d97a62ab3e659c15d15
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 443e1e2fff2a0c4641d3446bf72e455cc92ce784
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713229"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907286"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Senden benutzerdefinierter Benachrichtigungen in Intune  
 
@@ -69,7 +69,7 @@ Benutzerdefinierte Benachrichtigungsnachrichten enthalten einen kurzen Titel und
 
 ## <a name="send-a-custom-notification-to-groups"></a>Senden einer benutzerdefinierten Benachrichtigung an Gruppen  
 
-1. Melden Sie sich mit einem Konto mit Zugriffsberechtigungen zum Erstellen und Senden von Benachrichtigungen beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an, und navigieren Sie zu **Geräte** > **Benutzerdefinierte Benachrichtigung senden**.  
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) mit einem Konto mit Zugriffsberechtigungen zum Erstellen und Senden von Benachrichtigungen an, und navigieren Sie zu **Mandatenverwaltung** > **Benutzerdefinierte Benachrichtigungen**.  
 
 2. Geben Sie auf der Registerkarte „Basics“ (Grundlagen) das Folgende an, und klicken Sie dann auf **Weiter**, um fortzufahren.  
    - **Titel:** Geben Sie einen Titel für diese Benachrichtigung an. Titel sind auf 50 Zeichen beschränkt.  
@@ -93,7 +93,7 @@ Intune verfolgt die von Ihnen gesendeten benutzerdefinierten Benachrichtigungen 
 
 2. Wählen Sie das Gerät aus, an das Sie eine Benachrichtigung senden möchten.  
 
-3. Wählen Sie in der **Übersicht** für das Gerät oben links auf der Seite die Option **Mehr...** aus.  
+3. Wählen Sie in der **Übersicht** für das Gerät oben rechts auf der Seite die Option **...** (Auslassungszeichen) aus.  
 
 4. Wählen Sie die Geräteaktion **Benutzerdefinierte Benachrichtigung senden** aus, um den Bereich *Benutzerdefinierte Benachrichtigung senden* zu öffnen, in dem Sie die folgenden Informationen zur Nachricht angeben:  
 

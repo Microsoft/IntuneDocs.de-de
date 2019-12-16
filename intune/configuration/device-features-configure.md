@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f02188e6dd6cea6048731d119f8f307224810dd9
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: d887c7bc3c7e9ea8b6719993b5ba4909e9c18ea8
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059946"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992927"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Hinzufügen von Einstellungen für iOS- oder macOS-Gerätefunktionen in Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Intune umfasst zahlreiche Funktionen und Einstellungen, mit denen Administratoren iOS- und macOS-Geräte steuern können. Administratoren können z.B.:
 
@@ -113,7 +111,7 @@ Gilt für:
 
 ## <a name="login-items"></a>Anmeldeelemente
 
-Verwenden Sie dieses Feature, um die Apps, benutzerdefinierten Apps, Dateien und Ordner auszuwählen, die geöffnet werden, wenn Benutzer sich bei ihren Geräten anmelden. 
+Verwenden Sie dieses Feature, um die Apps, benutzerdefinierten Apps, Dateien und Ordner auszuwählen, die geöffnet werden, wenn Benutzer sich bei ihren Geräten anmelden.
 
 Eine Liste der Einstellungen, die Sie in Intune konfigurieren können, finden Sie unter [Anmeldeelemente unter macOS](macos-device-features-settings.md#login-items).
 
@@ -153,22 +151,29 @@ Gilt für:
 
 Diese Einstellungen konfigurieren eine App-Erweiterung, die das einmalige Anmelden (Single Sign-On, SSO) für Ihre iOS-, iPadOS- und macOS-Geräte ermöglicht. Die meisten branchenspezifischen Apps und Organisationswebsites erfordern eine bestimmte Form der sicheren Benutzerauthentifizierung. Häufig müssen Benutzer bei dieser Art von Authentifizierung die gleichen Anmeldeinformationen mehrfach eingeben. SSO ermöglicht Benutzern den Zugriff auf ihre Apps und Websites, nachdem sie ihre Anmeldeinformationen nur einmal eingegeben haben. Nach dem Anmelden können Benutzer automatisch auf Apps und Websites zugreifen oder ihre Gesichtserkennungs-ID, ihre Fingereingabe-ID oder ihren Apple-Passcode verwenden, um Zugriff zu erhalten.
 
-In Intune verwenden Sie diese Einstellungen, um die integrierte Kerberos-Erweiterung von Apple oder eine von Ihrer Organisation erstellte App-Erweiterung für einmaliges Anmelden zu konfigurieren. Die App-Erweiterung für einmaliges Anmelden verarbeitet die Authentifizierung für Ihre Benutzer. Diese Einstellungen konfigurieren SSO-App-Erweiterungen für Anmeldeinformationen, die für Abfrage-und-Antwort-Authentifizierungsflows konzipiert sind. Sie können zwischen einer von Apple bereitgestellten Kerberos-spezifischen und einer generischen Erweiterung für Anmeldeinformationen auswählen.
+In Intune verwenden Sie diese Einstellungen, um eine von Ihrer Organisation, Ihrem Identitätsanbieter oder von Apple erstellte App-Erweiterung für einmaliges Anmelden zu konfigurieren. Die App-Erweiterung für einmaliges Anmelden verarbeitet die Authentifizierung für Ihre Benutzer. Diese Einstellungen konfigurieren SSO-App-Erweiterungen für Umleitungen und Anmeldeinformationen.
+
+- Die Erweiterung für Umleitungen ist für moderne Authentifizierungsprotokolle wie OAuth und SAML2 konzipiert.
+- Die Erweiterung für Anmeldeinformationen ist für Abfrage- und Antwort-Authentifizierungsabläufe konzipiert. Sie können zwischen einer von Apple bereitgestellten Kerberos-spezifischen und einer generischen Erweiterung für Anmeldeinformationen auswählen.
 
 Eine Liste der Einstellungen, die Sie in Intune konfigurieren können, finden Sie unter [App-Erweiterung für einmaliges Anmelden unter iOS](ios-device-features-settings.md#single-sign-on-app-extension) und [App-Erweiterung für einmaliges Anmelden unter macOS](macos-device-features-settings.md#single-sign-on-app-extension).
 
-Weitere Informationen zum Entwickeln einer App-Erweiterung für einmaliges Anmelden finden Sie auf der Website von Apple im Video [Extensible Enterprise SSO](https://developer.apple.com/videos/play/tech-talks/301) (Erweiterbares einmaliges Anmelden für Unternehmen).
+Weitere Informationen zum Entwickeln einer App-Erweiterung für einmaliges Anmelden finden Sie auf der Website von Apple im Video [Extensible Enterprise SSO](https://developer.apple.com/videos/play/tech-talks/301) (Erweiterbares einmaliges Anmelden für Unternehmen). Lesen Sie die Beschreibung des Features von Apple unter [Einstellungen der Payload „Erweiterungen der Gesamtauthentifizierung“](https://support.apple.com/guide/mdm/single-sign-on-extensions-mdmfd9cdf845/web). 
 
 > [!NOTE]
 > Das Feature **App-Erweiterung für einmaliges Anmelden** unterscheidet sich vom Feature **Einmaliges Anmelden**:
 >
-> - Die Einstellungen für **App-Erweiterung für einmaliges Anmelden** gelten für iPadOS 13.0 (und höher) sowie für iOS 13.0 (und höher). Die Einstellungen für **Einmaliges Anmelden** gelten für iPadOS 13.0 (und höher) sowie für iOS 7.0 (und höher).
-> - Eine **App-Erweiterung für einmaliges Anmelden** verarbeitet die Authentifizierung beim Betriebssystem. Beim Feature **Einmaliges Anmelden** erfolgt die Verarbeitung der Authentifizierung durch eine spezifische App.
-> - Bei der Verwendung einer **App-Erweiterung für einmaliges Anmelden** melden Benutzer sich im Hintergrund, mit einer Gesichtserkennungs-ID, einer Fingereingabe-ID oder einem Pincode oder Passcode von Apple bei Apps und Websites an. Bei der Verwendung des Features **Einmaliges Anmelden** melden Benutzer sich mithilfe einer anderen App bei Apps und Websites an.
+> - Die Einstellungen für **App-Erweiterung für einmaliges Anmelden** gelten für iPadOS 13.0 (und höher), für iOS 13.0 (und höher) sowie für macOS 10.15 (und höher). Die Einstellungen für **Einmaliges Anmelden** gelten für iPadOS 13.0 (und höher) sowie für iOS 7.0 (und höher).
 >
->    Die **App-Erweiterung für einmaliges Anmelden** verwendet das Apple-Betriebssystem zur Authentifizierung. Damit bietet dieses Feature mehr Benutzerfreundlichkeit.
+> - Mit der **App-Erweiterung für einmaliges Anmelden** werden Erweiterungen definiert, die von Identitätsanbietern oder Organisationen zur Bereitstellung einer nahtlosen Anmeldung im Geschäftsumfeld verwendet werden können. Mit den Einstellungen für **Einmaliges Anmelden** werden Kerberos-Kontoinformationen definiert, wenn Benutzer auf Server oder Apps zugreifen.
 >
-> - Aus Entwicklerperspektive kann die **App-Erweiterung für einmaliges Anmelden** jede Art von SSO-Authentifizierung mit Anmeldeinformationen verwenden. Beim Feature **Einmaliges Anmelden** können Sie nur die Kerberos-SSO-Authentifizierung verwenden.  
+> - Die **App-Erweiterung für einmaliges Anmelden** verwendet das Apple-Betriebssystem zur Authentifizierung. Dies kann für Endbenutzer benutzerfreundlicher sein als das **Einmalige Anmelden**.
+>
+> - Aus Entwicklerperspektive kann mit der **App-Erweiterung für einmaliges Anmelden** jede Art von SSO-Weiterleitung und SSO-Authentifizierung mit Anmeldeinformationen verwendet werden. Beim Feature **Einmaliges Anmelden** können Sie nur die Kerberos-SSO-Authentifizierung verwenden.
+>
+> - Die **App-Erweiterung für einmaliges Anmelden** von Kerberos wurde von Apple entwickelt und ist in die Plattformen von iOS 13.0 und höher und macOS 10.15 und höher integriert. Die integrierte Kerberos-Erweiterung kann verwendet werden, um Benutzer in nativen Apps und Websites zu protokollieren, die die Kerberos-Authentifizierung unterstützen. **Einmaliges Anmelden** ist nicht eine Apple-Implementierung von Kerberos.
+>
+> - Die integrierte **App-Erweiterung für einmaliges Anmelden** von Kerberos bewältigt Herausforderungen von Kerberos für Webseiten und Apps genauso wie **Einmaliges Anmelden**. Die integrierte Kerberos-Erweiterung unterstützt jedoch Kennwortänderungen und verhält sich in Unternehmensnetzwerken besser. Bei der Entscheidung zwischen der **App-Erweiterung für einmaliges Anmelden** und **Einmaliges Anmelden** von Kerberos wird die Verwendung der Erweiterung aufgrund verbesserter Leistung und Funktionen empfohlen.
 
 Gilt für:
 

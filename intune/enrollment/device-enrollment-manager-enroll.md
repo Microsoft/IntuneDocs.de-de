@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0012a80f0e9ea60b41c94a582e42d5f647c6bbc2
-ms.sourcegitcommit: cdb2a484b059bd8d8c3985cde1e883c24a4c1cad
+ms.openlocfilehash: 30191aea892e8409bb6165034256a99f6f32a502
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74239215"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955404"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Registrieren von Geräten in Intune mithilfe eines Geräteregistrierungs-Manager-Kontos
 
@@ -46,7 +46,7 @@ DEM-Benutzerkonten und Geräte, die mit einem DEM-Benutzerkonto registriert werd
 
 ## <a name="add-a-device-enrollment-manager"></a>Hinzufügen eines Geräteregistrierungs-Managers
 
-1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Option **Geräteregistrierung** > **Geräteregistrierungs-Manager** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an, und navigieren Sie zu **Geräte** > **Geräte registrieren** > **Geräteregistrierungs-Manager**.
 
 2. Wählen Sie **Hinzufügen** aus.
 
@@ -67,6 +67,6 @@ Wenn Sie einen Geräteregistrierungs-Manager entfernen, wirkt sich dies nicht au
 
 **So entfernen Sie einen Geräteregistrierungs-Manager**
 
-1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) zuerst **Geräteregistrierung** und dann **Geräteregistrierungs-Manager** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an, und navigieren Sie zu **Geräte** > **Geräte registrieren** > **Geräteregistrierungs-Manager**.
 2. Wählen Sie auf dem Blatt **Geräteregistrierungs-Manager** den DEM-Benutzer aus, und klicken Sie auf **Löschen**.
 

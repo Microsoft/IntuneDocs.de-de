@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3d98a0e3c5bd2a5c11c9aa72d791306dfbe6578
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4e1ee8ae54d81a050f3c8983269f40e8f61b5e75
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503298"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955472"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identifizieren von Geräten als unternehmenseigen
 
@@ -85,9 +85,7 @@ Diese CSV-Datei wird bei der Anzeige in einem Text-Editor folgendermaßen angeze
 
 ### <a name="upload-a-csv-list-of-corporate-identifiers"></a>Hochladen einer CSV-Liste von Unternehmensbezeichnern
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, und wählen Sie die die Optionen **Geräteregistrierung** > **Bezeichner von Unternehmensgeräten** > **Hinzufügen** > **CSV-Datei hochladen** aus.
-
-   ![Arbeitsbereich des Bezeichners von Unternehmensgeräten mit hervorgehobener Schaltfläche „Hinzufügen“](./media/corporate-identifiers-add/add-corp-id.png)
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an, und navigieren Sie zu **Geräte** > **Geräte registrieren** > **Bezeichner von Unternehmensgeräten** > **Hinzufügen** > **CSV-Datei hochladen**.
 
 2. Geben Sie auf dem Blatt **Bezeichner hinzufügen** den Bezeichnertyp ein: **IMEI** oder **Seriennummer**.
 
@@ -97,7 +95,7 @@ Diese CSV-Datei wird bei der Anzeige in einem Text-Editor folgendermaßen angeze
 
 ## <a name="manually-enter-corporate-identifiers"></a>Manuelles Eingeben von Unternehmensbezeichnern
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, und wählen Sie die die Optionen **Geräteregistrierung** > **Bezeichner von Unternehmensgeräten** > **Hinzufügen** > **Manuell eingeben** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an, und navigieren Sie zu **Geräte** > **Geräte registrieren** > **Bezeichner von Unternehmensgeräten** > **Hinzufügen** > **Manuell eingeben**.
 
 2. Geben Sie auf dem Blatt **Bezeichner hinzufügen** den Bezeichnertyp ein: **IMEI** oder **Seriennummer**.
 
@@ -111,7 +109,7 @@ Importierte Geräte sind nicht zwangsläufig registriert. Geräte können entwed
 
 ## <a name="delete-corporate-identifiers"></a>Löschen von Unternehmensbezeichnern
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, und wählen Sie die die Optionen **Geräteregistrierung** > **Bezeichner von Unternehmensgeräten** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an, und navigieren Sie zu **Geräte** > **Geräte registrieren** > **Bezeichner von Unternehmensgeräten**.
 2. Wählen Sie die Gerätebezeichner aus, die Sie löschen möchten, und klicken Sie auf **Löschen**.
 3. Bestätigen Sie den Löschvorgang.
 
@@ -125,7 +123,7 @@ Detaillierte Angaben über International Mobile Equipment Identifier finden Sie 
 Die Geräteeigenschaften zeigen den **Besitz** für jeden Gerätedatensatz in Intune an. Als Administrator können Sie Geräte als **Persönlich** oder **Unternehmen** festlegen. Wenn der Besitztyp eines Geräts von „Persönlich“ auf „Unternehmen“ geändert wird, löscht Intune alle zuvor von diesem Gerät erfassten App-Informationen innerhalb von 7 Tagen. Gegebenenfalls löscht Intune auch die Telefonnummer im Datensatz. 
 
 **So ändern Sie den Gerätebesitz:**
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, wechseln Sie zu **Geräte**, und wählen Sie das Gerät aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an, und navigieren Sie zu **Geräte** > **Alle Geräte**, und wählen Sie dann das entsprechende Gerät aus.
 2. Wählen Sie **Eigenschaften** aus.
 3. Geben Sie den **Gerätebesitz** als **Persönlich** oder **Unternehmen** an.
 

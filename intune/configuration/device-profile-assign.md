@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 275b3961e87f0d0eda8299337fe3fb7ac89ef03b
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: 651b02dc276ca2aa2003955e6aa7b0dfa6724a40
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261687"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860314"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune
 
@@ -61,7 +61,7 @@ Wenn die Schaltfläche **Evaluate** (Auswerten) ausgegraut ist, stellen Sie sich
 
 Wenn Sie ein Profil erstellen oder aktualisieren, können Sie diesem auch Bereichstags und Anwendbarkeitsregeln hinzufügen.
 
-**Bereichsmarkierungen** eignen sich zum Zuweisen und Filtern von Profilen für bestimmte Gruppen, z. B. die Personalabteilung oder alle Mitarbeiter in North Carolina (USA). Unter [Use RBAC and scope tags for distributed IT (Verwenden der RBAC und von Bereichsmarkierungen für eine verteilte IT)](../fundamentals/scope-tags.md) finden Sie weitere Informationen.
+**Bereichsmarkierungen** sind eine gute Möglichkeit, Profile für bestimmte Gruppen wie z. B. `US-NC IT Team` oder `JohnGlenn_ITDepartment` zu filtern. Unter [Use RBAC and scope tags for distributed IT (Verwenden der RBAC und von Bereichsmarkierungen für eine verteilte IT)](../fundamentals/scope-tags.md) finden Sie weitere Informationen.
 
 Auf Windows 10-Geräten können Sie **Anwendbarkeitsregeln** hinzufügen, wodurch das Profil nur für eine bestimmte Betriebssystemversion oder eine bestimmte Windows-Version gilt. Unter [Anwendbarkeitsregeln](device-profile-create.md#applicability-rules) finden Sie weitere Informationen.
 

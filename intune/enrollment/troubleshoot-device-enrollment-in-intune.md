@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 190322392909a14681a4b68a79d9a3537360206b
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 79e1ba2441baa6773632c27f204bef01b015b990
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713488"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832724"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Behandlung von Problemen bei der Geräteregistrierung in Microsoft Intune
 
@@ -64,7 +64,7 @@ Diese Probleme können auf allen Geräteplattformen auftreten.
 
 Überprüfen Sie, dass dem Benutzer nicht mehr als die zulässige Zahl an Geräten zugewiesen wurde. Gehen Sie dafür wie folgt vor:
 
-1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Geräteregistrierung** > **Registrierungseinschränkungen** > **Einschränkungen zum Gerätelimit** aus. Achten Sie auf den Wert in der Spalte **Gerätelimit**.
+1. Navigieren Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) zu **Geräte** > **Registrierungseinschränkungen** > **Einschränkungen zum Gerätelimit**. Achten Sie auf den Wert in der Spalte **Gerätelimit**.
 
 2. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Benutzer** > **Alle Benutzer**, anschließend den gewünschten Benutzer und dann **Geräte** aus. Überprüfen Sie die Anzahl der Geräte.
 
@@ -237,7 +237,7 @@ Der Zertifikatsfehler tritt auf, weil Android-Geräte Zwischenzertifikate benöt
 
 Um das Problem zu beheben, importieren Sie die Zertifikate wie folgt in die persönlichen Zertifikate des Computers auf dem AD FS-Server oder den Proxys:
 
-1. Klicken Sie im AD FS oder in den Proxyservern mit der rechten Maustaste auf **Start**, und wählen Sie **Ausführen** > **certlm.msc**, um die Verwaltungskonsole für Zertifikate lokaler Computer zu starten.
+1. Klicken Sie im AD FS oder in den Proxyservern mit der rechten Maustaste auf **Start**, und wählen Sie  > **Ausführen** > **certlm.msc**, um die Verwaltungskonsole für Zertifikate lokaler Computer zu starten.
 2. Erweitern Sie **Persönlich**, und wählen Sie **Zertifikate** aus.
 3. Suchen Sie das Zertifikat für Ihre Kommunikation mit dem AD FS-Dienst (ein öffentlich signiertes Zertifikat), und doppelklicken Sie darauf, um seine Eigenschaften anzuzeigen.
 4. Klicken Sie auf die Schaltfläche **Zertifizierungspfad**, um die übergeordneten Zertifikate des Zertifikats anzuzeigen.
@@ -374,7 +374,7 @@ Das Problem kann in den folgenden Fällen auftreten:
 4. Weisen Sie den Benutzer an, den Registrierungsvorgang neu zu starten.
 
 #### <a name="determine-if-theres-something-wrong-with-the-vpp-token"></a>Ermitteln Sie, ob ein Problem mit dem VPP-Token vorliegt.
-1. Wechseln Sie zu **Intune** > **Geräteregistrierung** > **Apple-Registrierung** > **Registrierungsprogrammtoken** > Tokenname > **Profile** > Profilname > **Verwalten** > **Eigenschaften**.
+1. Navigieren Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) zu **Geräte** > **iOS** > **iOS-Registrierung** > **Registrierungsprogrammtoken** > Tokenname > **Profile** > Profilname > **Verwalten** > **Eigenschaften**.
 2. Überprüfen Sie die Eigenschaften, um festzustellen, ob ähnliche Fehler wie die folgenden auftreten:
     - Dieses Token ist abgelaufen.
     - Dieses Token enthält keine Lizenzen für das Unternehmensportal.
@@ -384,13 +384,13 @@ Das Problem kann in den folgenden Fällen auftreten:
 3. Beheben Sie die Probleme mit dem Token.
 
 #### <a name="identify-which-devices-are-blocked-by-the-vpp-token"></a>Ermitteln der vom VPP-Token blockierten Geräte
-1. Wechseln Sie zu **Intune** > **Geräteregistrierung** > **Apple-Registrierung** > **Registrierungsprogrammtoken** > Tokenname > **Geräte**.
+1. Navigieren Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) zu **Geräte** > **iOS** > **iOS-Registrierung** > **Registrierungsprogrammtoken** > Tokenname > **Geräte**.
 2. Filtern Sie die Spalte **Profilstatus** nach **Blockiert**.
 3. Notieren Sie sich die Seriennummern aller Geräte, für die **Blockiert** angegeben ist.
 
 #### <a name="remotely-wipe-the-blocked-devices"></a>Remote-Zurücksetzung der blockierten Geräte
 Nachdem Sie die Probleme mit dem VPP-Token behoben haben, müssen Sie die blockierten Geräte zurücksetzen.
-1. Wechseln Sie zu **Intune** > **Geräte** > **Alle Geräte** > **Spalten** > **Seriennummer** > **Anwenden**. 
+1. Navigieren Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) zu **Geräte** > **Alle Geräte** > **spalten** > **Seriennummer** > **Übernehmen**. 
 2. Wählen Sie jedes blockierte Gerät in der Liste **Alle Geräte** aus und wählen Sie dann **Zurücksetzen** > **Ja** aus.
 
 #### <a name="tell-the-users-to-restart-the-enrollment-process"></a>Anweisen des Benutzers, den Registrierungsvorgang neu zu starten
@@ -414,8 +414,8 @@ Nachdem Sie die blockierten Geräte zurückgesetzt haben, können Sie den Benutz
 - Wenn für Ihre Organisation Registrierungsbeschränkungen aktiviert sind, die persönliche macOS-Geräte blockieren, müssen Sie manuell die [Seriennummer des Geräts](corporate-identifiers-add.md#manually-enter-corporate-identifiers) zu Intune hinzufügen.  
 - Wenn das Gerät weiterhin einem anderen Benutzer in Intune zugewiesen ist, hat der vorherige Besitzer nicht die Unternehmensportal-App verwendet, um die Zuweisung aufzuheben oder zu entfernen. Gehen Sie wie folgt vor, um die veralteten Geräteinstellungen über Intune zu bereinigen:  
 
-    1. Navigieren Sie im [Azure-Portal zu Intune](https://portal.manage.microsoft.com), und melden Sie sich mit Ihren Anmeldeinformationen als Administrator an.
-    2. Navigieren Sie zu Intune > **Geräte** > **Alle Geräte**.  
+    1. Melden Sie sich im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) mit Ihren Administratoranmeldeinformationen an.
+    2. Navigieren Sie zu **Geräte** > **Alle Geräte**.  
     3. Suchen Sie das Gerät, für das ein Registrierungsproblem aufgetreten ist. Geben Sie den Gerätenamen oder die MAC/HW-Adresse ein, um die Ergebnisse einzuschränken.
     4. Wählen Sie das Gerät aus, und klicken Sie auf **Löschen**. Löschen Sie alle anderen Einträge, die diesem Gerät zugeordnet sind.  
 

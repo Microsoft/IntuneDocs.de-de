@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 460cabead711e6fa4559bcec39e556448cdf2237
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: ebb17324355fff9631ef74a76388ef0ab797d437
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635368"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899144"
 ---
 # <a name="intune-guided-scenarios-overview"></a>Übersicht über geführte Szenarios zu Intune 
 
@@ -33,7 +33,7 @@ Bei geführten Szenarios handelt es sich nicht um einen anderen Verwaltungsberei
 
 ## <a name="types-of-guided-scenarios"></a>Typen von geführten Szenarios 
 
-Der Einfachheit halber werden komplexe Bereichsfeatures wie Bereichstags <link>, Ausschlussgruppen und virtuelle Gruppenzuweisungen <link> aus allen geführten Szenarios ausgelassen. Alle Ressourcen, die im Rahmen eines geführten Szenarios erstellt wurde, erben alle Bereichstags des Administrators, der das Szenario durchführt. Bestimmte Szenarios bieten ein gewisses Maß an Anpassung für allgemeine Einstellungen, um eng verwandte Szenarios zu behandeln. Diese Szenarios unterstützen die Gruppenzuweisung nur für Einschlussgruppen. Bei anderen geführten Szenarios garantiert das gesamte Szenario eine konsistente Funktion, indem keine Anpassung angeboten und automatisch eine neue Gruppe erstellt wird, um alle Zuweisungen zu empfangen. Sobald das geführte Szenario abgeschlossen ist, können Sie anspruchsvollere Zuweisungen direkt über vorhandene Richtlinien-, App- und Profilworkloads verwenden.  
+Der Einfachheit halber werden komplexe Bereichsfeatures wie Bereichstags, Ausschlussgruppen und virtuelle Gruppenzuweisungen aus allen geführten Szenarios ausgelassen. Alle Ressourcen, die im Rahmen eines geführten Szenarios erstellt wurde, erben alle Bereichstags des Administrators, der das Szenario durchführt. Bestimmte Szenarios bieten ein gewisses Maß an Anpassung für allgemeine Einstellungen, um eng verwandte Szenarios zu behandeln. Diese Szenarios unterstützen die Gruppenzuweisung nur für Einschlussgruppen. Bei anderen geführten Szenarios garantiert das gesamte Szenario eine konsistente Funktion, indem keine Anpassung angeboten und automatisch eine neue Gruppe erstellt wird, um alle Zuweisungen zu empfangen. Sobald das geführte Szenario abgeschlossen ist, können Sie anspruchsvollere Zuweisungen direkt über vorhandene Richtlinien-, App- und Profilworkloads verwenden.  
 
 Die folgenden geführten Szenarios sind verfügbar: 
 - Bereitstellen von Microsoft Edge für Mobilgeräte 

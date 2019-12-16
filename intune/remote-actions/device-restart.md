@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18cf8e3aec0c7ed7d8869c0f5b13b6e39df23d77
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: b7b77c4f0127c9ee16b255d0e0e28622b85c323b
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713410"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907252"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Remoteneustart von Geräten mit Intune
 
@@ -46,7 +46,7 @@ Die Geräteaktion **Neu starten** führt dazu, dass das von Ihnen gewählte Ger�
 
 1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 3. Klicken Sie auf **Geräte** > **Alle Geräte**.
-4. Wählen Sie in der Liste der von Ihnen verwalteten Geräte ein Gerät aus, klicken Sie auf **Mehr** und dann auf die Remotegeräteaktion **Neu starten**.
+4. Wählen Sie aus der Liste der von Ihnen verwalteten Geräten ein Gerät und dann **Neu starten** > **Ja** aus.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

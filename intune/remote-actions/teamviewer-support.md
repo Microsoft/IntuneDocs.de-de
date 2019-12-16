@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d03859d5775193e6bbc482c06b28942a1a5bce2f
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 0372c9629e111c460b095d8c0236305866da42e3
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712156"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907201"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>Verwenden von TeamViewer für die Remoteverwaltung von Intune-Geräten
 
@@ -48,7 +48,7 @@ Durch die Verwendung von TeamViewer ermöglichen Sie es dem TeamViewer Connector
 Zur Bereitstellung der Remoteunterstützung für Geräte müssen Sie den TeamViewer Connector für Intune anhand der folgenden Schritte konfigurieren:
 
 1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
-2. Wählen Sie **Geräte** > **TeamViewer-Connector** aus.
+2. Wählen Sie **Mandantenverwaltung** > **Connectors und Token** > **TeamViewer-Connector** aus.
 3. Wählen Sie **Verbinden** aus, und akzeptieren Sie anschließend die Lizenzbedingungen.
 4. Wählen Sie **Log in to TeamViewer to authorize** (Zum Autorisieren bei TeamViewer anmelden) aus.
 5. Auf der TeamViewer-Website wird eine Webseite geöffnet. Geben Sie die Anmeldeinformationen für Ihre TeamViewer-Lizenz ein, und klicken Sie anschließend auf **Anmelden**.
@@ -59,7 +59,7 @@ Nach der Konfiguration des Connectors können Sie ein Gerät remote verwalten. G
 
 1. Im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Klicken Sie auf **Geräte** und dann auf **Alle Geräte**.
-3. Wählen Sie aus der Liste das Gerät aus, das Sie remote verwalten möchten. Wählen Sie in den Geräteeigenschaften **Neue Remoteunterstützungssitzung** aus.
+3. Wählen Sie aus der Liste das Gerät aus, das Sie remote verwalten möchten, und navigieren Sie zu **...**  > **	Neue Remoteunterstützungssitzung**.
 4. Nachdem Intune eine Verbindung mit dem TeamViewer-Dienst hergestellt hat, werden Informationen über das Gerät angezeigt. Wählen Sie **Verbinden** aus, um die Remotesitzung zu starten.
 
 ![Verwenden von TeamViewer für die Remoteverwaltung eines Android-Geräts – Beispiel](./media/teamviewer-support/android-teamviewer.png)

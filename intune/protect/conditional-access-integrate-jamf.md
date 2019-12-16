@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59edb9956ee117e0dbdb9d90a4fd4ef313fd5c66
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 01dae8f6c90155e649211ab226cf24eeade29b42
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390460"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946681"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrieren von Jamf Pro in Intune zu Konformitätszwecken
 
@@ -90,13 +90,21 @@ So stellen Sie eine Verbindung zwischen Intune und Jamf Pro her:
    > [!IMPORTANT]
    > Bevor Sie diese Seite verlassen, kopieren Sie den Wert für den geheimen Clientschlüssel, und notieren Sie ihn zur späteren Verwendung. Sie benötigen diesen Wert bei späteren Prozeduren. Dieser Wert ist nicht noch mal verfügbar, ohne die App-Registrierung neu zu erstellen.
 
-6. Wählen Sie unter **Verwalten** die Option **API-Berechtigungen** aus. Wählen Sie die vorhandenen Berechtigungen aus, und wählen Sie dann **Berechtigung entfernen** aus, um diese Berechtigungen zu löschen. Das Entfernen aller vorhandenen Berechtigungen ist notwendig, wenn Sie eine neue Berechtigung hinzufügen, und die Anwendung funktioniert nur, wenn sie ausschließlich über die erforderliche Berechtigung verfügt.
+6. Wählen Sie unter **Verwalten** die Option **API-Berechtigungen** aus. 
 
-7. Um eine neue Berechtigung hinzuzufügen, wählen Sie **Berechtigung hinzufügen** aus. Wählen Sie auf der Seite **API-Berechtigungen anfordern** den Eintrag **Intune** aus, und wählen Sie dann **Anwendungsberechtigungen** aus. Aktivieren Sie nur das Kontrollkästchen für **update_device_attributes**.
+7. Wählen Sie auf der API-Berechtigungsseite **Berechtigung hinzufügen** aus, um eine neue Berechtigung hinzuzufügen. Wählen Sie auf der Seite **API-Berechtigungen anfordern** den Eintrag **Intune** aus, und wählen Sie dann **Anwendungsberechtigungen** aus. Aktivieren Sie nur das Kontrollkästchen für **update_device_attributes**.
 
-   Wählen Sie **Berechtigung hinzufügen** aus, um diese Konfiguration zu speichern.
+8. Warten Sie einige Minuten, bis die neue Berechtigung in Kraft tritt. Wählen Sie dann **Administratoreinwilligung hinzufügen für _\<Ihr Mandat>_** aus. Authentifizieren Sie Ihr Konto im neuen Fenster, und gewähren Sie der Anwendung Zugriff, indem Sie die Anweisungen befolgen.  
 
-8. Wählen Sie auf der Seite **API-Berechtigungen** die Option **Administratorzustimmung für _\<Ihren Mandanten>_ erteilen** aus, und klicken Sie dann auf **Ja**.  Nachdem die App erfolgreich registriert wurde, sollten die API-Berechtigungen folgendermaßen aussehen:
+9. Möglicherweise müssen Sie einige Minuten warten, damit die Zustimmung des Administrators wirksam werden kann.
+
+10. Aktualisieren Sie die Seite, indem Sie oben auf der Seite auf die Schaltfläche **Aktualisieren** klicken. Vergewissern Sie sich, dass die Administratoreinwilligung für die Berechtigung **update_device_attributes** erteilt wurde. 
+
+11. Entfernen Sie die Administratoreinwilligung von der Berechtigung **User.Read**, indem Sie das Menü **...** und dann **Administratoreinwilligung widerrufen** auswählen.
+
+12. Außerdem müssen Sie die Berechtigung **User.Read** entfernen. Wählen Sie das Menü **...** mit **User.Read** aus, und wählen Sie dann **Berechtigung entfernen** aus. 
+
+8. Nachdem die App erfolgreich registriert wurde, sollten die API-Berechtigungen nur eine Berechtigung namens **update_device_attributes** enthalten, die wie folgt aussehen sollte:
 
    ![Erfolgreiche Berechtigungen](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 

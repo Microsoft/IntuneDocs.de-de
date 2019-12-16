@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d70496a87f923b61cacb3da250e5f22ce5c7817
-ms.sourcegitcommit: aeb76032de216e5feb94559aeaf36c0357f1247d
+ms.openlocfilehash: 78f79a734d0a7b4901b2248b20abd9d304926dd2
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72587952"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955506"
 ---
 # <a name="set-enrollment-restrictions"></a>Festlegen von Registrierungseinschränkungen
 
@@ -59,15 +59,12 @@ Auf den Gerätetyp und das Gerätelimit bezogene Registrierungsbeschränkungen w
 
 ## <a name="create-a-device-type-restriction"></a>Erstellen einer Gerätetypeinschränkung
 
-1. Melden Sie sich im Azure-Portal an.
-2. Klicken Sie auf **Weitere Dienste**, suchen Sie nach **Intune**, und klicken Sie dann auf **Intune**.
-3. Klicken Sie auf **Geräteregistrierung** > **Registrierungsbeschränkungen** > **Einschränkung erstellen** > **Gerätetypeinschränkung**.
-    ![Screenshot: Erstellen einer Gerätetypeinschränkung](./media/enrollment-restrictions-set/create-device-type-restriction.png)
-4. Geben Sie auf der Seite **Grundlagen** einen **Name** und optional eine **Beschreibung** für die Beschränkung ein.
-5. Klicken Sie auf **Weiter**, um zur Seite **Plattformeinstellungen** zu gelangen.
-6. Wählen Sie unter **Plattform** die Option **Zulassen** für diejenigen Plattformen aus, für die diese Einschränkung zulässig sein soll.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an, und navigieren Sie zu  > **Geräte** > **Registrierungsbeschränkungen** > **Einschränkung erstellen** > **Gerätetypeinschränkung**.
+2. Geben Sie auf der Seite **Grundlagen** einen **Name** und optional eine **Beschreibung** für die Beschränkung ein.
+3. Klicken Sie auf **Weiter**, um zur Seite **Plattformeinstellungen** zu gelangen.
+4. Wählen Sie unter **Plattform** die Option **Zulassen** für diejenigen Plattformen aus, für die diese Einschränkung zulässig sein soll.
     ![Screenshot: Auswählen der Plattformeinstellungen](./media/enrollment-restrictions-set/choose-platform-settings.png)
-7. Wählen Sie unter **Versionen** die Mindest- und die Maximalversion aus, die von den Plattformen unterstützt werden soll. Versionseinschränkungen gelten nur für Geräte, die beim Unternehmensportal registriert sind.
+5. Wählen Sie unter **Versionen** die Mindest- und die Maximalversion aus, die von den Plattformen unterstützt werden soll. Versionseinschränkungen gelten nur für Geräte, die beim Unternehmensportal registriert sind.
      Folgende Versionsformate werden unterstützt:
     - Android-Geräteadministrator und Android Enterprise-Arbeitsprofil unterstützen „Hauptversion.Nebenversion.Revision.Build“.
     - iOS unterstützt major.minor.rev. Die Betriebssystemversionen gelten nicht für Apple-Geräte, die mit dem Programm zur Geräteregistrierung, dem Apple School Manager oder der App Apple Configurator registriert werden.
@@ -84,31 +81,28 @@ Auf den Gerätetyp und das Gerätelimit bezogene Registrierungsbeschränkungen w
    > [!Note]
    > Windows 10 gibt die Buildnummer während der Registrierung nicht an. Wenn Sie zum Beispiel in Build 10.0.17134.100 eine Eingabe vornehmen und das Gerät über Build 10.0.17134.174 verfügt, wird es während der Registrierung blockiert.
 
-8. Wählen Sie unter **Persönliches Eigentum** die Option **Zulassen** für die Plattformen, die Sie als Geräte im persönlichen Besitz zulassen möchten.
-9. Klicken Sie auf **Weiter**, um zur Seite **Zuweisungen** zu gelangen.
-10. Klicken Sie auf **Wählen Sie die Gruppen aus, die eingeschlossen werden sollen.** , und verwenden Sie dann das Suchfeld, um die Gruppen zu finden, die Sie in diese Einschränkung einschließen möchten. Die Beschränkung gilt nur für Gruppen, denen sie zugewiesen ist. Wenn Sie nicht mindestens einer Gruppe eine Beschränkung zuweisen, hat sie keine Wirkung. Klicken Sie anschließend auf **Auswählen**. 
+6. Wählen Sie unter **Persönliches Eigentum** die Option **Zulassen** für die Plattformen, die Sie als Geräte im persönlichen Besitz zulassen möchten.
+7. Klicken Sie auf **Weiter**, um zur Seite **Zuweisungen** zu gelangen.
+8. Klicken Sie auf **Wählen Sie die Gruppen aus, die eingeschlossen werden sollen.** , und verwenden Sie dann das Suchfeld, um die Gruppen zu finden, die Sie in diese Einschränkung einschließen möchten. Die Beschränkung gilt nur für Gruppen, denen sie zugewiesen ist. Wenn Sie nicht mindestens einer Gruppe eine Beschränkung zuweisen, hat sie keine Wirkung. Klicken Sie anschließend auf **Auswählen**. 
     ![Screenshot: Auswählen der Plattformeinstellungen](./media/enrollment-restrictions-set/select-groups.png)
-11. Klicken Sie auf **Weiter**, um zur Seite **Überprüfen + erstellen** zu gelangen.
-12. Klicken Sie auf **Erstellen**, um die Einschränkung zu erstellen.
-13. Die neue Beschränkung wird mit einer Priorität knapp über dem Standardwert erstellt. Sie können [die Priorität ändern](#change-enrollment-restriction-priority).
+9. Klicken Sie auf **Weiter**, um zur Seite **Überprüfen + erstellen** zu gelangen.
+10. Klicken Sie auf **Erstellen**, um die Einschränkung zu erstellen.
+11. Die neue Beschränkung wird mit einer Priorität knapp über dem Standardwert erstellt. Sie können [die Priorität ändern](#change-enrollment-restriction-priority).
 
 
 ## <a name="create-a-device-limit-restriction"></a>Erstellen einer Gerätelimiteinschränkung
 
-1. Melden Sie sich im Azure-Portal an.
-2. Klicken Sie auf **Weitere Dienste**, suchen Sie nach **Intune**, und klicken Sie dann auf **Intune**.
-3. Klicken Sie auf **Geräteregistrierung** > **Registrierungsbeschränkungen** > **Einschränkung erstellen** > **Gerätelimiteinschränkung**.
-    ![Screenshot: Erstellen einer Gerätelimiteinschränkung](./media/enrollment-restrictions-set/create-device-limit-restriction.png)
-4. Geben Sie auf der Seite **Grundlagen** einen **Name** und optional eine **Beschreibung** für die Beschränkung ein.
-5. Klicken Sie auf **Weiter**, um zur Seite **Gerätelimit** zu gelangen.
-6. Wählen Sie unter **Gerätelimit** die maximale Anzahl von Geräten aus, die ein Benutzer registrieren kann.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an, und navigieren Sie zu  > **Geräte** > **Registrierungsbeschränkungen** > **Einschränkung erstellen** > **Gerätelimiteinschränkung**.
+2. Geben Sie auf der Seite **Grundlagen** einen **Name** und optional eine **Beschreibung** für die Beschränkung ein.
+3. Klicken Sie auf **Weiter**, um zur Seite **Gerätelimit** zu gelangen.
+4. Wählen Sie unter **Gerätelimit** die maximale Anzahl von Geräten aus, die ein Benutzer registrieren kann.
     ![Screenshot: Auswählen des Gerätelimits](./media/enrollment-restrictions-set/choose-device-limit.png)
-7. Klicken Sie auf **Weiter**, um zur Seite **Zuweisungen** zu gelangen.
-8. Klicken Sie auf **Wählen Sie die Gruppen aus, die eingeschlossen werden sollen.** , und verwenden Sie dann das Suchfeld, um die Gruppen zu finden, die Sie in diese Einschränkung einschließen möchten. Die Beschränkung gilt nur für Gruppen, denen sie zugewiesen ist. Wenn Sie nicht mindestens einer Gruppe eine Beschränkung zuweisen, hat sie keine Wirkung. Klicken Sie anschließend auf **Auswählen**. 
+5. Klicken Sie auf **Weiter**, um zur Seite **Zuweisungen** zu gelangen.
+6. Klicken Sie auf **Wählen Sie die Gruppen aus, die eingeschlossen werden sollen.** , und verwenden Sie dann das Suchfeld, um die Gruppen zu finden, die Sie in diese Einschränkung einschließen möchten. Die Beschränkung gilt nur für Gruppen, denen sie zugewiesen ist. Wenn Sie nicht mindestens einer Gruppe eine Beschränkung zuweisen, hat sie keine Wirkung. Klicken Sie anschließend auf **Auswählen**. 
     ![Screenshot: Auswählen von Gruppen](./media/enrollment-restrictions-set/select-groups-device-limit.png)
-11. Klicken Sie auf **Weiter**, um zur Seite **Überprüfen + erstellen** zu gelangen.
-12. Klicken Sie auf **Erstellen**, um die Einschränkung zu erstellen.
-13. Die neue Beschränkung wird mit einer Priorität knapp über dem Standardwert erstellt. Sie können [die Priorität ändern](#change-enrollment-restriction-priority).
+7. Klicken Sie auf **Weiter**, um zur Seite **Überprüfen + erstellen** zu gelangen.
+8. Klicken Sie auf **Erstellen**, um die Einschränkung zu erstellen.
+9. Die neue Beschränkung wird mit einer Priorität knapp über dem Standardwert erstellt. Sie können [die Priorität ändern](#change-enrollment-restriction-priority).
 
 Während der BYOD-Registrierung erhalten Benutzer eine Benachrichtigung darüber, wenn das Limit registrierter Geräte erreicht ist. Diese sieht bei iOS beispielsweise folgendermaßen aus:
 
@@ -131,11 +125,9 @@ Während der BYOD-Registrierung erhalten Benutzer eine Benachrichtigung darüber
 
 Sie können die Einstellungen für eine Registrierungseinschränkung ändern, indem Sie die folgenden Schritte ausführen. Diese Einschränkungen haben keine Auswirkungen auf Geräte, die bereits registriert wurden. Geräte, die mit dem [Intune-PC-Agent](../fundamentals/manage-windows-pcs-with-microsoft-intune.md) registriert sind, können nicht über dieses Feature blockiert werden.
 
-1. Melden Sie sich im Azure-Portal an.
-2. Klicken Sie auf **Weitere Dienste**, suchen Sie nach **Intune**, und klicken Sie dann auf **Intune**.
-3. Klicken Sie auf **Geräteregistrierung** > **Registrierungseinschränkungen**. Wählen Sie die Registrierung aus, die Sie ändern möchten, und klicken Sie auf **Plattformen auswählen**.
-4. Klicken Sie neben den Einstellungen, die Sie ändern möchten, auf **Bearbeiten**.
-5. Nehmen Sie auf der Seite **Bearbeiten** die gewünschten Änderungen vor, und fahren Sie auf der Seite **Überprüfen und speichern** fort. Klicken Sie abschließend auf **Speichern**.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an, und navigieren Sie zu  > **Geräte** > **Registrierungsbeschränkungen** > die zu ändernde Einschränkung auswählen > **Eigenschaften**.
+2. Klicken Sie neben den Einstellungen, die Sie ändern möchten, auf **Bearbeiten**.
+3. Nehmen Sie auf der Seite **Bearbeiten** die gewünschten Änderungen vor, und fahren Sie auf der Seite **Überprüfen und speichern** fort. Klicken Sie abschließend auf **Speichern**.
 
 
 ## <a name="blocking-personal-android-devices"></a>Blockieren privater Android-Geräte

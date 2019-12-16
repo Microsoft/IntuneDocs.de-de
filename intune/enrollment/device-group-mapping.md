@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ab720ffee3f468d3700558dfbde460ee8f712ea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8ee8bc3cdee9f61a901854e08000e9e2cbbb2864
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505499"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955370"
 ---
 # <a name="categorize-devices-into-groups"></a>Kategorisieren von Geräten in Gruppen
 
@@ -45,11 +45,10 @@ Sie können beliebige Gerätekategorien erstellen. Beispiel:
 ## <a name="how-to-configure-device-categories"></a>Konfigurieren von Gerätekategorien
 
 ### <a name="step-1-create-device-categories-on-the-intune-blade-of-the-azure-portal"></a>Schritt 1: Erstellen von Gerätekategorien auf dem Blatt „Intune“ im Azure-Portal
-1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Option **Geräteregistrierung** aus.
-2. Wählen Sie im Blatt **Geräteregistrierung** die Option **Gerätekategorien** aus.
-3. Wählen Sie auf der Seite **Gerätekategorien** die Option **Erstellen** aus, um eine neue Kategorie hinzuzufügen.
-4. Geben Sie auf dem Blatt **Gerätekategorie erstellen** einen **Namen** für die neue Kategorie und optional eine **Beschreibung** ein.
-5. Wenn Sie fertig sind, klicken Sie auf **Erstellen**. Sie können die neue Kategorie in der Liste der Kategorien sehen.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an, und navigieren Sie zu **Geräte** > **Gerätekategorien**.
+2. Wählen Sie auf der Seite **Gerätekategorien** die Option **Erstellen** aus, um eine neue Kategorie hinzuzufügen.
+3. Geben Sie auf dem Blatt **Gerätekategorie erstellen** einen **Namen** für die neue Kategorie und optional eine **Beschreibung** ein.
+4. Wenn Sie fertig sind, klicken Sie auf **Erstellen**. Sie können die neue Kategorie in der Liste der Kategorien sehen.
 
 Verwenden Sie den Kategorienamen des Geräts zum Erstellen von Azure Active Directory-Sicherheitsgruppen (Azure AD) in Schritt 2.
 
@@ -64,20 +63,16 @@ Wenn nach dem Konfigurieren von Gerätegruppen Benutzer ihre Geräte registriere
 
 ### <a name="view-the-categories-of-devices-that-you-manage"></a>Anzeigen der Kategorien von Geräten, die Sie verwalten
 
-1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Option **Geräte** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an, und navigieren Sie zu **Geräte** > **Alle Geräte**.
 
-2. Klicken Sie unter **Verwalten** auf **Alle Geräte**.
+2. Sehen Sie sich in der Liste der Geräte die Spalte **Gerätekategorie** an.
 
-3. Sehen Sie sich in der Liste der Geräte die Spalte **Gerätekategorie** an.
-
-Wenn die Spalte **Gerätekategorie** nicht angezeigt wird, klicken Sie auf **Spalten**. Wählen Sie eine **Gerätekategorie** aus der Liste aus, und klicken Sie auf **Anwenden**.
+Wenn die Spalte **Gerätekategorie** nicht angezeigt wird, klicken Sie auf **Spalten** > **Kategorie** > **Übernehmen**.
 
 ### <a name="change-the-category-of-a-device"></a>Ändern der Gerätekategorie
 
-1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Option **Geräte** aus.
-2. Klicken Sie im Blatt **Geräte** im Abschnitt **Verwalten** auf **Alle Geräte**.
-3. Wählen Sie aus der Liste der Geräte das von Ihnen gewünschte Gerät aus. Klicken Sie anschließend auf dem Blatt „Geräteeigenschaften“ im Abschnitt **Verwalten** auf **Eigenschaften**.
-4. Auf dem nächsten Blatt können Sie die **Gerätekategorie** des ausgewählten Geräts in einen beliebigen Kategorienamen ändern, den Sie zuvor konfiguriert haben.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an, und navigieren Sie zu **Geräte** > **Alle Geräte** > das hinzuzufügende Gerät auswählen > **Eigenschaften**.
+2. Auf dem nächsten Blatt können Sie die **Gerätekategorie** des ausgewählten Geräts in einen beliebigen Kategorienamen ändern, den Sie zuvor konfiguriert haben.
 
 ## <a name="after-you-configure-device-groups"></a>Nach dem Konfigurieren von Gerätegruppen
 

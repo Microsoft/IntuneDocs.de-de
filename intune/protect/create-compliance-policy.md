@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8452f9b56032864380ec703bfd444dc85ef129b
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.openlocfilehash: ba6b8fb66d25af3833e55eebc12e8b6df2fb5ba5
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188264"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860229"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Erstellen einer Konformitätsrichtlinie in Microsoft Intune
 
@@ -100,7 +100,7 @@ Stellen Sie zum Verwenden von Konformitätsrichtlinien folgendes sicher:
 
      Sie verwenden beispielsweise das Standortfeature und fügen einen Standort zu einer Konformitätsrichtlinie hinzu. Die Standardaktion für Nichtkonformität gilt, wenn Sie mindestens einen Standort auswählen. Wenn das Gerät nicht mit den ausgewählten Standorten verbunden ist, wird es sofort als nicht konform betrachtet. Sie können Ihren Benutzern eine Toleranzperiode gewähren, z.B. einen Tag.
 
-   - **Bereich (Markierungen)** : Bereichsmarkierungen eignen sich zum Zuweisen und Filtern von Richtlinien für bestimmte Gruppen, z. B. Vertrieb, Personalabteilung, Alle Mitarbeiter in North Carolina (USA) usw. Nachdem Sie die Einstellungen hinzugefügt haben, können Sie Ihrer Konformitätsrichtlinie ebenfalls eine Bereichsmarkierung hinzufügen. Im Artikel zum [Verwenden von Bereichsmarkierungen zum Filtern von Richtlinien](../fundamentals/scope-tags.md) finden Sie weitere Informationen.
+   - **Bereich (Markierungen)** : Bereichsmarkierungen sind eine gute Möglichkeit, Richtlinien für bestimmte Gruppen zu filtern, wie z. B. `US-NC IT Team` oder `JohnGlenn_ITDepartment`. Nachdem Sie die Einstellungen hinzugefügt haben, können Sie Ihrer Konformitätsrichtlinie ebenfalls eine Bereichsmarkierung hinzufügen. Im Artikel zum [Verwenden von Bereichsmarkierungen zum Filtern von Richtlinien](../fundamentals/scope-tags.md) finden Sie weitere Informationen.
 
 4. Wählen Sie anschließend **OK** > **Erstellen** aus, um Ihre Änderungen zu speichern. Die Richtlinie wird erstellt und in der Liste angezeigt. Weisen Sie die Richtlinie anschließend Ihrer Gruppe zu.
 

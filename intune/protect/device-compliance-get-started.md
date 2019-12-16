@@ -1,11 +1,11 @@
 ---
 title: Gerätekonformitätsrichtlinien in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Verwenden Sie Gerätekonformitätsrichtlinien, erhalten Sie eine Übersicht über Status- und die Sicherheitsebenen, verwenden Sie den InGracePeriod-Status, arbeiten Sie mit bedingtem Zugriff, verwalten Sie Geräte ohne zugewiesene Richtlinie, und erfahren Sie mehr zu den Unterschieden bei der Konformität im Azure-Portal und im klassischen Portal in Microsoft Intune.
+description: Verwenden Sie Gerätekonformitätsrichtlinien, erhalten Sie eine Übersicht über Status- und Sicherheitsebenen, verwenden Sie den InGracePeriod-Status, arbeiten Sie mit bedingtem Zugriff, und verwalten Sie Geräte ohne zugewiesene Richtlinie.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 967bf9937c71ff3ca7277f43fd969291eb5af6de
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 83b8c48d2bb594ca8b9c527d78922332e582363f
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749175"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860294"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Legen Sie mit Intune Regeln auf Geräten fest, um Zugriff auf Ressourcen in Ihrer Organisation zu gewähren
 
-Viele MDM-Lösungen (Mobile Device Management) tragen zum Schutz von Unternehmensdaten bei, da Benutzer und Geräte bestimmte Anforderungen erfüllen müssen. In Intune wird dieses Feature „Konformitätsrichtlinien“ genannt. Konformitätsrichtlinien definieren Regeln und Einstellungen, die Benutzer und Geräte erfüllen müssen, um als „konform“ zu gelten. Durch Kombination von Konformitätsrichtlinien mit dem bedingten Zugriff können Administratoren Benutzer und Geräte blockieren, die die Regeln nicht erfüllen.
+Viele MDM-Lösungen (Mobile Device Management) tragen zum Schutz von Unternehmensdaten bei, da Benutzer und Geräte bestimmte Anforderungen erfüllen müssen. In Intune wird dieses Feature „Konformitätsrichtlinien“ genannt. Konformitätsrichtlinien definieren Regeln und Einstellungen, die Benutzer und Geräte erfüllen müssen, um als „konform“ zu gelten. In Kombination mit dem bedingten Zugriff können Administratoren Benutzer und Geräte blockieren, die die Regeln nicht erfüllen.
 
 Beispielsweise kann der Intune-Administrator anfordern, dass:
 
@@ -130,21 +130,6 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 
 - Wenn eine Richtlinie für bedingten Zugriff für den Benutzer gilt, wird das Gerät blockiert.
 - Die Unternehmensportal-App benachrichtigt den Benutzer über Konformitätsprobleme.
-
-## <a name="azure-classic-portal-vs-azure-portal"></a>Klassisches Azure-Portal im Vergleich mit dem Azure-Portal
-
-Der Hauptunterschied bei der Verwendung von Gerätekonformitätsrichtlinien im Azure-Portal:
-
-- Im Azure-Portal werden die Konformitätsrichtlinien separat für jede unterstützte Plattform erstellt.
-- Im klassischen Azure-Portal wird eine Gerätekonformitätsrichtlinie für alle unterstützten Plattformen verwendet.
-
-<!--- - In the Azure portal, you have the ability to specify actions and notifications that are initiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
-
-- In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
-
-Gerätekonformitätsrichtlinien, die im [klassischen Portal](https://manage.microsoft.com) erstellt wurden, erscheinen nicht im [Azure-Portal](https://portal.azure.com). Sie sind jedoch weiterhin für Benutzer bestimmt und können mithilfe des klassischen Portals verwaltet werden.
-
-Sie müssen eine neue Gerätekonformitätsrichtlinien im Azure-Portal erstellen, um die Features für Gerätekonformität im Azure-Portal zu nutzen. Wenn Sie eine Gerätekonformitätsrichtlinie im Azure-Portal einem Benutzer zuweisen, dem auch eine Gerätekonformitätsrichtlinie aus dem klassischen Portal zugewiesen wurde, haben die Gerätekonformitätsrichtlinien aus dem Azure-Portal Vorrang vor denen, die im klassischen Portal erstellt wurden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
