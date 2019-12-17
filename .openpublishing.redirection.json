@@ -1313,7 +1313,7 @@
         {
             "source_path": "intune/ignite-intune-docs.md",
             "redirect_url": "/intune/index",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "intune-azure/introduction/contact-assisted-phone-support-for-microsoft-intune.md",
@@ -4158,7 +4158,7 @@
         {
             "source_path": "intune-classic/index.md",
             "redirect_url": "/intune/index",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "intune/plan-design/additional-resources.md",
