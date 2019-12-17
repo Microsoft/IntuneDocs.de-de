@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86b61f628dc559bf0520dbe16ef58644bd360269
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.openlocfilehash: 0edfd9b8ee8b45952d9c22d5365d09d125ea7710
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188448"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74784254"
 ---
 # <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Konfigurieren von Intune-Einstellungen für Bildungseinrichtungen für freigegebene iPad-Geräte
 

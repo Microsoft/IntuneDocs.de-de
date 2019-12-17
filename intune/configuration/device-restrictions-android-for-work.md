@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b38ab611ecf6a33c8cc48fa120751af8548a7f95
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 904c3d2267decdfa3929bf29376c05a995c77eb8
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390919"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946651"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Android Enterprise-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune
 
@@ -31,6 +31,8 @@ In diesem Artikel werden die verschiedenen Einstellungen aufgeführt und beschri
 [Erstellen Sie eine Gerätekonfigurationsprofil.](device-restrictions-configure.md)
 
 ## <a name="device-owner-only"></a>Nur Gerätebesitzer
+
+Diese Einstellungen gelten für Android Enterprise-Registrierungs Typen, bei denen InTune das gesamte Gerät steuert, z. b. vollständig verwaltete oder dedizierte Android Enterprise-Geräte.
 
 ### <a name="general-settings"></a>Allgemeine Einstellungen
 
@@ -229,7 +231,7 @@ Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dediz
   Wählen Sie **Nicht konfiguriert** aus, um das Always On-VPN für alle VPN-Clients zu deaktivieren.
 
   > [!IMPORTANT]
-  > Stellen Sie sicher, dass Sie nur eine Always On-VPN-Richtlinie auf einem einzelnen Gerät bereitstellen. Die Bereitstellung mehrerer Always VPN-Richtlinien auf einem einzelnen Gerät wird nicht unterstützt.
+  > Stellen Sie sicher, dass Sie nur eine Always On-VPN-Richtlinie auf einem einzelnen Gerät bereitstellen. Die Bereitstellung mehrerer Always On-VPN-Richtlinien auf einem einzelnen Gerät wird nicht unterstützt.
 
 - **VPN-Client**: Wählen Sie einen VPN-Client aus, der Always On unterstützt. Folgende Optionen sind verfügbar:
   - Cisco AnyConnect
@@ -242,6 +244,7 @@ Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dediz
   > [!IMPORTANT]
   > - Der von Ihnen ausgewählte VPN-Client muss auf dem Gerät installiert sein und VPN pro Anwendung in Arbeitsprofilen unterstützen. Andernfalls tritt ein Fehler auf. 
   > - Sie müssen die VPN-Client-App im **verwalteten Google Play Store** genehmigen, die App mit Intune synchronisieren und die App auf dem Gerät bereitstellen. Danach wird die App im Arbeitsprofil des Benutzers installiert.
+  > - Sie müssen den VPN-Client weiterhin mit einem [VPN-Profil](vpn-settings-android-enterprise.md)oder einem App- [Konfigurations Profil](../apps/app-configuration-policies-use-android.md)konfigurieren.
   > - Es gibt eventuell bekannte Probleme bei der Verwendung von VPN pro App mit F5 Access for Android 3.0.4. Weitere Informationen finden Sie unter [F5's release notes for F5 Access for Android 3.0.4 (Versionshinweise zu F5 Access for Android 3.0.4)](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android).
 
 - **Sperrmodus**: Wählen Sie **Aktivieren** aus, um den gesamten Netzwerkdatenverkehr zu zwingen, den VPN-Tunnel zu verwenden. Wenn keine Verbindung zum VPN hergestellt wird, hat das Gerät keinen Netzwerkzugriff.
@@ -264,6 +267,8 @@ Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dediz
     Weitere Informationen zu PAC-Dateien finden Sie unter [Proxy Auto-Configuration (PAC) File](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (öffnet eine nicht-Microsoft-Website).
 
 ## <a name="work-profile-only"></a>Nur Arbeitsprofil
+
+Diese Einstellungen gelten für Android Enterprise-Registrierungs Typen, bei denen InTune nur das Arbeitsprofil steuert, z. b. die Registrierung von Android-Unternehmensprofilen auf einem persönlichen oder Bring-your-own-Gerät (BYOD).
 
 ### <a name="work-profile-settings"></a>Arbeitsprofileinstellungen
 

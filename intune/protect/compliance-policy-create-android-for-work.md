@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: be1fbb72821b61566da84d6f98094c9a2f6ffef2
-ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72810262"
 ---
 # <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Android Enterprise-Einstellungen, um Geräte mit Intune als konform oder nicht konform zu kennzeichnen
@@ -95,7 +95,7 @@ Als Intune-Administrator verwenden Sie diese Konformitätseinstellungen, um die 
   Diese Einstellung gilt für die Geräteebene. Wenn Sie nur ein Kennwort auf Arbeitsprofilebene anfordern müssen, verwenden Sie eine Konfigurationsrichtlinie. Siehe [Gerätekonfigurationseinstellungen für Android Enterprise](../configuration/device-restrictions-android-for-work.md).
 
   - **Erforderlicher Kennworttyp:** Wählen Sie aus, ob ein Kennwort nur aus numerischen Zeichen oder aus einer Kombination aus Zahlen und anderen Zeichen bestehen soll. Folgende Optionen sind verfügbar:
-    - **Standardgerät** : Wenn Sie die Kenn Wort Konformität auswerten möchten, achten Sie darauf, dass Sie die Kenn Wort Sicherheit außer der **Standardeinstellung des Geräts**  
+    - **Gerätestandard**: Zur Auswertung der Kennwortkonformität sollten Sie in jedem Fall eine andere Einstellung für die Kennwortstärke als **Gerätestandard** angeben.  
     - **Kennwort erforderlich, keine Einschränkungen**
     - **Schwach biometrisch** - [ Vergleich von stark und schwach biometrisch](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (öffnet Android-Website)
     - **Numerisch** (*Standardeinstellung*): Kennwort darf nur aus Zahlen bestehen, z.B. `123456789`. Geben Sie die **minimale Kennwortlänge** ein, die Benutzer für das Kennwort eingeben müssen (4 bis 16 Zeichen).
@@ -232,7 +232,7 @@ Als Intune-Administrator verwenden Sie diese Konformitätseinstellungen, um die 
 
 - **Laufzeitintegrität der Unternehmensportal-App**: 
   - **Nicht konfiguriert** (*Standardeinstellung*): Diese Einstellung wird nicht für die Konformitätsprüfung ausgewertet.
-  - **Erforderlich**: Wählen Sie diese Einstellung aus, um sicherzustellen, dass die Unternehmensportal-App alle folgenden Anforderungen erfüllt:
+  - **Erforderlich**: Wählen Sie diese Einstellung aus, um sicherzustellen, dass die Unternehmensportal-App alle folgenden *Anforderungen* erfüllt:
     - Die Standardlaufzeitumgebung ist installiert.
     - Die App ist ordnungsgemäß signiert.
     - Die App befindet sich nicht im Debug-Modus.

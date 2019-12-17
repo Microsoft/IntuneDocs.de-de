@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 04b284a62076122cec70b6b455151a0377470521
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74540741"
 ---
 # <a name="in-development-for-microsoft-intune---december-2019"></a>In der Entwicklung befindliche Microsoft Intune-Features: Dezember 2019
@@ -138,19 +138,19 @@ Gilt für:
 Sie können eine Liste der genehmigten Tastaturen für die Verwendung in verwalteten Android-Apps angeben. In der verwalteten APP wird der Benutzer aufgefordert, zu einem der genehmigten Tastaturen zu wechseln, die bereits auf dem Gerät installiert sind, oder Sie werden ggf. an den Google Play Store umgeleitet, um eines der genehmigten Tastaturen herunterzuladen und einzurichten. Der Benutzer kann nur Textfelder in einer verwalteten App bearbeiten, wenn die aktive Tastatur eine der genehmigten Tastaturen ist.
 
 ### <a name="use-pkcs-certificates-with-wi-fi-profiles-on-windows-10-and-later-devices---3246388----"></a>Verwenden von PKCS-Zertifikaten mit WLAN-Profilen auf Geräten mit Windows 10 und höher<!-- 3246388  -->
-Derzeit können Sie Windows-WLAN-Profile mit SCEP-Zertifikaten authentifizieren (**Gerätekonfiguration** > **profile** > **Profil erstellen** > **Windows 10 und** höher für die Plattform > **Wi-Fi** für Profiltyp > **Enterprise** > **EAP-Typ**). Sie können PKCS-Zertifikate mit Ihren Windows Wi-Fi-Profilen verwenden. Diese Funktion ermöglicht Benutzern das Authentifizieren von WLAN-Profilen mithilfe neuer oder vorhandener PKCS-Zertifikat Profile in Ihrem Mandanten. 
+Derzeit können Sie Windows-WLAN-Profile mit SCEP-Zertifikaten (**Gerätekonfiguration** > **profile** > **Profil erstellen** > **Windows 10 und** höher für die Plattform > **Wi-Fi** für den Profiltyp > **Enterprise** > **EAP-Typ**) authentifizieren. Sie können PKCS-Zertifikate mit Ihren Windows Wi-Fi-Profilen verwenden. Diese Funktion ermöglicht Benutzern das Authentifizieren von WLAN-Profilen mithilfe neuer oder vorhandener PKCS-Zertifikat Profile in Ihrem Mandanten. 
 
 Weitere Informationen zu WLAN-Profilen finden [Sie unter Hinzufügen von WLAN-Einstellungen für Windows 10-und spätere Geräte in InTune](../configuration/wi-fi-settings-windows.md).
 
 Gilt für:
 - Windows 10 und höher
 
-### <a name="new-exchangeactivesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824----"></a>Neue ExchangeActiveSync-Einstellungen beim Erstellen eines e-Mail-Geräte Konfigurations Profils auf IOS-Geräten<!-- 4892824  --> 
-Auf IOS/ipados-Geräten können Sie e-Mail-Konnektivität in einem Geräte Konfigurations Profil konfigurieren (**Gerätekonfiguration** > **profile** > **Erstellen eines Profils** > **IOS/ipados** für die Plattform > **e-Mail** . für Profiltyp). 
+### <a name="new-exchangeactivesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824----"></a>Neue ExchangeActiveSync-Einstellungen beim Erstellen eines E-Mail-Gerätekonfigurationsprofils auf iOS-Geräten<!-- 4892824  --> 
+Sie können auf iOS- und iPadOS-Geräten die E-Mail-Konnektivität in einem Gerätekonfigurationsprofil konfigurieren (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **iOS/iPadOS** für Plattform > **E-Mail** für den Profiltyp). 
 
 Es sind neue ExchangeActiveSync-Einstellungen verfügbar, einschließlich:
 - Wählen Sie die zu synchronisierenden Dienste (oder die Synchronisierung blockieren) aus, z. b. e-Mail, Kalender und Kontakte.
-- Hiermit wird Benutzern das Ändern der Synchronisierungs Einstellungen für diese Dienste auf Ihren Geräten gestattet (oder blockiert). 
+- Erlauben Sie Benutzern, die Synchronisierungseinstellungen für diese Dienste auf ihren Geräten zu ändern (oder blockieren Sie sie). 
 
 Informationen zu den aktuellen Einstellungen finden Sie unter [e-Mail-Profileinstellungen für IOS-Geräte in InTune](../configuration/email-settings-ios.md).
 
@@ -158,8 +158,8 @@ Gilt für:
 - iOS 13.0 und neuer
 - iOS 13.0 und höher
 
-### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-device-owner-and-dedicated-devices---5353228----"></a>Verhindern, dass Benutzer persönliche Google-Konten zu Android-Unternehmens Geräte Besitzern und dedizierten Geräten hinzufügen<!-- 5353228  -->
-Sie können verhindern, dass Benutzer persönliche Google-Konten auf Android-Unternehmens Geräte Besitzern und dedizierten Geräten erstellen (**Gerätekonfiguration** > **profile** > **Profil erstellen** > **Android Enterprise** nur für Platt Form > **Gerätebesitzer > Geräte Einschränkungen** für den Profiltyp > **Benutzer-und Kontoeinstellungen**).
+### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-device-owner-and-dedicated-devices---5353228----"></a>Verhindern, dass Benutzer Android Enterprise-Gerätebesitzern und dedizierten Geräten persönliche Google-Konten hinzufügen<!-- 5353228  -->
+Sie werden Benutzer daran hindern können, persönliche Google-Konten für Android Enterprise-Gerätebesitzer und auf dedizierten Geräten zu erstellen (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Android Enterprise** für Plattform > **Nur Gerätebesitzer > Geräteeinschränkungen** für Profiltyp > **Benutzer- und Konteneinstellungen**).
 
 Sie finden die aktuellen konfigurierbaren Einstellungen unter [Android Enterprise-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune](../configuration/device-restrictions-android-for-work.md).
 
@@ -167,8 +167,8 @@ Gilt für:
 - Android Enterprise-Gerätebesitzer
 - Dedizierte Android Enterprise-Geräte
 
-### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-ios-device-restrictions-profile---5468501----"></a>Die Server seitige Protokollierung für die Siri-Befehls Einstellung wird im IOS-Geräte Einschränkungs Profil entfernt.<!-- 5468501  -->
-Auf IOS-Geräten können Sie ein Geräte Einschränkungs Profil erstellen, das die serverseitige Protokollierung für Siri-Befehle konfiguriert (**Geräte Konfigurations** > **profile** > **Profil** > **IOS/ipados** für die Plattform erstellen). > **Geräte Einschränkungen** für den Profiltyp > **integrierten Apps**). Die Einstellung **Server seitige Protokollierung für Siri-Befehle** wird entfernt.
+### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-ios-device-restrictions-profile---5468501----"></a>Entfernung der serverseitigen Protokollierung für die Einstellung der Siri-Befehle im iOS-Profil zur Geräteeinschränkung<!-- 5468501  -->
+Auf IOS-Geräten können Sie ein Geräte Einschränkungs Profil erstellen, das die serverseitige Protokollierung für Siri-Befehle konfiguriert (**Geräte Konfigurations** > **profile** > **Erstellen eines Profils** > **IOS/ipados** für Platt Form > **Geräte Einschränkungen** für den Profiltyp > **integrierte apps**). Die Einstellung **Server seitige Protokollierung für Siri-Befehle** wird entfernt.
 
 Diese Einstellung wird aus der InTune-Verwaltungskonsole entfernt. Diese Einstellung hat keine Auswirkung auf das Gerät, auch wenn vorhandene Richtlinien, bei denen diese Einstellung konfiguriert ist, die Einstellung weiterhin anzeigen. Wenn Sie die Einstellung aus vorhandenen Richtlinien entfernen möchten, klicken Sie auf die Richtlinie, nehmen Sie eine kleine Bearbeitung vor, speichern Sie Sie, und die Richtlinie wird aktualisiert.
 

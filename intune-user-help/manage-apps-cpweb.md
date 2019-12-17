@@ -20,16 +20,16 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: edc45fb3ddab43ef77a3f072c5a1a31f8f88c957
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506109"
 ---
 # <a name="manage-apps-from-the-company-portal-website"></a>Verwalten von Apps von der Unternehmensportalwebsite 
 Besuchen Sie die [Unternehmensportal-Website](https://portal.manage.microsoft.com) , um Apps aus Ihrer Organisation anzuzeigen und zu verwalten. 
 
-## <a name="view-all-apps"></a>Alle apps anzeigen  
+## <a name="view-all-apps"></a>Anzeigen aller Apps  
 Wählen Sie im Menü **apps** aus, um alle apps anzuzeigen, die in Ihrer Organisation zur Verfügung gestellt wurden. 
 
    ![Screenshot der Seite mit den Unternehmensportal Websites, der Seite "Apps" mit den Optionen zur Verbesserung](./media/intune-view-apps-1907.png)  
@@ -83,7 +83,7 @@ Wählen Sie **verfeinern** aus, um Filter-und Sortieroptionen anzuzeigen. Filter
 Benötigen Sie weitere Hilfe? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).  
 
 ### <a name="available-and-required-apps"></a>Verfügbare und erforderliche apps
-Apps werden Ihnen von Ihrer Organisation zugewiesen und als verfügbar oder erforderlich bezeichnet. Auf der Seite **Installed apps**  wird angezeigt, welche apps Sie unter dem **Assignment Typ**  Spalte haben. 
+Apps werden Ihnen von Ihrer Organisation zugewiesen und als verfügbar oder erforderlich bezeichnet. Auf der Seite **installierte apps** wird angezeigt, welche apps Sie in der Spalte **Zuweisungstyp** haben. 
 
 
 * Verfügbare apps: diese apps werden von Ihrer Organisation ausgewählt und sind für die Arbeit oder Schule geeignet. Sie sind optional für die Installation, und sind die einzigen apps, die Sie im Unternehmensportal finden, die Sie installieren möchten. 

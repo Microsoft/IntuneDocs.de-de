@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e71ae2d2bcee22040c256ea711edd22b1d1fc80a
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 46b46cd4a407df686e094198c588371ed4a01bb6
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199271"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832575"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Behandlung von Problemen bei der iOS-Geräteregistrierung in Microsoft Intune
 
@@ -136,10 +136,10 @@ Wenn Ihr Unternehmen mehrere Domänen für die Anmeldeinformationen der Benutzer
 **Ursache:** Der Benutzer versucht, mehr Geräte als das Registrierungs Limit für Geräte zu registrieren.
 
 #### <a name="resolution"></a>Lösung
-1. Öffnen Sie das [InTune-Verwaltungs Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) , > **Geräte** > **alle Geräte**, und überprüfen Sie die Anzahl der Geräte, die der Benutzer registriert hat.
+1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)die Option **Geräte** > **alle Geräte**aus, und überprüfen Sie die Anzahl der Geräte, die der Benutzer registriert hat.
     > [!NOTE]
     > Außerdem sollten Sie den betroffenen Benutzer beim [InTune-Benutzer Portal](https://portal.manage.microsoft.com/) anmelden und Geräte überprüfen, die registriert wurden. Möglicherweise befinden sich Geräte, die im [InTune-Benutzer Portal](https://portal.manage.microsoft.com/) angezeigt werden, aber nicht im [InTune-Verwaltungs Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview). diese Geräte zählen auch zu dem Grenzwert für die Geräteregistrierung.
-2. Wechseln Sie zu **Administrator** > **Verwaltung mobiler Geräte** > Registrierungs **Regeln** > Überprüfen Sie den Grenzwert für die Geräteregistrierung. Der Grenzwert ist standardmäßig auf 15 festgelegt. 
+2. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)die Option **Geräte** > Registrierungs **Beschränkungen** > Überprüfen Sie den Grenzwert für die Geräteregistrierung. Der Grenzwert ist standardmäßig auf 15 festgelegt. 
 3. Wenn die Anzahl der registrierten Geräte den Grenzwert erreicht hat, entfernen Sie unnötige Geräte, oder erhöhen Sie den Grenzwert für die Geräteregistrierung. Da jedes registrierte Gerät eine InTune-Lizenz beansprucht, empfiehlt es sich, dass Sie immer unnötige Geräte zuerst entfernen.
 4. Registrieren Sie das Gerät erneut.
 
@@ -230,7 +230,7 @@ Wenn Sie ein DEP-verwaltetes Gerät einschalten, dem ein Registrierungs Profil z
 #### <a name="resolution"></a>Lösung
 
 1. Bearbeiten Sie das Registrierungs Profil. Sie können Änderungen am Profil vornehmen. Der Zweck besteht darin, die Änderungszeit des Profils zu aktualisieren.
-2. Synchronisieren von DEP-verwalteten Geräten: Öffnen Sie das InTune-Portal > **Admin** > die **Verwaltung mobiler Geräte** > **IOS** > **Programm zur Geräteregistrierung** > **Jetzt synchronisieren**. Eine Synchronisierungsanforderung wird an Apple gesendet.
+2. Synchronisieren DEP-verwalteter Geräte: Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Geräte** > **iOS** > **iOS-Registrierung** > **Registrierungsprogrammtoken** aus, und wählen Sie ein Token aus der Liste und anschließend **Jetzt synchronisieren** aus. Eine Synchronisierungsanforderung wird an Apple gesendet.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>DEP-Registrierung bei Benutzeranmeldung hängen
 Wenn Sie ein DEP-verwaltetes Gerät einschalten, dem ein Registrierungs Profil zugewiesen ist, wird das erste Setup nach der Eingabe der Anmelde Informationen geklemmt.
@@ -244,5 +244,5 @@ Deaktivieren Sie die MFA, und registrieren Sie das Gerät erneut.
 
 - [Behandlung von Problemen bei der Geräteregistrierung bei Intune](../troubleshoot-device-enrollment-in-intune.md)
 - [Stellen Sie eine Frage im Intune-Forum](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
-- [Überprüfen Sie den Microsoft InTune Support Team Blog.](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
-- [Überprüfen Sie den Microsoft Enterprise Mobility and Security-Blog](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
+- [Lesen Sie den Blog des Microsoft Intune-Supportteams.](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
+- [Lesen Sie den Blog zu Microsoft Enterprise Mobility + Security.](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)

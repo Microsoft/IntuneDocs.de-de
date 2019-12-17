@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 12/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5e1e1de0c8ec80a390f76f5e8de3965d4f800a9
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.openlocfilehash: 78daf56f7e1d22b88d7134ac6cea86f1d999f0c6
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188157"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860246"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Einstellungen für Windows 10-Geräte (und höher) zum Zulassen oder Einschränken von Features mit Intune
 
@@ -42,11 +42,11 @@ Diese Einstellungen verwenden den [ApplicationManagement-Richtlinien-CSP](https:
 - **App Store** (nur Mobilgeräte): **Nicht konfiguriert** (Standard) ermöglicht Endbenutzern Zugriff auf den App Store auf mobilen Geräte. **Blockieren** verhindert die Verwendung von App Store.
 - **Apps aus Store automatisch aktualisieren**: **Nicht konfiguriert** (Standard) ermöglicht die automatische Aktualisierung von Apps, die aus dem Microsoft Store installiert wurden. **Blockieren** verhindert, dass Updates automatisch installiert werden.
 - **Installation vertrauenswürdiger Apps**: Wählen Sie diese Option aus, wenn Apps installiert werden können, die nicht aus dem Microsoft Store stammen. Dies wird auch als Querladen bezeichnet. Querladen bedeutet Installieren und anschließendes Ausführen oder Testen einer App, die nicht durch den Microsoft Store zertifiziert ist. Beispielsweise kann es sich um eine App handeln, die nur für Ihr Unternehmen intern ist. Folgende Optionen sind verfügbar:
-  - **Nicht konfiguriert** (Standard): Verwendet die Betriebssystem-Standardeinstellung.
+  - **Nicht konfiguriert** (Standardeinstellung): Diese Einstellung wird von InTune nicht geändert oder aktualisiert.
   - **Blockieren**: Verhindert Querladen. Apps, die nicht auf dem Microsoft Store stammen, können nicht installiert werden.
   - **Zulassen**: Ermöglicht Querladen. Apps, die nicht auf dem Microsoft Store stammen, können installiert werden.
 - **Entwicklersperre aufheben**: Ermöglicht Endbenutzern, Windows-Entwicklereinstellungen (z.B. das Zulassen quergeladener Apps) zu ändern. Folgende Optionen sind verfügbar:
-  - **Nicht konfiguriert** (Standard): Verwendet die Betriebssystem-Standardeinstellung.
+  - **Nicht konfiguriert** (Standardeinstellung): Diese Einstellung wird von InTune nicht geändert oder aktualisiert.
   - **Blockieren**: Verhindert den Entwicklermodus und das Querladen von Apps.
   - **Zulassen**: Erlaubt den Entwicklermodus und das Querladen von Apps.
 
@@ -87,7 +87,7 @@ Diese Einstellungen verwenden die [Konnektivitätsrichtlinien](https://docs.micr
 - [WLAN-Richtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi)
 
 - **Mobilfunkdatenkanal**: Ermöglicht, dass Endbenutzer Daten verbrauchen (wie z.B. beim Browsen im Web), wenn sie mit einem Mobilfunknetz verbunden sind. Folgende Optionen sind verfügbar:
-  - **Nicht konfiguriert** (Standard): Verwendet die Betriebssystem-Standardeinstellung, die den Mobilfunkdatenkanal erlauben kann. Endbenutzer können diese Funktion deaktivieren.
+  - **Nicht konfiguriert** (Standardeinstellung): Diese Einstellung wird von InTune nicht geändert oder aktualisiert. Endbenutzer können diese Funktion deaktivieren.
   - **Blockieren**: Der Mobilfunkdatenkanal ist unzulässig. Endbenutzer können diese Funktion nicht aktivieren.
   - **Zulassen (Bearbeitung nicht möglich)** : Ermöglicht den Mobilfunkdatenkanal. Endbenutzer können diese Funktion nicht deaktivieren.
 
@@ -139,24 +139,24 @@ Diese Einstellungen verwenden den [EnterpriseCloudPrint-Richtlinien-CSP](https:/
 ## <a name="control-panel-and-settings"></a>Systemsteuerung und Einstellungen
 
 - **Einstellungen-App**: **Blockieren** verhindert, dass Endbenutzer Zugriff auf die Windows-Einstellungen-App besitzen. Die Standardeinstellung **Nicht konfiguriert** ermöglicht es Benutzern, die Einstellungen-App auf dem Gerät zu öffnen.
-  - **System**: **Blockieren**  verhindert den Zugriff auf den Systembereich der Einstellungen-App. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
+  - **System**: **Blockieren**  verhindert den Zugriff auf den Systembereich der Einstellungen-App. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
     - **Änderung der Energie- und Energiesparmoduseinstellungen (nur Desktop)** : **Blockieren** verhindert, dass der Endbenutzer Energie- und Energiesparmoduseinstellungen auf dem Gerät ändert. **Nicht konfiguriert** (Standard) ermöglicht Benutzern, die Energie- und Energiesparmoduseinstellungen zu ändern.
-  - **Geräte**: **Blockieren** verhindert den Zugriff auf den Gerätebereich der Einstellungen-App auf dem Gerät. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
-  - **Netzwerk/Internet**: **Blockieren** verhindert den Zugriff auf den Netzwerk- und Internetbereich der Einstellungen-App auf dem Gerät. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
-  - **Personalisierung**: **Blockieren** verhindert den Zugriff auf den Personalisierungsbereich der Einstellungen-App auf dem Gerät. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
-  - **Apps**: **Blockieren** verhindert den Zugriff auf den Apps-Bereich der Einstellungen-App auf dem Gerät. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
-  - **Konten**: **Blockieren** verhindert den Zugriff auf den Kontenbereich der Einstellungen-App auf dem Gerät. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
-  - **Uhrzeit und Sprache**: **Blockieren** verhindert den Zugriff auf den Uhrzeit- und Sprachbereich der Einstellungen-App auf dem Gerät. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
-    - **Änderung der Systemzeit**: **Blockieren** verhindert, dass der Endbenutzer auf dem Gerät die Datums- und Uhrzeiteinstellungen ändert. **Nicht konfiguriert** ermöglicht dem Benutzer, diese Einstellungen zu ändern.
-    - **Änderung von Regionseinstellungen (nur Desktop)** : **Blockieren** verhindert, dass der Endbenutzer Regionseinstellungen auf dem Gerät ändert. **Nicht konfiguriert** ermöglicht dem Benutzer, diese Einstellungen zu ändern.
-    - **Änderung von Spracheinstellungen (nur Desktop)** : **Blockieren** verhindert, dass der Endbenutzer Spracheinstellungen auf dem Gerät ändert. **Nicht konfiguriert** ermöglicht dem Benutzer, diese Einstellungen zu ändern.
+  - **Geräte**: **Blockieren** verhindert den Zugriff auf den Gerätebereich der Einstellungen-App auf dem Gerät. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+  - **Netzwerk/Internet**: **Blockieren** verhindert den Zugriff auf den Netzwerk- und Internetbereich der Einstellungen-App auf dem Gerät. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+  - **Personalisierung**: **Blockieren** verhindert den Zugriff auf den Personalisierungsbereich der Einstellungen-App auf dem Gerät. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+  - **Apps**: **Blockieren** verhindert den Zugriff auf den Apps-Bereich der Einstellungen-App auf dem Gerät. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+  - **Konten**: **Blockieren** verhindert den Zugriff auf den Kontenbereich der Einstellungen-App auf dem Gerät. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+  - **Uhrzeit und Sprache**: **Blockieren** verhindert den Zugriff auf den Uhrzeit- und Sprachbereich der Einstellungen-App auf dem Gerät. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+    - **Änderung der Systemzeit**: **Blockieren** verhindert, dass der Endbenutzer auf dem Gerät die Datums- und Uhrzeiteinstellungen ändert. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert. Benutzer können diese Einstellungen ändern.
+    - **Änderung von Regionseinstellungen (nur Desktop)** : **Blockieren** verhindert, dass der Endbenutzer Regionseinstellungen auf dem Gerät ändert. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert. Benutzer können diese Einstellungen ändern.
+    - **Änderung von Spracheinstellungen (nur Desktop)** : **Blockieren** verhindert, dass der Endbenutzer Spracheinstellungen auf dem Gerät ändert. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert. Benutzer können diese Einstellungen ändern.
 
       [Einstellungsrichtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings)
 
-  - **Gaming**: **Blockieren** verhindert den Zugriff auf den Gamingbereich der Einstellungen-App auf dem Gerät. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
-  - **Erleichterte Bedienung**: **Blockieren** verhindert den Zugriff auf den Bereich für erleichterte Bedienung der Einstellungen-App auf dem Gerät. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
-  - **Datenschutz**: **Blockieren** verhindert den Zugriff auf den Datenschutzbereich der Einstellungen-App auf dem Gerät. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
-  - **Update und Sicherheit**: **Blockieren** verhindert den Zugriff auf den Bereich für Update und Sicherheit der Einstellungen-App auf dem Gerät. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
+  - **Gaming**: **Blockieren** verhindert den Zugriff auf den Gamingbereich der Einstellungen-App auf dem Gerät. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+  - **Erleichterte Bedienung**: **Blockieren** verhindert den Zugriff auf den Bereich für erleichterte Bedienung der Einstellungen-App auf dem Gerät. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+  - **Datenschutz**: **Blockieren** verhindert den Zugriff auf den Datenschutzbereich der Einstellungen-App auf dem Gerät. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+  - **Update und Sicherheit**: **Blockieren** verhindert den Zugriff auf den Bereich für Update und Sicherheit der Einstellungen-App auf dem Gerät. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
 
 ## <a name="display"></a>Anzeige
 
@@ -178,28 +178,31 @@ Sie können auch eine CSV-Datei mit der Liste der Apps **importieren**.
 
 Diese Einstellungen verwenden den [Benutzeroberflächenrichtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience), der auch die unterstützten Windows-Editionen auflistet. 
 
-- **Bildschirmaufnahme** (nur Mobilgeräte): **Blockieren** verhindert, dass Benutzer Screenshots auf dem Gerät abrufen können. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
-- **Kopieren und einfügen (nur Mobilgeräte)** : **Blockieren** verhindert, dass Endbenutzer Kopieren und Einfügen für Apps auf dem Gerät verwenden können. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
-- **Manuelles Aufhebung der Registrierung**: **Blockieren** verhindert, dass Benutzer das Arbeitsplatzkonto über die Arbeitsplatz-Systemsteuerung auf dem Gerät löschen können. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
+- **Bildschirmaufnahme** (nur Mobilgeräte): **Blockieren** verhindert, dass Benutzer Screenshots auf dem Gerät abrufen können. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+- **Kopieren und einfügen (nur Mobilgeräte)** : **Blockieren** verhindert, dass Endbenutzer Kopieren und Einfügen für Apps auf dem Gerät verwenden können. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+- **Manuelles Aufhebung der Registrierung**: **Blockieren** verhindert, dass Benutzer das Arbeitsplatzkonto über die Arbeitsplatz-Systemsteuerung auf dem Gerät löschen können. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
 
   Diese Richtlinieneinstellung wird nicht angewendet, wenn der Computer mit Azure Active Directory (Azure AD) verknüpft ist und die automatische Registrierung aktiviert ist.
 
-- **Manuelle Installation von Stammzertifikaten (nur Mobilgeräte)** : **Blockieren** hindert den Benutzer daran, Stammzertifikate und CAP-Zwischenzertifikate manuell zu installieren. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
-- **Kamera**: **Blockieren** verhindert, dass Endbenutzer die Kamera auf dem Gerät verwenden können. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
-- **OneDrive-Dateisynchronisierung**: **Blockieren** hindert den Endbenutzer daran, Dateien vom Gerät mit OneDrive zu synchronisieren. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
-- **Wechselmedien**: **Blockieren** verhindert, dass Benutzer externe Speichergeräte wie SD-Karten mit dem Gerät verwenden können. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
-- **GeoLocation**: **Blockieren** verhindert, dass Endbenutzer Ortungsdienste auf dem Gerät aktivieren können. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
-- **Internetfreigabe**: **Blockieren** verhindert die gemeinsame Nutzung der Internetverbindung auf dem Gerät. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
-- **Zurücksetzung des Telefons**: **Blockieren** verhindert, dass Benutzer das Gerät zurücksetzen oder eine Zurücksetzung auf die Werkseinstellungen ausführen können. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
-- **USB-Verbindung**: **Blockieren** verhindert den Zugriff auf externe Speichergeräte über eine USB-Verbindung des Geräts. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig. Der Ladevorgang über USB ist von dieser Einstellung nicht betroffen.
-- **AntiTheft-Modus** (nur Mobilgeräte): **Blockieren** verhindert, dass Endbenutzer die Einstellung für den AntiTheft-Modus auf dem Gerät auswählen können. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
+- **Manuelle Installation von Stammzertifikaten (nur Mobilgeräte)** : **Blockieren** hindert den Benutzer daran, Stammzertifikate und CAP-Zwischenzertifikate manuell zu installieren. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+- **Kamera**: **Blockieren** verhindert, dass Endbenutzer die Kamera auf dem Gerät verwenden können. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+
+  [Kamera-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-camera)
+
+- **OneDrive-Dateisynchronisierung**: **Blockieren** hindert den Endbenutzer daran, Dateien vom Gerät mit OneDrive zu synchronisieren. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+- **Wechselmedien**: **Blockieren** verhindert, dass Benutzer externe Speichergeräte wie SD-Karten mit dem Gerät verwenden können. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+- **GeoLocation**: **Blockieren** verhindert, dass Endbenutzer Ortungsdienste auf dem Gerät aktivieren können. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+- **Internetfreigabe**: **Blockieren** verhindert die gemeinsame Nutzung der Internetverbindung auf dem Gerät. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+- **Zurücksetzung des Telefons**: **Blockieren** verhindert, dass Benutzer das Gerät zurücksetzen oder eine Zurücksetzung auf die Werkseinstellungen ausführen können. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+- **USB-Verbindung**: **Blockieren** verhindert den Zugriff auf externe Speichergeräte über eine USB-Verbindung des Geräts. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert. Der Ladevorgang über USB ist von dieser Einstellung nicht betroffen.
+- **AntiTheft-Modus** (nur Mobilgeräte): **Blockieren** verhindert, dass Endbenutzer die Einstellung für den AntiTheft-Modus auf dem Gerät auswählen können. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
 - **Cortana**: **Blockieren** deaktiviert den Sprach-Assistenten Cortana auf dem Gerät. Wenn Cortana deaktiviert ist, können Benutzer trotzdem suchen, um Elemente auf dem Gerät zu finden. **Nicht konfiguriert** (Standard) lässt Cortana zu.
 - **Sprachaufzeichnung** (nur Mobilgeräte): **Blockieren** verhindert, dass Endbenutzer die Sprachaufzeichnung auf dem Gerät verwenden können. **Nicht konfiguriert** (Standard) ermöglicht die Verwendung der Sprachaufzeichnung für Apps.
-- **Änderung des Gerätenamens** (nur Mobilgeräte): **Blockieren** verhindert, dass Benutzer den Namen des Geräts ändern können. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
-- **Bereitstellungspakete hinzufügen**: **Blockieren** verhindert, dass der Laufzeitkonfigurations-Agent Bereitstellungspakete auf dem Gerät installieren kann. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
-- **Bereitstellungspakete entfernen**: **Blockieren** verhindert, dass der Laufzeitkonfigurations-Agent Bereitstellungspakete vom Gerät entfernen kann. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
-- **Geräteerkennung**: **Blockieren** verhindert, dass ein Gerät von anderen Geräten erkannt wird. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
-- **Programmumschaltung** (nur mobile Geräte): **Blockieren** verhindert die Programmumschaltung auf dem Gerät. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
+- **Änderung des Gerätenamens** (nur Mobilgeräte): **Blockieren** verhindert, dass Benutzer den Namen des Geräts ändern können. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+- **Bereitstellungspakete hinzufügen**: **Blockieren** verhindert, dass der Laufzeitkonfigurations-Agent Bereitstellungspakete auf dem Gerät installieren kann. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+- **Bereitstellungspakete entfernen**: **Blockieren** verhindert, dass der Laufzeitkonfigurations-Agent Bereitstellungspakete vom Gerät entfernen kann. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+- **Geräteerkennung**: **Blockieren** verhindert, dass ein Gerät von anderen Geräten erkannt wird. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+- **Programmumschaltung** (nur mobile Geräte): **Blockieren** verhindert die Programmumschaltung auf dem Gerät. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
 - **Dialogfeld bei SIM-Kartenfehler (nur mobile Geräte)** : **Blockiert** die Anzeige einer Fehlermeldung auf dem Gerät, wenn keine SIM-Karte erkannt wird. **Nicht konfiguriert** (Standard) zeigt die Fehlermeldungen an.
 - **Ink-Arbeitsbereich**: Wählen Sie aus, ob und wie Benutzer Zugriff auf den Ink-Arbeitsbereich besitzen. Folgende Optionen sind verfügbar:
   - **Nicht konfiguriert** (Sperre): Aktiviert den Ink-Arbeitsbereich, und der Benutzer kann ihn über den Sperrbildschirm verwenden.
@@ -417,21 +420,21 @@ Diese Einstellungen verwenden den [DeviceLock-Richtlinien-CSP](https://docs.micr
   - **Wiederverwendung vorheriger Kennwörter verhindern**: Geben Sie die Anzahl von vorherigen Kennwörtern an, die nicht erneut verwendet werden dürfen (zwischen 1 und 24). Geben Sie z.B. `5` an, damit ein Benutzer sein neues Kennwort nicht auf sein aktuelles Kennwort oder eines seiner vorherigen vier Kennwörter festlegen kann.
   - **Kennwort anfordern, wenn Gerät aus Leerlaufzustand zurückkehrt (Mobile und Holographic)** : Wählen Sie **Erforderlich** aus, damit Benutzer ein Kennwort zum Entsperren des Geräts eingeben müssen, wenn sich dieses im Leerlauf befand. **Nicht konfiguriert** (Standard) erfordert keine PIN bzw. kein Kennwort, wenn das Gerät aus dem Leerlauf fortgesetzt wird.
   - **Einfache Kennwörter:** Legen Sie **Blockieren** fest, damit Benutzer kein einfaches Kennwort wie `1234` oder `1111` erstellen können. Legen Sie diese Option auf **Nicht konfiguriert** (Standard) fest, damit Benutzer Kennwörter wie `1234` oder `1111` erstellen können. Diese Einstellung ermöglicht es auch, die Verwendung von Windows-Bildcodes zu blockieren.
-- **Automatische Verschlüsselung bei AADJ**: Die Wahl von **Blockieren** verhindert die automatische BitLocker-Geräteverschlüsselung bei der Vorbereitung des Geräts für die erste Verwendung, wenn das Gerät Azure AD beitritt. **Nicht konfiguriert** (Standard) verwendet die Standardeinstellung des Betriebssystems, die ggf. die Verschlüsselung aktiviert. Weitere Informationen zur [Geräteverschlüsselung mit BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
+- **Automatische Verschlüsselung bei AADJ**: Die Wahl von **Blockieren** verhindert die automatische BitLocker-Geräteverschlüsselung bei der Vorbereitung des Geräts für die erste Verwendung, wenn das Gerät Azure AD beitritt. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert. Weitere Informationen zur [Geräteverschlüsselung mit BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
 
   [CSP: Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
 
-- **FIPS-Richtlinie (Federal Information Processing Standard)** : Bei Wahl von **Zulassen** wird die FIPS-Richtlinie (Federal Information Processing Standard) verwendet, die in den USA ein bundesgesetzlicher Standard für Verschlüsselung, Hashing und Signatur ist. Bei Wahl von **Nicht konfiguriert** (Standard) gilt die Standardeinstellung des Betriebssystems, die FIPS nicht verwendet.
+- **FIPS-Richtlinie (Federal Information Processing Standard)** : Bei Wahl von **Zulassen** wird die FIPS-Richtlinie (Federal Information Processing Standard) verwendet, die in den USA ein bundesgesetzlicher Standard für Verschlüsselung, Hashing und Signatur ist. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert. Der Standardwert des Betriebssystems verwendet nicht die Verwendung von PPS.
 
   [CSP: Cryptography/AllowFipsAlgorithmPolicy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
 
-- **Windows Hello-Geräteauthentifizierung**: Bei Wahl von **Zulassen** wird Benutzern ermöglicht, sich mit einem Windows Hello-Begleitgerät, wie beispielsweise einem Smartphone, Fitnessband oder IoT-Gerät, bei einem Windows 10-Computer anzumelden. Bei Wahl von **Nicht konfiguriert** (Standard) gilt die Standardeinstellung des Betriebssystems, die Windows Hello-Begleitgeräte an der Authentifizierung bei Windows hindern kann.
+- **Windows Hello-Geräteauthentifizierung**: Bei Wahl von **Zulassen** wird Benutzern ermöglicht, sich mit einem Windows Hello-Begleitgerät, wie beispielsweise einem Smartphone, Fitnessband oder IoT-Gerät, bei einem Windows 10-Computer anzumelden. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert. Der Standardwert des Betriebssystems verhindert möglicherweise, dass Windows Hello Begleit Geräte bei Windows authentifiziert werden.
 
   [CSP: Authentication/AllowSecondaryAuthenticationDevice](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
 
 - **Webanmeldung**: Ermöglicht die Unterstützung der Windows-Anmeldung für nicht zu AD FS (Active Directory-Verbunddienste) gehörige Verbundanbieter, wie beispielsweise SAML (Security Assertion Markup Language). SAML verwendet sichere Token, die Benutzern in Webbrowsern einmaliges Anmelden (SSO) ermöglichen. Folgende Optionen sind verfügbar:
 
-  - Bei Wahl von **Nicht konfiguriert** (Standard) wird die Standardeinstellung des Betriebssystems auf dem Gerätverwendet.
+  - **Nicht konfiguriert** (Standardeinstellung): Diese Einstellung wird von InTune nicht geändert oder aktualisiert.
   - **Aktiviert**: Der Anbieter für Webanmeldeinformationen ist für die Anmeldung aktiviert.
   - **Deaktiviert**: Der Anbieter für Webanmeldeinformationen ist für die Anmeldung deaktiviert.
 
@@ -488,7 +491,7 @@ Diese Einstellungen verwenden den [Datenschutzrichtlinien-CSP](https://docs.micr
 - **Eingabepersonalisierung**: **Blockieren** verhindert, dass Benutzer Sprache zum Diktieren verwenden und mit Cortana und anderen Apps sprechen können, die cloudbasierte Microsoft -Spracherkennung verwenden. Die Option ist deaktiviert, und Benutzer können Onlinespracherkennung mithilfe von Einstellungen nicht aktivieren. **Nicht konfiguriert** (Standard) ermöglicht Benutzern die Auswahl. Wenn Sie diese Dienste zulassen, kann Microsoft Sprachdaten erfassen, um den Dienst zu verbessern.
 - **Automatisches Akzeptieren der Zustimmungsaufforderung des Benutzers zu Kopplung und Datenschutz**: Wählen Sie **Zulassen** aus, damit Windows beim Ausführen von Apps Benachrichtigungen zur Zustimmung zu Kopplung und Datenschutz automatisch akzeptieren kann. **Nicht konfiguriert** (Standard) verhindert das automatische Akzeptieren des Fensters für die Zustimmung zu Kopplung und Datenschutz beim Öffnen von Apps.
 - **Benutzeraktivitäten veröffentlichen**: **Blockieren** Sie diese Einstellung, um geteilte Aktivitäten und die Ermittlungen von kürzlich verwendeten Ressourcen im Aktivitätsfeed zu vermeiden. **Nicht konfiguriert** (Standard) aktiviert dieses Feature, damit Apps Endbenutzeraktivitäten veröffentlichen können.
-- **Nur lokale Aktivitäten**: **Blockieren** Sie diese Einstellung, um geteilte Aktivitäten und Ermittlungen von kürzlich in der Programmumschaltung verwendeten Ressourcen anhand von ausschließlich lokalen Aktivitäten zu vermeiden. **Nicht konfiguriert** (Standard) aktiviert diese Einstellung.
+- **Nur lokale Aktivitäten**: **Blockieren** Sie diese Einstellung, um geteilte Aktivitäten und Ermittlungen von kürzlich in der Programmumschaltung verwendeten Ressourcen anhand von ausschließlich lokalen Aktivitäten zu vermeiden. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
 
 Sie können Informationen definieren, auf die alle Apps auf dem Gerät zugreifen können. Definieren Sie ebenfalls Ausnahmen für jede App mithilfe von **App-bezogenen Datenschutzausnahmen**.
 
@@ -533,7 +536,7 @@ Diese Einstellungen verwenden den [WirelessDisplay-Richtlinien-CSP](https://docs
   [System/AllowTelemetry-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)
 
 - **Microsoft Edge-Browserdaten an Microsoft 365 Analytics senden**: Um dieses Feature verwenden zu können, legen Sie für die Einstellung **Nutzungsdaten freigeben** **Erweitert** oder **Vollständig** fest. Dieses Feature steuert, welche Daten Microsoft Edge an Microsoft 365 Analytics für Unternehmensgeräte mit einer konfigurierten kommerziellen ID sendet. Folgende Optionen sind verfügbar:
-  - **Nicht konfiguriert**: Verwendung des Betriebssystemstandards, d.h. Browserverlaufsdaten werden möglicherweise nicht gesendet.
+  - **Nicht konfiguriert**: Diese Einstellung wird von InTune nicht geändert oder aktualisiert. Der Standardwert des Betriebssystems sendet möglicherweise keine Browserverlaufs Daten.
   - **Nur Intranetdaten senden**: Ermöglicht dem Administrator, den Intranetdatenverlauf zu senden.
   - **Nur Internetdaten senden**: Ermöglicht dem Administrator, den Internetdatenverlauf zu senden.
   - **Intranet- und Internetdaten senden**: Ermöglicht dem Administrator, den Intranet- und Internetdatenverlauf zu senden.
@@ -588,11 +591,11 @@ Diese Einstellungen verwenden den [Startrichtlinien-CSP](https://docs.microsoft.
 - **Benutzerkachel**: **Blockieren** blendet die Anzeige der Benutzerkachel im Startmenü aus. **Nicht konfiguriert** (Standard) zeigt die Benutzerkachel an und legt auch die folgenden Einstellungen fest:
   - **Sperre**: **Blockieren** blendet die Option **Sperre** in der Benutzerkachel im Startmenü aus. **Nicht konfiguriert** (Standard) zeigt die Option **Sperre** an.
   - **Abmelden**: **Blockieren** blendet die Option **Abmelden** in der Benutzerkachel im Startmenü aus. **Nicht konfiguriert** (Standard) zeigt die Option **Abmelden** an.
-- **Herunterfahren**: **Blockieren** blendet die Optionen **Aktualisieren und herunterfahren** und **Herunterfahren** im Netzschaltersymbol im Startmenü aus. **Nicht konfiguriert** (Standard) zeigt diese Optionen an.
-- **Energiesparmodus**: **Blockieren** blendet die Option **Energiesparmodus** im Netzschaltersymbol im Startmenü aus. **Nicht konfiguriert** (Standard) zeigt diese Option an.
-- **Ruhezustand**: **Blockieren** blendet die Option **Ruhezustand** im Netzschaltersymbol im Startmenü aus. **Nicht konfiguriert** (Standard) zeigt diese Option an.
-- **Konto wechseln**: **Blockieren** blendet die Option **Konto wechseln** in der Benutzerkachel im Startmenü aus. **Nicht konfiguriert** (Standard) zeigt diese Option an.
-- **Neustartoptionen**: **Blockieren** blendet die Optionen **Aktualisieren und neu starten** und **Neu starten** im Netzschaltersymbol im Startmenü aus. **Nicht konfiguriert** (Standard) zeigt diese Optionen an.
+- **Herunterfahren**: **Blockieren** blendet die Optionen **Aktualisieren und herunterfahren** und **Herunterfahren** im Netzschaltersymbol im Startmenü aus. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+- **Energiesparmodus**: **Blockieren** blendet die Option **Energiesparmodus** im Netzschaltersymbol im Startmenü aus. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+- **Ruhezustand**: **Blockieren** blendet die Option **Ruhezustand** im Netzschaltersymbol im Startmenü aus. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+- **Konto wechseln**: **Blockieren** blendet die Option **Konto wechseln** in der Benutzerkachel im Startmenü aus. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+- **Neustartoptionen**: **Blockieren** blendet die Optionen **Aktualisieren und neu starten** und **Neu starten** im Netzschaltersymbol im Startmenü aus. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
 - **Dokumente im Startmenü**: Blendet den Ordner „Dokumente“ im Windows-Startmenü aus oder ein. Folgende Optionen sind verfügbar:
   - **Nicht konfiguriert** (Standard): Keine Einstellung wird erzwungen. Benutzer können auswählen, ob die Verknüpfung ein- oder ausgeblendet werden soll.
   - **Ausblenden**: Die Verknüpfung wird ausgeblendet, und die Einstellung wird in der Einstellungen-App deaktiviert.
@@ -656,9 +659,9 @@ Diese Einstellungen verwenden den [Benutzeroberflächenrichtlinien-CSP](https://
 
 - **Windows-Blickpunkt**: **Blockieren** deaktiviert Windows-Blickpunkt auf dem Sperrbildschirm, Windows-Tipps, Microsoft-Features für Endbenutzer und weitere ähnliche Features. Wenn es Ihr Ziel ist, den Netzwerkdatenverkehr von Geräten zu minimieren, legen Sie diese Option auf **Blockieren** fest. **Nicht konfiguriert** (Standard) lässt Features von Windows-Blickpunkt zu und kann vom Endbenutzer gesteuert werden. Wenn diese Option aktiviert ist, können Sie auch die folgenden Einstellungen zulassen oder blockieren:
 
-  - **Windows-Blickpunkt auf dem Sperrbildschirm**: **Blockieren** verhindert, dass Windows-Blickpunkt Informationen auf dem Gerätesperrbildschirm anzeigt. **Nicht konfiguriert** (Standard) aktiviert diese Einstellung.
+  - **Windows-Blickpunkt auf dem Sperrbildschirm**: **Blockieren** verhindert, dass Windows-Blickpunkt Informationen auf dem Gerätesperrbildschirm anzeigt. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
   - **Drittanbietervorschläge in Windows-Blickpunkt**: **Blockieren** verhindert, dass Windows-Blickpunkt Inhalte vorschlägt, die nicht von Microsoft stammen. **Nicht konfiguriert** (Standard) lässt App- und Inhaltsvorschläge durch Herausgeber von Partnersoftware in Features von Windows-Blickpunkt (z.B. Windows-Blickpunkt auf dem Sperrbildschirm, vorgeschlagene Apps im Startmenü oder Windows-Tipps) zu.
-  - **Endbenutzerfeatures**: **Blockieren** deaktiviert Funktionen, die normalerweise nur für Endbenutzer bestimmt sind, beispielsweise Startvorschläge, Mitgliedschaftsbenachrichtigungen, App-Installation nach Anzeige der Windows-Willkommensseite und Kachelumleitungen. **Nicht konfiguriert** (Standard) lässt diese Funktionen zu.
+  - **Endbenutzerfeatures**: **Blockieren** deaktiviert Funktionen, die normalerweise nur für Endbenutzer bestimmt sind, beispielsweise Startvorschläge, Mitgliedschaftsbenachrichtigungen, App-Installation nach Anzeige der Windows-Willkommensseite und Kachelumleitungen. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
   - **Windows-Tipps**: **Blockieren** deaktiviert Windows-Tipps in Popupfenstern. **Nicht konfiguriert** (Standard) lässt die Anzeige von Windows-Tipps zu.
   - **Windows-Blickpunkt im Info-Center**: **Blockieren** verhindert, dass Benachrichtigungen von Windows-Blickpunkt im Info-Center angezeigt werden. **Nicht konfiguriert** (Standard) kann Benachrichtigungen im Info-Center anzeigen, die Apps oder Features vorschlagen, mit denen Benutzer unter Windows produktiver werden können.
   - **Personalisierung von Windows-Blickpunkt**: **Blockieren** verhindert, dass Windows Diagnosedaten verwendet, um angepasste Funktionen für Benutzer bereitzustellen. **Nicht konfiguriert** (Standard) ermöglicht es Microsoft, Diagnosedaten zu verwenden, um personalisierte Empfehlungen, Tipps und Angebote bereitzustellen und Windows an die Anforderungen des Benutzers anzupassen.
@@ -670,7 +673,7 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
 
 - **Echtzeitüberwachung**: **Aktivieren** schaltet die Echtzeitüberwachung auf Schadsoftware, Spyware und andere unerwünschte Software ein. Benutzer können diese Funktion nicht deaktivieren. 
 
-  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig aktiviert das Betriebssystem diese Funktion und ermöglicht es Benutzern, Sie zu ändern.
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig aktiviert das Betriebssystem diese Funktion und ermöglicht es Benutzern, Sie zu ändern.
 
   InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
 
@@ -678,7 +681,7 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
 
 - **Verhaltensüberwachung**: **Aktivieren** schaltet auf Geräten die Verhaltensüberwachung ein und prüft auf bestimmte bekannte Muster verdächtiger Aktivitäten. Benutzer können die Verhaltens Überwachung nicht deaktivieren. 
 
-  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig aktiviert das Betriebssystem die Verhaltens Überwachung und ermöglicht es Benutzern, Sie zu ändern.
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig aktiviert das Betriebssystem die Verhaltens Überwachung und ermöglicht es Benutzern, Sie zu ändern.
 
   InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
 
@@ -688,7 +691,7 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
 
   **Aktivieren aktiviert** Netzwerk Schutz und Netzwerk Blockierung. Benutzer können diese Funktion nicht deaktivieren. Wenn diese Option aktiviert ist, wird verhindert, dass Benutzer eine Verbindung mit bekannten Sicherheitsrisiken herstellen
 
-  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig schaltet das Betriebssystem NIS ein und ermöglicht es Benutzern, es zu ändern.
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig schaltet das Betriebssystem NIS ein und ermöglicht es Benutzern, es zu ändern.
 
   InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
 
@@ -696,7 +699,7 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
 
 - **Alle Downloads**überprüfen: **aktivieren** Sie diese Einstellung, und Defender scannt alle Dateien, die aus dem Internet heruntergeladen wurden. Die Benutzer können diese Einstellung nicht deaktivieren. 
 
-  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig aktiviert das Betriebssystem diese Einstellung und ermöglicht es Benutzern, diese Einstellung zu ändern.
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig aktiviert das Betriebssystem diese Einstellung und ermöglicht es Benutzern, diese Einstellung zu ändern.
 
   InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
 
@@ -704,7 +707,7 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
 
 - **In Microsoft-Webbrowsern geladene Skripts überprüfen**: **Aktivieren** ermöglicht Defender die Überprüfung von Skripts, die in Internet Explorer verwendet werden. Die Benutzer können diese Einstellung nicht deaktivieren. 
 
-  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig aktiviert das Betriebssystem diese Einstellung und ermöglicht es Benutzern, diese Einstellung zu ändern.
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig aktiviert das Betriebssystem diese Einstellung und ermöglicht es Benutzern, diese Einstellung zu ändern.
 
   InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
 
@@ -712,7 +715,7 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
 
 - **Endbenutzerzugriff auf Defender**: **Blockieren** blendet die Benutzeroberfläche von Microsoft Defender für Endbenutzer aus. Alle Benachrichtigungen von Microsoft Defender werden ebenfalls unterdrückt.
 
-  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung blockieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig ermöglicht das Betriebssystem den Benutzer Zugriff auf die Microsoft Defender-Benutzeroberfläche und ermöglicht es Benutzern, Sie zu ändern.
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert. Wenn Sie die Einstellung blockieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig ermöglicht das Betriebssystem den Benutzer Zugriff auf die Microsoft Defender-Benutzeroberfläche und ermöglicht es Benutzern, Sie zu ändern.
 
   InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
 
@@ -722,7 +725,7 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
 
 - **Sicherheits Intelligence-Aktualisierungs Intervall (in Stunden)** : Geben Sie das Intervall an, in dem Defender auf neue Sicherheits Intelligenz prüft, von 0-24. Folgende Optionen sind verfügbar:
 
-  - **Nicht konfiguriert** (Standardeinstellung): Suchen Sie alle 8 Stunden nach Updates.
+  - **Nicht konfiguriert** (Standardeinstellung): Diese Einstellung wird von InTune nicht geändert oder aktualisiert. Der Standardwert des Betriebssystems kann alle 8 Stunden nach Updates suchen.
   - **Nicht überprüfen**: Defender prüft nicht, ob neue Sicherheitsinformationen angezeigt werden.
   - **1 – 24**: `1` überprüft ein Mal pro Stunde, `2` überprüft alle zwei Stunden, `24` überprüft täglich und so weiter.
   
@@ -730,7 +733,7 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
   
 - **Datei- und Programmaktivität überwachen**: Ermöglicht Defender die Überwachung der Datei- und Programmaktivität auf Geräten. Folgende Optionen sind verfügbar:
 
-  - **Nicht konfiguriert** (Standard): alle Dateien werden überwacht.
+  - **Nicht konfiguriert** (Standardeinstellung): Diese Einstellung wird von InTune nicht geändert oder aktualisiert. Der Standardwert des Betriebssystems kann alle Dateien überwachen.
   - **Überwachung deaktiviert**
   - **Alle Dateien überwachen**
   - **Nur eingehende Dateien überwachen**
@@ -745,7 +748,7 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
 - **CPU-Nutzungslimit während einer Überprüfung**: Begrenzen Sie die CPU-Nutzung, die bei Überprüfungen genutzt werden darf (von `0` bis `100`).
 - **Archivdateien**überprüfen: **aktiviert aktiviert** , damit Archivdateien wie ZIP-oder CAB-Dateien gescannt werden. Die Benutzer können diese Einstellung nicht deaktivieren.
 
-  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig aktiviert das Betriebssystem diese Überprüfung und ermöglicht es Benutzern, Sie zu ändern.
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig aktiviert das Betriebssystem diese Überprüfung und ermöglicht es Benutzern, Sie zu ändern.
 
   InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
 
@@ -753,7 +756,7 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
 
 - **Eingehende E-Mail überprüfen**: **Aktivieren** ermöglicht Defender das Überprüfen von E-Mail-Nachrichten beim Eingang auf dem Gerät. Wenn diese Option aktiviert ist, analysiert die Engine die Post Fach-und e-Mail-Dateien, um den e-Mail-Nachrichtentext Sie können die Formate ". PST (Outlook)", ". dbx", ". mbx", "MIME (Outlook Express)" und "BinHex (Mac)" Scannen.
 
-  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig deaktiviert das Betriebssystem diese Überprüfung und ermöglicht es Benutzern, Sie zu ändern.
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig deaktiviert das Betriebssystem diese Überprüfung und ermöglicht es Benutzern, Sie zu ändern.
 
   InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
 
@@ -761,7 +764,7 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
 
 - Wechsel Datenträger **während einer vollständigen**Überprüfung überprüfen: **aktivieren** Sie während einer vollständigen Überprüfung das Überprüfen von Defender- Die Benutzer können diese Einstellung nicht deaktivieren.
 
-  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig ermöglicht das Betriebssystem Defender das Überprüfen von Wechsel Datenträgern wie USB-Sticks und ermöglicht es Benutzern, diese Einstellung zu ändern.
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig ermöglicht das Betriebssystem Defender das Überprüfen von Wechsel Datenträgern wie USB-Sticks und ermöglicht es Benutzern, diese Einstellung zu ändern.
 
   Während einer schnell Überprüfung können Wechsel Datenträger weiterhin gescannt werden.
 
@@ -771,7 +774,7 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
 
 - **Bei einer vollständigen Überprüfung zugeordnete Netzlaufwerke überprüfen**: **Aktivieren** sorgt dafür, dass Defender Dateien auf zugeordneten Netzwerklaufwerken überprüft. Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefundene Schadsoftware nicht entfernen. Die Benutzer können diese Einstellung nicht deaktivieren.
 
-  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig aktiviert das Betriebssystem diese Funktion und ermöglicht es Benutzern, Sie zu ändern.
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig aktiviert das Betriebssystem diese Funktion und ermöglicht es Benutzern, Sie zu ändern.
 
   Während einer schnell Überprüfung werden zugeordnete Netzwerklaufwerke möglicherweise noch gescannt.
 
@@ -781,7 +784,7 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
 
 - Dateien überprüfen, die in **Netzwerk Ordnern geöffnet**wurden: **aktivieren** Sie hat Defender das Überprüfen von Dateien, die in Netzwerk Ordnern oder freigegebenen Netzlaufwerken geöffnet wurden Die Benutzer können diese Einstellung nicht deaktivieren. Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefundene Schadsoftware nicht entfernen.
 
-  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig scannt das Betriebssystemdateien, die in Netzwerk Ordnern geöffnet wurden, und ermöglicht es Benutzern, Sie zu ändern.
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig scannt das Betriebssystemdateien, die in Netzwerk Ordnern geöffnet wurden, und ermöglicht es Benutzern, Sie zu ändern.
 
   InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
 
@@ -789,7 +792,7 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
 
 - **Cloudschutz**: **Aktivieren** lässt den Empfang von Informationen über Schadsoftwareaktivitäten der von Ihnen verwalteten Geräte durch Microsoft Active Protection Service zu. Benutzer können diese Einstellung nicht ändern. 
 
-  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig ermöglicht das Betriebssystem dem Microsoft Active Protection Service, Informationen zu erhalten, und ermöglicht es Benutzern, diese Einstellung zu ändern.
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig ermöglicht das Betriebssystem dem Microsoft Active Protection Service, Informationen zu erhalten, und ermöglicht es Benutzern, diese Einstellung zu ändern.
 
   InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
 
@@ -797,7 +800,7 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
 
 - **Vor dem Senden von Beispielen bei Benutzern nachfragen**: Steuert, ob potenziell schädliche Dateien, die möglicherweise genauer analysiert werden müssen, automatisch an Microsoft gesendet werden. Folgende Optionen sind verfügbar:
 
-  - **Nicht konfiguriert** (Standard): sichere Beispiele automatisch senden.
+  - **Nicht konfiguriert** (Standardeinstellung): Diese Einstellung wird von InTune nicht geändert oder aktualisiert. Das Betriebssystem Standard kann sichere Beispiele automatisch senden.
   - **Immer bestätigen**
   - **Vor dem Senden persönlicher Daten nachfragen**
   - **Nie Daten senden**
@@ -861,6 +864,88 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
 - **Dateien und Ordner, die bei Überprüfungen und Echtzeitschutz ausgeschlossen werden sollen**: Fügt Dateien und Ordner wie **C:\Pfad** oder **%ProgramFiles%\Pfad\Dateiname.exe** der Ausschlussliste hinzu. Diese Dateien und Ordner werden nicht in Echtzeitüberprüfungen oder geplante Überprüfungen einbezogen.
 - **Dateierweiterungen, die bei Überprüfungen und Echtzeitschutz ausgeschlossen werden sollen**: Fügt der Ausschlussliste eine oder mehrere Erweiterungen wie **jpg** oder **txt** hinzu. Dateien mit diesen Erweiterungen werden nicht in Echtzeitüberprüfungen oder geplante Überprüfungen einbezogen.
 - **Prozesse, die von Überprüfungen und Echtzeitschutz ausgenommen werden sollen**: Fügt der Ausschlussliste einen oder mehrere Prozesse vom Typ **.exe**, **.com** oder **.scr** hinzu. Diese Prozesse werden nicht in Echtzeitüberprüfungen oder geplante Überprüfungen einbezogen.
+
+## <a name="power-settings"></a>Energieeinstellungen
+
+### <a name="battery"></a>Akku
+
+- **Akku Pegel, um den Energiespar**Modus zu aktivieren: Wenn das Gerät Akkuleistung verwendet, geben Sie die Akku Ladeebene ein, um den Energiesparmodus von 0-100 zu aktivieren. Geben Sie einen Prozentwert ein, der die Akku Ladeebene angibt. Der Standardwert ist 70 %. Bei Festlegung auf 70% schaltet sich der Energiesparmodus ein, wenn der Akku 70% oder weniger verfügbar ist.
+
+  [Power/energysaverbatteryrammoldonakku-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)
+
+- **Schließen (nur Mobilgerät)** : Wenn das Gerät Akkuleistung verwendet, wählen Sie aus, was passiert, wenn der Deckel geschlossen wird. Folgende Optionen sind verfügbar:
+
+  - **Nicht konfiguriert** (Standardeinstellung): Diese Einstellung wird von InTune nicht geändert oder aktualisiert.
+  - **Keine Aktion**: das Gerät bleibt eingeschaltet und nutzt weiterhin Akkuleistung.
+  - Standby **: das**Gerät wechselt in den Energiesparmodus und nutzt eine geringe Menge Akku Kosten. Der Computer befindet sich weiterhin auf, und geöffnete apps und Dateien werden im Arbeitsspeicher (RAM) gespeichert.
+  - Ruhe **Zustand: das**Gerät wird in den Ruhezustand versetzt. Geöffnete apps und Dateien werden auf der Festplatte gespeichert, und das Gerät wird ausgeschaltet.
+  - **Shutdown**: das Gerät wird heruntergefahren. Geöffnete apps und Dateien werden ohne Speichern geschlossen.
+
+  [Power/selectlidcloseaktiononakku-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectlidcloseactiononbattery)
+
+- **Netz**Schalter: Wenn das Gerät Akkuleistung verwendet, wählen Sie aus, was passiert, wenn der Netzschalter ausgewählt wird. Folgende Optionen sind verfügbar:
+
+  - **Nicht konfiguriert** (Standardeinstellung): Diese Einstellung wird von InTune nicht geändert oder aktualisiert.
+  - **Keine Aktion**: das Gerät bleibt eingeschaltet und nutzt weiterhin Akkuleistung.
+  - Standby **: das**Gerät wechselt in den Energiesparmodus und nutzt eine geringe Menge Akku Kosten. Der Computer befindet sich weiterhin auf, und geöffnete apps und Dateien werden im Arbeitsspeicher (RAM) gespeichert.
+  - Ruhe **Zustand: das**Gerät wird in den Ruhezustand versetzt. Geöffnete apps und Dateien werden auf der Festplatte gespeichert, und das Gerät wird ausgeschaltet.
+  - **Shutdown**: das Gerät wird heruntergefahren. Geöffnete apps und Dateien werden ohne Speichern geschlossen.
+
+  [Power/selectpowerbuttonaktiononakku-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectpowerbuttonactiononbattery)
+
+- **Schaltfläche**"Standbymodus": Wenn das Gerät Akkuleistung verwendet, wählen Sie aus, was passiert, wenn die Standbytaste ausgewählt ist Folgende Optionen sind verfügbar:
+
+  - **Nicht konfiguriert** (Standardeinstellung): Diese Einstellung wird von InTune nicht geändert oder aktualisiert.
+  - **Keine Aktion**: das Gerät bleibt eingeschaltet und nutzt weiterhin Akkuleistung.
+  - Standby **: das**Gerät wechselt in den Energiesparmodus und nutzt eine geringe Menge Akku Kosten. Der Computer befindet sich weiterhin auf, und geöffnete apps und Dateien werden im Arbeitsspeicher (RAM) gespeichert.
+  - Ruhe **Zustand: das**Gerät wird in den Ruhezustand versetzt. Geöffnete apps und Dateien werden auf der Festplatte gespeichert, und das Gerät wird ausgeschaltet.
+  - **Shutdown**: das Gerät wird heruntergefahren. Geöffnete apps und Dateien werden ohne Speichern geschlossen.
+
+  [Power/selecungleepbuttonaktiononakku-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectsleepbuttonactiononbattery)
+
+- **Hybrider**Standbymodus: Wenn das Gerät Akkuleistung verwendet, verhindert **Deaktivieren** , dass das Gerät in den Hybriden Energiesparmodus wechselt. Im hybriden Standbymodus werden geöffnete apps und Dateien im Arbeitsspeicher (RAM) und auf der Festplatte gespeichert. Es verwendet eine geringe Menge Akku Kosten. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+
+  [Power/turnoffhybridsleeponakku-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-turnoffhybridsleeponbattery)
+
+### <a name="pluggedin"></a>Pluggedin
+
+- **Akku Pegel, um den Energiespar**Modus zu aktivieren: Wenn das Gerät angeschlossen ist, geben Sie die Akku Ladeebene ein, um den Energiesparmodus von 0-100 zu aktivieren. Geben Sie einen Prozentwert ein, der die Akku Ladeebene angibt. Der Standardwert ist 70 %. Bei Festlegung auf 70% schaltet sich der Energiesparmodus ein, wenn der Akku 70% oder weniger verfügbar ist.
+
+  [Power/energysaverbatteryrammoldpluggedin CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)
+
+- **Schließen (nur Mobilgerät)** : Wenn das Gerät angeschlossen ist, wählen Sie aus, was geschieht, wenn der Deckel geschlossen wird. Folgende Optionen sind verfügbar:
+
+  - **Nicht konfiguriert** (Standardeinstellung): Diese Einstellung wird von InTune nicht geändert oder aktualisiert.
+  - **Keine Aktion**: das Gerät bleibt eingeschaltet.
+  - Standby **: das**Gerät wechselt in den Standbymodus. Der Computer befindet sich weiterhin auf, und geöffnete apps und Dateien werden im Arbeitsspeicher (RAM) gespeichert.
+  - Ruhe **Zustand: das**Gerät wird in den Ruhezustand versetzt. Geöffnete apps und Dateien werden auf der Festplatte gespeichert, und das Gerät wird ausgeschaltet.
+  - **Shutdown**: das Gerät wird heruntergefahren. Geöffnete apps und Dateien werden ohne Speichern geschlossen.
+  
+    [Power/selectlidcloseaktionpluggedin CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectlidcloseactionpluggedin)
+  
+- **Netz**Schalter: Wenn das Gerät angeschlossen ist, wählen Sie aus, was passiert, wenn der Netzschalter ausgewählt wird. Folgende Optionen sind verfügbar:
+
+  - **Nicht konfiguriert** (Standardeinstellung): Diese Einstellung wird von InTune nicht geändert oder aktualisiert.
+  - **Keine Aktion**: das Gerät bleibt eingeschaltet.
+  - Standby **: das**Gerät wechselt in den Standbymodus. Der Computer befindet sich weiterhin auf, und geöffnete apps und Dateien werden im Arbeitsspeicher (RAM) gespeichert.
+  - Ruhe **Zustand: das**Gerät wird in den Ruhezustand versetzt. Geöffnete apps und Dateien werden auf der Festplatte gespeichert, und das Gerät wird ausgeschaltet.
+  - **Shutdown**: das Gerät wird heruntergefahren. Geöffnete apps und Dateien werden ohne Speichern geschlossen.
+
+  [Power/selectpowerbuttonaktionpluggedin CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectpowerbuttonactionpluggedin)
+
+- **Standbyschaltfläche**: Wenn das Gerät angeschlossen ist, wählen Sie aus, was passiert, wenn die Schaltfläche "Standbymodus" Folgende Optionen sind verfügbar:
+
+  - **Nicht konfiguriert** (Standardeinstellung): Diese Einstellung wird von InTune nicht geändert oder aktualisiert.
+  - **Keine Aktion**: das Gerät bleibt eingeschaltet.
+  - Standby **: das**Gerät wechselt in den Standbymodus. Der Computer befindet sich weiterhin auf, und geöffnete apps und Dateien werden im Arbeitsspeicher (RAM) gespeichert.
+  - Ruhe **Zustand: das**Gerät wird in den Ruhezustand versetzt. Geöffnete apps und Dateien werden auf der Festplatte gespeichert, und das Gerät wird ausgeschaltet.
+  - **Shutdown**: das Gerät wird heruntergefahren. Geöffnete apps und Dateien werden ohne Speichern geschlossen.
+
+  [Power/selecgs leepbuttonaktionpluggedin CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectsleepbuttonactionpluggedin)
+
+- **Hybrider**Standbymodus: Wenn das Gerät angeschlossen ist, verhindert **Deaktivieren** , dass das Gerät in den Hybriden Energiesparmodus wechselt. Im hybriden Standbymodus werden geöffnete apps und Dateien im Arbeitsspeicher (RAM) und auf der Festplatte gespeichert. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder aktualisiert.
+
+  [Power/turnoffhybridsleeppluggedin CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-turnoffhybridsleeppluggedin)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
