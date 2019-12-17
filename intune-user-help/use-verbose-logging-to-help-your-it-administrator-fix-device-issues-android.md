@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2326aed90037fbcc6fc693bcdb67c86b57ed34a0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508004"
 ---
 # <a name="configure-logging-settings"></a>Konfigurieren der Protokollierungs Einstellungen
@@ -37,14 +37,14 @@ Konfigurieren Sie die Protokollierungs Einstellungen so, dass die Unternehmenspo
 Die ausführliche Protokollierung zeichnet alle Aktionen auf, die Sie in der Unternehmensportal-app ausführen. Sie ist standardmäßig auf Ihrem Gerät aktiviert. So schalten Sie die ausführliche Protokollierung in Unternehmensportal ein:  
 
 1. Melden Sie sich bei der Unternehmensportal-App an.
-2. Tippen Sie auf **Einstellungen**.
+2. Berühren Sie **Einstellungen**.
 3. Kippen Sie den Schalter neben ausführliche **Protokollierung**auf **aus**.
 
 ## <a name="configure-microsoft-intune-app-logging"></a>Konfigurieren der Microsoft InTune App-Protokollierung
 In der Microsoft InTune-App können Sie die Ebene der Protokoll Details konfigurieren. Der Standardwert ist " **wichtig**". So passen Sie Protokollierungs Details an:  
 
 1. Öffnen Sie die Microsoft InTune-app.  
-2. Tippen Sie auf **Einstellungen**.  
+2. Berühren Sie **Einstellungen**.  
 3. Wählen Sie unter **Details auf Protokollebene**die Option ausführlich aus, um den Umfang der aufgezeichneten Details zu erhöhen, oder wählen Sie **aus** , um die Protokollierung **zu deaktivieren** .  
 
 ## <a name="next-steps"></a>Nächste Schritte  

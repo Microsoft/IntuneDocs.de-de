@@ -17,10 +17,10 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
 ms.openlocfilehash: f49ea9e1e59fadcb90a773e362ec3ef41e25ab63
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502231"
 ---
 # <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Einstellungen für Windows 10-Geräte zum Aktivieren von Windows Hello for Business in Intune
@@ -129,7 +129,7 @@ Weitere Informationen zu Windows Hello for Business-Profilen in Intune finden Si
 
   **Standardeinstellung:** Nicht konfiguriert
 
-- **Verwenden von Sicherheits Schlüsseln für die Anmeldung**  
+- **Verwenden von Sicherheitsschlüsseln zur Anmeldung**  
   Diese Einstellung ist für Geräte mit Windows 10, Version 1903 oder höher, verfügbar. Verwenden Sie es, um die Unterstützung für die Verwendung von Windows Hello-Sicherheits Schlüsseln für die Anmeldung zu verwalten.  
 
   - **Aktiviert** : Benutzer können einen Windows Hello-Sicherheitsschlüssel als Anmelde Informationen für PCs verwenden, die diese Richtlinie als Ziel verwenden. 

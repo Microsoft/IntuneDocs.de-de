@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e2909e7ad1ced9483a6cec58f1f3009f56946f5f
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74058426"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Einstellungen für Windows 10 (und höher), um Geräte zu schützen, die Intune verwenden.
@@ -44,7 +44,7 @@ Application Guard ist nur für Windows 10-Geräte (64-Bit) verfügbar. Mithilfe 
 
 - **Application Guard**  
   **Standardeinstellung:** Nicht konfiguriert  
-   Application Guard CSP: [Settings/allowwindowsdefenderapplicationguard](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp#allowwindowsdefenderapplicationguard)  
+   Application Guard CSP: [Settings/AllowWindowsDefenderApplicationGuard](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp#allowwindowsdefenderapplicationguard)  
 
   - **Aktiviert für Edge**: Aktiviert dieses Feature, das nicht vertrauenswürdige Websites in einem virtualisierten Hyper-V-Browsercontainer öffnet.  
   - **Nicht konfiguriert** : eine beliebige Site (vertrauenswürdig und nicht vertrauenswürdig) kann auf dem Gerät geöffnet werden.  
@@ -333,7 +333,7 @@ Benutzerdefinierte Firewallregeln unterstützen die folgenden Optionen:
 
 #### <a name="application-settings"></a>Anwendungseinstellungen  
 
-- **Anwendung (en)**  
+- **Anwendung(en)**  
   **Standard**: Alle  
 
   Steuern von Verbindungen für eine APP oder ein Programm. Wählen Sie eine der folgenden Optionen aus, und führen Sie dann die zusätzliche Konfiguration aus:  
@@ -636,7 +636,7 @@ Diese Einstellungen gelten speziell für Betriebssystemlaufwerke.
     - **Wiederherstellungskennwörter und Schlüsselpakete sichern**  
     - **Nur Wiederherstellungskennwörter sichern**  
 
-  - **Client gesteuerte Wiederherstellungs Kennwort-Rotation**  
+  - **Rotation von clientgesteuerten Wiederherstellungskennwörtern**  
     **Standard**: die Schlüssel Rotation ist für Azure AD Geräte aktiviert.  
     BitLocker CSP: [configurerecoverypasswordrotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)  
     
@@ -733,7 +733,7 @@ Diese Einstellungen gelten speziell für Festplattenlaufwerke.
     - **Wiederherstellungskennwörter und Schlüsselpakete sichern**  
     - **Nur Wiederherstellungskennwörter sichern**  
 
-  - **Client gesteuerte Wiederherstellungs Kennwort-Rotation**  
+  - **Rotation von clientgesteuerten Wiederherstellungskennwörtern**  
     **Standard**: die Schlüssel Rotation ist für Azure AD Geräte aktiviert.  
     BitLocker CSP: [configurerecoverypasswordrotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)  
     
