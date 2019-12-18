@@ -7244,6 +7244,10 @@
 			"source_path": "get-started-evaluation.md", 
 			"redirect_url": "what-is-intune",
 			"redirect_document_id": true  
-		}
-    ]
+		},
+        {
+			"source_path": "intune/configuration/wired-network-settings-macos.md", 
+			"redirect_url": "/intune/fundamentals/what-is-intune",
+			"redirect_document_id": false  
+		}    ]
 }
