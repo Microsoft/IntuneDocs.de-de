@@ -787,7 +787,7 @@
         },
         {
             "source_path": "intune/get-started/integration-with-cloud-services.md",
-            "redirect_url": "https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management",
+            "redirect_url": "https://docs.microsoft.com/configmgr/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management",
             "redirect_document_id": true
         },
         {
