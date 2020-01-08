@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d445b86359b2c5cde7b56a52a0cc6ee72a34c0ea
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 95186e4d1e54737ffeaa5e4c9728d188c2f867d6
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832612"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206634"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Häufige Fragen, Probleme und entsprechende Behebungen mit Geräterichtlinien und -profilen in Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Erhalten Sie Antworten auf häufige Fragen zur Arbeit mit Geräteprofilen und -richtlinien in Intune. In diesem Artikel werden u. a. Check-In-Zeitintervalle und weitere Informationen aufgelistet.
 
@@ -61,7 +61,7 @@ Checkt ein Gerät nach der ersten Benachrichtigung nicht zum Abrufen der Richtli
 | Android | Etwa alle 8 Stunden |
 | Windows 10-PCs, die als Geräte registriert sind | Etwa alle 8 Stunden |
 | Windows Phone | Etwa alle 8 Stunden |
-| Windows 8.1 | Etwa alle 8 Stunden |
+| Windows 8.1 | Etwa alle 8 Stunden |
 
 Wenn das Gerät erst kürzlich registriert wurde, wird der Eincheckvorgang aus Konformitäts-, Nichtkonformitäts- und Konfigurationsgründen häufiger durchgeführt, **etwa** in folgendem Rhythmus:
 
@@ -72,7 +72,7 @@ Wenn das Gerät erst kürzlich registriert wurde, wird der Eincheckvorgang aus K
 | Android | Für 15 Minuten alle 3 Minuten, dann für 2 Stunden alle 15 Minuten und dann etwa alle 8 Stunden | 
 | Windows 10-PCs, die als Geräte registriert sind | Für 15 Minuten alle 3 Minuten, dann für 2 Stunden alle 15 Minuten und dann etwa alle 8 Stunden | 
 | Windows Phone | Für 15 Minuten alle 5 Minuten, dann für 2 Stunden alle 15 Minuten und dann etwa alle 8 Stunden | 
-| Windows 8.1 | Für 15 Minuten alle 5 Minuten, dann für 2 Stunden alle 15 Minuten und dann etwa alle 8 Stunden | 
+| Windows 8.1 | Für 15 Minuten alle 5 Minuten, dann für 2 Stunden alle 15 Minuten und dann etwa alle 8 Stunden | 
 
 Benutzer können jederzeit die Unternehmensportal-App, **Einstellungen** > **Synchronisieren** öffnen, um sofort zu überprüfen, ob Richtlinien- oder Profilupdates verfügbar sind.
 

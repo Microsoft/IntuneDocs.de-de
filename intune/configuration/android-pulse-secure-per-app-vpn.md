@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62f418e396c5030a47ea0bcb31914cd4e1069c40
-ms.sourcegitcommit: eb2e420b304c7da9d3be5ef49a676cba66766d2b
+ms.openlocfilehash: 83b2ffc7e942492be4560a56af0f3514cb1638a4
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74319837"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206855"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Verwenden eines benutzerdefinierten Microsoft Intune-Profils zum Erstellen eines VPN-Profils pro App für Android-Geräte
 
@@ -44,8 +44,8 @@ Nachdem Sie die Richtlinie Ihrem Android-Gerät oder Ihren Benutzergruppen zugew
 2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Geben Sie die folgenden Eigenschaften ein:
 
-    - **Name**: Geben Sie einen aussagekräftigen Namen für das Profil ein. Benennen Sie Ihre Profile, damit Sie diese später leicht wiedererkennen. Ein geeigneter Profilname ist beispielsweise **Pro-App-VPN-Profil für Android für das gesamte Unternehmen**.
-    - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    - **Name:** Geben Sie einen aussagekräftigen Namen für das Profil ein. Benennen Sie Ihre Profile, damit Sie diese später leicht wiedererkennen. Ein geeigneter Profilname ist beispielsweise **Pro-App-VPN-Profil für Android für das gesamte Unternehmen**.
+    - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
     - **Plattform**: Wählen Sie **Android** aus.
     - **Profiltyp**: Wählen Sie **VPN** aus.
 
@@ -53,24 +53,24 @@ Nachdem Sie die Richtlinie Ihrem Android-Gerät oder Ihren Benutzergruppen zugew
 
 Notieren Sie den Wert für **Verbindungsname**, den Sie beim Erstellen des VPN-Profils angegeben haben. Dieser Name wird im nächsten Schritt benötigt. Beispiel: **MeineApp-VPN-Profil**.
 
-## <a name="step-2-create-a-custom-configuration-policy"></a>Schritt 2: Erstellen einer benutzerdefinierten Konfigurationsrichtlinie
+## <a name="step-2-create-a-custom-configuration-policy"></a>Schritt 2: Erstellen einer benutzerdefinierten Konfigurationsrichtlinie
 
 1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Geben Sie die folgenden Eigenschaften ein:
 
-    - **Name**: Geben Sie einen aussagekräftigen Namen für das benutzerdefinierte Profil ein. Benennen Sie Ihre Profile, damit Sie diese später leicht wiedererkennen. Ein geeigneter Profilname ist beispielsweise **Benutzerdefiniertes OMA-URI-VPN-Profil für Android für das gesamte Unternehmen**.
-    - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    - **Name:** Geben Sie einen aussagekräftigen Namen für das benutzerdefinierte Profil ein. Benennen Sie Ihre Profile, damit Sie diese später leicht wiedererkennen. Ein geeigneter Profilname ist beispielsweise **Benutzerdefiniertes OMA-URI-VPN-Profil für Android für das gesamte Unternehmen**.
+    - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
     - **Plattform**: Wählen Sie **Android** aus.
     - **Profiltyp**: Klicken Sie auf **Benutzerdefiniert**.
 
 4. Wählen Sie **Einstellungen** > **Konfigurieren** aus.
 5. Klicken Sie im Bereich **Custom OMA-URI Settings** (Benutzerdefinierte OMA-URI-Einstellungen) auf **Hinzufügen**.
-    - **Name**: Geben Sie einen Namen für Ihre Einstellung ein.
-    - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    - **Name:** Geben Sie einen Namen für Ihre Einstellung ein.
+    - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
     - **OMA-URI**: Geben Sie `./Vendor/MSFT/VPN/Profile/*Name*/PackageList` ein, wobei *Name* der in Schritt 1 notierte Verbindungsname ist. In diesem Beispiel lautet die Zeichenfolge `./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList`.
-    - **Datentyp**: Geben Sie **Zeichenfolge** ein.
-    - **Wert**: Geben Sie eine durch Semikolons getrennte Liste der Pakete ein, die dem Profil zugeordnet werden sollen. Wenn z. B. Excel und der Google-Browser Chrome die VPN-Verbindung verwenden sollen, geben Sie `com.microsoft.office.excel;com.android.chrome` ein.
+    - **Datentyp:** Geben Sie **Zeichenfolge** ein.
+    - **Wert:** Geben Sie eine durch Semikolons getrennte Liste der Pakete ein, die dem Profil zugeordnet werden sollen. Wenn z. B. Excel und der Google-Browser Chrome die VPN-Verbindung verwenden sollen, geben Sie `com.microsoft.office.excel;com.android.chrome` ein.
 
 ![Beispiel einer benutzerdefinierten Richtlinie für ein App-bezogenes VPN für Android](./media/android-pulse-secure-per-app-vpn/android_per_app_vpn_oma_uri.png)
 
@@ -80,10 +80,10 @@ Sie können mithilfe des Werts *BLACKLIST* eine Liste von Apps angeben, die die 
 
 1. Klicken Sie im Bereich **Custom OMA-URI Settings** (Benutzerdefinierte OMA-URI-Einstellungen) auf **Hinzufügen**.
 2. Geben Sie einen Einstellungsnamen ein.
-3. Geben Sie in **OMA-URI** `./Vendor/MSFT/VPN/Profile/*Name*/Mode` ein, wobei *Name* der in Schritt 1 notierte Name für das VPN-Profil ist. In unserem Beispiel lautet die Zeichenfolge `./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode`.
+3. Geben Sie in **OMA-URI**`./Vendor/MSFT/VPN/Profile/*Name*/Mode` ein, wobei *Name* der in Schritt 1 notierte Name für das VPN-Profil ist. In unserem Beispiel lautet die Zeichenfolge `./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode`.
 4. Geben Sie in **Datentyp** **Zeichenfolge**ein.
 5. Geben Sie für **Wert** entweder **BLACKLIST** oder **WHITELIST** ein.
 
-## <a name="step-3-assign-both-policies"></a>Schritt 3: Zuweisen beider Richtlinien
+## <a name="step-3-assign-both-policies"></a>Schritt 3: Zuweisen beider Richtlinien
 
 [Weisen Sie beide Geräteprofile](device-profile-assign.md) den erforderlichen Benutzern oder Geräten zu.

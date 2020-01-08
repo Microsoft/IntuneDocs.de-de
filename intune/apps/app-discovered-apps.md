@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e7c9824711ecbfb43a7c7dde71cc01b306b7fab
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 1e96f46dc0e79de3fc78739c246abdc0b9e52702
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899415"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205529"
 ---
 # <a name="intune-discovered-apps"></a>Von Intune ermittelte Apps
 
@@ -54,10 +54,10 @@ In der folgenden Liste erhalten Sie Informationen zum Plattformtyp der App, zu d
 
 | Plattform | Benutzereigene Geräte | Unternehmenseigene Geräte | Aktualisierungszyklus |
 |------------------------------------------------------------------------|----------------------------------|--------------------------------------------------|---------------------------------------|
-| Windows 10 (Win32-Apps) HINWEIS: [Erfordert die Intune-Verwaltungserweiterung](intune-management-extension.md) auf dem Gerät | Nicht zutreffend | Alle Win32-Apps, die in der Liste zum Hinzufügen oder Entfernen von Programmen enthalten sind | Alle 24 Stunden ab der Geräteregistrierung |
+| Windows 10 (Win32-Apps) HINWEIS: [Erfordert die Intune-Verwaltungserweiterung](intune-management-extension.md) auf dem Gerät | Nicht zutreffend | Nur verwaltete Apps | Alle 24 Stunden ab der Geräteregistrierung |
 | Windows 10 (Moderne Apps) | Nur verwaltete moderne Apps | Alle auf dem Gerät installierten modernen Apps | Alle 7 Tage ab der Geräteregistrierung |
-| Windows 8.1 | Nur verwaltete Apps | Nur verwaltete Apps | Alle 7 Tage ab der Geräteregistrierung |
-| Windows Phone 8 | Nur verwaltete Apps | Nur verwaltete Apps | Alle 7 Tage ab der Geräteregistrierung |
+| Windows 8.1 | Nur verwaltete Apps | Nur verwaltete Apps | Alle 7 Tage ab der Geräteregistrierung |
+| Windows Phone 8 | Nur verwaltete Apps | Nur verwaltete Apps | Alle 7 Tage ab der Geräteregistrierung |
 | Windows RT | Nur verwaltete Apps | Nur verwaltete Apps | Alle 7 Tage ab der Geräteregistrierung |
 | iOS | Nur verwaltete Apps | Alle auf dem Gerät installierten Apps | Alle 7 Tage ab der Geräteregistrierung |
 | macOS | Nur verwaltete Apps | Alle auf dem Gerät installierten Apps | Alle 7 Tage ab der Geräteregistrierung |

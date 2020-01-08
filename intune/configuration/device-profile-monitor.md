@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85ba34cfec8ebe78d2574034967bd7ed76f3304e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 25983117864f44b8131fdc49e60b7d24048da9fe
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059543"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206651"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Überwachen von Geräteprofilen in Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune enthält einige Funktionen, die Ihnen bei der Überwachung und Verwaltung Ihrer Gerätekonfigurationsprofile helfen. Sie können z.B. den Status eines Profils überprüfen, anzeigen, welche Geräte zugewiesen sind, und die Eigenschaften eines Profils aktualisieren.
 
@@ -65,7 +65,7 @@ Nachdem Sie Ihr Geräteprofil erstellt haben, bietet Intune grafische Diagramme.
     Schließen Sie die **Benutzerstatusdetails**.
 
 5. Wählen Sie in der Liste **Profile** dann ein bestimmtes Profil aus. Sie können auch vorhandene Eigenschaften ändern:
-    - **Eigenschaften**: Ändern Sie den Namen, oder aktualisieren Sie alle vorhandenen Einstellungen.
+    - **Eigenschaften:** Ändern Sie den Namen, oder aktualisieren Sie alle vorhandenen Einstellungen.
     - **Zuweisungen:** Schließen Sie Geräte für die Anwendung der Richtlinie ein oder davon aus. Wählen Sie **Ausgewählte Gruppen** aus, um bestimmte Gruppen auszuwählen.
     - **Gerätestatus:** Die dem Profil zugeordneten Geräte sind aufgelistet, und es wird angezeigt, ob das Profil erfolgreich bereitgestellt wurde. Sie können ein bestimmtes Gerät einschließlich der installierten Apps auswählen, um noch mehr Details zu erfahren.
     - **Benutzerstatus:** Listet die Namen der Benutzer mit Geräten auf, die von diesem Profil beeinflusst sind, und ob das Profil erfolgreich bereitgestellt wurde. Sie können einen bestimmten Benutzer auswählen, um noch mehr Informationen zu erhalten.
@@ -97,7 +97,7 @@ Mit Ihren DFCI-Profileinstellungen können Sie die folgenden Zustände sehen:
   - UEFI erlaubt es DFCI nicht, die Funktion zu deaktivieren, und die Profileinstellung ist **Aktiviert**.
   - Dem Gerät fehlt die Hardware, um die Funktion zu deaktivieren, und die Profileinstellung ist **Aktiviert**.
 
-- **Nicht anwendbar:** Dieser Zustand zeigt an, wenn ein Einstellungswert im Profil **Aktiviert** ist und die übereinstimmende Einstellung am Gerät nicht gefunden wird. Dieser Zustand kann auftreten, wenn die Gerätehardware nicht über die Funktion verfügt.
+- **Nicht zutreffend:** Dieser Zustand zeigt an, wenn ein Einstellungswert im Profil **Aktiviert** ist und die übereinstimmende Einstellung am Gerät nicht gefunden wird. Dieser Zustand kann auftreten, wenn die Gerätehardware nicht über die Funktion verfügt.
 
 - **Nicht konform:** Dieser Zustand zeigt an, wenn ein Einstellungswert im Profil mit der Einstellung am Gerät nicht übereinstimmt. Dies kann in den folgenden Szenarios geschehen:
 

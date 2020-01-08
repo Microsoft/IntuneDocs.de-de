@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf872387d6e6f4f91af9f074f54695b081b79119
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 63ebbc22c5452c99439d34813509b5652daef1f0
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74549108"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548084"
 ---
 # <a name="use-update-channel-and-target-version-settings-to-update-office-365-with-microsoft-intune-administrative-templates"></a>Verwenden der Updatekanal- und Zielversionseinstellungen für das Aktualisieren von Office 365 mit den administrativen Vorlagen von Microsoft Intune
 
@@ -75,7 +75,7 @@ Nachdem Sie die Richtlinien- und die Gerätesynchronisierungen zugewiesen haben,
     ![Beispiel der administrativen Vorlage „L_Updatebranch“ für den Registrierungsschlüssel](./media/administrative-templates-update-office/admx-update-branch-registry-key.png)
 
     > [!TIP]
-    > Im Artikel [Verwalten von Office 365 ProPlus mit dem Configuration Manager](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager) finden Sie die Werte und deren Bedeutung. Die Registrierungswerte basieren auf dem ausgewählten Verteilungskanal:
+    > Im Artikel [Verwalten von Office 365 ProPlus mit dem Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel) finden Sie die Werte und deren Bedeutung. Die Registrierungswerte basieren auf dem ausgewählten Verteilungskanal:
     >
     >- Monatlicher Kanal – Wert = "Current"
     >- Monatlicher Kanal (gezielt) – Wert = "Current"
@@ -95,7 +95,7 @@ An diesem Punkt wird die Intune-Richtlinie erfolgreich auf das Gerät angewendet
     - `UpdateChannel`: ist ein dynamischer Schlüssel, der sich abhängig von den konfigurierten Einstellungen ändert.
     - `CDNBaseUrl`: wird festgelegt, wenn Office 365 auf dem Gerät installiert ist.
 
-3. Sehen Sie sich den Wert `UpdateChannel` an. Der Wert gibt an, wie häufig Office aktualisiert wird. Im Artikel [Verwalten von Office 365 ProPlus mit dem Configuration Manager](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager) finden Sie die Werte und deren Festlegung.
+3. Sehen Sie sich den Wert `UpdateChannel` an. Der Wert gibt an, wie häufig Office aktualisiert wird. Im Artikel [Verwalten von Office 365 ProPlus mit dem Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel) finden Sie die Werte und deren Festlegung.
 
     Im folgenden Beispiel ist der Wert `UpdateChannel` auf `http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60` festgelegt, der **monatlich** ist:
 
@@ -150,7 +150,7 @@ Wenn Sie weitere Schritte durchführen möchten, können Sie das Update der neue
 > - Wenn Sie eine vorhandene Richtlinie ändern, wirken sich die Änderungen auf alle zugewiesenen Benutzer aus.
 > - Wenn Sie dieses Feature testen, empfiehlt es sich, eine Testrichtlinie zu erstellen und die Richtlinie einer Testgruppe von Benutzern zuzuweisen.
 
-### <a name="step-2-check-the-office-version"></a>Schritt 2: Überprüfen der Office-Version
+### <a name="step-2-check-the-office-version"></a>Schritt 2: Überprüfen der Office-Version
 
 Befolgen Sie diese Schritte, um die Richtlinie zu überprüfen, bevor Sie die Richtlinie für alle Benutzer bereitstellen.
 
@@ -173,7 +173,7 @@ Befolgen Sie diese Schritte, um die Richtlinie zu überprüfen, bevor Sie die Ri
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Aktualisieren der Kanalwerte für Office 365-Clients](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager)
+[Aktualisieren der Kanalwerte für Office 365-Clients](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel)
 
 [Übersicht über den Office-Cloudrichtliniendienst für Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-office-cloud-policy-service)
 

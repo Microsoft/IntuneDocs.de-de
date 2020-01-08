@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0cd3dd71a5999b69e3f5c34ef4cc73fb3d6a938
-ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
+ms.openlocfilehash: 1c9f6dbfb8d6ee4b766abef04595ffca7df4c9dc
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74781157"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206379"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Einrichten eines Pro-App-VPN für iOS-Geräte in Intune
 
@@ -72,8 +72,8 @@ Importieren Sie das Stammzertifikat des VPN-Servers, das von der Zertifizierungs
 1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Geben Sie die folgenden Eigenschaften ein:
-    - **Name**: Geben Sie einen aussagekräftigen Namen für das Profil ein. Benennen Sie Ihre Profile, damit Sie diese später leicht wiedererkennen. Ein geeigneter Profilname ist beispielsweise **VPN-Profil für vertrauenswürdiges iOS-Zertifikat für das gesamte Unternehmen** .
-    - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    - **Name:** Geben Sie einen aussagekräftigen Namen für das Profil ein. Benennen Sie Ihre Profile, damit Sie diese später leicht wiedererkennen. Ein geeigneter Profilname ist beispielsweise **VPN-Profil für vertrauenswürdiges iOS-Zertifikat für das gesamte Unternehmen** .
+    - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
     - **Plattform**: Wählen Sie **iOS** aus.
     - **Profiltyp**: Wählen Sie **Vertrauenswürdiges Zertifikat**.
 4. Klicken Sie auf das Ordnersymbol, und navigieren Sie zu Ihrem VPN-Zertifikat (CER-Datei), das Sie über Ihre VPN-Verwaltungskonsole exportiert haben. 
@@ -100,8 +100,8 @@ Das VPN-Profil enthält das SCEP- oder PKCS-Zertifikat, das die Anmeldeinformati
 
 1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 2. Geben Sie die folgenden Eigenschaften ein:
-    - **Name**: Geben Sie einen aussagekräftigen Namen für das benutzerdefinierte Profil ein. Benennen Sie Ihre Profile, damit Sie diese später leicht wiedererkennen. Ein geeigneter Profilname ist beispielsweise **Pro-App-VPN-Profil für iOS für das gesamte Unternehmen**.
-    - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    - **Name:** Geben Sie einen aussagekräftigen Namen für das benutzerdefinierte Profil ein. Benennen Sie Ihre Profile, damit Sie diese später leicht wiedererkennen. Ein geeigneter Profilname ist beispielsweise **Pro-App-VPN-Profil für iOS für das gesamte Unternehmen**.
+    - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
     - **Plattform**: Wählen Sie **iOS** aus.
     - **Profiltyp**: Wählen Sie **VPN** aus.
 3. Wählen Sie unter **Verbindungstyp** Ihre VPN-Client-App aus.

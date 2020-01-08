@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fab50e0aefd926b4dc7a2b3559576642d5d6b79
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b11cbd3427b3b8e0a43a6e6e2af5fa80da45e16a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059308"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206277"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>Erstellen von VPN-Profilen zum Herstellen einer Verbindung mit VPN-Servern in Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Über virtuelle private Netzwerke (VPNs) erhalten Ihre Benutzer sicheren Remotezugriff auf Ihr Organisationsnetzwerk. Mithilfe eines VPN-Verbindungsprofils stellen Geräte eine Verbindung mit dem VPN-Server her. **VPN-Profile** in Microsoft Intune ermöglichen Ihnen die Zuweisung von VPN-Einstellungen für Benutzer und Geräte in Ihrer Organisation, damit diese leicht eine sichere Verbindung zu Ihrem Organisationsnetzwerk herstellen können.
 
@@ -49,7 +49,7 @@ Sie können VPN-Profile mit den folgenden Verbindungstypen erstellen:
 |Automatisch|Windows 10|
 |Check Point Capsule VPN|– Android<br/>– Android Enterprise-Arbeitsprofile<br/>– iOS<br/>– macOS<br/>– Windows 10<br/>– Windows 8.1<br/>– Windows Phone 8.1|
 |Cisco AnyConnect|– Android<br/>– Android Enterprise-Arbeitsprofile<br/>– Android Enterprise-Gerätebesitzer (vollständig verwaltet)<br/>– iOS<br/>– macOS|
-|Cisco (IPsec)|iOS|
+|Cisco (IPSec)|iOS|
 |Citrix SSO|– Android<br/>– Android Enterprise-Arbeitsprofile: Verwenden von [App-Konfigurationsrichtlinien](../apps/app-configuration-policies-use-android.md)<br/>– Android Enterprise-Gerätebesitzer (vollständig verwaltet): Verwenden von [App-Konfigurationsrichtlinien](../apps/app-configuration-policies-use-android.md)<br/>– iOS<br/>– Windows 10|
 |Benutzerdefiniertes VPN|– iOS<br/>– macOS|
 |F5 Access|– Android<br/>– Android Enterprise-Arbeitsprofile<br/>– Android Enterprise-Gerätebesitzer (vollständig verwaltet)<br/>– iOS<br/>– macOS<br/>– Windows 10<br/>– Windows 8.1<br/>– Windows Phone 8.1|
@@ -72,8 +72,8 @@ Informationen zum Erstellen benutzerdefinierter VPN-Profile mithilfe von URI-Ein
 2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Geben Sie die folgenden Eigenschaften ein:
 
-    - **Name**: Geben Sie einen aussagekräftigen Namen für das Profil ein. Benennen Sie Ihre Profile, damit Sie diese später leicht wiedererkennen. Ein geeigneter Profilname ist beispielsweise **VPN-Profil für das gesamte Unternehmen**.
-    - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    - **Name:** Geben Sie einen aussagekräftigen Namen für das Profil ein. Benennen Sie Ihre Profile, damit Sie diese später leicht wiedererkennen. Ein geeigneter Profilname ist beispielsweise **VPN-Profil für das gesamte Unternehmen**.
+    - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
     - **Plattform**: Wählen Sie die Plattform Ihrer Geräte aus. Folgende Optionen sind verfügbar:
 
       - **Android**

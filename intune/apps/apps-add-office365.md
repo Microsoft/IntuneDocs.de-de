@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73848ee8301362f14fe2866a57329425d5e5cfbe
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: b566dd58b01a411126ffabb46d526e4480c2ba0a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563663"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205971"
 ---
 # <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Hinzufügen von Office 365-Apps zu Windows 10-Geräten mit Microsoft Intune
 
@@ -88,7 +88,7 @@ In diesem Schritt stellen Sie Informationen über die App-Suite bereit. Diese In
     - **Besitzer**: Als Besitzer wird Microsoft angezeigt.
     - **Anmerkungen**: Geben Sie Hinweise zu dieser App ein.
     - **Logo**: Das Office 365-Logo wird gemeinsam mit der App angezeigt, wenn Benutzer das Unternehmensportal durchsuchen.
-3. Wählen Sie **OK** aus.
+3. Klicken Sie auf **OK**.
 
 ## <a name="configure-app-suite"></a>Konfigurieren der App-Suite
 
@@ -97,7 +97,7 @@ Wenn Sie im Dropdownfeld **Einstellungsformat** die Option **Konfigurations-Desi
 1. Wählen Sie auf dem Blatt **App hinzufügen** die Option **App-Suite konfigurieren** aus.
 2. Wählen Sie auf dem Blatt **App-Suite konfigurieren** die Office-Standard-Apps aus, die Sie Geräten zuweisen möchten.  
     Sie können zusätzlich Apps für den Microsoft Project Online-Desktopclient und Microsoft Visio Online Plan 2 installieren, wenn Sie über die entsprechenden Lizenzen verfügen.
-3. Wählen Sie **OK** aus.
+3. Klicken Sie auf **OK**.
 
 ## <a name="configure-app-suite-settings"></a>Konfigurieren der Einstellungen der App-Suite
 
@@ -197,7 +197,7 @@ Sobald Sie sicher sein können, dass sowohl Intune als auch die Netzwerkinfrastr
 
 ## <a name="errors-during-installation-of-the-app-suite"></a>Fehler während der Installation der App-Suite
 
-Informationen zum Anzeigen ausführlicher Installationsprotokolle finden Sie im Blogbeitrag [How to enable Office 365 ProPlus ULS logging](https://blogs.technet.microsoft.com/odsupport/2018/06/18/how-to-enable-office-365-proplus-uls-logging) (Aktivieren der ULS-Protokollierung von Office 365 ProPlus).
+Informationen zum Anzeigen ausführlicher Installationsprotokolle finden Sie im Blogbeitrag [How to enable Office 365 ProPlus ULS logging](/office/troubleshoot/diagnostic-logs/how-to-enable-office-365-proplus-uls-logging) (Aktivieren der ULS-Protokollierung von Office 365 ProPlus).
 
 In den nachstehenden Tabellen sind die häufigsten Fehlercodes aufgeführt, die auftreten können, sowie deren Bedeutung.
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: b6144767ee69de8c1ff14e5c189c078994a9dcf4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 060c3c00a228794d3f237a6362b048bf23e1a933
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74819714"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547721"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Intune-Registrierungsmethoden für Windows-Geräte
 
@@ -49,7 +49,7 @@ Wenn ein Administrator die automatische Registrierung, die in Azure AD Premium-A
 Administratoren können die folgenden Registrierungsmethoden einrichten, die keine Benutzerinteraktion erfordern:
 
 - [Azure AD Hybrid Join:](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy) Diese Methode ermöglicht Administratoren, die Active Directory-Gruppenrichtlinie so zu konfigurieren, dass Geräte automatisch verknüpft werden, wenn sie hybrid in Azure AD eingebunden sind. 
-- [Configuration Manager Co-management](https://docs.microsoft.com/sccm/comanage/overview) (Configuration Manager-Co-Verwaltung): Diese Methode ermöglicht Administratoren, ihre vorhandenen verwalteten Configuration Manager-Geräte in Intune zu registrieren, um sowohl von den Vorteilen von Intune als auch von Configuration Manager zu profitieren. 
+- [Configuration Manager Co-management](https://docs.microsoft.com/configmgr/comanage/overview) (Configuration Manager-Co-Verwaltung): Diese Methode ermöglicht Administratoren, ihre vorhandenen verwalteten Configuration Manager-Geräte in Intune zu registrieren, um sowohl von den Vorteilen von Intune als auch von Configuration Manager zu profitieren. 
 - Der [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md) (Device Enrollment Manager, DEM) ist ein spezielles Dienstkonto. DEM-Konten haben Berechtigungen, mit denen autorisierte Benutzer mehrere unternehmenseigene Geräte registrieren und verwalten können. Diese Gerätetypen eignen sich z.B. für POS- oder Hilfsprogramm-Apps, nicht aber für Benutzer, die Zugriff auf E-Mails oder Unternehmensressourcen benötigen. Diese Methode ermöglicht nicht, Features wie den bedingten Zugriff zu verwenden. 
 - [Bulk enroll](../windows-bulk-enroll.md) (Massenregistrierung): Diese Methode ermöglicht einem autorisierten Benutzer, sehr viele neue unternehmenseigene Geräte mit Azure Active Directory und Intune zu verknüpfen. Sie erstellen mit der Windows Configuration Designer-App (WCD) ein Bereitstellungspaket. Dann installieren Sie mithilfe von USB-Medien während der ersten Windows-Einrichtung oder mithilfe von Medien von vorhandenen Windows-Computern das Bereitstellungspaket, sodass Geräte automatisch in Intune registriert werden. Diese Methode ermöglicht nicht die Verwendung von bedingtem Zugriff. 
 - Beim [Registrieren von Windows IoT Core-Geräten in Microsoft Intune](https://docs.microsoft.com/windows/iot-core/manage-your-device/intunedeviceenrollment) erfolgt die Vorbereitung des Geräts auf dem Windows IoT Core-Dashboard. Danach wird der Windows-Konfigurations-Designer verwendet, um ein Bereitstellungspaket zu erstellen. Anschließend wird das Bereitstellungspaket beim ersten Systemstart über eine SD-Karte installiert, um die Geräte automatisch bei Intune zu registrieren.

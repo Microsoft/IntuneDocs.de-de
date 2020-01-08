@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 340659adfa3bbd40f98ccec9d8d44e952f7ec9b9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9c97a3ad329ce0e431c6dc8ef318306e4e002f36
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059941"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207110"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Einrichten eines TEM-Diensts (Telecom Expense Management) in Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Über Intune können Sie Telekommunikationsausgaben aufgrund von Datennutzung auf organisationseigenen mobilen Geräten verwalten. Intune lässt sich in das [TEM-System „Datalert“](http://datalert.biz/get-started) von Saaswedo integrieren. Datalert ist eine TEM-Lösung, mit der Sie die Nutzung von Telekommunikationsdaten in Echtzeit verwalten können. Diese Lösung hilft Ihnen dabei, unerwartete und teure Daten- und Roaminggebühren für Ihre mit Intune verwalteten Geräte zu vermeiden.
 
@@ -105,7 +105,7 @@ Intune lässt sich in folgende TEM-Anbieter integrieren:
 
    ![Die Datalert-Seite bei erfolgreicher Verbindung](./media/telecom-expenses-monitor/tem-datalert-mdm-profiles.png)
 
-### <a name="step-2-confirm-telecom-expense-management-is-active-in-intune"></a>Schritt 2: Bestätigen, dass Telecom Expense Management in Intune aktiv ist
+### <a name="step-2-confirm-telecom-expense-management-is-active-in-intune"></a>Schritt 2: Bestätigen, dass Telecom Expense Management in Intune aktiv ist
 
 Nachdem Sie Schritt 1 ausgeführt haben, ist Ihre Verbindung automatisch aktiviert. In Intune wird **Aktiv** als Verbindungsstatus angezeigt. Um zu bestätigen, dass der Status tatsächlich „aktiv“ ist, führen Sie folgende Schritte aus:
 
@@ -115,7 +115,7 @@ Nachdem Sie Schritt 1 ausgeführt haben, ist Ihre Verbindung automatisch aktivi
 
    ![Intune-Seite mit aktivem Datalert-Verbindungsstatus](./media/telecom-expenses-monitor/tem-azure-portal-enable-service.png)
 
-### <a name="step-3-deploy-the-datalert-app-to-devices"></a>Schritt 3: Bereitstellen der Datalert-App auf Geräten
+### <a name="step-3-deploy-the-datalert-app-to-devices"></a>Schritt 3: Bereitstellen der Datalert-App auf Geräten
 
 Um zu bestätigen, dass nur die Datennutzung von organisationseigenen Leitungen erfasst wird, gehen Sie folgendermaßen vor:
 

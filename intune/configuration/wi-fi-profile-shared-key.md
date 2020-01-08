@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02d1311be0943d93f80f2f5a1c3f421d476af1e5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5a65000d46941876b95e0b110d21f2dfb900ca33
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059824"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206226"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key-in-intune"></a>Verwenden eines benutzerdefinierten Geräteprofils zum Erstellen eines WLAN-Profils mit einem vorinstallierten Schlüssel in Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Vorinstallierte Schlüssel (Pre-shared keys, PSK) werden üblicherweise verwendet, um Benutzer in WLANs (drahtlosen Netzwerken) zu authentifizieren. In Intune können Sie mit einem vorinstallierten Schlüssel ein WLAN-Profil erstellen. Verwenden Sie zum Erstellen des Profils das Intune-Feature **Benutzerdefinierte Geräteprofile**. Dieser Artikel enthält auch einige Beispiele für die Erstellung eines EAP-basierten WLAN-Profils.
 
@@ -53,15 +53,15 @@ Dieses Features unterstützt folgende Betriebssysteme:
 2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Geben Sie die folgenden Eigenschaften ein:
 
-    - **Name**: Geben Sie einen aussagekräftigen Namen für die Richtlinie ein. Benennen Sie Ihre Richtlinien so, dass Sie diese später leicht wiedererkennen. Ein geeigneter Richtlinienname ist beispielsweise **Benutzerdefinierte Profileinstellungen für OMA-URI-WLAN für Android-Geräte**.
-    - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    - **Name:** Geben Sie einen aussagekräftigen Namen für die Richtlinie ein. Benennen Sie Ihre Richtlinien so, dass Sie diese später leicht wiedererkennen. Ein geeigneter Richtlinienname ist beispielsweise **Benutzerdefinierte Profileinstellungen für OMA-URI-WLAN für Android-Geräte**.
+    - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
     - **Plattform**: Wählen Sie Ihre Plattform aus.
     - **Profiltyp**: Klicken Sie auf **Benutzerdefiniert**.
 
 4. Wählen Sie in **Einstellungen** die Option **Hinzufügen** aus. Geben Sie eine neue OMA-URI-Einstellung mit folgenden Eigenschaften ein:
 
-    1. **Name**: Geben Sie einen Namen für die OMA-URI-Einstellung ein.
-    2. **Beschreibung**: Geben Sie eine Beschreibung für die OMA-URI-Einstellung ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    1. **Name:** Geben Sie einen Namen für die OMA-URI-Einstellung ein.
+    2. **Beschreibung:** Geben Sie eine Beschreibung für die OMA-URI-Einstellung ein. Diese Einstellung ist optional, wird jedoch empfohlen.
     3. **OMA-URI**: Verwenden Sie eine der folgenden Optionen:
 
         - **Für Android**: `./Vendor/MSFT/WiFi/Profile/SSID/Settings`
@@ -74,7 +74,7 @@ Dieses Features unterstützt folgende Betriebssysteme:
 
     4. **Datentyp**: Wählen Sie **Zeichenfolge** aus.
 
-    5. **Wert**: Fügen Sie Ihren XML-Code ein. Sehen Sie sich das [Beispiel](#android-or-windows-wi-fi-profile-example) in diesem Artikel an. Aktualisieren Sie jeden Wert mit dem entsprechenden Wert für Ihre Netzwerkeinstellungen. Der Kommentarabschnitt des Codes enthält einige Hinweise.
+    5. **Wert:** Fügen Sie Ihren XML-Code ein. Sehen Sie sich das [Beispiel](#android-or-windows-wi-fi-profile-example) in diesem Artikel an. Aktualisieren Sie jeden Wert mit dem entsprechenden Wert für Ihre Netzwerkeinstellungen. Der Kommentarabschnitt des Codes enthält einige Hinweise.
 
 5. Wenn Sie fertig sind, wählen Sie **OK** > **Erstellen** aus, um Ihre Änderungen zu speichern.
 

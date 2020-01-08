@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb9aa6349a88f226c063703d6cb035b3c89636fd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: feee58d926a25e9132204798ba93d10a7c90f41e
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503254"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547833"
 ---
 # <a name="what-is-device-enrollment"></a>Was ist die Geräteregistrierung?
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -35,7 +35,7 @@ Standardmäßig dürfen Geräte für alle Plattformen in Intune registriert werd
 
 ## <a name="ios-enrollment-methods"></a>iOS-Registrierungsmethoden
 
-| **Methode** | **Zurücksetzen erforderlich** | [**Benutzeraffinität**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) | **Gesperrt** | **Details** |
+| **Methode** | **Zurücksetzen erforderlich** | [**Benutzeraffinität**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) | **Locked** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
 | | Geräte werden während der Registrierung auf die Werkseinstellungen zurückgesetzt. | Diese Methode ordnet jedes Gerät einem Benutzer zu.| Falls dies der Fall ist, können Benutzer die Registrierung von Geräten nicht aufheben. | |
 |**[BYOD](#bring-your-own-device)** | Nein| Ja | Nein | [Weitere Informationen](apple-mdm-push-certificate-get.md)|
@@ -60,7 +60,7 @@ Standardmäßig dürfen Geräte für alle Plattformen in Intune registriert werd
 |**Automatische Registrierung** | Nein |Ja |Nein | [Weitere Informationen](windows-enroll.md#enable-windows-10-automatic-enrollment)|
 |**Autopilot** |Ja |Ja |Nein | [Weitere Informationen](enrollment-autopilot.md)
 |**Massenregistrierung** |Nein |Nein |Nein | [Weitere Informationen](windows-bulk-enroll.md) |
-|**Co-Verwaltung** |Nein |Ja |Nein | [Weitere Informationen](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
+|**Co-Verwaltung** |Nein |Ja |Nein | [Weitere Informationen](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview)
 |**GPO** |Nein |Ja |Nein | [Weitere Informationen](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)
 
 ## <a name="android-enrollment-methods"></a>Android-Registrierungsmethoden
@@ -87,7 +87,7 @@ Zu BYOD-Geräten (Bring Your Own Device) gehören Mobiltelefone, Tablets und PCs
 [Unternehmenseigene Geräte (Corporate-Owned Devices, COD)](corporate-identifiers-add.md) umfassen Mobiltelefone, Tablets und PCs, die das Eigentum der Organisation sind und an die Mitarbeiter ausgegeben werden. Die Registrierung von COD-Geräten unterstützt Szenarios wie die automatische Registrierung, freigegebene Geräte oder Anforderungen für eine vorab autorisierte Registrierung. Eine Methode zum Registrieren von COD-Geräten besteht darin, dass ein Administrator oder Vorgesetzter den Geräteregistrierungs-Manager verwendet. iOS-Geräte können direkt über die von Apple bereitgestellten Programme zur Geräteregistrierung (Device Enrollment Program, DEP) registriert werden. Geräte mit einer IMEI-Nummer können auch als unternehmenseigene Geräte identifiziert und gekennzeichnet werden.
 
 ### <a name="device-enrollment-manager"></a>Geräteregistrierungs-Manager
-Der Geräteregistrierungs-Manager (DEM) ist ein besonderes Benutzerkonto, das zum Registrieren und Verwalten mehrerer firmeneigener Geräte verwendet wird. Manager können das Unternehmensportal installieren und viele benutzerlose Geräte registrieren. Diese Gerätetypen eignen sich z.B. für POS- oder Hilfsprogramm-Apps, nicht aber für Benutzer, die Zugriff auf E-Mails oder Unternehmensressourcen benötigen. Erfahren Sie mehr über den [DEM](device-enrollment-manager-enroll.md).
+Der Geräteregistrierungs-Manager (DEM) ist ein besonderes Benutzerkonto, das zum Registrieren und Verwalten mehrerer firmeneigener Geräte verwendet wird. Manager können das Unternehmensportal installieren und viele benutzerlose Geräte registrieren. Diese Gerätetypen eignen sich z.B. für POS- oder Hilfsprogramm-Apps, nicht aber für Benutzer, die Zugriff auf E-Mails oder Unternehmensressourcen benötigen. Erfahren Sie mehr über [DEM](device-enrollment-manager-enroll.md).
 
 ### <a name="apple-device-enrollment-program"></a>Apple-Programm zur Geräteregistrierung
 Mit der Apple DEP-Verwaltung (Device Enrollment Program, Programm zur Geräteregistrierung) können Sie Richtlinien erstellen und „drahtlos“ auf iOS- und macOS-Geräten bereitstellen, die über DEP erworben wurden und verwaltet werden. Das Gerät wird registriert, wenn ein Benutzer es zum ersten Mal einschaltet und den Setup-Assistenten ausführt. Diese Methode unterstützt den überwachten Modus von iOS, der zulässt, dass ein Gerät mit bestimmten Funktionen konfiguriert wird.

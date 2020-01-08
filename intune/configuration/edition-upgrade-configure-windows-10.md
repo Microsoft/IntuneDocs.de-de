@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3595e75a73868378c9c366de6c751c21a9151ae3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 13fca4de8e36b1bdeb9026985e2eabd21e56e924
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059518"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206940"
 ---
 # <a name="upgrade-windows-10-editions-or-switch-out-of-s-mode-on-devices-using-microsoft-intune"></a>Upgraden von Windows 10-Editionen oder Verlassen des S Modus auf Geräten mit Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Als Bestandteil Ihrer Lösung für die mobile Geräteverwaltung (Mobile Device Management, MDM) können Sie Ihre Windows 10-Geräte upgraden. Sie können z.B. ein Upgrade Ihrer Windows 10 Professional-Geräte auf Windows 10 Enterprise durchführen. Oder Sie möchten, dass das Gerät den S Modus verlässt.
 
@@ -100,11 +100,11 @@ Die folgenden Tabelle enthält die unterstützten Upgradepfade für das Windows 
 2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Geben Sie die folgenden Eigenschaften ein:
 
-    - **Name**: Geben Sie einen aussagekräftigen Namen für das neue Profil ein. Geben Sie zum Beispiel `Windows 10 edition upgrade profile` oder `Windows 10 switch off S mode` ein.
-    - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    - **Name:** Geben Sie einen aussagekräftigen Namen für das neue Profil ein. Geben Sie zum Beispiel `Windows 10 edition upgrade profile` oder `Windows 10 switch off S mode` ein.
+    - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
     - **Plattform**: Wählen Sie **Windows 10 und höher** aus.
     - **Profiltyp**: Wählen Sie **Upgrade der Edition** aus.
-    - **Einstellungen:** Geben Sie die Einstellungen ein, die Sie konfigurieren möchten. Eine Liste aller Einstellungen und ihrer Funktionen finden Sie unter:
+    - **Einstellungen**: Geben Sie die Einstellungen ein, die Sie konfigurieren möchten. Eine Liste aller Einstellungen und ihrer Funktionen finden Sie unter:
 
         - [Windows 10-Upgrade und S Modus](edition-upgrade-windows-settings.md)
         - [Windows Holographic for Business](holographic-upgrade.md)

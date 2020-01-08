@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71f2bc855673b6b189ed7581b979527485e86083
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: c8748639f0407de7b1bb83f646b7decf8c838766
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860382"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206668"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Erstellen eines Geräteprofils in Microsoft Intune
 
@@ -48,8 +48,8 @@ Inhalt dieses Artikels
 
 3. Wählen Sie **Profil erstellen** aus. Geben Sie die folgenden Eigenschaften ein:
 
-   - **Name**: Geben Sie einen aussagekräftigen Namen für das Profil ein. Benennen Sie Ihre Profile, damit Sie diese später leicht wiedererkennen. Ein angemessener Profilname ist beispielsweise **WP email profile for entire company** (WP-E-Mail-Profil für das gesamte Unternehmen).
-   - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+   - **Name:** Geben Sie einen aussagekräftigen Namen für das Profil ein. Benennen Sie Ihre Profile, damit Sie diese später leicht wiedererkennen. Ein angemessener Profilname ist beispielsweise **WP email profile for entire company** (WP-E-Mail-Profil für das gesamte Unternehmen).
+   - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
    - **Plattform**: Wählen Sie die Plattform Ihrer Geräte aus. Folgende Optionen sind verfügbar:  
 
        - **Android**
@@ -61,7 +61,7 @@ Inhalt dieses Artikels
        - **Windows 10 und höher**
 
    - **Profiltyp**: Wählen Sie den Typ der Einstellungen aus, den Sie erstellen möchten. Die angezeigte Liste variiert je nach ausgewählter **Plattform**.
-   - **Einstellungen:** Die folgenden Artikel beschreiben die Einstellungen für die einzelnen Profiltypen:
+   - **Einstellungen**: Die folgenden Artikel beschreiben die Einstellungen für die einzelnen Profiltypen:
 
        - [Administrative Vorlagen](administrative-templates-windows.md)
        - [Benutzerdefiniert](../custom-settings-configure.md)

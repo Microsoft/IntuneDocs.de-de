@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be6cc64c3a65af72fd74bc58ed7c06a214797510
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b3485a87120cbf565a275cefb38cfe3549ee31d5
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059464"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206447"
 ---
 # <a name="use-the-take-a-test-app-on-windows-10-devices-in-microsoft-intune"></a>Verwenden der „Take a Test“-App für Windows 10-Geräte in Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Education-Profile in Intune sind dafür konzipiert, dass Kursteilnehmer einen Test oder eine Prüfung auf Geräten absolvieren. Dieses Feature umfasst die **Take a Test**-App und Einstellungen zum Hinzufügen einer Test-URL, das Auswählen der Methode, mit der Endbenutzer sich bei dem Test anmelden, und Sonstiges. Dieses Feature unterstützt die folgende Plattform:
 
@@ -42,8 +42,8 @@ In diesem Artikel sind die Schritte zum Erstellen eines Gerätekonfigurationspro
 2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Geben Sie die folgenden Eigenschaften ein:
 
-    - **Name**: Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
-    - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    - **Name:** Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
+    - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
     - **Plattform**: Wählen Sie **Windows 10 und höher** aus.
     - **Profil**: Wählen Sie **Education-Profil** aus.
 

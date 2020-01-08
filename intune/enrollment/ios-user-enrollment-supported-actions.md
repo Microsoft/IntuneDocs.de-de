@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: e23e582a853f0b424296d8fb42f6c7d8fdd2984c
+ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562408"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "75324864"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Bei der Apple-Benutzerregistrierung unterstützte Intune-Aktionen und -Optionen
 
@@ -38,7 +38,7 @@ Wenn Sie auf Geräten zur Benutzerregistrierung eine Kennworteinstellung konfigu
 
 Sie konfigurieren beispielsweise die Einstellung **Kennwortablauf** und übertragen diese Richtlinie per Push auf vom Benutzer registrierte Geräte. Auf diesen Geräten geschieht Folgendes:
 - Die Einstellung **Kennwortablauf** wird ignoriert.
-- Einfache Passwörter wie `1111` oder `1234` sind nicht zulässig.
+- Einfache Passwörter wie `111111` oder `123456` sind nicht zulässig.
 - Eine sechsstellige PIN wird erzwungen.
 
 ## <a name="administrator-remote-device-actions-and-options"></a>Aktionen und Optionen für Administratoren auf Remotegeräten
@@ -46,14 +46,14 @@ Für Administratoren sind auf Geräten zur Benutzerregistrierung die folgenden A
 - Außerkraftsetzen
 - Löschen
 - Remotesperre
-- Synchronisierung
+- Sync
 
 Alle anderen Aktionen werden nicht unterstützt.
 
 ## <a name="end-user-actions"></a>Endbenutzeraktionen
 Auf Geräten zur Benutzerregistrierung können Endbenutzer über die Anwendung und Website „Unternehmensportal“ diese Aktionen auf ihren Geräten durchführen:
 - Umbenennen. Diese Aktion gilt nur innerhalb des Unternehmensportals für den dem Benutzer angezeigten Namen. Das Gerät wird außerhalb dieses Kontexts nicht vollständig umbenannt.
-- Remove
+- Entfernen
 - Remotesperre
 - Status überprüfen
 
