@@ -34,13 +34,20 @@
     "globalMetadata": {
       "layout": "Conceptual",
       "breadcrumb_path": "/enterprise-mobility/toc.json",
-      "disable_contribution_on_translation_quality": ["MT"],
+      "disable_contribution_on_translation_quality": [
+        "MT",
+        "MTE75",
+        "MTE95",
+        "Blank"
+      ],
       "product_feedback_displaytext": "Intune Feedback",
       "product_feedback_url": "https://microsoftintune.uservoice.com/",
       "contributors_to_exclude": [
         "herohua"
       ],
-      "searchScope": ["Intune"],
+      "searchScope": [
+        "Intune"
+      ],
       "_op_documentIdPathDepotMapping": {
         "EndUser/": {
           "depot_name": "Azure.EndUser",

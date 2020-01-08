@@ -36,13 +36,20 @@
       "product_feedback_url": "https://microsoftintune.uservoice.com/",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/Intunedocs.de-de",
-      "feedback_product_url": "https://microsoftintune.uservoice.com/",  
-      "searchScope": ["Intune"],
-      "disable_contribution_on_translation_quality": ["MT"]
+      "feedback_product_url": "https://microsoftintune.uservoice.com/",
+      "searchScope": [
+        "Intune"
+      ],
+      "disable_contribution_on_translation_quality": [
+        "MT",
+        "MTE75",
+        "MTE95",
+        "Blank"
+      ]
     },
     "fileMetadata": {
       "featureFlags": {
-        "*.md" : [
+        "*.md": [
           "show_binary_rating"
         ]
       }
