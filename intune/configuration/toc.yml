@@ -9,7 +9,11 @@
   items:
     - name: Erstellen eines E-Mail-Geräteprofils
       href: quickstart-email-profile.md
-- name: Schrittanleitungen
+- name: Tutorials
+  items:
+    - name: Erstellen einer administrativen Vorlage
+      href: tutorial-walkthrough-administrative-templates.md
+- name: Anleitungen
   items:
     - name: Erstellen eines Profils
       href: device-profile-create.md
@@ -82,7 +86,7 @@
           href: android-zebra-mx-logs-troubleshoot.md
         - name: Häufig gestellte Fragen und deren Antworten
           href: device-profile-troubleshoot.md
-- name: Referenz
+- name: Reference
   items:
     - name: Einstellungen für das Konfigurationsprofil
       items:
@@ -145,8 +149,6 @@
               href: vpn-settings-macos.md
             - name: WLAN
               href: wi-fi-settings-macos.md
-            - name: Kabelgebundenes Netzwerk
-              href: wired-network-settings-macos.md
             - name: Benutzerdefiniert
               href: custom-settings-macos.md
         - name: Windows 10 und höher
@@ -189,7 +191,7 @@
               href: kiosk-settings-holographic.md
             - name: Benutzerdefiniert
               href: custom-settings-windows-holographic.md
-        - name: "Windows\_8.1"
+        - name: Windows 8.1
           items:
             - name: Geräteeinschränkungen
               href: device-restrictions-windows-8-1.md
