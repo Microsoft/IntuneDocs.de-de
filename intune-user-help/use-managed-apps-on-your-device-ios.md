@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5daa9f6b9f50c561876818e75e56c9a948a8f955
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 24719e6f1fcce99149fa71b566ded4e13d1808da
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508086"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858980"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Verwenden verwalteter Apps auf Ihrem iOS-Gerät
 

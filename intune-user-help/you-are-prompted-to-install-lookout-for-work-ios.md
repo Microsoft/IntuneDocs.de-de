@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 06004989a092da79c7f3b929e55386565712a68a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 83e593b225674e46cf2607058bb313ceb0aa8427
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501679"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858742"
 ---
 # <a name="install-lookout-for-work-on-your-ios-device"></a>Installieren von Lookout for Work auf Ihrem iOS-Gerät
 

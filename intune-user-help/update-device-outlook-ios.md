@@ -19,20 +19,20 @@ ROBOTS: ''
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ff648357c4a787367dc30951fdcdd0dc9203e35
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 09ae1911069f55ee2afbf1620ebdd886db8c138a
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508064"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858963"
 ---
 # <a name="you-need-to-update-your-ios-device-to-install-the-outlook-app"></a>Sie müssen Ihr iOS-Gerät aktualisieren, um die Outlook-App zu installieren
 
 Die Outlook-App hilft Millionen von Benutzern, alle ihre E-Mail-Konten, Kalender und Dateien für [iOS](https://itunes.apple.com/app/microsoft-outlook-email-calendar/id951937596)-Geräte an zentraler Stelle zu verbinden.
 
 >[!NOTE]
-> Suchen Sie die Anweisungen für Android-Geräte? [Erfahren Sie mehr](update-device-outlook-android.md).
+> Suchen Sie die Anweisungen für Android-Geräte? [Weitere Informationen](update-device-outlook-android.md)
 
 Manchmal kann bei der Installation einer App ein Fehler auftreten, insbesondere dann, wenn Ihr Gerät nicht auf dem neuesten Stand ist. 
 

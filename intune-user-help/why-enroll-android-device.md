@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08b20ba59c0dabc680e0f5760ee4de892506b7e3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: db9ff1b6f707a6d978d8499f3e82af2d1a04f355
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501599"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857501"
 ---
 # <a name="why-enroll-your-android-device"></a>Warum sollten Sie Ihr Android-Gerät registrieren?  
 

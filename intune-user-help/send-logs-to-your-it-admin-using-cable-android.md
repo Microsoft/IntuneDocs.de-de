@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8a0ffebe7472666ce9ccd53a47460ab5f0a9b34d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e70ef0a31b2503944fb86356f96f81f375205cb7
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508318"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858002"
 ---
 # <a name="upload-and-email-logs-using-a-usb-cable"></a>Hochladen und e-Mail-Protokolle per USB-Kabel
 

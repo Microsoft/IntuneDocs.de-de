@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d95ed9c7e468c397c28b82e21163e78e2e48e60
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: df5c26e3465c7f7734b311aac45ea56f681901ea
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508162"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857709"
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>Deaktivieren der Datensammlung durch Microsoft
 

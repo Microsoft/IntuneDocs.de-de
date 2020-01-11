@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b26717e2e8beed2e92f47dca17cbea0ec47a82b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: b49266f22eddec419551b23e05876c8d19c7802d
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74096747"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858620"
 ---
 # <a name="enable-code-integrity"></a>Aktivieren der Codeintegrität
 

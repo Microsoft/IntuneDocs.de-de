@@ -19,13 +19,13 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser; seodec18
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6793c8d4d94eedd6cd65913ca5d074e329e54cef
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: da1d860ad4de23536d9a459b3f855aa5ef0a9211
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72500243"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858416"
 ---
 # <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>Ihr iOS-Gerät verfügt nicht über die erforderliche Mindestversion des Betriebssystems
 

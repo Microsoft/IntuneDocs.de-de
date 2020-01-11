@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d6d54556f01ab047cc652f1f27238b74d003795
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: ec75db08304d242d3cedc7ddd105daafce38c63f
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501978"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857746"
 ---
 # <a name="turn-off-microsoft-usage-data-collection"></a>Deaktivieren der Erfassung von Nutzungsdaten durch Microsoft
 
@@ -33,7 +33,7 @@ Microsoft sammelt automatisch bestimmte Daten zu Produkten und Diensten. Die Dat
 So deaktivieren Sie die Datensammlung auf Ihrem Android-Gerät:  
 
 1. Öffnen Sie die APP Unternehmensportal oder Microsoft InTune.
-2. Klicken Sie auf **Einstellungen**.
+2. Wählen Sie **Einstellungen** aus.
 3. Wechseln Sie unter der Einstellung Verwendungs Daten den Schalter in die Position aus. 
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

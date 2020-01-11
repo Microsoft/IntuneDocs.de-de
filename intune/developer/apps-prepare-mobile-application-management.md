@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 901eaafb24cda185540ffc4b1a56484042af74c1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a8b5b323c4bb80cd15bf9c6c8f0f7a8be577d6bf
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74547689"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653936"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Vorbereiten von branchenspezifischen Apps für App-Schutzrichtlinien
 
@@ -105,7 +105,7 @@ In dieser Tabelle sind die Einstellungen aufgeführt, die Sie für das App SDK u
 |Blockieren von Bildschirmaufnahmen (nur Android)|X|X|
 |Unterstützung von MAM ohne Geräteregistrierung|X|X|
 |Vollständiges Zurücksetzen von App-Daten|X|X|
-|Selektives Zurücksetzen von Geschäfts-, Schul- oder Unikontodaten in Szenarien mit mehreren Identitäten <br><br>**Hinweis:** Für iOS wird die App auch entfernt, wenn das Verwaltungsprofil entfernt wird.|X||
+|Selektives Zurücksetzen von Geschäfts-, Schul- oder Unikontodaten in Szenarien mit mehreren Identitäten <br><br>**Hinweis:** Für iOS wird beim Entfernen des Verwaltungsprofils auch die App entfernt.|X||
 |Verhindern von „Speichern unter“|X||
 |Gezielte Anwendungskonfiguration (oder App-Konfiguration über den "MAM-Kanal")|X||
 |Unterstützung von mehreren Identitäten|X||

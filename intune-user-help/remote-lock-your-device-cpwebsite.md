@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c81c13d5da8eac1616ab7274b484befaa5685511
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: dae2f1733fe98729384c44cb19d28651a75d0862
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502159"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858343"
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Sperren Ihres Geräts remote über die Unternehmensportalwebsite
 

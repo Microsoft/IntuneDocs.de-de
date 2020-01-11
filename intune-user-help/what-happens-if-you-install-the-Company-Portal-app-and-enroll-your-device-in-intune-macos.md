@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e692dc0a9aabee450924aafabafed7c3293fc695
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: bf8c27641bfd87881c9f203c5c0dae928e5599ef
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501809"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858895"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-macos-device-in-intune"></a>Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr macOS-Gerät bei Intune registrieren?
 

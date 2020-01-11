@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/07/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d7a5f67dfd8f7256559cb54d873ed48205ad751
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6d99410416da4c98bb01611051176b793c845237
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490424"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654106"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Verbinden mit dem Data Warehouse mit Power BI
 
@@ -83,7 +83,7 @@ Wenn der Client bei Azure AD authentifiziert ist, verbindet sich die OData-URL m
 5. Wählen Sie **Datei** aus, > **Daten erhalten**. Wählen Sie **OData-Feed** aus.
 6. Wählen Sie **Standard**.
 7. Geben Sie die **OData-URL** in das URL-Feld ein, oder fügen Sie sie ein.
-8. Wählen Sie **OK** aus.
+8. Klicken Sie auf **OK**.
 9. Wenn Sie Ihren Mandanten noch nicht über den Power BI Desktop-Client bei Azure AD authentifiziert haben, geben Sie Ihre Anmeldeinformationen ein. Um auf Ihre Daten zugreifen zu können, müssen Sie mithilfe von OAuth 2.0 bei Azure Active Directory (Azure AD) eine Autorisierung durchführen.  
     1. Wählen Sie **Organisationskonto** aus.  
     2. Geben Sie Ihren Benutzernamen und Ihr Kennwort ein.  

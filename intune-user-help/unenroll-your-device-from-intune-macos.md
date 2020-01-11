@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4d6ecdc84371c0f485fc1cf26065ed681f29804
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 8dd81a6c850fbb3b3d36d4f7b09cd04682e5b31e
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501926"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857689"
 ---
 # <a name="unenroll-your-macos-device-from-company-portal"></a>Aufheben der Registrierung Ihres macOS-Geräts bei Unternehmensportal
 

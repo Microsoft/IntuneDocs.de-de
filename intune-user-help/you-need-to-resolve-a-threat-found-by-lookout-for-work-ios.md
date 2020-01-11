@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 309672805b89275e3a9aef7fae6b20754a923916
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: dc7d9b3127f5a6424ab31652f7bdfa8e6488f6ff
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72500722"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858637"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Beseitigen einer von Lookout for Work erkannten Bedrohung  
 
@@ -52,7 +52,7 @@ Erhalten Sie erneut Zugriff auf Ressourcen Ihres Unternehmens, wenn die Lookout 
 Wenn Sie eine App installieren, die Lookout for Work als Bedrohung identifiziert, erhalten Sie eine Meldung wie im folgenden Screenshot gezeigt.  
 
 ![Beispielscreenshot mit einer Liste von aktiven und gelösten App-Bedrohungen, die von Lookout for Work erkannt wurden.](./media/ios-lfw-threat-example.png)    
-Wählen Sie den App-Namen aus, der im oberen Bereich des Bildschirms angezeigt wird. Folgen Sie dann den Anweisungen, um die App zu entfernen und zu deinstallieren. Solange sich die App auf Ihrem Gerät befindet, können Sie nicht auf Unternehmensressourcen zugreifen.    
+Wählen Sie den App-Namen aus, der im oberen Bereich des Bildschirms angezeigt wird. Führen Sie dann die Anweisungen aus, um die App zu entfernen und zu deinstallieren. Solange sich die App auf Ihrem Gerät befindet, können Sie nicht auf Unternehmensressourcen zugreifen.    
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie die Supportabteilung Ihres Unternehmens. Sie finden entsprechende Kontaktinformationen auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).    
 

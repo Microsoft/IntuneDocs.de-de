@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb1833a6a54fe0a7f78958e653468921df952b4d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ef8fd91744931e1a4a8b7f52d5646c4f8201c255
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505695"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654055"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Verweis für MAM-Entitäten (Verwaltung mobiler Apps)
 
@@ -126,6 +126,6 @@ Die Entität **mamPlatform** führt Plattformnamen und -typen auf, auf denen ein
 |----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
 |        platformKey         |     Eindeutiger Bezeichner für die Plattform im Data Warehouse – Ersatzschlüssel      |                           123                           |
 |          Plattform          | Eindeutiger Bezeichner der Plattform – ähnlich wie PlatformKey, es handelt sich allerdings um einen natürlichen Schlüssel |                           123                           |
-|        platformName        |                                   Plattformname                                   | Nicht verfügbar <br>Keine <br>Windows <br>iOS <br>Android: |
+|        platformName        |                                   Plattformname                                   | Nicht verfügbar <br>Keine <br>Windows <br>IOS <br>Android: |
 | rowLastModifiedDateTimeUtc | Datum und Uhrzeit in UTC, als diese Plattform zuletzt im Data Warehouse geändert wurde  |                 23.11.2016 12:00:00 Uhr                  |
 

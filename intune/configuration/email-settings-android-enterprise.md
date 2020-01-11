@@ -16,16 +16,16 @@ search.appverid: MET150
 ms.reviewer: maholdaa
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92d81e383a9964aaecbdd151397879236ffcb726
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: dc86e82f189377d63422cc3306b8554637164b0f
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72493559"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206430"
 ---
 # <a name="android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Android Enterprise-Geräteeinstellungen zum Konfigurieren von E-Mail, Authentifizierung und Synchronisierung in Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 In diesem Artikel werden die verschiedenen E-Mail-Einstellungen aufgeführt und beschrieben, die Sie auf Android Enterprise-Geräten steuern können. Als Bestandteil Ihrer Lösung für die mobile Geräteverwaltung (Mobile Device Management, MDM) verwenden Sie diese Einstellungen, um einen E-Mail-Server zu konfigurieren, SSL zur Verschlüsselung von E-Mails zu nutzen und vieles mehr.
 
@@ -39,25 +39,25 @@ Erstellen Sie ein [Geräte Konfigurations Profil](email-settings-configure.md#cr
 
 ## <a name="android-enterprise"></a>Android Enterprise
 
-- **E-Mail-App:** Wählen Sie entweder **Gmail** oder **Nine Work** aus.
-- **E-Mail-Server:** Der Hostname Ihres Exchange-Servers. Geben Sie beispielsweise `outlook.office365.com` ein.
-- **Benutzernamensattribut aus AAD:** Dieser Name ist das Attribut, dass Intune aus Azure Active Directory (Azure AD) abruft. Intune generiert dynamisch den Benutzernamen, der von diesem Profil verwendet wird. Folgende Optionen sind verfügbar:
+- **E-Mail-App**: Wählen Sie entweder **Gmail** oder **Nine Work** aus.
+- **E-Mail-Server**: Der Hostname Ihres Exchange-Servers. Geben Sie beispielsweise `outlook.office365.com` ein.
+- **Benutzernamensattribut aus AAD**: Dieser Name ist das Attribut, das Intune aus Azure Active Directory (Azure AD) abruft. Intune generiert dynamisch den Benutzernamen, der von diesem Profil verwendet wird. Folgende Optionen sind verfügbar:
 
-  - **Benutzerprinzipalname:** Ruft den Namen ab, z.B. `user1` oder `user1@contoso.com`
-  - **Benutzername:** Ruft nur den Namen ab, z.B. `user1`
+  - **Benutzerprinzipalname**: Hiermit wird der Name abgerufen, z.B. `user1` oder `user1@contoso.com`.
+  - **Benutzername**: Hiermit wird nur der Name abgerufen, z.B. `user1`.
 
-- **E-Mail-Adressenattribut aus AAD:** Dieser Name ist das E-Mail-Adressenattribut, dass Intune aus Azure AD abruft. Intune generiert dynamisch die E-Mail-Adresse, die von diesem Profil verwendet wird. Folgende Optionen sind verfügbar:
-  - **Benutzerprinzipalname**: Der vollständige Prinzipalname, z.B. `user1@contoso.com` oder `user1`, wird als E-Mail-Adresse verwendet.
-  - **Primäre SMTP-Adresse:** Verwendet die primäre SMTP-Adresse, z. B. `user1@contoso.com`, zum Anmelden bei Exchange.
+- **Attribut für E-Mail-Adresse aus AAD**: Dieser Name ist das E-Mail-Attribut, dass Intune aus Azure AD abruft. Intune generiert dynamisch die E-Mail-Adresse, die von diesem Profil verwendet wird. Folgende Optionen sind verfügbar:
+  - **Benutzerprinzipalname**:  Der vollständige Prinzipalname, z.B. `user1@contoso.com` oder `user1`, wird als E-Mail-Adresse verwendet.
+  - **Primäre SMTP-Adresse**: Verwenden Sie die primäre SMTP-Adresse, z.B. `user1@contoso.com`, zum Anmelden bei Exchange.
 
-- **Authentifizierungsmethode**: Wählen Sie entweder **Benutzername und Kennwort** oder **Zertifikate** als Authentifizierungsmethode aus, die vom E-Mail-Profil verwendet werden soll.
+- **Authentifizierungsmethode**: Wählen Sie **Benutzername und Kennwort** oder **Zertifikate** als Authentifizierungsmethode aus, die vom E-Mail-Profil verwendet werden soll.
   - Wenn Sie **Zertifikat** auswählen, wählen Sie ein SCEP- oder PKCS-Clientzertifikatprofil aus, das Sie zur Authentifizierung der Exchange-Verbindung zuvor erstellt haben.
 - **SSL**: Wählen Sie **Aktivieren** aus, um die SSL-Kommunikation (Secure Sockets Layer) beim Senden und Empfangen von E-Mails sowie bei der Kommunikation mit dem Exchange-Server zu verwenden.
-- **Anzahl der zu synchronisierenden E-Mails:** Wählen Sie aus, welche Menge an E-Mails Sie synchronisieren möchten. Wählen Sie alternativ **Unbegrenzt** aus, um alle verfügbaren E-Mails zu synchronisieren.
-- **Zu synchronisierender Inhaltstyp** (Nur Nine Work): Wählen Sie die Daten aus, die auf den Geräten synchronisiert werden sollen. Folgende Optionen sind verfügbar:
-  - **Kontakte**: Wählen Sie **Aktivieren** aus, um Benutzern zu gestatten, Kontakte mit ihren Geräten zu synchronisieren.
-  - **Kalender**: Wählen Sie **Aktivieren** aus, um Benutzern zu gestatten, den Kalender mit ihren Geräten zu synchronisieren.
-  - **Aufgaben**: Wählen Sie **Aktivieren** aus, um Benutzern zu gestatten, beliebige Aufgaben mit ihren Geräten zu synchronisieren.
+- **Menge an E-Mails für die Synchronisierung**: Wählen Sie aus, welche Menge an E-Mails Sie synchronisieren möchten. Wählen Sie alternativ **Unbegrenzt** aus, um alle verfügbaren E-Mails zu synchronisieren.
+- **Zu synchronisierender Inhaltstyp** (nur Nine Work): Wählen Sie die Daten aus, die auf den Geräten synchronisiert werden sollen. Folgende Optionen sind verfügbar:
+  - **Kontakte:** Wählen Sie **Aktivieren** aus, um Endbenutzern zu gestatten, Kontakte mit ihren Geräten zu synchronisieren.
+  - **Kalender:** Wählen Sie **Aktivieren** aus, um Endbenutzern zu gestatten, den Kalender mit ihren Geräten zu synchronisieren.
+  - **Aufgaben:** Wählen Sie **Aktivieren** aus, um Endbenutzern zu gestatten, beliebige Aufgaben mit ihren Geräten zu synchronisieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e812966118ed694e3f764b56ce1759f157e8db83
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 07d879e6485a8303152dd17794d1207cb71d3500
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507872"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857375"
 ---
 # <a name="turn-on-your-windows-defender-firewall"></a>Aktivieren der Windows Defender Firewall
 

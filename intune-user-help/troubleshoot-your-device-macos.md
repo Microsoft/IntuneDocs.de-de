@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f5606ca8ce7270a33feaf12a3f6389562b689c1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 8d505c5248d8b4bb93c866f86babd71d72e78407
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508211"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857947"
 ---
 # <a name="fix-common-issues-with-your-macos-device"></a>Behandeln häufig auftretender Probleme mit dem macOS-Gerät
 

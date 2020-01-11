@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50b5db465b79e3309375a34078c645a52f0427f0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: acdf5dfd817dcd9a76e6192749009f1a0c254d25
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508275"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857964"
 ---
 # <a name="set-or-change-your-passcode"></a>Festlegen oder Ändern der Kennung
 

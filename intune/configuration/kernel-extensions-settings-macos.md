@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8632f5b8df0f483de3bb4d06a6823639ba52c604
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 89f54111258b5e628d9f83c381fde146bf996216
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506699"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206328"
 ---
 # <a name="macos-device-settings-to-configure-and-use-kernel-extensions-in-intune"></a>macOS-Geräteeinstellungen zum Konfigurieren und Verwenden von Kernel Erweiterungen in InTune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 In diesem Artikel werden die verschiedenen Einstellungen für Kernelerweiterungen aufgeführt und beschrieben, die Sie auf macOS-Geräten steuern können. Verwenden Sie diese Einstellungen als Teil ihrer MDM-Lösung (Mobile Device Management, Verwaltung mobiler Geräte), um Kernel Erweiterungen auf Ihren Geräten hinzuzufügen und zu verwalten.
 

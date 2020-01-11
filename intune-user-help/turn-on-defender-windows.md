@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e8fd6941a94a24dd3b6bf98daf6adc9a47f9fa7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 63d5ebc00182c8edaea6956612ecd047a1778dec
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501939"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75859031"
 ---
 # <a name="turn-on-windows-defender-to-access-company-resources"></a>Aktivieren von Windows Defender zum Zugriff auf Unternehmensressourcen
 

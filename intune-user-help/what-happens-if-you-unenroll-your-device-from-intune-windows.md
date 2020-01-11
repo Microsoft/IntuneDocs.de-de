@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08c6e3f61fc84458525ae2ff62887d64baea9542
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: d970db26aa9f48063ed77fb6af1503ee9d29dc67
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505950"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858776"
 ---
 # <a name="what-happens-if-you-unenroll-your-windows-device-from-intune"></a>Was geschieht, wenn Sie die Registrierung Ihres Windows-Geräts bei Intune aufheben?
 

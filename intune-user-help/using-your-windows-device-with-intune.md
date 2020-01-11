@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5accdf3699770444b7aafeb39d431755f9d3ba9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: a7eaf8e1cf17624491824ddf3f8911757eea9080
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501815"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857570"
 ---
 # <a name="using-your-windows-device-with-intune-company-portal"></a>Verwenden Ihres Windows-Geräts mit dem Intune-Unternehmensportal
 
@@ -42,7 +42,7 @@ Das Unternehmensportal unterstützt derzeit Geräte, die unter folgenden Windows
 * Windows 10 (Home, Pro, Education, S Modus und Enterprise-Versionen)
 * Windows Phone 8.1 und höher
 * Windows 8.1 RT
-* Windows 8.1
+* Windows 8.1
 
 Auch einige andere Versionen von Windows, z.B. [Windows 10 Holographic](https://www.microsoft.com/hololens), werden vom Unternehmensportal unterstützt. Diese Versionen werden jedoch in diesem Artikel nicht behandelt, weil sie nur für sehr spezifische Zwecke konzipiert sind.
 

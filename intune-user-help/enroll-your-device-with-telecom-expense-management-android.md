@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1a6e2a001e8c323ba73dd7e9ad4dd82df968e6d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 6a296b096044b23822ff5fdd368abcf6e4b896df
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506206"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855458"
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Registrieren Ihres Android-Gerät im Telecom Expense Management
 

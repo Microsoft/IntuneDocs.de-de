@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6f4c77a8369ef6ddafe96aebe515dd7f0a74889
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 52b32dda391011ef1a9500a7461da1d9d1bb643e
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505868"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75854873"
 ---
 # <a name="how-do-i-find-the-serial-number-on-my-device"></a>Wie finde ich die Seriennummer auf meinem Gerät?
 

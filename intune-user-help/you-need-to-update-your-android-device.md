@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser; seodec18
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c920403f63ae4031117f28c4ebeb534ee4c454b8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 143f04f9f48e1f28aef19c36a5fe1d94ed28885f
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507748"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857264"
 ---
 # <a name="you-need-to-update-your-android-device"></a>Sie müssen Ihr Android-Gerät aktualisieren
 

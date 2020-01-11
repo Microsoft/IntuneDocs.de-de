@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f97db16161642b09dea5525797780d81cdb639c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: b33e7c870d5f620f7c2271c71db6d5293d0049db
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506382"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856913"
 ---
 # <a name="effects-of-company-portal-ios-device-reset"></a>Auswirkungen der Unternehmensportal IOS-Geräte Zurücksetzung 
 

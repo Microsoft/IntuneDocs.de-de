@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c27cb54f435b01abd1bea0b4bbfe7e15738debfc
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: bd5e601ee98b5b714838507c2c4e7a5fa1c87f4a
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501450"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858524"
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Beseitigen einer Bedrohung, die von Symantec Endpoint Protection Mobile erkannt wurde
 

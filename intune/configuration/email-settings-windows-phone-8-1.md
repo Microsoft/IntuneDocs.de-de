@@ -16,21 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 455d69328f8b70b1de73067c6290b6955df1e710
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: aab4379e30397132cead64acbd8d43039b128e02
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506752"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206413"
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>E-Mail-Profileinstellungen in Microsoft Intune für Windows Phone 8.1-Geräte
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 In diesem Artikel werden die E-Mail-Profileinstellungen dargestellt, die Sie für Ihre Windows Phone 8.1-Geräte konfigurieren können.
 
+>[!IMPORTANT]
+>Windows Phone 8,1-e-Mail-Profile werden auch auf Windows 10-Geräte angewendet.
 
-- **Alle Einstellungen nur auf Windows Phone 8.1 anwenden:** Diese Einstellung können Sie im klassischen Intune-Portal konfigurieren. Im Azure-Portal kann diese Einstellung nicht geändert werden. Wenn hierfür **Konfiguriert** festgelegt wird, werden sämtliche Einstellungen nur auf Windows Phone 8.1-Geräten angewendet. Wenn hierfür **Nicht konfiguriert** festgelegt wird, gelten diese Einstellungen auch für mobile Windows 10-Geräte.
 - **E-Mail-Server:** Der Hostname Ihres Exchange-Servers.
 - **Kontoname** – Der Anzeigename für das E-Mail-Konto so, wie er den Benutzern auf ihren Geräten angezeigt wird.
 - **Benutzernamensattribut aus AAD:** Das Attribut in Active Directory (AD) oder Azure AD, mit dem der Benutzername für dieses E-Mail-Profil generiert wird. Wählen Sie **Primäre SMTP-Adresse** aus, z.B. **user1@contoso.com** , oder **Benutzerprinzipalname**, z.B. **user1** oder **user1@contoso.com** .

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 210eb94cf77ac703076611d2c0c06c60a12cb0ed
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: ced722fd671826e828b4dd79956a7dad1010bd84
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414940"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856750"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Registrieren eines Geräts mit dem Android-Arbeitsprofil
 

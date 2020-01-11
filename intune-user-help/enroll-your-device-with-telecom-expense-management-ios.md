@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84098d4d2152d62eda888cdcde1cf88e5081a470
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: c9bb0ba02b5d7576f4dafad8e612f56969e8dd57
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506174"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855492"
 ---
 # <a name="enroll-your-ios-device-in-telecom-expense-management"></a>Registrieren Ihres iOS-Geräts im Telecom Expense Management
 

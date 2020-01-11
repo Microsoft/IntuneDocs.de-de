@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c0809f4ed50af4a7417e8237296f657669f3300
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: fa3d400174079a0b187d7906c3d39ebeb0022022
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508042"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857484"
 ---
 # <a name="install-lookout-for-work"></a>Installieren von Lookout for Work
 

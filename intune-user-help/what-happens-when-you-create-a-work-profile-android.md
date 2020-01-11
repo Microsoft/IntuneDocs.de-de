@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bcc4821047068ed836d41c0e69e7aa53ea42efd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 46ffbc8aa4e2155be19fe7b9aa8c4494e9f0f92c
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505935"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857553"
 ---
 # <a name="what-happens-when-you-create-a-work-profile"></a>Was geschieht beim Erstellen eines Arbeitsprofils?
 

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 574e5beec2b3eff67b44ba56c0d0a4bd25df7615
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 00d86de430d37e1f646fa103c78512bc46c47ab3
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505735"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75854256"
 ---
 # <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>Installieren des virtuellen privaten Netzwerks (VPN) Ihres Unternehmens
 
