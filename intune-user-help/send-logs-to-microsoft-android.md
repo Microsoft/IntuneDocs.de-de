@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7d891b65568d4277b067e0c1556da2003fd5e23
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 38c0acd3dcacc2ed499918659cb7451fe33a49d5
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508382"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858061"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>Senden von Protokollen an Unternehmensportalentwickler für Android-Geräte
 

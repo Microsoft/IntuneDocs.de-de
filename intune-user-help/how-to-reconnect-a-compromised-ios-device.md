@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e856681256d56f32b15f77e5672f89bb06989aec
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: a85f4ce293aaa783f539742b3e503012b014a39e
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505801"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855043"
 ---
 # <a name="how-to-reconnect-a-compromised-ios-device"></a>Wiederherstellen der Verbindung eines gefährdeten iOS-Geräts
 

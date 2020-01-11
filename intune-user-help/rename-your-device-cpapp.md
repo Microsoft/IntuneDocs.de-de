@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3fab7a0a544a3dafc08ff1e635e49407825fb67d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: d9c7ea229e531e70d64b20f22834c4084eb695ea
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502150"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858272"
 ---
 # <a name="rename-device-from-the-company-portal-app-for-windows"></a>Umbenennen von Geräten in der Unternehmensportal-App für Windows
 Benennen Sie ein Gerät um, um es leichter von anderen Geräten zu unterscheiden. Mit der Unternehmensportal-App für Windows können Sie die folgenden Typen verbundener Geräte umbenennen:  
@@ -58,7 +58,7 @@ Schließen Sie den folgenden Schritt ab, um ein Gerät über die [Kontextmenü](
 3. Klicken Sie auf **Umbenennen**.  
 4. Geben Sie einen neuen Namen ein, und wählen Sie **Umbenennen** aus. Der Gerätename wird sofort in der App aktualisiert.  
 
-     ![Ein Beispielscreenshot der Unternehmensportal-App für Windows, Startseite Das Popupfeld „Umbenennen“ erscheint über dem Gerät, in das der Benutzer einen neuen Namen eingeben und auf „Umbenennen“ oder „Abbrechen“ klicken kann.](./media/1808_RenameApp_Popup.png)  
+     ![Beispielscreenshot der Unternehmensportal-App für Windows, Startseite Das Popupfeld „Umbenennen“ erscheint über dem Gerät, in das der Benutzer einen neuen Namen eingeben und auf „Umbenennen“ oder „Abbrechen“ klicken kann.](./media/1808_RenameApp_Popup.png)  
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).
 

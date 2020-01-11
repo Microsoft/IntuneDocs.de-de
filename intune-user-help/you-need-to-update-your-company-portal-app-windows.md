@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b45b1a171774173833d8930b55b28e70dbdc8e6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 2e41dd1d6e51b84bfdf9d57331e91d1880f5a5a5
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72500294"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858436"
 ---
 # <a name="your-company-portal-app-for-windows-is-out-of-date"></a>Ihre Unternehmensportal-App für Windows ist veraltet
 
