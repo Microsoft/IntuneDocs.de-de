@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca087ec67542102a0cd3111d27a860500b23d3c4
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 442432e7638c69083dcad5abc571c00e4051553d
+ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547990"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731523"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Verwenden von Windows 10-Vorlagen zum Konfigurieren von Gruppenrichtlinieneinstellungen in Microsoft Intune
 
@@ -47,21 +47,15 @@ In diesem Artikel sind die Schritte zum Erstellen einer Vorlage für Windows 10-
 2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Geben Sie die folgenden Eigenschaften ein:
 
-    - **Name**: Geben Sie einen Namen für das Profil ein.
-    - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    - **Name:** Geben Sie einen Namen für das Profil ein.
+    - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
     - **Plattform**: Wählen Sie **Windows 10 und höher** aus.
     - **Profiltyp**: Wählen Sie **Administrative Vorlagen** aus.
 
-4. Wählen Sie **Erstellen** aus. Klicken Sie im neuen Fenster auf **Einstellungen**. Jede Einstellung ist aufgeführt, und Sie können auf den Zurück- und Weiter-Pfeil klicken, um weitere Einstellungen anzuzeigen:
+4. Wählen Sie **Erstellen** aus. Klicken Sie im neuen Fenster auf die Dropdownliste aus, und wählen Sie **Alle Produkte** aus. Sie können die Einstellungen in der Liste auch so filtern, dass nur **Windows**-Einstellungen, nur **Office**-Einstellungen oder nur Einstellungen von **Edge Version 77 oder höher** angezeigt werden:
 
-    ![Liste mit Beispieleinstellungen mit der Verwendung des Zurück- und Weiter-Pfeils](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
-
-    > [!TIP]
-    > Die Windows-Einstellungen in Intune korrelieren mit dem lokalen Gruppenrichtlinienpfad, der im Editor für lokale Gruppenrichtlinien (`gpedit`) angezeigt wird.
-
-5. Klicken Sie in der Dropdownliste auf **Alle Produkte**. Sie können die Einstellungen in der Liste auch so filtern, dass nur **Windows**-Einstellungen, nur **Office**-Einstellungen oder nur Einstellungen von **Edge Version 77 oder höher** angezeigt werden:
-
-    ![Filtern Sie die Liste, um in den administrativen Vorlagen in Intune alle Windows-Einstellungen oder alle Office-Einstellungen anzuzeigen.](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
+    > [!div class="mx-imgBorder"]
+    > ![Filtern Sie die Liste, um in den administrativen Vorlagen in Intune alle Windows-Einstellungen oder alle Office-Einstellungen anzuzeigen.](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 
     > [!NOTE]
     > Microsoft Edge-Einstellungen gelten für:
@@ -70,6 +64,14 @@ In diesem Artikel sind die Schritte zum Erstellen einer Vorlage für Windows 10-
     > - Windows 10 RS4 und höher mit installiertem [KB 4512509](https://support.microsoft.com/kb/4512509)
     > - Windows 10 RS5 und höher mit installiertem [KB 4512534](https://support.microsoft.com/kb/4512534)
     > - Windows 10 19H1 und höher mit installiertem [KB 4512941](https://support.microsoft.com/kb/4512941)
+
+5. Jede Einstellung ist aufgeführt, und Sie können auf den Zurück- und Weiter-Pfeil klicken, um weitere Einstellungen anzuzeigen:
+
+    > [!div class="mx-imgBorder"]
+    > ![Liste mit Beispieleinstellungen und Verwendung des Zurück- und Weiter-Pfeils](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
+
+    > [!TIP]
+    > Die Windows-Einstellungen in Intune korrelieren mit dem lokalen Gruppenrichtlinienpfad, der im Editor für lokale Gruppenrichtlinien (`gpedit`) angezeigt wird.
 
 6. Wählen Sie eine beliebige Einstellung aus. Filtern Sie beispielsweise nach **Office**, und wählen Sie **Eingeschränktes Browsing aktivieren** aus. Es wird eine detaillierte Beschreibung der Einstellung angezeigt. Wählen Sie **Aktiviert** oder **Deaktiviert** aus, oder übernehmen Sie die Standardeinstellung **Nicht konfiguriert**. In der detaillierten Beschreibung wird erläutert, was geschieht, wenn Sie **Aktiviert**, **Deaktiviert** oder **Nicht konfiguriert** auswählen.
 7. Klicken Sie auf **OK**, um die Änderungen zu speichern.
@@ -88,13 +90,15 @@ Gehen Sie die Liste der Einstellungen durch, und konfigurieren Sie die gewünsch
 
 In diesem Vorlagen sind Hunderte von Einstellungen verfügbar. Nutzen Sie die integrierten Funktionen, um bestimmte Einstellungen einfacher zu finden:
 
-- Wählen Sie in der Vorlage die Spalte **Einstellungen**, **Status**, **Einstellungstyp** oder **Pfad** aus, um die Liste entsprechend zu sortieren. Wenn Sie beispielsweise die Spalte **Path** auswählen, werden alle Einstellungen im `Microsoft Excel`-Pfad angezeigt:
+- Wählen Sie in der Vorlage die Spalte **Einstellungen**, **Status**, **Einstellungstyp** oder **Pfad** aus, um die Liste entsprechend zu sortieren. Wenn Sie beispielsweise die Spalte **Pfad** auswählen, werden alle Einstellungen im `Microsoft Excel`-Pfad angezeigt:
 
-  ![Klicken Sie auf „Pfad“, um alle Einstellungen anzuzeigen, die in den administrativen Vorlagen in Intune nach Gruppenrichtlinien- oder ADMX-Pfad gruppiert sind.](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
+  > [!div class="mx-imgBorder"]
+  > ![Klicken Sie auf „Pfad“, um alle Einstellungen anzuzeigen, die in den administrativen Vorlagen in Intune nach Gruppenrichtlinien- oder ADMX-Pfad gruppiert sind.](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
 
-- Verwenden Sie das **Suchfeld** in Ihrer Vorlage, um nach bestimmten Einstellungen zu suchen. Sie können die Suche durch Festlegen des Titels oder Pfads durchführen. Suchen Sie beispielsweise nach `copy`. Es werden alle Einstellungen mit `copy` angezeigt:
+- Verwenden Sie das **Suchfeld** in Ihrer Vorlage, um nach bestimmten Einstellungen zu suchen. Sie können eine Suche nach Einstellung oder Pfad durchführen. Suchen Sie beispielsweise nach `copy`. Es werden alle Einstellungen mit `copy` angezeigt:
 
-  ![Suchen Sie nach „copy“, um in den administrativen Vorlagen in Intune alle Windows- und Office-Einstellungen anzuzeigen.](./media/administrative-templates-windows/search-copy-settings.png) 
+  > [!div class="mx-imgBorder"]
+  > ![Suchen Sie nach „copy“, um in den administrativen Vorlagen in Intune alle Windows- und Office-Einstellungen anzuzeigen.](./media/administrative-templates-windows/search-copy-settings.png) 
 
   Suchen Sie in einem anderen Beispiel nach `microsoft word`. Es werden alle Einstellungen angezeigt, die Sie für das Microsoft Word-Programm festlegen können. Suchen Sie nach `explorer`, um alle Internet Explorer-Einstellungen anzuzeigen, die Sie Ihrer Vorlage hinzufügen können.
 
@@ -103,3 +107,5 @@ In diesem Vorlagen sind Hunderte von Einstellungen verfügbar. Nutzen Sie die in
 Die Vorlage ist nun erstellt, führt aber noch keine Aktionen durch. [Weisen Sie anschließend die Vorlage (auch Profil genannt) zu](device-profile-assign.md), und [überwachen Sie deren Status](device-profile-monitor.md).
 
 [Aktualisieren von Office 365 mithilfe administrativer Vorlagen](administrative-templates-update-office.md)
+
+[Tutorial: Verwenden der Cloud zum Konfigurieren einer Gruppenrichtlinie für Windows 10-Geräte mit ADMX-Vorlagen und Microsoft Intune](tutorial-walkthrough-administrative-templates.md)

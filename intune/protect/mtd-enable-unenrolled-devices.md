@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84f82cf2fde7d400e5531bac219b6cbb4877032f
-ms.sourcegitcommit: 960ffb2214c35d75ad219fa2571a999529a0abd4
+ms.openlocfilehash: 9571f7d0ae10f33007d5ae50b403580232c2e870
+ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74478926"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75545928"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune-for-unenrolled-devices"></a>Aktivieren des Mobile Threat Defense-Connector in Intune für nicht registrierte Geräte
 
 Während des Mobile Threat Defense-Setups (MTD) haben Sie eine Richtlinie zum Klassifizieren von Bedrohungen in Ihrer Mobile Threat Defense-Partnerkonsole konfiguriert und die App-Schutzrichtlinie in Intune erstellt. Wenn Sie den Intune-Connector in der MTD-Partnerkonsole bereits konfiguriert haben, können Sie nun die MTD-Verbindung für MTD-Partneranwendungen aktivieren.
 
 > [!NOTE]
-> Dieser Artikel gilt für alle Mobile Threat Defense-Partner, die App-Schutzrichtlinien unterstützen: Better Mobile (Android), Zimperium (iOS), Lookout for Work (Android/iOS).
+> Dieser Artikel gilt für alle Mobile Threat Defense-Partner, die App-Schutzrichtlinien unterstützen: Better Mobile (Android), Zimperium (Android/iOS), Lookout for Work (Android/iOS).
 
 ## <a name="classic-conditional-access-policies-for-mtd-apps"></a>Klassische Richtlinien für bedingten Zugriff für MTD-Apps
 
@@ -56,17 +56,17 @@ Wenn Sie klassische Richtlinien für den bedingten Zugriff in [Azure](https://po
 
 2. Klicken Sie auf **Mandantenverwaltung** > **Connectors und Token** > **Mobile Threat Defense**.
 
-3. Klicken Sie im Bereich **Mobile Threat Defense** auf die Option **Hinzufügen**.
+3. Klicken Sie im Bereich **Mobile Threat Defense** auf **Hinzufügen**.
 
 4. Wählen Sie Ihre MTD-Lösung in der Dropdownliste unter **Einzurichtenden MTD-Connector (Mobile Threat Defense) auswählen** aus.
 
     <!-- ![MTD setup in Intune](PLACEHOLDER, need a new screenshot of this page) -->
 
-5. Aktivieren Sie die Umschaltoptionen entsprechend den Anforderungen Ihrer Organisation. Die angezeigten Umschaltoptionen variieren je nach MTD-Partner.
+5. Aktivieren Sie die Optionen zum Ein-/Ausschalten gemäß den Anforderungen Ihrer Organisation. Die angezeigten Umschaltoptionen variieren je nach MTD-Partner.
 
 ## <a name="mobile-threat-defense-toggle-options"></a>Umschaltoptionen von Mobile Threat Defense
 
-Sie können entscheiden, welche MTD-Umschaltoptionen Sie entsprechend den Anforderungen Ihrer Organisation aktivieren müssen. Nachfolgend finden Sie weitere Details:
+Sie können entscheiden, welche MTD-Optionen Sie aktivieren müssen, um die Anforderungen Ihrer Organisation zu erfüllen. Es folgen weitere Informationen:
 
 **Einstellungen für die App-Schutzrichtlinie**
 

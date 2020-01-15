@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80d6068a17e1d278f9226e26c9efab24d597e52e
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: ec80922cf2539fdbacb572fd96c5a5e45549b5c3
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564267"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205003"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Android Enterprise-Geräte
 
@@ -34,15 +34,15 @@ Die App-Konfigurationsrichtlinien in Microsoft Intune bieten Einstellungen für 
 > [!NOTE]  
 > Nicht jede App unterstützt App-Konfigurationen. Fragen Sie beim App-Entwickler nach, ob die App Richtlinien für die App-Konfiguration unterstützt.
 
-1. Wählen Sie in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) die Option **Apps** > **App-Konfigurationsrichtlinien** >  **Hinzufügen** aus.
-2. Geben Sie die folgenden Eigenschaften ein:
+1. Wechseln Sie zum [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), und wählen Sie **Apps** > **App-Konfigurationsrichtlinien** >  **Hinzufügen** > **Verwaltete Geräte** aus.
+2. Fügen Sie die folgenden Eigenschaften hinzu:
 
-    - **Name**: Geben Sie einen aussagekräftigen Namen für die Richtlinie ein. Benennen Sie Ihre Richtlinien so, dass Sie diese später leicht wiedererkennen. Ein guter Name für eine Richtlinie ist beispielsweise **Android Enterprise Nine Work-App-Richtlinie für das gesamte Unternehmen**.
-    - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
-    - **Geräteregistrierungstyp**: Wählen Sie **Verwaltete Geräte** aus.
+    - **Name:** Geben Sie einen aussagekräftigen Namen für die Richtlinie ein. Benennen Sie Ihre Richtlinien so, dass Sie diese später leicht wiedererkennen. Ein guter Name für eine Richtlinie ist beispielsweise **Android Enterprise Nine Work-App-Richtlinie für das gesamte Unternehmen**.
+    - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    - **Geräteregistrierungstyp**: Diese Einstellung ist auf **Verwaltete Geräte** festgelegt.
     - **Plattform**: Wählen Sie **Android** aus.
 
-3. Wählen Sie **Zugeordnete App** aus. Wählen Sie die App aus, für die Sie eine App-Konfigurationsrichtlinie definieren möchten. Wählen Sie diese aus der Liste von verwalteten Google Play-Apps aus, die Sie genehmigt und mit Intune synchronisiert haben.
+3. Wählen Sie **Zugeordnete App** aus. Wählen Sie die Android-App aus, der diese App-Konfigurationsrichtlinie zugeordnet wird. Wählen Sie diese aus der [Liste mit verwalteten Google Play-Apps aus, die Sie genehmigt und mit Intune synchronisiert haben](~/apps/apps-add-android-for-work.md).
 4. Klicken Sie auf **Berechtigungen**. Sie können Konfigurationen auf diese Weise festlegen:
 
     - im [Konfigurations-Designer](#use-the-configuration-designer)
@@ -54,7 +54,7 @@ Die App-Konfigurationsrichtlinien in Microsoft Intune bieten Einstellungen für 
 
 Sie können den Konfigurations-Designer für verwaltete Google Play-Apps verwenden, wenn die App zur Unterstützung der Konfigurationseinstellungen entwickelt wurde. Die Konfiguration gilt für Geräte, die bei Intune registriert sind. Der Designer ermöglicht Ihnen die Konfiguration bestimmter Konfigurationswerte für die Einstellungen, die von einer App zur Verfügung gestellt werden.
 
-1. Wählen Sie **Hinzufügen** aus. Wählen Sie die Liste der Konfigurationseinstellungen aus, die Sie für die App eingeben möchten.
+1. Klicken Sie auf **Hinzufügen**. Wählen Sie die Liste der Konfigurationseinstellungen aus, die Sie für die App eingeben möchten.
 
     Wenn Sie für Ihre E-Mail-App Gmail oder Nine Work verwenden, finden Sie Informationen zu diesen Einstellungen unter [Android Enterprise-Geräteeinstellungen zum Konfigurieren von E-Mails](../email-settings-android-enterprise.md).
 
@@ -110,12 +110,12 @@ Sie können auch App-Berechtigungen so vorkonfigurieren, dass Apps auf Android-G
 
 Beispiel: Eine App verwendet das Mikrofon des Geräts. Dann wird der Benutzer dazu aufgefordert, der App die Berechtigung zur Verwendung des Mikrofons zu erteilen.
 
-1. Wählen Sie in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) die Option **Apps** > **App-Konfigurationsrichtlinien** >  **Hinzufügen** aus.
-2. Geben Sie die folgenden Eigenschaften ein:
+1. Wechseln Sie zum [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), und wählen Sie **Apps** > **App-Konfigurationsrichtlinien** >  **Hinzufügen** > **Verwaltete Geräte** aus.
+2. Fügen Sie die folgenden Eigenschaften hinzu:
 
-    - **Name**: Geben Sie einen aussagekräftigen Namen für die Richtlinie ein. Benennen Sie Ihre Richtlinien so, dass Sie diese später leicht wiedererkennen. Ein guter Name für eine Richtlinie ist beispielsweise **Android Enterprise-App-Richtlinie für Berechtigungsaufforderungen für das gesamte Unternehmen**.
+    - **Name:** Geben Sie einen aussagekräftigen Namen für die Richtlinie ein. Benennen Sie Ihre Richtlinien so, dass Sie diese später leicht wiedererkennen. Ein guter Name für eine Richtlinie ist beispielsweise **Android Enterprise-App-Richtlinie für Berechtigungsaufforderungen für das gesamte Unternehmen**.
     - **Beschreibung**. Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
-    - **Geräteregistrierungstyp**: Wählen Sie **Verwaltete Geräte** aus.
+    - **Geräteregistrierungstyp**: Diese Einstellung ist auf **Verwaltete Geräte** festgelegt.
     - **Plattform**: Wählen Sie **Android** aus.
 
 3. Wählen Sie **Zugeordnete App** aus. Wählen Sie die App aus, für die Sie eine Konfigurationsrichtlinie definieren möchten. Wählen Sie diese aus der Liste der Android-Arbeitsprofil-Apps aus, die Sie genehmigt und mit Intune synchronisiert haben.

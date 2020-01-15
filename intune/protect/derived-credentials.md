@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4d0772f9a0afce0607d0193bfb82ea6bd22709d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f9e8bc347dc6336f665fcabfb4e716fef4818515
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73445317"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207201"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>Verwenden abgeleiteter Anmeldeinformationen in Microsoft Intune
 
@@ -160,28 +160,30 @@ Vermeiden Sie die Verwendung abgeleiteter Anmeldeinformationen für den Zugriff 
 
 Richten Sie vor dem Erstellen von Richtlinien, die abgeleitete Anmeldeinformationen erfordern, in der Intune-Konsole einen Zertifikataussteller für Anmeldeinformationen ein. Bei einem Zertifikataussteller für abgeleitete Anmeldeinformationen handelt es sich um eine mandantenweite Einstellung. Mandanten unterstützen jeweils nur einen einzelnen Zertifikataussteller.
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, und navigieren Sie zu **Gerätekonfiguration** > **Derived Credentials** (Abgeleitete Anmeldeinformationen).
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Mandantenverwaltung** > **Connectors und Token** > **Abgeleitete Anmeldeinformationen** aus.
 
-   ![Konfigurieren abgeleiteter Anmeldeinformationen in der Konsole](./media/derived-credentials/configure-provider.png)
+    > [!div class="mx-imgBorder"]
+    > ![Konfigurieren abgeleiteter Anmeldeinformationen in der Konsole](./media/derived-credentials/configure-provider.png)
 
-2. Geben Sie einen **Anzeigenamen** für die Zertifikatsausstellerrichtlinie für abgeleitete Anmeldeinformationen an.  Dieser Name wird den Gerätebenutzern nicht angezeigt.
+3. Geben Sie einen **Anzeigenamen** für die Zertifikatsausstellerrichtlinie für abgeleitete Anmeldeinformationen an.  Dieser Name wird den Gerätebenutzern nicht angezeigt.
 
-3. Wählen Sie für **Derived credential issuer** (Zertifikataussteller für abgeleitete Anmeldeinformationen) den Zertifikataussteller für abgeleitete Anmeldeinformationen aus, den Sie für Ihren Mandanten ausgewählt haben:
+4. Wählen Sie für **Derived credential issuer** (Zertifikataussteller für abgeleitete Anmeldeinformationen) den Zertifikataussteller für abgeleitete Anmeldeinformationen aus, den Sie für Ihren Mandanten ausgewählt haben:
    - DISA Purebred
    - Entrust Datacard
    - Intercede  
 
-4. Geben Sie eine **Hilfe-URL zu abgeleiteten Anmeldeinformationen** an, um einen Link mit benutzerdefinierten Anweisungen bereitzustellen, der Benutzern beim Abrufen abgeleiteter Anmeldeinformationen für Ihre Organisation hilft. Diese Anweisungen sollten sich auf Ihre Organisation und den Workflow beziehen, der für das Abrufen von Anmeldeinformationen vom ausgewählten Zertifikataussteller erforderlich ist. Der Link wird in der Unternehmensportal-App angezeigt und sollte vom Gerät aus zugänglich sein.
+5. Geben Sie eine **Hilfe-URL zu abgeleiteten Anmeldeinformationen** an, um einen Link mit benutzerdefinierten Anweisungen bereitzustellen, der Benutzern beim Abrufen abgeleiteter Anmeldeinformationen für Ihre Organisation hilft. Diese Anweisungen sollten sich auf Ihre Organisation und den Workflow beziehen, der für das Abrufen von Anmeldeinformationen vom ausgewählten Zertifikataussteller erforderlich ist. Der Link wird in der Unternehmensportal-App angezeigt und sollte vom Gerät aus zugänglich sein.
 
    Wenn Sie nicht Ihre eigene URL angeben, stellt Intune einen Link zu generischen Details bereit, die nicht alle Szenarios abdecken können. Diese generische Anleitung trifft möglicherweise nicht auf Ihre Umgebung zu.
 
-5. Wählen Sie für **Notification type** (Benachrichtigungstyp) eine oder mehrere Optionen aus. Benachrichtigungstypen sind die Methoden, die Sie verwenden, um Benutzer über die folgenden Szenarios zu informieren:
+6. Wählen Sie für **Notification type** (Benachrichtigungstyp) eine oder mehrere Optionen aus. Benachrichtigungstypen sind die Methoden, die Sie verwenden, um Benutzer über die folgenden Szenarios zu informieren:
 
    - Registrieren Sie ein Gerät bei einem Zertifikataussteller, um neue abgeleitete Anmeldeinformationen zu erhalten.
    - Rufen Sie neue abgeleitete Anmeldeinformationen ab, wenn die aktuellen Anmeldeinformationen demnächst ablaufen.
    - Verwenden Sie abgeleitete Anmeldeinformationen mit einer Richtlinie für die WLAN-, VPN-, E-Mail- oder App-Authentifizierung sowie die S/MIME-Signatur und -Verschlüsselung.
 
-6. Klicken Sie auf **Speichern**, um die Konfiguration des Zertifikatausstellers für abgeleitete Anmeldeinformationen abzuschließen.
+7. Klicken Sie auf **Speichern**, um die Konfiguration des Zertifikatausstellers für abgeleitete Anmeldeinformationen abzuschließen.
 
 Nachdem Sie die Konfiguration gespeichert haben, können Sie mit Ausnahme des *Zertifikatausstellers für abgeleitete Anmeldeinformationen* Änderungen an allen Feldern vornehmen.  Nähere Informationen zum Ändern des Zertifikatausstellers finden Sie unter [Ändern des Zertifikatausstellers für abgeleitete Anmeldeinformationen](#change-the-derived-credential-issuer).
 
@@ -216,19 +218,20 @@ Sie können **Derived credentials** (Abgeleitete Anmeldeinformationen) für die 
 
 ### <a name="use-derived-credentials-for-app-authentication"></a>Verwenden abgeleiteter Anmeldeinformationen für die App-Authentifizierung
 
-Verwenden Sie abgeleitete Anmeldeinformationen für die zertifikatbasierte Authentifizierung bei Websites und Anwendungen. Führen Sie in der Intune-Konsole die folgenden Schritte aus, um abgeleitete Anmeldeinformationen für die App-Authentifizierung bereitzustellen:  
+Verwenden Sie abgeleitete Anmeldeinformationen für die zertifikatbasierte Authentifizierung bei Websites und Anwendungen. So verwenden Sie abgeleitete Anmeldeinformationen zur App-Authentifizierung
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, navigieren Sie zu **Gerätekonfiguration** > **Profile**, und klicken Sie auf **Profil erstellen**.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
+3. Legen Sie folgende Einstellungen fest:
 
-2. Geben Sie unter **Name** einen Anzeigenamen für das Profil ein.
+    - **Name:** Geben Sie einen aussagekräftigen Namen für das Profil ein. Benennen Sie Ihre Profile, damit Sie diese später leicht wiedererkennen. Ein guter Profilname ist beispielsweise **Abgeleitete Anmeldeinformationen für iOS-Geräteprofil**.
+    - **Beschreibung:** Geben Sie eine Beschreibung ein, die einen Überblick über die Einstellung und andere wichtige Details bietet.
+    - **Plattform**: Wählen Sie **iOS/iPadOS** aus.
+    - **Profiltyp**: Wählen Sie **Abgeleitete Anmeldeinformationen** aus.
 
-3. Wählen Sie als **Plattform** die Option **iOS** aus.
-
-4. Wählen Sie für **Profiltyp** die Option **Derived Credentials** (Abgeleitete Anmeldeinformationen) aus.
-
-5. Klicken Sie auf **OK** und dann auf **Erstellen**.
-
-6. Klicken Sie auf **Assignments** (Zuweisungen), um auszuwählen, welche Gruppen die Richtlinie erhalten sollen.
+4. Klicken Sie auf **OK**, um die Änderungen zu speichern.
+5. Klicken Sie anschließend auf **OK** > **Erstellen**, um das Intune-Profil zu erstellen. Das Profil wird erstellt und in der Liste **Gerätekonfiguration > Konfigurationsprofile** angezeigt.
+6. Wählen Sie Ihr neues Profil aus, und klicken Sie auf **Zuweisungen**. Wählen Sie die Gruppen aus, die die Richtlinie erhalten sollen.
  
 Benutzer erhalten die App- oder E-Mail-Benachrichtigung abhängig von den Einstellungen, die Sie beim Einrichten des Zertifikatausstellers für abgeleitete Anmeldeinformationen angegeben haben. Die Benachrichtigung informiert den Benutzer darüber, dass das Unternehmensportal gestartet werden muss, damit die Richtlinien für abgeleitete Anmeldeinformationen verarbeitet werden können.
 
@@ -252,11 +255,10 @@ Nachdem Sie den Zertifikataussteller geändert haben, werden Benutzer aufgeforde
 > [!IMPORTANT]  
 > Wenn Sie einen Zertifikataussteller löschen und denselben Zertifikataussteller sofort neu konfigurieren, müssen Sie weiterhin Profile und Geräte aktualisieren, damit die abgeleiteten Anmeldeinformationen von diesem Zertifikataussteller verwendet werden. Abgeleitete Anmeldeinformationen, die vor dem Löschen des Zertifikatausstellers abgerufen wurden, sind nicht mehr gültig.
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, und navigieren Sie zu **Gerätekonfiguration** > **Derived Credentials** (Abgeleitete Anmeldeinformationen).
-
-2. Klicken Sie auf **Löschen**, um den aktuellen Zertifikataussteller für abgeleitete Anmeldeinformationen zu löschen.
-
-3. Konfigurieren Sie einen neuen Zertifikataussteller.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Mandantenverwaltung** > **Connectors und Token** > **Abgeleitete Anmeldeinformationen** aus.
+3. Klicken Sie auf **Löschen**, um den aktuellen Zertifikataussteller für abgeleitete Anmeldeinformationen zu löschen.
+4. Konfigurieren Sie einen neuen Zertifikataussteller.
 
 ### <a name="update-profiles-that-use-derived-credentials"></a>Aktualisieren von Profilen, die abgeleitete Anmeldeinformationen verwenden
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ca83287c58f8d2fb7c8eec5f8cc793e2c67b77a
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 68c2dc7df123593513c14e16e2626c7426f50b01
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390701"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207416"
 ---
 # <a name="create-a-custom-role-in-intune"></a>Erstellen einer benutzerdefinierten Rolle in Intune
 
@@ -34,36 +34,30 @@ Für das Erstellen, Bearbeiten oder Zuweisen von Rollen muss das Konto in Azure 
 
 ## <a name="to-create-a-custom-role"></a>So erstellen Sie eine benutzerdefinierte Rolle
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) mit Ihren Intune-Anmeldeinformationen an.
+1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Rollen** > **Alle Rollen** > **Hinzufügen** aus.
 
-2. Klicken Sie im Menü links auf **Alle Dienste**, und geben Sie in das Filtertextfeld **Intune** ein.
+2. Geben Sie auf dem Blatt **Benutzerdefinierte Rolle hinzufügen** einen Namen und eine Beschreibung für die neue Rolle ein, und klicken Sie dann auf **Berechtigungen**.
 
-3. Wählen Sie **Intune** > **Rollen** > **Alle Rollen** > **Hinzufügen** aus.
+3. Wählen Sie auf dem Blatt **Berechtigungen** die Berechtigungen aus, die Sie mit dieser Rolle verwenden möchten.
 
-4. Geben Sie auf dem Blatt **Benutzerdefinierte Rolle hinzufügen** einen Namen und eine Beschreibung für die neue Rolle ein, und klicken Sie dann auf **Berechtigungen**.
+4. Wählen Sie auf dem Blatt **Bereich (Markierungen)** die Markierungen für diese Rolle aus. Diese Rolle kann auf Ressourcen zugreifen, die ebenfalls diese Markierungen aufweisen.
 
-5. Wählen Sie auf dem Blatt **Berechtigungen** die Berechtigungen aus, die Sie mit dieser Rolle verwenden möchten.
+5. Wenn Sie fertig sind, klicken Sie auf **OK**.
 
-6. Wählen Sie auf dem Blatt **Bereich (Markierungen)** die Markierungen für diese Rolle aus. Diese Rolle kann auf Ressourcen zugreifen, die ebenfalls diese Markierungen aufweisen.
-
-7. Wenn Sie fertig sind, klicken Sie auf **OK**.
-
-8. Klicken Sie auf dem Blatt **Benutzerdefinierte Rolle hinzufügen** auf **Erstellen**. Die neue Rolle wird in der Liste auf dem Blatt **Intune-Rollen – Alle Rollen** angezeigt.
+6. Klicken Sie auf dem Blatt **Benutzerdefinierte Rolle hinzufügen** auf **Erstellen**. Die neue Rolle wird in der Liste auf dem Blatt **Intune-Rollen – Alle Rollen** angezeigt.
 
 
 ## <a name="copy-a-role"></a>Kopieren einer Rolle
 
 Sie können auch eine vorhandene Rolle kopieren.
 
-1. Melden Sie sich mit Ihren Intune-Anmeldeinformationen beim [Azure-Portal](https://portal.azure.com) an, und klicken Sie auf **Intune**.
+1. Klicken Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) auf **Rollen** > **Alle Rollen**, wählen Sie eine Rolle in der Liste aus, und klicken Sie auf **Duplizieren**.
 
-2. Klicken Sie auf **Rollen** > **Alle Rollen**, wählen Sie eine Rolle in der Liste aus, und klicken Sie auf **Duplicate** (Duplizieren).
+2. Geben Sie unter **Duplicate role** (Rolle duplizieren) einen Namen ein. Stellen Sie sicher, dass Sie einen eindeutigen Namen verwenden.
 
-3. Geben Sie unter **Duplicate role** (Rolle duplizieren) einen Namen ein. Stellen Sie sicher, dass Sie einen eindeutigen Namen verwenden.
+3. Alle Berechtigungen und Bereichstags der ursprünglichen Rolle werden bereits ausgewählt. Anschließend können Sie **Name**, **Beschreibung** **Berechtigungen** und **Scope (Tags)** (Bereich (Tags)) der duplizierten Rolle ändern.
 
-4. Alle Berechtigungen und Bereichstags der ursprünglichen Rolle werden bereits ausgewählt. Anschließend können Sie **Name**, **Beschreibung** **Berechtigungen** und **Scope (Tags)** (Bereich (Tags)) der duplizierten Rolle ändern.
-
-5. Wählen Sie **Erstellen** aus. 
+4. Wählen Sie **Erstellen** aus. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 - [Zuweisen einer Rolle an einen Benutzer](assign-role.md)

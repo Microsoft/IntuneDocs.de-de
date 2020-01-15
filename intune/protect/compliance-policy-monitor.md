@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 947472c5e589cb443c9a15d20a732c299cc48b44
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 89b4516017d7ac8bf1e27134db6a67a0a86b17cb
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992987"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206073"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Überwachen von Intune-Richtlinien zur Gerätekompatibilität
 
@@ -36,9 +36,9 @@ Konformitätsberichte erleichtern das Überprüfen der Gerätekonformität und d
 
 Öffnen Sie das **Intune-Gerätekonformitätsdashboard**:
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 
-2. Wählen Sie **Gerätekonformität** > **Übersicht** aus. Das **Gerätekonformitätsdashboard** wird geöffnet.
+2. Wählen Sie **Geräte** > **Übersicht** > **Konformitätsstatus** (Registerkarte) aus.
 
 > [!IMPORTANT]
 > Geräte müssen in Intune registriert werden, um Gerätekompatibilitätsrichtlinien empfangen zu können.
@@ -151,13 +151,13 @@ Im Diagramm **Einstellungskonformität** werden alle Einstellungen von allen Kon
 
 ## <a name="view-compliance-reports"></a>Anzeigen von Konformitätsberichten
 
-Zusätzlich zu den Diagrammen zum *Konformitätsstatus* können Sie auch im Admin Center über die Seite *Überwachen* Konformitätsberichte abrufen.
+Zusätzlich zur Verwendung der Diagramme auf der Registerkarte *Konformitätsstatus* können Sie zu **Berichte** > **Gerätekonformität** wechseln.
 
 1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 
 2. Klicken Sie erst auf **Geräte** > **Überwachen** und anschließend unter **Konformität** auf den Bericht, den Sie abrufen möchten. Unter anderem haben Sie Zugriff auf die folgenden Konformitätsberichte:
 
-   - Gerätekompatibilität
+   - Gerätekonformität
    - Nicht konforme Geräte
    - Geräte ohne Konformitätsrichtlinie
    - Einstellungskonformität
@@ -191,3 +191,7 @@ Richtlinienkonflikte können auftreten, wenn mehrere Intune-Richtlinien auf ein 
 - Wenn die in Konflikt stehenden Einstellungen zu einer Intune-Konfigurationsrichtlinie und einer Kompatibilitätsrichtlinie gehören, haben die Einstellungen in der Kompatibilitätsrichtlinie Vorrang vor den Einstellungen in der Konfigurationsrichtlinie. Dies geschieht auch, wenn die Einstellungen in der Konfigurationsrichtlinie sicherer sind.
 
 - Wenn Sie mehrere Kompatibilitätsrichtlinien bereitgestellt haben, verwendet Intune die sichersten dieser Richtlinien.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+[Konformitätsrichtlinien – Übersicht](device-compliance-get-started.md)

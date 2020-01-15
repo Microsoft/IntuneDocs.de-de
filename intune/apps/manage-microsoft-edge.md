@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4761e2565402b4c3cdc993ff89cbedea8273609
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 304a6a60ea8dbfa98e62eb8e52a69e14af795746
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563897"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548001"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Verwalten des Webzugriffs mithilfe von Microsoft Edge mit Microsoft Intune
 
@@ -164,12 +164,12 @@ Konfigurieren Sie Outlook mit einer App-Schutzrichtlinie, mit der die Einstellun
 
 ![Screenshot der App-Schutzrichtlinie „Webinhalt für per Richtlinie verwaltete Browser freigeben“](./media/manage-microsoft-edge/manage-microsoft-edge-03.png)
 
-#### <a name="step-2-set-the-app-configuration-setting-to-enable-app-proxy"></a>Schritt 2: Festlegen der App-Konfigurationseinstellung zum Aktivieren des Anwendungsproxys
+#### <a name="step-2-set-the-app-configuration-setting-to-enable-app-proxy"></a>Schritt 2: Festlegen der App-Konfigurationseinstellung zum Aktivieren des Anwendungsproxys
 Geben Sie Microsoft Edge als Ziel für das folgende Schlüssel-Wert-Paar an, um den Anwendungsproxy für Microsoft Edge zu aktivieren:
 
 |    Key    |    Wert    |
 |-------------------------------------------------------------------|-------------|
-|    com.microsoft.intune.mam.managedbrowser.AppProxyRedirection    |    true    |
+|    com.microsoft.intune.mam.managedbrowser.AppProxyRedirection    |    WAHR    |
 
 Weitere Informationen zur gemeinsamen Verwendung von Microsoft Edge und dem Azure AD-Anwendungsproxy für nahtlosen (und geschützten) Zugriff auf lokale Web-Apps finden Sie im Blogbeitrag [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (Intune und Azure Active Directory gemeinsam verwenden, um den Benutzerzugriff zu verbessern). Dieser Blogbeitrag verweist auf den Intune Managed Browser; der Inhalt gilt aber auch für Microsoft Edge.
 
@@ -198,6 +198,14 @@ Verwenden Sie nun die folgenden Schlüssel/Wert-Paare, um das Branding Ihrer Org
 |--------------------------------------------------------------------|------------|
 |    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo    |    True    |
 |    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandColor    |    True    |
+
+## <a name="display-relevant-industry-news-on-new-tab-pages"></a>Anzeigen relevanter Branchennachrichten auf neuen Registerkartenseiten
+
+Sie können das Element „Neue Registerkartenseite“ in Microsoft Edge für Mobilgeräte konfigurieren, um Branchennachrichten anzuzeigen, die für Ihre Organisation von Interesse sind. Wenn Sie dieses Featuren aktivieren, verwendet Microsoft Edge für Mobilgeräte den Domänennamen Ihres Unternehmens, um Nachrichten aus dem Internet über Ihr Unternehmen, die Branche Ihres Unternehmens und Ihre Kunden zu aggregieren, sodass Ihre Benutzer relevante externe Nachrichten auf den zentralisierten neuen Registerkarten innerhalb von Microsoft Edge finden können. Das Feature für Branchennachrichten ist standardmäßig deaktiviert, Sie können es für Ihre Organisation aktivieren. 
+
+|    Key    |    Wert    |
+|------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+|    'com.microsoft.intune.SohwIndustryNews'    |    Bei Festlegung auf **True** werden Branchennachrichten in Microsoft Edge für Mobilgeräte im Element „Neue Registerkartenseite“ angezeigt.<p>Bei Festlegung auf **False** werden Branchennachrichten im Element „Neue Registerkartenseite“ ausgeblendet.    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Konfigurieren von verwalteten Lesezeichen für Microsoft Edge
 
@@ -268,7 +276,7 @@ Sie können verschiedene URL-Formate verwenden, um Ihre Listen für zulässige/b
   - `http://www.contoso.com:*`
   - `http://www.contoso.com: /*`
 
-## <a name="define-behavior-when-users-try-to-access-a-blocked-site"></a>Definieren des Verhaltens, wenn Benutzer versuchen, auf eine blockierte Website zuzugreifen
+## <a name="transition-users-to-their-personal-context-when-trying-to-access-a-blocked-site"></a>Umstellung von Benutzern auf ihren persönlichen Kontext, wenn sie versuchen, auf eine blockierte Website zuzugreifen
 
 Mit dem in Microsoft Edge integrierten Modell für doppelte Identitäten können Sie Ihren Endbenutzern ein flexibleres Benutzererlebnis bieten, was mit dem Intune Managed Browser nicht möglich war. Wenn Benutzer versuchen, in Microsoft Edge eine blockierte Website zu öffnen, können sie aufgefordert werden, den Link in ihrem persönlichen Kontext anstatt in ihrem Arbeitskontext zu öffnen. So bleiben der Schutz der Benutzer und die Sicherheit der Unternehmensressourcen erhalten. Wenn ein Benutzer beispielsweise über Outlook einen Link zu einem Nachrichtenartikel erhält, kann er diesen Link im persönlichen Kontext oder auf einer privaten Registerkarte öffnen. Der Arbeitskontext lässt keine Nachrichtenwebsites zu. Diese Übergänge sind standardmäßig zulässig.
 
@@ -276,7 +284,16 @@ Verwenden Sie das folgende Schlüssel-Wert-Paar, um zu konfigurieren, ob diese w
 
 |    Key    |    Wert    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    'com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock'    |    Bei Festlegung auf **True** werden eingeschränkte Links direkt mit dem Feature „InPrivate-Browsen“ geöffnet.<p>Bei Festlegung auf **False** (Standardeinstellung) kann der Benutzer auswählen, einen eingeschränkten Link entweder mit InPrivate-Browsing oder mit seinem persönlichen (MSA) Konto zu öffnen.    |
+
+## <a name="open-restricted-links-directly-in-inprivate-tab-pages"></a>Direktes Öffnen eingeschränkter Links in den InPrivate-Registerkartenseiten
+
+Sie können konfigurieren, ob eingeschränkte Links direkt mit dem Feature „InPrivate-Browsen“ geöffnet werden sollen, was den Benutzern ein nahtloses Browsen ermöglicht. Benutzern müssen auf diese Weise nicht erst zu ihrem persönlichen Kontext wechseln, um eine Website anzuzeigen. Das InPrivate-Browsen wird als nicht verwaltetes Feature betrachtet, sodass Benutzer keinen Zugriff erhalten, wenn sie den Modus „InPrivate-Browsen“ verwenden. 
+
+|    Key    |    Wert    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** erlaubt es Microsoft Edge, Benutzer an ihren persönlichen Kontext weiterzuleiten, um blockierte Websites zu öffnen.<p>**Block** verhindert, dass Microsoft Edge Benutzer weiterleitet. Benutzern wird einfach eine Meldung angezeigt, die besagt, dass die Website, auf die sie versuchen zuzugreifen, gesperrt ist.    |
+
 
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>Verwenden von Microsoft Edge unter iOS für den Zugriff auf Protokolle für verwaltete Apps 
 

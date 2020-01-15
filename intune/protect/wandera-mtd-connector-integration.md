@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f42acb38d84394a6b61fa16072de6320b84a67b5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e565f40aac2a2b97f547a5b68a70a887d9e820ae
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72681307"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207467"
 ---
 # <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>Integrieren von Wandera Mobile Threat Protection in Intune  
 
@@ -56,29 +56,28 @@ Der Autorisierungsprozess für die Wandera Mobile Threat Defense-App:
 Die Einrichtung von *EMM Connect* für Wandera erfordert einen einmaligen Konfigurationsprozess, den Sie sowohl in der Intune als auch in der Wandera-Konsole durchführen können. Der Konfigurationsvorgang dauert etwa 15 Minuten. Sie können die Konfiguration ohne Abstimmung mit einem technischen Kundenbetreuer oder Supportmitarbeiter von Wandera vornehmen.  
 
 ### <a name="enable-support-for-wandera-in-intune"></a>Aktivieren der Unterstützung für Wandera in Intune
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, wechseln Sie zu **Gerätekonformität** > **Mobile Threat Defense**, und klicken Sie auf **Hinzufügen**.
 
-2. Wählen Sie auf der Seite **Connector hinzufügen** in der Dropdownliste den Eintrag **Wandera** aus. Wählen Sie dann **Erstellen** aus.  
-
-3. Wählen Sie im Bereich „Mobile Threat Defense“ den **Wandera** MTD-Connector in der Liste der Connectors aus, um den Bereich *Connector bearbeiten* zu öffnen. Wählen Sie **Open the Wandera admin console** (Die Wandera-Verwaltungskonsole öffnen) aus, um [RADAR](https://radar.wandera.com/login), die Wandera-Verwaltungskonsole, zu öffnen und sich anzumelden. 
-
-4. Wechseln Sie in der Wandera-Konsole zu **Settings** (Einstellungen) > **EMM Integration**, und wählen Sie die Registerkarte **EMM Connect** aus. Wählen Sie in der Dropdownliste *EMM Vendor* (EMM-Anbieter) *Microsoft Intune* aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Klicken Sie auf **Mandantenverwaltung** > **Connectors und Token** > **Mobile Threat Defense** > **Hinzufügen**.
+3. Wählen Sie auf der Seite **Connector hinzufügen** in der Dropdownliste den Eintrag **Wandera** aus. Wählen Sie dann **Erstellen** aus.  
+4. Wählen Sie im Bereich „Mobile Threat Defense“ den **Wandera** MTD-Connector in der Liste der Connectors aus, um den Bereich *Connector bearbeiten* zu öffnen. Wählen Sie **Open the Wandera admin console** (Die Wandera-Verwaltungskonsole öffnen) aus, um [RADAR](https://radar.wandera.com/login), die Wandera-Verwaltungskonsole, zu öffnen und sich anzumelden. 
+5. Wechseln Sie in der Wandera-Konsole zu **Settings** (Einstellungen) > **EMM Integration**, und wählen Sie die Registerkarte **EMM Connect** aus. Wählen Sie in der Dropdownliste *EMM Vendor* (EMM-Anbieter) *Microsoft Intune* aus.
 
    ![Auswählen von Intune](./media/wandera-mtd-connector-integration/set-up-intune-in-radar.png)
 
-5. Klicken Sie auf **Grant permissions** (Berechtigungen erteilen), um eine Verbindung mit dem Intune-Portal zu öffnen. Melden Sie sich mit Ihren Anmeldeinformationen für Intune-Administratoren an, aktivieren Sie das Kontrollkästchen, und **akzeptieren** Sie dann die Berechtigungsanforderung.  
+6. Klicken Sie auf **Grant permissions** (Berechtigungen erteilen), um eine Verbindung mit dem Intune-Portal zu öffnen. Melden Sie sich mit Ihren Anmeldeinformationen für Intune-Administratoren an, aktivieren Sie das Kontrollkästchen, und **akzeptieren** Sie dann die Berechtigungsanforderung.  
 
    ![Akzeptieren von Berechtigungen](./media/wandera-mtd-connector-integration/permissions.png) 
 
-6. Wandera stellt die Verbindung her und kehrt zur Verwaltungskonsole RADAR zurück. Wiederholen Sie den Vorgang, um den Zugriff auf weitere Konfigurationen nach Bedarf zu **gewähren**.  
+7. Wandera stellt die Verbindung her und kehrt zur Verwaltungskonsole RADAR zurück. Wiederholen Sie den Vorgang, um den Zugriff auf weitere Konfigurationen nach Bedarf zu **gewähren**.  
 
    ![Integrationen und Berechtigungen](./media/wandera-mtd-connector-integration/integrations-and-permissions.png) 
 
-7. Kopieren Sie in der RADAR-Konsole den Namen der Gruppe **SyncOnly**, die unter **EMM Label** angezeigt wird. Unter diesem Namen können Sie in Intune eine Gruppe für die Synchronisierung mit Wandera konfigurieren.
+8. Kopieren Sie in der RADAR-Konsole den Namen der Gruppe **SyncOnly**, die unter **EMM Label** angezeigt wird. Unter diesem Namen können Sie in Intune eine Gruppe für die Synchronisierung mit Wandera konfigurieren.
 
    ![Synchronisierungsgruppe](./media/wandera-mtd-connector-integration/sync-group-name.png) 
 
-8. Wechseln Sie zurück zur [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)-Konsole, und bearbeiten Sie den Wandera MTD-Connector. Legen Sie die verfügbaren Optionen auf **Ein** fest, und **speichern** Sie die Konfiguration.  
+9. Wechseln Sie zurück zur [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)-Konsole, und bearbeiten Sie den Wandera MTD-Connector. Legen Sie die verfügbaren Optionen auf **Ein** fest, und **speichern** Sie die Konfiguration.  
 
    ![Aktivieren von Wandera](./media/wandera-mtd-connector-integration/enable-wandera.png) 
 
@@ -94,14 +93,13 @@ Um weitere Informationen über diesen Prozess von Wandera zu erhalten, melden Si
 ### <a name="add-the-wandera-apps"></a>Hinzufügen der Wandera-Apps  
 Erstellen Sie Client-Apps in Intune, um die Wandera-App auf Android- und iOS-Geräten bereitzustellen. Unter [Hinzufügen von MTD-Apps](mtd-apps-ios-app-configuration-policy-add-assign.md) finden Sie die für die Wandera-Apps spezifischen Verfahren und benutzerdefinierten Details.  
 
-Nachdem Sie die Apps erstellt haben, kehren Sie hierher zurück, um die Synchronisierungsgruppe zu erstellen und die Apps zuzuweisen.  
-
+Nachdem Sie die Apps erstellt haben, kehren Sie hierher zurück, um die Synchronisierungsgruppe zu erstellen und die Apps zuzuweisen.
 
 ### <a name="create-the-synchronization-group-and-assign-the-apps"></a>Erstellen der Synchronisierungsgruppe und Zuweisen der Apps
 
 1. Ermitteln Sie in der Wandera RADAR-Konsole den Namen der Gruppe **SyncOnly**, die unter **EMM Label** angezeigt wird. Möglicherweise haben Sie diesen Namen in Schritt 7 gespeichert, während Sie [die Unterstützung für Wandera in Intune](#enable-support-for-wandera-in-intune) aktiviert haben. Verwenden Sie diesen Namen als Namen der Gruppe in Intune für die Wandera-Synchronisierung.  
 
-2. Wechseln Sie in der Intune-Konsole zu **Gruppen**, und wählen Sie **Neue Gruppe** aus. Geben Sie Folgendes an, um die Synchronisierungsgruppe für die Verwendung durch Wandera zu konfigurieren:
+2. Wechseln Sie im Endpoint Manager Admin Center zu **Gruppen**, und wählen Sie **Neue Gruppe** aus. Geben Sie Folgendes an, um die Synchronisierungsgruppe für die Verwendung durch Wandera zu konfigurieren:
    - **Gruppentyp**: **Sicherheit**
    - **Gruppenname**: Geben Sie den **SyncOnly**-Namen an, den Sie über die Wandera RADAR-Verwaltungskonsole abgerufen haben.
 
@@ -116,15 +114,11 @@ Weitere Informationen finden Sie unter [Bereitstellen von Apps](../apps/apps-dep
 ### <a name="assign-the-wandera-apps-to-the-synchronization-group"></a>Zuweisen der Wandera-Apps zur Synchronisierungsgruppe  
 Wiederholen Sie das folgende Verfahren für die Wandera-App, die Sie für iOS und Android erstellt haben.
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an. Wechseln Sie zu **Client-Apps** > **Apps**, und wählen Sie die Wandera-App aus.  
-
-2. Klicken Sie auf **Zuweisungen** und dann auf **Gruppe hinzufügen**.  
-
-3. Wählen Sie im Bereich **Gruppe hinzufügen** für *Zuweisungstyp* die Option *Erforderlich* aus.
-
-4. Klicken Sie auf **Eingeschlossene Gruppen** und dann auf **Einzuschließende Gruppen auswählen**. Geben Sie die Gruppe an, die Sie für die Wandera-Synchronisierung erstellt haben, und klicken Sie dann auf **Auswählen** > **OK** > **OK**. Klicken Sie auf **Speichern**, um die Gruppenzuweisung abzuschließen.  
- 
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Klicken Sie auf **Apps** > **Alle Apps**, und wählen Sie die Wandera-App aus.
+3. Klicken Sie auf **Zuweisungen** und dann auf **Gruppe hinzufügen**.  
+4. Wählen Sie im Bereich **Gruppe hinzufügen** für *Zuweisungstyp* die Option *Erforderlich* aus.
+5. Klicken Sie auf **Eingeschlossene Gruppen** und dann auf **Einzuschließende Gruppen auswählen**. Geben Sie die Gruppe an, die Sie für die Wandera-Synchronisierung erstellt haben, und klicken Sie dann auf **Auswählen** > **OK** > **OK**. Klicken Sie auf **Speichern**, um die Gruppenzuweisung abzuschließen. 
 
 ## <a name="next-steps"></a>Nächste Schritte  
-Nachdem Sie die Integration konfiguriert haben, können Sie mit der Konfiguration von Richtlinien beginnen, den erweiterten bedingten Zugriff einrichten und Berichte in der Wandera-Verwaltungskonsole anzeigen. Weitere Informationen zum Verwalten und Konfigurieren von Wandera finden Sie im [Support Center Getting Started Guide](https://radar.wandera.com/?return_to=https://wandera.force.com/Customer/s/getting-started) in der Dokumentation zu Wandera.  
- 
+Nachdem Sie die Integration konfiguriert haben, können Sie mit der Konfiguration von Richtlinien beginnen, den erweiterten bedingten Zugriff einrichten und Berichte in der Wandera-Verwaltungskonsole anzeigen. Weitere Informationen zum Verwalten und Konfigurieren von Wandera finden Sie im [Support Center Getting Started Guide](https://radar.wandera.com/?return_to=https://wandera.force.com/Customer/s/getting-started) in der Dokumentation zu Wandera. 

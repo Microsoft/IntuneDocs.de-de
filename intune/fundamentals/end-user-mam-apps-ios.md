@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/15/2018
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -17,20 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1a3dcd7068a004f94b97b5ec6c43c609662a76d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 165ce160339647e396b9cfc3a8374f21c77665f8
+ms.sourcegitcommit: f9dc50642efa8656054ef67f9335b9b46b655f93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414560"
+ms.lasthandoff: 01/02/2020
+ms.locfileid: "75606620"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird
 
- Dieses Thema beschreibt das Benutzererlebnis beim Verwenden von Apps mit angewendeten App-Schutzrichtlinien. App-Schutzrichtlinien gelten nur, wenn Apps in einem geschäftlichen Kontext verwendet werden, z. B. wenn der Benutzer ein Geschäftskonto für den Zugriff auf Apps verwendet oder auf Dateien zugreift, die an einem OneDrive for Business-Speicherort im Unternehmen gespeichert sind.
+Intune-App-Schutzrichtlinien werden auf Geschäfts-, Schul- und Uni-Apps angewendet. Deshalb bemerken Mitarbeiter und Schüler/Studenten möglicherweise keine Unterschiede bei der Benutzeroberfläche, wenn sie ihre Apps in einem persönlichen Kontext nutzen. Im Geschäfts-, Schul- oder Uni-Kontext erhalten sie jedoch möglicherweise Aufforderungen, Kontoentscheidungen zu treffen, ihre Einstellungen zu aktualisieren oder Sie um Hilfe zu bitten. In diesem Artikel erfahren Sie, welche Erfahrungen Ihre Benutzer machen, wenn sie versuchen, auf Intune-geschützte Anwendungen zuzugreifen und diese zu verwenden.  
 
 ## <a name="access-apps"></a>Zugriff auf Apps
 
-Wenn das Gerät **nicht bei Intune registriert** ist, wird der Benutzer beim ersten Verwenden der App aufgefordert, die App neu zu starten. Ein Neustart ist erforderlich, damit App-Schutzrichtlinien auf die App angewendet werden können.
+Wenn das Gerät **nicht bei Intune registriert** ist, wird der Benutzer beim ersten Verwenden der App aufgefordert, die App neu zu starten. Es ist ein Neustart erforderlich, damit App-Schutzrichtlinien auf die App angewendet werden können.
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
 
@@ -40,30 +40,29 @@ Bei Geräten, die **für die Verwaltung in Intune registriert** sind, wird dem B
 
 ## <a name="use-apps-with-multi-identity-support"></a>Verwenden von Apps mit Unterstützung von mehreren Identitäten
 
-Apps, die mehrere Identitäten unterstützen, bieten Ihnen die Möglichkeit, verschiedene Konten (Geschäfts- und persönliche Konten) für den Zugriff auf die gleichen Apps zu verwenden. Hierbei werden App-Schutzrichtlinien nur angewendet, wenn die Apps im Arbeitskontext verwendet werden.  
+Mit Apps, die mehrere Identitäten unterstützen, können Sie unterschiedliche Geschäfts- und persönliche Konten verwenden, um auf die gleichen Apps zuzugreifen. App-Schutzrichtlinien – wie z. B. die Aufforderung zur Eingabe einer Geräte-PIN – werden aktiviert, wenn Benutzer in einem Geschäfts-, Schul- oder Unikontext auf diese Apps zugreifen.   
 
-Beispielsweise erhalten Benutzer eine PIN-Eingabeaufforderung, wenn Sie auf Geschäftsdaten zugreifen. Bei der **Outlook-App** wird der Benutzer beim Starten der App zur Eingabe einer PIN aufgefordert. Bei der **OneDrive-App** wird der Benutzer zur Eingabe einer PIN aufgefordert, wenn er das Geschäftskonto eingibt.  Bei Microsoft **Word**, **PowerPoint** und **Excel** wird der Benutzer zur Eingabe einer PIN aufgefordert, wenn er auf Dokumente zugreift, die am OneDrive for Business-Speicherort des Unternehmens gespeichert sind.
+Je nachdem, wie Sie die Richtlinien konfigurieren, erfolgt die PIN-Eingabeaufforderung für die Benutzer möglicherweise in all ihren Apps auf unterschiedliche Weise.  Angenommen, Sie konfigurieren Ihre Richtlinien wie folgt:       
+* Microsoft Outlook fordert den Benutzer beim Starten der App zur Eingabe einer PIN auf. 
+* OneDrive fordert die Benutzer zur Eingabe einer PIN auf, wenn sie sich bei ihrem Geschäftskonto anmelden.  
+* Microsoft Word, PowerPoint und Excel fordern die Benutzer zur Eingabe einer PIN auf, wenn sie auf Dokumente zugreifen, die im OneDrive for Business-Speicherort des Unternehmens gespeichert sind.  
 
-- Erfahren Sie mehr über die Apps, die [App-Schutz und mehrere Identitäten](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) mit Intune unterstützen.
+- Erfahren Sie mehr über die Apps, die [App-Schutz und mehrere Identitäten](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) mit Intune unterstützen.  
 
-App-Schutzrichtlinien werden nur im geschäftlichen Kontext angewendet. Eine App kann sich daher unterschiedlich verhalten, je nachdem, ob sie im geschäftlichen oder privaten Kontext verwendet wird.
+## <a name="manage-user-accounts-on-the-device"></a>Verwalten von Benutzerkonten auf dem Gerät  
 
-## <a name="manage-user-accounts-on-the-device"></a>Verwalten von Benutzerkonten auf dem Gerät
+Intune App-Schutzrichtlinien beschränken die Benutzer auf ein verwaltetes Geschäfts-, Schul- oder Uni-Konto pro App. App-Schutzrichtlinien beschränken nicht die Anzahl verwalteter Konten, die ein Benutzer hinzufügen kann.   
 
-Mit Anwendungen, die mehrere Identitäten unterstützen, können Benutzer mehrere Konten hinzufügen.  Die Intune-App unterstützt nur ein verwaltetes Konto.  Sie schränkt die Anzahl nicht verwalteter Konten nicht ein.
+- Wenn ein Benutzer versucht, ein zweites verwaltetes Konto hinzuzufügen, wird er aufgefordert, das verwaltete Konto auszuwählen, das verwendet werden soll. Wenn der Benutzer das zweite Konto hinzufügt, wird das erste Konto entfernt.
+- Wenn Sie Schutzrichtlinien zu einem anderen Konto Ihres Benutzers hinzufügen, wird der Benutzer aufgefordert, das zu verwendende verwaltete Konto auszuwählen. Das andere Konto wird entfernt. 
 
-Wenn in einer Anwendung ein verwaltetes Konto vorhanden ist, trifft Folgendes zu:
+Einige Benutzer erhalten nicht die Möglichkeit, zwischen verwalteten Konten zu wechseln oder auszuwählen. Die Option ist nicht für Geräte verfügbar, auf die Folgendes zutrifft:
+* Gerät wird von Intune verwaltet  
+* Gerät wird über eine Drittanbieterlösung für die Enterprise Mobility-Verwaltung verwaltet und mit der IntuneMAMUPN-Einstellung konfiguriert 
 
-- Wenn ein Benutzer versucht, ein zweites verwaltetes Konto hinzuzufügen, wird er aufgefordert, das verwaltete Konto auszuwählen, das verwendet werden soll.  Das andere Konto wird entfernt.
-- Wenn der IT-Administrator einem zweiten vorhandenen Konto eine Richtlinie hinzufügt, wird der Benutzer aufgefordert, das verwaltete Konto auszuwählen, das verwendet werden soll.  Das andere Konto wird entfernt.
+Das folgende Beispielszenario beschreibt, wie mehrere Benutzerkonten behandelt werden:  
 
-Lesen Sie das folgende Beispielszenario, um genauer zu verstehen, wie mehrere Benutzerkonten behandelt werden.
-
-Benutzer A arbeitet für zwei Unternehmen – **Unternehmen X** und **Unternehmen Y**. Benutzer A verfügt für jedes Unternehmen über ein geschäftliches Konto, und beide verwenden Intune zum Bereitstellen von App-Schutzrichtlinien. **Unternehmen X** stellt App-Schutzrichtlinien **vor** **Unternehmen Y** bereit. Das Konto, das **Unternehmen X** zugeordnet ist, erhält zuerst die App-Schutzrichtlinie. Wenn das dem Unternehmen Y zugeordnete Benutzerkonto durch die App-Schutzrichtlinien verwaltet werden soll, müssen Sie das dem Unternehmen X zugeordnete Benutzerkonto entfernen und das Benutzerkonto hinzufügen, das Unternehmen Y zugeordnet ist.
-
-### <a name="add-a-second-account"></a>Hinzufügen eines zweiten Kontos
-
-Wenn Sie ein iOS-Gerät verwenden und versuchen, auf diesem Gerät ein zweites Geschäftskonto einzurichten, wird möglicherweise eine Sperrnachricht angezeigt. Die Konten werden angezeigt, und Sie können das Konto auswählen, das Sie entfernen möchten.
+Benutzer A arbeitet für zwei Unternehmen – **Unternehmen X** und **Unternehmen Y**. Benutzer A verfügt für jedes Unternehmen über ein geschäftliches Konto, und beide verwenden Intune zum Bereitstellen von App-Schutzrichtlinien. **Unternehmen X** stellt App-Schutzrichtlinien **vor** **Unternehmen Y** bereit. Das Konto, das **Unternehmen X** zugeordnet ist, erhält zuerst die App-Schutzrichtlinie. Wenn das dem Unternehmen Y zugeordnete Benutzerkonto durch die App-Schutzrichtlinien verwaltet werden soll, müssen Sie das dem Unternehmen X zugeordnete Benutzerkonto entfernen und das Benutzerkonto hinzufügen, das Unternehmen Y zugeordnet ist.  
 
 ## <a name="next-steps"></a>Nächste Schritte
 

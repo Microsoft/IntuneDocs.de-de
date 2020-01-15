@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24f15cb179dfc2b12b642f5f196d04dce58d4377
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5c18f3e8fb14d8592789b39856ec420790fad286
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505203"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547552"
 ---
 # <a name="create-a-design"></a>Erstellen eines Entwurfs
 
@@ -84,7 +84,7 @@ Ihre aktuelle Umgebung kann Entwurfsentscheidungen beeinflussen. Sie sollte doku
 
   - Wie verwalten Sie Ihre PC- und Serverumgebung?
 
-  - Verwenden Sie System Center Configuration Manager? Verwenden Sie eine Drittanbieterplattform zur Systemverwaltung?
+  - Verwenden Sie Microsoft Endpoint Configuration Manager? Verwenden Sie eine Drittanbieterplattform zur Systemverwaltung?
 
 - **VPN-Lösung**
 
@@ -101,7 +101,7 @@ Stellen Sie beim Erfassen der aktuellen MDM-Umgebung sicher, dass Sie alle Proje
 | **SharePoint** | SharePoint lokal | Keine Pläne zur Onlineverwendung von SharePoint |  
 | **Aktuelle MDM** | Exchange ActiveSync |  |
 | **Zertifikatlösung** | Microsoft Server 2012 R2, Active Directory-Zertifikatdienste | PKI wird nur für Websiteserver verwendet |
-| **Systemverwaltung** | System Center Configuration Manager CB 1606 | Die Intune-Hybridlösung soll näher untersucht werden |
+| **Systemverwaltung** | Configuration Manager CB 1606 | Die Intune-Hybridlösung soll näher untersucht werden |
 | **VPN-Lösung** | Cisco AnyConnect |  |
 
 
@@ -109,7 +109,7 @@ Sie können eine [Vorlage der oben stehenden Tabelle herunterladen](https://gall
 
 ## <a name="choose-an-intune-deployment-option"></a>Wählen einer Intune-Bereitstellungsoption
 
-Intune bietet zwei Bereitstellungsoptionen: eigenständig und hybrid. Eigenständig bezieht sich darauf, dass der Intune-Dienst in der Cloud ausgeführt wird. Hybrid bezieht sich auf die Integration von Intune in System Center Configuration Manager. Dieses Handbuch ist in erster Linie auf die Verwendung der eigenständigen Option ausgerichtet. [Entscheiden Sie, welche Option Ihren geschäftlichen Anforderungen am meisten entspricht.](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)
+Intune bietet zwei Bereitstellungsoptionen: eigenständig und hybrid. „Eigenständig“ bezieht sich darauf, dass der Intune-Dienst in der Cloud ausgeführt wird. „Hybrid“ bezieht sich auf die Integration von Intune in Configuration Manager. Dieses Handbuch ist in erster Linie auf die Verwendung der eigenständigen Option ausgerichtet. [Entscheiden Sie, welche Option Ihren geschäftlichen Anforderungen am meisten entspricht.](https://docs.microsoft.com/configmgr/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)
 
 > [!Important]
 >Das Onboarding neuer MDM-Kunden (hybrid) ist veraltet. Weitere Informationen finden Sie im Blogbeitrag [Move from Hybrid Mobile Device Management to Intune on Azure (Wechsel von der hybriden Verwaltung mobiler Geräte zu Intune unter Azure)](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150).
@@ -310,7 +310,7 @@ Im folgenden Beispiel wird gezeigt, wie Zertifikate während des Entwurfs dokume
 
 Sie können eine [Vorlage der oben stehenden Tabelle herunterladen](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0), um die Anforderungen an Ihr Zertifikatprofil zu ermitteln.
 
-#### <a name="wi-fi-profile"></a>Wi-Fi-Profil
+#### <a name="wi-fi-profile"></a>WLAN-Profil
 
 WLAN-Profile werden verwendet, um automatisch ein mobiles Gerät mit einem drahtlosen Netzwerk zu verbinden. Intune unterstützt die Bereitstellung von WLAN-Profilen auf allen unterstützten Plattformen. Weitere Informationen zur [Unterstützung von WLAN-Profilen in Intune](../configuration/wi-fi-settings-configure.md).
 
@@ -353,7 +353,7 @@ Mithilfe von Intune können Sie Apps auf verschiedene Weise für Benutzer oder a
 
 - [Das iOS Volume Purchase Program für Unternehmen (VPP)](../apps/vpp-apps-ios.md)
 
-- [Apps im Microsoft Store für Unternehmen](../apps/windows-store-for-business.md)
+- [Apps aus Microsoft Store für Unternehmen](../apps/windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>Anforderungen an App-Typen
 
@@ -383,7 +383,7 @@ Durch App-Schutzrichtlinien werden Datenverluste auf ein Minimum reduziert, inde
 
 
 Sie können eine [Vorlage der oben stehenden Tabelle herunterladen](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0), um die Anforderungen an Ihre App-Schutzrichtlinien zu ermitteln.
-#### <a name="compliance-policies"></a>Konformitätsrichtlinien
+#### <a name="compliance-policies"></a>Kompatibilitätsrichtlinien
 
 Konformitätsrichtlinien bestimmen, ob ein Gerät bestimmten Anforderungen entspricht. Intune ermittelt anhand von Konformitätsrichtlinien, ob ein Gerät als konform oder als nicht konform betrachtet wird. Der Konformitätsstatus kann dann dazu verwendet werden, den Zugriff auf Unternehmensressourcen einzuschränken oder zuzulassen. Wenn bedingter Zugriff erforderlich ist, wird empfohlen, eine [Gerätekonformitätsrichtlinie](../protect/device-compliance-get-started.md) zu entwerfen.
 

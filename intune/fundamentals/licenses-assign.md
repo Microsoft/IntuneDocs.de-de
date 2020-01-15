@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,30 +16,31 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dcdc2b69de52ea3bf23f4e3c5d11399b62bc8daa
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9a62cc6ef2f1b3bd6f305fe6fa23a24f95d3dd37
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414093"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207354"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Zuweisen von Lizenzen zu Benutzern, damit sie ihre Geräte bei Intune registrieren können
 
 Egal, ob Sie manuell Benutzer hinzufügen oder aus Ihrem lokalen Active Directory synchronisieren, Sie müssen zunächst jedem Benutzer eine Intune-Lizenz zuweisen, bevor Benutzer ihre Geräte in Intune registrieren können. Eine Liste mit Lizenzen finden Sie unter [Lizenzen, die Intune enthalten](../licenses.md).
 
-## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>Zuweisen einer Intune-Lizenz im Microsoft 365 Admin Center
+> [!NOTE]
+> Benutzer, denen die Intune-App-Schutzrichtlinie zugewiesen wurde und die ihre Geräte nicht bei Microsoft Intune registrieren, benötigen ebenfalls eine Intune-Lizenz, um die Richtlinie zu erhalten. 
 
-Sie können das [Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?LinkId=698854) verwenden, um cloudbasierte Benutzer manuell hinzuzufügen. Außerdem können Sie es verwenden, um sowohl cloudbasierten Benutzerkonten als auch Konten, die aus Ihrer lokalen Active Directory-Bereitstellung mit Azure AD synchronisiert wurden, Lizenzen zuzuweisen.
+## <a name="assign-an-intune-license-microsoft-endpoint-manager-admin-center"></a>Zuweisen einer Intune-Lizenz im Microsoft Endpoint Manager Admin Center
 
-1. Melden Sie sich mit den Anmeldeinformationen Ihres Mandantenadministrators beim [Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?LinkId=698854) an, und wählen Sie dann **Benutzer** > **Aktive Benutzer** aus.
+Sie können das [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) verwenden, um cloudbasierte Benutzer manuell hinzuzufügen. Außerdem können Sie über das Admin Center sowohl cloudbasierten Benutzerkonten als auch Konten, die aus Ihrer lokalen Active Directory-Bereitstellung mit Azure AD synchronisiert wurden, Lizenzen zuzuweisen.
 
-2. Wählen Sie das Benutzerkonto, dem Sie eine Intune-Benutzerlizenz zuweisen möchten, und wählen Sie dann **Produktlizenzen** > **Bearbeiten**.
+1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Benutzer** > **Alle Benutzer**, anschließend einen Benutzer und dann **Lizenzen** > **Zuweisungen** aus.
 
-3. Schalten Sie **Intune** oder **Enterprise Mobility + Security** auf **An** um, und wählen Sie **Speichern**.
+2. Wählen Sie **Intune** > **Speichern** aus.
 
-   ![Screenshot: Produktlizenzbereich im Microsoft 365 Admin Center](./media/licenses-assign/office-assign-license.png)
+   ![Screenshot: Produktlizenzbereich im Microsoft 365 Admin Center](./media/licenses-assign/mem-assign-license.png)
 
-4. Das Benutzerkonto verfügt jetzt über die erforderlichen Berechtigungen, um den Dienst zu nutzen und Geräte für die Verwaltung zu registrieren.
+3. Das Benutzerkonto verfügt jetzt über die erforderlichen Berechtigungen, um den Dienst zu nutzen und Geräte für die Verwaltung zu registrieren.
 
 > [!NOTE]
 > Benutzer werden im klassischen Intune-Portal erst angezeigt, wenn sie ein Gerät über den Intune-PC-Client registriert haben. Darüber hinaus können Sie eine Gruppe von Benutzern auswählen, die Sie gleichzeitig bearbeiten möchten; so können Sie für alle Benutzer entweder eine Lizenz hinzufügen oder diese ersetzen.

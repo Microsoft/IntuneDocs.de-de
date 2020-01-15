@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 12/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eed0b8a74e69bc1552ae3e2badf485364ba37e94
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 01c95e1961871f33a3d8ed8c0b6c22502faca3a9
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563822"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654021"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Verwalten von iOS- und macOS-Apps, die über das Apple Volume Purchase Program mit Microsoft Intune erworben wurden
 
@@ -95,12 +95,12 @@ Bevor Sie beginnen, müssen Sie ein VPP-Token von Apple abrufen und es in Ihr In
         > Wenn Sie das Land oder die Region ändern, werden bei der nächsten Synchronisierung mit dem Apple-Dienst die Metadaten und die Store-URL für Apps aktualisiert, die mit diesem Token erstellt wurden. Eine App wird nicht aktualisiert, wenn sie in dem neuen Store für das Land bzw. die Region nicht vorhanden ist.
 
     - **Typ des VPP-Kontos:** Wählen Sie **Unternehmen** oder **Bildungswesen** aus.
-    - **Automatische App-Updates**: Mit **On** (Ein) und **Off** (Aus) können Sie automatische Updates aktivieren oder deaktivieren. Wenn diese Option aktiviert ist, erkennt Intune Updates für VPP-Apps in App Store und überträgt diese beim Geräte-Check-In automatisch mithilfe von Push auf das Gerät. Automatische App-Updates für Apple VPP-Apps aktualisieren nur die Apps automatisch, die mit der Installationsabsicht **Erforderlich** bereitgestellt wurden. Bei Apps, die mit der Installationsabsicht **Verfügbar** bereitgestellt wurden, generiert das automatische Update eine Statusmeldung für den IT-Administrator, die darüber informiert, dass eine neue Version der App verfügbar ist. Diese Statusmeldung wird angezeigt, wenn Sie die App auswählen, den Geräteinstallationsstatus auswählen und die Statusdetails überprüfen. Darüber hinaus wird dem Benutzer die App als nicht installiert im Unternehmensportal angezeigt, obwohl eine frühere Version der App installiert ist. In diesem Fall kann der Benutzer die App erneut installieren, indem er in der Unternehmensportal-App auf dem Bildschirm mit den Details zur App auf **Installieren** klickt. Damit wird die neuere Version der App installiert.
+    - **Automatische App-Updates**: Mit **On** (Ein) und **Off** (Aus) können Sie automatische Updates aktivieren oder deaktivieren. Wenn diese Option aktiviert ist, erkennt Intune Updates für VPP-Apps in App Store und überträgt diese beim Geräte-Check-In automatisch mithilfe von Push auf das Gerät. Automatische App-Updates für Apple VPP-Apps aktualisieren nur die Apps automatisch, die mit der Installationsabsicht **Erforderlich** bereitgestellt wurden. Für Apps, die mit der Installationsabsicht **Verfügbar** bereitgestellt wurden, wird dem Benutzer die App im Unternehmensportal als nicht installiert angezeigt, auch wenn eine frühere Version der App installiert ist. In diesem Fall kann der Benutzer die App erneut installieren, indem er in der Unternehmensportal-App auf dem Bildschirm mit den Details zur App auf **Installieren** klickt. Damit wird die neuere Version der App installiert. Beachten Sie, dass den Endbenutzern für benutzerseitig registrierte iOS-Geräte weiterhin alle benutzerseitig lizenzierten VPP-Apps im Unternehmensportal angezeigt werden. 
 
         > [!NOTE]
         > Für iOS 11.0 und höher oder macOS 10.12 und höher können automatische App-Updates für Apps ausgeführt werden, die für Geräte und Benutzer lizenziert sind.
 
-    - **Ich erteilen Microsoft die Berechtigung, sowohl Benutzer- und Geräteinformationen an Apple zu senden.** – Sie müssen **Ich stimme zu** auswählen, um fortzufahren. Informationen dazu, welche Daten Microsoft an Apple sendet, finden Sie unter[Von Intune an Apple gesendete Daten](~/protect/data-intune-sends-to-apple.md).
+    - **Ich erteilen Microsoft die Berechtigung, sowohl Benutzer- und Geräteinformationen an Apple zu senden.** – Sie müssen **Ich stimme zu** auswählen, um fortzufahren. Informationen dazu, welche Daten Microsoft an Apple sendet, finden Sie unter [Von Intune an Apple gesendete Daten](~/protect/data-intune-sends-to-apple.md).
 
 6. Wenn Sie fertig sind, klicken Sie auf **Erstellen**.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f9750603d19d9b19697c7d2660351c4586432f6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bb146fdee7a1d7d770575334eeed84f73cda8894
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73984197"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207484"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Hinzufügen von iOS-Softwareupdaterichtlinien in Intune
 
@@ -32,8 +32,8 @@ Das Gerät wird etwa alle acht Stunden bei Intune eingecheckt. Wenn ein Update v
 
 ## <a name="configure-the-policy"></a>Konfigurieren der Richtlinie
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Klicken Sie auf **Softwareupdates** > **Update policies for iOS** (Updaterichtlinien für iOS)  > **Erstellen**.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Klicken Sie auf **Softwareupdates** > **Updaterichtlinien für iOS** > **Erstellen**.
 3. Geben Sie auf der Registerkarte **Grundeinstellungen** einen Namen und eine Beschreibung (optional) für diese Richtlinie an, und klicken Sie dann auf **Weiter**.
 
    ![Registerkarte „Grundeinstellungen“](./media/software-updates-ios/basics-tab.png) 
@@ -77,7 +77,7 @@ Unterstützung vom Supportteam für Intune erhalten Sie unter [Delay visibility 
 ## <a name="edit-a-policy"></a>Bearbeiten einer Richtlinie
 Sie können eine vorhandene Richtlinie bearbeiten und die eingeschränkten Zeiten ändern:
 
-1. Klicken Sie unter **Softwareupdates** auf **Updaterichtlinien für iOS**, und wählen Sie dann die Richtlinie aus, die Sie bearbeiten möchten.
+1. Klicken Sie auf **Softwareupdates** > **Updaterichtlinien für iOS**. Wählen Sie die Richtlinie aus, die Sie bearbeiten möchten.
 
 2. Während Sie die **Eigenschaften** der Richtlinien anzeigen, können Sie bei der Richtlinienseite auf **Bearbeiten** klicken, die Sie ändern möchten.  
    ![Bearbeiten einer Richtlinie](./media/software-updates-ios/edit-policy.png)   

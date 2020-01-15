@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 79e1ba2441baa6773632c27f204bef01b015b990
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 48ad9ffe32dc7493195ec161e070734776381427
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832724"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547802"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Behandlung von Problemen bei der Geräteregistrierung in Microsoft Intune
 
@@ -113,7 +113,7 @@ Entfernen Sie alte Geräteeinträge, um zu verhindern, dass das Limit erreicht w
 
     4. Aktivieren Sie DirSync erneut, und überprüfen Sie, ob der Benutzer jetzt ordnungsgemäß synchronisiert ist.
 
-3. In einem Szenario, in dem Sie System Center Configuration Manager mit Intune verwenden, stellen Sie sicher, dass der Benutzer eine gültige Cloudbenutzer-ID besitzt:
+3. In einem Szenario, in dem Sie Configuration Manager mit Intune verwenden, stellen Sie sicher, dass der Benutzer eine gültige Cloudbenutzer-ID besitzt:
 
     1. Öffnen Sie SQL Management Studio.
 
@@ -332,7 +332,7 @@ Weitere Informationen finden Sie unter [Best practices for securing Active Direc
 
 5. Vergewissern Sie sich, dass Safari für iOS der Standardbrowser ist und dass Cookies aktiviert sind.
 
-### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Ein registriertes iOS-Gerät wird nicht in der Konsole angezeigt, wenn der System Center Configuration Manager mit Intune verwendet wird.
+### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-configuration-manager-with-intune"></a>Ein registriertes iOS-Gerät wird nicht in der Konsole angezeigt, wenn Configuration Manager mit Intune verwendet wird
 **Problem:** Der Benutzer registriert das iOS-Gerät, aber es wird nicht in der Configuration Manager-Verwaltungskonsole angezeigt. Das Gerät zeigt nicht an, dass es registriert wurde. Mögliche Ursachen:
 
 - Der Microsoft Intune-Connector an Ihrem Configuration Manager-Standort kommuniziert nicht mit dem Intune-Dienst.
@@ -419,7 +419,7 @@ Nachdem Sie die blockierten Geräte zurückgesetzt haben, können Sie den Benutz
     3. Suchen Sie das Gerät, für das ein Registrierungsproblem aufgetreten ist. Geben Sie den Gerätenamen oder die MAC/HW-Adresse ein, um die Ergebnisse einzuschränken.
     4. Wählen Sie das Gerät aus, und klicken Sie auf **Löschen**. Löschen Sie alle anderen Einträge, die diesem Gerät zugeordnet sind.  
 
-## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Probleme bei der Verwendung von System Center Configuration Manager mit Intune
+## <a name="issues-when-using-configuration-manager-with-intune"></a>Probleme bei der Verwendung von Configuration Manager mit Intune
 
 ### <a name="mobile-devices-disappear"></a>Mobile Geräte verschwinden
 
@@ -469,7 +469,7 @@ Das Kontozertifikat des vorherigen Kontos ist immer noch auf dem Computer vorhan
 
 1. Geben Sie im Menü **Start** **Ausführen** -> **MMC** ein.
 1. Wählen Sie **Datei** > **Snap-Ins hinzufügen/entfernen** aus.
-1. Doppelklicken Sie auf **Zertifikate**, wählen Sie **Computerkonto**,  >  **Weiter**, und wählen Sie die Option **Lokaler Computer** aus.
+1. Doppelklicken Sie auf **Zertifikate**, wählen Sie **Computerkonto**,  > **Weiter**, und wählen Sie die Option **Lokaler Computer** aus.
 1. Doppelklicken Sie auf **Zertifikate (lokaler Computer)** , und wählen Sie **Persönlich/Zertifikate** aus.
 1. Suchen Sie nach dem von Sc_Online_Issuing ausgestellten Intune-Zertifikat, und löschen Sie es, falls vorhanden.
 1. Falls der folgende Registrierungsschlüssel vorhanden ist, löschen Sie ihn: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**. Löschen Sie auch eventuell vorhandene untergeordnete Schlüssel.

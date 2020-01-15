@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 684e9602e66842e26a7f8e233a8cee6db73f132d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9cddb9b74d9132ace07c17a3156e61148b720d66
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098205"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207178"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Registrieren von macOS-Geräten in Intune
 
@@ -78,11 +78,9 @@ Für Parallels Desktop müssen Sie den Hardwaretyp sowie die Seriennummer für d
 Für VMware Fusion müssen Sie die [VMX-Datei bearbeiten](https://kb.vmware.com/s/article/1014782), um das Hardwaremodell und die Seriennummer des virtuellen Computers festzulegen. Es wird empfohlen, den Hardwaretyp des Geräts, auf dem die virtuellen Computer ausgeführt werden, mit dem Hardwaretyp der von Ihnen erstellten virtuellen Computer abzustimmen. Sie finden diesen Hardwaretyp im **Apple-Menü** > **Über diesen Mac** > **Systembericht** > **Modell-Identifizierung**. 
 
 ## <a name="user-approved-enrollment"></a>Durch den Benutzer genehmigte Registrierung
-Die durch den Benutzer genehmigte MDM-Registrierung ist ein Typ der macOS-Registrierung, mit dem Sie bestimmte sicherheitsrelevante Einstellungen verwalten können. Weitere Informationen finden Sie in der [Supportdokumentation von Apple](https://support.apple.com/HT208019).
-
-Ab November 2019 werden alle neuen benutzereigenen macOS-Registrierungen vom Benutzer genehmigt, da der Benutzer das Verwaltungsprofil manuell installieren muss, um sich erfolgreich registrieren zu können. Während des [Registrierungsvorgangs](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp) installiert der Benutzer das Apple-Verwaltungsprofil in **Systemeinstellungen** > **Profile**.  Die Anweisungen zur Installation des Verwaltungsprofils sind in der macOS-Unternehmensportal-App verfügbar.
-
-Geräte, die vor November 2019 registriert wurden, werden möglicherweise nicht vom Benutzer genehmigt, wenn der Benutzer das Verwaltungsprofil nicht manuell genehmigt hat. Benutzer können jedoch zurücknavigieren und das Verwaltungsprofil genehmigen, indem sie zu **Systemeinstellungen** > **Profile** > navigieren und dann **Verwaltungsprofil** > **Genehmigen** auswählen.
+Die durch den Benutzer genehmigte MDM-Registrierung ist ein Typ der macOS-Registrierung, mit dem Sie bestimmte sicherheitsrelevante Einstellungen verwalten können. Weitere Informationen finden Sie in der [Supportdokumentation von Apple](https://support.apple.com/HT208019).  
+ 
+Während der BYOD-Registrierung wird der Benutzer aufgefordert, das Apple-Verwaltungsprofil manuell zu genehmigen. Anweisungen werden in der Unternehmensportal-App für macOS bereitgestellt. Obwohl die Genehmigung des Verwaltungsprofils nicht erforderlich ist, um die Registrierung abzuschließen, empfiehlt Intune vom Benutzer genehmigte Registrierungen. Wenn der Benutzer das Profil während der Registrierung nicht genehmigt, kann der Benutzer zu **Systemeinstellungen** > **Profile** wechseln, das Verwaltungsprofil auswählen und auf **Genehmigen** klicken.    
 
 ### <a name="find-out-if-a-device-is-user-approved"></a>Herausfinden, ob ein Gerät vom Benutzer genehmigt wurde
 1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.

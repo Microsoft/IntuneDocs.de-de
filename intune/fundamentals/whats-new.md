@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/09/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77cf4745262346ec2f8bfb5d4d7e67e1ee5c5e07
-ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
+ms.openlocfilehash: b2bb9d921f30e343b309be60438f5318d7c66518
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000379"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692257"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
 
-Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Hier finden Sie auch [wichtige Hinweise](#notices), [frühere Releases](whats-new-archive.md) und Informationen zur [Veröffentlichung von Intune-Dienstupdates](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728).
+Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Hier finden Sie auch [wichtige Hinweise](#notices), [frühere Releases](whats-new-archive.md) und Informationen zur [Veröffentlichung von Intune-Dienstupdates](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728). 
 
 > [!Note]
 > Bei jedem [monatlichen Update](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) kann das Rollout bis zu drei Tage dauern und erfolgt in dieser Reihenfolge:
@@ -36,7 +36,7 @@ Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Hier 
 > - 2\. Tag: Europa, Naher Osten und Afrika (EMEA)
 > - 3\. Tag: Nordamerika
 >
-> Einige Features werden im Laufe mehrerer Wochen bereitgestellt und sind in der ersten Woche möglicherweise nicht für alle Kunden verfügbar.
+> Die Einführung einiger Funktionen dauert möglicherweise mehrere Wochen, sodass sie in der ersten Woche nicht für alle Kunden verfügbar sind.
 >
 > Auf der Seite [Features in der Entwicklung](in-development.md) finden Sie eine Liste der neuen Features in einem Release.
 
@@ -54,10 +54,60 @@ Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Hier 
 -->  
 
 <!-- ########################## -->
-## <a name="week-of-december-9-2019"></a>Woche des 9. Dezember 2019
+## <a name="week-of-january-6-2020"></a>Woche vom 6. Januar 2020
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>App-Verwaltung
+
+#### <a name="smime-support-for-microsoft-outlook-for-ios---2669398---"></a>S/MIME-Unterstützung für Microsoft Outlook für iOS<!-- 2669398 -->
+Intune unterstützt die Bereitstellung von S/MIME-Signatur- und Verschlüsselungszertifikaten, die mit Outlook für iOS auf iOS-Geräten verwendet werden können. Weitere Informationen finden Sie unter [Vertraulichkeitsbezeichnung und Schutz in Outlook für iOS-und Android-](https://aka.ms/omsmime).
+
+<!-- ########################## -->
+## <a name="week-of-december-30-2019"></a>Woche vom 30. Dezember 2019
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>App-Verwaltung
+
+#### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices---4851745---"></a>Abrufen eines persönlichen Wiederherstellungsschlüssels von MEM-verschlüsselten macOS-Geräten<!-- 4851745 -->
+Endbenutzer können mithilfe der Unternehmensportal-App für iOS ihren persönlichen Wiederherstellungsschlüssel (FileVault-Schlüssel) abrufen. Das Gerät mit dem persönlichen Wiederherstellungsschlüssel muss bei Intune registriert und über Intune mit FileVault verschlüsselt sein. Endbenutzer können mit der Unternehmensportal-App für iOS ihre persönlichen Wiederherstellungsschlüssel auf dem verschlüsselten macOS-Gerät abrufen, indem sie auf **Wiederherstellungsschlüssel abrufen** klicken. Sie können den Wiederherstellungsschlüssel auch aus Intune abrufen, indem Sie **Geräte** > *das verschlüsselte und registrierte macOS-Gerät* > **Wiederherstellungsschlüssel abrufen** auswählen. Weitere Informationen zu FileVault finden Sie unter [FileVault-Verschlüsselung für macOS](~/protect/encrypt-devices.md#filevault-encryption-for-macos).
+
+#### <a name="ios-user-licensed-vpp-apps---5619268---"></a>Von iOS-Benutzern lizenzierte VPP-Apps<!-- 5619268 -->
+Für benutzerseitig registrierte iOS-Geräte werden den Endbenutzern keine bereitgestellten VPP-Anwendungen mit Gerätelizenzierung mehr als verfügbar angeboten. Den Endbenutzern werden aber weiterhin alle benutzerseitig lizenzierten VPP-Apps im Unternehmensportal angezeigt. Weitere Informationen zu VPP-Apps finden Sie unter [Verwalten von iOS- und macOS-Apps, die über das Apple Volume Purchase Program mit Microsoft Intune erworben wurden](~/apps/vpp-apps-ios.md).
+
+<!-- ########################## -->
+## <a name="week-of-december-23-2019"></a>Woche vom 23. Dezember 2019
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>App-Verwaltung
+
+#### <a name="notice---windows-10-1703-rs2-will-be-moving-out-of-support----5026679---"></a>Hinweis: Die Unterstützung für Windows 10 1703 (RS2) wird eingestellt. <!-- 5026679 -->
+Am 9. Oktober 2018 endete für Windows 10 1703 (RS2) die Microsoft-Plattformunterstützung für die Home-, Pro- und Pro for Workstations-Editionen. Für Windows 10 Enterprise und die Education-Editionen endete die Plattformunterstützung für Windows 10 1703 (RS2) am 8. Oktober 2019. Am 26. Dezember 2019 wurde die mindestens erforderliche Version der Windows-Unternehmensportalanwendung auf Windows 10 1709 (RS3) angehoben. Computer, auf denen eine ältere als Version 1709 ausgeführt wird, werden nicht mehr mit aktualisierten Versionen der Anwendung aus dem Microsoft Store versorgt. Diese Änderung wurde den Kunden mit einer ältere Version von Windows 10 im Vorfeld über das Message Center mitgeteilt. Weitere Informationen finden Sie im [Informationsblatt zum Lebenszyklus von Windows](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
+
+<!-- ########################## -->
+
+## <a name="week-of-december-16-2019"></a>Woche vom 16. Dezember 2019
+
+### <a name="device-configuration"></a>Gerätekonfiguration
+
+#### <a name="updates-to-administrative-templates-for-windows-10-devices----5941568---"></a>Aktualisierungen an den administrativen Vorlagen für Windows 10-Geräte <!-- 5941568 -->
+
+Sie können in Microsoft Intune mithilfe von ADMX-Vorlagen Einstellungen für Microsoft Edge, Office und Windows steuern und verwalten. Für die administrativen Vorlagen in Intune gelten die folgenden Aktualisierungen der Richtlinieneinstellungen:
+
+- Unterstützung für Microsoft Edge-Versionen 78 und 79 hinzugefügt
+- Umfasst die ADMX-Dateien vom 11. November 2019 in [Administrative Vorlagendateien (ADMX/ADML) und Office-Anpassungstool für Office 365 ProPlus, Office 2019 und Office 2016](https://www.microsoft.com/download/details.aspx?id=49030)
+
+Weitere Informationen zu ADMX-Vorlagen in Intune finden Sie unter [Verwenden von Windows 10-Vorlagen zum Konfigurieren von Gruppenrichtlinieneinstellungen in Microsoft Intune](../configuration/administrative-templates-windows.md).
+
+Gilt für:
+
+- Windows 10 und höher
+
+## <a name="week-of-december-9-2019-1912-service-release"></a>Woche vom 9. Dezember 2019 (1912 Dienstrelease)
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>App-Verwaltung
 
 #### <a name="migrating-to-microsoft-edge-for-managed-browsing-scenarios---5173762---"></a>Migrieren zu Microsoft Edge für das verwaltete Durchsuchen<!-- 5173762 -->
-
 Im Hinblick auf die Einstellung von Intune Managed Browser wurden Änderungen an den App-Schutzrichtlinien vorgenommen, um die erforderlichen Schritte zu vereinfachen, die für die Umstellung Ihrer Benutzer auf Edge nötig sind. Die Optionen für die App-Schutzrichtlinieneinstellung **Übertragung von Webinhalt in andere Apps einschränken** wurden aktualisiert, sodass die folgenden Optionen verfügbar sind:
 
 - Jede App
@@ -66,6 +116,85 @@ Im Hinblick auf die Einstellung von Intune Managed Browser wurden Änderungen an
 - Nicht verwalteter Browser 
 
 Wenn Sie **Microsoft Edge** auswählen, wird Ihren Endbenutzern Messaging für bedingten Zugriff angezeigt, das sie darüber benachrichtigt, dass Microsoft Edge für das verwaltete Durchsuchen erforderlich ist. Sie werden dazu aufgefordert, Microsoft Edge herunterzuladen und sich mit ihren AAD-Konten anzumelden, wenn sie dies noch nicht getan haben.  Dies entspricht einer Anwendung der App-Konfigurationseinstellung `com.microsoft.intune.useEdge`, die auf **True** festgelegt ist, auf Ihre MAM-fähigen Apps. In den vorhandenen App-Schutzrichtlinien, die die Einstellung **Mit Richtlinien verwaltete Browser** verwendet haben, ist jetzt **Intune Managed Browser** ausgewählt. Dabei ist keine Verhaltensänderung erkennbar. Das bedeutet, dass Ihren Benutzern Messaging zur Verwendung von Microsoft Edge angezeigt wird, wenn Sie die App-Konfigurationseinstellung **useEdge** auf **True** festgelegt haben. Wir empfehlen allen Kunden, die verwalteten Browserszenarios nutzen, ihre App-Schutzrichtlinien mit der Einstellung **Übertragung von Webinhalt in andere Apps einschränken** zu aktualisieren, um sicherzustellen, dass Benutzer die richtigen Anleitungen für den Übergang zu Microsoft Edge sehen, unabhängig davon, welche App sie verwenden. 
+
+#### <a name="configure-app-notification-content-for-organization-accounts---2576686----"></a>Konfigurieren von App-Benachrichtigungsinhalt für Organisationskonten<!-- 2576686  -->
+Intune-App-Schutzrichtlinien auf Android- und iOS-Geräten ermöglichen es Ihnen, den App-Benachrichtigungsinhalt für Organisationskonten zu steuern. Sie können durch Auswahl einer Option auswählen („Zulassen“, „Organisationsdaten blockieren“ oder „Blockiert“) angeben, wie Benachrichtigungen für Organisationskonten für die ausgewählte App angezeigt werden. Dieses Feature erfordert die Unterstützung von Anwendungen und ist möglicherweise nicht für alle Anwendungen verfügbar, die App-Schutzrichtlinien unterstützen. Outlook für iOS, Version 4.15.0 (oder höher) und Outlook für Android, Version 4.83.0 (oder höher) unterstützen diese Einstellung. Die Einstellung ist in der Konsole verfügbar, aber die Funktionalität ist erst ab dem 16. Dezember 2019 in Kraft. Weitere Informationen zu Intune-App-Schutzrichtlinien finden Sie unter [Was sind App-Schutzrichtlinien?](../apps/app-protection-policy.md)
+
+#### <a name="microsoft-app-icons-update--4677605----"></a>Aktualisierung der Microsoft-App-Symbole<!--4677605  -->
+Die für Microsoft-Apps im App-Zielbereich verwendeten Symbole für App-Schutzrichtlinien und App-Konfigurationsrichtlinien wurden aktualisiert.
+
+#### <a name="require-use-of-approved-keyboards-on-android--4761794----"></a>Erforderliche Verwendung von genehmigten Tastaturen unter Android<!--4761794  -->
+Im Rahmen einer App-Schutzrichtlinie können Sie die Einstellung [**Zugelassene Tastaturen**](../apps/app-protection-policy-settings-android.md#data-protection) festlegen, um zu verwalten, welche Android-Tastaturen mit verwalteten Android-Apps verwendet werden können. Wenn ein Benutzer die verwaltete App öffnet und nicht bereits eine genehmigte Tastatur für diese App verwendet, wird er aufgefordert, zu einer der genehmigten Tastaturen zu wechseln, die bereits auf seinem Gerät installiert sind. Bei Bedarf wird den Benutzern ein Link zum Download einer genehmigten Tastatur aus dem Google Play Store angezeigt, die sie installieren und einrichten können. Die Benutzer können nur dann Textfelder in einer verwalteten App bearbeiten, wenn die aktive Tastatur eine genehmigte Tastatur ist.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-configuration"></a>Gerätekonfiguration
+
+#### <a name="updated-single-sign-on-experience-for-apps-and-websites-on-your-ios-ipados-and-macos-devices---4999578----"></a>Aktualisiertes SSO-Verhalten für Apps und Websites auf iOS-, iPadOS- und macOS-Geräten<!-- 4999578  -->
+In Intune wurden weitere Einstellungen für das einmalige Anmelden (Single Sign-On, SSO) für iOS-, iPadOS- und macOS-Geräte hinzugefügt. Sie können ab sofort eine Umleitung für SSO-App-Erweiterungen konfigurieren, die von Ihrer Organisation oder Ihrem Identitätsanbieter geschrieben wurden. Verwenden Sie diese Einstellungen, um ein nahtloses SSO-Verhalten für Apps und Websites zu konfigurieren, die moderne Authentifizierungsmethoden wie beispielsweise OAuth und SAML2 verwenden. 
+
+Diese neuen Einstellungen erweitern die bisherigen Einstellungen für SSO-App-Erweiterungen und die integrierte Kerberos-Erweiterung von Apple (**Geräte** > **Gerätekonfiguration** > **Profile** > **Profil erstellen** > **iOS/iPadOS** oder **macOS** für den Plattformtyp > **Gerätefunktionen** für den Profiltyp). 
+
+Um eine vollständige Liste der Einstellungen für SSO-App-Erweiterungen anzuzeigen, die Sie konfigurieren können, wechseln Sie zu [SSO unter iOS](../configuration/ios-device-features-settings.md#single-sign-on-app-extension) und [SSO unter macOS](../configuration/macos-device-features-settings.md#single-sign-on-app-extension).
+
+Gilt für:
+
+- iOS/iPadOS
+- macOS
+
+#### <a name="we-have-updated-two-device-restriction-settings-for-ios-and-ipados-devices-to-correct-their-behavior---5701352-wnready-----"></a>Wir haben zwei Einstellungen zur Geräteeinschränkung für iOS- und iPadOS-Geräte aktualisiert, um deren Verhalten zu korrigieren<!-- 5701352 WNReady   -->
+Für iOS-Geräte können Sie Geräteeinschränkungsprofile mit den Einstellungen **Drahtlose PKI-Updates zulassen** und **Modus mit USB-Einschränkung blockieren**. (**Geräte** > **Gerätekonfiguration** > **Profile** > **Profil erstellen** > **iOS/iPadOS** für Plattform > **Geräteeinschränkungen** für Profiltyp). Vor diesem Release waren die Benutzeroberflächeneinstellungen und Beschreibungen für die folgenden Einstellungen falsch, diese wurden nun korrigiert. Ab diesem Release lautet das Einstellungsverhalten wie folgt:
+
+**Drahtlose PKI-Updates blockieren**: **Blockieren**: Verhindert, dass Ihre Benutzer Softwareupdates erhalten, wenn das Gerät nicht an einen Computer angeschlossen ist. **Nicht konfiguriert** (Standardeinstellung): Ermöglicht es einem Gerät, Softwareupdates zu empfangen, ohne mit einem Computer verbunden zu sein.
+- Bisher konnte diese Einstellung auf **Zulassen** festgelegt werden, um es Ihren Benutzern zu ermöglichen, Softwareupdates zu empfangen, ohne ihre Geräte mit einem Computer verbinden zu müssen.
+**USB-Zubehör bei gesperrtem Gerät zulassen**: **Zulassen**: USB-Zubehör kann Daten mit einem Gerät austauschen, das seit mehr als einer Stunde gesperrt ist. **Nicht konfiguriert** (Standardeinstellung): Der Modus mit USB-Einschränkung auf dem Gerät wird nicht aktualisiert, und USB-Zubehör wird daran gehindert, Daten vom Gerät zu übertragen, wenn dieses länger als eine Stunde gesperrt ist.
+- Bisher konnte diese Einstellung auf **Blockieren** festgelegt werden, um den Modus mit USB-Einschränkung auf überwachten Geräten zu deaktivieren.
+
+Weitere Informationen zu allen konfigurierbaren Einstellungen finden Sie unter [iOS- und iPadOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune](../configuration/device-restrictions-ios.md).
+
+Diese Funktion gilt für:
+
+- OS/iPadOS
+
+#### <a name="wired-network-device-configuration-profiles-for-macos-devices---3508686----"></a>Gerätekonfigurationsprofil für das kabelgebundene Netzwerk für macOS-Geräte<!-- 3508686  -->
+   > [!NOTE]
+   > Diese Funktion hat sich verzögert, wird aber bald veröffentlicht.
+
+#### <a name="block-users-from-configuring-certificate-credentials-in-the-managed-keystore-on-android-enterprise-device-owner-devices---3311998---"></a>Sperren der Konfiguration von Zertifikatanmeldeinformationen im verwalteten Schlüsselspeicher auf Android Enterprise-Gerätebesitzergeräten durch die Benutzer<!-- 3311998 -->
+Auf Android Enterprise-Gerätebesitzergeräten können Sie die Benutzer mithilfe einer neuen Einstellung daran hindern, ihre Zertifikatanmeldeinformationen im verwalteten Schlüsselspeicher zu konfigurieren (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Android Enterprise** für Plattform > **Nur Gerätebesitzer > Geräteeinschränkungen** für Profiltyp > **Benutzer und Konten**).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>Geräteverwaltung
+
+#### <a name="protected-wipe-action-now-available--51150000---"></a>Geschütztes Zurücksetzen ab sofort verfügbar<!--51150000 -->
+Sie haben jetzt die Möglichkeit, die Aktion „Gerät zurücksetzen“ zu verwenden, um Ihr Gerät geschützt zurückzusetzen. Das geschützte Zurücksetzen entspricht der Standardzurücksetzung, mit dem Unterschied, dass der Vorgang nicht durch Ausschalten des Geräts umgangen werden kann. Beim geschützten Zurücksetzen wird solange versucht, das Gerät zurückzusetzen, bis der Vorgang erfolgreich ist. In manchen Konfigurationen kann das Gerät aufgrund dieser Aktion nicht neu gestartet werden. Weitere Informationen finden Sie auf der Seite [Abkoppeln oder Zurücksetzen von Geräten](../remote-actions/devices-wipe.md).
+
+#### <a name="device-ethernet-mac-address-added-to-devices-overview-page--5562275---"></a>Ethernet-MAC-Geräteadresse auf der Übersichtsseite des Geräts hinzugefügt<!--5562275 -->
+Sie können ab sofort die Ethernet-MAC-Geräteadresse auf der Seite mit den Gerätedetails anzeigen (**Geräte** > **Alle Geräte** > Auswählen eines Geräts > **Übersicht**.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-security"></a>Gerätesicherheit
+
+#### <a name="improved-experience-on-a-shared-device-when-device-based-conditional-access-policies-are-enabled---1734096----"></a>Verbesserte Funktionalität auf einem gemeinsam genutzten Gerät, wenn gerätebasierte Richtlinien für bedingten Zugriff aktiviert sind<!-- 1734096  -->
+Die Benutzerumgebung für ein gemeinsam genutztes Gerät mit mehreren Benutzern, für die gerätebasierte Richtlinien für bedingten Zugriff gelten, wurde verbessert, indem bei der Erzwingung der Richtlinie die neueste Konformitätsbewertung für den Benutzer überprüft wird. Weitere Informationen finden Sie in den folgenden Artikeln:
+- [Azure-Übersicht zum bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
+- [Übersicht über die Intune-Gerätekonformität](../protect/device-compliance-get-started.md)
+
+#### <a name="use-pkcs-certificate-profiles-to-provision-devices-with-certificates---2317124-2317130-2317139-2340517-2340528-2340529----"></a>Verwendung von PKCS-Zertifikatprofilen zum Bereitstellen von Geräten mit Zertifikaten<!-- 2317124, 2317130, 2317139, 2340517, 2340528, 2340529  -->
+Sie können ab sofort PKCS-Zertifikatprofile verwenden, um Zertifikate für *Geräte* auszustellen, die Android for Work, iOS und Windows ausführen, wenn sie mit Profilen wie denen für WLAN und VPN verknüpft sind. Zuvor unterstützten diese drei Plattformen nur benutzerbasierte Zertifikate, die gerätebasierte Unterstützung war auf macOS beschränkt.
+
+Um ein gerätebasiertes Zertifikat zu erstellen, wählen Sie [während der Erstellung eines PKCS-Zertifikatprofils](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile) für die unterstützten Plattformen **Einstellungen** aus. Daraufhin wird die Einstellung **Zertifikattyp** angezeigt, die Optionen für Gerät oder Benutzer unterstützt.
+
+
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="monitor-and-troubleshoot"></a>Überwachung und Problembehandlung
+
+#### <a name="centralized-audit-logs--5603185-5697164---"></a>Zentralisierte Überwachungsprotokolle<!--5603185, 5697164 -->
+Eine neue zentralisierte Benutzeroberfläche für Überwachungsprotokolle sammelt erfasst ab sofort die Überwachungsprotokolle für alle Kategorien auf einer Seite. Sie können die Protokolle filtern, um die Daten abzurufen, nach denen Sie suchen. Wechseln Sie zum Anzeigen der Überwachungsprotokolle zu **Mandantenverwaltung** > **Überwachungsprotokolle**. 
+
+#### <a name="scope-tag-information-included-in-audit-log-activity-details--5763534---"></a>Einschluss von Informationen zu Bereichstags in Aktivitätsdetails von Überwachungsprotokollen<!--5763534 -->
+Die Details zu Überwachungsprotokollaktivitäten enthalten ab sofort auch Informationen zu den Bereichstags (für Intune-Objekte, die Bereichstags unterstützen). Weitere Informationen zu Überwachungsprotokollen finden Sie unter [Verwenden von Überwachungsprotokollen zum Nachverfolgen und Überwachen von Ereignissen](monitor-audit-logs.md).
+
 
 <!-- ########################## -->
 ## <a name="week-of-december-2-2019"></a>Woche des 2. Dezember 2019
@@ -85,23 +214,16 @@ Weitere Informationen finden Sie unter [Lizenzierungsbestimmungen](https://www.m
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>App-Verwaltung
 
-#### <a name="smime-support-with-microsoft-outlook-for-ios---2669398-idready---"></a>S/MIME-Unterstützung mit Microsoft Outlook für iOS<!-- 2669398 idready -->
-
-   > [!NOTE]
-   > Diese Funktion hat sich verzögert, wird aber bald veröffentlicht.
-
-Intune unterstützt die Bereitstellung von S/MIME-Signatur- und Verschlüsselungszertifikaten, die mit Outlook für iOS auf iOS-Geräten verwendet werden können. Weitere Informationen finden Sie unter [Konfigurieren von S/MIME für Outlook für iOS](~/apps/app-configuration-policies-outlook-smime.md).
-
 #### <a name="ui-update-when-selectively-wiping-app-data---4102028---"></a>Benutzeroberflächenupdate beim selektiven Löschen von App-Daten<!-- 4102028 -->
 Die Benutzeroberfläche zum selektiven Löschen von App-Daten in Intune wurde aktualisiert. Die Änderungen der Benutzeroberfläche umfassen:
 - eine vereinfachte Funktion mithilfe eines Formats im Assistentenstil in einem einzigen Bereich
 - Ein Update für den Erstellungsflow zum Einschließen von Zuweisungen.
 - Eine zusammengefasste Seite aller festgelegten Einstellungen beim Anzeigen der Eigenschaften, bevor eine neue Richtlinie erstellt wird oder bei der Bearbeitung einer Eigenschaft. Beim Bearbeiten von Eigenschaften zeigt die Zusammenfassung nur eine Liste der Elemente aus der Kategorie der Eigenschaften an, die bearbeitet werden.
 
-Weitere Informationen finden Sie unter [Zurücksetzen nur von Unternehmensdaten in einer in Intune verwalteten App](~/apps/apps-selective-wipe.md).
+Weitere Informationen finden Sie unter [Zurücksetzen nur von Unternehmensdaten aus mit Intune verwalteten Apps](~/apps/apps-selective-wipe.md).
 
 #### <a name="ios-and-ipados-third-party-keyboard-support---4922950---"></a>Unterstützung von Tastaturen von Drittanbietern für iOS und iPadOS<!-- 4922950 -->
-Im März 2019 haben wir angekündigt, dass die Unterstützung für die App-Schutzrichtlinie „Tastaturen von Drittanbietern“ für iOS aufgehoben wurde. Das Feature kehrt sowohl mit iOS- als auch mit iPadOS-Unterstützung zu Intune zurück. Wählen Sie die Registerkarte **Datenschutz** einer neuen oder bestehenden iOS/iPadOS-App-Schutzrichtlinie aus, um diese Einstellung zu aktivieren, und suchen Sie die Einstellung **Tastaturen von Drittanbietern** unter **Datenübertragung**.
+Im März 2019 haben wir angekündigt, dass die Unterstützung für die App-Schutzrichtlinie „Tastaturen von Drittanbietern“ für iOS aufgehoben wurde. Das Feature kehrt sowohl mit iOS- als auch mit iPadOS-Unterstützung zu Intune zurück. Wählen Sie die Registerkarte **Datenschutz** einer neuen oder bestehenden iOS/iPadOS-App-Schutzrichtlinie aus, um diese Einstellung zu aktivieren, und suchen Sie die Einstellung **Tastaturen von Drittanbietern** unter **Datenübertragung**.
 
 Das Verhalten dieser Richtlinieneinstellung unterscheidet sich leicht von der vorherigen Implementierung. In Apps mit mehreren Identitäten mit SDK Version 12.0.16 und höher, die von App-Schutzrichtlinien mit dieser Einstellung auf **Blockieren** konfiguriert sind, können sich Endbenutzer sowohl in ihrer Organisation als auch in ihren persönlichen Konten nicht für Tastaturen von Drittanbietern entscheiden. Apps, die SDK-Versionen 12.0.12 und früher verwenden, zeigen weiterhin das Verhalten, das in unserem Blogbeitrag mit dem Titel [Bekanntes Problem: Tastaturen von Drittanbietern werden in iOS für persönliche Konten nicht blockiert](https://aka.ms/3rdparty_iOS_Intune) dokumentiert ist.
 
@@ -121,6 +243,7 @@ Es sind neue Exchange ActiveSync-Einstellungen verfügbar, einschließlich:
 Weitere Informationen zu diesen Einstellungen finden Sie unter [E-Mail-Profileinstellungen für iOS-Geräte in Intune](../configuration/email-settings-ios.md). 
 
 Gilt für:
+
 - iOS 13.0 und neuer
 - iOS 13.0 und höher
 
@@ -130,6 +253,7 @@ Auf vollständig verwalteten und dedizierten Geräten von Android Enterprise gib
 Sie finden die konfigurierbaren Einstellungen unter [Android Enterprise-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune](../configuration/device-restrictions-android-for-work.md).
 
 Gilt für:
+
 - Vollständig verwaltete Android Enterprise-Geräte
 - Dedizierte Android Enterprise-Geräte
 
@@ -141,6 +265,7 @@ Diese Einstellung hat keinen Einfluss auf die Geräte. Öffnen Sie das Profil, n
 Sie finden alle konfigurierbaren Einstellungen unter [iOS- und iPadOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune](../configuration/device-restrictions-ios.md).
 
 Gilt für:
+
 - iOS/iPadOS
 
 #### <a name="windows-10-feature-updates-public-preview---2384877---"></a>Windows 10-Featureupdates (öffentliche Vorschau)<!-- 2384877 -->
@@ -158,6 +283,7 @@ Nur einige Apps unterstützen verwaltete Einstellungen, und diese Apps erlauben 
 Weitere Informationen zu diesem Feature finden Sie unter [Hinzufügen einer Datei mit Eigenschaftenliste zu macOS-Geräten mit Microsoft Intune](../configuration/preference-file-settings-macos.md).
 
 Gilt für:
+
 - macOS-Geräte mit Version 10.7 und höher
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -215,7 +341,7 @@ Die Business-to-Business-Zusammenarbeit (B2B) ermöglicht es Ihnen, die Anwendun
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>App-Verwaltung  
 
-#### <a name="improved-macos-enrollment-experience-in-company-portal----5074349-wnready---"></a>Verbesserte macOS-Registrierungsoberfläche im Unternehmensportal <!-- 5074349 WNready -->  
+#### <a name="improved-macos-enrollment-experience-in-company-portal----5074349----"></a>Verbesserte macOS-Registrierungsoberfläche im Unternehmensportal <!-- 5074349  -->  
 Das Unternehmensportal für die macOS-Registrierung verfügt über einen einfacheren Registrierungsprozess, der sich enger an das Unternehmensportal für die iOS-Registrierung ausrichtet. Gerätebenutzer wird jetzt Folgendes angezeigt:  
 
 * Eine schlankere Benutzeroberfläche  
@@ -227,7 +353,7 @@ Das Unternehmensportal für die macOS-Registrierung verfügt über einen einfach
 Endbenutzer können Web-Apps jetzt direkt aus der Windows-Unternehmensportal-App starten. Endbenutzer können die Web-App auswählen und dann die Option **Im Browser öffnen** auswählen. Die veröffentlichte Web-URL wird direkt einem Webbrowser geöffnet. Diese Funktionalität wird in der nächsten Woche eingeführt. Weitere Informationen über Web-Apps finden Sie unter [Hinzufügen von Web-Apps zu Microsoft Intune](~/apps/web-app.md).  
 
 
-#### <a name="new-assignment-type-column-in-company-portal-for-windows-10----5459950-wnready---"></a>Neue Spalte für den Zuweisungstyp im Unternehmensportal für Windows 10 <!-- 5459950 WNready -->
+#### <a name="new-assignment-type-column-in-company-portal-for-windows-10----5459950----"></a>Neue Spalte für den Zuweisungstyp im Unternehmensportal für Windows 10 <!-- 5459950  -->
 Die Spalte im Unternehmensportal unter **Installierte Apps** > **Zuweisungstyp** wurde in **Von Ihrer Organisation als erforderlich festgelegt** umbenannt.  Unter dieser Spalte wird den Benutzern der Wert **Yes** (Ja) oder **No** (Nein) angezeigt, um anzugeben, dass eine App entweder erforderlich oder von ihrer Organisation als optional angesehen wird. Diese Änderungen wurden durchgeführt, da Gerätebenutzer über das Konzept der verfügbaren Apps irritiert waren. Ihre Benutzer können weitere Informationen zum Installieren von Apps im Unternehmensportal unter [Installieren und Freigeben von Apps auf Ihrem Gerät](/intune-user-help/install-apps-cpapp-windows) finden. Weitere Informationen zum Konfigurieren der Unternehmensportal-App für Ihre Benutzer finden Sie unter [Konfigurieren der Microsoft Intune-Unternehmensportal-App](~/apps/company-portal-app.md).  
 
 <!-- ########################## -->
@@ -329,6 +455,7 @@ Ab Windows 10 können Sie ein Gerätekonfigurationsprofil zum Steuern der Einst
 Weitere Informationen zu diesem Feature finden Sie unter [Verwenden von DFCI-Profilen auf Windows-Geräten in Microsoft Intune](../configuration/device-firmware-configuration-interface-windows.md).
 
 Gilt für:
+
 - Windows 10 RS5 (1809) und höher auf unterstützter Firmware
 
 ### <a name="device-enrollment"></a>Geräteregistrierung
@@ -391,7 +518,7 @@ Die Benutzeroberfläche zum [Erstellen](../protect/software-updates-ios.md#confi
 - Der überarbeitete Workflow umfasst Zuweisungen, bevor die Erstkonfiguration der Richtlinie abgeschlossen wird.
 - Eine Zusammenfassungsseite, die Sie zum Überprüfen all Ihrer vorgenommenen Konfigurationen verwenden können, bevor Sie eine neue Richtlinie speichern und bereitstellen. Beim Bearbeiten einer Richtlinie zeigt die Zusammenfassung nur die Liste der Elemente an, die in der bearbeiteten Kategorie der Eigenschaften festgelegt wurden.
 
-#### <a name="engaged-restart-settings-are-removed-from-windows-update-rings----4464404---wnready-----"></a>Die Einstellungen für erzwungene Neustarts wurden aus Windows-Updateringen entfernt<!--  4464404   WNReady   -->
+#### <a name="engaged-restart-settings-are-removed-from-windows-update-rings----4464404--------"></a>Die Einstellungen für erzwungene Neustarts wurden aus Windows-Updateringen entfernt<!--  4464404      -->
 Wie bereits angekündigt unterstützen Windows 10-Updateringe von Intune nun [Einstellungen für Zeitlimits](../protect/windows-update-settings.md) und unterstützen *erzwungene Neustarts* nicht mehr. Wenn Sie Updateringe in Intune konfigurieren oder verwalten, sind Einstellungen für *erzwungene Neustarts* nicht mehr verfügbar.  
 
 Diese Änderung erfolgt gemäß der jüngsten [Änderungen der Windows-Wartung](https://docs.microsoft.com//windows/whats-new/whats-new-windows-10-version-1903#servicing), und auf Geräten mit Windows 10 Version 1903 oder höher ersetzen *Zeitlimits* die Konfigurationen für *erzwungene Neustarts*.
@@ -402,6 +529,7 @@ Benutzer können in keinem Fall Apps aus unbekannten Quellen auf Android Enterpr
 Sie finden diese konfigurierbare Einstellung unter [Android Enterprise-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune](../configuration/device-restrictions-android-for-work.md).
 
 Gilt für:
+
 - Android Enterprise-Arbeitsprofil
 
 #### <a name="create-a-global-http-proxy-on-android-enterprise-device-owner-devices---4816339-----"></a>Erstellen eines globalen HTTP-Proxys auf Geräten von Android Enterprise-Gerätebesitzern<!-- 4816339   -->
@@ -410,6 +538,7 @@ Sie können einen globalen HTTP-Proxy auf Android Enterprise-Geräten konfigurie
 Navigieren Sie zum Konfigurieren dieses Features und zum Anzeigen aller konfigurierbaren Einstellungen zu [Android Enterprise-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune](../configuration/device-restrictions-android-for-work.md).
 
 Gilt für:
+
 - Android Enterprise-Gerätebesitzer
 
 #### <a name="connect-automatically-setting-is-removed-in-wi-fi-profiles-on-android-device-administrator-and-android-enterprise---5021055-----"></a>Entfernung der Einstellung zum automatischen Herstellen einer Verbindung wurde aus WLAN-Profilen für Android-Geräteadministratoren und Android Enterprise<!-- 5021055   -->
@@ -420,6 +549,7 @@ Wenn Sie diese Einstellung in einem WLAN-Profil verwenden ist Ihnen möglicherwe
 Die aktuellen Einstellungen finden Sie in den [Android-WLAN-Einstellungen](../configuration/wi-fi-settings-android.md) oder den [Android Enterprise-WLAN-Einstellungen](../configuration/wi-fi-settings-android-enterprise.md).
 
 Gilt für:
+
 - Android-Geräteadministrator 
 - Android Enterprise
 
@@ -433,6 +563,7 @@ Auf iOS- und iPadOS-Geräten können Sie ein Profil erstellen, um Features und E
 Diese Einstellungen finden Sie unter [iOS-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune](../configuration/device-restrictions-ios.md).
 
 Gilt für:
+
 - iOS 13.0 und neuer
 - iOS 13.0 und höher
 
@@ -464,7 +595,7 @@ Auf der Geräteübersichtseite zeigt ein neuer Bericht, wie viele Android-Gerät
 ### <a name="device-security"></a>Gerätesicherheit
 
 #### <a name="pkcs-certificates-for-macos---1333650---------"></a>PKCS-Zertifikate für macOS<!-- 1333650       -->
-Sie können nun [PKCS-Zertifikate mit macOS verwenden](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile). Sie können das PKCS-Zertifikat als Profiltyp für macOS auswählen und Benutzer- und Gerätezertifikate bereitstellen, die [Felder für einen benutzerdefinierten Betreff und alternativen Antragstellernamen](../protect/certficates-pfx-configure.md#subject-name-format-for-macos) besitzen.  
+Sie können nun [PKCS-Zertifikate mit macOS verwenden](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile). Sie können das PKCS-Zertifikat als Profiltyp für macOS auswählen und Benutzer- und Gerätezertifikate bereitstellen, die [Felder für einen benutzerdefinierten Betreff und alternativen Antragstellernamen](../protect/certficates-pfx-configure.md#subject-name-format) besitzen.  
 
 PKCS-Zertifikate für macOS unterstützen ebenfalls eine neue Einstellung: _Allow All Apps Access_ (Allen Apps Zugriff gewähren). Mit dieser Einstellung können Sie alle zugeordneten Apps den Zugriff auf den privaten Schlüssel des Zertifikats gewähren.  Weitere Informationen zu dieser Einstellung finden Sie in der Dokumentation von Apple unter https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf.
 
@@ -498,9 +629,10 @@ Die iOS 13.1-Version von Apple umfasst die Benutzerregistrierung, eine neue Form
 - Endbenutzer können beim Registrieren ihrer Geräte zwischen der leichten Benutzerregistrierung und der umfassenderen Benutzerregistrierung auswählen.
 
 Diese Updates werden ab dem 24.9.2019 mit der Veröffentlichung von iOS 13.1 für alle Kunden bereitgestellt. Die Bereitstellung soll bis Ende der darauffolgenden Woche abgeschlossen sein.
+
 Gilt für:
 
-iOS 13.1 und höher
+- iOS 13.1 und höher
 
 #### <a name="intune-support-for-ipados-and-ios-131-devices--5439574--"></a>Intune-Unterstützung für iPadOS- und iOS 13.1-Geräte<!--5439574-->
 Intune unterstützt jetzt die Verwaltung von iPadOS- und iOS 13.1-Geräten Weitere Informationen finden Sie in [diesem Blogbeitrag](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Support-for-iOS-13-1-and-iPadOS/ba-p/873094).
@@ -555,6 +687,7 @@ Diese VPN-Profile konfigurieren den nativen VPN-Client, es werden also keine VPN
 Die derzeit konfigurierbaren VPN-Einstellungen finden Sie unter [Konfigurieren von VPN-Einstellungen auf iOS-Geräten](../configuration/vpn-settings-ios.md).
 
 Gilt für:
+
 - iOS
 
 #### <a name="device-features-device-restrictions-and-extension-profiles-for-ios-and-macos-settings-are-shown-by-enrollment-type---4886161-----"></a>Anzeige von Gerätefeatures, Geräteeinschränkungen und Erweiterungsprofilen für iOS- und macOS-Einstellungen nach Registrierungstyp<!-- 4886161   -->
@@ -576,6 +709,7 @@ In diesem Update sind die verfügbaren Einstellungen im Intune-Portal nach dem R
   - Alle Registrierungstypen
 
 Gilt für:
+
 - iOS
 
 #### <a name="new-voice-control-settings-for-supervised-ios-devices-running-in-kiosk-mode---4892835-----"></a>Neue Sprachsteuerungseinstellungen für überwachte iOS-Geräte im Kioskmodus<!-- 4892835   -->
@@ -588,6 +722,7 @@ In diesem Update gibt es neue Einstellungen, die Sie steuern können:
 Die aktuellen Einstellungen finden Sie unter [iOS-Kioskeinstellungen](../configuration/device-restrictions-ios.md#kiosk).
 
 Gilt für:
+
 - iOS 13.0 und höher
 
 #### <a name="use-single-sign-on-for-apps-and-websites-on-your-ios-and-macos-devices---4893175-----"></a>Verwenden des einmaligen Anmeldens für Apps und Websites auf iOS- und macOS-Geräten<!-- 4893175   -->
@@ -598,6 +733,7 @@ Verwenden Sie diese Einstellungen, um das einmalige Anmelden insbesondere für A
 Um die aktuellen Gerätefeatures anzuzeigen, die Sie konfigurieren können, wechseln Sie zu [iOS-Gerätefeatures](../configuration/ios-device-features-settings.md) oder [macOS-Gerätefeatures](../configuration/macos-device-features-settings.md).
 
 Gilt für:
+
 - iOS 13.0 und neuer
 - macOS 10.15 und neuer
 
@@ -607,6 +743,7 @@ Unter macOS können Sie verschiedene Features konfigurieren und diese mithilfe e
 Informationen zu den aktuellen Features, die Sie konfigurieren können, finden Sie unter [macOS-Gerätefunktionseinstellungen in Intune](../configuration/macos-device-features-settings.md).
 
 Gilt für:
+
 - macOS 10.15 und neuer
 
 #### <a name="use-itunes-and-apps-in-the-itunes-app-store-url-when-showing-or-hiding-apps-on-ios-supervised-devices---4928474-----"></a>Verwenden von „iTunes“ und „apps“ in der iTunes App-Store-URL beim Anzeigen oder Ausblenden von Apps auf überwachten iOS-Geräten<!-- 4928474   --> 
@@ -869,7 +1006,7 @@ Weitere Informationen zu den Windows Defender Antivirus-Einstellungen finden Sie
 ### <a name="device-enrollment"></a>Geräteregistrierung
 
 #### <a name="default-scope-tags---3702875----"></a>Standardbereichsmarkierungen<!-- 3702875  -->
-Es ist nun eine neue integrierte Standardbereichsmarkierung verfügbar. Alle nicht markierten Intune-Objekte, die Bereichsmarkierungen unterstützen, werden automatisch der Standardbereichsmarkierung zugewiesen. Die **Standard**-Bereichsmarkierung wird allen vorhandenen Rollenzuweisungen hinzugefügt, um Einklang mit der heutigen Administratorerwartung aufrechtzuerhalten. Wenn Sie nicht möchten, dass ein Administrator Intune-Objekte mit der Standardbereichsmarkierung sehen kann, entfernen Sie die Standardbereichsmarkierung aus der Rollenzuweisung. Dieses Feature ähnelt dem Feature für Sicherheitsbereiche in System Center Configuration Manager. Weitere Informationen finden Sie unter [Verwenden der rollenbasierten Zugriffssteuerung und Bereichsmarkierungen für verteilte IT](scope-tags.md).
+Es ist nun eine neue integrierte Standardbereichsmarkierung verfügbar. Alle nicht markierten Intune-Objekte, die Bereichsmarkierungen unterstützen, werden automatisch der Standardbereichsmarkierung zugewiesen. Die **Standard**-Bereichsmarkierung wird allen vorhandenen Rollenzuweisungen hinzugefügt, um Einklang mit der heutigen Administratorerwartung aufrechtzuerhalten. Wenn Sie nicht möchten, dass ein Administrator Intune-Objekte mit der Standardbereichsmarkierung sehen kann, entfernen Sie die Standardbereichsmarkierung aus der Rollenzuweisung. Dieses Feature ähnelt dem Feature für Sicherheitsbereiche in Configuration Manager. Weitere Informationen finden Sie unter [Verwenden der rollenbasierten Zugriffssteuerung und Bereichsmarkierungen für verteilte IT](scope-tags.md).
 
 #### <a name="android-enrollment-device-administrator-support---4869749-----"></a>Unterstützung für die Registrierung eines Android-Geräteadministrators<!-- 4869749   -->
 Die Registrierungsoption „Android-Geräteadministrator“ wurde der Seite „Android-Registrierung“ hinzugefügt (**Intune** > **Geräteregistrierung** > **Android-Registrierung**). „Android-Geräteadministrator“ ist weiterhin standardmäßig für alle Mandanten aktiviert.  Weitere Informationen finden Sie unter [Android-Geräteadministratorregistrierung](../enrollment/android-enroll-device-administrator.md).
@@ -930,7 +1067,7 @@ Sie können jetzt sowohl allgemeine App-Einstellungen als auch Einstellungen fü
 
 ### <a name="device-configuration"></a>Gerätekonfiguration
 
-#### <a name="use-applicability-rules-when-creating-windows-10-device-configuration-profiles----2549910-eeready---idstaged---"></a>Verwenden von „Anwendbarkeitsregeln“ beim Erstellen von Windows 10-Gerätekonfigurationsprofilen <!-- 2549910 eeready   idstaged -->
+#### <a name="use-applicability-rules-when-creating-windows-10-device-configuration-profiles----2549910-eeready------"></a>Verwenden von „Anwendbarkeitsregeln“ beim Erstellen von Windows 10-Gerätekonfigurationsprofilen <!-- 2549910 eeready    -->
 
 Sie können Windows 10-Gerätekonfigurationsprofile einrichten (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Windows 10** (Plattform) > **Anwendbarkeitsregeln**). Mit diesem Update können Sie eine **Anwendbarkeitsregel** so erstellen, dass das Profil nur für eine bestimmte Edition oder Version gilt. Sie können beispielsweise ein Profil erstellen, das einige BitLocker-Einstellungen aktiviert. Sobald Sie das Profil hinzugefügt haben, aktivieren Sie eine Anwendbarkeitsregel, damit das Profil nur für Geräte mit Windows 10 Enterprise gilt.
 
@@ -1262,7 +1399,7 @@ Wir haben ein Update zum [PFX-Zertifikatconnector für Microsoft Intune](../prot
 #### <a name="intune-security-tasks-for-defender-atp-in-public-preview---3208597---"></a>Intune-Sicherheitsaufgaben für Defender ATP (in öffentlicher Vorschau)<!-- 3208597 -->
 In der öffentlichen Vorschau können Sie Intune verwenden, um [Sicherheitsaufgaben für Microsoft Defender Advanced Threat Protection (ATP)](../protect/atp-manage-vulnerabilities.md) zu verwalten. Diese Integration in ATP bietet einen risikobasierten Ansatz zur Erkennung, Priorisierung und Behebung von Schwachstellen und Fehlkonfigurationen an Endpunkten, wobei gleichzeitig die Zeitspanne zwischen Ermittlung und Risikominderung verkürzt wird.
 
-#### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy---3617671---idstaged--"></a>Prüfen nach einem TPM-Chipsatz in einer Windows 10-Gerätekonformitätsrichtlinie<!-- 3617671   idstaged-->
+#### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy---3617671-----"></a>Prüfen nach einem TPM-Chipsatz in einer Windows 10-Gerätekonformitätsrichtlinie<!-- 3617671   -->
 Viele Geräte unter Windows 10 und höher haben Chipsätze von Trusted Platform Module (TPM). Dieses Update enthält eine neue Konformitätseinstellung, die die Version des TPM-Chips auf dem Gerät überprüft.
 
 Unter [Richtlinieneinstellungen für Windows 10 und höher](../protect/compliance-policy-create-windows.md#device-security) wird diese Einstellung beschrieben.

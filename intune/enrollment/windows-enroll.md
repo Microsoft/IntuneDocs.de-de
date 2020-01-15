@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b84cd52dfe2eb6332ddbc89bc00a17ec3361b79
-ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
+ms.openlocfilehash: add92c038e33ba1b5873eb0e9588242f8f3d0f57
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000430"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207433"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Registrierung von Windows-Geräten
 
@@ -68,9 +68,9 @@ Wenn sich Standardbenutzer mit ihren Azure AD-Anmeldeinformationen anmelden, erh
 Um die Registrierung zu vereinfachen, erstellen Sie einen Domänennamenserver-Alias (DNS; Eintragstyp CNAME), der Registrierungsanforderungen an Intune-Server umleitet. Andernfalls müssen Benutzer, die eine Verbindung mit Intune herstellen möchten, während der Registrierung den Intune-Servernamen eingeben.
 
 **Schritt 1: Erstellen von CNAME-Einträgen** (optional)<br>
-Erstellen Sie CNAME-DNS-Ressourceneinträge für die Domäne des Unternehmens. Wenn die Website Ihres Unternehmens beispielsweise „contoso.com“ heißt, würden Sie einen CNAME im DNS erstellen, der „EnterpriseEnrollment.contoso.com“ an „enterpriseenrollment-s.manage.microsoft.com“ umleitet.
+Erstellen Sie CNAME DNS-Ressourceneinträge für die Domäne des Unternehmens. Wenn die Website Ihres Unternehmens beispielsweise „contoso.com“ heißt, würden Sie einen CNAME im DNS erstellen, der „EnterpriseEnrollment.contoso.com“ an „enterpriseenrollment-s.manage.microsoft.com“ umleitet.
 
-Obwohl die Erstellung von CNAME DNS-Einträgen optional ist, vereinfachen diese die Registrierung für Benutzer. Wenn kein CNAME-Eintrag für die Registrierung gefunden wurde, werden Benutzer aufgefordert, manuell den MDM-Servernamen „enrollment.manage.microsoft.com“ einzugeben.
+Obwohl das Erstellen eines CNAME-DNS-Eintrags optional ist, ist die Registrierung mit einem CNAME-Eintrag für den Benutzer leichter. Wenn kein CNAME-Eintrag für die Registrierung gefunden wurde, werden Benutzer aufgefordert, manuell den MDM-Servernamen „enrollment.manage.microsoft.com“ einzugeben.
 
 |Typ|Hostname|Verweist auf|TTL|
 |----------|---------------|---------------|---|
@@ -93,7 +93,7 @@ Der Contoso DNS-Administrator sollte die folgenden CNAMEs erstellen:
 
 `EnterpriseEnrollment-s.manage.microsoft.com` – Unterstützt eine Umleitung zum Intune-Dienst mit Domänenerkennung anhand des E-Mail-Domänennamens
 
-Es kann bis zu 72 Stunden dauern, bis Änderungen an DNS-Einträgen vollständig verteilt sind. Sie können die DNS-Änderung in Intune erst überprüfen, wenn der DNS-Eintrag verteilt ist.
+Die Weitergabe von Änderungen an DNS-Einträgen kann bis zu 72 Stunden dauern. Sie können die DNS-Änderung in Intune erst überprüfen, wenn der DNS-Eintrag verteilt ist.
 
 ## <a name="additional-endpoints-are-supported-but-not-recommended"></a>Zusätzliche Endpunkte werden unterstützt, aber nicht empfohlen
 „EnterpriseEnrollment-s.manage.microsoft.com“ ist der bevorzugte vollqualifizierte Domänenname für die Registrierung, es gibt jedoch zwei andere Endpunkte, die bereits von Kunden verwendet wurden und unterstützt werden. „EnterpriseEnrollment.manage.microsoft.com“ (ohne „-s“) und „manage.microsoft.com“ sind beide gültige Ziele für den Server für die automatische Ermittlung, allerdings muss der Benutzer dann auf einer Bestätigungsmeldung auf „OK“ tippen. Wenn Sie auf „EnterpriseEnrollment-s.manage.microsoft.com“ zeigen, muss der Benutzer keinen zusätzlichen Bestätigungsschritt vornehmen, weshalb dies die empfohlene Konfiguration ist.
@@ -128,7 +128,10 @@ Azure Active Directory umfasst einen weiteren CNAME, der für die Registrierung 
 Weitere Informationen zur Geräteregistrierung finden Sie unter [Verwalten von Geräteidentitäten mit dem Azure-Portal](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal).
 
 ## <a name="windows-10-auto-enrollment-and-device-registration"></a>Automatische Registrierung und Geräteregistrierung für Windows 10
-Obwohl die Erstellung von CNAME DNS-Einträgen optional ist, vereinfachen diese die Registrierung für Benutzer. Wenn kein CNAME-Eintrag für die Registrierung gefunden wurde, werden Benutzer aufgefordert, manuell den MDM-Servernamen „enrollment.manage.microsoft.us“ einzugeben.
+
+Diese Auswahl gilt für Cloudkunden der US-Regierung.
+
+Obwohl das Erstellen eines CNAME-DNS-Eintrags optional ist, ist die Registrierung mit einem CNAME-Eintrag für den Benutzer leichter. Wenn kein CNAME-Eintrag für die Registrierung gefunden wurde, werden Benutzer aufgefordert, manuell den MDM-Servernamen „enrollment.manage.microsoft.us“ einzugeben.
 
 | Typ | Hostname | Verweist auf | TTL |
 | --- | --- | --- | --- |

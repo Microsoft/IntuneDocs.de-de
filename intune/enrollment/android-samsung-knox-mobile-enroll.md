@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f290370dd6ec05677a7073d9ca3edd854c9aa5e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ecb043300578e5eba0613b6fa5f0fb249b1e515c
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505587"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692164"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Automatisches Registrieren von Android-Geräten mit Samsung Knox Mobile Enrollment
 
@@ -68,14 +68,14 @@ Wenn Ihr Unternehmen erfolgreich registriert wurde, können Sie Ihr MDM-Profil f
 |Beschreibung        | Nein        |Geben Sie Text ein, der das Profil beschreibt. 
 |MDM Agent APK      | Ja       |https://aka.ms/intune_kme_deviceowner 
 |Diese App als Google-Geräteinhaber aktivieren | Ja | Aktivieren Sie diese Option, um die Registrierung für Android Enterprise durchzuführen. 
-|Unterstützte MDM      | Ja       |Microsoft Intune 
+|Unterstützte MDM      | Ja       |Microsoft Intune 
 |Alle System-Apps aktiviert lassen | Nein | Aktivieren Sie diese Option, um sicherzustellen, dass alle Apps für das Profil aktiviert und verfügbar sind. Wenn diese Option nicht aktiviert ist, wird nur eine eingeschränkte Anzahl von System-Apps in der App-Liste des Geräts angezeigt. Apps wie die E-Mail-App werden ausgeblendet. 
 |Custom JSON        | Nein        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "Geben Sie die Zeichenfolge des Intune-Registrierungstokens ein"}. Erfahren Sie, [wie Sie ein Registrierungsprofil erstellen](android-kiosk-enroll.md). 
 | Lizenzvereinbarungen hinzufügen | Nein | Lassen Sie dieses Feld leer. 
 
 ### <a name="for-android"></a>Für Android
 
-Schritt-für-Schritt-Anleitungen können Sie dem [Samsung Knox-Assistenten für die Profileinrichtung](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm) entnehmen.
+Schritt-für-Schritt-Anleitungen finden Sie in den [Samsung-Anweisungen zum Erstellen eines Profils](https://docs.samsungknox.com/KME-Getting-Started/Content/create-profiles.htm).
 
 | MDM-Profilfelder| Erforderlich? | Werte |
 |-------------------|-----------|-------|

@@ -1,11 +1,11 @@
 ---
 title: Verwenden von Zertifikaten mit privaten und öffentlichen Schlüsseln in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Verwenden von Public Key Cryptography Standards-Zertifikaten (PKCS) mit Microsoft Intune. Dazu gehört die Arbeit mit Stammzertifikaten und Zertifikatsvorlagen, die Installation des Microsoft Intune Certificate Connector (NDES) und Gerätekonfigurationsprofile für ein PKCS-Zertifikat.
+description: Verwenden Sie PKCS-Zertifikate (Public Key Cryptography Standards) mit Intune, arbeiten Sie mit Stammzertifikaten und Zertifikatvorlagen, installieren Sie Microsoft Intune Certificate Connector (NDES), und verwenden Sie Gerätekonfigurationsprofile für ein PKCS-Zertifikat.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3db085e6e88f8f57eb0276afa77290df8574568f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9142ea3f7728fd24883a311bbf967a7a59dbf457
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801692"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207246"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Konfigurieren und Verwenden Ihrer PKCS-Zertifikate mit Intune
 
@@ -116,7 +116,7 @@ Jedes Gerät benötigt ein Zertifikat einer Stamm- oder Zwischenzertifizierungss
 5. Legen Sie auf der Registerkarte **Allgemein** für **Vorlagenanzeigename** einen für Sie aussagekräftigen Namen fest.
 
     > [!WARNING]
-    > **Vorlagenname** entspricht standardmäßig dem **Vorlagenanzeigenamen** *ohne Leerzeichen*. Notieren Sie sich den Namen der Vorlage, da Sie diesen später brauchen werden.
+    > **Vorlagenname** entspricht standardmäßig dem **Vorlagenanzeigenamen***ohne Leerzeichen*. Notieren Sie sich den Namen der Vorlage, da Sie diesen später brauchen werden.
 
 6. Klicken Sie unter **Anforderungsverarbeitung** auf **Exportieren von privatem Schlüssel zulassen**.
 7. Bestätigen Sie unter **Kryptografie**, dass die **Minimale Schlüsselgröße** auf 2048 festgelegt ist.
@@ -128,7 +128,7 @@ Jedes Gerät benötigt ein Zertifikat einer Stamm- oder Zwischenzertifizierungss
 
 10. Fügen Sie unter **Sicherheit** das Computerkonto für den Server hinzu, auf dem Sie den Microsoft Intune Certificate Connector installieren. Weisen Sie diesem Konto die Berechtigungen **Lesen** und **Registrieren** zu.
 11. Wählen Sie **Anwenden** > **OK** aus, um die Zertifikatvorlage zu speichern. Schließen Sie die **Zertifikatvorlagenkonsole**.
-12. Klicken Sie in der Konsole **Zertifizierungsstelle** mit der rechten Maustaste auf **Zertifikatvorlagen** > **Neu** > **Auszustellende Zertifikatvorlage**. Wählen Sie die Vorlage aus, die Sie in den vorherigen Schritten erstellt haben. Wählen Sie **OK** aus.
+12. Klicken Sie in der Konsole **Zertifizierungsstelle** mit der rechten Maustaste auf **Zertifikatvorlagen** > **Neu** > **Auszustellende Zertifikatvorlage**. Wählen Sie die Vorlage aus, die Sie in den vorherigen Schritten erstellt haben. Klicken Sie auf **OK**.
 13. Gehen Sie folgendermaßen vor, damit der Server Zertifikate für registrierte Geräte und Benutzer verwaltet:
 
     1. Klicken Sie mit der rechten Maustaste auf die Zertifizierungsstelle, und wählen Sie **Eigenschaften**.
@@ -161,9 +161,7 @@ Jedes Gerät benötigt ein Zertifikat einer Stamm- oder Zwischenzertifizierungss
 7. **Anwenden** > **Schließen**.
 8. Wechseln Sie zurück zum Intune-Portal (**Intune** > **Gerätekonfiguration** > **Certificate Connectors**). Nach einigen Momenten wird ein grünes Häkchen angezeigt, und der **Verbindungsstatus** ist **Aktiv**. Ihr Connectorserver kann jetzt mit Intune kommunizieren.
 9. Wenn Sie in Ihrer Netzwerkumgebung über einen Webproxy verfügen, müssen Sie möglicherweise zusätzliche Konfigurationen vornehmen, damit der Connector funktioniert. Weitere Informationen finden Sie in der Azure Active Directory-Dokumentation unter [Verwenden von vorhandenen lokalen Proxyservern](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
-
-> [!NOTE]  
-> Der Microsoft Intune Certificate Connector unterstützt TLS 1.2. Wenn TLS 1.2 auf dem Server installiert ist, der den Connector hostet, verwendet dieser TLS 1.2. Andernfalls wird TLS 1.1 verwendet. Derzeit wird TLS 1.1 für die Authentifizierung zwischen den Geräten und dem Server verwendet.
+<ul><li>Android Enterprise (*Arbeitsprofil*)</li><li>iOS</li><li>macOS</li><li>Windows 10 und höher > Der Microsoft Intune Certificate Connector unterstützt TLS 1.2. Wenn TLS 1.2 auf dem Server installiert ist, der den Connector hostet, verwendet dieser TLS 1.2. Andernfalls wird TLS 1.1 verwendet. Derzeit wird TLS 1.1 für die Authentifizierung zwischen den Geräten und dem Server verwendet.
 
 ## <a name="create-a-trusted-certificate-profile"></a>Erstellen eines vertrauenswürdigen Zertifikatprofils
 
@@ -208,17 +206,17 @@ Jedes Gerät benötigt ein Zertifikat einer Stamm- oder Zwischenzertifizierungss
    
    |Einstellung     | Plattform     | Details   |
    |------------|------------|------------|
-   |**Verlängerungsschwellenwert (%)**        |Alle         |Empfohlen sind 20 %.  | 
-   |**Gültigkeitsdauer des Zertifikats**  |Alle         |Wenn Sie die Zertifikatvorlage nicht geändert haben, kann diese Option auf ein Jahr festgelegt werden. |
-   |**Schlüsselspeicheranbieter (KSP)**   |Windows 10  | Wählen Sie für Windows den Schlüsselspeicherort auf dem Gerät aus. |
-   |**Zertifizierungsstelle**      |Alle         |Zeigt den internen vollqualifizierten Domänennamen (FQDN) Ihrer Unternehmenszertifizierungsstelle an.  |
-   |**Name der Zertifizierungsstelle** |Alle         |Zeigt den Namen der Unternehmenszertifizierungsstelle an (z.B. „Contoso-Zertifizierungsstelle“). |
-   |**Zertifikattyp**             |macOS       |Wählen Sie einen Typ aus: <br> **-** Bei **Benutzerzertifikaten** können sowohl Benutzer- als auch Geräteattribute im Antragstellernamen und im alternativen Antragstellernamen des Zertifikats enthalten sein. <br><br>**-** Beim Zertifikattyp **Gerät** können nur Geräteattribute im Antragstellernamen und im alternativen Antragstellernamen des Zertifikats enthalten sein. Versenden Sie „Gerät“ für Szenarios mit benutzerlosen Geräten (wie Kioske) oder geteilten Geräten.  <br><br> Diese Auswahl wirkt sich auf das Format des Antragstellernamens aus. |
-   |**Format des Antragstellernamens**          |Alle         |Legen Sie für die meisten Plattformen diese Option auf **Allgemeiner Name** fest, falls kein anderes Format erforderlich ist.<br><br>Für macOS wird das Format des Antragstellernamens durch den Zertifikattyp bestimmt. Weitere Informationen zum [Format des Antragstellers für macOS](#subject-name-format-for-macos) finden Sie im weiteren Verlauf dieses Artikels. |
-   |**Alternativer Antragstellername**     |Alle         |Legen Sie diese Option auf **Benutzerprinzipalname (UPN)** fest, sofern nichts anderes erforderlich ist. |
-   |**Erweiterte Schlüsselverwendung**           |**-** Android-Geräteadministrator <br>**-** Android Enterprise (*Gerätebesitzer*, *Arbeitsprofil*) <br> **-** Windows 10 |Zertifikate erfordern in der Regel *Clientauthentifizierung*, damit der Benutzer bzw. das Gerät auf einem Server authentifiziert werden kann. |
-   |**Allen Apps Zugriff auf den privaten Schlüssel gewähren** |macOS  |Stellen Sie **Aktiviert** ein, um Apps, die für das zugeordnete Mac-Gerät konfiguriert sind, Zugriff auf den privaten Schlüssel des PKCS-Zertifikats zu gewähren. <br><br> Weitere Informationen zu dieser Einstellung finden Sie unter *AllowAllAppsAccess* im Abschnitt zur Zertifikatnutzlast der [Referenz zum Konfigurationsprofil](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) in der Apple-Entwicklerdokumentation. |
-   |**Stammzertifikat**             |**-** Android-Geräteadministrator <br> **-** Android Enterprise (*Gerätebesitzer*, *Arbeitsprofil*) |Wählen Sie ein Stammprofil für das ZS-Zertifikat aus, das zuvor zugewiesen wurde. |
+   |**Verlängerungsschwellenwert (%)**        |<ul><li>Alle         |Empfohlen sind 20 %.  | 
+   |**Gültigkeitsdauer des Zertifikats**  |<ul><li>Alle         |Wenn Sie die Zertifikatvorlage nicht geändert haben, kann diese Option auf ein Jahr festgelegt werden. |
+   |**Schlüsselspeicheranbieter (KSP)**   |<ul><li>Windows 10  | Wählen Sie für Windows den Schlüsselspeicherort auf dem Gerät aus. |
+   |**Zertifizierungsstelle**      |<ul><li>Alle         |Zeigt den internen vollqualifizierten Domänennamen (FQDN) Ihrer Unternehmenszertifizierungsstelle an.  |
+   |**Name der Zertifizierungsstelle** |<ul><li>Alle         |Zeigt den Namen der Unternehmenszertifizierungsstelle an (z.B. „Contoso-Zertifizierungsstelle“). |
+   |**Zertifikattyp**             |<ul><li>Android Enterprise (*Arbeitsprofil*)</li><li>iOS</li><li>macOS</li><li>Windows 10 und höher|Wählen Sie einen Typ aus: <ul><li> Bei **Benutzerzertifikaten** können sowohl Benutzer- als auch Geräteattribute im Betreff und im alternativen Antragstellernamen des Zertifikats enthalten sein. </il><li>Beim Zertifikattyp **Gerät** können nur Geräteattribute im Betreff und im alternativen Antragstellernamen des Zertifikats enthalten sein. Versenden Sie „Gerät“ für Szenarios mit benutzerlosen Geräten (wie Kioske) oder geteilten Geräten.  <br><br> Diese Auswahl wirkt sich auf das Format des Antragstellernamens aus. |
+   |**Format des Antragstellernamens**          |<ul><li>Alle         |Legen Sie für die meisten Plattformen diese Option auf **Allgemeiner Name** fest, falls kein anderes Format erforderlich ist.<br><br>Für die folgenden Plattformen wird das Format des Antragstellernamens durch den Zertifikattyp bestimmt: <ul><li>Android Enterprise (*Arbeitsprofil*)</li><li>iOS</li><li>macOS</li><li>Windows 10 und höher</li></ul>  <p> Siehe [Format des Antragstellers](#subject-name-format) weiter unten in diesem Artikel. |
+   |**Alternativer Antragstellername**     |<ul><li>Alle         |Legen Sie diese Option auf **Benutzerprinzipalname (UPN)** fest, sofern nichts anderes erforderlich ist. |
+   |**Erweiterte Schlüsselverwendung**           |<ul><li> Android-Geräteadministrator </li><li>Android Enterprise (*Gerätebesitzer*, *Arbeitsprofil*) </li><li>Windows 10 |Zertifikate erfordern in der Regel *Clientauthentifizierung*, damit der Benutzer bzw. das Gerät auf einem Server authentifiziert werden kann. |
+   |**Allen Apps Zugriff auf den privaten Schlüssel gewähren** |<ul><li>macOS  |Stellen Sie **Aktiviert** ein, um Apps, die für das zugeordnete Mac-Gerät konfiguriert sind, Zugriff auf den privaten Schlüssel des PKCS-Zertifikats zu gewähren. <br><br> Weitere Informationen zu dieser Einstellung finden Sie unter *AllowAllAppsAccess* im Abschnitt zur Zertifikatnutzlast der [Referenz zum Konfigurationsprofil](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) in der Apple-Entwicklerdokumentation. |
+   |**Stammzertifikat**             |<ul><li>Android-Geräteadministrator </li><li>Android Enterprise (*Gerätebesitzer*, *Arbeitsprofil*) |Wählen Sie ein Stammprofil für das ZS-Zertifikat aus, das zuvor zugewiesen wurde. |
 
 5. Wählen Sie **OK** > **Erstellen** aus, um Ihr Profil zu speichern.
 
@@ -227,11 +225,18 @@ Jedes Gerät benötigt ein Zertifikat einer Stamm- oder Zwischenzertifizierungss
    > [!NOTE]
    > Auf Geräten mit einem Android Enterprise-Profil sind Zertifikate, die über ein PKCS-Zertifikatprofil installiert wurden, nicht sichtbar. Um die erfolgreiche Zertifikatbereitstellung zu bestätigen, überprüfen Sie den Status des Profils in der Intune-Konsole.
 
-### <a name="subject-name-format-for-macos"></a>Format des Antragstellernamens für macOS
+### <a name="subject-name-format"></a>Format des Antragstellernamens
 
-Wenn Sie ein PKCS-Zertifikatsprofil für macOS erstellen, sind die Optionen für das Format des Antragstellernamens abhängig vom ausgewählten Zertifikattyp (entweder **Benutzer** oder **Gerät**).  
+Wenn Sie ein PKCS-Zertifikatsprofil für die folgenden Plattformen erstellen, sind die Optionen für das Format des Antragstellernamens abhängig vom ausgewählten Zertifikattyp und lauten entweder **Benutzer** oder **Gerät**.  
 
-> [!NOTE]  
+Plattformen:
+
+- Android Enterprise (*Arbeitsprofil*)
+- iOS
+- macOS
+- Windows 10 und höher
+
+> [!NOTE]
 > Es gibt ein bekanntes Problem bei der Verwendung von PKCS zum Abrufen von Zertifikaten, [welches das gleiche Problem ist wie bei SCEP](certificates-profile-scep.md#avoid-certificate-signing-requests-with-escaped-special-characters), wenn der Antragstellername in der resultierenden Zertifikatsignieranforderung (Certificate Signing Request, CSR) eines der folgenden Zeichen als Escapezeichen enthält (mit vorangestelltem Schrägstrich\\):
 > - \+
 > - ;

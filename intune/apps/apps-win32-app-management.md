@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/02/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8b3ee799374f4b3777f771d4bd6e186ddaeb55c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 371800b39e04695eadc906465fdb013488836df9
+ms.sourcegitcommit: 3189c3a82cfd1ff3a58153dfec2e12fae7b9bdc7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564025"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622519"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Eigenständiges Intune – Win32-App-Verwaltung
 
@@ -73,7 +73,7 @@ Wenn Sie `IntuneWinAppUtil.exe` aus dem Befehlsfenster ohne Parameter ausführen
 |    `-o <output_folder>`     |    Ausgabeordner für die generierte *.intunewin*-Datei.    |
 |    `-q`       |    Stiller Modus    |
 
-### <a name="example-commands"></a>Beispiele für Befehle
+### <a name="example-commands"></a>Beispielbefehle
 
 |    **Beispielbefehl**    |    **Beschreibung**    |
 |:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -82,8 +82,8 @@ Wenn Sie `IntuneWinAppUtil.exe` aus dem Befehlsfenster ohne Parameter ausführen
 
 Wenn Sie eine Datei mit der Erweiterung *.intunewin* generieren, legen Sie alle Dateien, die Sie als Referenz benötigen, in einem Unterordner des Setupordners ab. Verwenden Sie dann einen relativen Pfad, um auf die gewünschte Datei zu verweisen. Beispiel:
 
-**Setupquellordner**: *c:\testapp\v1.0*<br>
-**Lizenzdatei**: *c:\testapp\v1.0\licenses\license.txt*
+**Setupquellordner:** *C:\testapp\v1.0*<br>
+**Lizenzdatei:** *C:\testapp\v1.0\licenses\license.txt*
 
 Verweisen Sie auf die Datei *license.txt* mit dem relativen Pfad *licenses\license.txt*.
 
@@ -107,7 +107,7 @@ Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-A
 
     ![Screenshot des Bereichs „App hinzufügen“ – Dropdownfeld zum Hinzufügen des Typs](./media/apps-win32-app-management/apps-win32-app-01.png)
 
-### <a name="step-2-upload-the-app-package-file"></a>Schritt 2: Hochladen der App-Paketdatei
+### <a name="step-2-upload-the-app-package-file"></a>Schritt 2: Hochladen der App-Paketdatei
 
 1. Wählen Sie im Bereich **App hinzufügen** die Option **App-Paketdatei** aus, um eine Datei auszuwählen. Der Bereich „App-Paketdatei“ wird angezeigt.
 
@@ -120,17 +120,17 @@ Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-A
 
 3. Wählen Sie danach **OK**.
 
-### <a name="step-3-configure-app-information"></a>Schritt 3: Konfigurieren von App-Informationen
+### <a name="step-3-configure-app-information"></a>Schritt 3: Konfigurieren von App-Informationen
 
 1. Wählen Sie im Bereich **App hinzufügen** die Option **App-Informationen** aus, um die App zu konfigurieren.
 2. Konfigurieren Sie im Bereich **App-Informationen** die folgenden Informationen. Einige der Werte in diesem Bereich wurden möglicherweise automatisch ausgefüllt.
-    - **Name**: Geben Sie den Namen der App so ein, wie er im Unternehmensportal angezeigt wird. Wenn derselbe App-Name doppelt vorhanden ist, wird jede App im Unternehmensportal angezeigt.
-    - **Beschreibung**: Geben Sie eine Beschreibung der App ein. Die Beschreibung wird im Unternehmensportal angezeigt.
+    - **Name:** Geben Sie den Namen der App so ein, wie er im Unternehmensportal angezeigt wird. Wenn derselbe App-Name doppelt vorhanden ist, wird jede App im Unternehmensportal angezeigt.
+    - **Beschreibung:** Geben Sie eine Beschreibung der App ein. Die Beschreibung wird im Unternehmensportal angezeigt.
     - **Herausgeber**: Geben Sie den Namen des Herausgebers der App ein.
     - **Kategorie**: Wählen Sie eine oder mehrere der integrierten oder von Ihnen erstellten App-Kategorien aus. Kategorien erleichtern es dem Benutzer, die App über das Unternehmensportal zu finden.
     - **Diese App als ausgewählte App im Unternehmensportal anzeigen**: Präsentieren Sie die App herausgehoben auf der Hauptseite des Unternehmensportals, wenn die Benutzer nach Apps suchen.
     - **Informations-URL**: Geben Sie optional die URL einer Website ein, die Informationen über die App enthält. Die URL wird im Unternehmensportal angezeigt.
-    - **URL zu den Datenschutzbestimmungen**: Geben Sie optional die URL einer Website ein, die Datenschutzinformationen für diese App enthält. Die URL wird im Unternehmensportal angezeigt.
+    - **URL der Datenschutzrichtlinien:** Geben Sie optional die URL einer Website ein, die Datenschutzinformationen für diese App enthält. Die URL wird im Unternehmensportal angezeigt.
     - **Entwickler**: Geben Sie optional den Namen des App-Entwicklers ein.
     - **Besitzer**: Geben Sie optional einen Namen für den Besitzer dieser App ein. Ein Beispiel ist **Personalabteilung**.
     - **Anmerkungen**: Geben Sie Hinweise zu dieser App ein.
@@ -328,6 +328,9 @@ Jede Abhängigkeit entspricht der Wiederholungslogik für Win32-Apps in Intune (
 
 Clients von Windows 10 Version 1709 und höher laden Intune Win32-App-Inhalte mit einer Komponente zur Übermittlungsoptimierung auf den Windows 10-Client herunter. Die Übermittlungsoptimierung bietet Peer-zu-Peer-Funktionen, die standardmäßig eingeschaltet sind. Die Übermittlungsoptimierung kann mit dem Gruppenrichtlinien-Tool und über die Intune-Gerätekonfiguration konfiguriert werden. Weitere Informationen finden Sie unter [Übermittlungsoptimierung für Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 
+> [!NOTE]
+> Sie können auch einen Microsoft Connected Cache-Server auf Ihren Configuration Manager-Verteilungspunkten installieren, um Inhalte von Intune Win32-Apps zwischenzuspeichern. Weitere Informationen finden Sie unter [Microsoft Connected Cache in Configuration Manager – Unterstützung für Intune Win32-Apps](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#bkmk_intune).
+
 ## <a name="install-required-and-available-apps-on-devices"></a>Installieren erforderlicher und verfügbarer Apps auf Geräten
 
 Der Endbenutzer erhält Windows-Popupbenachrichtigungen für die erforderlichen und verfügbaren App-Installationen. Die folgende Abbildung zeigt eine exemplarische Popupbenachrichtigung, bei der die App-Installation erst nach einem Neustart des Geräts abgeschlossen ist. 
@@ -375,7 +378,7 @@ Bei Bedarf können Sie die Anzeige von Popupbenachrichtigungen für die Benutzer
 > Win32-Apps, die über die Intune-Verwaltungserweiterung installiert wurden, werden auf Geräten mit aufgehobener Registrierung nicht deinstalliert. Administratoren können Zuweisungsausnahmen nutzen, um Win32-Apps für BYOD-Geräte auszuschließen.
 
 ## <a name="troubleshoot-win32-app-issues"></a>Behandeln von Win32-App-Problemen
-Agentprotokolle auf dem Clientcomputer befinden sich häufig unter `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Sie können `CMTrace.exe` nutzen, um diese Protokolldateien anzuzeigen. *CMTrace.exe* kann unter [Configuration Manager-Tools](https://docs.microsoft.com/sccm/core/support/tools) heruntergeladen werden. 
+Agentprotokolle auf dem Clientcomputer befinden sich häufig unter `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Sie können `CMTrace.exe` nutzen, um diese Protokolldateien anzuzeigen. Weitere Informationen finden Sie unter [CMTrace](https://docs.microsoft.com/configmgr/core/support/cmtrace).
 
 ![Screenshot der Agent-Protokolle auf dem Clientcomputer](./media/apps-win32-app-management/apps-win32-app-10.png)    
 

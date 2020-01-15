@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 13d6a2b9cdc8596c7f5cf81218377754e9412be1
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 26013ab06cabdfd64ec3cd34254e3cfa2bb2428d
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390343"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654259"
 ---
 # <a name="use-device-encryption-with-intune"></a>Verwenden der Geräteverschlüsselung mit Intune
 
@@ -75,7 +75,7 @@ Ausführliche Informationen zur FileVault-Einstellung, die Sie mit Intune verwal
    > [!IMPORTANT]
    > Es ist ein bekanntes Problem aufgetreten, wenn die Einstellung **Aufforderung bei Abmeldung deaktivieren** auf *Aktivieren* gesetzt ist. Wenn Sie *Aktivieren* festlegen, muss die Einstellung für **Zulässige Anzahl von Umgehungen** auf einen Wert und nicht auf *Nicht konfiguriert* festgelegt werden. Wenn *Nicht konfiguriert* ausgewählt ist, tritt mit dem Profil auf dem Gerät ein Fehler auf. In diesem Szenario meldet das Gerät seine **Profilstatuszusammenfassung** als **Fehler** ohne weitere Details.
    >
-   > Wenn die für **Aufforderung bei Abmeldung deaktivieren** *Nicht konfiguriert* ausgewählt ist, kann für **Zulässige Anzahl von Umgehungen** *Nicht konfiguriert* oder ein Wert festgelegt werden.
+   > Wenn die für **Aufforderung bei Abmeldung deaktivieren***Nicht konfiguriert* ausgewählt ist, kann für **Zulässige Anzahl von Umgehungen***Nicht konfiguriert* oder ein Wert festgelegt werden.
    >
    > Dieses Problem wird in einem zukünftigen Update behoben.
 
@@ -86,6 +86,10 @@ Ausführliche Informationen zur FileVault-Einstellung, die Sie mit Intune verwal
 Sobald Intune ein macOS-Gerät mit FileVault verschlüsselt, können Sie die FileVault-Wiederherstellungsschlüssel anzeigen und verwalten, wenn Sie den Intune-[Verschlüsselungsbericht](encryption-monitor.md) anzeigen.
 
 Nachdem Intune ein macOS-Gerät mit FileVault verschlüsselt hat, können Sie den persönlichen Wiederherstellungsschlüssel dieses Geräts im Webunternehmensportal auf einem beliebigen Gerät anzeigen. Wählen Sie im Webunternehmensportal das verschlüsselte macOS-Gerät aus, und wählen Sie anschließend „Wiederherstellungsschlüssel abrufen“ als Remotegeräteaktion aus.
+
+### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices"></a>Abrufen eines persönlichen Wiederherstellungsschlüssels von MEM-verschlüsselten macOS-Geräten
+
+Endbenutzer können mithilfe der Unternehmensportal-App für iOS ihren persönlichen Wiederherstellungsschlüssel (FileVault-Schlüssel) abrufen. Das Gerät mit dem persönlichen Wiederherstellungsschlüssel muss bei Intune registriert und über Intune mit FileVault verschlüsselt sein. Mithilfe der iOS-Unternehmensportal-App können die Endbenutzer eine Webseite öffnen, die den persönlichen FileVault-Wiederherstellungsschlüssel umfasst. Sie können den Wiederherstellungsschlüssel auch aus Intune abrufen, indem Sie **Geräte** > *das verschlüsselte und registrierte macOS-Gerät* > **Wiederherstellungsschlüssel abrufen** auswählen. 
 
 ## <a name="bitlocker-encryption-for-windows-10"></a>BitLocker-Verschlüsselung für Windows 10
 

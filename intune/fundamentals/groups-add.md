@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e3219e32ef9bea838f0c19258d0b22a99083a12
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: fe37ac412d01d3032685a0e66827d20e13b0db64
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261563"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303074"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Hinzufügen von Gruppen zum Organisieren von Benutzern und Geräten
 
@@ -47,7 +47,7 @@ Führen Sie die folgenden Schritte aus, um eine neue Gruppe zu erstellen:
 
 3. Wählen Sie unter **Gruppentyp** eine der folgenden Optionen aus:
 
-    - **Sicherheit**: Mithilfe von Sicherheitsgruppen wird definiert, wer auf Ressourcen zugreifen kann. Sie sollten sie für Ihre Gruppen in Intune verwenden. Sie können zum Einen Gruppen für Benutzer erstellen, z. B. **Alle Mitarbeiter in Charlotte** oder **Alle Frauen bei Contoso**. Zum Anderen können Sie auch Gruppen für Geräte erstellen, z. B. **Alle iOS-Geräte** oder **Alle Geräte von Schülern mit Windows 10**.
+    - **Sicherheit**: Mithilfe von Sicherheitsgruppen wird definiert, wer auf Ressourcen zugreifen kann. Sie sollten sie für Ihre Gruppen in Intune verwenden. Sie können einerseits Gruppen für Benutzer erstellen, z. B. **Alle Mitarbeiter in Charlotte** oder **Remotemitarbeiter**. Zum Anderen können Sie auch Gruppen für Geräte erstellen, z. B. **Alle iOS-Geräte** oder **Alle Geräte von Schülern mit Windows 10**.
 
         > [!TIP]
         > Die erstellten Benutzer und Gruppen können auch im [Microsoft 365 Admin Center](https://admin.microsoft.com), im Azure Active Directory Admin Center und im [Azure-Portal unter Microsoft Intune](https://go.microsoft.com/fwlink/?linkid=2090973) angezeigt werden. Im Organisationsmandanten können Sie Gruppen in all diesen Bereichen erstellen und verwalten.
@@ -103,7 +103,7 @@ Sie können eine Standardrichtlinie erstellen, die für alle Gruppen und Geräte
 
 Empfehlungen und Anleitungen zu Konfigurationsprofilen finden Sie unter [Zuweisen von Richtlinien für Benutzer- und Gerätegruppen](../configuration/device-profile-assign.md#user-groups-vs-device-groups) und [Profilempfehlungen](../configuration/device-profile-create.md#recommendations).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 - [Rollenbasierte Zugriffssteuerung für Microsoft Intune](role-based-access-control.md)
 - [Verwalten des Zugriffs auf Ressourcen mit Azure AD-Gruppen](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)

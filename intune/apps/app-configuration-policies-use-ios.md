@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a104b4d41a364c552a8ebac73ff3341af71d6d21
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 2c447c67e631365e831f033c2811c36d936f2e85
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564164"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547991"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Hinzufügen App-Konfigurationsrichtlinien für verwaltete iOS-Geräte
 
@@ -50,35 +50,35 @@ Nachdem Sie die eingeschlossenen Gruppen für Ihre Anwendungskonfigurationsricht
 
 ## <a name="create-an-app-configuration-policy"></a>Erstellen einer Konfigurationsrichtlinie für Apps
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Wählen Sie **Apps** > **App-Konfigurationsrichtlinien** > **Hinzufügen** aus.
-5. Legen Sie die folgenden Details fest:
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **App-Konfigurationsrichtlinien** > **Hinzufügen** > **Verwaltete Geräte** aus.
+3. Legen Sie die folgenden Details fest:
     - **Name:** Der Name des Profils, das im Azure-Portal angezeigt wird.
     - **Beschreibung:** Die Beschreibung des Profils, das im Azure-Portal angezeigt wird.
-    - **Geräteregistrierungstyp:** Wählen Sie für Geräte, die bei Intune registriert wurden, die Option **Verwaltete Geräte** aus.
-6. Wählen Sie **iOS** als **Plattform** aus.
-7. Wählen Sie **Zugeordnete App** aus. Wählen Sie anschließend im Bereich **Zugeordnete App** die verwaltete App aus, auf die Sie die Konfiguration anwenden möchten, und klicken Sie auf **OK**.
-8. Wählen Sie im Bereich **Konfigurationsrichtlinie hinzufügen** die Option **Konfigurationseinstellungen** aus.
-9. Wählen Sie das **Format der Konfigurationseinstellungen** aus. Wählen Sie zum Hinzufügen von Konfigurationsinformationen eine der folgenden Methoden aus:
+    - **Geräteregistrierungstyp:** Diese Einstellung ist auf **Verwaltete Geräte** festgelegt.
+4. Wählen Sie **iOS** als **Plattform** aus.
+5. Wählen Sie **Zugeordnete App** aus. Wählen Sie anschließend im Bereich **Zugeordnete App** die verwaltete App aus, auf die Sie die Konfiguration anwenden möchten, und klicken Sie auf **OK**.
+6. Klicken Sie auf **Konfigurationseinstellungen**, um den Bereich **Konfigurationseinstellungen** anzuzeigen.
+7. Wählen Sie das **Format der Konfigurationseinstellungen** aus. Wählen Sie zum Hinzufügen von Konfigurationsinformationen eine der folgenden Methoden aus:
     - **Verwenden des Konfigurations-Designers**
     - **Eingeben von XML-Daten**<br><br>
     Ausführliche Informationen zur Verwendung des Konfigurations-Designers finden Sie unter [Verwenden des Konfigurations-Designers](#use-configuration-designer). Ausführliche Informationen zum Eingeben von XML-Daten finden Sie unter [Eingeben von XML-Daten](#enter-xml-data). 
-10. Nachdem Sie die Konfigurationsinformationen hinzugefügt haben, klicken Sie auf **OK**. Klicken Sie anschließend auf **Hinzufügen**, um die Konfigurationsrichtlinie hinzuzufügen. Der Übersichtsbereich für die Konfigurationsrichtlinie wird angezeigt.
-11. Wählen Sie **Zuweisungen**, um die Ein- und Ausschlussoptionen anzuzeigen. 
+8. Nachdem Sie die Konfigurationsinformationen hinzugefügt haben, klicken Sie auf **OK**. Klicken Sie anschließend auf **Hinzufügen**, um die Konfigurationsrichtlinie hinzuzufügen. Der Übersichtsbereich für die Konfigurationsrichtlinie wird angezeigt.
+9. Wählen Sie **Zuweisungen**, um die Ein- und Ausschlussoptionen anzuzeigen. 
 
     ![Screenshot der Registerkarte „Einschließen“ im Bereich „Richtlinienzuweisungen“](./media/app-configuration-policies-use-ios/app-config-policy01.png)
-12. Wählen Sie **Alle Benutzer** auf der Registerkarte **Einschließen**.
+10. Wählen Sie **Alle Benutzer** auf der Registerkarte **Einschließen**.
 
     ![Screenshot der Dropdown-Option „Alle Benutzer“ im Bereich „Richtlinienzuweisungen“](./media/app-configuration-policies-use-ios/app-config-policy02.png)
-13. Wählen Sie die Registerkarte **Ausschließen**. 
-14. Klicken Sie auf **Select groups to exclude** (Auszuschließende Gruppen auswählen), um den zugehörigen Bereich anzuzeigen.
+11. Wählen Sie die Registerkarte **Ausschließen**. 
+12. Klicken Sie auf **Select groups to exclude** (Auszuschließende Gruppen auswählen), um den zugehörigen Bereich anzuzeigen.
 
     ![Screenshot des Bereichs „Auszuschließende Gruppen auswählen“ im Bereich „Richtlinienzuweisungen“](./media/app-configuration-policies-use-ios/app-config-policy03.png)
-15. Wählen Sie die Gruppen aus, die Sie ausschließen möchten, und klicken Sie dann auf **Auswählen**.
+13. Wählen Sie die Gruppen aus, die Sie ausschließen möchten, und klicken Sie dann auf **Auswählen**.
 
     >[!NOTE]
     >Beachten Sie beim Hinzufügen einer Gruppe Folgendes: Wenn eine Gruppe bereits für einen bestimmten Zuweisungstyp eingeschlossen wurde, ist diese vorausgewählt und kann für andere Einschlusszuweisungstypen nicht mehr geändert werden. Darum kann die Gruppe, die verwendet wurde, nicht als ausgeschlossene Gruppe verwendet werden.
-16. Klicken Sie auf **Speichern**.
+14. Klicken Sie auf **Speichern**.
 
 ## <a name="use-configuration-designer"></a>Verwenden des Konfigurations-Designers
 
@@ -164,7 +164,7 @@ Intune unterstützt die folgenden Datentypen in einer Eigenschaftenliste:
 
 ### <a name="tokens-used-in-the-property-list"></a>Tokens, die in der Eigenschaftenliste verwendet werden.
 
-Darüber hinaus unterstützt Intune die folgenden Tokentypen in der Eigenschaftenliste:
+Darüber hinaus unterstützt Intune die folgenden Tokentypen in der Eigenschaftsliste:
 - \{\{userprincipalname\}\}: z. B. **John\@contoso.com**
 - \{\{mail\}\}: z. B. **John\@contoso.com**
 - \{\{partialupn\}\}: z.B. **John**
@@ -182,7 +182,7 @@ DEP-Registrierungen (Apple-Programm zur Geräteregistrierung) sind nicht kompati
 
 1. Fügen Sie in Intune ggf. das Intune-Unternehmensportal hinzu (**Intune** > **Apps** > **Alle Apps** > **Hinzufügen**).
 2. Klicken Sie auf **Apps** > **App-Konfigurationsrichtlinien**, um eine App-Konfigurationsrichtlinie für die Unternehmensportal-App zu erstellen.
-3. Erstellen Sie mithilfe der unten stehenden XML-Daten eine App-Konfigurationsrichtlinie. Weitere Informationen zum Erstellen einer App-Konfigurationsrichtlinie und zum Eingeben von XML-Daten finden Sie unter [Hinzufügen von App-Konfigurationsrichtlinien für verwaltete iOS-Geräte](app-configuration-policies-use-ios.md) oder für Hybrid-MDM unter [Anwenden von Einstellungen für iOS-Apps mit App-Konfigurationsrichtlinien in System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
+3. Erstellen Sie mithilfe der unten stehenden XML-Daten eine App-Konfigurationsrichtlinie. Weitere Informationen zum Erstellen einer App-Konfigurationsrichtlinie und zum Eingeben von XML-Daten finden Sie unter [Hinzufügen von App-Konfigurationsrichtlinien für verwaltete iOS-Geräte](app-configuration-policies-use-ios.md) oder für Hybrid-MDM unter [Anwenden von Einstellungen auf iOS-Apps mit App-Konfigurationsrichtlinien in Configuration Manager](https://docs.microsoft.com/configmgr/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
 
     ``` xml
     <dict>

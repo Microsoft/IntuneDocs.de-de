@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 321595a2ce8849b3d150b68f9dcc38dfda6ad940
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 88b7411095aee1b1d3a892ce4845812ceb1a9ac9
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390300"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547073"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Erstellen und Zuweisen eines SCEP-Zertifikatprofils in Intune
 
@@ -275,7 +275,7 @@ Weisen Sie SCEP-Zertifikatprofile auf die gleiche Weise zu, wie Sie [Geräteprof
 
 - Damit Zertifikate möglichst schnell nach der Geräteregistrierung auf Geräten veröffentlicht werden können, weisen Sie das Zertifikatprofil besser einer Benutzergruppe zu (nicht einer Gerätegruppe). Wenn Sie es einer Gerätegruppe zuweisen, muss eine vollständige Geräteregistrierung stattfinden, bevor das Gerät Richtlinien empfängt.
 
-- Wenn Sie die Co-Verwaltung für Intune und Configuration Manager verwenden, bewegen Sie in Configuration Manager den [Schieberegler für Workloads](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) für die Ressourcenzugriffsrichtlinie auf **Intune** oder **Intune-Pilot**. Diese Einstellung ermöglicht es Windows 10-Clients, den Prozess zur Anforderung des Zertifikats zu starten.
+- Wenn Sie die Co-Verwaltung für Intune und Configuration Manager verwenden, bewegen Sie in Configuration Manager den [Schieberegler für Workloads](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads) für die Ressourcenzugriffsrichtlinie auf **Intune** oder **Intune-Pilot**. Diese Einstellung ermöglicht es Windows 10-Clients, den Prozess zur Anforderung des Zertifikats zu starten.
 
 - Obwohl Sie das vertrauenswürdige Zertifikatprofil und das SCEP-Zertifikatprofil separat erstellen und zuweisen, müssen beide zugewiesen werden. Wenn nicht beide auf einem Gerät installiert sind, schlägt die SCEP-Zertifikatrichtlinie fehl. Stellen Sie sicher, dass alle vertrauenswürdigen Stammzertifikatprofile auch für dieselben Gruppen wie das SCEP-Profil bereitgestellt werden.
 

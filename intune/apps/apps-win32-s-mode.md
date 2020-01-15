@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e17972a3a87bd9c42db54753d4da3bb81703377
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 4b2a6019a0af33cd227d88444bb5ddda5bc22715
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563627"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204900"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>Aktivieren von Win32-Apps auf Geräten im S Modus
 
@@ -57,7 +57,7 @@ Die folgenden Schritte sind erforderlich, damit Win32-Apps auf einem Windows 10-
 
 Führen Sie die folgenden Schritte aus, um eine zusätzliche Windows 10 S Modus-Richtlinie zu erstellen:
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 2. Wählen Sie **Apps** > **Zusätzliche S Modus-Richtlinien** > **Richtlinie erstellen** aus.
 3. Bevor Sie die **Richtliniendatei** hinzufügen, müssen Sie sie erstellen und signieren. Weitere Informationen finden Sie in folgenden Quellen:
     - [Erstellen einer WDAC-Richtlinie mithilfe von PowerShell-Tools und Konvertieren in ein Binärformat](https://go.microsoft.com/fwlink/?linkid=2095387)

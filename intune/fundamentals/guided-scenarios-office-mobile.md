@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd02e2b7f9582308109d1e6986d7e6a8014e5af7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3399cf006543c0a3554c4c6ec812554462d74231
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585708"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691822"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>Geführtes Szenario: Sichere mobile Microsoft Office-Apps 
 
@@ -46,8 +46,8 @@ Mobile Microsoft Office-Apps sowie Microsoft Edge für Mobilgeräte unterstütze
 Die [Übersicht über App-Schutzrichtlinien](~/apps/app-protection-policy.md) unterstützt Sie beim Schutz Ihrer Arbeitsdateien auf Geräten, die bei Intune registriert sind. App-Schutzrichtlinien können Sie auch auf mitarbeitereigenen Geräten verwenden, die nicht für die Verwaltung in Intune registriert sind. Auch wenn Ihr Unternehmen das Gerät nicht verwaltet, müssen Sie in diesem Fall dennoch sicherstellen, dass Arbeitsdateien und -ressourcen geschützt sind.
 
 Sie können die App-Schutzrichtlinien verwenden, um zu verhindern, dass Benutzer Arbeitsdateien an ungeschützten Speicherorten speichern. Außerdem können Sie das Verschieben von Daten in andere Apps einschränken, die nicht durch App-Schutzrichtlinien geschützt sind. Einstellungen für App-Schutzrichtlinien:
-- Richtlinien zur Datenverschiebung wie „Speichern unter“ verhindern und „Ausschneiden“, „Kopieren und Einfügen“ einschränken.
-- Zugriffsrichtlinieneinstellungen, die eine einfache PIN für den Zugriff erfordern, und verhindern, dass verwaltete Apps auf Geräten mit Jailbreak oder Rootzugriff ausgeführt werden
+- Richtlinien zur Datenverschiebung wie **Kopien von Organisationsdaten speichern** und **Ausschneiden, Kopieren und Einfügen einschränken**.
+- Zugriffsrichtlinieneinstellungen, die eine einfache PIN für den Zugriff erfordern und verhindern, dass verwaltete Apps auf Geräten mit Jailbreak oder Rootzugriff ausgeführt werden
 
 Mit App-basiertem bedingten Zugriff und der Verwaltung von Client-Apps wird eine Sicherheitsschicht hinzugefügt, indem sichergestellt wird, dass nur Client-Apps, die Intune-App-Schutzrichtlinien unterstützen, auf Exchange Online und andere Office 365-Dienste zugreifen können.
 

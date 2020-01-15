@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5b469c759ac34a6d8de09163534a580346e48a1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b25b761b3857fdf91bbbe827d288d09e350a1a7a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415021"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206090"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Hinzufügen von Benutzern und Gewähren von Administratorrechten für Intune
 
@@ -57,22 +57,20 @@ Sie können Benutzer manuell über das [Microsoft 365 Admin Center](https://admi
 
 ### <a name="add-intune-users-in-the-azure-portal"></a>Hinzufügen von Intune-Benutzern im Azure-Portal
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Klicken Sie auf **Benutzer** > **Alle Benutzer**.
-3. Klicken Sie im Admin Center auf **Neuer Benutzer**.
-   ![Screenshot von „Neuer Benutzer hinzufügen“](./media/users-add/intune-add-user.png)
-4. Geben Sie die folgenden Benutzerdetails an:
+1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Benutzer** > **Alle Benutzer** aus.
+2. Klicken Sie im Admin Center auf **Neuer Benutzer**.
+3. Geben Sie die folgenden Benutzerdetails an:
    - **Name**
    - **Benutzername**: Der neue Name im Azure Active Directory-Portal ![Screenshot von „Namen hinzufügen“ und „Benutzername“](./media/users-add/intune-add-user-info.png). Klicken Sie auf **OK**, um fortzufahren.
-5. Optional können Sie die folgenden Benutzereigenschaften angeben:
+4. Optional können Sie die folgenden Benutzereigenschaften angeben:
    - **Profil**: Informationen zum Beruf, einschließlich **Position** und **Abteilung**
    - **Gruppen**: Gruppen auswählen, die zum Benutzer hinzugefügt werden
    - **Verzeichnisrolle**: Weisen Sie dem Benutzer Administratorberechtigungen zu, einschließlich einer Intune-Dienstadministratorrolle.
 
    Wählen Sie **Erstellen** aus, um in Intune einen neuen Benutzer hinzuzufügen.
-6. Wählen Sie **Profil** aus und dann einen **Verwendungsstandort** für den neuen Benutzer. Der Verwendungsstandort wird benötigt, bevor Sie dem neuen Benutzer eine Intune-Lizenz zuweisen können. Klicken Sie auf **Speichern**, um fortzufahren.
+5. Wählen Sie **Profil** aus und dann einen **Verwendungsstandort** für den neuen Benutzer. Der Verwendungsstandort wird benötigt, bevor Sie dem neuen Benutzer eine Intune-Lizenz zuweisen können. Klicken Sie auf **Speichern**, um fortzufahren.
     ![Screenshot des Verwendungsspeicherorts](./media/users-add/intune-add-user-loc.png)
-7. Wählen Sie **Lizenzen** aus und dann **Zuweisen**, um diesem Benutzer eine Intune-Lizenz zuzuweisen. Eine Intune-Lizenz ist erforderlich, um Geräte zu registrieren oder auf Unternehmensressourcen zuzugreifen. Wählen Sie **Produkte** aus, dann den Lizenztyp, klicken Sie auf **Auswählen** und dann auf **Zuweisen**.
+6. Wählen Sie **Lizenzen** aus und dann **Zuweisen**, um diesem Benutzer eine Intune-Lizenz zuzuweisen. Eine Intune-Lizenz ist erforderlich, um Geräte zu registrieren oder auf Unternehmensressourcen zuzugreifen. Wählen Sie **Produkte** aus, dann den Lizenztyp, klicken Sie auf **Auswählen** und dann auf **Zuweisen**.
 
 ## <a name="grant-admin-permissions"></a>Gewähren von Administratorberechtigungen
 

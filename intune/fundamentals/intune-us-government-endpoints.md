@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d876c0268f38a09ea3729a7e19ee00b321ae897a
-ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
+ms.openlocfilehash: 02c1508dd3eb9c8a8932c1504c6f4d0a53c5a0d5
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000396"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207382"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>US Government-Endpunkte für Microsoft Intune
 
@@ -37,6 +37,8 @@ Sie müssen die Kommunikation für Intune aktivieren, um Geräte hinter Firewall
 Sie können die Proxyservereinstellungen auf einzelnen Clientcomputern festlegen. Sie können zudem Gruppenrichtlinieneinstellungen verwenden, um die Einstellungen für alle Clientcomputer hinter einem bestimmten Proxyserver anzupassen.
 
 Für verwaltete Geräte sind Konfigurationen erforderlich, über die **Alle Benutzer** über Firewalls auf Dienste zugreifen können.
+
+Weitere Informationen zur automatischen Windows 10-Registrierung und zur Geräteregistrierung für Kunden der US-Registrierung finden Sie unter [Einrichten der Registrierung für Windows-Geräte](../enrollment/windows-enroll.md#windows-10-auto-enrollment-and-device-registration).
 
 In den folgenden Tabellen sind die Ports und Dienste aufgeführt, auf die der Intune-Client zugreift:
 
@@ -78,4 +80,3 @@ Weitere Informationen finden Sie in folgenden Quellen:
 ## <a name="next-steps"></a>Nächste Schritte
 [Netzwerkendpunkte für Microsoft Intune](intune-endpoints.md)
 
-[Automatische Registrierung und Geräteregistrierung für Windows 10](../enrollment/windows-enroll.md#registration-and-enrollment-cnames)

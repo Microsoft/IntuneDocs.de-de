@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0de98a0820e15a09c2b3724b216359580327259e
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: f1e493e0d2d562c0f69454d1999e82b528c724a2
+ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465728"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731278"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>Berichte zur Updatekonformität für Intune
 
@@ -51,7 +51,7 @@ Sie können Windows 10-Updaterollouts mithilfe der Windows Analytics-Lösung [U
 
 Bei Verwendung dieser Lösung können Sie eine Organisations-ID für jedes Ihrer mit Intune verwalteten Windows 10-Geräte bereitstellen, für das Sie Updateüberwachungsberichte verwenden möchten.  
 
-Die Organisations-ID können Sie in Intune mithilfe der OMA-URI-Einstellungen einer benutzerdefinierten Richtlinie konfigurieren. Weitere Informationen finden Sie unter [Intune-Richtlinieneinstellungen für Windows 10-Geräte in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).  
+Die Organisations-ID können Sie in Intune mithilfe der OMA-URI-Einstellungen einer benutzerdefinierten Richtlinie konfigurieren. Siehe [Verwenden von benutzerdefinierten Einstellungen für Windows 10-Geräte in Intune](../configuration/custom-settings-windows-10.md).
 
 Der OMA-URI-Pfad (Groß-/Kleinschreibung beachten) zum Konfigurieren der Organisations-ID lautet *./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID*.  
 
@@ -61,7 +61,7 @@ Unter **OMA-URI-Einstellung hinzufügen oder bearbeiten** können Sie beispielsw
 - **Einstellungsbeschreibung**: Konfigurieren der kommerziellen ID für Windows Analytics-Lösungen
 - **OMA-URI** (Groß-/Kleinschreibung beachten): *./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID*
 - **Datentyp**: Zeichenfolge
-- **Wert**: \<Verwenden Sie die GUID, die in Ihrem OMS-Arbeitsbereich auf der Registerkarte „Windows-Telemetrie“ angezeigt wird>
+- **Wert:** \<Verwenden Sie die GUID, die in Ihrem OMS-Arbeitsbereich auf der Registerkarte „Windows-Telemetrie“ angezeigt wird>
 
 > [!NOTE]
 > Weitere Informationen über MS DM-Server finden Sie unter [DMClient configuration service provider (CSP) (DMClient-Konfigurationsdienstanbieter (CSP))]( https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp).

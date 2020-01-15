@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38f02d694f1935e4732805f3ae7c66fd9718057a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1d07066bcd599dc0cdbaf8fcf90ac1ee76be45fa
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059607"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206685"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Verwenden von DFCI-Profilen (Device Firmware Configuration Interface) auf Windows-Geräten in Microsoft Intune (Public Preview)
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Wenn Sie Intune zum Verwalten von Autopilot-Geräten verwenden, können Sie nach deren Registrierung mithilfe von DFCI (Firmware Configuration Interface) UEFI-Einstellungen (BIOS) verwalten. Eine Übersicht über die Vorteile, Szenarios und Voraussetzungen finden Sie in der [Übersicht zu DFCI](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/).
 
@@ -54,7 +54,7 @@ Diese Funktion gilt für:
 
 ## <a name="create-your-azure-ad-security-groups"></a>Erstellen von Azure AD-Sicherheitsgruppen
 
-Autopilot-Bereitstellungsprofile werden Azure AD-Sicherheitsgruppen zugewiesen. Stellen Sie sicher, dass Sie Gruppen erstellen, die Ihre von DFCI unterstützten Geräte enthalten. Die meisten Organisationen erstellen für DFCI-Geräte Gerätegruppen anstelle von Benutzergruppen. Bedenken Sie die folgenden Szenarien:
+Autopilot-Bereitstellungsprofile werden Azure AD-Sicherheitsgruppen zugewiesen. Stellen Sie sicher, dass Sie Gruppen erstellen, die Ihre von DFCI unterstützten Geräte enthalten. Die meisten Organisationen erstellen für DFCI-Geräte Gerätegruppen anstelle von Benutzergruppen. Betrachten Sie die folgenden Szenarien:
 
 - Die Personalabteilung (HR) verfügt über unterschiedliche Windows-Geräte. Aus Sicherheitsgründen möchten Sie, dass niemand in dieser Abteilung die Kamera der Geräte verwendet. In diesem Szenario können Sie eine Benutzergruppe für die Mitarbeiter der Personalabteilung erstellen, sodass die Richtlinie unabhängig vom Gerätetyp für die Benutzer in der Personalabteilungsgruppe gilt.
 - Im Produktionsbereich sind 10 Geräte vorhanden. Sie möchten auf allen Geräten das Starten über ein USB-Gerät verhindern. In diesem Szenario können Sie eine Gerätegruppe erstellen und der Gruppe diese 10 Geräte hinzufügen.
@@ -81,8 +81,8 @@ Dieses Profil enthält die von Ihnen konfigurierten DFCI-Einstellungen.
 2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Geben Sie die folgenden Eigenschaften ein:
 
-    - **Name**: Geben Sie einen aussagekräftigen Namen für das Profil ein. Benennen Sie Ihre Richtlinien so, dass Sie diese später leicht wiedererkennen. Ein guter Profilname ist beispielsweise **Windows: Konfigurieren von DFCI-Einstellungen auf Windows-Geräten**.
-    - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    - **Name:** Geben Sie einen aussagekräftigen Namen für das Profil ein. Benennen Sie Ihre Richtlinien so, dass Sie diese später leicht wiedererkennen. Ein guter Profilname ist beispielsweise **Windows: Konfigurieren von DFCI-Einstellungen auf Windows-Geräten**.
+    - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
     - **Plattform**: Wählen Sie **Windows 10 und höher** aus.
     - **Profiltyp**: Wählen Sie **Device Firmware Configuration Interface** aus.
 

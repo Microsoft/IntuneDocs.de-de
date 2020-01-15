@@ -6,7 +6,7 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 05258c5363b43398dee1815bb91c50878803e426
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 3ae06ae3f9f76d86a792721d45f8319bfe6491fd
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74391941"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654225"
 ---
 # <a name="intune-reports"></a>Intune-Berichte
 Mithilfe von Microsoft Intune-Berichten können Sie die Integrität und Aktivität von Endpunkten in Ihrem Unternehmen effektiver und proaktiver überwachen. Zudem erhalten Sie weitere Berichtsdaten zu Intune. Sie können beispielsweise Berichte zur Gerätekonformität, -integrität und zu -trends abrufen. Darüber hinaus können Sie benutzerdefinierte Berichte erstellen, um spezifischere Daten zu erhalten. 
@@ -53,16 +53,19 @@ Der Bericht zu nicht konformen Geräten enthält Daten, die in der Regel von Hel
 
 Sie können den Bericht zu **nicht konformen Geräten** wie folgt abrufen:
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Klicken Sie auf **Gerätekonformität** > **Nicht konforme Geräte**.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Klicken Sie auf **Geräte** > **Überwachen** > **Noncompliant devices** (Nicht konforme Geräte).
 
     ![Bericht zu nicht konformen Geräten](./media/intune-reports/intune-reports-02.png)
+
+    > [!TIP]
+    > Wenn Sie im Azure-Portal zuvor bereits Intune verwendet haben, konnten die oben aufgeführten Details im Azure-Portal durch eine Anmeldung bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) und Auswahl von **Gerätekonformität** > **Nicht konforme Geräte** angezeigt werden.
 
 ## <a name="device-compliance-report-organizational"></a>Bericht zur Gerätekonformität (organisatorisch)
 Berichte zur Gerätekonformität sollten möglichst umfassend sein und eine traditionellere Berichtsansicht zu Daten bereitstellen, auf deren Grundlage aggregierte Metriken ermittelt werden. Dieser Bericht ist für die Arbeit mit großen Datasets konzipiert, sodass Sie einen vollständigen Überblick über die Gerätekonformität erhalten. Der Bericht zur Gerätekonformität enthält die Konformitätszustände aller Geräte und gibt damit unabhängig von der Größe des Datasets einen umfassenderen Überblick über die Daten. Außerdem umfasst er eine vollständige Aufschlüsselung der Datensätze sowie eine praktische Visualisierung der aggregierten Metriken. Sie können ihn generieren, indem Sie Filter anwenden und auf die Schaltfläche „Bericht generieren“ klicken. Dadurch werden die Daten aktualisiert, sodass jeweils der aktuelle Zustand im Bericht angezeigt wird. Außerdem können die einzelnen Datensätze abgerufen werden, aus denen die aggregierten Daten bestehen. Wie die meisten Berichte im neuen Framework können diese Datensätze sortiert und durchsucht werden, sodass Sie nach den Informationen filtern können, die Sie benötigen. 
 
 Zum Anzeigen eines generierten Berichts zu den Gerätezuständen können Sie wie folgt vorgehen:
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 2. Klicken Sie auf **Berichte**, um die Berichtsübersicht abzurufen.
 3. Wählen Sie **Gerätekompatibilität** aus.
 4. Klicken Sie auf die Filter **Konformitätsstatus** > **Betriebssystem** und **Besitz**, um Ihren Bericht einzuschränken.
@@ -79,7 +82,7 @@ Weitere Informationen finden Sie unter [Erzwingen der Konformität für Microsof
 
 Sie können den Bericht zur Gerätekonformität in Form eines Zusammenfassungsberichts in der Workload **Berichte** abrufen. Sie können den Bericht zur Gerätekonformität wie folgt abrufen:
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 2. Klicken Sie auf **Berichte**, um die Berichtsübersicht abzurufen.
 
     ![Zusammenfassung der Intune-Berichte](./media/intune-reports/intune-reports-01.png)
@@ -91,7 +94,7 @@ Berichte zu Gerätekonformitätstrends enthalten Informationen zu Gerätekonform
 
 Führen Sie die folgenden Schritte aus, um den Bericht zu den **Trends** abzurufen:
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 2. Klicken Sie auf **Berichte** > **Trends**, um Daten zur Gerätekonformität für einen Zeitraum von 60 Tagen abzurufen.
 
     ![Intune-Trendbericht](./media/intune-reports/intune-reports-03.png)
@@ -106,7 +109,7 @@ Spezialisierte Berichte stellen beispielsweise in Form von benutzerdefinierten B
 
 Gehen Sie wie folgt vor, um benutzerdefinierte Berichte zu erstellen und abzurufen:
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 2. Klicken Sie auf **Berichte** > **Diagnoseeinstellungen**, und fügen Sie eine [Diagnoseeinstellung](reports.md#diagnostic-settings) hinzu.
 
     ![Zusammenfassung der Intune-Berichte](./media/intune-reports/intune-reports-04.png)
@@ -143,7 +146,7 @@ Log Analytics ist das wichtigste Tool im Azure-Portal zum Schreiben von Protokol
 ### <a name="workbooks"></a>Arbeitsmappen
 Arbeitsmappen kombinieren Text, Analytics-Abfragen, Azure-Metriken und Parameter in umfangreichen interaktiven Berichten. Sie können von allen anderen Teammitgliedern bearbeitet werden, die Zugriff auf dieselben Azure-Ressourcen haben. Weitere Informationen zu Arbeitsmappen finden Sie unter [Azure Monitor-Arbeitsmappen](https://docs.microsoft.com/azure/azure-monitor/app/usage-workbooks). Außerdem können Sie mit Arbeitsmappenvorlagen arbeiten und eigene Beiträge hinzufügen. Weitere Informationen finden Sie unter [Azure Monitor-Arbeitsmappenvorlagen](https://go.microsoft.com/fwlink/?linkid=867045).
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Nächste Schritte 
 
 Weitere Informationen finden Sie unter den folgenden Links:
 - [Blog: Berichterstellungsframework für Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553)

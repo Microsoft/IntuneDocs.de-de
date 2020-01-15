@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b7f14e939e7241cd34c01d73e9af822dea7acdc
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: cbf82c0bef88e4a6d0e790f4b0ecdf73d2731d5d
+ms.sourcegitcommit: 9bb1bcd9f1bdd53b470073da956bbd8b0935dfbc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410132"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556401"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Überwachen der Sicherheitsbaseline und von Profilen in Microsoft Intune
 
@@ -42,12 +42,16 @@ Der Bereich **Übersicht** umfasst zwei Methoden zum Überwachen von Statusangab
 - **Geräteansicht:** eine Zusammenfassung der Anzahl der Geräte, die sich in den einzelnen Statuskategorien der Baseline befinden
 - **Per-category** (Kategoriebasierte Ansicht): Ansicht der einzelnen Kategorien in der Baseline, auf der auch der Anteil der Geräte (in Prozent) für die einzelnen Statusgruppen der Baselinekategorien angegeben sind
 
-Jedem Gerät ist eine der folgenden Statusangaben zugewiesen, die sowohl in der *Geräteansicht* als auch in den einzelnen *kategoriebasierten* Ansichten angegeben werden:
+Jedem Gerät ist einer der folgenden Statuswerte zugewiesen (diese werden sowohl in der *Geräteansicht* als auch in den einzelnen *kategoriebasierten* Ansichten verwendet):
 
 - **Matches baseline** (Übereinstimmung mit Baseline): alle Einstellungen in der Baseline stimmen mit den empfohlenen Einstellungen überein
-- **Does not match baseline** (Keine Übereinstimmung mit Baseline): mindestens eine Einstellung in der Baseline entspricht nicht den empfohlenen Einstellungen
-- **Falsch konfiguriert:** mindestens eine Einstellung wurde nicht ordnungsgemäß konfiguriert Dieser Status bedeutet, dass die Einstellung sich in einem Konflikt-, Fehler- oder ausstehenden Status befindet.
-- **Not applicable** (Nicht verfügbar): mindestens eine Einstellung ist nicht verfügbar und wird nicht angewendet
+- **Stimmt nicht mit Baseline überein**: Mindestens eine Einstellung in der Baseline entspricht nicht der empfohlenen Einstellung.
+
+  > [!NOTE]
+  > Wenn Sie ein Baselineprofil erstellen oder bearbeiten, führen alle Änderungen an einem Standardwert oder einer Konfigurationseinstellung zum Status „Stimmt nicht mit Baseline überein“. Wenden Sie sich an den Microsoft-Support, um herauszufinden, welche Einstellungen geändert wurden. 
+
+- **Falsch konfiguriert**: Mindestens eine Einstellung wurde nicht richtig konfiguriert. Dieser Status bedeutet, dass die Einstellung sich im Status „Konflikt“, „Fehler“ oder „Ausstehend“ befindet.
+- **Nicht anwendbar**: Mindestens eine Einstellung ist nicht anwendbar und wird nicht verwendet.
 
 ### <a name="device-view"></a>Geräteansicht
 

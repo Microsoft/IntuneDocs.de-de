@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9795ca8a585fd926cc269d493760b37aa7666eb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 92e6aa1a66429c6407556444e903c158aff9dfa0
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74051961"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885996"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Welche gängigen Möglichkeiten gibt es für die Verwendung des bedingten Zugriffs in Intune?
 
@@ -55,7 +55,7 @@ Gerätebasierte Richtlinien für den bedingten Zugriff für Exchange Online und 
 > 1. Starten Sie die **Unternehmensportal-App**.
 > 2. Rufen Sie die Seite **Einstellungen** über die Schaltfläche mit den drei Punkten (…) oder über die physische Menütaste auf.
 > 3. Drücken Sie die Schaltfläche **Browserzugriff aktivieren** . 
-> 4. Melden Sie sich im Chrome-Browser aus Office 365 ab, und starten Sie Chrome neu.
+> 4. Melden Sie sich im Chrome-Browser von Office 365 ab, und starten Sie Chrome erneut.
 
 ### <a name="conditional-access-based-on-network-access-control"></a>Bedingter Zugriff basierend auf der Netzwerkzugriffssteuerung
 
@@ -83,17 +83,9 @@ Der bedingte Zugriff für PCs bietet eine Funktionalität, die der für mobile G
 
 #### <a name="corporate-owned"></a>Unternehmenseigene Geräte
 
-- **In die lokale AD-Domäne eingebunden**: Diese Option wird häufig von Organisationen genutzt, die bereits mit der Verwaltung ihrer PCs über AD-Gruppenrichtlinien oder System Center Configuration Manager vertraut sind.
+- **In die lokale AD-Domäne eingebunden**: Diese Option wird häufig von Organisationen genutzt, die bereits mit der Verwaltung ihrer PCs über AD-Gruppenrichtlinien oder Configuration Manager vertraut sind.
 
 - **In die Azure AD-Domäne eingebunden und über Intune verwaltet**: Dieses Szenario eignet sich für Organisationen, die einen Cloud-First-Ansatz (primäre Nutzung von Clouddiensten, sodass weniger lokale Infrastruktur erforderlich ist) oder einen Cloud-Only-Ansatz (gar keine lokale Infrastruktur) verfolgen möchten. Die Azure AD-Einbindung lässt sich gut in einer hybriden Umgebung einsetzen und bietet Zugriff auf Apps und Ressourcen sowohl in der Cloud als auch in der lokalen Infrastruktur. Geräte werden in Azure AD eingebunden und in Intune registriert – dies kann beim Zugriff auf Unternehmensressourcen als Kriterium für den bedingten Zugriff verwendet werden.
-
-- **In die AD-Domäne eingebunden und System Center Configuration Manager**: Im aktuellen Branch stellt System Center Configuration Manager Funktionen für den bedingten Zugriff bereit, die bestimmte Konformitätskriterien auswerten können. Zusätzlich muss der PC in die Domäne eingebunden sein:
-
-  - Ist der PC verschlüsselt?
-
-  - Ist Antischadsoftware installiert? Ist der PC auf dem neuesten Stand?
-
-  - Wurde das Gerät per Jailbreak oder Rooting manipuliert?
 
 #### <a name="bring-your-own-device-byod"></a>Bring Your Own Device (BYOD)
 

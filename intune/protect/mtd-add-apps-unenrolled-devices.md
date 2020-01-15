@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8dd7127594a0e23c85b9f8141ce6d398d9a447a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e1cf0a3d8b30955be8413b376acd223a924be843
+ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72794458"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75545927"
 ---
 # <a name="add-mobile-threat-defense-apps-to-unenrolled-devices"></a>Hinzufügen von Mobile Threat Defense-Apps zu nicht registrierten Geräten
 
@@ -34,7 +34,7 @@ Endbenutzer benötigen Microsoft Authenticator (iOS), um ihr Gerät zu registrie
 Optional können Sie Intune auch zum Hinzufügen und Bereitstellen der Microsoft Authenticator- und Mobile Threat Defense-Apps (MTD) verwenden.
 
 > [!NOTE] 
-> Dieser Artikel gilt für alle Mobile Threat Defense-Partner, die App-Schutzrichtlinien unterstützen: Better Mobile (Android), Zimperium (iOS), Lookout for Work (Android/iOS).
+> Dieser Artikel gilt für alle Mobile Threat Defense-Partner, die App-Schutzrichtlinien unterstützen: Better Mobile (Android), Zimperium (Android/iOS), Lookout for Work (Android/iOS).
 > 
 > Bei nicht registrierten Geräten **benötigen Sie keine iOS-App-Konfigurationsrichtlinie**, mit der die Mobile Threat Defense-App für iOS eingerichtet wird, die Sie mit Intune verwenden. Dies ist ein wichtiger Unterschied im Vergleich zu bei Intune-registrierten Geräten. 
 
@@ -76,8 +76,8 @@ Wenn Sie die App jedoch über das Intune-Unternehmensportal für Endbenutzer ver
   - See the instructions for [adding iOS store apps to Microsoft Intune](../apps/store-apps-ios.md). Use this [Check Point SandBlast Mobile - App Store URL](https://apps.apple.com/us/app/sandblast-mobile-protect/id1006390797) when completing the **Configure app information** section. -->
 
 ### <a name="making-zimperium-available-to-end-users"></a>Verfügbarmachung von Zimperium für Endbenutzer
-<!-- - **Android**
-  - See the instructions for [adding Android store apps to Microsoft Intune](../apps/store-apps-android.md). Use this [Zimperium - Play Store URL](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en) when completing the **Configure app information** section. -->
+- **Android**
+  - Sehen Sie sich die Anleitungen für [das Hinzufügen von Android Store-Apps zu Microsoft Intune](../apps/store-apps-android.md) an. Verwenden Sie diese [Play Store-URL der Zimperium-App](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en), wenn Sie den Abschnitt **Konfigurieren von App-Informationen** ausfüllen.
 - **iOS**
   - Sehen Sie sich die Anleitungen für [das Hinzufügen von iOS Store-Apps zu Microsoft Intune](../apps/store-apps-ios.md) an. Verwenden Sie diese [App Store-URL der Zimperium-App](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8), wenn Sie den Abschnitt **Konfigurieren von App-Informationen** ausfüllen.
  

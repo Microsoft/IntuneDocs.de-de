@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/15/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e539f44fc9c9b4e7382368c0f3ad9f79bb1c98b1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d302db46510b664aec5b0a71fd8b19985e29be37
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585656"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206124"
 ---
 # <a name="use-policy-sets-to-group-collections-of-management-objects"></a>Verwenden von Richtliniensätzen zur Gruppierung von Verwaltungsobjektsammlungen in Microsoft Intune
 
@@ -44,7 +44,7 @@ Sie können die folgenden Verwaltungsobjekte in einen Richtliniensatz einschlie�
 - App-Konfigurationsrichtlinien
 - App-Schutzrichtlinien
 - Gerätekonfigurierungsprofile
-- Gerätekompatibilitätsrichtlinien
+- Konformitätsrichtlinien für Geräte
 - Gerätetypbeschränkungen
 - Windows Autopilot Deployment-Profile
 - Seite zum Registrierungsstatus
@@ -56,23 +56,23 @@ Wenn Sie einen Richtliniensatz erstellen, erstellen Sie eine einzelne Zuweisungs
 
 ## <a name="how-to-create-a-policy-set"></a>Erstellen einer Richtlinie
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Wählen Sie auf dem **Intune**-Blatt **Richtliniensätze** > **Richtliniensätze** > **Erstellen** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Geräte** > **Richtliniensätze** > **Richtliniensätze** > **Erstellen** aus.
 3. Fügen Sie auf der Seite **Basics** (Grundeinstellungen) die folgenden Werte hinzu:
     - **Name des Richtliniensatzes**: Geben Sie einen Namen für diesen Richtliniensatz an.
     - **Beschreibung**: Geben Sie optional eine Beschreibung des Richtliniensatzes an.
    <p>
    <img alt="Create policy set - Basics" src="~/fundamentals/media/policy-sets/policy-sets-01.png">
 
-4. Klicken Sie auf **Weiter: App-Verwaltung**.<br>
+4. Klicken Sie auf **Next: App-Verwaltung**.<br>
    Auf der Seite **Anwendungsverwaltung** können Sie optional [Apps](~/apps/apps-add.md), [App-Konfigurationsrichtlinien](~/apps/app-configuration-policies-overview.md) und [App-Schutzrichtlinien](~/apps/app-protection-policy.md) zu Ihrem Richtliniensatz hinzufügen. Weitere Informationen zur App-Verwaltung finden Sie unter [Was ist die Microsoft Intune App-Verwaltung?](~/apps/app-management.md). 
-5. Klicken Sie auf **Weiter: Geräteverwaltung**.<br>
+5. Klicken Sie auf **Next: Geräteverwaltung**.<br>
    Auf der Seite **Geräteverwaltung** können Sie Ihrem Richtliniensatz Geräteverwaltungsobjekte hinzufügen, z. B. [Gerätekonfigurierungsprofile](~/configuration/device-profiles.md) und [Gerätekonformitätsrichtlinien](~/protect/device-compliance-get-started.md). Stellen Sie sicher, dass Sie alle zugeordneten Objekte einschließen, beispielsweise andere Richtlinien, Zertifikate und Sicherheitsbaselineprofile.
-6. Klicken Sie auf **Weiter: Geräteregistrierung**.<br>
+6. Klicken Sie auf **Next: Geräteregistrierung**.<br>
    Auf der Seite **Geräteregistrierung** können Sie Ihrem Richtliniensatz Geräteregistrierungsobjekte hinzufügen, z. B. [Gerätetypbeschränkungen](~/enrollment/enrollment-restrictions-set.md), [Windows Autopilot Deployment-Profile](~/enrollment/enrollment-autopilot.md) und [Profile für Seite zum Registrierungsstatus](~/enrollment/windows-enrollment-status.md).
-7. Klicken Sie auf **Weiter: Zuweisungen**.<br>
+7. Klicken Sie auf **Next: Zuweisungen**.<br>
    Auf der Seite **Zuweisungen** können Sie den Richtliniensatz Benutzern und Geräten zuweisen. Beachten Sie: Sie können ein Richtliniensatz einem Gerät unabhängig davon zuweisen, ob das Gerät von Intune verwaltet wird.
-8. Klicken Sie auf **Weiter: Überprüfen + erstellen**, um die für das Profil eingegebenen Werte zu überprüfen.
+8. Klicken Sie auf **Next: Überprüfen + erstellen**, um die für das Profil eingegebenen Werte zu überprüfen.
 9. Klicken Sie abschließend auf **Erstellen**, um den Richtliniensatz in Intune zu erstellen. 
 
 ## <a name="policy-sets-known-issues"></a>Bekannte Probleme bei Richtliniensätzen

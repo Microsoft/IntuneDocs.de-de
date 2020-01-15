@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78f79a734d0a7b4901b2248b20abd9d304926dd2
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 4246dab0cf22053d76fdd50f99de53e827332a23
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955506"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547813"
 ---
 # <a name="set-enrollment-restrictions"></a>Festlegen von Registrierungseinschränkungen
 
@@ -144,7 +144,7 @@ Die folgenden Methoden sind als Windows-Unternehmensregistrierung autorisiert:
 - Das Gerät ist bei Windows Autopilot registriert, jedoch ohne die Option „MDM enrollment only“ (Nur MDM-Registrierung) in den Windows-Einstellungen.
 - Die IME-Nummer des Geräts ist unter **Geräteregistrierung** >  **[Bezeichner von Unternehmensgeräten](corporate-identifiers-add.md)** aufgeführt. (für Windows Phone 8.1 nicht unterstützt)
 - Das Gerät wird über ein [Massenbereitstellungspaket](windows-bulk-enroll.md) registriert.
-- Das Gerät wird über GPO oder eine [automatische Registrierung von SCCM für die Co-Verwaltung](https://docs.microsoft.com/sccm/comanage/quickstart-paths#bkmk_path1) registriert.
+- Die Geräteregistrierung erfolgt über ein GPO oder eine [automatische Registrierung aus Configuration Manager für die Co-Verwaltung](https://docs.microsoft.com/configmgr/comanage/quickstart-paths#bkmk_path1).
  
 Die folgenden Registrierungen werden von Intune als unternehmenseigen gekennzeichnet. Da sie die Steuerung pro Gerät durch den Intune-Administrator jedoch nicht unterstützen, werden sie blockiert:
 - [Automatische MDM-Registrierung](windows-enroll.md#enable-windows-10-automatic-enrollment) mit der [Azure Active Directory-Einbindung während der Windows-Einrichtung](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*.

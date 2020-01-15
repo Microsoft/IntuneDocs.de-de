@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48dc7de86965741d8ed42bd5a5f29f72ae66d4f3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 7cc873079d9a139edfa2217d97806afe0c5bbf28
+ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188492"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75545955"
 ---
 # <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>Erstellen einer Mobile Threat Defense-App-Schutzrichtlinie (MTD) mit Intune
 
@@ -34,7 +34,7 @@ Intune mit Mobile Threat Defense (MTD) hilft Ihnen dabei, Bedrohungen zu erkenne
 > Dieser Artikel gilt für alle Mobile Threat Defense-Partner, die App-Schutzrichtlinien unterstützen:
 >
 > - Better Mobile (Android)
-> - Zimperium (iOS)
+> - Zimperium (Android, iOS)
 > - Lookout for Work (Android, iOS)
 
 ## <a name="before-you-begin"></a>Vorbereitung
@@ -50,14 +50,14 @@ Voraussetzungen für die App-Schutzrichtlinie mit MTD:
 Verwenden Sie die Prozedur, um [eine iOS-/iPadOS- oder Android-App-Schutzrichtlinie zu erstellen](../apps/app-protection-policies.md#app-protection-policies-for-iosipados-and-android-apps), und verwenden Sie die folgenden Informationen von den Seiten *Apps*, *Bedingter Start* und *Zuweisungen*:
 
 - **Apps**: Wählen Sie die App für den Mobile Threat Defense-Partner aus, den Sie verwenden.
-- **Bedingter Start:**  Wählen Sie in der Dropdownliste unter *Gerätebedingungen* **Maximal zulässige Bedrohungsstufe für Gerät** aus.
+- **Bedingter Start:**  Wählen Sie in der Dropdownliste unter *Gerätebedingungen***Maximal zulässige Bedrohungsstufe für Gerät** aus.
 
   Optionen für den **Wert** der Bedrohungsstufe:
 
   - **Secured** (Geschützt): Diese Stufe ist die sicherste Einstellung. Solange auf einem Gerät Bedrohungen vorhanden sind, ist kein Zugriff auf Unternehmensressourcen möglich. Wenn Bedrohungen gefunden werden, wird das Gerät als nicht kompatibel bewertet.
   - **Niedrig:** Das Gerät ist konform, wenn nur Bedrohungen auf niedriger Stufe vorliegen. Durch Bedrohungen höherer Stufen wird das Gerät in einen nicht kompatiblen Status versetzt.
-  - **Mittel:** Das Gerät ist konform, wenn auf dem Gerät Bedrohungen niedriger oder mittlerer Stufe gefunden werden. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht kompatibel bewertet.
-  - **Hoch:** Diese Stufe gewährleistet das geringste Maß an Sicherheit. Diese Stufe lässt alle Bedrohungsstufen zu und verwendet Mobile Threat Defense nur zu Berichtszwecken. Auf Geräten muss mit dieser Einstellung die MTD-App aktiviert sein.
+  - **Mittel**: Das Gerät ist konform, wenn auf dem Gerät Bedrohungen niedriger oder mittlerer Stufe gefunden werden. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht kompatibel bewertet.
+  - **Hoch**: Diese Stufe gewährleistet das geringste Maß an Sicherheit. Diese Stufe lässt alle Bedrohungsstufen zu und verwendet Mobile Threat Defense nur zu Berichtszwecken. Auf Geräten muss mit dieser Einstellung die MTD-App aktiviert sein.
 
   Optionen für **Aktion**:
 

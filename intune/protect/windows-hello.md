@@ -17,12 +17,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: 7ce6def40c6c0fff3a28f884c458220283979234
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: 001e68fdbab7074abb4e1bbefc697d3e34c47762
+ms.sourcegitcommit: 107fef144013b01ed768ca8973373f9cb3f0f7dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465777"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75683781"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Integrieren von Windows Hello for Business in Microsoft Intune  
 
@@ -53,9 +53,9 @@ Nutzen Sie die Informationen in diesem Artikel, um eine Windows Hello for Busine
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Erstellen einer Windows Hello for Business-Richtlinie
 
-1. Melden Sie sich beim „Microsoft Endpoint Manager Admin Center“ an (https://go.microsoft.com/fwlink/?linkid=2109431 ).
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 
-2. Navigieren Sie zu **Geräte** > Registrierung** > **Enroll devices** > **Windows enrollment** > **Windows Hello for Business** (Geräte registrieren > Windows-Registrierung). Daraufhin wird der Bereich „Windows Hello for Business“ geöffnet.
+2. Navigieren Sie zu **Geräte** >  **Registrierung** > **Geräte registrieren** > **Windows-Registrierung** > **Windows Hello for Business**. Daraufhin wird der Bereich „Windows Hello for Business“ geöffnet.
 
 3. Wählen Sie aus den folgenden Optionen für **Konfigurieren von Windows Hello for Business**:
 
@@ -90,7 +90,7 @@ Nutzen Sie die Informationen in diesem Artikel, um eine Windows Hello for Busine
 
    - **PIN-Ablauf (Tage)** :
 
-     Es wird empfohlen, ein Ablaufdatum für eine PIN anzugeben, nach dem sie vom Benutzer geändert werden muss. Die Standardeinstellung ist 41 Tage.
+     Es wird empfohlen, ein Ablaufdatum für eine PIN anzugeben, nach dem sie vom Benutzer geändert werden muss. Die Standardeinstellung ist 41 Tage.
 
    - **PIN-Verlauf speichern**:
 
@@ -111,7 +111,7 @@ Nutzen Sie die Informationen in diesem Artikel, um eine Windows Hello for Busine
 
    - **Anmeldung per Telefon zulassen:**
 
-     Wenn diese Option auf **Ja** festgelegt ist, können die Benutzer einen Remote-Passport als tragbares Begleitgerät für die Authentifizierung von Desktopcomputern verwenden. Der Desktopcomputer muss Azure Active Directory angehören, und das Begleitgerät muss mit einer Windows Hello for Business-PIN konfiguriert werden.
+     Wenn diese Option auf **Ja** festgelegt ist, können die Benutzer einen Remote-Passport als tragbares Begleitgerät für die Authentifizierung von Desktopcomputern verwenden. Der Desktopcomputer muss mit Azure Active Directory verknüpft sein, und das Begleitgerät muss mit einer Windows Hello for Business-PIN konfiguriert werden.
 
 ## <a name="windows-holographic-for-business-support"></a>Unterstützung durch Windows Holographic for Business
 

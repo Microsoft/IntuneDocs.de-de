@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7c3398f28d7c396c873dd29f3e3fdd719c1a7c6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ad630eb34b296d7ab77081a1e3063db8dffc64f9
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74691770"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207450"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Verwalten von Windows 10-Softwareupdates in Intune
 
@@ -68,9 +68,6 @@ Die folgenden Voraussetzungen müssen erfüllt sein, um Windows-Updates für Win
   Sie können die Einstellung *Diagnose- und Nutzungsdaten* für Windows 10-Geräte entweder manuell konfigurieren oder ein Intune-Geräteeinschränkungsprofil für Windows 10 und höher verwenden. Wenn Sie ein Geräteeinschränkungsprofil verwenden, stellen Sie die Funktion [Geräteeinschränkung](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) bei **Nutzungsdaten freigeben** auf mindestens **Standard** ein. Diese Einstellung befindet sich in der Kategorie **Berichterstellung und Telemetrie**, wenn Sie eine Richtlinie für Geräteeinschränkungen für Windows 10 oder höher konfigurieren.
 
   Weitere Informationen zu Geräteprofilen finden Sie unter [Konfigurieren von Einstellungen für Geräteeinschränkungen](../configuration/device-restrictions-configure.md).
-
-- Wenn Sie das klassische Azure-Portal verwenden, können Sie [Ihre Einstellungen in das Azure-Portal migrieren](#migrate-update-settings-to-the-azure-portal).
-
 
 ## <a name="windows-10-update-rings"></a>Windows 10-Updateringe
 
@@ -120,11 +117,11 @@ Wenn Sie einen Ring aus Intune löschen, werden dadurch nicht die Einstellungen 
 ##### <a name="to-delete-a-ring"></a>So löschen Sie einen Ring
 
 1. Klicken Sie auf der Übersichtsseite eines Updaterings auf **Löschen**.
-2. Wählen Sie **OK** aus.
+2. Klicken Sie auf **OK**.
 
 #### <a name="pause"></a>Anhalten
 
-Wählen Sie **Anhalten** aus, damit zugewiesene Geräte für einen Zeitraum von bis zu 35 Tagen (ab dem Zeitpunkt, zu dem der Ring ausgesetzt wurde) keine Feature- oder Qualitätsupdates mehr empfangen. Nach Verstreichen der maximalen Anzahl von Tagen wird die Aussetzung automatisch aufgehoben, und das Gerät sucht bei Windows Update nach geeigneten Updates. Danach können Sie die Updates erneut aussetzen.
+Wählen Sie **Anhalten** aus, damit zugewiesene Geräte für einen Zeitraum von bis zu 35 Tagen (ab dem Zeitpunkt, zu dem der Ring ausgesetzt wurde) keine Feature- oder Qualitätsupdates mehr empfangen. Nach Verstreichen der maximalen Anzahl von Tagen wird die Aussetzung automatisch aufgehoben, und das Gerät sucht bei Windows Update nach geeigneten Updates. Nach diesem Suchvorgang können Sie die Updates erneut anhalten.
 Wenn Sie einen angehaltenen Updatering fortsetzen und anschließend erneut anhalten, wird die Anhaltedauer auf 35 Tage zurückgesetzt.
 
 ##### <a name="to-pause-a-ring"></a>So halten Sie einen Ring an
@@ -227,7 +224,7 @@ Wenn ein Gerät eine Richtlinie für Windows 10-Featureupdates erhält, geschieh
 
 3. Geben Sie unter **Grundeinstellungen** einen Namen und eine Beschreibung (optional) an, und wählen Sie für **Bereitzustellendes Featureupdate** die Windows-Version mit der gewünschten Funktionsgruppe aus. Klicken Sie dann auf **Weiter**.
 
-4. Klicken Sie unter **Zuweisungen** auf **Wählen Sie die Gruppen aus, die eingeschlossen werden sollen.** , und weisen Sie dann den Updatering mindestens einer Gruppe zu. Wählen Sie **Weiter** aus, um den Vorgang fortzusetzen.
+4. Klicken Sie unter **Zuweisungen** auf **+ Einzuschließende Gruppen auswählen**, und weisen Sie die Featureupdatebereitstellung mindestens einer Gruppe zu. Wählen Sie **Weiter** aus, um den Vorgang fortzusetzen.
 
 5. Überprüfen Sie die Einstellungen unter **Überprüfen + erstellen**, und klicken Sie auf **Erstellen**, um die Richtlinie des Windows 10-Featureupdates zu speichern.  
 
@@ -240,17 +237,6 @@ In diesem Bereich können Sie folgende Aktionen ausführen:
 - Wählen Sie **Löschen** aus, um die Richtlinie aus Intune zu löschen und sie von den Geräten zu entfernen.
 - Wählen Sie **Eigenschaften** aus, um die Bereitstellung zu ändern.  Wählen Sie im Bereich *Eigenschaften* die Option **Bearbeiten** aus, um die *Bereitstellungseinstellungen und Zuweisungen* zu öffnen, wo Sie dann die Bereitstellung ändern können.
 - Wählen Sie **Endbenutzer-Updatestatus** aus, um Informationen zur Richtlinie anzuzeigen.
-
-## <a name="migrate-update-settings-to-the-azure-portal"></a>Migrieren von Updateeinstellungen in das Azure-Portal
-
-Im klassischen Azure-Portal steht auch eine begrenzte Anzahl anderer Windows 10-Updateeinstellungen im Gerätekonfigurationsprofil zur Verfügung. Falls eine dieser Einstellungen konfiguriert ist, wenn Sie zum Azure-Portal migrieren, sollten Sie unbedingt die folgenden Aktionen ausführen:
-
-1. Erstellen Sie im Azure-Portal Windows 10-Updateringe mit den erforderlichen Einstellungen. Die Einstellung **Vorabfeatures zulassen** wird im Azure-Portal nicht unterstützt, da sie für die neuesten Windows 10-Builds nicht mehr relevant ist. Sie können die anderen drei Einstellungen und die anderen Windows 10-Updateeinstellungen konfigurieren, wenn Sie Updateringe erstellen.
-
-   > [!NOTE]
-   > Im klassischen Portal erstellte Windows 10-Updateeinstellungen werden nach der Migration nicht im Azure-Portal angezeigt. Allerdings werden diese Einstellungen angewendet. Wenn Sie diese Einstellungen migrieren und die migrierte Richtlinie über das Azure-Portal bearbeiten, werden die Einstellungen aus der Richtlinie entfernt.
-
-2. Löschen Sie die Updateeinstellungen im klassischen Portal. Wenn Sie zum Azure-Portal migriert sind und die gleichen Einstellungen einem Updatering hinzufügen, müssen Sie die Einstellungen im klassischen Portal löschen, um potenzielle Richtlinienkonflikte zu vermeiden. Zum Beispiel kommt es zu einem Konflikt, wenn die gleiche Einstellung mit verschiedenen Werten konfiguriert wird. Dies ist nicht einfach zu ermitteln, da die im klassischen Portal konfigurierte Einstellung nicht im Azure-Portal angezeigt wird.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

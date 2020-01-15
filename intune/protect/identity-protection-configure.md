@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fce03913042675588ea12e5399e6f5a1be04946
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a4f5d3a232cab25c60189132732a0ea3f347c74a
+ms.sourcegitcommit: 107fef144013b01ed768ca8973373f9cb3f0f7dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188248"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75683798"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Verwenden von Windows Hello for Business auf Windows 10-Geräten mit Microsoft Intune
 
@@ -48,8 +48,8 @@ In diesem Artikel erfahren Sie, wie Sie ein Gerätekonfigurationsprofil erstelle
 
 3. Geben Sie die folgenden Eigenschaften ein:
 
-   - **Name**: Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
-   - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+   - **Name:** Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
+   - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
    - **Plattform**: Wählen Sie **Windows 10 und höher** aus. Windows Hello for Business wird nur auf Geräten mit Windows 10 und höher unterstützt.
    - **Profiltyp**: Wählen Sie **Identity Protection** aus.
 
@@ -71,6 +71,9 @@ In diesem Artikel erfahren Sie, wie Sie ein Gerätekonfigurationsprofil erstelle
 5. Wenn Sie fertig sind, wählen Sie **OK** > **Erstellen** aus, um Ihre Änderungen zu speichern.
 
 Das Profil wird erstellt und in der Profilliste angezeigt. [Weisen](../configuration/device-profile-assign.md) Sie als nächstes dieses Profil Ihren Anforderungen entsprechend Benutzer- oder Gerätegruppen zu.
+
+> [!IMPORTANT]
+> Um die Bereitstellung mehrerer Benutzer für ein Gerät zu ermöglichen, geben Sie an, dass die Windows Hello for Business-Richtlinie auf die Geräte angewendet werden soll. Wenn die Richtlinie nur auf Benutzer angewendet wird, kann nur ein Benutzer für ein Gerät bereitgestellt werden.
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 
