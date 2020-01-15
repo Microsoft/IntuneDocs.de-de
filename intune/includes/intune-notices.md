@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 0c64f9a6afc054a3d22518c4305bda62a36d67c7
-ms.sourcegitcommit: 8ab98c2773f112f5cf2d817c170633b15de3dec2
+ms.openlocfilehash: e745290991da4d80c7e3839250edbfdd64ef1b7a
+ms.sourcegitcommit: 01c57ac880dcb5f474908977c89810f5bedaf326
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75323086"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760964"
 ---
 Diese Hinweise enthalten wichtige Informationen, die Ihnen bei der Vorbereitung auf künftige Änderungen und Features im Zusammenhang mit Intune helfen können.
 
@@ -55,19 +55,6 @@ Nach dem 20. Februar 2020 erhalten diese Geräte keine Sicherheitsupdates mehr
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Was muss ich als Vorbereitung auf diese Veränderung tun?
 Sie können Ihre Intune-Berichterstellung überprüfen, um zu sehen, welche Geräte oder Benutzer möglicherweise betroffen sind. Navigieren Sie zu „Geräte“ > „Alle Geräte“, und filtern Sie nach Betriebssystem. Sie können weitere Spalten hinzufügen, um besser bestimmen zu können, welche Benutzer in Ihrer Organisation Geräte mit Windows Phone 8.1 verwenden. Fordern Sie Ihre Endbenutzer dazu auf, Ihre Geräte auf eine unterstützte Betriebssystemversion upzugraden.
-
-
-### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune-Plan für die Änderung: Windows 10, Version 1703: für das Unternehmensportal wird die Unterstützung entfernt<!--5026679-->
-Windows 10, Version 1703 (auch als Windows 10 RS2 bekannt) wurde am 8. Oktober 2019 für Enterprise- und EDU-Editionen aus dem Betrieb genommen. Intune beendet die Unterstützung für die entsprechende Unternehmensportal-App für RS2/RS1 ab dem 26. Dezember 2019.
-
-#### <a name="how-does-this-affect-me"></a>Wie wirkt sich das auf mich aus?
-Des Weiteren werden in dieser bestimmten Version der Unternehmensportal-App keine neuen Features angezeigt, obwohl diese Version weiterhin bis zum 26. Dezember 2019 unterstützt wird. Zudem werden Sicherheitsupdates nach Bedarf für die Unternehmensportal-App bereitgestellt. Da die Windows 10 Version 1703 jedoch keine Sicherheitsupdates empfängt, sobald sie außer Betrieb genommen wird, wird dringend empfohlen, dass Sie Ihre Windows-Geräte auf eine neuere Windows-Version aktualisieren und sicherstellen, dass Sie die neueste Unternehmensportal-App besitzen, damit Sie weiterhin neue Features und zusätzliche Funktionen erhalten können.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Was muss ich als Vorbereitung auf diese Veränderung tun?
-Die Schritte, die Sie ausführen, hängen von der Konfiguration Ihrer Umgebung ab. Im Allgemeinen sollten Sie das Gerät identifizieren und aktualisieren, das die ältere Betriebssystemversion und/oder das Unternehmensportal auf dem Gerät besitzen. Zum Festlegen Ihrer Windows 10-Updateringe, melden Sie sich bei Intune an, wechseln Sie zu den Softwareupdates und anschließend zu „Windows 10-Updateringe“. Die neueste Version der Unternehmensportal-App lautet 10.3.5601.0. Weisen Sie Ihre Benutzer an, diese Version über den Microsoft Store herunterzuladen und somit für zukünftige Releases auf dem neuesten Stand zu bleiben. Sie können Intune auch zum Installieren der neuesten Version über [Microsoft Store für Unternehmen](https://docs.microsoft.com/intune/windows-store-for-business) auf Ihren Windows-Geräten verwenden.
-
-#### <a name="additional-information"></a>Zusätzliche Informationen
-[Manuelles Hinzufügen der Windows 10-Unternehmensportal-App mithilfe von Microsoft Intune](https://docs.microsoft.com/intune/store-apps-company-portal-app)
 
 
 ### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>Maßnahme erforderlich: Verwenden von Microsoft Edge für Ihre geschützte Intune-Browserumgebung<!--5728447-->

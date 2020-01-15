@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 309860fb5ddf6fa9488ecaf395534bf869234176
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: ebeb5830136ad6dae19babbc8ecf45c1d6e5c36c
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547860"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885974"
 ---
 # <a name="android-device-administrator-enrollment"></a>Android-Geräteadministratorregistrierung
 
@@ -36,10 +36,6 @@ Aus den gleichen Gründen empfehlen wir auch, dass Sie Geräte aus der Gerätead
 Weitere Informationen zur Intune-Unterstützung für den Android-Geräteadministrator finden Sie im Abschnitt [Hinweise](../fundamentals/whats-new.md#decreasing-support-for-android-device-administrator).
 
 Wenn Sie sich dennoch dafür entscheiden, dass Benutzer ihre Android-Geräte mit der Geräteadministratorverwaltung registrieren lassen, fahren Sie mit dem nächsten Abschnitt fort.  
-
-
-> [!Note]  
-> Android 10 und höher wird in der hybriden mobilen Geräteverwaltung (Hybrid-MDM; Verwaltung von Intune mit Configuration Manager-Konsole) nicht unterstützt, da Hybrid-MDM am 1. September 2019 außer Betrieb geht. Wenn Sie immer noch Hybrid-MDM verwenden, sollten Sie so bald wie möglich zu eigenständigem Intune migrieren. Kontaktieren Sie den Support, wenn Sie Hilfe bei der Migration benötigen. Weitere Informationen finden Sie unter [Wechsel von der hybriden mobilen Geräteverwaltung zu Intune in Azure](https://aka.ms/hybrid_notification).
 
 Weitere Informationen zu den Android Enterprise-Features von Google finden Sie in den folgenden Artikeln:
 - [Google-Leitfaden für die Migration vom Geräteadministrator zu Android Enterprise](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
