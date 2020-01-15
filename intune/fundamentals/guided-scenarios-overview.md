@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 01/09/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebb17324355fff9631ef74a76388ef0ab797d437
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: b833e5265387637a35bfcdf79f4ae5f37558de61
+ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899144"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75839134"
 ---
 # <a name="intune-guided-scenarios-overview"></a>Übersicht über geführte Szenarios zu Intune 
 

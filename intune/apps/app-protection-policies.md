@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8657b6fa8110b4ea4bbf8ec0841d69197624dd9f
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 9b5f973e5ce169edcf6149b0588c905d8497cca2
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563726"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885745"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Erstellen und Zuweisen von App-Schutzrichtlinien
 
@@ -93,9 +93,6 @@ Befolgen Sie beim Erstellen neuer App-Schutzrichtlinien für iOS-/iPadOS- und An
 
 9. Klicken Sie auf **Weiter**, um die Seite **Zuweisungen** anzuzeigen.<br>
    Mit der Seite **Zuweisungen** können Sie die App-Schutzrichtlinie bestimmten Gruppen von Benutzern zuweisen.
-   
-    >[!IMPORTANT]
-    > Wenn Sie Intune mit Configuration Manager verwenden, um Ihre Geräte zu verwalten, wird die Richtlinie nur auf Benutzer in der Gruppe angewendet, die Sie ausgewählt haben. Mitglieder untergeordneter Gruppen, die in der ausgewählten Gruppe geschachtelt sind, sind nicht betroffen.
 
 10. Klicken Sie auf **Next: Review and create** (Weiter: Überprüfen und erstellen), um die Werte und Einstellungen zu überprüfen, die Sie für diese App-Schutzrichtlinie eingegeben haben.
 
@@ -201,6 +198,6 @@ Eine vollständige Liste der Richtlinieneinstellungen für iOS und Android finde
 ## <a name="next-steps"></a>Nächste Schritte
 [Überwachen der Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](app-protection-policies-monitor.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 * [Was Sie erwartet, wenn Ihre Android-App von App-Schutzrichtlinien verwaltet wird](../fundamentals/end-user-mam-apps-android.md)
 * [Was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird](../fundamentals/end-user-mam-apps-ios.md)

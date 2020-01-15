@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/09/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdc849405b7404203faa6e86d3fed1ea8e35ec43
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 80ae9b3b1ab274e236ad43c52569574718d3eec4
+ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414637"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75839302"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Verwalten der Datenübertragung zwischen iOS-Apps in Microsoft Intune
 
@@ -74,7 +74,7 @@ Die Konfiguration der Benutzer-UPN-Einstellung ist **erforderlich**, damit Gerä
 
    |MDM-Anbieter eines Drittanbieters| Konfigurationsschlüssel | Werttyp | Der Konfigurationswert|
    | ------- | ---- | ---- | ---- |
-   |Microsoft Intune| IntuneMAMUPN | Zeichenfolge | {{UserPrincipalName}}|
+   |Microsoft Intune| IntuneMAMUPN | Zeichenfolge | {{UserPrincipalName}}|
    |VMware AirWatch| IntuneMAMUPN | Zeichenfolge | {UserPrincipalName}|
    |MobileIron | IntuneMAMUPN | Zeichenfolge | ${userUPN} **oder** ${userEmailAddress} |
    |Citrix-Endpunktverwaltung | IntuneMAMUPN | Zeichenfolge | ${user.userprincipalname} |
@@ -84,7 +84,7 @@ Die Konfiguration der Benutzer-UPN-Einstellung ist **erforderlich**, damit Gerä
 > Wenn Sie für Outlook für iOS eine App-Konfigurationsrichtlinie für verwaltete Geräte mit der Option zum Verwenden des Konfigurations-Designers bereitstellen und **Nur Geschäfts-, Schul- oder Unikonten zulassen** aktivieren, wird im Hintergrund automatisch der Konfigurationsschlüssel „IntuneMAMUPN“ für die Richtlinie konfiguriert. Weitere Informationen finden Sie im Abschnitt mit häufig gestellten Fragen des Artikels [Neue Funktionen bei Konfigurationsrichtlinien für Outlook für iOS und Android – allgemeine App-Konfiguration](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481). 
 
 
-### <a name="example-2-end-user-experience"></a>Beispiel 2: Endbenutzererfahrung
+### <a name="example-2-end-user-experience"></a>Beispiel 2: Ablauf für Endbenutzer
 
 *Freigabe aus einer* per Richtlinie verwalteten App *für andere Anwendungen per Freigabe über das Betriebssystem*
 
@@ -124,5 +124,5 @@ Die Richtlinieneinstellung **Require app PIN** (App-PIN erforderlich) kann einfa
 Kümmern Sie sich zuerst um das [Erstellen und Zuweisen von App-Schutzrichtlinien](app-protection-policies.md) für die iOS-App. Unter [Überprüfen der Einrichtung von App-Schutzrichtlinien](app-protection-policies-validate.md) erhalten Sie weitere Informationen zum Testen einer App-Schutzrichtlinie.
 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 [Was sind Intune-App-Schutzrichtlinien?](app-protection-policy.md)

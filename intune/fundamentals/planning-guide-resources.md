@@ -17,12 +17,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a23409b03047cac8edb0a50ad5188e006d35049a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 23b7264f2b7c9be0805ae30afca5c8cb15b83482
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505146"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956245"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Zusätzliche Ressourcen für die Planung Ihrer Intune-Bereitstellung
 
@@ -39,7 +39,7 @@ Hier ist eine Liste der Tabellenvorlagen für jeden Abschnitt.
 | Herausforderungen bei der Bereitstellung |Nutzungsbedingungen|Test zur Überprüfung im Endbenutzerszenario|
 | Anwendungsfallszenarien |Konfigurationsrichtlinie| |
 | Anforderungen für Anwendungsfallszenarien |Zertifikatprofil| |
-| Rolloutplan |Wi-Fi-Profil| |
+| Rolloutplan |WLAN-Profil| |
 | Kommunikationsplan für Rollout|VPN-Profil| |
 | |  E-Mail-Profil | |
 | | Applications | |
@@ -50,7 +50,7 @@ Hier ist eine Liste der Tabellenvorlagen für jeden Abschnitt.
 
 Die folgenden Ressourcen enthalten zusätzliche Informationen, die während der Planungs-, Entwurfs- und Implementierungsphase der Intune-Bereitstellung nützlich sein können.
 
-- [Microsoft Intune-Dokumentation](http://docs.microsoft.com/intune/): Die gesamte Intune-Dokumentation.
+- [Microsoft Intune-Dokumentation](https://docs.microsoft.com/intune/): Die gesamte Intune-Dokumentation.
 
 - [Microsoft Trust Center](https://www.microsoft.com/TrustCenter): Lernen Sie die Herangehensweise von Microsoft bei Sicherheit, Datenschutz, Konformität und Transparenz in allen seinen Cloudprodukten und -diensten kennen.
 

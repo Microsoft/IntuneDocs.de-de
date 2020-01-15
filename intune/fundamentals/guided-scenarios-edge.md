@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 01/09/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e86f3a469169e7a805cb3f56e570ba4d3a90e925
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 88beb8f4791c127b0a225878f5bc43b6dd9b4025
+ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585695"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75839373"
 ---
 # <a name="guided-scenario---deploy-microsoft-edge-for-mobile"></a>Geführtes Szenario: Bereitstellen von Microsoft Edge für Mobilgeräte 
 
