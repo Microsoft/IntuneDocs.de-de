@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cef30238a4470395ccf58cf4d0619db78dd85b5a
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 3da8e89679f974c7d91cf19ae37365f75217d153
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563458"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548029"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Verwenden von PowerShell-Skripts auf Windows 10-Geräten in Intune
 
@@ -64,9 +64,9 @@ Für die Intune-Verwaltungserweiterung sind folgende Voraussetzungen erforderlic
 
   - Gemeinsam verwaltete Geräte, die Configuration Manager und Intune verwenden – Stellen Sie sicher, dass die Workload **Apps** auf **Pilot Intune** oder **Intune** festgelegt ist. Weitere Informationen finden Sie in den folgenden Artikeln: 
   
-    - [Was ist Co-Verwaltung?](https://docs.microsoft.com/sccm/comanage/overview) 
-    - [Client-Apps-Workload](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
-    - [Verschieben von Configuration Manager-Workloads zu Intune](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+    - [Was ist Co-Verwaltung?](https://docs.microsoft.com/configmgr/comanage/overview) 
+    - [Client-Apps-Workload](https://docs.microsoft.com/configmgr/comanage/workloads#client-apps)
+    - [Umstellen von Configuration Manager-Workloads auf Intune](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads)
   
 > [!TIP]
 > Stellen Sie sicher, dass die Geräte in Azure AD [eingebunden](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) sind. Geräte, die bei Azure AD nur [registriert](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) sind, erhalten Ihre Skripts nicht.
@@ -79,8 +79,8 @@ Für die Intune-Verwaltungserweiterung sind folgende Voraussetzungen erforderlic
     ![Hinzufügen und Verwenden von PowerShell-Skripts in Microsoft Intune](./media/intune-management-extension/mgmt-extension-add-script.png)
 
 3. Geben Sie unter **Basics** (Grundlegende Einstellungen) die folgenden Eigenschaften ein, und klicken Sie auf **Weiter**:
-    - **Name**: Geben Sie einen Namen für das PowerShell-Skript ein. 
-    - **Beschreibung**: Geben Sie eine Beschreibung für das PowerShell-Skript ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    - **Name:** Geben Sie einen Namen für das PowerShell-Skript ein. 
+    - **Beschreibung:** Geben Sie eine Beschreibung für das PowerShell-Skript ein. Diese Einstellung ist optional, wird jedoch empfohlen.
 4. Geben Sie unter **Skripteinstellungen** die folgenden Eigenschaften ein, und klicken Sie auf **Weiter**:
     - **Skriptspeicherort:** Wechseln Sie zum PowerShell-Skript. Das Skript muss kleiner als 200 KB (ASCII) sein.
     - **Dieses Skript mit den Anmeldeinformationen des angemeldeten Benutzers ausführen:** Klicken Sie auf **Ja**, um das Skript mit den Anmeldeinformationen des Benutzers auf dem Gerät auszuführen. Klicken Sie auf **Nein** (Standard), um das Skript im Systemkontext auszuführen. Viele Administratoren entscheiden sich für die Option **Ja**. Klicken Sie auf **Nein**, wenn das Skript nicht im Systemkontext ausgeführt werden muss.
@@ -134,7 +134,7 @@ Wählen Sie unter **PowerShell-Skripts** das zu überwachende Skript aus, klicke
 
 ## <a name="intune-management-extension-logs"></a>Protokolle zur Intune-Verwaltungserweiterung
 
-Agentprotokolle auf dem Clientcomputer befinden sich in der Regel unter `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Sie können mit [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools) diese Protokolldateien anzeigen. 
+Agentprotokolle auf dem Clientcomputer befinden sich in der Regel unter `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Sie können mit [CMTrace.exe](https://docs.microsoft.com/configmgr/core/support/cmtrace) diese Protokolldateien anzeigen.
 
 ![Screenshot oder Beispiel-Agent-Protokolle von CMTrace in Microsoft Intune](./media/apps-win32-app-management/apps-win32-app-10.png)  
 
