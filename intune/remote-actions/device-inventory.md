@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c38aaf28440511720280a3c5a1ebda5b9f2ab1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ce3f73834ffdc2648dae345f8fa2a8233d2bb8c9
+ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74819781"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75756021"
 ---
 # <a name="see-device-details-in-intune"></a>Anzeigen von Gerätedetails in Intune
 
@@ -94,6 +94,9 @@ Je nach Netzbetreiber der Geräte werden möglicherweise nicht alle Details erfa
 |Verschlüsselt|Wenn **Ja** ausgewählt ist, werden die auf dem Gerät gespeicherten Daten verschlüsselt.|Windows, iOS, Android|
 
 \* Nicht verfügbar in Android mit dem Richtlinien-Manager von Google, wie z. B. vollständig verwaltete und dedizierte Geräte
+
+> [!Note]  
+> Die Telefonnummer wird auf dedizierten oder vollständig verwalteten Android Enterprise-Geräten nicht inventarisiert.
 
 ## <a name="next-steps"></a>Nächste Schritte
 Finden Sie heraus, welche Aktionen beim [Verwalten Ihrer Geräte](device-management.md) mit Intune noch möglich sind.

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5cd8c1a1d17ca38c42b6ed6821d20367b147ad6
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: d8397dea1dca97122aac6716ee3d51295b913538
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562378"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885936"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>Einrichten der Intune-Registrierung von vollständig verwalteten Android Enterprise-Geräten 
 
@@ -36,7 +36,7 @@ Intune unterstützt Sie beim Bereitstellen von Apps und Einstellungen für Andro
 
 ## <a name="technical-requirements"></a>Technische Anforderungen
 
-Sie benötigen einen eigenständigen Intune-Mandanten, um vollständig verwaltete Android Enterprise-Geräte zu verwalten. Die Verwaltung vollständig verwalteter Geräte ist weder im hybriden Modus (mit SCCM verknüpft) noch in der älteren Verwaltungskonsole von Silverlight verfügbar.
+Sie benötigen einen eigenständigen Intune-Mandanten, um vollständig verwaltete Android Enterprise-Geräte zu verwalten. Die Verwaltung vollständig verwalteter Geräte ist in der älteren Silverlight-Verwaltungskonsole nicht verfügbar.
 
 Geräte müssen folgende Anforderungen erfüllen, um als vollständig verwaltete Android Enterprise-Geräte verwaltet zu werden:
 

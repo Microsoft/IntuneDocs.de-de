@@ -17,12 +17,12 @@ ms.reviewer: spshumwa
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b2ce91cea1fdef211a8e6a9dc1c19086f355385
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9cbdd99dfb7b42677048b4f214e7de537db0edda
+ms.sourcegitcommit: 5db0769274d788a1218dca3ad90d8649927becb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585272"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925825"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Massenregistrierung für Windows-Geräte
 
@@ -95,7 +95,7 @@ Sie können überprüfen, ob die Einstellungen in Ihrem Paket im **Provisioning-
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>Massenregistrierung über WLAN 
 
-Geräte, die mit der Massenregistrierung registriert wurde, können Zertifikate, die der Benutzer als Ziel verwendet, sowie die WLAN-Bereitstellung nicht verwenden. Diese Verbindungen müssen Sie über [Zertifikate auf Geräteebene](../protect/certificates-configure.md) verwalten. 
+Wenn Sie kein offenes Netzwerk verwenden, müssen Sie [Zertifikate auf Geräteebene](../protect/certificates-configure.md) verwenden, um Verbindungen zu initiieren. Geräte, die per Massenvorgang registriert wurden, können keine benutzerspezifischen Zertifikate für den Netzwerkzugriff verwenden. 
 
 ### <a name="conditional-access"></a>Bedingter Zugriff
 Der bedingte Zugriff ist für Windows-Geräte nicht verfügbar, die mit der Massenregistrierung registriert wurden.
