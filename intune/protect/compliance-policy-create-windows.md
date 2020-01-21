@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60a87340c1a275b8fb878ef2f3891cca23fc9c85
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: 0ca5d475f92cbe3298689273dcdf0da1644078b2
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946657"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547033"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Einstellungen für Windows 10 und höher, um Geräte mit Intune als konform oder nicht konform zu kennzeichnen
 
@@ -102,9 +102,9 @@ Weitere Ressourcen:
 
 Gilt nur für gemeinsam verwaltete Geräte mit Windows 10 und höher. Ausschließliche Intune-Geräte geben einen „Nicht verfügbar“-Status zurück.
 
-- **Gerätekonformität von System Center Configuration Manager erforderlich**:  
+- **Geräte Konformität von Configuration Manager erforderlich**:  
   - **Nicht konfiguriert** (*Standardeinstellung*): Intune prüft keine der Configuration Manager-Einstellungen auf Konformität.
-  - **Erforderlich**: Erzwingt, dass alle Einstellungen (Konfigurationselemente) in System Center Configuration Manager konform sind.  
+  - **Erforderlich**: Erzwingt, dass alle Einstellungen (Konfigurationselemente) in Configuration Manager konform sind.  
 
     Beispielsweise sollen alle Softwareupdates auf Geräten installiert werden. Im Configuration Manager hat diese Anforderung den Zustand „Installiert“. Falls sich Programme auf dem Gerät in einem unbekannten Zustand befinden, so ist das Gerät in Intune nicht konform.
 
@@ -197,7 +197,7 @@ Gilt nur für gemeinsam verwaltete Geräte mit Windows 10 und höher. Ausschlie�
 
 *Die folgenden Kompatibilitäts Einstellungen werden von Windows 10 Desktop unterstützt.*
 
-- **Microsoft Defender-Antischadsoftware**:  
+- **Microsoft Defender Antimalware**:  
   - **Nicht konfiguriert** (*Standard*): InTune steuert weder den Dienst noch die vorhandenen Einstellungen.
   - **Erforderlich** : Aktivieren Sie den Microsoft Defender-antischadsoftwaredienst, und verhindern Sie, dass Benutzer ihn ausschalten.
 
@@ -229,7 +229,7 @@ Gilt nur für gemeinsam verwaltete Geräte mit Windows 10 und höher. Ausschlie�
   Verwenden Sie diese Einstellung, um die Risikobewertung Ihrer Dienste zur Verteidigung gegen Bedrohungen als Konformitätsvoraussetzung zu fordern. Wählen Sie die maximal zulässige Bedrohungsstufe:
   - **Nicht konfiguriert** (*Standardeinstellung*)  
   - **Löschen**: Diese Option ist die sicherste, da auf dem Gerät keine Bedrohungen vorhanden sein können. Wenn auf dem Gerät Bedrohungen jeglicher Stufen erkannt werden, wird es als nicht konform bewertet.
-  - **Niedrig**: Das Gerät wird als konform bewertet, wenn nur Bedrohungen auf niedrigen Stufen vorliegen. Durch Bedrohungen höherer Stufen wird das Gerät in einen nicht kompatiblen Status versetzt.
+  - **Niedrig**: Das Gerät wird als konform bewertet, wenn nur Bedrohungen auf niedrigen Stufen vorliegen. Jegliche Bedrohung einer höheren Stufe bewirkt, dass das Gerät in den Status „Nicht konform“ eingestuft wird.
   - **Mittel**: Das Gerät wird als kompatibel bewertet, wenn die auf dem Gerät vorhandenen Bedrohungen niedriger oder mittlerer Stufe sind. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht konform bewertet.
   - **Hoch**: Dies ist die am wenigsten sichere Option, die alle Bedrohungsebenen zulässt. Es ist möglicherweise hilfreich, diese Lösung nur zu Berichtszwecken zu verwenden.
   

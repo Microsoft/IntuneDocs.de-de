@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5519bdc405e725556db18d36fa98289c4edb5090
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 791e2a1313480bdf1ad95988d48664d6620ba0b3
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992900"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206345"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>macOS-Gerätefunktionseinstellungen in Intune
 
@@ -43,9 +43,9 @@ In diesem Artikel werden diese Einstellungen mit ihren Funktionsbeschreibungen a
 ### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung und automatisierte Geräteregistrierung 
 
 - **IP-Adresse**: Geben Sie die IPv4- oder IPv6-Adresse des Druckers ein. Wenn Sie den Hostnamen verwenden, um Drucker zu identifizieren, erhalten Sie die IP-Adresse, indem Sie den Drucker in der Terminal-App pingen. Der Abschnitt [Abrufen von IP-Adresse und Pfad](#get-the-ip-address-and-path) (in diesem Artikel) enthält weitere Details.
-- **Pfad**: Geben Sie den Pfad des Druckers ein. Der Pfad ist für Drucker in Ihrem Netzwerk in der Regel `ipp/print`. Der Abschnitt [Abrufen von IP-Adresse und Pfad](#get-the-ip-address-and-path) (in diesem Artikel) enthält weitere Details.
-- **Port** (iOS 11.0 und höher): Geben Sie den Lauschport des AirPrint-Ziels ein. Wenn Sie diese Eigenschaft leer lassen, verwendet AirPrint den Standardport.
-- **TLS** (iOS 11.0 und höher): Klicken Sie auf **Aktivieren**, um AirPrint-Verbindungen mit Transport Layer Security (TLS) zu schützen.
+- **Pfad:** Geben Sie den Pfad des Druckers ein. Der Pfad ist für Drucker in Ihrem Netzwerk in der Regel `ipp/print`. Der Abschnitt [Abrufen von IP-Adresse und Pfad](#get-the-ip-address-and-path) (in diesem Artikel) enthält weitere Details.
+- **Port** (iOS 11.0 und höher): Geben Sie den Lauschport des AirPrint-Ziels ein. Wenn Sie diese Eigenschaft leer lassen, verwendet AirPrint den Standardport.
+- **TLS** (iOS 11.0 und höher): Wählen Sie **Aktivieren** aus, um AirPrint-Verbindungen mit Transport Layer Security (TLS) zu sichern.
 
 - **Fügen** Sie den AirPrint-Server hinzu. Sie können viele AirPrint-Server hinzufügen.
 
@@ -87,9 +87,9 @@ Um AirPrinter-Server hinzuzufügen, benötigen Sie die IP-Adresse des Druckers, 
 
 #### <a name="window-layout"></a>Fensterlayout
 
-- **Zusätzliche Informationen in der Menüleiste anzeigen**: Wenn der Zeitbereich auf der Menüleiste ausgewählt ist, zeigt **Zulassen** den Hostnamen und die macOS-Version. Bei Wahl der Standardeinstellung **Nicht konfiguriert** werden diese Informationen nicht auf der Menüleiste angezeigt.
-- **Banner**: Geben Sie eine Meldung ein, die auf dem Anmeldebildschirm des Geräts gezeigt wird. Geben Sie beispielsweise Ihre Unternehmensinformationen, eine Begrüßungsmeldung, Informationen bei Verlust eines Geräts usw. ein.
-- **Anmeldeformat wählen**: Wählen Sie, wie sich Benutzer am Gerät anmelden. Folgende Optionen sind verfügbar:
+- **Zusätzliche Informationen in der Menüleiste anzeigen**: Wenn der Zeitbereich auf der Menüleiste ausgewählt ist, zeigt **Zulassen** den Hostnamen und die macOS-Version an. Bei Wahl der Standardeinstellung **Nicht konfiguriert** werden diese Informationen nicht auf der Menüleiste angezeigt.
+- **Banner**: Geben Sie eine Meldung ein, die auf dem Anmeldebildschirm des Geräts angezeigt wird. Geben Sie beispielsweise Ihre Unternehmensinformationen, eine Begrüßungsmeldung, Informationen bei Verlust eines Geräts usw. ein.
+- **Anmeldeformat auswählen**: Wählen Sie aus, wie Benutzer sich beim Gerät anmelden können. Folgende Optionen sind verfügbar:
   - **Nach Benutzernamen und Kennwort fragen** (Standard): Erfordert, dass Benutzer einen Benutzernamen und ein Kennwort eingeben.
   - **Alle Benutzer auflisten und Kennwort anfordern**: Erfordert, dass Benutzer ihren Benutzernamen in einer Benutzerliste auswählen und dann ihr Kennwort eingeben. Konfigurieren Sie auch Folgendes:
 
@@ -97,13 +97,13 @@ Um AirPrinter-Server hinzuzufügen, benötigen Sie die IP-Adresse des Druckers, 
     - **Mobile Konten**: Bei Wahl von **Ausblenden** werden mobile Konten nicht in der Benutzerliste angezeigt. **Nicht konfiguriert** (Standard): Zeigt die mobilen Konten in der Benutzerliste. Einige mobile Konten werden möglicherweise als Netzwerkbenutzer angezeigt.
     - **Netzwerkbenutzer**: Klicken Sie auf **Anzeigen**, um die Netzwerkbenutzer in der Benutzerliste aufzulisten. **Nicht konfiguriert** (Standard): Zeigt die Konten von Netzwerkbenutzern nicht in der Benutzerliste an.
     - **Administratorbenutzer**: Bei Wahl von **Ausblenden** werden Administratorbenutzerkonten nicht in der Benutzerliste angezeigt. **Nicht konfiguriert** (Standard): Zeigt die Administratorbenutzerkonten in der Benutzerliste an.
-    - **Andere Benutzer**: Klicken Sie auf **Anzeigen**, um **andere** Benutzer in der Benutzerliste aufzulisten. **Nicht konfiguriert** (Standard): Zeigt andere Benutzerkonten nicht in der Benutzerliste an.
+    - **Andere Benutzer**: Wählen Sie **Anzeigen** aus, um **Weitere...** Benutzer in der Benutzerliste aufzulisten. **Nicht konfiguriert** (Standard): Zeigt andere Benutzerkonten nicht in der Benutzerliste an.
 
 #### <a name="login-screen-power-settings"></a>Energieeinstellungen auf dem Anmeldebildschirm
 
 - **Schaltfläche „Herunterfahren“** : Bei Wahl von **Ausblenden** wird die Schaltfläche „Herunterfahren“ nicht auf dem Anmeldebildschirm angezeigt. Bei Wahl der Standardeinstellung **Nicht konfiguriert** wird die Schaltfläche „Herunterfahren“ gezeigt.
 - **Schaltfläche „Neu starten“** : Bei Wahl von **Ausblenden** wird die Schaltfläche „Neu starten“ nicht auf dem Anmeldebildschirm angezeigt. Bei Wahl der Standardeinstellung **Nicht konfiguriert** wird die Schaltfläche „Neu starten“ gezeigt.
-- **Schaltfläche „Standby“** : Bei Wahl von **Ausblenden** wird die Schaltfläche „Standby“ nicht auf dem Anmeldebildschirm angezeigt. Bei Wahl der Standardeinstellung **Nicht konfiguriert** wird die Schaltfläche „Standby“ gezeigt.
+- **Standbytaste**: Bei Wahl von **Ausblenden** wird die Schaltfläche „Standby“ nicht auf dem Anmeldebildschirm angezeigt. Bei Wahl der Standardeinstellung **Nicht konfiguriert** wird die Schaltfläche „Standby“ gezeigt.
 
 #### <a name="other"></a>Andere
 
@@ -117,7 +117,7 @@ Nachdem sich Benutzer bei den Geräten angemeldet haben, beeinflussen die folgen
 - **Neustart deaktivieren**: Bei Wahl von **Deaktivieren** werden Benutzer am Auswählen der Option **Neu starten** gehindert, nachdem sich der Benutzer angemeldet hat. Die Standardeinstellung **Nicht konfiguriert** ermöglicht Benutzern das Auswählen des Menüelements **Neu starten** auf dem Gerät.
 - **Ausschalten deaktivieren**: Bei Wahl von **Deaktivieren** werden Benutzer am Auswählen der Option **Ausschalten** gehindert, nachdem sich der Benutzer angemeldet hat. Die Standardeinstellung **Nicht konfiguriert** ermöglicht Benutzern das Auswählen des Menüelements **Ausschalten** auf dem Gerät.
 - **Abmelden deaktivieren** (macOS 10.13 und höher): Bei Wahl von **Deaktivieren** werden Benutzer am Auswählen der Option **Abmelden** gehindert, nachdem sich der Benutzer angemeldet hat. Die Standardeinstellung **Nicht konfiguriert** ermöglicht Benutzern das Auswählen des Menüelements **Abmelden** auf dem Gerät.
-- **Sperrbildschirm deaktivieren** (macOS 10.13 und höher): Bei Wahl von **Deaktivieren** werden Benutzer am Auswählen der Option **Sperrbildschirm** gehindert, nachdem sich der Benutzer angemeldet hat. Die Standardeinstellung **Nicht konfiguriert** ermöglicht Benutzern das Auswählen des Menüelements **Sperrbildschirm** auf dem Gerät.
+- **Sperrbildschirm deaktivieren** (macOS 10.13 und höher): Bei Wahl von **Deaktivieren** werden Benutzer am Auswählen der Option **Bildschirm sperren** gehindert, nachdem sich der Benutzer angemeldet hat. Die Standardeinstellung **Nicht konfiguriert** ermöglicht Benutzern das Auswählen des Menüelements **Sperrbildschirm** auf dem Gerät.
 
 ## <a name="single-sign-on-app-extension"></a>App-Erweiterung für einmaliges Anmelden
 
@@ -135,7 +135,7 @@ Diese Funktion gilt für:
   - **Kerberos**: Verwenden Sie die integrierte Kerberos-Erweiterung von Apple, die unter macOS Catalina 10,15 und höher enthalten ist. Bei dieser Option handelt es sich um eine Kerberos-spezifische **Version der Anmelde Informationen-App-** Erweiterung.
 
   > [!TIP]
-  > Mit den Typen **Redirect** und **Credential** fügen Sie eigene Konfigurationswerte hinzu, um die Erweiterung zu durchlaufen. Wenn **Sie Anmelde Informationen verwenden, sollten**Sie in Erwägung gezogen werden, die von Apple bereitgestellten integrierten Konfigurationseinstellungen im **Kerberos** -Typ zu verwenden.
+  > Mit den Typen **Redirect** und **Credential** fügen Sie eigene Konfigurationswerte hinzu, um die Erweiterung zu durchlaufen. Wenn Sie Anmelde Informationen **verwenden, sollten**Sie in Erwägung gezogen werden, die von Apple bereitgestellten integrierten Konfigurationseinstellungen im **Kerberos** -Typ zu verwenden.
 
 - **Erweiterungs-ID** (Redirect und Credential): Geben Sie die Bündel-ID ein, die Ihre SSO-App-Erweiterung identifiziert, z. b. `com.apple.ssoexample`.
 - **Team-ID** (Redirect und Credential): Geben Sie die Team-ID Ihrer SSO-App-Erweiterung ein. Eine Team-ID ist eine Zeichenfolge mit einer alphanumerischen Zeichenfolge (Ziffern und Buchstaben) mit 10 Zeichen, wie z. b. `ABCDE12345`. 
@@ -183,7 +183,7 @@ Diese Funktion gilt für:
 - Limit für die Kenn **Wort Wiederverwendung** (nur Kerberos): Geben Sie die Anzahl neuer Kenn Wörter (von 1-24) ein, die verwendet werden müssen, bis ein vorheriges Kennwort für die Domäne wieder verwendet werden kann. **Nicht konfiguriert** (Standard) erzwingt keine Kenn Wort Wiederverwendungs Beschränkung.
 - **Minimal Kennwort** (nur Kerberos): Geben Sie die Anzahl von Tagen ein, die ein Kennwort für die Domäne verwendet werden muss, bevor ein Benutzer es ändern kann. **Nicht konfiguriert** (Standard) erzwingt kein minimal Alter von Kenn Wörtern, bevor Sie geändert werden können.
 - **Benachrichtigung über Kenn Wort Ablauf** (nur Kerberos): Geben Sie die Anzahl von Tagen ein, bevor ein Kennwort abläuft, damit Benutzer benachrichtigt werden, dass Ihr Kennwort abläuft. **Nicht konfiguriert** (Standard) verwendet `15` Tage.
-- **Kennwortablauf** (nur Kerberos): Geben Sie die Anzahl der Tage an, nach denen das Gerätekennwort geändert werden muss. **Nicht konfiguriert** (Standard) bedeutet, dass Benutzer Kennwörter nie ablaufen.
+- **Kennwortablauf** (nur Kerberos): Geben Sie die Anzahl der Tage an, bis das Gerätekennwort geändert werden muss. **Nicht konfiguriert** (Standard) bedeutet, dass Benutzer Kennwörter nie ablaufen.
 - **URL für Kenn Wort Änderung** (nur Kerberos): Geben Sie die URL ein, die gestartet wird, wenn der Benutzer eine Kerberos-Kenn Wort Änderung initiiert.
 - **Prinzipal Name** (nur Kerberos): Geben Sie den Benutzernamen des Kerberos-Prinzipals ein. Sie müssen den Bereichs Namen nicht einschließen. In `user@contoso.com`ist `user` z. b. der Prinzipal Name, und `contoso.com` ist der Bereichs Name.
 
@@ -219,7 +219,7 @@ Diese Funktion gilt für:
 
   `osascript -e 'id of app "ExampleApp"'`
 
-- **Domäne**: Geben Sie die Website Domäne ein, die einer APP zugeordnet werden soll. Die Domäne enthält einen Diensttyp und einen voll qualifizierten Hostnamen, z. b. `webcredentials:www.contoso.com`.
+- **Domäne**: Geben Sie die Website Domäne ein, die einer APP zugeordnet werden soll. Die Domäne enthält einen Diensttyp und einen voll qualifizierten Hostnamen, z. b. `webcredentials: www.contoso.com`.
 
   Sie können alle Unterdomänen einer zugeordneten Domäne vergleichen, indem Sie `*.` (ein Sternchen-Platzhalter und einen Zeitraum) vor dem Anfang der Domäne eingeben. Der Zeitraum ist erforderlich. Exakte Domänen haben eine höhere Priorität als Platzhalter Domänen. Daher werden Muster aus übergeordneten Domänen abgeglichen, *Wenn* in der voll qualifizierten Unterdomäne keine Übereinstimmung gefunden wird.
 

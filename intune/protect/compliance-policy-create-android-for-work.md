@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 01/07/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be1fbb72821b61566da84d6f98094c9a2f6ffef2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 60244bb268f7becadc427c397d7c2d1562bcf6b5
+ms.sourcegitcommit: ea81ad5f33f18d9fe43254e27e02de5eaef74a05
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810262"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75722605"
 ---
 # <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Android Enterprise-Einstellungen, um Geräte mit Intune als konform oder nicht konform zu kennzeichnen
 
@@ -54,13 +54,7 @@ Als Intune-Administrator verwenden Sie diese Konformitätseinstellungen, um die 
   - **Hoch**: Dies ist die am wenigsten sichere Option, die alle Bedrohungsebenen zulässt. Es ist möglicherweise hilfreich, diese Lösung nur zu Berichtszwecken zu verwenden.
   
 > [!NOTE] 
-> Die folgenden Anbieter von Mobile Threat Defense (MTD) unterstützen die Bereitstellung von Android-Unternehmens Geräte Besitzern mithilfe der APP-Konfiguration:
-> - Better Mobile 
-> - Pradeo
-> - Sophos Mobile
-> - Zimperium 
->  
->  Wenden Sie sich an Ihren MTD-Anbieter, um genau die erforderliche Konfiguration für die Unterstützung von Android-Plattformen für Gerätebesitzer in InTune Diese Liste wird aktualisiert, wenn MTD-Parser Android-Szenarios für Unternehmens Gerätebesitzer unterstützen. 
+> Alle Anbieter von Mobile Threat Defense (MTD) werden in bereit Stellungen von Android-Unternehmens Geräte Besitzern mithilfe der APP-Konfiguration unterstützt. Wenden Sie sich an Ihren MTD-Anbieter, um genau die erforderliche Konfiguration für die Unterstützung von Android-Plattformen für Gerätebesitzer in InTune
 
 #### <a name="google-play-protect"></a>Google Play Protect
 
@@ -73,15 +67,15 @@ Als Intune-Administrator verwenden Sie diese Konformitätseinstellungen, um die 
 
 #### <a name="operating-system-version"></a>Version des Betriebssystems
 
-- **Mindestens erforderliche Betriebssystemversion:** Wenn ein Gerät nicht die Anforderungen an die mindestens erforderliche Betriebssystemversion erfüllt, gilt es als nicht konform. Ein Link zur Vorgehensweise zum Upgrade wird angezeigt. Der Endbenutzer kann sein Gerät aktualisieren und dann auf Organisations Ressourcen zugreifen.
+- **Mindestversion des Betriebssystems**: Wenn ein Gerät die Anforderung an die Mindestversion des Betriebssystems nicht erfüllt, wird es als nicht konform gemeldet. Ein Link zur Vorgehensweise zum Upgrade wird angezeigt. Der Endbenutzer kann sein Gerät aktualisieren und dann auf Organisations Ressourcen zugreifen.
 
   *Standardmäßig ist keine Version konfiguriert*.
 
-- **Maximal zulässige Betriebssystemversion:** Wenn auf einem Gerät eine neuere Betriebssystemversion verwendet wird, als die Regel erlaubt, wird der Zugriff auf die Ressourcen der Organisation gesperrt. Der Benutzer wird aufgefordert, sich an den zuständigen IT-Administrator zu wenden. Das Gerät kann solange nicht auf Ressourcen der Organisation zugreifen, bis die Regel geändert und die betreffende Betriebssystemversion zugelassen wird.
+- **Maximale Version des Betriebssystems**: Wenn auf einem Gerät eine neuere Betriebssystemversion verwendet wird, als die in der Regel angegebene Version, wird der Zugriff auf Organisationsressourcen gesperrt. Der Benutzer wird aufgefordert, sich an den zuständigen IT-Administrator zu wenden. Das Gerät kann solange nicht auf Ressourcen der Organisation zugreifen, bis die Regel geändert und die betreffende Betriebssystemversion zugelassen wird.
 
   *Standardmäßig ist keine Version konfiguriert*.
 
-- **Mindestens erforderliche Sicherheitspatchebene**: Wählen Sie die älteste Sicherheitspatchebene, die ein Gerät haben kann. Geräte, die nicht mindestens diese Patchebene aufweisen, sind nicht konform. Das Datum muss im Format JJJJ-MM-TT eingegeben werden.
+- **Mindestens erforderliche Sicherheitspatchebene**:  Wählen Sie die älteste Sicherheitspatchebene, die ein Gerät haben darf. Geräte, die nicht mindestens diese Patchebene aufweisen, sind nicht konform. Das Datum muss im Format JJJJ-MM-TT eingegeben werden.
 
   *Standardmäßig ist kein Datum konfiguriert*.
 
@@ -94,38 +88,38 @@ Als Intune-Administrator verwenden Sie diese Konformitätseinstellungen, um die 
 
   Diese Einstellung gilt für die Geräteebene. Wenn Sie nur ein Kennwort auf Arbeitsprofilebene anfordern müssen, verwenden Sie eine Konfigurationsrichtlinie. Siehe [Gerätekonfigurationseinstellungen für Android Enterprise](../configuration/device-restrictions-android-for-work.md).
 
-  - **Erforderlicher Kennworttyp:** Wählen Sie aus, ob ein Kennwort nur aus numerischen Zeichen oder aus einer Kombination aus Zahlen und anderen Zeichen bestehen soll. Folgende Optionen sind verfügbar:
+  - **Erforderlicher Kennworttyp:** Wählen Sie aus, ob ein Kennwort nur aus numerischen Zeichen oder aus einer Kombination aus Ziffern und anderen Zeichen bestehen soll. Folgende Optionen sind verfügbar:
     - **Gerätestandard**: Zur Auswertung der Kennwortkonformität sollten Sie in jedem Fall eine andere Einstellung für die Kennwortstärke als **Gerätestandard** angeben.  
     - **Kennwort erforderlich, keine Einschränkungen**
     - **Schwach biometrisch** - [ Vergleich von stark und schwach biometrisch](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (öffnet Android-Website)
-    - **Numerisch** (*Standardeinstellung*): Kennwort darf nur aus Zahlen bestehen, z.B. `123456789`. Geben Sie die **minimale Kennwortlänge** ein, die Benutzer für das Kennwort eingeben müssen (4 bis 16 Zeichen).
+    - **Numerisch** (*Standardeinstellung*): Kennwort darf nur aus Zahlen bestehen. Beispiel: `123456789`. Geben Sie die **minimale Kennwortlänge** ein, die Benutzer für das Kennwort eingeben müssen (4 bis 16 Zeichen).
     - **Numerisch komplex**: Sich wiederholende oder fortlaufende Ziffern wie „1111“ oder „1234“ sind nicht zulässig. Geben Sie die **minimale Kennwortlänge** ein, die Benutzer für das Kennwort eingeben müssen (4 bis 16 Zeichen).
     - **Alphabetisch**: Buchstaben des Alphabets sind erforderlich. Zahlen und Symbole sind nicht erforderlich. Geben Sie die **minimale Kennwortlänge** ein, die Benutzer für das Kennwort eingeben müssen (4 bis 16 Zeichen).
     - **Alphanumerisch**: Schließt Großbuchstaben, Kleinbuchstaben und Ziffern ein. Geben Sie die **minimale Kennwortlänge** ein, die Benutzer für das Kennwort eingeben müssen (4 bis 16 Zeichen).
     - **Alphanumerisch mit Symbolen**: Schließt Großbuchstaben, Kleinbuchstaben, Ziffern, Interpunktionszeichen und Symbole ein. Geben Sie außerdem Folgendes ein:
     
     Je nach ausgewähltem Kenn *Worttyp* sind folgende Einstellungen verfügbar:  
-    - **Minimale Kennwortlänge**: Geben Sie die Mindestlänge des Kennworts ein (4 bis 16 Zeichen).  
+    - **Minimale Kennwortlänge:** Geben Sie die Mindestlänge des Kennworts ein (4 bis 16 Zeichen).  
 
-    - **Erforderliche Anzahl von Zeichen**: Geben Sie die erforderliche Anzahl von Zeichen des Kennworts ein (0 bis 16 Zeichen).
+    - **Erforderliche Zeichenanzahl**: Geben Sie die erforderliche Anzahl von Zeichen des Kennworts ein (0 bis 16 Zeichen).
 
-    - **Erforderliche Anzahl von Kleinbuchstaben**: Geben Sie die erforderliche Anzahl von Kleinbuchstaben des Kennworts ein (0 bis 16 Zeichen).
+    - **Erforderliche Anzahl Kleinbuchstaben**: Geben Sie die erforderliche Anzahl Kleinbuchstaben für das Kennwort ein, von 0 bis 16 Zeichen.
 
-    - **Erforderliche Anzahl von Großbuchstaben**: Geben Sie die erforderliche Anzahl von Großbuchstaben des Kennworts ein (0 bis 16 Zeichen).
+    - **Erforderliche Anzahl Großbuchstaben**: Geben Sie die erforderliche Anzahl Großbuchstaben für das Kennwort ein, von 0 bis 16 Zeichen.
 
-    - **Erforderliche Anzahl anderer Zeichen als Buchstaben**: Geben Sie die erforderliche Anzahl anderer Zeichen als Buchstaben (alles außer Buchstaben im Alphabet) des Kennworts ein (0 bis 16 Zeichen).
+    - **Erforderliche Anzahl anderer Zeichen als Buchstaben**: Geben Sie die erforderliche Anzahl anderer Zeichen als Buchstaben (alles außer Buchstaben im Alphabet) für das Kennwort ein, von 0 bis 16 Zeichen.
 
-    - **Erforderliche Anzahl numerischer Zeichen**: Geben Sie die erforderliche Anzahl numerischer Zeichen (`1`, `2`, `3` usw.) des Kennworts ein (0 bis 16 Zeichen).
+    - **Erforderliche Anzahl numerischer Zeichen**: Geben Sie die erforderliche Anzahl numerischer Zeichen (`1`, `2`, `3` usw.) für das Kennwort ein, von 0 bis 16 Zeichen.
     
-    - **Erforderliche Anzahl von Symbolen**: Geben Sie die erforderliche Anzahl von Symbolen (`&`, `#`, `%` usw.) des Kennworts ein (0 bis 16 Zeichen).
+    - **Erforderliche Anzahl Symbole**: Geben Sie die erforderliche Anzahl der Symbole (`&`, `#`, `%` usw.) für das Kennwort ein, von 0 bis 16 Zeichen.
  
-- **Maximale Anzahl von Minuten der Inaktivität vor erneuter Anforderung des Kennworts**: Geben Sie die Leerlaufzeit an, nach der ein Benutzer sein Kennwort erneut eingeben muss. Zu den Optionen gehören der Standardwert *nicht konfiguriert*und *eine Minute* bis zu *8 Stunden*.
+- **Minuten der Inaktivität vor Anforderung des Kennworts:** Geben Sie die Leerlaufzeit ein, nach der ein Benutzer sein Kennwort erneut eingeben muss. Zu den Optionen gehören der Standardwert *nicht konfiguriert*und *eine Minute* bis zu *8 Stunden*.
 
-- **Anzahl von Tagen bis zum Kennwortablauf**: Geben Sie die Anzahl der Tage (1-365) an, nach denen das Gerätekennwort geändert werden muss. Geben Sie beispielsweise zum Ändern des Kennworts nach 60 Tagen `60` ein. Wenn das Kennwort abläuft, werden Benutzer aufgefordert, ein neues Kennwort zu erstellen.
+- **Anzahl Tage bis zum Kennwortablauf**: Geben Sie die Anzahl der Tage von 1–365 an, bis das Gerätekennwort geändert werden muss. Geben Sie beispielsweise zum Ändern des Kennworts nach 60 Tagen `60` ein. Wenn das Kennwort abläuft, werden Benutzer aufgefordert, ein neues Kennwort zu erstellen.
 
    *Standardmäßig ist kein Wert konfiguriert*.
 
-- **Anzahl erforderlicher Kennwörter, bevor ein Benutzer ein Kennwort wiederverwenden kann:** Geben Sie die Anzahl der letzten Kennwörter ein, die nicht wiederverwendet werden können (1–24). Verwenden Sie diese Einstellung, um zu verhindern, dass der Benutzer zuvor verwendete Kennwörter erstellt.  
+- **Anzahl erforderlicher Kennwörter, bevor ein Benutzer ein Kennwort wiederverwenden kann**: Geben Sie die Anzahl von vorherigen Kennwörtern ein, die nicht wiederverwendet werden dürfen, von 1 bis 24. Verwenden Sie diese Einstellung, um zu verhindern, dass der Benutzer zuvor verwendete Kennwörter erstellt.  
 
     *Standardmäßig ist keine Version konfiguriert*.
 
@@ -175,11 +169,11 @@ Als Intune-Administrator verwenden Sie diese Konformitätseinstellungen, um die 
 
 #### <a name="operating-system-version"></a>Version des Betriebssystems
 
-- **Mindestens erforderliche Betriebssystemversion:** Wenn ein Gerät nicht die Anforderungen an die mindestens erforderliche Betriebssystemversion erfüllt, gilt es als nicht konform. Ein Link zur Vorgehensweise zum Upgrade wird angezeigt. Der Endbenutzer kann sein Gerät aktualisieren und dann auf Organisations Ressourcen zugreifen.
+- **Mindestversion des Betriebssystems**: Wenn ein Gerät die Anforderung an die Mindestversion des Betriebssystems nicht erfüllt, wird es als nicht konform gemeldet. Ein Link zur Vorgehensweise zum Upgrade wird angezeigt. Der Endbenutzer kann sein Gerät aktualisieren und dann auf Organisations Ressourcen zugreifen.
 
   *Standardmäßig ist keine Version konfiguriert*.
 
-- **Maximal zulässige Betriebssystemversion:** Wenn auf einem Gerät eine neuere Betriebssystemversion verwendet wird, als die Regel erlaubt, wird der Zugriff auf die Ressourcen der Organisation gesperrt. Der Benutzer wird aufgefordert, sich an den zuständigen IT-Administrator zu wenden. Das Gerät kann solange nicht auf Ressourcen der Organisation zugreifen, bis die Regel geändert und die betreffende Betriebssystemversion zugelassen wird.
+- **Maximale Version des Betriebssystems**: Wenn auf einem Gerät eine neuere Betriebssystemversion verwendet wird, als die in der Regel angegebene Version, wird der Zugriff auf Organisationsressourcen gesperrt. Der Benutzer wird aufgefordert, sich an den zuständigen IT-Administrator zu wenden. Das Gerät kann solange nicht auf Ressourcen der Organisation zugreifen, bis die Regel geändert und die betreffende Betriebssystemversion zugelassen wird.
 
   *Standardmäßig ist keine Version konfiguriert*.
 
@@ -191,23 +185,23 @@ Als Intune-Administrator verwenden Sie diese Konformitätseinstellungen, um die 
 
   Diese Einstellung gilt für die Geräteebene. Wenn Sie nur ein Kennwort auf Arbeitsprofilebene anfordern müssen, verwenden Sie eine Konfigurationsrichtlinie. Siehe [Gerätekonfigurationseinstellungen für Android Enterprise](../configuration/device-restrictions-android-for-work.md).
 
-- **Erforderlicher Kennworttyp:** Wählen Sie aus, ob ein Kennwort nur aus numerischen Zeichen oder aus einer Kombination aus Zahlen und anderen Zeichen bestehen soll. Folgende Optionen sind verfügbar:
+- **Erforderlicher Kennworttyp:** Wählen Sie aus, ob ein Kennwort nur aus numerischen Zeichen oder aus einer Kombination aus Ziffern und anderen Zeichen bestehen soll. Folgende Optionen sind verfügbar:
   - **Gerätestandard**
   - **Biometrie auf niedriger Sicherheitsstufe**
-  - **Mindestens numerisch** (*Standardeinstellung*): Geben Sie die **minimale Kennwortlänge** ein, die ein Benutzer eingeben muss (4–16 Zeichen).
-  - **Numerisch komplex:** Geben Sie die **minimale Kennwortlänge** ein, die ein Benutzer eingeben muss (4–16 Zeichen).
-  - **Mindestens alphabetisch:** Geben Sie die **minimale Kennwortlänge** ein, die ein Benutzer eingeben muss (4–16 Zeichen).
-  - **Mindestens alphanumerisch:** Geben Sie die **minimale Kennwortlänge** ein, die ein Benutzer eingeben muss (4–16 Zeichen).
-  - **Mindestens alphanumerisch mit Symbolen**: Geben Sie die **minimale Kennwortlänge** ein, die ein Benutzer eingeben muss (zwischen 4 und 16 Zeichen).
+  - **Mindestens numerisch** (*Standard*): Geben Sie die **minimale Kennwortlänge** ein, die Benutzer für das Kennwort eingeben müssen (4 bis 16 Zeichen).
+  - **Numerisch, komplex:** Geben Sie die **minimale Kennwortlänge** ein, die Benutzer für das Kennwort eingeben müssen (4 bis 16 Zeichen).
+  - **Mindestens alphabetisch**: Geben Sie die **minimale Kennwortlänge** ein, die Benutzer für das Kennwort eingeben müssen (4 bis 16 Zeichen).
+  - **Mindestens alphanumerisch**: Geben Sie die **minimale Kennwortlänge** ein, die Benutzer für das Kennwort eingeben müssen (4 bis 16 Zeichen).
+  - **Mindestens alphanumerisch mit Symbolen**: Geben Sie die **minimale Kennwortlänge** ein, die Benutzer für das Kennwort eingeben müssen (4 bis 16 Zeichen).
 
   Je nach ausgewähltem Kenn *Worttyp* sind folgende Einstellungen verfügbar:  
-  - **Maximale Anzahl von Minuten der Inaktivität vor erneuter Anforderung des Kennworts**: Geben Sie die Leerlaufzeit an, nach der ein Benutzer sein Kennwort erneut eingeben muss. Zu den Optionen gehören der Standardwert *nicht konfiguriert*und *eine Minute* bis zu *8 Stunden*.
+  - **Minuten der Inaktivität vor Anforderung des Kennworts:** Geben Sie die Leerlaufzeit ein, nach der ein Benutzer sein Kennwort erneut eingeben muss. Zu den Optionen gehören der Standardwert *nicht konfiguriert*und *eine Minute* bis zu *8 Stunden*.
 
-  - **Anzahl von Tagen bis zum Kennwortablauf**: Geben Sie die Anzahl der Tage (1-365) an, nach denen das Gerätekennwort geändert werden muss. Geben Sie beispielsweise zum Ändern des Kennworts nach 60 Tagen `60` ein. Wenn das Kennwort abläuft, werden Benutzer aufgefordert, ein neues Kennwort zu erstellen.
+  - **Anzahl Tage bis zum Kennwortablauf**: Geben Sie die Anzahl der Tage von 1–365 an, bis das Gerätekennwort geändert werden muss. Geben Sie beispielsweise zum Ändern des Kennworts nach 60 Tagen `60` ein. Wenn das Kennwort abläuft, werden Benutzer aufgefordert, ein neues Kennwort zu erstellen.
 
-  - **Minimale Kennwortlänge**: Geben Sie die Mindestlänge des Kennworts ein (4 bis 16 Zeichen). 
+  - **Minimale Kennwortlänge:** Geben Sie die Mindestlänge des Kennworts ein (4 bis 16 Zeichen). 
   
-  - **Anzahl der vorherigen Kennwörter zur Verhinderung von Wiederverwendung**: Geben Sie die Anzahl von zuletzt genutzten Kennwörtern an, die nicht erneut verwendet werden dürfen. Verwenden Sie diese Einstellung, um zu verhindern, dass der Benutzer zuvor verwendete Kennwörter erstellt.
+  - **Anzahl vorheriger Kennwörter zum Verhindern der Wiederverwendung:** Geben Sie die Anzahl von vorherigen Kennwörtern ein, die nicht wiederverwendet werden dürfen. Verwenden Sie diese Einstellung, um zu verhindern, dass der Benutzer zuvor verwendete Kennwörter erstellt.
 
 #### <a name="encryption"></a>Verschlüsselung
 
@@ -221,7 +215,7 @@ Als Intune-Administrator verwenden Sie diese Konformitätseinstellungen, um die 
 
 - **Apps von unbekannten Quellen blockieren**: 
   - **Nicht konfiguriert** (*Standardeinstellung*): Diese Einstellung wird nicht für die Konformitätsprüfung ausgewertet.
-  - **Blockieren** von Geräten mit **Sicherheits** > **unbekannten Quellen** (*unter Android 4,0 über Android 7. x unterstützt. Nicht von Android 8.0 und höher unterstützt*).  
+  - **Blockieren** von Geräten mit **Sicherheits** > **unbekannten Quellen** (*unter Android 4,0 über Android 7. x unterstützt. Nicht von Android 8.0 und höher unterstützt).  
 
   Für das Sideloading von Apps müssen unbekannte Quellen zugelassen werden. Wenn Sie kein Sideloading von Android-Apps durchführen, legen Sie für dieses Feature **Blockieren** fest, um diese Konformitätsrichtlinie zu aktivieren.
 
@@ -244,7 +238,7 @@ Als Intune-Administrator verwenden Sie diese Konformitätseinstellungen, um die 
 
   Sie müssen diese Einstellungen nicht konfigurieren, da USB-Debuggen auf Android Enterprise-Geräten bereits deaktiviert ist.
 
-- **Mindestens erforderliche Sicherheitspatchebene**: Wählen Sie die älteste Sicherheitspatchebene, die ein Gerät haben kann. Geräte, die nicht mindestens diese Patchebene aufweisen, sind nicht konform. Das Datum muss im Format JJJJ-MM-TT eingegeben werden.
+- **Mindestens erforderliche Sicherheitspatchebene**:  Wählen Sie die älteste Sicherheitspatchebene, die ein Gerät haben darf. Geräte, die nicht mindestens diese Patchebene aufweisen, sind nicht konform. Das Datum muss im Format JJJJ-MM-TT eingegeben werden.
 
   *Standardmäßig ist kein Datum konfiguriert*.
 
