@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c447c67e631365e831f033c2811c36d936f2e85
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: d5a3204721a0d40cfb5bf729ca17ef8e4ded1f0f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547991"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885767"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Hinzufügen App-Konfigurationsrichtlinien für verwaltete iOS-Geräte
 
@@ -182,7 +182,7 @@ DEP-Registrierungen (Apple-Programm zur Geräteregistrierung) sind nicht kompati
 
 1. Fügen Sie in Intune ggf. das Intune-Unternehmensportal hinzu (**Intune** > **Apps** > **Alle Apps** > **Hinzufügen**).
 2. Klicken Sie auf **Apps** > **App-Konfigurationsrichtlinien**, um eine App-Konfigurationsrichtlinie für die Unternehmensportal-App zu erstellen.
-3. Erstellen Sie mithilfe der unten stehenden XML-Daten eine App-Konfigurationsrichtlinie. Weitere Informationen zum Erstellen einer App-Konfigurationsrichtlinie und zum Eingeben von XML-Daten finden Sie unter [Hinzufügen von App-Konfigurationsrichtlinien für verwaltete iOS-Geräte](app-configuration-policies-use-ios.md) oder für Hybrid-MDM unter [Anwenden von Einstellungen auf iOS-Apps mit App-Konfigurationsrichtlinien in Configuration Manager](https://docs.microsoft.com/configmgr/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
+3. Erstellen Sie mithilfe der unten stehenden XML-Daten eine App-Konfigurationsrichtlinie. Weitere Informationen zum Erstellen einer App-Konfigurationsrichtlinie und zum Eingeben von XML-Daten finden Sie unter [Hinzufügen von App-Konfigurationsrichtlinien für verwaltete iOS-Geräte](app-configuration-policies-use-ios.md).
 
     ``` xml
     <dict>

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c18f3e8fb14d8592789b39856ec420790fad286
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 8452f840fb269505656bf6594d3e5c196b4d7a06
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547552"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885778"
 ---
 # <a name="create-a-design"></a>Erstellen eines Entwurfs
 
@@ -101,19 +101,11 @@ Stellen Sie beim Erfassen der aktuellen MDM-Umgebung sicher, dass Sie alle Proje
 | **SharePoint** | SharePoint lokal | Keine Pläne zur Onlineverwendung von SharePoint |  
 | **Aktuelle MDM** | Exchange ActiveSync |  |
 | **Zertifikatlösung** | Microsoft Server 2012 R2, Active Directory-Zertifikatdienste | PKI wird nur für Websiteserver verwendet |
-| **Systemverwaltung** | Configuration Manager CB 1606 | Die Intune-Hybridlösung soll näher untersucht werden |
+| **Systemverwaltung** | Configuration Manager, Current Branch | Die Co-Verwaltungslösung soll näher untersucht werden |
 | **VPN-Lösung** | Cisco AnyConnect |  |
 
 
 Sie können eine [Vorlage der oben stehenden Tabelle herunterladen](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0), um Ihren Intune-Entwurfsplan zu entwickeln.
-
-## <a name="choose-an-intune-deployment-option"></a>Wählen einer Intune-Bereitstellungsoption
-
-Intune bietet zwei Bereitstellungsoptionen: eigenständig und hybrid. „Eigenständig“ bezieht sich darauf, dass der Intune-Dienst in der Cloud ausgeführt wird. „Hybrid“ bezieht sich auf die Integration von Intune in Configuration Manager. Dieses Handbuch ist in erster Linie auf die Verwendung der eigenständigen Option ausgerichtet. [Entscheiden Sie, welche Option Ihren geschäftlichen Anforderungen am meisten entspricht.](https://docs.microsoft.com/configmgr/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)
-
-> [!Important]
->Das Onboarding neuer MDM-Kunden (hybrid) ist veraltet. Weitere Informationen finden Sie im Blogbeitrag [Move from Hybrid Mobile Device Management to Intune on Azure (Wechsel von der hybriden Verwaltung mobiler Geräte zu Intune unter Azure)](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150).
-
 
 ## <a name="intune-tenant-location"></a>Standort des Intune-Mandanten
 

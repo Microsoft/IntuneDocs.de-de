@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe37ac412d01d3032685a0e66827d20e13b0db64
-ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
+ms.openlocfilehash: 237eca2f8e00f00fda5fa3cf401be87de9602743
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75303074"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956257"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Hinzufügen von Gruppen zum Organisieren von Benutzern und Geräten
 
@@ -54,7 +54,7 @@ Führen Sie die folgenden Schritte aus, um eine neue Gruppe zu erstellen:
         >
         > Wenn Sie in erster Linie für die Geräteverwaltung verantwortlich sind, sollten Sie das [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) verwenden.
 
-    - **Office 365:** Diese Gruppen sind für die Steuerung des Zugriffs und das Teilen von Office 365-Ressourcen konzipiert. Beispielsweise können Sie eine Office 365-Gruppe erstellen, um einen Posteingang in Outlook oder einen Kalender zu teilen. Weitere Informationen zu Office 365-Gruppen finden Sie unter [diesem Link](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+    - **Office 365:** Bietet Möglichkeiten zur Zusammenarbeit, indem Mitglieder Zugriff auf freigegebene Postfächer, Kalender, Dateien, SharePoint-Websites und mehr erhalten. Mit dieser Option können Sie auch Personen außerhalb Ihrer Organisation Zugriff auf die Gruppe gewähren. Weitere Informationen zu Office 365-Gruppen finden Sie unter [diesem Link](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 4. Geben Sie einen **Gruppennamen** und eine **Gruppenbeschreibung** für die neue Gruppe ein. Seien Sie konkret, und fügen Sie Informationen hinzu, anhand derer andere Benutzer erkennen können, wofür die Gruppe vorgesehen ist.
 

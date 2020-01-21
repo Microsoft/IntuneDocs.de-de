@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 01/14/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad630eb34b296d7ab77081a1e3063db8dffc64f9
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: dc9dd03714e24dae4b0c7afe9206c6a8d7d36c13
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207450"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956288"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Verwalten von Windows 10-Softwareupdates in Intune
 
@@ -63,7 +63,7 @@ Die folgenden Voraussetzungen müssen erfüllt sein, um Windows-Updates für Win
   > - Windows 10 Mobile  
   > - Windows 10 Enterprise LTSC: Windows Update for Business (WUfB) unterstützt derzeit keine Releases von *Long-Term Servicing Channel*. Planen Sie, alternative Patchmethoden wie WSUS oder Configuration Manager zu verwenden.
 
-- Auf Windows-Geräten muss **Feedback und Diagnose** > **Diagnose- und Nutzungsdaten** auf **Standard**, **Erweitert** oder **Vollständig** festgelegt sein.  
+- Auf Windows-Geräten muss **Feedback und Diagnose** > **Diagnose- und Nutzungsdaten** auf **Standard**, **Erweitert** oder **Vollständig** festgelegt sein.
 
   Sie können die Einstellung *Diagnose- und Nutzungsdaten* für Windows 10-Geräte entweder manuell konfigurieren oder ein Intune-Geräteeinschränkungsprofil für Windows 10 und höher verwenden. Wenn Sie ein Geräteeinschränkungsprofil verwenden, stellen Sie die Funktion [Geräteeinschränkung](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) bei **Nutzungsdaten freigeben** auf mindestens **Standard** ein. Diese Einstellung befindet sich in der Kategorie **Berichterstellung und Telemetrie**, wenn Sie eine Richtlinie für Geräteeinschränkungen für Windows 10 oder höher konfigurieren.
 
@@ -215,6 +215,10 @@ Wenn ein Gerät eine Richtlinie für Windows 10-Featureupdates erhält, geschieh
 
   Diese Einschränkung wird untersucht, um festzustellen, ob sie in Zukunft unterstützt werden kann.
 
+> [!IMPORTANT]
+> Um die Richtlinie „Featureupdates“ mit Intune verwenden zu können, muss auf Geräten Telemetrie aktiviert sein, wobei die Mindesteinstellung [*Standard*](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) ist. Telemetrie wird unter *Berichterstellung und Telemetrie* als Teil einer Richtlinie des Typs [Geräteeinschränkung](../configuration/device-restrictions-configure.md) konfiguriert.
+>
+> Geräte, die die Richtlinie „Featureupdates“ empfangen und bei denen Telemetrie auf *Nicht konfiguriert* festgelegt, also deaktiviert ist, installieren möglicherweise eine spätere Version von Windows als in der Richtlinie „Featureupdates“ definiert. Die Voraussetzung, Telemetrie anzufordern, wird derzeit geprüft, während sich dieses Feature in Richtung allgemeine Verfügbarkeit weiterentwickelt.
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Erstellen und Zuweisen von Windows 10-Featureupdates
 
@@ -245,4 +249,3 @@ In diesem Bereich können Sie folgende Aktionen ausführen:
 [Berichte zur Updatekonformität für Intune](../windows-update-compliance-reports.md)
 
 [Problembehandlung bei Windows 10-Updateringen](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)
-

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/08/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b2a6019a0af33cd227d88444bb5ddda5bc22715
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: a3074b30921a4daba7469e670a17ad29ee1edc00
+ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204900"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827801"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>Aktivieren von Win32-Apps auf Geräten im S Modus
 
@@ -45,7 +45,7 @@ Die folgenden Schritte sind erforderlich, damit Win32-Apps auf einem Windows 10-
    - Laden Sie die signierte zusätzliche Richtlinie in Intune hoch, indem Sie eine zusätzliche Windows 10 S Modus-Richtlinie erstellen (siehe unten).
 3. Lassen Sie Win32-App-Kataloge über Intune zu:
    - Erstellen Sie Katalogdateien (eine für jede App), und signieren Sie sie mit dem Device Guard-Signaturdienst oder anderen Zertifikatinfrastrukturen.
-   - Packen Sie den signierten Katalog mit dem [Microsoft Win32-Inhaltsvorbereitungstool](https://go.microsoft.com/fwlink/?linkid=2065730) in die *.intunewin*-Datei. Weiter Informationen finden Sie unter [Win32-App-Verwaltung – Vorbereiten des Inhalts der Win32-App für den Upload](~/apps/apps-win32-app-management.md#prepare-the-win32-app-content-for-upload).
+   - Packen Sie den signierten Katalog mit dem [Microsoft Win32-Inhaltsvorbereitungstool](https://go.microsoft.com/fwlink/?linkid=2065730) in die *.intunewin*-Datei. Beim Erstellen einer Katalogdatei mit dem [Microsoft Win32-Inhaltsvorbereitungstool](https://go.microsoft.com/fwlink/?linkid=2065730) gelten bei der Benennung keine Einschränkungen. Wenn Sie die Datei *.intunewin* anhand des angegebenen Quellordners und der angegebenen Setupdatei erstellen, können Sie einen separaten Ordner bereitstellen, der nur Katalogdateien enthält, indem Sie die Befehlszeilenoption „-a“ verwenden. Weiter Informationen finden Sie unter [Win32-App-Verwaltung – Vorbereiten des Inhalts der Win32-App für den Upload](~/apps/apps-win32-app-management.md#prepare-the-win32-app-content-for-upload).
    - Intune wendet den signierten App-Katalog an, um die Win32-App auf dem Gerät im S Modus mithilfe der [Intune-Verwaltungserweiterung](~/apps/intune-management-extension.md) zu installieren.
 
 > [!NOTE]

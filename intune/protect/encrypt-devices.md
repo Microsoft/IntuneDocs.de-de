@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 26013ab06cabdfd64ec3cd34254e3cfa2bb2428d
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 5209ce7fba30a156de055503751104f9090d49d7
+ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75654259"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75756004"
 ---
 # <a name="use-device-encryption-with-intune"></a>Verwenden der Geräteverschlüsselung mit Intune
 
@@ -38,6 +38,8 @@ Intune beinhaltet auch einen integrierten [Verschlüsselungsbericht](encryption-
 ## <a name="filevault-encryption-for-macos"></a>FileVault-Verschlüsselung für macOS
 
 Verwenden Sie Intune, um die FileVault-Datenträgerverschlüsselung auf macOS-Geräten zu konfigurieren. Verwenden Sie anschließend den Intune-Verschlüsselungsbericht, um die Verschlüsselungsdetails für diese Geräte anzuzeigen und Wiederherstellungsschlüssel für mit FileVault verschlüsselte Geräte zu verwalten.
+
+Beachten Sie, dass die vom Benutzer genehmigte Geräteregistrierung erforderlich ist, damit FileVault auf dem Gerät funktioniert. Der Benutzer muss das Verwaltungsprofil manuell anhand von Systemeinstellungen genehmigen, damit die Registrierung als vom Benutzer genehmigt angesehen wird. 
 
 FileVault ist ein Verschlüsselungsprogramm für ganze Datenträger, das im Lieferumfang von macOS enthalten ist. Verwenden Sie Intune, um FileVault auf Geräten zu konfigurieren, auf denen **macOS 10.13 oder höher** ausgeführt wird.
 
@@ -72,14 +74,7 @@ Ausführliche Informationen zur FileVault-Einstellung, die Sie mit Intune verwal
 
 7. Konfigurieren Sie die restlichen [FileVault-Einstellungen](endpoint-protection-macos.md#filevault) entsprechend Ihren Geschäftsanforderungen, und wählen Sie anschließend **OK** aus.
 
-   > [!IMPORTANT]
-   > Es ist ein bekanntes Problem aufgetreten, wenn die Einstellung **Aufforderung bei Abmeldung deaktivieren** auf *Aktivieren* gesetzt ist. Wenn Sie *Aktivieren* festlegen, muss die Einstellung für **Zulässige Anzahl von Umgehungen** auf einen Wert und nicht auf *Nicht konfiguriert* festgelegt werden. Wenn *Nicht konfiguriert* ausgewählt ist, tritt mit dem Profil auf dem Gerät ein Fehler auf. In diesem Szenario meldet das Gerät seine **Profilstatuszusammenfassung** als **Fehler** ohne weitere Details.
-   >
-   > Wenn die für **Aufforderung bei Abmeldung deaktivieren***Nicht konfiguriert* ausgewählt ist, kann für **Zulässige Anzahl von Umgehungen***Nicht konfiguriert* oder ein Wert festgelegt werden.
-   >
-   > Dieses Problem wird in einem zukünftigen Update behoben.
-
-8. Schließen Sie die Konfiguration zusätzlicher Einstellungen ab, und speichern Sie anschließend das Profil.  
+  8. Schließen Sie die Konfiguration zusätzlicher Einstellungen ab, und speichern Sie anschließend das Profil.  
 
 ### <a name="manage-filevault"></a>Verwalten von FileVault
 

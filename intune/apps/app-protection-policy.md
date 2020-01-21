@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f11ccb51e08e96595dfcb9118c1f479f1b0fc3de
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 3f1563c092d8dd4c34e4a18caea56910267eb623
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692124"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956334"
 ---
 # <a name="app-protection-policies-overview"></a>Übersicht über App-Schutzrichtlinien
 
@@ -133,11 +133,11 @@ Es gibt jedoch einige Einschränkungen, die Sie kennen sollten:
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Apps, die mit App-Schutzrichtlinien verwaltet werden können
 
-Jede App, die in das [Intune App SDK](../developer/app-sdk.md) integriert oder vom [Intune App Wrapping Tool](../developer/apps-prepare-mobile-application-management.md) umschlossen wurde, kann mithilfe von Intune-App-Schutzrichtlinien verwaltet werden. Weitere Informationen finden Sie in der offiziellen Liste der [durch Microsoft Intune geschützten Apps](apps-supported-intune-apps.md), die mithilfe dieser Tools erstellt wurden und für die öffentliche Nutzung verfügbar sind.
+Jede App, die in das [Intune SDK](../developer/app-sdk.md) integriert oder vom [Intune App Wrapping Tool](../developer/apps-prepare-mobile-application-management.md) umschlossen wurde, kann mithilfe von Intune-App-Schutzrichtlinien verwaltet werden. Weitere Informationen finden Sie in der offiziellen Liste der [durch Microsoft Intune geschützten Apps](apps-supported-intune-apps.md), die mithilfe dieser Tools erstellt wurden und für die öffentliche Nutzung verfügbar sind.
 
 Das Intune SDK-Entwicklungsteam testet und unterstützt aktiv Apps, die mit dem nativen Android-, iOS- (Obj-C, Swift), Xamarin-, Xamarin.Forms- und Cordova-Plattformen erstellt wurden. Während einige Kunden das Intune SDK erfolgreich in andere Plattformen wie React Native und NativeScript integrieren konnten, bieten wir keine expliziten Anleitungen oder Plug-Ins für App-Entwickler, die andere als unsere unterstützten Plattformen verwenden.
 
-Das [Intune App SDK](../developer/app-sdk.md) nutzt einige erweiterte moderne Authentifizierungsfunktionen aus den [Azure Active Directory-Authentifizierungsbibliotheken](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (Azure Active Directory Authentication Libraries, ADALs) sowohl für die Erstanbieter- als auch für die Drittanbieterversionen des SDK. Die [Microsoft-Authentifizierungsbibliothek](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (Microsoft Authentication Library, MSAL) ist für viele wichtige Szenarien wie die Authentifizierung beim Intune-Dienst für den App-Schutz und den bedingten Start nicht gut geeignet. Da das Identity-Team von Microsoft allgemein dazu rät, für alle Microsoft Office-Apps auf die MSAL umzusteigen, wird das [Intune App SDK](../developer/app-sdk.md) diese letztlich unterstützen müssen, derzeit liegt aber noch keine Planung dafür vor.
+Das [Intune SDK](../developer/app-sdk.md) nutzt einige erweiterte moderne Authentifizierungsfunktionen aus den [Azure Active Directory-Authentifizierungsbibliotheken](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (Azure Active Directory Authentication Libraries, ADAL) sowohl für die Erst- als auch Drittanbieterversionen des SDK. Die [Microsoft-Authentifizierungsbibliothek](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (Microsoft Authentication Library, MSAL) ist für viele wichtige Szenarien wie die Authentifizierung beim Intune-Dienst für den App-Schutz und den bedingten Start nicht gut geeignet. Da der allgemeine Leitfaden des Identity-Teams von Microsoft darin besteht, für alle Microsoft Office-Apps auf MSAL umzusteigen, wird das [Intune SDK](../developer/app-sdk.md) es letztlich unterstützen müssen, aber derzeit ist keine Unterstützung geplant.
 
 ## <a name="end-user-requirements-to-use-app-protection-policies"></a>Anforderungen an die Endbenutzer bei der Verwendung von App-Schutzrichtlinien
 
@@ -198,7 +198,7 @@ Obwohl die **globale Richtlinie** für alle Benutzer in Ihrem Mandanten gilt, we
 
 ### <a name="multi-identity"></a>Mehrere Identitäten
 
-Mit der Unterstützung mehrerer Identitäten kann eine App mehrere Zielgruppen unterstützen. Hierbei kann es sich sowohl um „Unternehmensbenutzer“ als auch um „persönliche Benutzer“ handeln. Geschäfts-, Schul- und Unikonten werden von „Unternehmensbenutzern“ verwendet, persönliche Konten dagegen von „Endbenutzern“, beispielsweise von Microsoft Office-Benutzern. Eine App, die mehrere Identitäten unterstützt, kann öffentlich freigegeben werden. Dabei werden App-Schutzrichtlinien nur angewendet, wenn die App im Kontext eines Geschäfts-, Schul- und Unikontos („Unternehmen“) verwendet wird. Bei der Unterstützung mehrerer Identitäten wird das [Intune App SDK](../developer/app-sdk.md) verwendet, um App-Schutzrichtlinien nur auf das Geschäfts-, Schul- oder Unikonto anzuwenden, das bei der App angemeldet ist. Wenn ein persönliches Konto bei der App angemeldet ist, kann nicht auf die Daten zugegriffen werden.
+Mit der Unterstützung mehrerer Identitäten kann eine App mehrere Zielgruppen unterstützen. Hierbei kann es sich sowohl um „Unternehmensbenutzer“ als auch um „persönliche Benutzer“ handeln. Geschäfts-, Schul- und Unikonten werden von „Unternehmensbenutzern“ verwendet, persönliche Konten dagegen von „Endbenutzern“, beispielsweise von Microsoft Office-Benutzern. Eine App, die mehrere Identitäten unterstützt, kann öffentlich freigegeben werden. Dabei werden App-Schutzrichtlinien nur angewendet, wenn die App im Kontext eines Geschäfts-, Schul- und Unikontos („Unternehmen“) verwendet wird. Bei der Unterstützung mehrerer Identitäten wird das [Intune SDK](../developer/app-sdk.md) verwendet, um App-Schutzrichtlinien nur auf das Geschäfts-, Schul- oder Unikonto anzuwenden, das bei der App angemeldet ist. Wenn ein persönliches Konto bei der App angemeldet ist, kann nicht auf die Daten zugegriffen werden.
 
 Ein Beispiel: Wenn ein Benutzer ein neues Dokument in Word startet, wird dies als „persönlicher“ Kontext betrachtet, und die App-Schutzrichtlinien von Intune werden nicht angewendet. Sobald das Dokument im OneDrive-„Unternehmenskonto“ gespeichert wird, gilt dies als „Unternehmenskontext“, und die Intune-App-Schutzrichtlinien werden angewendet.
 
@@ -213,7 +213,7 @@ Weitere Informationen zu mehreren Identitäten in Intune finden Sie unter [Durch
 Die PIN (Personal Identification Number) ist eine Kennung, mit der sichergestellt wird, dass der richtige Benutzer in einer Anwendung auf die Daten der Organisation zugreift.
 
 **Aufforderung zur Eingabe der PIN**<br>
-Intune fordert den Benutzer zur Eingabe seiner App-PIN auf, wenn dieser versucht, auf „unternehmenseigene“ Daten zuzugreifen. In Apps mit Unterstützung mehrerer Identitäten – z. B. Word, Excel oder PowerPoint – wird der Benutzer zur PIN-Eingabe aufgefordert, wenn er versucht, ein „unternehmenseigenes“ Dokument oder eine „unternehmenseigene“ Datei zu öffnen. In Apps mit nur einer Identität – z. B. Branchen-Apps, die über das [Intune App Wrapping Tool](../developer/apps-prepare-mobile-application-management.md) verwaltet werden – wird der Benutzer beim Start der App zur Eingabe der PIN aufgefordert, da dem [Intune App SDK](../developer/app-sdk.md) bekannt ist, dass die Verwendung der App immer „unternehmenseigen“ ist.
+Intune fordert den Benutzer zur Eingabe seiner App-PIN auf, wenn dieser versucht, auf „unternehmenseigene“ Daten zuzugreifen. In Apps mit Unterstützung mehrerer Identitäten – z. B. Word, Excel oder PowerPoint – wird der Benutzer zur PIN-Eingabe aufgefordert, wenn er versucht, ein „unternehmenseigenes“ Dokument oder eine „unternehmenseigene“ Datei zu öffnen. In Apps mit nur einer Identität – z. B. branchenspezifische Apps, die über das [Intune App Wrapping Tool](../developer/apps-prepare-mobile-application-management.md) verwaltet werden – wird der Benutzer beim Start der App zur Eingabe der PIN aufgefordert, da dem [Intune SDK](../developer/app-sdk.md) bekannt ist, dass die Verwendung der App immer „unternehmenseigen“ ist.
 
 **Häufigkeit der Aufforderung zur Eingabe der PIN oder Administratoranmeldeaufforderung eines Unternehmens**<br>
 Der IT-Administrator kann die Intune-App-Schutzrichtlinieneinstellung **Zugriffsanforderungen nach (Minuten) erneut überprüfen** in der Intune-Verwaltungskonsole definieren. Diese Einstellung gibt die Zeitspanne an, nach der die Zugriffsanforderungen auf dem Gerät überprüft werden und der Bildschirm zur Eingabe der PIN oder Administratoranmeldeaufforderung eines Unternehmens erneut angezeigt wird. Folgende Faktoren beeinflussen, wie häufig ein Benutzer zur PIN-Eingabe aufgefordert wird:
@@ -231,13 +231,22 @@ Selbst wenn die PIN auf iOS-Geräten unter Apps von verschiedenen Herausgebern f
 Die Intune-PIN funktioniert mit einem auf Inaktivität basierten Timer, also dem Wert von **Zugriffsanforderungen nach (Minuten) erneut überprüfen**. Deshalb werden Aufforderungen zur Eingabe der Intune-PIN unabhängig von Aufforderungen zur Eingabe der integrierten App-PIN für Outlook und OneDrive, die standardmäßig beim Start der App angezeigt werden, angezeigt. Wenn der Benutzer gleichzeitig zur Eingabe beider PINs aufgefordert wird, sollte die Intune-PIN Vorrang haben.
 
 **Sicherheit für Intune-PINs**<br>
-Mit der PIN wird sichergestellt, dass nur der richtige Benutzer in der App auf Daten der Organisation zugreifen kann. Ein Endbenutzer muss sich daher mit seinem Geschäfts-, Uni- oder Schulkonto anmelden, bevor er seine Intune-App-PIN festlegen oder zurücksetzen kann. Diese Authentifizierung wird von Azure Active Directory über einen Austausch sicherer Token durchgeführt und ist für das [Intune App SDK](../developer/app-sdk.md) nicht transparent. Hinsichtlich der Sicherheit ist die beste Möglichkeit, ein Geschäfts-, Uni- oder Schulkonto zu schützen, das Konto zu verschlüsseln. Die Verschlüsselung steht nicht in Zusammenhang mit der App-PIN, sondern stellt eine eigene App-Schutzrichtlinie dar.
+Mit der PIN wird sichergestellt, dass nur der richtige Benutzer in der App auf Daten der Organisation zugreifen kann. Ein Endbenutzer muss sich daher mit seinem Geschäfts-, Uni- oder Schulkonto anmelden, bevor er seine Intune-App-PIN festlegen oder zurücksetzen kann. Diese Authentifizierung wird von Azure Active Directory über einen Austausch sicherer Token durchgeführt und ist für das [Intune SDK](../developer/app-sdk.md) nicht transparent. Hinsichtlich der Sicherheit ist die beste Möglichkeit, ein Geschäfts-, Uni- oder Schulkonto zu schützen, das Konto zu verschlüsseln. Die Verschlüsselung steht nicht in Zusammenhang mit der App-PIN, sondern stellt eine eigene App-Schutzrichtlinie dar.
 
-**Intune-PIN: Schutz vor Brute-Force-Angriffen**<br>
-Im Rahmen der App-PIN-Richtlinie kann der IT-Administrator festlegen, wie oft ein Benutzer versuchen kann, die PIN zu authentifizieren, bevor die App gesperrt wird. Nachdem die maximale Anzahl von Versuchen erreicht wurde, kann das [Intune App SDK](../developer/app-sdk.md) die „unternehmenseigenen“ Daten aus der App entfernen.
-  
+**Schutz vor Brute-Force-Angriffen und der Intune-PIN**<br>
+Im Rahmen der App-PIN-Richtlinie kann der IT-Administrator festlegen, wie oft ein Benutzer versuchen kann, die PIN zu authentifizieren, bevor die App gesperrt wird. Nachdem die maximale Anzahl von Versuchen erreicht wurde, kann das [Intune SDK](../developer/app-sdk.md) die „unternehmenseigenen“ Daten aus der App entfernen.
+
+**Intune-PIN und selektives Zurücksetzen**<br>
+Unter iOS werden die PIN-Informationen auf App-Ebene im Schlüsselbund gespeichert, der von Apps desselben Herausgebers, wie z. B. allen Apps von Microsoft als Erstanbieter, gemeinsam genutzt wird. Diese PIN-Informationen sind auch an ein Endbenutzerkonto gebunden. Ein selektives Zurücksetzen einer App darf keine Auswirkung auf eine andere App haben. 
+
+Beispielsweise wird eine für Outlook festgelegte PIN für den angemeldeten Benutzer in einem gemeinsam genutzten Schlüsselbund gespeichert. Wenn sich der Benutzer bei OneDrive (auch ein Microsoft-Produkt) anmeldet, wird die gleiche PIN wie bei Outlook verwendet, da derselbe gemeinsam genutzte Schlüsselbund zum Einsatz kommt. Wenn sich der Benutzer aus Outlook abmeldet oder die Benutzerdaten in Outlook zurückgesetzt werden, löscht das Intune SDK diesen Schlüsselbund nicht, da OneDrive diese PIN möglicherweise noch immer verwendet. Aus diesem Grund wird beim selektiven Zurücksetzen der gemeinsam genutzte Schlüsselbund, einschließlich PIN, nicht gelöscht. Dieses Verhalten bleibt auch dann unverändert, wenn nur eine App eines Herausgebers auf dem Gerät vorhanden ist. 
+
+Die PIN wird von Apps desselben Herausgebers gemeinsam genutzt. Wenn das Zurücksetzen für eine einzelne App erfolgt, weiß das Intune SDK nicht, ob sich auf dem Gerät weitere Apps desselben Herausgebers befinden. Daher löscht das Intune SDK die PIN nicht, da sie möglicherweise noch von anderen Apps verwendet wird. Es wird erwartet, dass die PIN der App zurückgesetzt wird, wenn die letzte App dieses Herausgebers im Rahmen einer Betriebssystembereinigung endgültig entfernt wird.
+ 
+Wenn Sie bei einigen Geräten beobachten, dass die PIN gelöscht wird, passiert wahrscheinlich Folgendes: Da die PIN an eine Identität gebunden ist, wird der Benutzer, wenn er sich nach einer Zurücksetzen mit einem anderen Konto angemeldet hat, zur Eingabe einer neuen PIN aufgefordert. Wenn er sich jedoch mit einem zuvor bestehenden Konto anmeldet, kann eine bereits im Schlüsselbund gespeicherte PIN zur Anmeldung verwendet werden.
+
 **Doppeltes Festlegen einer PIN für Apps vom gleichen Herausgeber?**<br>
-MAM (für iOS) erlaubt derzeit eine PIN auf Anwendungsebene mit alphanumerischen Zeichen und Sonderzeichen (als „Passcode“ bezeichnet), was die Beteiligung von Anwendungen (z. B. WXP, Outlook, Managed Browser, Yammer) erfordert, damit das [Intune App SDK für iOS](../developer/app-sdk-ios.md) integriert werden kann. Ohne das SDK werden die Kennungseinstellungen nicht ordnungsgemäß für die Zielanwendungen erzwungen. Hierbei handelte es sich um ein Feature, das im Intune SDK für iOS Version 7.1.12 veröffentlicht wurde.
+MAM (für iOS) erlaubt derzeit eine PIN auf Anwendungsebene mit alphanumerischen Zeichen und Sonderzeichen (als „Passcode“ bezeichnet), was die Beteiligung von Anwendungen (z. B. WXP, Outlook, Managed Browser, Yammer) erfordert, damit das [Intune SDK für iOS](../developer/app-sdk-ios.md) integriert werden kann. Ohne das SDK werden die Kennungseinstellungen nicht ordnungsgemäß für die Zielanwendungen erzwungen. Hierbei handelte es sich um ein Feature, das im Intune SDK für iOS Version 7.1.12 veröffentlicht wurde.
 
 Um dieses Feature zu unterstützen und die Abwärtskompatibilität mit früheren Versionen des Intune SDK für iOS zu gewährleisten, werden alle numerischen PINs oder Kennungen in Version 7.1.12 oder höher getrennt von der numerischen PIN in früheren Versionen des SDK verarbeitet. Wenn also ein Gerät Anwendungen mit Intune SDK für iOS-Versionen zwischen 7.1.12 UND 7.1.12 vom selben Hersteller aufweist, müssen sie zwei PINs einrichten. Die beiden PINs (für jede App) sind in keiner Weise miteinander verknüpft (sie müssen also für die jeweilige App geltende App-Schutzrichtlinie einhalten). Daher kann der Benutzer ein und dieselbe PIN *nur* dann zweimal einrichten, wenn für App A und App B die gleichen Richtlinien (in Bezug auf die PIN) gelten. 
 
@@ -261,6 +270,8 @@ Nur Daten, die als „unternehmenseigen“ markiert sind, werden gemäß der vom
 
 Bei Branchen-Apps, die vom [Intune App Wrapping Tool](../developer/apps-prepare-mobile-application-management.md) verwaltet werden, werden alle App-Daten als „unternehmenseigen“ betrachtet.
 
+### <a name="selective-wipe"></a>Selektives Zurücksetzen
+
 **Löschen von Daten per Remotezugriff**<br>
 Intune kann App-Daten auf drei verschiedene Arten löschen: 
 - Vollständiges Zurücksetzen des Geräts
@@ -269,10 +280,10 @@ Intune kann App-Daten auf drei verschiedene Arten löschen:
 
 Weitere Informationen zur Remotezurücksetzung der MDM finden Sie unter [Entfernen von Geräten durch Zurücksetzen oder Abkoppeln](../remote-actions/devices-wipe.md). Weitere Informationen zum selektiven Zurücksetzen mit MAM finden Sie unter [the Retire action (Die Aktion „Abkoppeln“)](../remote-actions/devices-wipe.md#retire) und [Zurücksetzen von Unternehmensdaten in Apps](apps-selective-wipe.md).
 
-Beim [Zurücksetzen](../remote-actions/devices-wipe.md) werden alle Benutzerdaten und -einstellungen vom **Gerät** entfernt, indem die werkseitigen Standardeinstellungen auf dem Gerät wiederhergestellt werden. Das Gerät wird aus Intune entfernt.
+Beim [vollständigen Zurücksetzen des Geräts](../remote-actions/devices-wipe.md) werden alle Benutzerdaten und -einstellungen vom **Gerät** entfernt, indem das Gerät auf die werkseitigen Standardeinstellungen zurückgesetzt wird. Das Gerät wird aus Intune entfernt.
 
   >[!NOTE]
-  > Die Zurücksetzung kann nur auf Geräten ausgeführt werden, die mit Intune-MDM registriert sind.
+  > Ein vollständiges Zurücksetzen des Geräts und selektives Zurücksetzen für MDM kann nur auf Geräten erreicht werden, die bei der Intune-Verwaltung mobiler Geräte (MDM) registriert sind.
 
 **Selektives Zurücksetzen für MDM**<br>
 Informationen zum Entfernen von Unternehmensdaten finden Sie unter [Remove devices - retire (Entfernen von Geräten: Abkoppeln)](../remote-actions/devices-wipe.md#retire).
@@ -280,24 +291,20 @@ Informationen zum Entfernen von Unternehmensdaten finden Sie unter [Remove devic
 **Selektives Zurücksetzen für MAM**<br>
 Durch selektives Zurücksetzen für MAM können Unternehmensanwendungsdaten von einer App entfernt werden. Die Anforderung wird mithilfe des Azure-Portals für Intune initiiert. Informationen zum Initiieren einer Zurücksetzungsanforderung finden Sie unter [So setzen Sie nur die Unternehmensdaten in einer App zurück](apps-selective-wipe.md).
 
-Wenn das selektive Zurücksetzen initiiert wird, während ein Benutzer die App verwendet, überprüft das [Intune App SDK](../developer/app-sdk.md) alle 30 Minuten, ob eine Anforderung zum selektiven Zurücksetzen vom Intune MAM-Dienst vorhanden ist. Das SDK überprüft auch, ob eine Anforderung zum selektiven Zurücksetzen vorhanden ist, wenn ein Benutzer eine App zum ersten Mal startet und sich mit einem Geschäfts-, Uni- oder Schulkonto anmeldet.
+Wenn das selektive Zurücksetzen initiiert wird, während ein Benutzer die App verwendet, überprüft das [Intune SDK](../developer/app-sdk.md) alle 30 Minuten, ob eine Anforderung zum selektiven Zurücksetzen vom Intune MAM-Dienst vorhanden ist. Das SDK überprüft auch, ob eine Anforderung zum selektiven Zurücksetzen vorhanden ist, wenn ein Benutzer eine App zum ersten Mal startet und sich mit einem Geschäfts-, Uni- oder Schulkonto anmeldet.
 
 **Wenn lokale Dienste nicht mit von Intune geschützten Apps funktionieren**<br>
-Der Intune-App-Schutz hängt davon ab, dass die Identität des Benutzers in der App und im [Intune App SDK](../developer/app-sdk.md) konsistent ist. Die einzige Möglichkeit, dies zu garantieren, ist eine moderne Authentifizierung. Es gibt Szenarien, in denen Apps möglicherweise mit einer lokalen Konfiguration funktionieren. Dies ist aber weder konsistent noch garantiert.
+Der Intune-App-Schutz hängt davon ab, dass die Identität des Benutzers in der App und im [Intune SDK](../developer/app-sdk.md) konsistent ist. Die einzige Möglichkeit, dies zu garantieren, ist eine moderne Authentifizierung. Es gibt Szenarien, in denen Apps möglicherweise mit einer lokalen Konfiguration funktionieren. Dies ist aber weder konsistent noch garantiert.
 
 **Eine sichere Möglichkeit zum Öffnen von Weblinks in verwalteten Apps**<br>
 Ein IT-Administrator kann eine App-Schutzrichtlinie für die [Intune Managed Browser-App](app-configuration-managed-browser.md) einrichten und bereitstellen, ein von Microsoft Intune entwickelter Webbrowser, der problemlos mit Intune verwaltet werden kann. Der IT-Administrator kann festlegen, dass alle Weblinks in über Intune verwaltete Apps mit der Managed Browser-App geöffnet werden müssen.
-
-## <a name="examples-of-app-protection-policies"></a>Beispiele für App-Schutzrichtlinien
-
-Beispiele für App-Schutzrichtlinien und ausführliche Informationen zu den Einstellungen der einzelnen Richtlinien finden Sie unter [Einstellungen für App-Schutzrichtlinien in Android](app-protection-policy-settings-android.md) und [Einstellungen für App-Schutzrichtlinien in iOS](app-protection-policy-settings-ios.md).
 
 ## <a name="app-protection-experience-for-ios-devices"></a>App-Schutzfunktionen für iOS-Geräte
 
 ### <a name="device-fingerprint-or-face-ids"></a>Erkennung von Fingerabdrücken oder Gesichtern auf dem Gerät 
 Die Richtlinien für den Intune-App-Schutz ermöglichen es Ihnen, den App-Zugriff nur auf Benutzer mit Intune-Lizenz zu beschränken. Eine der Möglichkeiten, den Zugriff auf die App zu steuern, besteht darin, Apple Touch ID oder Face ID auf unterstützten Geräten zu erfordern. Intune implementiert ein Verhalten, bei dem Intune den Benutzer bei Änderungen an der biometrischen Datenbank des Geräts zur PIN-Eingabe auffordert, wenn der nächste Wert des Inaktivitätstimeouts erfüllt ist. Zu Änderungen an biometrischen Daten zählen das Hinzufügen oder Entfernen von Fingerabdrücken oder Gesichtern. Wenn der Intune-Benutzer keine PIN festgelegt hat, wird er zu einem Fenster für die Einrichtung einer Intune-PIN weitergeleitet.
  
-Zweck dieses Verfahrens ist es, die Daten Ihrer Organisation innerhalb der App und auf App-Ebene kontinuierlich zu schützen. Dieses Feature ist nur für iOS verfügbar und erfordert, dass das Intune App SDK für iOS, Version 9.0.1 oder höher in betreffende Anwendungen integriert wird. Die Integration des SDK ist erforderlich, damit das Verhalten für die Zielanwendungen erzwungen werden kann. Diese Integration erfolgt kontinuierlich und ist abhängig von den jeweiligen Anwendungsteams. Zu den betreffenden Apps zählen z. B. WXP, Outlook, Managed Browser und Yammer.
+Zweck dieses Verfahrens ist es, die Daten Ihrer Organisation innerhalb der App und auf App-Ebene kontinuierlich zu schützen. Dieses Feature ist nur für iOS verfügbar und erfordert, dass das Intune SDK für iOS, Version 9.0.1 oder höher in betreffende Anwendungen integriert wird. Die Integration des SDK ist erforderlich, damit das Verhalten für die Zielanwendungen erzwungen werden kann. Diese Integration erfolgt kontinuierlich und ist abhängig von den jeweiligen Anwendungsteams. Zu den betreffenden Apps zählen z. B. WXP, Outlook, Managed Browser und Yammer.
   
 ### <a name="ios-share-extension"></a>iOS-Freigabeerweiterung
 Mithilfe der iOS-Freigabeerweiterung können Geschäfts-, Schul- oder Unidaten in nicht verwalteten Apps zu geöffnet werden, auch wenn die Datenübertragungsrichtlinie auf **Nur verwaltete Apps** oder **Keine Apps** festgelegt ist. Die Intune-App-Schutzrichtlinie kann die iOS-Freigabeerweiterung nicht steuern, ohne das Gerät zu verwalten. Daher _**verschlüsselt Intune „unternehmenseigene“ Daten, bevor diese außerhalb der App freigegeben werden**_ . Sie können dieses Verschlüsselungsverhalten überprüfen, indem Sie versuchen, eine „unternehmenseigene“ Datei außerhalb der verwalteten App zu öffnen. Die Datei sollte verschlüsselt sein und außerhalb der verwalteten App nicht geöffnet werden können.
@@ -305,7 +312,7 @@ Mithilfe der iOS-Freigabeerweiterung können Geschäfts-, Schul- oder Unidaten i
 ### <a name="multiple-intune-app-protection-access-settings-for-same-set-of-apps-and-users"></a>Mehrere Zugriffseinstellungen des Intune-App-Schutzes für die gleiche Gruppe von Apps und Benutzern
 Intune-App-Schutzrichtlinien für den Zugriff werden in einer bestimmten Reihenfolge auf Endbenutzergeräten angewendet, wenn die Benutzer versuchen, über ihr Unternehmenskonto auf eine App zuzugreifen. In der Regel hat ein Zurücksetzungsvorgang Vorrang vor einem Block. Verwerfbare Warnungen werden erst als letztes berücksichtigt. Es wird z. B. eine Einstellung der mindestens erforderlichen iOS-Version, die den Benutzer auffordert, ein Update des Betriebssystems auszuführen, im Anschluss an die Einstellung angewendet, die dem Benutzer den Zugriff verweigert (wenn dies auf den Benutzer/die App zutrifft). In diesem Szenario konfiguriert der IT-Administrator die Einstellung für die mindestens erforderliche iOS-Version auf Version 11.0.0.0 und die mindestens erforderliche iOS-Version, die nur für Warnungen gilt, auf 11.1.0.0. Gleichzeitig versucht das Gerät, auf dem noch die iOS-Version 10 installiert ist, auf die App zuzugreifen. In Folge dessen wird der Endbenutzer basierend auf restriktiveren Einstellungen für die mindestens erforderliche iOS-Version blockiert und erhält keinen Zugriff.
 
-Wenn verschiedene Arten von Einstellungen verarbeitet werden müssen, haben die Anforderungen hinsichtlich bestimmter Versionen des Intune App SDK Vorrang. Erst danach werden Anforderungen berücksichtigt, die eine Version einer App oder eines iOS-Betriebssystems betreffen. Anschließend werden in derselben Reihenfolge mögliche Warnungen für sämtliche Einstellungstypen überprüft. Es wird empfohlen, die Anforderung, die die Intune App SDK-Version betrifft, nur unter Anleitung des Intune-Produktteams für grundlegende Blockierungsszenarios zu konfigurieren.
+Wenn verschiedene Arten von Einstellungen verarbeitet werden müssen, haben die Anforderungen hinsichtlich bestimmter Versionen des Intune SDK Vorrang. Erst danach werden Anforderungen berücksichtigt, die eine Version einer App oder eines iOS-Betriebssystems betreffen. Anschließend werden in derselben Reihenfolge mögliche Warnungen für sämtliche Einstellungstypen überprüft. Es wird empfohlen, die Anforderung, die die Intune SDK-Version betrifft, nur unter Anleitung des Intune-Produktteams für grundlegende Blockierungsszenarien zu konfigurieren.
 
 ## <a name="app-protection-experience-for-android-devices"></a>App-Schutzfunktionen für Android-Geräte
 
@@ -344,6 +351,10 @@ Die App-Schutzrichtlinieneinstellungen, die Google Play Protect-APIs verwenden, 
 ## <a name="next-steps"></a>Nächste Schritte
 
 [Erstellen und Bereitstellen von App-Schutzrichtlinien mit Microsoft Intune](app-protection-policies.md)
+
+[Verfügbare Einstellungen für Schutzrichtlinien für Android-Apps mit Microsoft Intune](app-protection-policy-settings-android.md)
+
+[Verfügbare Einstellungen für Schutzrichtlinien für iOS-Apps mit Microsoft Intune](app-protection-policy-settings-ios.md)
 
 ## <a name="see-also"></a>Weitere Informationen:
 Apps von Drittanbietern wie beispielsweise die mobile Salesforce-App arbeiten auf eine bestimmte Weise mit Intune zusammen, um die Unternehmensdaten zu schützen. Weitere Informationen zur speziellen Zusammenarbeit der Salesforce-App mit Intune (einschließlich Konfigurationseinstellungen für die MDM-App) finden Sie unter [Salesforce-App und Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf).
