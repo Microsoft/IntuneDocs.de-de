@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 996e28f9dceff88637c93e667597e3364215b965
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 202d9e53ff21e5677a212012d37b0e909cc8c562
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505634"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654089"
 ---
 # <a name="reference-for-user-entity"></a>Referenz für die Benutzerentität
 

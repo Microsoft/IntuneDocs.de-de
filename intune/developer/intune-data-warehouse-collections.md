@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42d07f02e76669c735d09b5d7843a4102dd0f835
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 7ceaf5c62f34cc248813a064de9e8e3710797779
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899246"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547914"
 ---
 # <a name="intune-data-warehouse-collections"></a>Intune Data Warehouse-Sammlungen
 
@@ -116,7 +116,7 @@ In der folgenden Tabelle sind die Zuweisungsstatus der Konformitätsrichtlinien 
 
 |  complianceStatus  |                       Beschreibung                      |
 |:------------------:|:------------------------------------------------------:|
-|    Unbekannt         |    Unbekannt.                                                                        |
+|    Unbekannt         |    Unbekannt                                                                        |
 |    Kompatibel       |    Kompatibel.                                                                      |
 |    Nicht richtlinienkonform    |       Gerät ist nicht konform und wird nicht in die Unternehmensressourcen einbezogen.             |
 |    Konflikt        |    Konflikt mit anderen Regeln.                                                      |
@@ -163,7 +163,7 @@ Die Entität **DeviceConfigurationProfileDeviceActivity** listet die Anzahl der 
 |:---------:|:---------------------------------------------------------------------------------------------:|:--------:|
 | DateKey   | Datumsschlüssel für den Zeitpunkt, zu dem das Einchecken des Gerätekonfigurationsprofils im Data Warehouse aufgezeichnet wurde. | 20160703 |
 | Pending   | Anzahl eindeutiger Geräte im Zustand „ausstehend“                                                    | 123      |
-| Succeeded | Anzahl eindeutiger Geräte im Zustand „erfolgreich“                                                    | 12       |
+| Erfolgreich | Anzahl eindeutiger Geräte im Zustand „erfolgreich“                                                    | 12       |
 | Fehler     | Anzahl eindeutiger Geräte im Zustand „Fehler“                                                      | 10       |
 | Failed    | Anzahl eindeutiger Geräte im Zustand „fehlerhaft“                                                     | 2        |
 
@@ -174,7 +174,7 @@ Die Entität **DeviceConfigurationProfileUserActivity** listet die Anzahl der Be
 |------------|----------------------------------------------------------------------------------------------|-----------|
 | DateKey  | Date Key für den Zeitpunkt als das Einchecken der Gerätekonfigurationsprofile im Data Warehouse aufgezeichnet wurde  | 20160703  |
 | Pending  | Anzahl eindeutiger Benutzer im Zustand „ausstehend“  | 123  |
-| Succeeded  | Anzahl eindeutiger Benutzer im Zustand „erfolgreich“  | 12  |
+| Erfolgreich  | Anzahl eindeutiger Benutzer im Zustand „erfolgreich“  | 12  |
 | Fehler  | Anzahl eindeutiger Benutzer im Zustand „Fehler“  | 10  |
 | Failed  | Anzahl eindeutiger Benutzer im Zustand „fehlerhaft“  | 2  |
 
@@ -203,7 +203,7 @@ Die Entität **DeviceRegistrationState** stellt den Registrierungstyp dar, auf d
 | deviceRegistrationStateName | Registrierungsstatus                                                                  |
 |    NotRegistered                     |    Nicht registriert                                                                                                                                                                  |
 |    Registriert                        |       Registriert                                                                                                                                                                   |
-|    Revoked                           |       Der Status bedeutet, dass der IT-Administrator den Client blockiert hat und der Client wieder freigegeben werden kann. Wenn ein Gerät zurückgesetzt oder außer Kraft gesetzt wurde, kann es auch den Status „Revoked“ anzeigen.        |
+|    Widerrufen                           |       Der Status bedeutet, dass der IT-Administrator den Client blockiert hat und der Client wieder freigegeben werden kann. Wenn ein Gerät zurückgesetzt oder außer Kraft gesetzt wurde, kann es auch den Status „Revoked“ anzeigen.        |
 |    KeyConflict                       |    Schlüsselkonflikt                                                                                                                                                                    |
 |    ApprovalPending                   |    Ausstehende Genehmigung                                                                                                                                                                |
 |    CertificateReset                  |    Zertifikat zurücksetzen                                                                                                                                                               |
@@ -230,7 +230,7 @@ In der Entität **device** werden alle für die Verwaltung registrierten Geräte
 | DeviceCategoryKey          | Der Schlüssel der Kategorie, die mit diesem Gerät verknüpft ist.                                                                                                                                     |
 | DeviceEnrollmentType       | Der Schlüssel des Registrierungstyps, der mit diesem Gerät verknüpft ist und die Registrierungsmethode angibt.                                                                                             |
 | ComplianceStateKey         | Der Schlüssel des Konformitätsstatus, der mit diesem Gerät verknüpft ist.                                                                                                                             |
-| OSVersion                  | Betriebssystemversion des Geräts                                                                                                                                                |
+| OSVersion                  | Die Betriebssystemversion des Geräts.                                                                                                                                                |
 | EasDeviceId                | Exchange ActiveSync-ID des Geräts                                                                                                                                                  |
 | SerialNumber               | SerialNumber                                                                                                                                                                           |
 | UserId                     | Eindeutiger Bezeichner für den Benutzer, der dem Gerät zugeordnet ist.                                                                                                                           |
@@ -504,7 +504,7 @@ Die Entität **MamPlatform** führt Plattformnamen und -typen auf, auf denen ein
 |----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
 |        PlatformKey         |     Eindeutiger Bezeichner für die Plattform im Data Warehouse – Ersatzschlüssel      |                           123                           |
 |          Plattform          | Eindeutiger Bezeichner der Plattform – ähnlich wie PlatformKey, es handelt sich allerdings um einen natürlichen Schlüssel |                           123                           |
-|        PlatformName        |                                   Plattformname                                   | Nicht verfügbar <br>Keine <br>Windows <br>iOS <br>Android: |
+|        PlatformName        |                                   Plattformname                                   | Nicht verfügbar <br>Keine <br>Windows <br>IOS <br>Android: |
 | RowLastModifiedDateTimeUtc | Datum und Uhrzeit in UTC, als diese Plattform zuletzt im Data Warehouse geändert wurde  |                 23.11.2016 12:00:00 Uhr                  |
 
 ## <a name="managementagenttypes"></a>managementAgentTypes
@@ -525,7 +525,7 @@ Die Entität **managementAgentType** stellt die Agents dar, die zum Verwalten vo
 | 3                     | EasMdm                            | Das Gerät wird sowohl von Exchange Active Sync als auch einem MDM-Agent verwaltet.        |
 | 4                     | IntuneClient                      | Das Gerät wird vom Intune-PC-Agent verwaltet.                               |
 | 5                     | EasIntuneClient                   | Das Gerät wird sowohl von Exchange ActiveSync als auch vom Intune-PC-Agent verwaltet. |
-| 8                     | ConfigManagerClient               | Das Gerät wird vom System Center Configuration Manager-Agent verwaltet.     |
+| 8                     | ConfigManagerClient               | Das Gerät wird vom Configuration Manager-Agent verwaltet.     |
 | 10                    | ConfigurationManagerClientMdm     | Das Gerät wird vom Configuration Manager und MDM verwaltet.                    |
 | 11                    | ConfigurationManagerCLientMdmEas  | Das Gerät wird von Configuration Manager, MDM und Exchange Active Sync verwaltet.               |
 | 16                    | Unbekannt                           | Unbekannter Verwaltungs-Agent-Typ                                              |
@@ -586,7 +586,7 @@ Die Entität **ownerType** gibt an, ob ein Gerät einem Unternehmen oder einer P
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | Eindeutiger Bezeichner des Besitzertyps                                                                                                                                               |                            |
 | ownerTypeKey  | Eindeutiger Bezeichner des Besitzertyps im Data Warehouse – Ersatzschlüssel.                                                                                                       |                            |
-| ownerTypeName | Stellt den Besitzertyp der Geräte dar: Unternehmen: Das Gerät gehört einem Unternehmen.  Persönlich: Das Gerät befindet sich im Privatbesitz (BYOD).   Unbekannt: Es liegen keine Informationen zu diesem Gerät vor. | Corporate Personal Unknown |
+| ownerTypeName | Stellt den Besitzertypen der Geräte dar:  Corporate (Unternehmen): Das Gerät gehört einem Unternehmen.  Persönlich: Das Gerät befindet sich im Privatbesitz (BYOD).   Unbekannt: Es liegen keine Informationen zu diesem Gerät vor. | Corporate Personal Unknown |
 
 > [!Note]  
 > Für den Filter `ownerTypeName` in AzureAD müssen Sie beim Erstellen dynamischer Gruppen für Geräte den Wert `deviceOwnership` als `Company` festlegen. Weitere Informationen finden Sie unter [Regeln für Geräte](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
@@ -612,7 +612,7 @@ In der folgenden Tabelle ist die Anzahl der Geräte mit dem Zustand „erfolgrei
 |:---------:|:-----------------------------------------------------------------------------------------------:|:---------------------:|
 | DateKey   | Datumsschlüssel für den Zeitpunkt, zu dem das Einchecken des Gerätekonfigurationsprofils im Data Warehouse aufgezeichnet wurde. | 20160703              |
 | Pending   | Anzahl eindeutiger Geräte im Zustand „ausstehend“.                                                    | 123                   |
-| Succeeded | Anzahl eindeutiger Geräte im Zustand „erfolgreich“.                                                    | 12                    |
+| Erfolgreich | Anzahl eindeutiger Geräte im Zustand „erfolgreich“.                                                    | 12                    |
 | PolicyKey | Der Richtlinienschlüssel kann mit der Richtlinie verknüpft werden, um den Richtliniennamen zu erhalten.                                  | Windows 10-Baseline |
 | Fehler     | Anzahl eindeutiger Geräte im Zustand „Fehler“.                                                      | 10                    |
 | Failed    | Anzahl eindeutiger Geräte im Zustand „fehlerhaft“.                                                     | 2                     |
@@ -634,7 +634,7 @@ Die Entität **PolicyTypeActivity** listet die Gesamtzahl der Geräte im Zustand
 | PolicyKey     | Der Richtlinienschlüssel kann mit der Richtlinie verknüpft werden, um den Richtliniennamen zu erhalten.                                | Windows 10-Baseline         |
 | PolicyTypeKey | Der Typ des Richtlinienschlüssels kann mit dem Richtlinientyp verknüpft werden, um den Namen des Richtlinientyps zu erhalten.             | Windows 10-Kompatibilitätsrichtlinien |
 | Pending       | Anzahl eindeutiger Geräte im Zustand „ausstehend“                                                    | 123                         |
-| Succeeded     | Anzahl eindeutiger Geräte im Zustand „erfolgreich“                                                    | 12                          |
+| Erfolgreich     | Anzahl eindeutiger Geräte im Zustand „erfolgreich“                                                    | 12                          |
 | Fehler         | Anzahl eindeutiger Geräte im Zustand „Fehler“                                                      | 10                          |
 | Failed        | Anzahl eindeutiger Geräte im Zustand „fehlerhaft“                                                     | 2                           |
 
@@ -654,7 +654,7 @@ In der folgenden Tabelle ist die Anzahl der Benutzer mit dem Zustand „erfolgre
 |:---------:|:---------------------------------------------------------------------------------------------:|:-------------------:|
 | DateKey   | Datumsschlüssel für den Zeitpunkt, zu dem das Einchecken des Gerätekonfigurationsprofils im Data Warehouse aufgezeichnet wurde. | 20160703            |
 | Pending   | Anzahl eindeutiger Geräte im Zustand „ausstehend“                                                    | 123                 |
-| Succeeded | Anzahl eindeutiger Geräte im Zustand „erfolgreich“                                                    | 12                  |
+| Erfolgreich | Anzahl eindeutiger Geräte im Zustand „erfolgreich“                                                    | 12                  |
 | PolicyKey | Der Richtlinienschlüssel kann mit der Richtlinie verknüpft werden, um den Richtliniennamen zu erhalten.                                | Windows 10-Baseline |
 | Fehler     | Anzahl eindeutiger Geräte im Zustand „Fehler“                                                      | 10                  |
 

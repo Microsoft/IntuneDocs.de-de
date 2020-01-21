@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5665ae7d8093decc8ef2ea4ab1911b27e20e25dd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: edea807b8c71f519c28f19b0343fa8ea0977712a
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505775"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855145"
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Einstellen der Zeit bis zur Sperrung des Bildschirms durch Ihr Android-Gerät
 

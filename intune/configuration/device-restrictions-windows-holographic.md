@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1f90a5a13859ff19765e22444a84b9c11405af73
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: df5fb0ba370bff4f5ec99852484dfb1fd2cc9f60
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059506"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206498"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>Windows Holographic for Business-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 In diesem Artikel werden die verschiedenen Einstellungen aufgeführt und beschrieben, die Sie für Windows Holographic for Business-Geräte steuern können, z.B. Microsoft Hololens. Als Bestandteil Ihrer Lösung für die mobile Geräteverwaltung (Mobile Device Management, MDM) verwenden Sie diese Einstellungen, um Features zuzulassen oder zu deaktivieren, die Sicherheit zu steuern und mehr.
 
@@ -34,50 +34,50 @@ In diesem Artikel werden die verschiedenen Einstellungen aufgeführt und beschri
 
 ## <a name="general"></a>Allgemein
 
-- **Manuelle Aufhebung der Registrierung**: Erlaubt dem Benutzer das manuelle Löschen des Unternehmensbereichskontos vom Gerät.
-- **Cortana**: Aktiviert oder deaktiviert den Cortana-Sprach-Assistenten.
-- **Geolocation**: Gibt an, ob das Gerät Standortdienstinformationen verwenden kann.
+- **Manuelles Aufheben der Registrierung**: Ermöglicht dem Benutzer das manuelle Löschen des Unternehmensbereichskontos vom Gerät.
+- **Cortana**: Aktivieren oder deaktivieren Sie den Sprach-Assistenten Cortana.
+- **Geolocation**: Gibt an, ob das Gerät Ortungsdienstinformationen verwenden kann.
 
 ## <a name="password"></a>Kennwort
 
-- **Kennwort**: Der Endbenutzer muss ein Kennwort eingeben, um auf das Gerät zugreifen zu können.
-- **Kennwort anfordern, wenn Gerät aus Leerlaufzustand zurückkehrt**: Gibt an, dass der Benutzer ein Kennwort zum Entsperren des Geräts eingeben muss.
+- **Kennwort**: Der Endbenutzer muss ein Passwort eingeben, um auf das Gerät zugreifen zu können.
+- **Kennwort anfordern, wenn das Gerät aus Leerlaufzustand zurückkehrt**: Gibt an, dass der Benutzer ein Kennwort zum Entsperren des Geräts eingeben muss.
 
 ## <a name="app-store"></a>App Store
 
-- **Apps aus Store automatisch aktualisieren**: Ermöglicht die automatische Aktualisierung von Apps, die aus dem Microsoft Store installiert wurden.
+- **Apps aus Store automatisch aktualisieren**: Apps aus dem Microsoft Store können automatisch aktualisiert werden.
 - **Installation vertrauenswürdiger Apps**: Ermöglicht das Querladen von Apps, die mit einem vertrauenswürdigen Zertifikat signiert sind.
 - **Entwicklersperre aufheben**: Ermöglicht dem Endbenutzer, Windows-Entwicklereinstellungen – z.B. das Zulassen quergeladener Apps – zu ändern.
 
 ## <a name="microsoft-edge-browser"></a>Microsoft Edge-Browser
 
-- **Cookies**: Ermöglicht Browsern das Speichern von Internetcookies auf dem Gerät.
+- **Cookies**: Erlaubt Browsern das Speichern von Internetcookies auf dem Gerät.
 - **Popups**: Blockiert Popupfenster im Browser (gilt nur für Windows 10 Desktop).
-- **Suchvorschläge**: Ermöglicht der Suchmaschine, während der Eingabe von Suchausdrücken Websites vorzuschlagen.
-- **Kennwort-Manager**: Aktiviert oder deaktiviert die Funktion des Kennwort-Managers von Microsoft Edge.
-- **DNT-Kopfzeilen senden**: Konfiguriert den Microsoft Edge-Browser für das Senden von DNT-Headern (Do Not Track, nicht verfolgen) an Websites, die Benutzer besuchen.
+- **Suchvorschläge**: Ermöglicht der Suchmaschine, schon während der Eingabe von Suchausdrücken Websites vorzuschlagen.
+- **Kennwort-Manager**: Aktiviert oder deaktiviert den Kennwort-Manager von Microsoft Edge.
+- **DNT-Kopfzeilen senden**: Konfiguriert den Microsoft Edge-Browser zum Senden von DNT-Kopfzeilen (Do Not Track, nicht nachverfolgen) an Websites, die Benutzer besuchen.
 
 ## <a name="microsoft-defender-smart-screen"></a>Microsoft Defender-SmartScreen
 
-- **SmartScreen für Microsoft Edge**: Aktiviert SmartScreen für Microsoft Edge für den Zugriff auf Website- und Dateidownloads.
+- **SmartScreen für Microsoft Edge**: Hiermit wird Edge SmartScreen für den Zugriff auf Website- und Dateidownloads aktiviert.
 
 ## <a name="search"></a>Suchen
 
-- **Standortsuche:** Hiermit geben Sie an, ob bei der Suche der Standort verwendet werden kann. Informationen zu
+- **Standortsuche:** Hiermit geben Sie an, ob bei der Suche der Standort verwendet werden kann. Informationen
 
 ## <a name="cloud-and-storage"></a>Cloud und Speicher
 
-- **Microsoft-Konto**: Erlaubt dem Benutzer, das Gerät einem Microsoft-Konto zuzuordnen.
+- **Microsoft-Konto**: Ermöglicht dem Benutzer, das Gerät einem Microsoft-Konto zuzuordnen.
 
 ## <a name="cellular-and-connectivity"></a>Mobilfunk und Konnektivität
 
 - **Bluetooth**: Steuert, ob der Benutzer Bluetooth auf dem Gerät aktivieren und konfigurieren kann.
 - **Bluetooth-Erkennbarkeit**: Ermöglicht die Erkennung dieses Geräts durch andere Bluetooth-Geräte.
-- **Bluetooth-Werbung**: Ermöglicht das Empfangen von Werbung per Bluetooth durch das Gerät.
+- **Bluetooth-Ankündigung**: Ermöglicht Geräten den Empfang von Ankündigungen über Bluetooth.
 
 ## <a name="control-panel-and-settings"></a>Systemsteuerung und Einstellungen
 
-- **Änderung der Systemzeit**: Verhindert, dass der Endbenutzer auf dem Gerät Datum und Uhrzeit ändert.
+- **Änderung der Systemzeit**: hindert Benutzer daran, die Systemzeit auf dem Gerät zu ändern.
 
 ## <a name="kiosk---obsolete"></a>Kiosk – veraltet
 
@@ -87,9 +87,9 @@ Ein Kiosk-Gerät führt in der Regel eine spezifische App aus. Benutzer werden d
 
 - **Kioskmodus**: Gibt den Typ des Kioskmodus an, der von der Richtlinie unterstützt wird. Zu den Optionen gehören:
 
-  - **Nicht konfiguriert** (Standard): Die Richtlinie aktiviert keinen Kioskmodus. 
-  - **Kiosk mit einzelner App**: Das Profil erlaubt dem Gerät, nur eine App auszuführen. Wenn sich der Benutzer anmeldet, wird eine bestimmte App gestartet. Dieser Modus hindert den Benutzer auch daran, neue Apps zu öffnen oder die App zu ändern, die ausgeführt wird.
-  - **Kiosk mit mehreren Apps**: Das Profil ermöglicht dem Gerät, mehrere Apps auszuführen. Es sind nur die Apps, die Sie hinzufügen, für den Benutzer verfügbar. Der Vorteil eines Kiosks mit mehreren Apps oder eines Geräts mit festem Zweck ist eine leicht verständliche Benutzererfahrung für einzelne Personen, da sie nur auf die Apps zugreifen, die sie benötigen. Apps, die sie nicht benötigen, werden aus der Ansicht entfernt. 
+  - **Nicht konfiguriert** (Standardeinstellung): Die Richtlinie aktiviert keinen Kioskmodus. 
+  - **Kiosk mit einzelner App**: Das Profil erlaubt dem Gerät die Ausführung von nur einer App. Wenn sich der Benutzer anmeldet, wird eine bestimmte App gestartet. Dieser Modus hindert den Benutzer auch daran, neue Apps zu öffnen oder die App zu ändern, die ausgeführt wird.
+  - **Kiosk mit mehreren Apps**: Das Profil erlaubt dem Gerät, mehrere Apps auszuführen. Es sind nur die Apps, die Sie hinzufügen, für den Benutzer verfügbar. Der Vorteil eines Kiosks mit mehreren Apps oder eines Geräts mit festem Zweck ist eine leicht verständliche Benutzererfahrung für einzelne Personen, da sie nur auf die Apps zugreifen, die sie benötigen. Apps, die sie nicht benötigen, werden aus der Ansicht entfernt. 
   
     Wenn Sie einem Kiosk mit mehreren Apps Apps hinzufügen, fügen Sie auch eine Datei für das Layout des Startmenüs hinzu. Die [Datei für das Layout des Startmenüs](/hololens/hololens-kiosk#start-layout-file-for-mdm-intune-and-others) enthält XML-Beispiele, die in Intune verwendet werden können. 
 
@@ -105,7 +105,7 @@ Legen Sie folgende Einstellungen fest:
 
 ## <a name="reporting-and-telemetry"></a>Berichterstellung und Telemetrie
 
-- **Nutzungsdaten freigeben**: Wählen Sie die Ebene der Übermittlung von Diagnosedaten aus.
+- **Nutzungsdaten freigeben**: Wählen Sie die Ebene der Diagnosedatenübermittlung.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

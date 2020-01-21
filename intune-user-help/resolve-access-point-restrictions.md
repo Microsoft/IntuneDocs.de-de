@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8aa54c5ed2a5121246f917a5b5306fab5d89edc
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: eeb47c072a4f34098bdebfd8766ab51b941d0bd3
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508422"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858097"
 ---
 # <a name="resolve-access-point-restrictions"></a>Auflösen von Einschränkungen eines Zugriffspunkts
 
@@ -38,19 +38,19 @@ Wenn Sie versuchen, eine Verbindung mit einem nicht genehmigten oder unbekannten
  In den unten stehenden Tabellen werden die Meldungen mit den jeweiligen Bedeutungen und Maßnahmen aufgelistet, mit denen Sie wieder auf Ihre Arbeitsressourcen zugreifen können.
 
 ## <a name="access-point-restrictions-not-set-up"></a>Es wurden keine Zugriffspunkteinschränkungen eingerichtet.  
-| Meldung im Unternehmensportal | Bedeutung der Meldung | Was Sie tun sollten                                                               
+| Meldung im Unternehmensportal | Bedeutung der Meldung | Maßnahme                                                               
 |------------------------|--------------------------|--------------------------|
 | **Es wurden keine Zugriffspunkteinschränkungen eingerichtet. Zugriffspunkteinschränkungen sind aktiv und müssen eingerichtet werden.** | Ihr Unternehmen hat Zugriffspunkteinschränkungen auf Ihrem Gerät angewendet. Durch diese Einstellung muss die Unternehmensportal-App einige Netzwerkeinstellungen auf Ihrem Gerät überprüfen. | Tippen Sie auf **Resolve** (Beheben). Die Unternehmensportal-App überprüft, ob Sie mit einem vom Unternehmen genehmigten Netzwerk verbunden sind. |
 
 ## <a name="not-connected-to-an-approved-network"></a>Sie sind nicht mit einem genehmigten Netzwerk verbunden.  
 
-| Meldung im Unternehmensportal | Bedeutung der Meldung | Was Sie tun sollten                                                                   
+| Meldung im Unternehmensportal | Bedeutung der Meldung | Maßnahme                                                                   
 |------------------------|-----------------------------------|--------------------------|
 | **Sie sind nicht mit einem genehmigten Netzwerk verbunden. Stellen Sie eine Verbindung mit einem genehmigten Funknetzwerk her.** | Sie sind mit einem Netzwerk verbunden, dass nicht für den Arbeitsplatzzugriff zugelassen ist. Solange Sie mit diesem Netzwerk verbunden sind, können Sie nicht auf Arbeits-E-Mails, -Apps und andere geschützte Unternehmensressourcen zugreifen. | Stellen Sie eine Verbindung mit einem von Ihrem Unternehmen genehmigten Netzwerk her. Tippen Sie dann auf **Beheben**, um es erneut zu versuchen. |
 
 ## <a name="restrictions-couldnt-be-enforced"></a>Einschränkungen konnten nicht erzwungen werden  
 
-| Meldung im Unternehmensportal | Bedeutung der Meldung | Was Sie tun sollten                                                                      
+| Meldung im Unternehmensportal | Bedeutung der Meldung | Maßnahme                                                                      
 |------------------------|-----------------------------------|--------------------------|
 | **Die Zugriffspunkteinschränkungen konnten nicht erzwungen werden. Fehler im Unternehmensportal.** | Intune konnte nicht bestimmen, ob Sie mit einem genehmigten Netzwerk verbunden sind. Dieser Fehler kann wegen einer schlechten Netzwerkverbindung, wegen niedrigen Akkustands, Stromsparmodus oder einem Fehler im Unternehmensportal auftreten. | Stellen Sie sicher, dass Ihre Netzwerkverbindung stark genug ist. Deaktivieren Sie den Stromsparmodus, und achten Sie darauf, dass Ihr Akkustand mindestens 30 % beträgt. Tippen Sie dann auf **Beheben**, um es erneut zu versuchen. 
 

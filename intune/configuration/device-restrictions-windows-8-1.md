@@ -1,12 +1,12 @@
 ---
-title: Einstellungen für Geräteeinschränkungen für Windows 8.1-Geräte in Microsoft Intune
+title: Geräteeinschränkungen für Windows 8.1-Geräte in Microsoft Intune – Azure | Microsoft-Dokumentation
 titleSuffix: ''
 description: In diesem Artikel erhalten Sie Informationen zu den Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Windows 8.1-Geräten.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,19 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0df55e79dbc54926c0507889620f2667d7b8bd7b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 82eaf1bc2c0737e1cc54751ff6fb5751227d180c
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72489834"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302962"
 ---
-# <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für Windows 8.1 und höher in Microsoft Intune
+# <a name="microsoft-intune-windows-81-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für Windows 8.1 in Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-In diesem Artikel erhalten Sie Informationen zu den Einstellungen für Microsoft Intune-Geräteeinschränkungen, die Sie für Geräte unter Windows 8.1 und höher konfigurieren können.
-
+In diesem Artikel erhalten Sie Informationen zu den Einstellungen für Microsoft Intune-Geräteeinschränkungen, die Sie für Windows 8.1-Geräte konfigurieren können.
 
 ## <a name="general"></a>Allgemein
 
@@ -48,8 +45,6 @@ In diesem Artikel erhalten Sie Informationen zu den Einstellungen für Microsoft
 Wenn Sie diese Einstellung für Windows 8.1-Geräte aktivieren, müssen alle Benutzer des Geräts ein Microsoft-Konto haben.
 Damit die Verschlüsselung funktioniert, muss das Gerät die Hardwarezertifizierungsanforderungen für [Microsoft InstantGo](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#IBHULcTfI4PokO8X.97) erfüllen.
 Wenn Sie die Verschlüsselung auf einem Gerät erzwingen, ist der Wiederherstellungsschlüssel nur über das Microsoft-Konto des Benutzers zugänglich, auf das dieser über sein eigenes OneDrive-Konto zugreift. Sie können diesen Schlüssel nicht im Auftrag eines Benutzers wiederherstellen. 
-
-
 
 ## <a name="browser"></a>Browser
 - **AutoAusfüllen:** Erlaubt Benutzern, die Einstellungen für AutoAusfüllen im Browser zu ändern.
@@ -75,3 +70,7 @@ Wenn Sie diese Einstellung ausgewählt haben, können Sie auch einen **Speichero
 ## <a name="cloud-and-storage"></a>Cloud und Speicher
 - **Arbeitsordner-URL:** Legt die URL des Arbeitsordners so fest, damit Dokumente auf verschiedenen Geräten synchronisiert werden können.
 - **Zugriff auf Windows Mail-App ohne Microsoft-Konto:** Ermöglicht den Zugriff auf die Windows Mail-Anwendung ohne Microsoft-Konto.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Erstellen Sie ein Geräte Einschränkungs Profil unter [Windows 10 und](device-restrictions-windows-10.md)höher.

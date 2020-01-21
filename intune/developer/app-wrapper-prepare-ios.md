@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0fac5e9d34890272253eaefd82ed13dc1014ba0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 62ee300b7357132e6f9e18ef4528110dfc988dc3
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713486"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653664"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Vorbereiten von iOS-Apps für App-Schutzrichtlinien mit dem Intune App Wrapping Tool
 
@@ -181,7 +181,7 @@ Sie benötigen Folgendes zum Verteilen von Apps, die von Intune mit einem Wrappe
 > [!NOTE]
 > Einige Parameter sind optional, wie in der folgenden Tabelle dargestellt.
 
-**Beispiel**: Der Befehl im folgenden Beispiel führt das App Wrapping Tool für eine App mit dem Namen „MyApp.ipa“ aus. Es werden ein Bereitstellungsprofil und ein SHA-1-Hash des Signaturzertifikats angegeben und zum Signieren der umschlossenen App verwendet. Die Ausgabe-App („MyApp_Wrapped.ipa“) wird erstellt und in Ihrem Desktopordner gespeichert.
+**Beispiel:** Der Befehl im folgenden Beispiel führt das App Wrapping Tool für eine App mit dem Namen „MyApp.ipa“ aus. Es werden ein Bereitstellungsprofil und ein SHA-1-Hash des Signaturzertifikats angegeben und zum Signieren der umschlossenen App verwendet. Die Ausgabe-App („MyApp_Wrapped.ipa“) wird erstellt und in Ihrem Desktopordner gespeichert.
 
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true
@@ -444,7 +444,7 @@ Führen Sie einfach Ihren allgemeinen App-Umschließungsbefehl mit angefügtem `
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 - [Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune](apps-prepare-mobile-application-management.md)
 - [Häufige Fragen, Probleme und entsprechende Behebungen mit Geräterichtlinien und -profilen](../configuration/device-profile-troubleshoot.md)

@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 075e7a99f72de30e83447a2869154859e33356b9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e514c10ea61bb12ef3c4626b077aa105b66866f1
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74390838"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206872"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Verwenden und Verwalten von Android-Unternehmens Geräten mit oemconfig in Microsoft InTune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 In Microsoft InTune können Sie oemconfig verwenden, um OEM-spezifische Einstellungen für Android-Unternehmens Geräte hinzuzufügen, zu erstellen und anzupassen. Oemconfig wird normalerweise verwendet, um Einstellungen zu konfigurieren, die nicht in InTune integriert sind. Verschiedene Originalgerätehersteller (OEM) enthalten unterschiedliche Einstellungen. Welche Einstellungen verfügbar sind, hängt davon ab, was der OEM in der oemconfig-app enthält.
 
@@ -84,9 +84,9 @@ Stellen Sie sicher, dass das Gerät oemconfig unterstützt, dass die richtige oe
 2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Geben Sie die folgenden Eigenschaften ein:
 
-    - **Name**: Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
+    - **Name:** Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
     - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
-    - **Plattform:** Wählen Sie **Android Enterprise** aus.
+    - **Plattform**: Wählen Sie **Android Enterprise** aus.
     - **Profiltyp**: Wählen Sie " **oemconfig**" aus.
 
 4. Wählen Sie **zugehörige App**aus, wählen Sie eine vorhandene oemconfig-App aus, die Sie zuvor **hinzu > gefügt**haben Stellen Sie sicher, dass Sie die richtige oemconfig-App für die Geräte auswählen, denen Sie die Richtlinie zuweisen.

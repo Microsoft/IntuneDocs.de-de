@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46b46cd4a407df686e094198c588371ed4a01bb6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9bca046302b221b934d0802c0bf637aced2cec3f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832575"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885914"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Behandlung von Problemen bei der iOS-Geräteregistrierung in Microsoft Intune
 
@@ -40,7 +40,7 @@ Sammeln Sie die folgenden Informationen zum Problem:
 - Welche Plattform (Android, Ios, Windows) hat das Problem?
 - Wie viele Benutzer sind betroffen? Sind alle Benutzer betroffen oder nur einige?
 - Wie viele Geräte sind betroffen? Sind alle Geräte betroffen oder nur einige?
-- Was ist die MDM-Autorität? Wenn es System Center Configuration Manager ist, welche Version von Configuration Manager verwenden Sie?
+- Was ist die MDM-Autorität?
 - Wie wird die Registrierung durchgeführt? Handelt es sich um ein "Bring your own Device" (BYOD) oder Apple Programm zur Geräteregistrierung (DEP) mit Registrierungs Profilen?
 
 ## <a name="error-messages"></a>Fehlermeldungen
@@ -70,9 +70,9 @@ Sammeln Sie die folgenden Informationen zum Problem:
 **Ursache:** Die erforderlichen CNAME-Einträge in DNS sind nicht vorhanden.
 
 #### <a name="resolution"></a>Lösung
-Erstellen Sie CNAME-DNS-Ressourceneinträge für die Domäne des Unternehmens. Wenn die Domäne Ihres Unternehmens beispielsweise contoso.com heißt, erstellen Sie in DNS einen CNAME-Eintrag, der EnterpriseEnrollment.contoso.com an EnterpriseEnrollment-s.manage.microsoft.com umleitet.
+Erstellen Sie CNAME DNS-Ressourceneinträge für die Domäne des Unternehmens. Wenn die Domäne Ihres Unternehmens beispielsweise contoso.com heißt, erstellen Sie in DNS einen CNAME-Eintrag, der EnterpriseEnrollment.contoso.com an EnterpriseEnrollment-s.manage.microsoft.com umleitet.
 
-Obwohl die Erstellung von CNAME DNS-Einträgen optional ist, vereinfachen diese die Registrierung für Benutzer. Wenn kein CNAME-Eintrag für die Registrierung gefunden wurde, werden Benutzer aufgefordert, manuell den MDM-Servernamen „enrollment.manage.microsoft.com“ einzugeben.
+Obwohl das Erstellen eines CNAME-DNS-Eintrags optional ist, ist die Registrierung mit einem CNAME-Eintrag für den Benutzer leichter. Wenn kein CNAME-Eintrag für die Registrierung gefunden wurde, werden Benutzer aufgefordert, manuell den MDM-Servernamen „enrollment.manage.microsoft.com“ einzugeben.
 
 Sind mehrere überprüfte Domänen vorhanden, erstellen Sie einen CNAME-Eintrag für jede Domäne. Die CNAME-Ressourceneinträge müssen die folgenden Informationen enthalten:
 
@@ -84,7 +84,7 @@ Sind mehrere überprüfte Domänen vorhanden, erstellen Sie einen CNAME-Eintrag 
 Wenn Ihr Unternehmen mehrere Domänen für die Anmeldeinformationen der Benutzer verwendet, erstellen Sie CNAME-Einträge für jede Domäne.
 
 > [!NOTE]
-> Es kann bis zu 72 Stunden dauern, bis Änderungen an DNS-Einträgen vollständig verteilt sind. Sie können die DNS-Änderung in Intune erst überprüfen, wenn der DNS-Eintrag verteilt ist.
+> Die Weitergabe von Änderungen an DNS-Einträgen kann bis zu 72 Stunden dauern. Sie können die DNS-Änderung in Intune erst überprüfen, wenn der DNS-Eintrag verteilt ist.
 
 **Ursache:** Sie registrieren ein Gerät, das zuvor mit einem anderen Benutzerkonto registriert wurde, und der vorherige Benutzer wurde nicht ordnungsgemäß aus InTune entfernt.
 
@@ -186,7 +186,7 @@ Wenn Ihr Unternehmen mehrere Domänen für die Anmeldeinformationen der Benutzer
 **Ursache:** Das APNs-Zertifikat (Apple Push Notification Service) fehlt, ist ungültig oder abgelaufen.
 
 #### <a name="resolution"></a>Lösung
-Überprüfen Sie, ob InTune ein gültiges APNs-Zertifikat hinzugefügt wurde. Weitere Informationen finden Sie unter [Registrieren von iOS-Geräten in Intune](https://docs.microsoft.com/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune). 
+Überprüfen Sie, ob InTune ein gültiges APNs-Zertifikat hinzugefügt wurde. Weitere Informationen finden Sie unter [Einrichten der IOS](ios-enroll.md)-Registrierung.
 
 ### <a name="accountnotonboarded"></a>AccountNotOnboarded
 
@@ -199,7 +199,6 @@ Erneuern Sie das APNs-Zertifikat, und registrieren Sie das Gerät erneut.
 > Stellen Sie sicher, dass Sie das APNs-Zertifikat erneuern. Ersetzen Sie das APNs-Zertifikat nicht. Wenn Sie das Zertifikat ersetzen, müssen Sie alle IOS-Geräte in InTune erneut registrieren. 
 
 - Informationen zum Erneuern des APNs-Zertifikats in InTune Standalone finden Sie unter [Erneuern des Apple-MDM-Push-Zertifikats](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate).
-- Informationen dazu, wie Sie das APNs-Zertifikat in InTune-Hybrid mit Configuration Manager erneuern, finden [Sie unter Einrichten der IOS-Hybrid Geräteverwaltung mit System Center Configuration Manager und Microsoft InTune](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac).
 - Informationen zum Erneuern des APNs-Zertifikats in Office 365 finden Sie unter [Erstellen eines APNs-Zertifikats für IOS-Geräte](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7).
 
 ### <a name="xpc_type_error-connection-invalid"></a>XPC_TYPE_ERROR Verbindung ist ungültig.
@@ -230,7 +229,7 @@ Wenn Sie ein DEP-verwaltetes Gerät einschalten, dem ein Registrierungs Profil z
 #### <a name="resolution"></a>Lösung
 
 1. Bearbeiten Sie das Registrierungs Profil. Sie können Änderungen am Profil vornehmen. Der Zweck besteht darin, die Änderungszeit des Profils zu aktualisieren.
-2. Synchronisieren DEP-verwalteter Geräte: Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Geräte** > **iOS** > **iOS-Registrierung** > **Registrierungsprogrammtoken** aus, und wählen Sie ein Token aus der Liste und anschließend **Jetzt synchronisieren** aus. Eine Synchronisierungsanforderung wird an Apple gesendet.
+2. Synchronisieren von DEP-verwalteten Geräten: Klicken Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) auf **Geräte** > **iOS** > **iOS-Registrierung** > **Registrierungsprogrammtoken** > wählen Sie ein Token aus > **Jetzt synchronisieren**. Eine Synchronisierungsanforderung wird an Apple gesendet.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>DEP-Registrierung bei Benutzeranmeldung hängen
 Wenn Sie ein DEP-verwaltetes Gerät einschalten, dem ein Registrierungs Profil zugewiesen ist, wird das erste Setup nach der Eingabe der Anmelde Informationen geklemmt.

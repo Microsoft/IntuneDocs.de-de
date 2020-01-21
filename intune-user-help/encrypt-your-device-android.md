@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2965d6a017d92bd4535a29a2257c0cac5e6deaf
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 2774a4f4c571b8a965c9ec47376a671df2dbf006
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506364"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856681"
 ---
 # <a name="encrypting-your-android-device"></a>Verschlüsseln Ihres Android-Geräts
 
@@ -48,7 +48,7 @@ Wenn Unternehmensportal oder die Microsoft InTune-app Sie auffordert, Ihr Gerät
 3. Wählen Sie PIN anfordern, **Wenn das Gerät eingeschaltet wird** > **OK**aus.
 4. Geben Sie Ihre PIN ein, um Ihr Gerät zu bestätigen und zu verschlüsseln.
 5. Öffnen Sie die APP Unternehmensportal oder Microsoft InTune.
-    * Unternehmensportal-Benutzer: Wählen Sie Ihr Gerät aus, und tippen Sie auf **Geräteeinstellungen überprüfen**. 
+    * Unternehmensportalbenutzer: Wählen Sie Ihr Gerät aus, und tippen Sie auf **Geräteeinstellungen überprüfen**. 
     * Microsoft InTune Benutzer: Sie müssen warten, bis die Seite aktualisiert wird. wenn dies der Fall ist, sollte sich der Verschlüsselungs Status in "kompatibel" ändern.  
 
 Geräte unter Android 4,4 und früher verfügen möglicherweise nicht über die Option für den **sicheren Start** . Führen Sie in diesem Fall die folgenden Schritte aus, um Ihr Gerät zu verschlüsseln.
@@ -59,7 +59,7 @@ Geräte unter Android 4,4 und früher verfügen möglicherweise nicht über die 
 
 2. Folgen Sie den Anweisungen auf dem Bildschirm. Während der Verschlüsselung startet Ihr Gerät möglicherweise mehrmals neu.
 3. Öffnen Sie die APP Unternehmensportal oder Microsoft InTune.
-    * Unternehmensportal-Benutzer: Wählen Sie Ihr Gerät aus, und tippen Sie auf **Geräteeinstellungen überprüfen**.  
+    * Unternehmensportalbenutzer: Wählen Sie Ihr Gerät aus, und tippen Sie auf **Geräteeinstellungen überprüfen**.  
     * Microsoft InTune Benutzer: Sie müssen warten, bis die Seite aktualisiert wird. wenn dies der Fall ist, sollte sich der Verschlüsselungs Status in "kompatibel" ändern.
 
 ## <a name="troubleshoot"></a>Problembehandlung  

@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2019
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: kakyker
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba285fc9de58b3fb739a16722e0e05e36e840e87
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e04950a67938d883b0762c03efa371fcb74d0731
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098155"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855475"
 ---
 # <a name="enroll-your-macos-device-using-the-company-portal-app"></a>Registrieren Ihres macOS-Geräts mit der Unternehmensportal-App  
 
@@ -56,7 +56,7 @@ Führen Sie die folgenden Schritte aus, um Ihr macOS-Gerät bei Ihrer Organisati
 2. Der Unternehmensportal Installer. pkg-Datei wird heruntergeladen. Öffnen Sie das Installationsprogramm, und führen Sie die Schritte aus. 
 3. Stimmen Sie den Softwarelizenzbedingungen zu. 
 4. Geben Sie Ihr Geräte Kennwort oder den registrierten Fingerabdruck zum Installieren der Software ein.  
-5. Öffnen Sie Unternehmensportal. 
+5. Öffnen Sie das Unternehmensportal. 
 
 > [!IMPORTANT]
 > Microsoft AutoUpdate kann zum Aktualisieren Ihrer Microsoft-Software geöffnet werden. Nachdem alle Updates installiert wurden, öffnen Sie die Unternehmensportal-app. Zur optimalen Einrichtung installieren Sie die neuesten Versionen von Microsoft AutoUpdate und Unternehmensportal.  
@@ -67,18 +67,17 @@ Führen Sie die folgenden Schritte aus, um Ihr macOS-Gerät bei Ihrer Organisati
 
 1. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto beim Unternehmensportal an.  
 2. Wenn die APP geöffnet wird, wählen Sie **starten**aus.  
-3. Überprüfen Sie, was Ihre Organisation auf Ihrem registrierten Gerät [sehen kann und was nicht](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) . Wählen Sie dann **Weiter** aus.  
-4. Wählen Sie auf dem Bildschirm **Verwaltungs Profil installieren** die Option **Profil herunterladen**aus.   
+3. Überprüfen Sie, was Ihre Organisation auf Ihrem registrierten Gerät sehen kann und was nicht. Wählen Sie dann **Weiter** aus.
+4.  Wenn Sie dazu aufgefordert werden, geben Sie Ihr Geräte Kennwort auf dem Bildschirm **Verwaltungs Profil installieren** ein.
 
-    ![Beispiel eines Screenshots der Unternehmensportal, Seite "Verwaltungs Profil installieren", Hervorhebung der Schaltfläche "Profil herunterladen".](./media/install-mgmt-profile-mac-1911.PNG)   
-5. Die Systemeinstellungen Ihres Geräts werden geöffnet. Wählen Sie **Installieren** aus, und wählen Sie dann erneut **Installieren** . Wenn Sie dazu aufgefordert werden, geben Sie Ihr Geräte Kennwort ein.  
+    ![Beispiel eines Screenshots der Unternehmensportal, Seite "Verwaltungs Profil installieren", Hervorhebung der Kenn Wort Eingabeaufforderung](./media/install-management-profile-macos-1912.PNG)   
+5. Wählen Sie im Bildschirm **Geräteverwaltung bestätigen** die Option **System Einstellungen öffnen**aus.  
 
-    ![Beispiel eines Screenshots der macOS-Systemeinstellungen, Installations Aufforderung, Hervorhebung der Schaltfläche "installieren".](./media/system-preference-install-1911.PNG)  
-6. Nachdem das Profil installiert wurde, wird es in der Liste Profile unter **Verwaltungs Profil angezeigt.**  
-
-   ![Beispiel eines Screenshots von macOS-Systemeinstellungen, profilbildschirm, Hervorhebung des installierten Verwaltungs Profils.](./media/system-preference-verify-1911.PNG)   
-7. Kehren Sie zu Unternehmensportal zurück.   
-8. In Ihrer Organisation ist es möglicherweise erforderlich, dass Sie Ihre Geräteeinstellungen aktualisieren. Wenn Sie mit dem Aktualisieren der Einstellungen fertig sind, wählen Sie **Einstellungen überprüfen**.  
+    ![Screenshot des Bildschirms zum Bestätigen der Geräteverwaltung, Hervorhebung der Schaltfläche "System Einstellungen öffnen".](./media/confirm-device-management-macos-1912.PNG)  
+6. Die Systemeinstellungen Ihres Geräts werden geöffnet. Wählen Sie in der Liste Geräteprofile die Option **Verwaltungs Profil** aus, und wählen Sie dann **genehmigen** > **genehmigen**aus.  
+    ![Screenshot der System Einstellungen, dem Bildschirm "Verwaltungs Profil" und der Hervorhebung der Schaltfläche "genehmigen".](./media/management-profile-approve-macos-1912.PNG)   
+1. Kehren Sie zu Unternehmensportal zurück, und wählen Sie **weiter**aus.    
+2. In Ihrer Organisation ist es möglicherweise erforderlich, dass Sie Ihre Geräteeinstellungen aktualisieren. Wenn Sie mit dem Aktualisieren der Einstellungen fertig sind, wählen Sie **Einstellungen überprüfen**.  
 
     ![Beispiel eines Screenshots von Unternehmensportal, Bildschirm "Geräteeinstellungen aktualisieren", markieren der Schaltfläche "Einstellungen überprüfen".](./media/update-settings-mac-1911.PNG)  
 9. Wenn Setup abgeschlossen ist, wählen Sie **Fertig**aus.  
@@ -88,7 +87,7 @@ Führen Sie die folgenden Schritte aus, um Ihr macOS-Gerät bei Ihrer Organisati
 
 Wenn bei der Registrierung Probleme auftreten, gehen Sie zu **Hilfe** > **Diagnosebericht senden** , um das Problem an Microsoft-App-Entwickler zu melden. Diese Informationen werden verwendet, um die APP zu verbessern. Diese Informationen werden auch verwendet, um das Problem zu beheben, wenn Ihre IT-Supportmitarbeiter Ihnen helfen, Hilfe zu erhalten.  
 
-Nachdem Sie das Problem an Microsoft gemeldet haben, können Sie die Details Ihrer Benutzer Arbeit an Ihren IT-Supportmitarbeiter senden. Wählen Sie **Email Details**aus. Geben Sie ein, was Sie im Text der e-Mail haben. Um die e-Mail-Adresse Ihrer Support Person zu ermitteln, wechseln Sie zum Unternehmensportal APP **->.** Oder überprüfen Sie die [Unternehmensportal Website](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Nachdem Sie das Problem an Microsoft gemeldet haben, können Sie die Details Ihrer Benutzer Arbeit an Ihren IT-Supportmitarbeiter senden. Wählen Sie **Email Details**aus. Geben Sie ein, was Sie im Text der e-Mail haben. Um die e-Mail-Adresse Ihrer Support Person zu ermitteln, wechseln Sie zum Unternehmensportal APP **->.** Oder sehen Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980) nach.  
  
 
 Außerdem würde das Microsoft InTune Unternehmensportal Team gern Ihr Feedback hören. Wechseln Sie zu " **Hilfe** > **Feedback senden** , um Ihre Gedanken und Ideen zu teilen.  

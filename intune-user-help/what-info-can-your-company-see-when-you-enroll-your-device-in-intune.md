@@ -17,13 +17,13 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc50f48afbd527f3c6d82cc0c71a166b0356ab9e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 24601ef5c7a6451e2abfa64da37b21912d3cbace
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801479"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858793"
 ---
 # <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Welche Informationen erhält meine Organisation, wenn ich mein Gerät registriere?
 
@@ -52,8 +52,8 @@ Ihre Organisation kann Ihre privaten Informationen nicht einsehen, wenn Sie ein 
 
 **Was Ihre Organisation möglicherweise außerdem sehen kann:**
 
-- Telefonnummer: Bei unternehmenseigenen Geräten wird möglicherweise Ihre vollständige Telefonnummer angezeigt. Bei Geräten, die persönliches Eigentum sind, werden der Organisation nur die letzten vier Ziffern Ihrer Telefonnummer angezeigt. Auf der Seite mit den **Geräte Details** können Sie den besitztyp für jedes einzelne Gerät sehen.
-- Speicherplatz auf dem Gerät: Wenn Sie eine erforderliche App installieren, prüft Ihre Organisation möglicherweise den freien Speicherplatz auf Ihrem Gerät, um festzustellen, ob genügend Speicherplatz vorhanden ist.  
-- Standort: Ihre Organisation kann den Standort Ihres Geräts niemals anzeigen, sofern Sie nicht ein überwachtes iOS-Gerät auffinden müssen, das verloren gegangen ist. In der [Dokumentation zu Apple iOS](https://go.microsoft.com/fwlink/?linkid=853816) erhalten Sie weitere Informationen zu überwachten Geräten.  
-- App-Bestandsinformationen: Wenn Ihr Unternehmen Mobile Threat Defense verwendet, können Informationen zu den Apps auf Ihrem iOS-Gerät eingesehen werden. Erfahren Sie mehr über [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md). Auf Ihrem persönlichen Gerät kann Ihre Organisation nur sehen, welche verwalteten Apps installiert sind. Auf Ihrem unternehmenseigenen Gerät kann Ihre Organisation alle installierten Apps sehen.
+- Telefonnummer: Bei unternehmenseigenen Geräten ist Ihre vollständige Telefonnummer zu sehen. Bei Geräten, die persönliches Eigentum sind, werden der Organisation nur die letzten vier Ziffern Ihrer Telefonnummer angezeigt. Auf der Seite mit den **Geräte Details** können Sie den besitztyp für jedes einzelne Gerät sehen.
+- Speicherplatz auf dem Gerät: Wenn Sie eine erforderliche App nicht installieren können, prüft Ihre Organisation möglicherweise den freien Speicherplatz auf Ihrem Gerät, um festzustellen, ob der Speicherplatz nicht ausreicht.  
+- Speicherort: Ihre Organisation kann den Standort Ihres Geräts niemals anzeigen, es sei denn, Sie müssen ein überwachtes iOS-Gerät auffinden, das verloren gegangen ist. In der [Dokumentation zu Apple iOS](https://go.microsoft.com/fwlink/?linkid=853816) erhalten Sie weitere Informationen zu überwachten Geräten.  
+- App-Bestandsdetails: Wenn Ihr Unternehmen Mobile Threat Defense verwendet, können weitere Informationen zu den Apps auf Ihrem iOS-Gerät eingesehen werden. Erfahren Sie mehr über [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md). Auf Ihrem persönlichen Gerät kann Ihre Organisation nur sehen, welche verwalteten Apps installiert sind. Auf Ihrem unternehmenseigenen Gerät kann Ihre Organisation alle installierten Apps sehen.
 - Netzwerkinformationen: Möglicherweise sind einige Informationen über Netzwerkverbindungen für Android-Geräte für den Support Ihrer Organisation verfügbar. Wenn Ihre Organisation beispielsweise verlangt, dass Geräte in einem bestimmten Gebäude bleiben, identifiziert Ihr Gerät das Netzwerk, mit dem es verbunden ist. 

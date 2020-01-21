@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46012b11cdb458243658e858b53c2dfb1a69dc88
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 0d5c6db598a7f64f75f6f5a8e0cf25b8e4b81465
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991803"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885894"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Behandeln von Problemen bei der Windows-Geräteregistrierung in Microsoft Intune
 
@@ -40,7 +40,7 @@ Sammeln Sie die folgenden Informationen zum Problem:
 - Welche Plattform (Android, Ios, Windows) hat das Problem?
 - Wie viele Benutzer sind betroffen? Sind alle Benutzer betroffen oder nur einige?
 - Wie viele Geräte sind betroffen? Sind alle Geräte betroffen oder nur einige?
-- Was ist die MDM-Autorität? Wenn es System Center Configuration Manager ist, welche Version von Configuration Manager verwenden Sie?
+- Was ist die MDM-Autorität?
 - Wie wird die Registrierung durchgeführt? Handelt es sich um ein "Bring your own Device" (BYOD) oder Apple Programm zur Geräteregistrierung (DEP) mit Registrierungs Profilen?
 
 ## <a name="error-messages"></a>Fehlermeldungen
@@ -50,7 +50,7 @@ Sammeln Sie die folgenden Informationen zum Problem:
 Fehler 0x801c003: "dieser Benutzer ist nicht autorisiert, sich anzumelden. Versuchen Sie es erneut, oder wenden Sie sich mit dem Fehlercode (0x801c0003) an den Systemadministrator. "
 Fehler 80180003: „Es ist ein Problem aufgetreten. Dieser Benutzer ist nicht autorisiert, sich anzumelden. Versuchen Sie es erneut, oder wenden Sie sich mit dem Fehlercode 80180003 an den Systemadministrator. "
 
-**Ursache:** Eine der folgenden Bedingungen ist erfüllt: 
+**Ursache**: Jede der folgenden Bedingungen: 
 
 - Der Benutzer hat bereits die maximal zulässige Anzahl von Geräten in InTune registriert.    
 - Das Gerät wird durch die Gerätetyp Einschränkungen blockiert.    
@@ -107,7 +107,6 @@ Fehler 8018000a: "etwas ist schief gelaufen. Das Gerät ist bereits registriert.
 
 **Ursache**: Eine der folgenden Bedingungen ist erfüllt:
 - Ein anderer Benutzer hat das Gerät bereits in InTune registriert oder dem Gerät hinzugefügt, um Azure AD. Um zu ermitteln, ob dies der Fall ist, wechseln Sie zu **Einstellungen** > **Konten** > **Arbeits Zugriff**. Suchen Sie nach einer Meldung, die der folgenden Meldung ähnelt: "ein anderer Benutzer im System ist bereits mit einer Arbeit oder Schule verbunden. Entfernen Sie diese Arbeits-oder Schul Verbindung, und wiederholen Sie den Vorgang. "    
-- Der Configuration Manager-Client-Agent ist auf dem Computer installiert.    
 
 #### <a name="resolution"></a>Lösung
 
@@ -118,9 +117,6 @@ Nutzen Sie eines der folgenden Verfahren, um dieses Problem zu beheben:
 2. Wechseln Sie zu **Einstellungen** > **Konten** > **Arbeits Zugriff**, und entfernen Sie dann das Geschäfts-, Schul-oder unikonto.
 3. Melden Sie sich von Windows ab, und melden Sie sich dann mit Ihrem Konto an.    
 4. Registrieren Sie das Gerät bei InTune, oder fügen Sie das Gerät zu Azure AD hinzu. 
-
-##### <a name="remove-the-configuration-manager-client"></a>Entfernen des Configuration Manager-Clients
-Entfernen Sie den Configuration Manager Client, und registrieren Sie das Gerät erneut.
 
 
 
@@ -142,7 +138,7 @@ Weisen Sie dem Benutzer eine gültige InTune-Lizenz zu, und registrieren Sie das
 
 #### <a name="resolution"></a>Lösung
 
-Um dieses Problem zu beheben, verwenden Sie eine der folgenden Methoden: 
+Verwenden Sie eine der folgenden Methoden, um dieses Problem zu beheben: 
  
 ##### <a name="assign-a-valid-license-to-the-user"></a>Zuweisen einer gültigen Lizenz zum Benutzer
 Wechseln Sie zum [Microsoft 365 Admin Center](https://portal.office.com/adminportal/home), und weisen Sie dem Benutzer dann entweder eine InTune-oder eine Office 365-Lizenz zu.
@@ -160,7 +156,7 @@ Fehler 80180026: „Es ist ein Problem aufgetreten. Vergewissern Sie sich, dass 
 
 **Ursache:** Dieser Fehler kann auftreten, wenn Sie versuchen, einen Windows 10-Computer mit Azure AD zu verbinden, und die beiden folgenden Bedingungen zutreffen: 
 - Die automatische MDM-Registrierung ist in Azure aktiviert.    
-- Der InTune-PC-Client (InTune-PC-Agent) oder der Configuration Manager Client-Agent ist auf dem Windows 10-Computer installiert.
+- Der InTune-PC-Client (InTune-PC-Agent) ist auf dem Windows 10-Computer installiert.
 
 #### <a name="resolution"></a>Lösung
 Nutzen Sie eines der folgenden Verfahren, um dieses Problem zu beheben:
@@ -171,7 +167,7 @@ Nutzen Sie eines der folgenden Verfahren, um dieses Problem zu beheben:
 3. Legen Sie den **MDM-Benutzerbereich** auf **None**fest, und klicken Sie dann auf **Speichern**.    
      
 ##### <a name="uninstall"></a>Deinstallieren
-Deinstallieren Sie den InTune-PC-Client oder den Configuration Manager Client-Agent vom Computer.    
+Deinstallieren Sie den InTune-PC-Client-Agent vom Computer.    
 
 ### <a name="the-software-cannot-be-installed"></a>Die Software kann nicht installiert werden.
 
@@ -208,13 +204,6 @@ Um dieses Problem in einer eigenständigen InTune-Umgebung zu beheben, führen S
 1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) **Geräte** > Registrierungs **Beschränkungen** aus, > Wählen Sie eine Gerätetyp Einschränkung aus.    
 2. Wählen Sie **Eigenschaften** > **Bearbeiten** (neben **Platt Form Einstellungen**) > **Windows (MDM)** **zulassen** .    
 3. Klicken Sie auf **überprüfen und speichern**.    
- 
-Um dieses Problem in der Hybriden Verwaltung mobiler Geräte mit InTune und Configuration Manager zu beheben, führen Sie die folgenden Schritte aus: 
-1. Öffnen Sie die Configuration Manager-Konsole.    
-2. Wählen Sie **Verwaltung**, und klicken Sie dann auf **Cloud Services**.    
-3. Klicken Sie mit der rechten Maustaste auf **Microsoft InTune Abonnement**, und wählen Sie dann **Plattformen Konfigurieren > Fenster**    
-4. **Aktivieren Sie Windows** -Registrierung aktivieren, >  > **OK** **anwenden** .  
-
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>Bei der Massen Registrierung ist ein Setup Fehler aufgetreten.
 
@@ -389,4 +378,4 @@ Dieses Problem tritt normalerweise auf, wenn die Berechtigungen für die Organis
 - [Lesen Sie den Blog des Microsoft Intune-Supportteams.](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [Lesen Sie den Blog zu Microsoft Enterprise Mobility + Security.](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
 - [Support für Microsoft Intune](../fundamentals/get-support.md)
-- [Registrierungsfehler bei der Co-Verwaltung suchen](https://docs.microsoft.com/sccm/comanage/how-to-monitor#enrollment-errors)
+- [Registrierungsfehler bei der Co-Verwaltung suchen](https://docs.microsoft.com/configmgr/comanage/how-to-monitor#enrollment-errors)

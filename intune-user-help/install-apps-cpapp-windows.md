@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80fd2d54a99bc3f4ab47f48f94eb14aa1a7f630c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 11037da11e6400f157aea6aa86c0c293c9818d31
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74126197"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855009"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Installieren und freigeben von Apps auf Ihrem Gerät
 
@@ -38,10 +38,10 @@ Installieren Sie über die Unternehmensportal-App für Windows Apps auf Ihrem Ge
 2. Suchen und installieren Sie Apps aus einem der folgenden Abschnitte der Unternehmensportal-App:  
 
     * **Start:** Wählen Sie Apps aus einer Liste empfohlener Apps Ihrer Organisation aus.  
-    * **Alle anzeigen:** Klicken Sie auf der **Startseite** im Abschnitt **Apps** auf **Alle anzeigen**, um alle verfügbaren Apps anzuzeigen.  
+    * **Alle anzeigen:** Klicken Sie auf der **Startseite** > **Apps** auf **Alle anzeigen**, um alle verfügbaren Apps anzuzeigen.  
     * **Alle Apps:** Wählen Sie diese Seite im Navigationsbereich aus, um alle verfügbaren Apps anzuzeigen, einschließlich aller installierten und ausgewählten Apps. Anzeigen, Sortieren und Filtern der apps. Die Suchergebnisse werden automatisch nach Relevanz sortiert.  
     * **App-Kategorien**: Wählen Sie diese Seite im Navigationsbereich aus, um apps basierend auf dem Typ oder der Funktion auszuwählen. Apps werden in Kategorien wie z. b. " **angeboten**", " **Education**" und " **Productivity**  
-    * **Nach Apps suchen**: Eine statische Suchleiste befindet sich im Navigationsbereich der App. Suchen Sie nach dem App-Namen oder dem Herausgeber, um Ihre verfügbaren Apps zu finden.  
+    * **Nach Apps suchen:** Eine statische Suchleiste befindet sich im Navigationsbereich der App. Suchen Sie nach dem App-Namen oder dem Herausgeber, um Ihre verfügbaren Apps zu finden.  
 
 3. Wählen Sie eine App aus.   
 4. Klicken Sie auf der Seite mit den App-Details auf **Installieren**. Nach Abschluss der Installation wird auf der Seite der Status **Installiert** angezeigt.  
@@ -83,7 +83,7 @@ Wenn Sie eine App benötigen, diese jedoch nicht im Unternehmensportal finden, k
 
   ![Die Unternehmensportal-App für Windows 10 mit der Seite „Hilfe und Support“, auf der die Helpdesk-Details hervorgehoben sind. ](./media/1812_UCP_Help_Support_helpdesk.png)  
 
-## <a name="view-installed-apps"></a>Anzeigen installierter apps  
+## <a name="view-installed-apps"></a>Installierte Apps anzeigen  
 Zeigen Sie eine Liste aller auf dem Gerät installierten apps an. Auf der Seite **installierte apps** sind die folgenden Details zu den einzelnen apps aufgeführt:
 
 * Name: Der Name der App. Optionale Apps enthalten einen Link zur Seite " **App-Details** ".

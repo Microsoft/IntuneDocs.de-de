@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f395a9cedc72a8184cfe3e29d6fcd3117a1473d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 6b75712cf05626999c09e8d74fd28252666313c4
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72980357"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857873"
 ---
 # <a name="install-mobile-threat-defense"></a>Installieren von Mobile Threat Defense   
 
@@ -38,9 +38,9 @@ Es gibt eine Vielzahl von mtd-Anbieter-apps, die für die Installation verfügba
 In Ihrer Organisation können keine Daten, z. b. Texte, e-Mails und Bilder, in Ihren persönlichen apps angezeigt werden. Die MTD-App meldet Informationen zu ihren apps, z. b. Name und Version, an Ihre Organisation. Die tatsächlich gemeldeten Informationen richten sich nach dem von Ihrem Unternehmen verwendeten MTD-Anbieter. In Ihrer Organisation kann Folgendes angezeigt werden:   
 
 * App-Name  
-* App-ID: der eindeutige Name, der die App in Google Play identifiziert  
-* App-Version und kurze Versionsnummer: die angegebene Releasenummer für eine App  
-* App Bundle und dynamische Größe: Die Menge des Speicherplatzes, die eine App auf Ihrem Gerät verwendet 
+* App-ID: der eindeutige Name, der die App in Google Play identifiziert.  
+* App-Version und kurze Versionsnummer: Die spezifischen Releasenummern für eine App.  
+* App Bundle und dynamische Größe: Die Menge Speicherplatz, die eine App auf Ihrem Gerät verwendet 
 
 
 ## <a name="install-app"></a>Installieren der App    

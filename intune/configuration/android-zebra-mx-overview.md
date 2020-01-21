@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 829d8f6b2691f91c14029e4f29e2ef11b070e596
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 83048061cc7b3e1aaeb09ff54dec819720f2571f
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059622"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206821"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Nutzen und Verwalten von Zebra-Geräten mithilfe von Zebra Mobility Extensions in Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune bietet eine Vielzahl von Funktionen, u.a. für die Verwaltung von Apps und Konfiguration von Geräteeinstellungen. Diese integrierten Funktionen und Einstellungen verwalten Android-Geräte der Firma Zebra Technologies („Zebra-Geräte“).
 
@@ -137,7 +137,7 @@ Erstellen Sie in Intune ein Gerätekonfigurationsprofil:
 2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Geben Sie die folgenden Eigenschaften ein:
 
-    - **Name**: Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
+    - **Name:** Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
     - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
     - **Plattform**: Wählen Sie **Android** aus.
     - **Profiltyp**: Wählen Sie **MX-Profil (nur Zebra)** aus.

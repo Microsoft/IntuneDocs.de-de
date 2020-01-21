@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5baf0e9079cc148101a68e5cd2d3a4ed500f567f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e0a2297509d6077d6508adaab96ae6eb3cf9b28f
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414843"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856733"
 ---
 # <a name="enroll-your-device-with-company-portal"></a>Registrieren Ihres Geräts im Unternehmensportal  
 Registrieren Sie Ihr privates oder unternehmenseigenes Android-Gerät, um sicheren Zugriff auf Unternehmens-E-Mails, -Apps und -Daten zu erhalten. Das Unternehmensportal unterstützt Android-Geräte, einschließlich Samsung Knox, mit Android 4.4 und höher.  
@@ -91,7 +91,7 @@ Während der Registrierung werden Sie möglicherweise aufgefordert, eine Kategor
 
 ## <a name="next-steps"></a>Nächste Schritte  
 
-Bevor Sie versuchen, eine Schul-oder Arbeits-APP zu installieren, wechseln Sie zu **Einstellungen** > **Sicherheit**, und aktivieren Sie **unbekannte Quellen**. Wenn Sie diese Option nicht aktivieren, wird die folgende Meldung angezeigt, wenn Sie versuchen, eine App zu installieren: „Installation blockiert. Aus Sicherheitsgründen ist Ihr Gerät so eingestellt, dass die Installation von Apps aus unbekannten Quellen blockiert wird.“ Sie können in der Nachricht auf **Einstellungen** tippen, um direkt zu **unbekannten Quellen**zu wechseln.  
+Bevor Sie versuchen, eine Schul-oder Arbeits-APP zu installieren, wechseln Sie zu **Einstellungen** > **Sicherheit**, und aktivieren Sie **unbekannte Quellen**. Wenn Sie diese Option nicht aktivieren, wird die folgende Meldung angezeigt, wenn Sie versuchen, eine App zu installieren: "Installation blockiert. Aus Sicherheitsgründen ist Ihr Gerät so eingestellt, dass die Installation von Apps aus unbekannten Quellen blockiert wird.“ Sie können in der Nachricht auf **Einstellungen** tippen, um direkt zu **unbekannten Quellen**zu wechseln.  
 
 > [!Note]
 > Wenn Ihre Organisation Telecom Expense Management-Software verwendet, müssen Sie ein paar zusätzliche Schritte ausführen, bevor das Gerät vollständig registriert ist. [Hier](enroll-your-device-with-telecom-expense-management-android.md) erfahren Sie mehr.

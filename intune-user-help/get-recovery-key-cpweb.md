@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/03/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,19 +18,21 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 822d995443ca23eac7f96f8314f9926804e0be24
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 1e7831712b4c07d015aa0f587ff6ba6183940897
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508520"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855235"
 ---
 # <a name="get-a-recovery-key-for-a-macos-device"></a>Wiederherstellungs Schlüssel für ein macOS-Gerät erhalten
 
 Verwenden Sie die Unternehmensportal-Website, um einen Wiederherstellungs Schlüssel für das gesperrte macOS-Gerät zu erhalten. Wenn Sie Ihr Geräte Kennwort vergessen haben, können Sie sich bei dem Unternehmensportal von einem anderen Gerät aus anmelden, um den Schlüssel abzurufen.  
 
-Diese Option ist nur für Geräte verfügbar, die von Ihrer Organisation mithilfe von "flevault" verschlüsselt wurden. Sie steht nicht für Geräte zur Verfügung, die Sie persönlich verschlüsselt haben.
+## <a name="get-recovery-key-from-company-portal-website"></a>Wiederherstellungs Schlüssel von Unternehmensportal Website erhalten
+
+Diese Option ist für Geräte verfügbar, die von Ihrer Organisation mithilfe von "flevault" verschlüsselt wurden. Sie steht nicht für Geräte zur Verfügung, die Sie persönlich verschlüsselt haben.
 
 1. Melden Sie sich auf jedem Gerät bei der [Unternehmensportal-Website](https://portal.manage.microsoft.com) an, und wählen Sie die **Menü** Schaltfläche > **Geräte**aus.  
 2. Wählen Sie das verschlüsselte macOS-Gerät aus.  
@@ -45,6 +47,19 @@ Diese Option ist nur für Geräte verfügbar, die von Ihrer Organisation mithilf
     Aus Sicherheitsgründen wird der Schlüssel nach fünf Minuten nicht mehr angezeigt. Wählen Sie **Wiederherstellungs Schlüssel erhalten**aus, um den Schlüssel erneut anzuzeigen.
 
 Wenn ein Schlüssel nicht gefunden wird, das Gerät jedoch ordnungsgemäß verschlüsselt ist, wenden Sie sich an den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).  
+
+## <a name="get-recovery-key-from-company-portal-app-for-ios"></a>Wiederherstellungs Schlüssel aus Unternehmensportal-App für IOS erhalten
+
+Sie können Ihren persönlichen Wiederherstellungs Schlüssel ("flevault Key") mit der Unternehmensportal-App für IOS abrufen. Ihr Gerät mit dem persönlichen Wiederherstellungs Schlüssel muss bei InTune registriert und über InTune mit "flevault" verschlüsselt werden. Diese Option ist nicht für Geräte verfügbar, die Sie persönlich verschlüsselt haben. 
+
+Mithilfe der Unternehmensportal-App können Sie die Safari-Webansicht öffnen und Ihren persönlichen Wiederherstellungs Schlüssel abrufen. 
+
+1. Öffnen Sie das Unternehmensportal.
+2. Klicken Sie auf **Wiederherstellungs Schlüssel erhalten**.
+
+    ![Screenshot der Unternehmensportal-App für IOS mit Wiederherstellungs Schlüssel](./media/get-recovery-key-cpweb-02.png)  
+
+Die Unternehmensportal-Website wird in der Safari-Webansicht geöffnet und zeigt den Schlüssel an. 
 
 ## <a name="it-pro-support"></a>IT Pro-Support
 

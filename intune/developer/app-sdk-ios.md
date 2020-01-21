@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93b48fd5f6482669da923e4c15dcb09c7d328197
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 38f9c9721942b4c9754d4e99e4e91d751ceedcf3
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503453"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653783"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK für iOS –Entwicklerhandbuch
 
 > [!NOTE]
 > Lesen Sie am besten zuerst den Artikel [Get Started with Intune App SDK Guide (Erste Schritte mit dem Leitfaden für das Intune App SDK)](app-sdk-get-started.md). Dort finden Sie Informationen zu den Vorbereitungen, die Sie auf den verschiedenen unterstützten Plattformen für die Integration treffen müssen.
 
-Mit dem Microsoft Intune App SDK für iOS können Sie die Intune-App-Schutzrichtlinien (auch als APP- oder MAM-Richtlinien bezeichnet) in Ihre native iOS-App integrieren. MAM-fähige Anwendungen sind in das Intune App SDK integrierte Anwendungen. Sie ermöglichen IT-Administratoren, App-Schutzrichtlinien für Ihre mobile App bereitzustellen, wenn diese aktiv von Intune verwaltet wird.
+Mit dem Microsoft Intune App SDK für iOS können Sie die Intune-App-Schutzrichtlinien (auch als APP- oder MAM-Richtlinien bezeichnet) in Ihre native iOS-App integrieren. Als MAM-fähige App wird eine App bezeichnet, die in das Intune App SDK integriert ist. Sie ermöglichen IT-Administratoren, App-Schutzrichtlinien für Ihre mobile App bereitzustellen, wenn diese aktiv von Intune verwaltet wird.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -45,11 +45,11 @@ Mit dem Microsoft Intune App SDK für iOS können Sie die Intune-App-Schutzricht
 
 Die folgenden Dateien sind für apps/Erweiterungen relevant, die keinen SWIFT-Code enthalten oder mit einer Version von Xcode vor 10,2 kompiliert werden:
 
-* **IntuneMAM.framework**: Das Intune App SDK-Framework. Es wird empfohlen, dass Sie dieses Framework mit ihren apps/Erweiterungen verknüpfen, um die Intune-Client Anwendungs Verwaltung zu aktivieren. Einige Entwickler bevorzugen jedoch möglicherweise die Leistungsvorteile der statischen Bibliothek. Weitere Informationen finden Sie in den folgenden Themen.
+* **IntuneMAM.framework**: Das Intune App-SDK-Framework. Es wird empfohlen, dass Sie dieses Framework mit ihren apps/Erweiterungen verknüpfen, um die Intune-Client Anwendungs Verwaltung zu aktivieren. Einige Entwickler bevorzugen jedoch möglicherweise die Leistungsvorteile der statischen Bibliothek. Weitere Informationen finden Sie in den folgenden Themen.
 
 * **libIntuneMAM.a**: Die statische Intune App SDK-Bibliothek. Entwickler können die statische Bibliothek anstelle des Frameworks verknüpfen. Da statische Bibliotheken zur Buildzeit direkt in die Binärdatei der APP/Erweiterung eingebettet werden, gibt es einige Vorteile bei der Verwendung der statischen Bibliothek. Die Integration in Ihre APP ist jedoch komplizierter. Wenn Ihre APP Erweiterungen enthält, führt das Verknüpfen der statischen Bibliothek mit der APP und Erweiterungen zu einer größeren App Bundle Größe, da die statische Bibliothek in jede APP/Erweiterungs Binärdatei eingebettet wird. Bei Verwendung des Frameworks können apps und Erweiterungen dieselbe InTune SDK-Binärdatei verwenden, was zu einer geringeren App-Größe führt.
 
-* **IntuneMAMResources.Bundle**: Ein Ressourcenpaket, das die Ressourcen für das SDK enthält. Das Ressourcen Bündel ist nur für apps erforderlich, die die statische Bibliothek (libintunemam. a) integrieren.
+* **IntuneMAMResources.bundle**: Ein Ressourcenpaket, das die Ressourcen für das SDK enthält. Das Ressourcen Bündel ist nur für apps erforderlich, die die statische Bibliothek (libintunemam. a) integrieren.
 
 Die folgenden Dateien sind für apps/Erweiterungen relevant, die SWIFT-Code enthalten und mit Xcode 10.2 und höher kompiliert werden:
 
@@ -62,7 +62,7 @@ Die folgenden Dateien sind für alle apps/Erweiterungen relevant:
 
 * **Intunemamconfigurator**: ein Tool, das zum Konfigurieren der "Info. plist" der APP oder Erweiterung mit den mindestens erforderlichen Änderungen für die Intune-Verwaltung verwendet wird. Abhängig von der Funktionalität Ihrer APP oder Erweiterung müssen Sie möglicherweise zusätzliche manuelle Änderungen an der Datei "Info. plist" vornehmen.
 
-* **Headers**: Stellt die öffentlichen Intune App SDK-APIs bereit. Diese Header sind in den intunemam/intunemamswift-Frameworks enthalten, sodass Entwickler, die eines der Frameworks nutzen, die Header nicht manuell zu Ihrem Projekt hinzufügen müssen. Entwickler, die eine Verknüpfung mit der statischen Bibliothek (libintunemam. a) herstellen möchten, müssen diese Header manuell in Ihr Projekt einschließen.
+* **Header**: Stellt die öffentlichen Intune App SDK-APIs bereit. Diese Header sind in den intunemam/intunemamswift-Frameworks enthalten, sodass Entwickler, die eines der Frameworks nutzen, die Header nicht manuell zu Ihrem Projekt hinzufügen müssen. Entwickler, die eine Verknüpfung mit der statischen Bibliothek (libintunemam. a) herstellen möchten, müssen diese Header manuell in Ihr Projekt einschließen.
 
 Die folgenden Headerdateien enthalten die APIs, die Datentypen und die Protokolle, die vom Intune App SDK für Entwickler zur Verfügung gestellt wurden:
 
@@ -93,31 +93,31 @@ Ziel des Intune App SDK für iOS ist es, iOS-Anwendungen mit minimalen Codeände
 
 ## <a name="build-the-sdk-into-your-mobile-app"></a>Integrieren des SDK in Ihre mobile App
 
-Gehen Sie folgendermaßen vor, um das Intune App SDK zu aktivieren:
+Führen Sie die folgenden Schritte aus, um das Intune App SDK zu aktivieren:
 
 1. **Option 1-Framework (empfohlen)** : Wenn Sie Xcode 10.2 und höher verwenden und Ihre APP/Erweiterung SWIFT-Code enthält, verknüpfen Sie `IntuneMAMSwift.framework` und `IntuneMAMSwiftStub.framework` mit Ihrem Ziel: ziehen Sie `IntuneMAMSwift.framework` und `IntuneMAMSwiftStub.framework` in die Liste **eingebetteter Binärdateien** des Projektziels.
 
     Andernfalls verknüpfen Sie `IntuneMAM.framework` mit Ihrem Ziel: ziehen Sie `IntuneMAM.framework` in die Liste **eingebetteter Binärdateien** des Projektziels.
 
    > [!NOTE]
-   > Bei Verwendung des Frameworks müssen Sie die Simulatorarchitekturen manuell aus dem universellen Framework entfernen, bevor Sie Ihre App an den App Store übermitteln. Weitere Informationen siehe [Übermitteln Ihrer App an den App Store](#submit-your-app-to-the-app-store).
+   > Wenn Sie das Framework verwenden, müssen Sie die Simulatorstrukturen aus dem universellen Framework entfernen, bevor Sie Ihre App im App Store einreichen. Weitere Informationen siehe [Übermitteln Ihrer App an den App Store](#submit-your-app-to-the-app-store).
 
    **Option 2: statische Bibliothek**: diese Option ist nur für apps/Erweiterungen verfügbar, die keinen SWIFT-Code enthalten oder mit Xcode < 10,2 erstellt wurden. Stellen Sie eine Verknüpfung mit der `libIntuneMAM.a`-Bibliothek her. Ziehen Sie die `libIntuneMAM.a`-Bibliothek in die Liste **Verknüpfte Frameworks und Bibliotheken** des Projektziels.
 
     ![Intune App SDK iOS – verknüpfte Frameworks und Bibliotheken](./media/app-sdk-ios/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
-    Fügen Sie `-force_load {PATH_TO_LIB}/libIntuneMAM.a` einem der folgenden Pfade hinzu, wobei Sie `{PATH_TO_LIB}` durch den Speicherort des Intune App SDK ersetzen:
+    Fügen Sie `-force_load {PATH_TO_LIB}/libIntuneMAM.a` an einer der folgenden Stellen ein, und ersetzen Sie `{PATH_TO_LIB}` durch den Speicherort des Intune App SDK:
    * Der Buildkonfigurationseinstellung `OTHER_LDFLAGS` des Projekts.
    * Benutzeroberflächenoption **Other Linker Flags** (Andere Linker-Flags) von Xcode.
 
      > [!NOTE]
-     > Um den `PATH_TO_LIB` zu suchen, wählen Sie die Datei `libIntuneMAM.a` und dann im Menü **Datei** die Option **Informationen abrufen** aus. Kopieren Sie den **Pfad** aus dem Abschnitt **Allgemein** im Fenster **Info**.
+     > Um den `PATH_TO_LIB` zu suchen, wählen Sie die Datei `libIntuneMAM.a` und dann im Menü **Datei** die Option **Informationen abrufen** aus. Kopieren Sie die Informationen aus **Where** (Wo) (der Pfad) aus dem Abschnitt **General** (Allgemein) im Fenster **Info**, und fügen Sie sie ein.
 
-     Fügen Sie das Ressourcenpaket `IntuneMAMResources.bundle` zum Projekt hinzu, indem Sie es in **Buildphasen** unter **Paketressourcen kopieren** ziehen.
+     Fügen Sie das Ressourcenpaket `IntuneMAMResources.bundle` zum Projekt hinzu, indem Sie es unter **Copy Bundle Resources** (Paketressourcen kopieren) in **Build Phases** (Buildphasen) ziehen.
 
      ![Intune App SDK iOS: Paketressourcen kopieren](./media/app-sdk-ios/intune-app-sdk-ios-copy-bundle-resources.png)
          
-2. Fügen Sie diese iOS-Frameworks zum Projekt hinzu:  
+2. Fügen Sie folgende iOS-Frameworks in das Projekt ein:  
 -  MessageUI.framework  
 -  Security.framework  
 -  MobileCoreServices.framework  
@@ -178,7 +178,7 @@ Wenn der Parameter „-o“ nicht angegeben ist, wird die Eingabedatei direkt ge
 
 Das InTune App SDK kann entweder die [Azure Active Directory Authentifizierungs Bibliothek](https://github.com/AzureAD/azure-activedirectory-library-for-objc) oder die [Microsoft-Authentifizierungs Bibliothek](https://github.com/AzureAD/microsoft-authentication-library-for-objc) für die Authentifizierungs-und bedingte Start Szenarios verwenden. Es verwendet außerdem ADAL/MSAL zum Registrieren der Benutzeridentität beim MAM-Dienst für Verwaltungsszenarien ohne Geräteregistrierung.
 
-Normalerweise setzt ADAL/MSAL voraus, dass Apps sich bei Azure Active Directory (AAD) registrieren und eine eindeutige Client-ID und einen eindeutigen Umleitungs-URI erstellen, um die Sicherheit der Token zu gewährleisten, die der Anwendung erteilt werden. Wenn Ihre App bereits ADAL oder MSAL zum Authentifizieren von Benutzern verwendet, muss sie ihre vorhandenen Registrierungswerte verwenden und die Standardwerte des Intune App SDK außer Kraft setzen. Dadurch wird sichergestellt, dass Benutzer nicht zweimal zur Authentifizierung aufgefordert werden (einmal vom Intune App SDK und einmal von der App).
+Normalerweise setzt ADAL/MSAL voraus, dass Apps sich bei Azure Active Directory (AAD) registrieren und eine eindeutige Client-ID und einen eindeutigen Umleitungs-URI erstellen, um die Sicherheit der Token zu gewährleisten, die der Anwendung erteilt werden. Wenn Ihre App bereits ADAL oder MSAL zum Authentifizieren von Benutzern verwendet, muss sie ihre vorhandenen Registrierungswerte verwenden und die Standardwerte des Intune App SDK außer Kraft setzen. So wird sichergestellt, dass Benutzer nicht zweimal aufgefordert werden, sich zu authentifizieren (jeweils einmal vom Intune App SDK und einmal von der App).
 
 Wenn Ihre APP nicht bereits Adal oder msal verwendet und Sie nicht auf eine Aad-Ressource zugreifen müssen, müssen Sie keine Client-App-Registrierung in Aad einrichten, wenn Sie Adal integrieren. Wenn Sie sich für die Integration von msal entscheiden, müssen Sie eine APP-Registrierung konfigurieren und die standardmäßige InTune-Client-ID und den Umleitungs-URI überschreiben.  
 
@@ -194,7 +194,7 @@ Es wird empfohlen, dass Ihre APP mit der neuesten Version von [Adal](https://git
 
 2. Aktivieren Sie einmaliges Anmelden für ADAL/MSAL, indem Sie den Schlüsselbundzugriffsgruppen `com.microsoft.adalcache` hinzufügen.
 
-3. Falls Sie die Schlüsselbundgruppe für den freigegebenen ADAL-Cache explizit festlegen, achten Sie darauf, dass sie auf `<appidprefix>.com.microsoft.adalcache` festgelegt ist. ADAL legt dies für Sie fest, sofern Sie die Einstellung nicht außer Kraft setzen. Wenn Sie eine benutzerdefinierte Schlüsselbundgruppe angeben möchten, die `com.microsoft.adalcache` ersetzt, geben Sie sie in der Datei „Info.plist“ mithilfe des Schlüssels `ADALCacheKeychainGroupOverride` unter „IntuneMAMSettings“ an.
+3. Falls Sie die Schlüsselbundgruppe für den freigegebenen ADAL-Cache explizit festlegen, achten Sie darauf, dass sie auf `<appidprefix>.com.microsoft.adalcache` festgelegt ist. ADAL legt dies für Sie fest, sofern Sie die Einstellung nicht außer Kraft setzen. Wenn Sie eine benutzerdefinierte Schlüsselbundgruppe als Ersatz für `com.microsoft.adalcache` festlegen möchten, können Sie dies in der info.plist-Datei unter IntuneMAMSettings mit dem Schlüssel `ADALCacheKeychainGroupOverride` tun.
 
 ### <a name="configure-adalmsal-settings-for-the-intune-app-sdk"></a>Konfigurieren der ADAL/MSAL-Einstellungen für das Intune App SDK
 
@@ -248,15 +248,15 @@ Einstellung  | Typ  | Definition | Erforderlich?
 ADALClientId  | Zeichenfolge  | Die Azure AD-Client-ID der App. | Erforderlich für alle apps, die msal und jede Adal-App verwenden, die auf eine nicht-InTune-Aad-Ressource zugreift. |
 ADALAuthority | Zeichenfolge | Die aktive Azure AD-Autorität. Dort wo AAD-Konten konfiguriert wurden, sollten Sie Ihre eigene Umgebung verwenden. | Erforderlich, wenn die APP Adal oder msal verwendet, um auf eine nicht-InTune-Aad-Ressource zuzugreifen. Wenn dieser Wert nicht vorhanden ist, wird der Intune-Standard verwendet.|
 ADALRedirectUri  | Zeichenfolge  | Der Azure AD-Umleitungs-URI der App. | Adalredirecturi oder adalredirectscheme ist für alle apps erforderlich, die msal und jede Adal-App verwenden, die auf eine nicht-InTune-Aad-Ressource zugreift.  |
-ADALRedirectScheme  | Zeichenfolge  | Das Azure AD-Umleitungsschema der App. Dies kann anstelle von ADALRedirectUri verwendet werden, wenn der Umleitungs-URI der App im Format `scheme://bundle_id` vorliegt. | Adalredirecturi oder adalredirectscheme ist für alle apps erforderlich, die msal und jede Adal-App verwenden, die auf eine nicht-InTune-Aad-Ressource zugreift. |
+ADALRedirectScheme  | Zeichenfolge  | Das Azure AD-Umleitungsschema der App. Dieses kann anstelle von ADALRedirectUri verwendet werden, wenn der Umleitungs-URI der App im `scheme://bundle_id`-Format ist. | Adalredirecturi oder adalredirectscheme ist für alle apps erforderlich, die msal und jede Adal-App verwenden, die auf eine nicht-InTune-Aad-Ressource zugreift. |
 ADALLogOverrideDisabled | Boolesch  | Gibt an, ob das SDK alle ADAL/MSAL-Protokolle (einschließlich ADAL-Aufrufe von der App, sofern zutreffend) an die eigene Protokolldatei weiterleitet. Standardwert ist "NO". Legen Sie den Wert auf „YES“ fest, wenn die App einen eigenen ADAL/MSAL-Protokollrückruf festlegt. | (Optional) |
 ADALCacheKeychainGroupOverride | Zeichenfolge  | Gibt die Schlüsselbundgruppe an, die für den ADAL/MSAL-Cache anstelle von „com.microsoft.adalcache“ verwendet werden soll. Beachten Sie, dass diese das App-ID-Präfix nicht enthält. Dieses wird der gegebenen Zeichenfolge zur Laufzeit vorangestellt. | (Optional) |
 AppGroupIdentifiers | Array von Zeichenfolgen  | Ein Array mit App-Gruppen aus dem Berechtigungsabschnitt "com.apple.security.application-groups" der App. | Erforderlich, wenn die App Anwendungsgruppen verwendet. |
 ContainingAppBundleId | Zeichenfolge | Gibt die Paket-ID der Anwendung an, die die Erweiterung enthält. | Erforderlich für iOS-Extensions. |
 DebugSettingsEnabled| Boolesch | Bei der Einstellung JA können innerhalb des Einstellungspakets Testrichtlinien angewendet werden. Diese Einstellungen sollte bei ausgelieferten Anwendungen *nicht* aktiviert sein. | (Optional) Standardwert lautet „no“ (Nein) |
 AutoEnrollOnLaunch| Boolesch| Gibt an, ob die App versuchen soll, sich beim Start automatisch zu registrieren, wenn eine vorhandene verwaltete Identität erkannt wurde und dies noch nicht passiert ist. Standardwert ist "NO". <br><br> Hinweise: Wenn keine verwaltete Identität gefunden wird oder kein gültiges Token für die Identität im ADAL/MSAL-Cache verfügbar ist, verursacht die Registrierung einen Fehler ohne Fehlermeldung und fordert keine Anmeldeinformationen an, es sei denn, MAMPolicyRequired ist auf YES festgelegt. | (Optional) Standardwert lautet „no“ (Nein) |
-MAMPolicyRequired| Boolesch| Gibt an, ob das Starten der App blockiert ist, wenn die App über keine Intune App-Schutzrichtlinie verfügt. Standardwert ist "NO". <br><br> Hinweise: Apps, bei denen die MAMPolicyRequired-Einstellung auf „JA“ festgelegt ist, können nicht im App Store eingereicht werden. Wenn MAMPolicyRequired auf JA festgelegt wird, muss auch AutoEnrollOnLaunch auf JA festgelegt werden. | (Optional) Standardwert lautet „no“ (Nein) |
-MAMPolicyWarnAbsent | Boolesch| Gibt an, ob die App den Benutzer beim Start warnt, wenn die App keine App-Schutzrichtlinie für Intune hat. <br><br> Hinweis: Benutzer dürfen noch immer die App ohne Richtlinie verwenden, nachdem die Warnung verworfen wurde. | (Optional) Standardwert lautet „no“ (Nein) |
+MAMPolicyRequired| Boolesch| Gibt an, ob das Starten der App blockiert ist, wenn die App über keine Intune App-Schutzrichtlinie verfügt. Standardwert ist "NO". <br><br> Hinweise: Apps können nicht an den App-Store übermittelt werden, wenn „MAMPolicyRequired“ auf „Ja“ festgelegt ist. Wenn MAMPolicyRequired auf JA festgelegt wird, muss auch AutoEnrollOnLaunch auf JA festgelegt werden. | (Optional) Standardwert lautet „no“ (Nein) |
+MAMPolicyWarnAbsent | Boolesch| Gibt an, ob die App den Benutzer beim Start warnt, wenn die App keine App-Schutzrichtlinie für Intune hat. <br><br> Anmerkung: Benutzer können die App ohne Richtlinie weiter verwenden, nachdem sie die Warnung geschlossen haben. | (Optional) Standardwert lautet „no“ (Nein) |
 MultiIdentity | Boolesch| Gibt an, ob die App den Umgang mit mehreren Identitäten beherrscht. | (Optional) Standardwert lautet „no“ (Nein) |
 Safariviewcontrollerblockedoverride | Boolesch| Deaktiviert die safariviewcontroller-Hooks von InTune, um die msal-Authentifizierung über sfsafariviewcontroller, sfauthsession oder aswebauthsession zu aktivieren. | (Optional) Standardwert lautet „no“ (Nein) Warnung: kann zu Datenlecks führen, wenn Sie nicht ordnungsgemäß verwendet werden. Aktivieren Sie nur, wenn dies unbedingt erforderlich ist. Weitere Informationen finden [Sie unter besondere Überlegungen bei der Verwendung von msal](#special-considerations-when-using-msal) .  |
 SplashIconFile <br>SplashIconFile~ipad | Zeichenfolge  | Gibt die Datei für das Intune-Begrüßungssymbol (Startsymbol) an. | (Optional) |
@@ -296,7 +296,7 @@ Apps, die bereits ADAL oder MSAL verwenden, müssen die `registerAndEnrollAccoun
 
 Durch Aufrufen der `registerAndEnrollAccount`-Methode registriert das SDK das Benutzerkonto und versucht, die App im Auftrag dieses Kontos zu registrieren. Wenn bei der Registrierung aus irgendeinem Grund ein Fehler auftritt, versucht das SDK die Registrierung 24 Stunden später automatisch erneut. Zu Debuggingzwecken kann die App über einen Delegaten [Benachrichtigungen](#status-result-and-debug-notifications) zu den Ergebnissen von Registrierungsanforderungen empfangen.
 
-Nachdem diese API aufgerufen wurde, kann die Anwendung anschließend normal funktionieren. Wenn die Registrierung erfolgreich ist, benachrichtigt das SDK den Benutzer, dass ein Neustart der App erforderlich ist. Zu diesen Zeitpunkt kann der Benutzer die App sofort neu starten.
+Nachdem diese API aufgerufen wurde, kann die Anwendung anschließend normal funktionieren. Wenn die Registrierung erfolgreich ist, benachrichtigt das SDK den Benutzer, dass ein Neustart der App erforderlich ist. Nun kann der Benutzer die App sofort neu starten.
 
 ```objc
 [[IntuneMAMEnrollmentManager instance] registerAndEnrollAccount:@”user@foo.com”];
@@ -304,7 +304,7 @@ Nachdem diese API aufgerufen wurde, kann die Anwendung anschließend normal funk
 
 ### <a name="apps-that-do-not-use-adal-or-msal"></a>Apps, die weder ADAL noch MSAL verwenden
 
-Apps, die den Benutzer nicht mit ADAL oder MSAL anmelden, können trotzdem App-Schutzrichtlinien vom Intune-MAM-Dienst empfangen, indem sie die API aufrufen, um die Authentifizierung vom SDK ausführen zu lassen. Apps sollten diese Technik verwenden, wenn zwar keine Benutzer mit Azure AD authentifiziert wurden, aber trotzdem App-Schutzrichtlinien zum Schutz der Daten abgerufen werden müssen. Beispielsweise, wenn ein anderer Authentifizierungsdienst für die App-Anmeldung verwendet wird oder wenn die App überhaupt kein Anmelden unterstützt. Zu diesem Zweck kann die Anwendung die `loginAndEnrollAccount`-Methode auf der `IntuneMAMEnrollmentManager`-Instanz aufrufen:
+Apps, die den Benutzer nicht mit ADAL oder MSAL anmelden, können trotzdem App-Schutzrichtlinien vom Intune-MAM-Dienst empfangen, indem sie die API aufrufen, um die Authentifizierung vom SDK ausführen zu lassen. Apps verwenden diese Vorgehensweise am besten, wenn sie keinen Benutzer in Azure AD authentifiziert haben, aber trotzdem App-Schutzrichtlinien zum Schutz von Daten abrufen müssen. Beispielsweise, wenn ein anderer Authentifizierungsdienst für die App-Anmeldung verwendet wird oder wenn die App überhaupt kein Anmelden unterstützt. Zu diesem Zweck kann die Anwendung die `loginAndEnrollAccount`-Methode auf der `IntuneMAMEnrollmentManager`-Instanz aufrufen:
 
 ```objc
 /**
@@ -334,8 +334,8 @@ Wenn das Intune SDK die gesamte Authentifizierung (über ADAL/MSAL) und die Regi
 
 Einstellung  | Typ  | Definition |
 --       |  --   |   --       |  
-AutoEnrollOnLaunch| Boolesch| Gibt an, ob die App versuchen soll, sich beim Start automatisch zu registrieren, wenn eine vorhandene verwaltete Identität erkannt wurde und dies noch nicht passiert ist. Standardwert ist "NO". <br><br> Hinweis: Wenn keine verwaltete Identität gefunden wird oder kein gültiges Token für die Identität im ADAL/MSAL-Cache verfügbar ist, verursacht die Registrierung einen Fehler ohne Fehlermeldung und fordert keine Anmeldeinformationen an, es sei denn, MAMPolicyRequired ist auf YES festgelegt. |
-MAMPolicyRequired| Boolesch| Gibt an, ob das Starten der App blockiert ist, wenn die App über keine Intune App-Schutzrichtlinie verfügt. Standardwert ist "NO". <br><br> Hinweis: Apps, bei denen die Einstellung „MAMPolicyRequired“ auf „YES“ festgelegt ist, können nicht im App Store eingereicht werden. Wenn MAMPolicyRequired auf JA festgelegt wird, muss auch AutoEnrollOnLaunch auf JA festgelegt werden. |
+AutoEnrollOnLaunch| Boolesch| Gibt an, ob die App versuchen soll, sich beim Start automatisch zu registrieren, wenn eine vorhandene verwaltete Identität erkannt wurde und dies noch nicht passiert ist. Standardwert ist "NO". <br><br> Anmerkung: Wenn keine verwaltete Identität gefunden wird oder kein gültiges Token für die Identität im ADAL/MSAL-Cache verfügbar ist, verursacht die Registrierung einen Fehler ohne Fehlermeldung und fordert keine Anmeldeinformationen an, es sei denn, MAMPolicyRequired ist auf YES festgelegt. |
+MAMPolicyRequired| Boolesch| Gibt an, ob das Starten der App blockiert ist, wenn die App über keine Intune App-Schutzrichtlinie verfügt. Standardwert ist "NO". <br><br> Anmerkung: Apps können nicht an den App-Store übermittelt werden, wenn „MAMPolicyRequired“ auf „Ja“ festgelegt ist. Wenn MAMPolicyRequired auf JA festgelegt wird, muss auch AutoEnrollOnLaunch auf JA festgelegt werden. |
 
 Wenn Sie diese Option für Ihre App auswählen, müssen Sie sich nach der Registrierung nicht um den Neustart der Anwendung kümmern.
 
@@ -452,7 +452,7 @@ Der Rückgabewert dieser Methode teilt dem SDK mit, ob die Anwendung den erforde
 
 * Wenn „true“ zurückgegeben wird, muss die Anwendung den Neustart ausführen.
 
-* Wenn „FALSE“ zurückgegeben wird, startet das SDK die App neu, nachdem die Methode zurückkehrt. Das SDK zeigt sofort ein Dialogfeld an, in dem der Benutzer zum Neustarten der Anwendung aufgefordert wird.
+* Wenn „FALSE“ zurückgegeben wird, startet das SDK die App neu, nachdem die Methode zurückkehrt. Das SDK zeigt sofort im Anschluss ein Dialogfeld an, dass den Benutzer informiert, dass er die App neu starten muss.
 
 ## <a name="customize-your-apps-behavior-with-apis"></a>Anpassen des App-Verhalten mit APIs
 
@@ -559,7 +559,7 @@ SUBQUERY (
         ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" ||
         ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" ||
         ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" ||
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data"
     ).@count > 0
 ).@count > 0
 ```
@@ -599,11 +599,11 @@ Weitere Informationen zum Erstellen einer MAM-Zielkonfigurationsrichtlinie für 
 
 Standardmäßig sammelt das Intune App SDK für iOS Telemetriedaten zu den folgenden Ereignistypen:
 
-* **Start der App**: Übermittelt an Microsoft Intune Daten zur Nutzung von MAM-aktivierten Apps nach Verwaltungsart (MAM mit MDM, MAM ohne MDM-Registrierung usw.).
+* **App-Start**: Bietet Microsoft Intune Informationen zur Nutzung von MAM-aktivierten Apps nach Verwaltungsart (MAM mit MDM, MAM ohne MDM-Registrierung usw.).
 
-* **Registrierungsaufruf**: Übermittelt die Erfolgsquote und andere Leistungsindikatoren von Registrierungsaufrufen, die von der Clientseite initiiert wurden,an Microsoft Intune.
+* **Registrierungsaufrufe**: Bietet Microsoft Intune Informationen über die Erfolgsquote und andere Leistungsmetriken von Registrierungsaufrufen, die von der Clientseite initiiert wurden.
 
-* **Intune-Aktionen**: Damit Probleme diagnostiziert und das Funktionieren von Intune sichergestellt werden können, sammeln wir Informationen zu Intune SDK-Aktionen.
+* **Intune-Aktionen**: Um Probleme diagnostizieren und die Funktion von Intune sicherstellen zu können, sammeln wir Informationen zu Intune SDK-Aktionen.
 
 > [!NOTE]
 > Wenn von Ihrer mobilen Anwendung keine Intune App SDK-Telemetriedaten an Microsoft Intune gesendet werden sollen, müssen Sie die Intune App SDK-Telemetrieerfassung deaktivieren. Legen Sie die Eigenschaft `MAMTelemetryDisabled` im IntuneMAMSettings-Wörterbuch auf „YES“ fest.
@@ -620,9 +620,9 @@ Beachten Sie, dass eine Identität einfach nur als Zeichenfolge definiert ist. B
 
 Eine Identität ist einfach der Benutzername eines Kontos (z.B. user@contoso.com). Entwickler können die Identität der App auf folgenden Ebenen festlegen:
 
-* **Prozessidentität**: Legt die prozessweite Identität fest und wird in der Hauptsache für Anwendungen mit nur einer Identität verwendet. Diese Identität wirkt sich auf alle Aufgaben, Dateien und Benutzeroberflächen aus.
+* **Prozessidentität**: Legt die prozessweite Identität fest und wird in der Hauptsache für Anwendungen mit nur einer Identität verwendet. Diese Identität betrifft alle Aufgaben, Dateien und die Benutzeroberfläche.
 
-* **UI-Identität**: Legt fest, welche Richtlinien auf Benutzeroberflächenaufgaben im Hauptthread angewendet werden, z. B. Ausschneiden/Kopieren/Einfügen, PIN, Authentifizierung und Datenfreigabe. Die UI-Identität wirkt sich nicht auf Dateiaufgaben wie Verschlüsselung und Sicherung aus.
+* **UI-Identität**: Legt fest, welche Richtlinien auf Benutzeroberflächenaufgaben im Hauptthread angewendet werden, z.B. Ausschneiden/Kopieren/Einfügen, PIN, Authentifizierung und Datenfreigabe. Die UI-Identität wirkt sich nicht auf Dateiaufgaben wie Verschlüsselung und Sicherung aus.
 
 * **Threadidentität**: Wirkt sich darauf aus, welche Richtlinien auf den aktuellen Thread angewendet werden. Diese Identität betrifft alle Aufgaben, Dateien und die Benutzeroberfläche.
 
@@ -720,14 +720,14 @@ Das SDK stellt die Wiederholungsversuche ein, wenn es feststellt, dass ein Benut
 
 Das SDK führt im Hintergrund in regelmäßigen Abständen die folgenden Aktionen aus:
 
-* Wenn die Anwendung noch nicht registriert ist, versucht es, alle registrierten Konten alle 24 Stunden zu registrieren.
+* Wenn die App noch nicht registriert wurde, versucht es, alle registrierten Konten in einem Abstand von 24 Stunden zu registrieren.
 * Wenn die Anwendung registriert ist, prüft das SDK alle 8 Stunden auf MAM-Richtlinienaktualisierungen.
 
 Durch Aufheben der Registrierung eines Benutzers teilt die Anwendung dem SDK mit, dass der Benutzer die Anwendung nicht mehr verwendet und alle regelmäßigen Aktionen für dieses Benutzerkonto vom SDK eingestellt werden können. Dadurch werden außerdem das Aufheben der Registrierung und ggf. das selektive Zurücksetzen ausgelöst.
 
 ### <a name="should-i-set-the-dowipe-flag-to-true-in-the-deregister-method"></a>Soll das doWipe-Flag in der Methode zum Aufheben der Registrierung auf WAHR festgelegt werden?
 
-Diese Methode sollte aufgerufen werden, bevor der Benutzer bei der Anwendung abgemeldet wird.  Wenn die Daten des Benutzers im Rahmen der Abmeldung aus der Anwendung gelöscht werden, kann `doWipe` auf „false“ festgelegt werden. Wenn die Anwendung die Daten des Benutzers jedoch nicht entfernt, sollte `doWipe` auf „true“ festgelegt werden, damit das SDK die Daten löschen kann.
+Diese Methode sollte aufgerufen werden, bevor der Benutzer aus der App abgemeldet wird.  Wenn die Daten des Benutzers im Rahmen der Abmeldung aus der Anwendung gelöscht werden, kann `doWipe` auf „false“ festgelegt werden. Wenn die Anwendung die Daten des Benutzers jedoch nicht entfernt, sollte `doWipe` auf „true“ festgelegt werden, damit das SDK die Daten löschen kann.
 
 ### <a name="are-there-any-other-ways-that-an-application-can-be-un-enrolled"></a>Gibt es andere Möglichkeiten zum Aufheben der Registrierung einer Anwendung?
 

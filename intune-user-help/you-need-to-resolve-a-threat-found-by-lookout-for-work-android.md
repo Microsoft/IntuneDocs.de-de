@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0cc2f84ad73c86a823984e6caa11dad5d4aec8a8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: f056b44301c1d0f94dde2dbb6202ed7c78e90fbf
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507827"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857358"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Beseitigen einer von Lookout for Work erkannten Bedrohung  
 
@@ -52,7 +52,7 @@ Erhalten Sie erneut Zugriff auf Ressourcen Ihres Unternehmens, wenn die Lookout 
 
 Wenn Sie eine App installieren, die Lookout for Work als Bedrohung identifiziert, erhalten Sie eine wie im folgenden Screenshot gezeigte Meldung.  
 
-![Beispielscreenshot einer Viruswarnung über die Benutzeroberfläche der Lookout for Work-App. Sie zeigt die drei Schaltflächen: „Schließen“, „Weitere Informationen“ und „Deinstallieren“.](./media/lookout-virus-alert-android.png)  
+![Beispielscreenshot einer Viruswarnung über die Benutzeroberfläche der Lookout for Work-App. Zeigt drei Schaltflächen an: „Schließen“, „Weitere Informationen“ und „Deinstallieren“.](./media/lookout-virus-alert-android.png)  
 
 Deinstallieren Sie die fragwürdige App, um den verlorenen Zugriff auf Ihre Unternehmens-E-Mail und -Daten wiederzuerlangen. Solange sich die App auf Ihrem Gerät befindet, können Sie nicht auf Unternehmensressourcen zugreifen.    
 

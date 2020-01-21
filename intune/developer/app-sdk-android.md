@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/14/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8c5be1d7a02c2c8329afe05dcdce22f48c49d05
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2e4c96cefef9f535d68ed8da20dfcaeb0deffbe1
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503489"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653919"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Entwicklerhandbuch zum Microsoft Intune App SDK für Android
 
@@ -36,15 +36,15 @@ Mit dem Microsoft Intune App SDK für Android können Sie die Intune-App-Schutzr
 
 Das Intune App SDK besteht aus den folgenden Dateien:
 
-* **Microsoft.Intune.MAM.SDK.aar**: Die SDK-Komponenten, mit Ausnahme der JAR-Dateien der Unterstützungsbibliothek.
-* **Microsoft.Intune.MAM.SDK.Support.v4.jar**: Die Klassen, die zum Aktivieren von MAM in Apps erforderlich sind, die die Unterstützungsbibliothek von Android v4 verwenden.
-* **Microsoft.Intune.MAM.SDK.Support.v7.jar**: Die Klassen, die zum Aktivieren von MAM in Apps erforderlich sind, die die Unterstützungsbibliothek von Android v7 verwenden.
-* **Microsoft.Intune.MAM.SDK.Support.v17.jar**: Die Klassen, die zum Aktivieren von MAM in Apps erforderlich sind, die die Unterstützungsbibliothek von Android v17 verwenden. 
-* **Microsoft.Intune.MAM.SDK.Support.Text.jar**: Die Klassen, die zum Aktivieren von MAM in Apps erforderlich sind, die die Klassen der Android-Unterstützungsbibliothek im `android.support.text`-Paket verwenden.
+* **Microsoft.Intune.MAM.SDK.aar:** Die SDK-Komponenten, mit Ausnahme der JAR-Dateien der Unterstützungsbibliothek.
+* **Microsoft.Intune.MAM.SDK.Suppbzw.t.v4.jar**: Die Klassen, die zum Aktivieren von MAM in Apps erforderlich sind, die die Unterstützungsbibliothek von Android Version 4 nutzen.
+* **Microsoft.Intune.MAM.SDK.Suppbzw.t.v7.jar**: Die Klassen, die zum Aktivieren von MAM in Apps erforderlich sind, die die Unterstützungsbibliothek von Android Version 7 nutzen.
+* **Microsoft.Intune.MAM.SDK.Support.v17.jar:** Die Klassen, die zum Aktivieren von MAM in Apps erforderlich sind, die die Unterstützungsbibliothek von Android Version 17 nutzen. 
+* **Microsoft.Intune.MAM.SDK.Support.Text.jar:** Die Klassen, die zum Aktivieren von MAM in Apps erforderlich sind, die die Klassen der Android-Unterstützungsbibliothek im `android.support.text`-Paket nutzen.
 * **Microsoft.Intune.MAM.SDK.DownlevelStubs.aar**: Diese AAR-Datei enthält Stubs für Android-Systemklassen, die nur auf neueren Geräten vorhanden sind, auf die aber Methoden in `MAMActivity` verweisen. Neuere Geräte ignorieren diese Stubklassen. Diese AAR-Datei ist nur dann notwendig, wenn Ihre App einen Reflexionvorgang auf Klassen anwendet, die von `MAMActivity` abgeleitet sind. Die meisten Apps müssen sie nicht einbinden. Der Aar enthält proguard-Regeln, um alle seine Klassen auszuschließen.
-* **com.microsoft.intune.mam.build.jar**: Ein Gradle-Plug-In, das bei der [Integration des SDK](#build-tooling) hilft.
-* **CHANGELOG.txt**: Stellt eine Aufzeichnung der Änderungen bereit, die in den einzelnen SDK-Versionen vorgenommen wurden.
-* **THIRDPARTYNOTICES.TXT**: Ein Urheberrechtshinweis für Drittanbieter- und/oder OSS-Code, der in Ihrer App kompiliert wird.
+* **com.microsoft.intune.mam.build.jar:** Ein Gradle-Plug-In, das die [Integration des SDK unterstützt](#build-tooling).
+* **CHANGELOG.txt:** Stellt eine Aufzeichnung der Änderungen bereit, die in den einzelnen SDK-Versionen vorgenommen wurden.
+* **THIRDPARTYNOTICES.TXT:**  Ein Urheberrechtshinweis für Drittanbieter- und/oder OSS-Code, der in Ihrer App kompiliert wird.
 
 ## <a name="requirements"></a>Anforderungen
 
@@ -344,7 +344,7 @@ Zusätzlich zu den Basisklassen verfügen einige Klassen, die Ihre Anwendung ohn
 | android.support.text.emoji.widget.EmojiTextView | MAMEmojiTextView |
 
 ### <a name="renamed-methods"></a>Umbenannte Methoden
-In vielen Fällen wurde eine in der Android-Klasse verfügbare Methode in der äquivalenten MAM-Klasse als abgeschlossen gekennzeichnet. In diesem Fall stellt die äquivalente MAM-Klasse eine Methode mit ähnlichem Namen (normalerweise mit dem Suffix `MAM`) bereit, die stattdessen überschrieben werden sollte. Wenn z. B. von `MAMActivity` abgeleitet wird, anstatt `onCreate()` zu überschreiben und `super.onCreate()` aufzurufen, muss `Activity` `onMAMCreate()` überschreiben und `super.onMAMCreate()` aufrufen. Der Java-Compiler sollte die abgeschlossenen Einschränkungen erzwingen, um zu verhindern, dass die ursprüngliche Methode anstelle des MAM-Äquivalents überschrieben wird.
+In vielen Fällen wurde eine in der Android-Klasse verfügbare Methode in der äquivalenten MAM-Klasse als abgeschlossen gekennzeichnet. In diesem Fall stellt die äquivalente MAM-Klasse eine Methode mit ähnlichem Namen (normalerweise mit dem Suffix `MAM`) bereit, die stattdessen überschrieben werden sollte. Wenn z. B. von `MAMActivity` abgeleitet wird, anstatt `onCreate()` zu überschreiben und `super.onCreate()` aufzurufen, muss `Activity``onMAMCreate()` überschreiben und `super.onMAMCreate()` aufrufen. Der Java-Compiler sollte die abgeschlossenen Einschränkungen erzwingen, um zu verhindern, dass die ursprüngliche Methode anstelle des MAM-Äquivalents überschrieben wird.
 
 ### <a name="mamapplication"></a>MAMApplication
 Wenn Ihre App eine Unterklasse von `android.app.Application` erstellt, **müssen** Sie stattdessen eine Unterklasse von `com.microsoft.intune.mam.client.app.MAMApplication` erstellen. Wenn Ihre App keine Unterklasse von `android.app.Application` erstellt, **müssen** Sie `"com.microsoft.intune.mam.client.app.MAMApplication"` als das `"android:name"`-Attribut im `<application>`-Tag Ihrer „AndroidManifest.xml“-Datei festlegen.
@@ -673,19 +673,19 @@ public interface MAMNotificationReceiver {
 
 Folgende Benachrichtigungen werden an die App gesendet; für manche ist ggf. App-Beteiligung erforderlich:
 
-* **WIPE_USER_DATA**: Diese Benachrichtigung wird in einer `MAMUserNotification`-Klasse gesendet. Wenn diese Benachrichtigung empfangen wird, *muss* die APP alle Daten löschen, die mit der verwalteten Identität (aus `MAMUserNotification.getUserIdentity()`) verknüpft sind. Die Benachrichtigung kann aus unterschiedlichen Gründen auftreten, z. b. Wenn Ihre APP `unregisterAccountForMAM`aufruft, ein IT-Administrator eine Löschung initiiert oder wenn die vom Administrator benötigten Richtlinien für bedingten Zugriff nicht erfüllt werden. Wenn Ihre APP für diese Benachrichtigung nicht registriert wird, wird das Standardverhalten bei der Löschung ausgeführt. Beim Standardverhalten werden alle Dateien für eine APP mit einer einzelnen Identität oder alle Dateien gelöscht, die mit der verwalteten Identität für eine APP mit mehreren Identitäten gekennzeichnet sind. Diese Benachrichtigung wird nie im UI-Thread gesendet.
+* **WIPE_USER_DATA:** Diese Benachrichtigung wird in einer `MAMUserNotification`-Klasse gesendet. Wenn diese Benachrichtigung empfangen wird, *muss* die APP alle Daten löschen, die mit der verwalteten Identität (aus `MAMUserNotification.getUserIdentity()`) verknüpft sind. Die Benachrichtigung kann aus unterschiedlichen Gründen auftreten, z. b. Wenn Ihre APP `unregisterAccountForMAM`aufruft, ein IT-Administrator eine Löschung initiiert oder wenn die vom Administrator benötigten Richtlinien für bedingten Zugriff nicht erfüllt werden. Wenn Ihre APP für diese Benachrichtigung nicht registriert wird, wird das Standardverhalten bei der Löschung ausgeführt. Beim Standardverhalten werden alle Dateien für eine APP mit einer einzelnen Identität oder alle Dateien gelöscht, die mit der verwalteten Identität für eine APP mit mehreren Identitäten gekennzeichnet sind. Diese Benachrichtigung wird nie im UI-Thread gesendet.
 
-* **WIPE_USER_AUXILIARY_DATA**: Apps können sich für diese Benachrichtigung registrieren, wenn das Intune App SDK die standardmäßige selektive Zurücksetzung ausführen soll, aber bei der Zurücksetzung weitere Daten entfernt werden sollen. Diese Benachrichtigung ist nicht für Einzelidentitäts-Apps verfügbar und wird nur an Apps mit mehreren Identitäten gesendet. Diese Benachrichtigung wird nie im UI-Thread gesendet.
+* **WIPE_USER_AUXILIARY_DATA:** Apps können sich für diese Benachrichtigung registrieren, wenn das Intune App SDK die standardmäßige selektive Zurücksetzung ausführen soll, aber bei der Zurücksetzung weitere Daten entfernt werden sollen. Diese Benachrichtigung ist nicht für Einzelidentitäts-Apps verfügbar und wird nur an Apps mit mehreren Identitäten gesendet. Diese Benachrichtigung wird nie im UI-Thread gesendet.
 
-* **REFRESH_POLICY**: Diese Benachrichtigung wird in einer `MAMUserNotification` gesendet. Bei Empfang dieser Benachrichtigung müssen jegliche von Ihrer App zwischengespeicherten Intune-Richtlinienentscheidungen für ungültig erklärt und aktualisiert werden. Wenn Ihre App keine Richtlinienannahmen speichert, muss sie nicht für diese Benachrichtigung registriert werden. Es wird nicht sichergestellt, zu welchem Thread diese Benachrichtigung gesendet wird.
+* **REFRESH_POLICY:** Diese Benachrichtigung wird in einer `MAMUserNotification`-Klasse gesendet. Bei Empfang dieser Benachrichtigung müssen jegliche von Ihrer App zwischengespeicherten Intune-Richtlinienentscheidungen für ungültig erklärt und aktualisiert werden. Wenn Ihre App keine Richtlinienannahmen speichert, muss sie nicht für diese Benachrichtigung registriert werden. Es wird nicht sichergestellt, zu welchem Thread diese Benachrichtigung gesendet wird.
 
 * **REFRESH_APP_CONFIG:** Diese Benachrichtigung wird in einer `MAMUserNotification`-Klasse gesendet. Bei Empfang dieser Benachrichtigung müssen alle zwischengespeicherten Anwendungskonfigurationsdaten für ungültig erklärt und aktualisiert werden. Es wird nicht sichergestellt, zu welchem Thread diese Benachrichtigung gesendet wird.
 
-* **MANAGEMENT_REMOVED**: Diese Benachrichtigung wird in einer `MAMUserNotification` gesendet und informiert die App darüber, dass sie bald zu einer nicht verwalteten App wird. Nachdem sie nicht mehr verwaltet wird, kann die App keine verschlüsselten Dateien und keine mit MAMDataProtectionManager verschlüsselten Daten mehr lesen sowie nicht mehr mit der verschlüsselten Zwischenablage interagieren bzw. anderweitig am Ökosystem der verwalteten Apps teilnehmen. Weitere Informationen finden Sie unten. Diese Benachrichtigung wird nie im UI-Thread gesendet.
+* **MANAGEMENT_REMOVED:** Diese Benachrichtigung wird in einer `MAMUserNotification`-Klasse gesendet und informiert die App darüber, dass sie bald zu einer nicht verwalteten App wird. Nachdem sie nicht mehr verwaltet wird, kann die App keine verschlüsselten Dateien und keine mit MAMDataProtectionManager verschlüsselten Daten mehr lesen sowie nicht mehr mit der verschlüsselten Zwischenablage interagieren bzw. anderweitig am Ökosystem der verwalteten Apps teilnehmen. Weitere Informationen finden Sie unten. Diese Benachrichtigung wird nie im UI-Thread gesendet.
 
-* **MAM_ENROLLMENT_RESULT:** Diese Benachrichtigung wird in einer `MAMEnrollmentNotification`-Klasse gesendet, um die App darüber zu informieren, dass ein Registrierungsversuch für eine App-Schutzrichtlinie ohne Geräteregistrierung abgeschlossen wurde und um den Status dieses Versuchs bereitzustellen. Es wird nicht sichergestellt, zu welchem Thread diese Benachrichtigung gesendet wird.
+* **MAM_ENROLLMENT_RESULT**: Diese Benachrichtigung wird in einer `MAMEnrollmentNotification`-Klasse gesendet, um die App darüber zu informieren, dass ein Registrierungsversuch für eine App-Schutzrichtlinie ohne Geräteregistrierung abgeschlossen wurde und um den Status dieses Versuchs bereitzustellen. Es wird nicht sichergestellt, zu welchem Thread diese Benachrichtigung gesendet wird.
 
-* **COMPLIANCE_STATUS:** Diese Benachrichtigung wird in einer `MAMComplianceNotification`-Klasse gesendet, um die App über das Ergebnis eines Compliancewiederherstellungsversuchs zu informieren. Es wird nicht sichergestellt, zu welchem Thread diese Benachrichtigung gesendet wird.
+* **COMPLIANCE_STATUS**: Diese Benachrichtigung wird in einer `MAMComplianceNotification`-Klasse gesendet, um die App über das Ergebnis eines Compliancewiederherstellungsversuchs zu informieren. Es wird nicht sichergestellt, zu welchem Thread diese Benachrichtigung gesendet wird.
 
 > [!NOTE]
 > Eine App sollte niemals gleichzeitig für `WIPE_USER_DATA`- und für `WIPE_USER_AUXILIARY_DATA`-Benachrichtigungen registriert werden.
@@ -1127,7 +1127,7 @@ AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userI
 Seit Android Marshmallow (API 23) bietet Android einer App zwei Möglichkeiten zum Sichern ihrer Daten. Jede Option ist für Ihre App verfügbar und erfordert andere Schritte, um sicherzustellen, dass Intune-Datenschutz ordnungsgemäß implementiert wird. In der folgenden Tabelle können Sie sich einen Überblick über die entsprechenden Aktionen verschaffen, die für ein korrektes Verhalten beim Datenschutz erforderlich sind.  Mehr über die Sicherungsmethoden erfahren Sie im [Android-API-Handbuch](https://developer.android.com/guide/topics/data/backup.html).
 
 ### <a name="auto-backup-for-apps"></a>Automatische Sicherung für Apps
-Android hat begonnen, [automatische vollständige Sicherungen](https://developer.android.com/guide/topics/data/autobackup.html) auf Google Drive für Apps auf Android Marshmallow-Geräten unabhängig von der Ziel-API der App anzubieten. Wenn Sie in „AndroidManifest.xml“ explizit für `android:allowBackup` **false** festlegen, steht Ihre App niemals für Sicherungen von Android in der Warteschlange, und „Unternehmensdaten“ bleiben innerhalb der App. In diesem Fall ist keine weitere Aktion erforderlich.
+Android hat begonnen, [automatische vollständige Sicherungen](https://developer.android.com/guide/topics/data/autobackup.html) auf Google Drive für Apps auf Android Marshmallow-Geräten unabhängig von der Ziel-API der App anzubieten. Wenn Sie in „AndroidManifest.xml“ explizit für `android:allowBackup`**false** festlegen, steht Ihre App niemals für Sicherungen von Android in der Warteschlange, und „Unternehmensdaten“ bleiben innerhalb der App. In diesem Fall ist keine weitere Aktion erforderlich.
 
 Allerdings ist das `android:allowBackup`-Attribut standardmäßig auf „true“ festgelegt – auch wenn `android:allowBackup` nicht in der Manifestdatei angegeben ist. Dies bedeutet, dass alle App-Daten automatisch im Google Drive-Konto des Benutzers gesichert werden – ein Standardverhalten, das ein **Datenverlustrisiko** darstellt. Daher erfordert das SDK die unten beschriebenen Änderungen, um sicherzustellen, dass Datenschutz angewendet wird.  Es ist wichtig, die folgenden Richtlinien zu befolgen, um Kundendaten angemessen zu schützen, wenn Ihre App auf Android Marshmallow-Geräten ausgeführt werden soll.  
 
@@ -1146,7 +1146,7 @@ Mit Intune können Sie alle [Funktionen für automatische Sicherung](https://dev
 
 4. Dann _**müssen**_ Sie das, was Sie in `android:fullBackupContent` eingefügt haben, in ein Metadatentag namens `com.microsoft.intune.mam.FullBackupContent` in das Manifest kopieren.
 
-    **Beispiel 1**: Wenn Ihre App vollständige Sicherungen ohne Ausschlüsse erstellen soll, legen Sie sowohl das `android:fullBackupContent`-Attribut als auch das `com.microsoft.intune.mam.FullBackupContent`-Metadatentag auf **true** fest:
+    **Beispiel 1:** Wenn Ihre App vollständige Sicherungen ohne Ausschlüsse erstellen soll, legen Sie sowohl das `android:fullBackupContent`-Attribut als auch das `com.microsoft.intune.mam.FullBackupContent`-Metadatentag auf **TRUE** fest:
 
     ```xml
     android:fullBackupContent="true"
@@ -1154,7 +1154,7 @@ Mit Intune können Sie alle [Funktionen für automatische Sicherung](https://dev
     <meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="true" />  
     ```
 
-    **Beispiel 2**: Wenn Ihre App ihren benutzerdefinierten BackupAgent verwenden und vollständige, zu Intune-Richtlinien konforme, automatische Sicherungen deaktivieren soll, müssen Sie sowohl das Attribut und das Metadatentag auf **false** festlegen:
+    **Beispiel 2:** Wenn Ihre App ihren benutzerdefinierten BackupAgent verwenden und vollständige mit Intune-Richtlinien konforme automatische Sicherungen deaktivieren soll, müssen Sie das Attribut und das Metadatentag auf **FALSE** festlegen:
 
     ```xml
     android:fullBackupContent="false"
@@ -1162,7 +1162,7 @@ Mit Intune können Sie alle [Funktionen für automatische Sicherung](https://dev
     <meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="false" />  
     ```
 
-    **Beispiel 3**: Wenn Ihre App vollständige Sicherungen gemäß Ihrer in einer XML-Datei definierten benutzerdefinierten Regeln erhalten soll, legen Sie das Attribut und das Metadatentag auf dieselbe XML-Ressource fest:
+    **Beispiel 3:** Wenn Ihre App vollständige Sicherungen gemäß Ihren in einer XML-Datei definierten benutzerdefinierten Regeln erstellen soll, legen Sie das Attribut und das Metadatentag auf dieselbe XML-Ressource fest:
 
     ```xml
     android:fullBackupContent="@xml/my_scheme"
@@ -1352,7 +1352,7 @@ Neben der Möglichkeit der App, die Identität festzulegen, kann die Identität 
 
     Darüber hinaus könnte Benutzerinteraktion mit einer Activity eine implizite Identitätsänderung hervorrufen.
 
-    **Beispiel**: Wenn ein Benutzer während `Resume` eine Autorisierungsanforderung abbricht, führt dies zu einem impliziten Wechsel zu einer leeren Identität.
+    **Beispiel:** Wenn ein Benutzer während `Resume` eine Autorisierungsanforderung abbricht, führt dies zu einem impliziten Wechsel zu einer leeren Identität.
 
     Die App wird auf diese Änderungen aufmerksam gemacht und kann sie verbieten, wenn dies erforderlich ist. `MAMService` und `MAMContentProvider` machen die folgende Methode verfügbar, die Unterklassen überschreiben können:
 
@@ -1655,7 +1655,7 @@ Wenn die App andere Unternehmensdaten als `ParcelFileDescriptor` über einen `Co
 Wenn `MAMContentProvider` nicht explizit geerbt wird und Sie stattdessen den Buildtools gestatten, diese Änderung vorzunehmen, können Sie eine statische Version derselben Methode aufrufen: `MAMContentProvider.isProvideContentAllowed(provider,
 contentIdentity)`.
 
-### <a name="selective-wipe"></a>Selektives Zurücksetzen
+### <a name="selective-wipe"></a>selektives Zurücksetzen
 Wenn eine App mit mehreren Identitäten für die `WIPE_USER_DATA`-Benachrichtigung registriert wird, liegt es in der Verantwortung der App, alle Daten des Benutzers zu löschen, der zurückgesetzt wird. Dazu gehören alle Dateien, denen der Benutzer als Identität zugeordnet wurde. Wenn die App Benutzerdaten aus einer Datei entfernt, aber andere Daten in der Datei belassen soll, *muss* die Identität der Datei (über `MAMFileProtectionManager.protect` auf einen persönlichen Benutzer oder die leere Identität) geändert werden. Wenn Verschlüsselungsrichtlinien verwendet werden, werden übrige Dateien des zurückgesetzten Benutzers nicht entschlüsselt und nach dem Zurücksetzen kann nicht mehr auf sie zugegriffen werden.
 
 Eine App, die für `WIPE_USER_DATA` registriert wird, verfügt über keine Vorteile des Standardverhaltens des SDK für die selektive Zurücksetzung. Für Apps, die mehrere Identitäten haben können, kann dieser Verlust erheblicher sein, da die selektive Zurücksetzung nach MAM-Standard nur Dateien zurücksetzt, deren Identität das Ziel einer Zurücksetzung ist. Wenn eine App, die mehrere Identitäten haben kann, eine selektive Zurücksetzung nach MAM-Standard _**und**_ die Ausführung eigener Aktionen bei der Zurücksetzung wünscht, sollte sie für `WIPE_USER_AUXILIARY_DATA`-Benachrichtigungen registriert werden. Diese Benachrichtigung wird sofort vom SDK gesendet, bevor es die selektive Zurücksetzung nach MAM-Standard durchführt. Eine App darf niemals gleichzeitig für `WIPE_USER_DATA` und für `WIPE_USER_AUXILIARY_DATA` registriert sein.
@@ -1769,7 +1769,7 @@ Long barValue = appConfig.getIntegerForKey("bar", MAMAppConfig.NumberQueryType.M
 
 ### <a name="notification"></a>Benachrichtigung
 Die App-Konfiguration fügt einen neuen Benachrichtigungstyp hinzu:
-* **REFRESH_APP_CONFIG**: Diese Benachrichtigung wird in `MAMUserNotification` gesendet und informiert die App, dass neue App-Konfigurationsdaten verfügbar sind.
+* **REFRESH_APP_CONFIG:** Diese Benachrichtigung wird in einer `MAMUserNotification`-Klasse gesendet und informiert die App, dass neue App-Konfigurationsdaten verfügbar sind.
 
 ### <a name="further-reading"></a>Weitere Informationen
 Weitere Informationen zum Erstellen einer MAM-Zielkonfigurationsrichtlinie für Apps in Android finden Sie im Abschnitt zu MAM-Zielkonfiguration für Apps unter [How to use Microsoft Intune app configuration policies for Android (Verwenden von Microsoft Intune-App-Konfigurationsrichtlinien für Android for Work)](https://docs.microsoft.com/intune/app-configuration-policies-managed-app).
@@ -1842,7 +1842,7 @@ Befolgen Sie die folgenden Schritte,um die Standardregistrierung zu aktivieren:
 
 ### <a name="policy-enforcement-limitations"></a>Einschränkungen der Richtlinienerzwingung
 
-* **Verwenden von Inhaltsresolvers**: Durch die Intune-Richtlinie zum Übertragen oder Empfangen kann die Verwendung eines Inhaltsresolvers für den Zugriff auf den Inhaltsanbieter in einer anderen App ganz oder teilweise blockiert werden. Dadurch geben `ContentResolver`-Methoden NULL oder einen Fehlerwert zurück (z. B. gibt `openOutputStream` bei Blockierung `FileNotFoundException` zurück). Die App kann feststellen, ob ein Fehler beim Schreiben von Daten durch einen Inhaltsresolver durch die Richtlinie verursacht wurde (oder würde), indem folgender Aufruf ausgeführt wird:
+* **Verwenden von Inhaltsresolvern:** Durch die Intune-Richtlinie zum Übertragen oder Empfangen kann die Verwendung eines Inhaltsresolvers für den Zugriff auf den Inhaltsanbieter in einer anderen App ganz oder teilweise blockiert werden. Dadurch geben `ContentResolver`-Methoden NULL oder einen Fehlerwert zurück (z. B. gibt `openOutputStream` bei Blockierung `FileNotFoundException` zurück). Die App kann feststellen, ob ein Fehler beim Schreiben von Daten durch einen Inhaltsresolver durch die Richtlinie verursacht wurde (oder würde), indem folgender Aufruf ausgeführt wird:
 
     ```java
     MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);

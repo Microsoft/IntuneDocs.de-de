@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64fc1bab596715be80fd3a91c003cac1176fe787
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1fe4fabc86e7be647fa161d68fe8a4fe35e9eb6b
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490275"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654123"
 ---
 # <a name="reference-for-policy-entities"></a>Referenz für Richtlinienentitäten
 
@@ -150,7 +150,7 @@ In der folgenden Tabelle ist die Anzahl der Geräte mit dem Zustand „erfolgrei
 |---------|---------|---------|
 |dateKey|Date Key für den Zeitpunkt als das Einchecken der Gerätekonfigurationsprofile im Data Warehouse aufgezeichnet wurde|20160703|
 |pending|Anzahl eindeutiger Geräte im Zustand „ausstehend“|123|
-|Succeeded|Anzahl eindeutiger Geräte im Zustand „erfolgreich“|12|
+|Erfolgreich|Anzahl eindeutiger Geräte im Zustand „erfolgreich“|12|
 |policyKey|„policyKey“ kann mit „policy“ verknüpft werden, um den „policyName“ zu erhalten.|Windows 10-Baseline|
 |Fehler|Anzahl eindeutiger Geräte im Zustand „Fehler“|10|
 |Gescheitert|Anzahl eindeutiger Geräte im Zustand „fehlerhaft“|2|

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b92dca399afeb035bf58d998efdd469318de389
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e1f81d26227bb206aa55ca495f4a4ee5e8ae9907
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504943"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548122"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Verwenden der rollenbasierten Zugriffssteuerung und Bereichsmarkierungen für verteilte IT
 
@@ -39,14 +39,15 @@ Angenommen, ein Administrator der Bezirksdirektion von Seattle hat die Rolle „
 ## <a name="default-scope-tag"></a>Standardbereichsmarkierung
 Das Standard Bereichs Kennzeichen wird automatisch allen nicht markierten Objekten hinzugefügt, die Bereichs Tags unterstützen.
 
-Das Feature Standardbereichsmarkierung ähnelt dem Feature für Sicherheitsbereiche in System Center Configuration Manager. 
+Das Feature Standardbereichsmarkierung ähnelt dem Feature für Sicherheitsbereiche in Microsoft Endpoint Configuration Manager. 
 
 ## <a name="to-create-a-scope-tag"></a>So erstellen Sie eine Bereichsmarkierung
 
-1. Klicken Sie in Intune auf **Rollen** > **Bereich (Markierungen)**  > **Erstellen**.
+1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)die Option Mandanten **Verwaltung** > **Rollen** > **Bereich (Tags)**  > **Erstellen**aus.
 
     ![Screenshot: Erstellen einer Bereichsmarkierung](./media/scope-tags/create-scope-tag.png)
 
+2. Geben Sie einen **Namen** und optional eine **Beschreibung** ein.
 3. Wenn Sie alle Geräte in bestimmten Gruppen möchten, wählen Sie **bereichstag allen Geräten in ausgewählten Gruppen zuweisen aus**.
     1. Wählen Sie auf der Seite **Wählen Sie die einzuschließenden Gruppen** aus die Gruppen mit den Geräten aus, denen dieses bereichstag zugewiesen werden soll.
     2. Klicken Sie auf **Auswählen**.
@@ -54,10 +55,7 @@ Das Feature Standardbereichsmarkierung ähnelt dem Feature für Sicherheitsberei
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>So weisen Sie einer Rolle eine Bereichsmarkierung zu
 
-1. Klicken Sie in Intune auf **Rollen** > **Alle Rollen**, wählen Sie eine Rolle aus, und klicken Sie dann auf **Zuweisungen** > **Zuweisen**.
-
-    ![Screenshot: Zuweisen des Bereichs zu einer Rolle](./media/scope-tags/assign-scope-to-role.png)
-
+1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)die Option Mandanten **Verwaltung** > **Rollen** > **alle Rollen** aus, > Wählen Sie eine Rolle > **Zuweisungen** > **zuweisen**aus.
 2. Geben Sie einen **Zuweisungsnamen** und eine **Beschreibung** an.
 3. Klicken Sie auf **Mitglieder (Gruppen)**  > **Hinzufügen**, wählen Sie die Gruppen aus, die Sie als Teil dieser Zuweisung verwenden möchten, und klicken Sie dann auf **Auswählen** > **OK**. Benutzer in dieser Gruppe verfügen über Berechtigungen zum Verwalten von Benutzern und Geräten im Bereich (Gruppen).
 
@@ -81,9 +79,7 @@ Das Feature Standardbereichsmarkierung ähnelt dem Feature für Sicherheitsberei
 
 Bei Objekten, die Bereichs Tags unterstützen, werden Bereichs Markierungen normalerweise unter **Eigenschaften**angezeigt. Gehen Sie z. b. folgendermaßen vor, um einem Konfigurations Profil ein Bereichs Kennzeichen zuzuweisen:
 
-1. Klicken Sie in Intune auf **Gerätekonfiguration** > **Profile**, und wählen Sie ein Profil aus.
-
-    ![Screenshot: Profil auswählen](./media/scope-tags/choose-profile.png)
+1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)die Option **Geräte** > **Konfigurations profile** aus, > Wählen Sie ein Profil aus.
 
 2. Klicken Sie auf **Eigenschaften** > **Bereich (Markierungen)**  > **Hinzufügen**.
 

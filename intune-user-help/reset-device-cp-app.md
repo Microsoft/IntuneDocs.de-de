@@ -18,22 +18,22 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser; intune-azure
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64612aa8a1d427284778a9aa43b966b05cb0a15f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: dc36e2d53282b8f40f0250f40cb2f01ec920d936
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502117"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858211"
 ---
-# <a name="reset-device-from-the-company-portal-app"></a>Zurücksetzen des Geräts aus der Unternehmensportal-App  
+# <a name="reset-device-from-the-company-portal-app"></a>Zurücksetzen des Geräts über die Unternehmensportal-App  
 
 Setzen Sie ein verwendetes, verlorenes oder gestohlenes Gerät über die Unternehmensportal-App auf die Werkseinstellungen zurück.  
 
 Nachdem Sie ein Gerät zurückgesetzt haben, wird es nicht mehr in Unternehmensportal angezeigt. Die vorhandenen apps und Dateien werden gelöscht und in den Standardeinstellungen wieder hergestellt.  
 
 
-1. Öffnen Sie Unternehmensportal.  
+1. Öffnen Sie das Unternehmensportal.  
 2. Wählen Sie unter **Meine Geräte** das Gerät aus, das Sie zurücksetzen möchten.   
 
     ![Beispiel eines Screenshots von Unternehmensportal-APP, Startbildschirm, Hervorhebung des Abschnitts "meine Geräte".](./media/1802-cp-app-windows-home.png)  

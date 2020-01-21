@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e64911ea9b1b1d3c619a82eac9dc78e4e78a53e9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 4540c4d58bebcbec06e73eaf51d91d6685d0243b
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508130"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858997"
 ---
 # <a name="remove-your-windows-device-from-management"></a>Entfernen Ihres Windows-Geräts aus der Verwaltung
 
@@ -93,8 +93,8 @@ Führen Sie die folgenden Schritte zum Entfernen eines Windows 8.1-Smartphones a
 
 Es gibt zwei Arten von Daten, die das Unternehmensportal auf Ihrem Windows-Gerät speichert:
 
-- **Diagnoseprotokolle:** von Microsoft erfasste Aktivitätsdaten der Standard-App. Die Daten werden automatisch gelöscht, wenn Sie die Unternehmensportal-App deinstallieren. App-Aktivitätsdaten enthalten z.B. Informationen dazu, wie lange die App geöffnet war oder sie abgestürzt ist.
-- **Anwendungscache:** Unterstützungsdateien, die erforderlich sind, damit die App funktioniert, z.B. Symbole und Einstellungen.
+- **Diagnoseprotokolle**: von Microsoft erfasste Aktivitätsdaten der Standard-App. Die Daten werden automatisch gelöscht, wenn Sie die Unternehmensportal-App deinstallieren. App-Aktivitätsdaten enthalten z.B. Informationen dazu, wie lange die App geöffnet war oder sie abgestürzt ist.
+- **Anwendungscache**: Unterstützungsdateien, die erforderlich sind, damit die App funktioniert, z. B. Symbole und Einstellungen.
 
 Führen Sie einen der folgenden Schritte aus, um die gespeicherten Protokolle und Caches zu löschen:
 

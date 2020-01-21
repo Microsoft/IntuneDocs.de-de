@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2019
+ms.date: 12/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1362f6c6453569d1c306cd16397cc9a7f83736e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6ed1f43e7c7e6f0580cb22513a489fb32c30e5f6
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72495349"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206753"
 ---
 # <a name="use-custom-settings-for-windows-phone-81-devices-in-intune"></a>Verwenden von benutzerdefinierten Einstellungen für Windows Phone 8.1-Geräte in Intune
 
@@ -33,20 +33,20 @@ In diesem Artikel erfahren Sie, wie Sie ein benutzerdefiniertes Profil für Wind
 
 ## <a name="create-the-profile"></a>Erstellen des Profils
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Legen Sie folgende Einstellungen fest:
 
-    - **Name:** Geben Sie einen Profilnamen ein, z.B. `windows phone custom profile`.
-    - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein.
-    - **Plattform:** Wählen Sie **Windows Phone 8.1** aus.
-    - **Profiltyp:** Wählen Sie **Benutzerdefiniert** aus.
+    - **Name:** Geben Sie einen aussagekräftigen Namen für das Profil ein. Benennen Sie Ihre Profile, damit Sie diese später leicht wiedererkennen. Ein guter Profilname ist beispielsweise das **benutzerdefinierte Profil von Windows Phone**.
+    - **Beschreibung:** Geben Sie eine Beschreibung ein, die einen Überblick über die Einstellung und andere wichtige Details bietet.
+    - **Plattform**: Wählen Sie **Windows Phone 8,1**aus.
+    - **Profiltyp**: Wählen Sie **Benutzer**definiert aus.
 
 4. Klicken Sie unter **Benutzerdefinierte OMA-URI-Einstellungen** auf **Hinzufügen**. Legen Sie folgende Einstellungen fest:
 
-    - **Name:** Geben Sie einen eindeutigen Namen für die OMA-URI-Einstellung ein, damit Sie sie in der Liste der Einstellungen einfacher identifizieren können.
+    - **Name:** Geben Sie einen eindeutigen Namen für die OMA-URI-Einstellung ein, damit Sie sie in der Liste der Einstellungen leichter identifizieren können.
     - **Beschreibung:** Geben Sie eine Beschreibung, die eine Übersicht über die Einstellung bietet, und andere relevante Informationen ein, die Ihnen die Suche nach dem Profil erleichtern.
-    - **OMA-URI** (Groß-/Kleinschreibung beachten): Geben Sie den OMA-URI an, den Sie als Einstellung verwenden möchten.
+    - **OMA-URI** (Groß-/Kleinschreibung beachten): Geben Sie den OMA-URI ein, für den Sie eine Einstellung bereitstellen möchten.
     - **Datentyp:** Wählen Sie den Datentyp aus, den Sie für diese OMA-URI-Einstellung verwenden möchten. Folgende Optionen sind verfügbar:
 
         - Zeichenfolge
@@ -57,12 +57,12 @@ In diesem Artikel erfahren Sie, wie Sie ein benutzerdefiniertes Profil für Wind
         - Boolesch
         - Base64 (Datei)
 
-    - **Wert:** Geben Sie den gewünschten Datenwert an, der dem von Ihnen eingegebenen OMA-URI zugeordnet werden soll. Der Wert hängt vom ausgewählten Datentyp ab. Beim Datentyp **Datum und Uhrzeit** wählen Sie den Wert beispielsweise aus einer Datumsauswahl aus.
+    - **Wert**: Geben Sie den gewünschten Datenwert an, der dem von Ihnen eingegebenen OMA-URI zugeordnet werden soll. Der Wert hängt vom ausgewählten Datentyp ab. Beim Datentyp **Datum und Uhrzeit** wählen Sie den Wert beispielsweise aus einer Datumsauswahl aus.
 
     Wenn Sie einige Einstellungen hinzugefügt haben, können Sie auf **Exportieren** klicken. Wenn Sie auf **Exportieren** klicken, wird eine Liste aller hinzugefügten Werte in einer Datei mit durch Trennzeichen getrennten Werten (CSV) erstellt.
 
 5. Klicken Sie auf **OK**, um die Änderungen zu speichern. Fügen Sie nach Bedarf weitere Einstellungen hinzu.
-6. Klicken Sie anschließend auf **OK** > **Erstellen**, um das Intune-Profil zu erstellen. Dann wird das Profil erstellt und in der Liste **Gerätekonfiguration > Profile** angezeigt.
+6. Klicken Sie anschließend auf **OK** > **Erstellen**, um das Intune-Profil zu erstellen. Das Profil wird erstellt und in der Liste **Gerätekonfiguration > Konfigurationsprofile** angezeigt.
 
 ## <a name="example"></a>Beispiel
 
@@ -71,11 +71,11 @@ Im folgenden Beispiel werden Windows 8.1 Phone-Geräte daran gehindert, Mobilfun
 - **Name**: Mobilfunk-Datenroaming zulassen
 - **Beschreibung**: zulassen oder ablehnen von Mobil funkdatenroaming
 - **OMA-URI** (case sensitive): ./Vendor/MSFT/PolicyManager/My/Connectivity/AllowCellularDataRoaming
-- **Datentyp**: Ganzzahl
-- **Wert**: 0
+- **Datentyp:** Ganze Zahl
+- **Wert:** 0
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Das Profil ist nun erstellt, führt aber noch keine Aktionen durch. [Weisen Sie anschließend das Profil zu](device-profile-assign.md).
+Das Profil ist nun erstellt, führt aber noch keine Aktionen durch. Die nächsten Schritte sind das [Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune](../device-profile-assign.md) und das [Überwachen von Geräteprofilen in Microsoft Intune](device-profile-monitor.md).
 
-Weitere Informationen zum Erstellen eines benutzerdefinierten Profils finden Sie unter [Windows 10-Geräte](../custom-settings-windows-10.md).
+Erstellen eines [benutzerdefinierten Profils auf Windows 10-Geräten](../custom-settings-windows-10.md).

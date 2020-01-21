@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd2ab7ad8eb155719695bede1f539d5c264d455b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1bd6e2d5ceebd23e87f464d15376594d1764c5b8
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74319833"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206804"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Verwenden benutzerdefinierter Einstellungen für Android Enterprise-Geräte in Microsoft Intune
 
@@ -42,20 +42,20 @@ In diesem Artikel erfahren Sie, wie Sie ein benutzerdefiniertes Profil für Andr
 
 ## <a name="create-the-profile"></a>Erstellen des Profils
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Legen Sie folgende Einstellungen fest:
 
-    - **Name:** Geben Sie einen Profilnamen ein, z.B. `android enterprise custom profile`.
-    - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein.
-    - **Plattform:** Wählen Sie **Android Enterprise** aus.
-    - **Profiltyp:** Wählen Sie **Benutzerdefiniert** aus.
+    - **Name:** Geben Sie einen aussagekräftigen Namen für das Profil ein. Benennen Sie Ihre Profile, damit Sie diese später leicht wiedererkennen. Ein guter Profilname ist beispielsweise **Android Enterprise Custom profile**.
+    - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    - **Plattform**: Wählen Sie **Android Enterprise** aus.
+    - **Profiltyp**: Wählen Sie **Benutzer**definiert aus.
 
 4. Klicken Sie unter **Benutzerdefinierte OMA-URI-Einstellungen** auf **Hinzufügen**. Legen Sie folgende Einstellungen fest:
 
     - **Name:** Geben Sie einen eindeutigen Namen für die OMA-URI-Einstellung ein, damit Sie diese leicht finden können.
     - **Beschreibung:** Geben Sie eine Beschreibung ein, die einen Überblick über die Einstellung und andere wichtige Details bietet.
-    - **OMA-URI:** Geben Sie den OMA-URI ein, für den Sie eine Einstellung bereitstellen möchten.
+    - **OMA-URI**: Geben Sie den OMA-URI ein, für den Sie eine Einstellung bereitstellen möchten.
     - **Datentyp:** Wählen Sie den Datentyp aus, den Sie für diese OMA-URI-Einstellung verwenden möchten. Folgende Optionen sind verfügbar:
 
       - Zeichenfolge
@@ -66,33 +66,33 @@ In diesem Artikel erfahren Sie, wie Sie ein benutzerdefiniertes Profil für Andr
       - Boolesch
       - Base64 (Datei)
 
-    - **Wert:** Geben Sie den gewünschten Datenwert an, der dem von Ihnen eingegebenen OMA-URI zugeordnet werden soll. Der Wert hängt vom ausgewählten Datentyp ab. Beim Datentyp **Datum und Uhrzeit** wählen Sie den Wert beispielsweise aus einer Datumsauswahl aus.
+    - **Wert**: Geben Sie den gewünschten Datenwert an, der dem von Ihnen eingegebenen OMA-URI zugeordnet werden soll. Der Wert hängt vom ausgewählten Datentyp ab. Beim Datentyp **Datum und Uhrzeit** wählen Sie den Wert beispielsweise aus einer Datumsauswahl aus.
 
     Wenn Sie einige Einstellungen hinzugefügt haben, können Sie auf **Exportieren** klicken. Wenn Sie auf **Exportieren** klicken, wird eine Liste aller hinzugefügten Werte in einer Datei mit durch Trennzeichen getrennten Werten (CSV) erstellt.
 
 5. Klicken Sie auf **OK**, um die Änderungen zu speichern. Fügen Sie nach Bedarf weitere Einstellungen hinzu.
-6. Klicken Sie anschließend auf **OK** > **Erstellen**, um das Intune-Profil zu erstellen. Dann wird das Profil erstellt und in der Liste **Gerätekonfiguration > Profile** angezeigt.
+6. Klicken Sie anschließend auf **OK** > **Erstellen**, um das Intune-Profil zu erstellen. Das Profil wird erstellt und in der Liste **Gerätekonfiguration > Konfigurationsprofile** angezeigt.
 
 ## <a name="example"></a>Beispiel
 
 In diesem Beispiel erstellen Sie ein benutzerdefiniertes Profil, das Kopier- und Einfügevorgänge zwischen geschäftlichen und persönlichen Apps auf Android Enterprise-Geräten einschränkt.
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Legen Sie folgende Einstellungen fest:
 
-    - **Name:** Geben Sie einen Profilnamen ein, z.B. `android ent block copy paste custom profile`.
-    - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein.
-    - **Plattform:** Wählen Sie **Android Enterprise** aus.
-    - **Profiltyp:** Wählen Sie **Benutzerdefiniert** aus.
+    - **Name:** Geben Sie einen aussagekräftigen Namen für das Profil ein. Benennen Sie Ihre Profile, damit Sie diese später leicht wiedererkennen. Geben Sie z. b. **Android ent Block Kopie benutzerdefiniertes Profil einfügen**ein.
+    - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    - **Plattform**: Wählen Sie **Android Enterprise** aus.
+    - **Profiltyp**: Wählen Sie **Benutzer**definiert aus.
 
 4. Klicken Sie unter **Benutzerdefinierte OMA-URI-Einstellungen** auf **Hinzufügen**. Legen Sie folgende Einstellungen fest:
 
     - **Name:** Geben Sie zum Beispiel `Block copy and paste` ein.
     - **Beschreibung:** Geben Sie zum Beispiel `Blocks copy/paste between work and personal apps` ein.
-    - **OMA-URI:** Geben Sie `./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste` ein.
+    - **OMA-URI**: Geben Sie `./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste` ein.
     - **Datentyp:** Wählen Sie **Boolean** (Boolescher Wert) aus, damit der Wert für den OMA-URI **TRUE** oder **FALSE** ist.
-    - **Wert:** Wählen Sie **TRUE** aus.
+    - **Wert:** Wählen Sie **True** aus.
 
 5. Nachdem Sie die Einstellungen festgelegt haben, sollte Ihre Umgebung in etwa wie folgt aussehen:
 
@@ -102,6 +102,6 @@ Wenn Sie dieses Profil einem von Ihnen verwalteten Android Enterprise-Gerät zuw
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Das Profil ist nun erstellt, führt aber noch keine Aktionen durch. [Weisen Sie anschließend das Profil zu](device-profile-assign.md).
+Das Profil ist nun erstellt, führt aber noch keine Aktionen durch. Die nächsten Schritte sind das [Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune](../device-profile-assign.md) und das [Überwachen von Geräteprofilen in Microsoft Intune](device-profile-monitor.md).
 
-Weitere Informationen finden Sie im [Artikel zum Erstellen eines Profils auf einem Android-Gerät](../custom-settings-android.md).
+Erstellen Sie ein [benutzerdefiniertes Profil auf Android-Geräten](../custom-settings-android.md).
