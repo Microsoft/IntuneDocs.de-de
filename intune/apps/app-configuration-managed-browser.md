@@ -135,7 +135,7 @@ Für SSO muss Ihr Gerät unter iOS durch Microsoft Authenticator und unter Andro
 1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 2. Wählen Sie **Apps** > **App-Konfigurationsrichtlinien** > **Hinzufügen** > **Verwaltete Apps** aus.
 3. Geben Sie auf der Seite **Grundeinstellungen** des Bereichs **App-Konfigurationsrichtlinie erstellen** einen **Namen** und optional eine **Beschreibung** für die App-Konfigurationseinstellungen ein.
-4. Wählen Sie **Öffentliche App auswählen** und dann **Managed Browser** und/oder **Edge** für iOS, für Android oder für beides aus.
+4. Wählen Sie **Öffentliche App auswählen** und dann **Managed Browser** und/oder **Microsoft Edge** für iOS, für Android oder für beides aus.
 5. Klicken Sie auf **Auswählen**, um zum Bereich **App-Konfigurationsrichtlinie erstellen** zurückzukehren.
 6. Klicken Sie auf **Weiter**, um die Seite **Einstellungen** anzuzeigen.
 7. Definieren Sie auf der Seite **Einstellungen** Schlüssel-Wert-Paare, um Konfigurationen für die App bereitzustellen. In den folgenden Abschnitten erhalten Sie weitere Informationen zu den unterschiedlichen Schlüssel-Wert-Paaren, die Sie definieren können.

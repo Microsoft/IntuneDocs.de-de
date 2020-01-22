@@ -108,7 +108,7 @@ Verwenden Sie für iOS-Geräte die folgenden Schlüssel-Wert-Paare:
 | **Werte** | <ul><li>**Aktiviert**: Das einzige zulässige Konto ist das verwaltete Benutzerkonto, das von dem Schlüssel [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) definiert wird.</li><li>**Deaktiviert** (oder jeder andere Wert, der keine Übereinstimmung mit **Aktiviert** ohne Beachtung der Groß-/Kleinschreibung ist): Jedes Konto ist zulässig.</li></ul> |.
 
    > [!NOTE]
-   > Sie müssen OneDrive für iOS 10.34 oder höher, Outlook für iOS 2.99.0 oder höher oder Edge für iOS 44.8.7 oder höher verwenden, und für die App müssen [Intune-App-Schutzrichtlinien](app-protection-policy.md) eingerichtet sein, wenn Sie nur konfigurierte Organisationskonten mit mehreren Identitäten zulassen.
+   > Sie müssen OneDrive für iOS 10.34 oder höher, Outlook für iOS 2.99.0 oder höher oder Microsoft Edge für iOS 44.8.7 oder höher verwenden, und für die App müssen [Intune-App-Schutzrichtlinien](app-protection-policy.md) eingerichtet sein, wenn Sie nur konfigurierte Organisationskonten mit mehreren Identitäten zulassen.
 
 ## <a name="enter-xml-data"></a>Eingeben von XML-Daten
 
