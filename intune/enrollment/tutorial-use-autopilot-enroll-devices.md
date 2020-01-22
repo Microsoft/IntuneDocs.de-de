@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc781ea72b54468b21fb70e60e334f1c8d8832ea
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 9b0bb0bd1f0df3aeb4185542d424bd3ffffe42cd
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547952"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036536"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Tutorial: Registrieren von Windows-Geräten in Intune mithilfe von Autopilot
 
@@ -45,7 +45,7 @@ Eine Übersicht über die Vorteile, Szenarios und Voraussetzungen von Autopilot 
 
 ## <a name="prerequisites"></a>Voraussetzungen
 - [Schnellstart: Einrichten der automatischen Registrierung für Windows 10-Geräte](../quickstart-setup-auto-enrollment.md)
-- [Azure Active Directory Premium-Abonnement](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+- [Azure Active Directory Premium-Abonnement](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](https://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
 
 ## <a name="add-devices"></a>Hinzufügen von Geräten
@@ -81,7 +81,7 @@ Als Nächstes erstellen Sie eine Gerätegruppe und platzieren darin die Autopilo
 1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Gruppen** > **Neue Gruppe** aus.
 2. Auf dem Blatt **Gruppe**:
     1. Wählen Sie für **Gruppentyp** die Option **Sicherheit**.
-    2. Geben Sie für **Gruppenname** *Autopilot-Gruppe* ein. Geben Sie für **Gruppenbeschreibung** *Testgruppe für Autopilot-Geräte* ein.
+    2. Geben Sie für **Gruppenname***Autopilot-Gruppe* ein. Geben Sie für **Gruppenbeschreibung***Testgruppe für Autopilot-Geräte* ein.
     3. Wählen Sie für **Mitgliedschaftstyp** **Zugewiesen** aus.
 3. Wählen Sie auf dem Blatt **Gruppe** **Mitglieder** aus, und fügen Sie die Autopilot-Geräte der Gruppe hinzu. Autopilot-Geräte, die noch nicht registriert sind, sind Geräte, deren Name der Seriennummer des Geräts entspricht.
 4. Wählen Sie **Erstellen** aus.  
@@ -91,7 +91,7 @@ Als Nächstes erstellen Sie eine Gerätegruppe und platzieren darin die Autopilo
 Nach dem Erstellen einer Gerätegruppe müssen Sie ein Bereitstellungsprofil erstellen, um die Autopilot-Geräte konfigurieren zu können.
 
 1. Klicken Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) auf **Geräte** > **Windows** > **Windows-Registrierung** > **Bereitstellungsprofile** > **Profil erstellen**.
-2. Geben Sie auf der Seite **Grundlagen** als **Name** *Autopilot-Profil* ein. Geben Sie für **Beschreibung** *Testprofil für Autopilot-Geräte* ein.
+2. Geben Sie auf der Seite **Grundlagen** als **Name***Autopilot-Profil* ein. Geben Sie für **Beschreibung***Testprofil für Autopilot-Geräte* ein.
 3. Legen Sie **Alle als Ziel angegebenen Geräte in Autopilot konvertieren** auf **Ja** fest. Durch diese Einstellung wird sichergestellt, dass alle Geräte in der Liste beim Autopilot-Bereitstellungsdienst registriert werden. Die Verarbeitung der Registrierung kann 48 Stunden dauern.
 4. Wählen Sie **Weiter** aus.
 5. Wählen Sie auf der Seite **Out-of-Box-Experience (OOBE)** als **Bereitstellungsmodus** **Benutzergesteuert** aus. Geräte mit diesem Profil werden dem Benutzer zugeordnet, der das Gerät registriert. Für die Registrierung des Geräts sind Benutzeranmeldeinformationen erforderlich.

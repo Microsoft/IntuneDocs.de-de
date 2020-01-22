@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cc63be3c7c536cba67ef92288c12cc4032ae200
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 50973d883a3d31089e16dca5a9021643a821a3fb
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508806"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036625"
 ---
 # <a name="wandera-mobile-threat-defense-connector-with-intune"></a>Wandera Mobile Threat Defense-Connector mit Intune  
 
@@ -48,7 +48,7 @@ Bei Registrierung in Intune werden die folgenden Plattformen für Wandera unters
 - Android 5.0 und höher  
 - iOS 10.2 und höher  
 
-Weitere Informationen zu Plattform und Gerät finden Sie auf der [Website von Wandera](https://www.wandera.com/why-wandera/features/device-support/).
+Weitere Informationen zu Plattform und Gerät finden Sie auf der [Website von Wandera](https://www.wandera.com/classic-help-center/).
 
 ## <a name="prerequisites"></a>Voraussetzungen  
 
@@ -58,7 +58,7 @@ Weitere Informationen zu Plattform und Gerät finden Sie auf der [Website von Wa
 
 Weitere Informationen finden Sie unter [Wandera Mobile Security](https://www.wandera.com/mobile-security/).
  
-## <a name="sample-scenarios"></a>Beispielszenarien
+## <a name="sample-scenarios"></a>Beispielszenarios
 
 Im Folgenden finden Sie allgemeine Szenarien für die Verwendung von Wandera MTD mit Intune.
 
@@ -78,7 +78,7 @@ Wenn Apps mit Schadsoftware auf Geräten erkannt werden, können Sie Geräte an 
 ![Darstellung des Szenarios, wenn der Zugriff nach der Behebung wieder erteilt wird](./media/wandera-mtd-connector/wandera-malicious-apps-unblocked.png)
 
 
-### <a name="control-access-based-on-threat-to-network"></a>Steuern des Zugriffs basierend auf der Bedrohung für das Netzwerk  
+### <a name="control-access-based-on-threat-to-network"></a>Steuern des Zugriffs basierend auf Bedrohung für das Netzwerk  
 
 Erkennen Sie Bedrohungen Ihres Netzwerks, wie etwa Man-in-the-Middle-Angriffe, und schützen Sie den Zugriff auf WLANs auf der Grundlage des Geräterisikos.  
 
@@ -88,11 +88,11 @@ Erkennen Sie Bedrohungen Ihres Netzwerks, wie etwa Man-in-the-Middle-Angriffe, u
 
 **Zugriff erteilt nach der Behebung**:  
 
-![Zugriff erteilt nach der Behebung](./media/wandera-mtd-connector/wandera-network-wifi-unblocked.png)  
+![Zugriff nach Beseitigung gewährt](./media/wandera-mtd-connector/wandera-network-wifi-unblocked.png)  
 
-## <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Steuern des Zugriffs auf SharePoint Online basierend auf der Bedrohung für das Netzwerk
+## <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Steuern des Zugriffs auf SharePoint Online basierend auf Netzwerkbedrohungen
 
-Erkennen von Bedrohungen Ihres Netzwerks, wie etwa Man-in-the-Middle-Angriffen, und Verhindern der Synchronisierung von Unternehmensdateien auf der Grundlage des Geräterisikos.
+Erkennen Sie Bedrohungen für Ihr Netzwerk wie Man-in-the-Middle-Angriffe, und verhindern Sie die Synchronisierung von Unternehmensdateien basierend auf den Risiken für Geräte.
 
 **Blockieren von SharePoint Online bei Erkennung von Bedrohungen für das Netzwerk**:  
 
