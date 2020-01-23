@@ -11,7 +11,7 @@
       href: quickstart-add-assign-app.md
     - name: Erstellen und Zuweisen einer App-Schutzrichtlinie
       href: quickstart-create-assign-app-policy.md
-- name: Lernprogramme
+- name: Tutorials
   items:
     - name: Schützen von E-Mails auf nicht verwalteten Geräten
       href: ../protect/tutorial-protect-email-on-unmanaged-devices.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
@@ -26,7 +26,7 @@
       displayName: app-we; without; without enrollment
     - name: MAM – HÄUFIG GESTELLTE FRAGEN
       href: mam-faq.md
-- name: Schrittanleitungen
+- name: Anleitungen
   items:
     - name: Hinzufügen von Apps
       items:
@@ -45,7 +45,7 @@
               href: store-apps-windows-phone-8-1.md
             - name: Windows-Apps
               href: store-apps-windows.md
-            - name: Apps im Microsoft Store für Unternehmen
+            - name: Apps aus Microsoft Store für Unternehmen
               href: windows-store-for-business.md
             - name: Verwaltete Google Play-Apps
               href: apps-add-android-for-work.md
@@ -133,8 +133,6 @@
               href: manage-microsoft-edge.md
             - name: Konfigurieren von Outlook
               href: app-configuration-policies-outlook.md
-            - name: Konfigurieren von S/MIME für Outlook
-              href: app-configuration-policies-outlook-smime.md
             - name: Konfigurieren von Google Chrome für Android
               href: apps-configure-chrome-android.md
         - name: Per Volumenlizenz erworbene Apps und Bücher
@@ -190,11 +188,13 @@
           href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
         - name: Problembehandlung bei der App-Installation
           href: troubleshoot-app-install.md
+        - name: Referenz zu App-Installationsfehlern
+          href: app-install-error-codes.md
         - name: Problembehandlung der Verwaltung von mobilen Geräten
           href: troubleshoot-mam.md
         - name: Überprüfen der App-Schutzprotokolle
           href: app-protection-policy-settings-log.md
-- name: Referenz
+- name: Reference
   items:
     - name: Schützen von Apps mit dem Intune App SDK
       href: ../developer/app-sdk.md
