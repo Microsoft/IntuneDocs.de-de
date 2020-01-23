@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/17/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4839340ba1f3bad6f28a1120d882d0f600b1d44
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 42f1c8fae156eaf08203f4a88cad8433749940ac
+ms.sourcegitcommit: b6fe084b0419b3c9d456a8b0439b00f8c784db23
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563565"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "76294794"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Hinzufügen von Microsoft Edge für Windows 10 zu Microsoft Intune
 
 Bevor Sie Apps bereitstellen, konfigurieren, überwachen oder schützen können, müssen Sie sie zu Intune hinzufügen. Einer der verfügbaren [App-Typen](~/apps/apps-add.md#app-types-in-microsoft-intune) ist Microsoft Edge *Version 77 und höher*. Wenn Sie den App-Typ in Intune auswählen, können Sie Microsoft Edge *Version 77 und höher* zuweisen und auf Geräten mit Windows 10 installieren.
 
 > [!IMPORTANT]
-> Dieser App-Typ befindet sich in der **öffentlichen Vorschau** und bietet Entwickler- und Beta-Channels für Windows 10 an. Die Bereitstellung ist nur in englischer Sprache verfügbar, Endbenutzer können die Anzeigesprache im Browser jedoch unter **Einstellungen** > **Sprachen** ändern. Microsoft Edge ist eine Win32-App, die im Systemkontext und auf entsprechenden Architekturen (x86-App auf x86-Betriebssystemen und x64-App auf x64-Betriebssystemen) installiert ist. Intune erkennt jegliche vorhandene Microsoft Edge-Installationen. Wenn Microsoft Edge im Benutzerkontext installiert ist, wird es durch eine Systeminstallation überschrieben. Wenn es im Systemkontext installiert ist, wird der Erfolg der Installation gemeldet. Außerdem sind automatische Updates von Microsoft Edge standardmäßig **Aktiviert**, und Microsoft Edge kann nicht deinstalliert werden.
+> Dieser App-Typ befindet sich in der **öffentlichen Vorschau** und bietet stabile Kanäle sowie Beta- und Entwicklerkanäle für Windows 10 an. Die Bereitstellung ist nur in englischer Sprache verfügbar, Endbenutzer können die Anzeigesprache im Browser jedoch unter **Einstellungen** > **Sprachen** ändern. Microsoft Edge ist eine Win32-App, die im Systemkontext und auf entsprechenden Architekturen (x86-App auf x86-Betriebssystemen und x64-App auf x64-Betriebssystemen) installiert ist. Intune erkennt jegliche vorhandene Microsoft Edge-Installationen. Wenn Microsoft Edge im Benutzerkontext installiert ist, wird es durch eine Systeminstallation überschrieben. Wenn es im Systemkontext installiert ist, wird der Erfolg der Installation gemeldet. Außerdem sind automatische Updates von Microsoft Edge standardmäßig **Aktiviert**, und Microsoft Edge kann nicht deinstalliert werden.
 
 > [!NOTE]
 > Microsoft Edge *Version 77 und höher* ist auch für macOS verfügbar.
@@ -38,7 +38,7 @@ Bevor Sie Apps bereitstellen, konfigurieren, überwachen oder schützen können,
 
 ## <a name="prerequisites"></a>Voraussetzungen
 - Windows 10 RS2 und höher ist erforderlich.
-- Alle vorinstallierten Versionen von Microsoft Edge *Version 77 und höher* für **Entwickler-** und **Beta**-Channels im Benutzerkontext werden überschrieben, wenn Edge im Systemkontext installiert ist.
+- Alle vorinstallierten Versionen von Microsoft Edge *Version 77 und höher* für alle Kanäle im Benutzerkontext werden überschrieben, wenn Edge im Systemkontext installiert wird.
 
 ## <a name="configure-the-app-in-intune"></a>Konfigurieren der App in Intune
 Mithilfe der folgenden Schritte können Sie Microsoft Edge, Version 77 und höher, zu Intune hinzufügen:
@@ -52,8 +52,8 @@ In diesem Schritt stellen Sie Informationen über diese App-Bereitstellung berei
 
 1. Klicken Sie auf **App-Informationen**, um den Bereich **App-Informationen** anzuzeigen.
 2. Stellen Sie im Bereich **App-Informationen** Informationen über diese App-Bereitstellung bereit. Diese Informationen helfen Ihnen, die App in Intune zu identifizieren, und Endbenutzer können sie leichter im Unternehmensportal finden.
-    - **Name**: Geben Sie den Namen der App ein, wie er im Unternehmensportal angezeigt wird. Stellen Sie sicher, dass alle Namen eindeutig sind. Wenn ein App-Name zweimal vergeben wird, wird den Benutzern im Unternehmensportal nur eine der Apps angezeigt.
-    - **Beschreibung**: Geben Sie eine Beschreibung der App ein. Beispielsweise können Sie die Zielbenutzer in der Beschreibung auflisten.
+    - **Name:** Geben Sie den Namen der App ein, wie er im Unternehmensportal angezeigt wird. Stellen Sie sicher, dass alle Namen eindeutig sind. Wenn ein App-Name zweimal vergeben wird, wird den Benutzern im Unternehmensportal nur eine der Apps angezeigt.
+    - **Beschreibung:** Geben Sie eine Beschreibung der App ein. Beispielsweise können Sie die Zielbenutzer in der Beschreibung auflisten.
     - **Herausgeber**: Als Herausgeber wird Microsoft angezeigt.
     - **Kategorie**: Wählen Sie optional eine oder mehrere der integrierten oder von Ihnen erstellten App-Kategorien aus. Diese Einstellung erleichtert den Benutzern die Suche nach der App im Unternehmensportal.
     - **Diese App als ausgewählte App im Unternehmensportal anzeigen**: Wählen Sie diese Option aus, um die App auf der Hauptseite des Unternehmensportals hervorgehoben anzuzeigen, wenn die Benutzer nach Apps suchen.
@@ -62,20 +62,21 @@ In diesem Schritt stellen Sie Informationen über diese App-Bereitstellung berei
     - **Entwickler**: Als Entwickler wird Microsoft angezeigt.
     - **Besitzer**: Als Besitzer wird Microsoft angezeigt.
     - **Anmerkungen**: Geben Sie optional Hinweise zu dieser App ein.
-3. Wählen Sie **OK** aus.
+3. Klicken Sie auf **OK**.
 
 ## <a name="configure-app-settings"></a>App-Einstellungen konfigurieren
 In diesem Schritt konfigurieren Sie Installationsoptionen für die App.
 
 1. Wählen Sie im Bereich **App hinzufügen** die Option **App-Einstellungen** aus.
-2. Wählen Sie im Bereich **App-Einstellungen** entweder **Beta** oder **Dev** aus der Liste **Channel** aus, um zu bestimmen, von welchem Edge-Channel Sie die App bereitstellen.
-    - Der **Beta**-Channel ist die stabilste Microsoft Edge-Vorschauversion und die beste Wahl für ein vollständiges Pilotprojekt in Ihrer Organisation. Durch größere Updates alle sechs Wochen umfasst jedes Release die Erkenntnisse und Verbesserungen im Dev-Channel.
-    - Der **Dev**-Channel ist bereit für Unternehmensfeedback von Windows, Windows Server und macOS. Er wird wöchentlich aktualisiert und enthält die neuesten Verbesserungen und Fehlerbehebungen.
+2. Wählen Sie im Bereich **App-Einstellungen** entweder **Stabil**, **Beta** oder **Dev** aus der Liste **Kanal** aus, um festzulegen, über welchen Edge-Kanal Sie die App bereitstellen.
+    - Der Kanal **Stabil** wird für die umfassende Bereitstellung in Unternehmensumgebungen empfohlen. Der Kanal wird alle sechs Wochen aktualisiert, und jedes Release umfasst Verbesserungen aus dem Betakanal.
+    - Der Kanal **Beta** ist die stabilste Microsoft Edge-Vorschauversion und damit die beste Wahl für ein vollständiges Pilotprojekt in Ihrer Organisation. Der Kanal bietet alle sechs Wochen umfassende Updates, und jedes Release umfasst die Erkenntnisse und Verbesserungen aus dem Entwicklerkanal.
+    - Der Kanal für **Entwickler** dient für Unternehmensfeedback zu Windows, Windows Server und macOS. Er wird wöchentlich aktualisiert und enthält die neuesten Verbesserungen und Fehlerbehebungen.
 
     > [!NOTE]
     > Das Microsoft Edge-Browserlogo wird gemeinsam mit der App angezeigt, wenn der Benutzer das Unternehmensportal durchsucht.
 
-3.  Wählen Sie **OK** aus.
+3.  Klicken Sie auf **OK**.
 
 ## <a name="select-scope-tags-optional"></a>Auswählen von Bereichsmarkierungen (optional)
 Sie können Bereichsmarkierungen verwenden, um zu bestimmen, wer Client-App-Informationen in Intune anzeigen kann. Ausführliche Informationen zu Bereichsmarkierungen finden Sie unter „Verwenden der rollenbasierten Zugriffssteuerung und von Bereichsmarkierungen für verteilte IT“.

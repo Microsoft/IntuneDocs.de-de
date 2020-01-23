@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f1563c092d8dd4c34e4a18caea56910267eb623
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 3c340ffaacad303c4ff395c84d92e3907e42a521
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956334"
+ms.locfileid: "76036646"
 ---
 # <a name="app-protection-policies-overview"></a>Übersicht über App-Schutzrichtlinien
 
@@ -184,7 +184,7 @@ Für die Verwendung von Skype for Business gelten zusätzliche Anforderungen. In
 
 ## <a name="app-protection-global-policy"></a>Globale App-Schutzrichtlinie
 
-Wenn ein OneDrive-Administrator zu **admin.office.com** wechselt und **Gerätezugriff** auswählt, kann er die Steuerelemente für die **Verwaltung mobiler Anwendungen** auf die OneDrive- und SharePoint-Client-Apps festlegen. 
+Wenn ein OneDrive-Administrator zu **admin.onedrive.com** navigiert und **Gerätezugriff** auswählt, kann er Steuerelemente für die **Mobile Anwendungsverwaltung** für die OneDrive- und SharePoint-Client-Apps festlegen. 
 
 Die Einstellungen, die für die OneDrive-Administratorkonsole zur Verfügung gestellt wurden, konfigurieren eine besondere App-Schutzrichtlinie für Intune, die **globale Richtlinie**. Diese globale Richtlinie gilt für alle Benutzer in Ihrem Mandanten und kann nicht eingeschränkt angewendet werden. 
 

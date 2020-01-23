@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67ff4f0cbe11c24c03b504968735e0a68d54f12d
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: c199964409a91aa6f5b75ae067968e37c1b1a189
+ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692180"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125333"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Durch Microsoft Intune geschützte Apps  
 
@@ -45,6 +45,7 @@ Die folgenden Tabellen enthalten Details zu unterstützten Partnern und Microsof
 
 | App-Titel | App-Beschreibung und Informationen | App Store-Links für unterstützte Plattformen |
 |-------------------------------------------------|-------------------------|---------------------------------------------|
+| **Field Service-App**<p><img alt="Microsoft app - Field Service Mobile icon" src="./media/apps-supported-intune-apps/icon-m-field-service-mobile.png" width="100"> | Dynamics 365 for Field Service bietet eine plattformübergreifende Field Service-Anwendung für verschiedene Mobilgeräte, die speziell für die Anforderungen von Außendienstmitarbeitern konzipiert ist. Dank stabiler Offlinefunktionen können Außendienstmitarbeiter auch dann auf die Daten zugreifen, die sie benötigen, wenn sie sich an entlegenen Orten befinden, an denen keine Internetverbindung besteht. Außendienstmitarbeiter können das Back-Office über alle Aufgaben auf dem Laufenden halten, die sie unterwegs ausführen, indem sie Daten regelmäßig mit dem Server synchronisieren. So können erforderliche Maßnahmen ergriffen oder Aktionen gestartet werden. Die mobile Anwendung lässt sich vollständig anpassen und erweitern: Jede Organisation kann die Anwendung mit der eigenen Marke versehen, die Arten von Daten definieren, auf die Außendienstmitarbeiter zugreifen dürfen, und vieles mehr. | [Google Play-Link (Android)](https://play.google.com/store/apps/details?id=com.microsoft.d365.fs.mobile), [App Store-Link (iOS)](https://apps.apple.com/us/app/field-service-mobile/id1414669075) |
 | **Microsoft Azure Information Protection Viewer**<p><img alt="Microsoft app - Microsoft Azure Information Protection Viewer icon" src="./media/apps-supported-intune-apps/icon-m-azure-information-protection-viewer.png" width="100"> | Mit der AIP-Viewer-App arbeiten Sie sicher mit anderen Benutzern zusammen. Zeigen Sie geschützte Dateien an (urheberrechtlich geschützte E-Mail-Nachrichten, PDF-Dateien, Bilder, Textdateien), die jemand für Sie freigegeben hat. | [Google Play-Link (Android)](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer), [App Store-Link (iOS)](https://itunes.apple.com/us/app/rms-sharing/id689516635?mt=8) |
 | **Microsoft Bookings**<p><img alt="Microsoft app - Microsoft Bookings icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-bookings.png" width="100"> | Microsoft Bookings ist eine Terminplanungs-App, die Ihnen das Nachverfolgen Ihrer Reservierungen, Ihrer Termine mit Mitarbeitern und Kunden erleichtert. Sie verpassen keinen Termin mehr und reduzieren Ihr Nichterscheinen.<p>Mit der Bookings-App können Sie:<br><ul><li>Ihren Kalender anzeigen und verwalten</li><li>Unterwegs Reservierungen erstellen oder Änderungen an vorhandenen vornehmen</li><li>Verfügbarkeit Ihrer Mitarbeiter in Echtzeit anzeigen</li><li>Schnell und mühelos auf Kunden reagieren</li><li>Schnell erfahren, wo Ihre nächste Reservierung ist</li><li>Ihre Kundenliste verwalten</li></ul> | [Google Play-Link (Android)](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings),<br>[App Store-Link (iOS)](https://itunes.apple.com/us/app/microsoft-bookings/id1065657468?mt=8) |  
 | **Microsoft Cortana**<p><img alt="Microsoft app - Microsoft Cortana icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-cortana.png" width="100"> | Halten Sie mit Cortana, Ihrem persönlichen Assistenten, Ihre Arbeits- und Freizeitaktivitäten schnell und einfach auf dem neuesten Stand. Verbinden Sie Ihren intelligenten digitalen Assistenten mit Ihrem Smartphone, um wichtige Aktivitäten auf all Ihren Geräten immer im Blick zu behalten. | [Google Play-Link (Android)](https://play.google.com/store/apps/details?id=com.microsoft.cortana),<br>[App Store-Link (iOS)](https://apps.apple.com/us/app/cortana/id1054501703)

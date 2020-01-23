@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 304a6a60ea8dbfa98e62eb8e52a69e14af795746
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: e64741a92804ec4149b654480166720ff3092e35
+ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548001"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258498"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Verwalten des Webzugriffs mithilfe von Microsoft Edge mit Microsoft Intune
 
@@ -101,7 +101,7 @@ So erstellen Sie eine App-Konfiguration für Microsoft Edge:
 2. Wählen Sie **Apps** > **App-Konfigurationsrichtlinien** > **Hinzufügen** aus.
 3. Geben Sie im Bereich **Konfigurationsrichtlinie hinzufügen** einen **Namen** und optional eine **Beschreibung** für die App-Konfigurationseinstellungen ein.
 4. Wählen Sie als Typ der **Geräteregistrierung** die Option **Verwaltete Apps** aus.
-5. Klicken Sie auf **Wählen Sie die erforderliche App aus**. Wählen Sie dann im Bereich **Ziel-Apps** entweder den **Managed Browser** oder **Edge** für iOS, für Android oder für beides aus.
+5. Klicken Sie auf **Wählen Sie die erforderliche App aus**. Wählen Sie dann im Bereich **Ziel-Apps** entweder den **Managed Browser** oder **Microsoft Edge** für iOS, für Android oder für beides aus.
 6. Wählen Sie **OK** aus, um zum Bereich **Konfigurationsrichtlinie hinzufügen** zurückzukehren.
 7. Wählen Sie **Konfigurationseinstellungen** aus. Definieren Sie im Bereich **Konfiguration** Schlüssel-Wert-Paare, um Konfigurationen für Microsoft Edge bereitzustellen. In den folgenden Abschnitten erhalten Sie weitere Informationen zu den unterschiedlichen Schlüssel-Wert-Paaren, die Sie definieren können.
 
@@ -205,7 +205,7 @@ Sie können das Element „Neue Registerkartenseite“ in Microsoft Edge für Mo
 
 |    Key    |    Wert    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-|    'com.microsoft.intune.SohwIndustryNews'    |    Bei Festlegung auf **True** werden Branchennachrichten in Microsoft Edge für Mobilgeräte im Element „Neue Registerkartenseite“ angezeigt.<p>Bei Festlegung auf **False** werden Branchennachrichten im Element „Neue Registerkartenseite“ ausgeblendet.    |
+|    com.microsoft.intune.ShowIndustryNews    |    Bei Festlegung auf **True** werden Branchennachrichten in Microsoft Edge für Mobilgeräte im Element „Neue Registerkartenseite“ angezeigt.<p>Bei Festlegung auf **False** werden Branchennachrichten im Element „Neue Registerkartenseite“ ausgeblendet.    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Konfigurieren von verwalteten Lesezeichen für Microsoft Edge
 
@@ -217,6 +217,7 @@ Hier sind einige Details:
 - Diese Lesezeichen können von Benutzern nicht gelöscht oder geändert werden.
 - Diese Lesezeichen werden oben in der Liste angezeigt. Alle von Benutzern erstellten Lesezeichen werden unterhalb dieser Lesezeichen angezeigt.
 - Wenn Sie die Anwendungsproxyumleitung aktiviert haben, können Sie Anwendungsproxy-Web-Apps mit deren interner oder externer URL hinzufügen.
+- Stellen Sie beim Eingeben der URLs in die Liste sicher, dass Sie allen URLs **http://** oder **https://** voranstellen.
 
 Verwenden Sie das folgende Schlüssel-Wert-Paar zum Konfigurieren von verwalteten Lesezeichen:
 
@@ -243,7 +244,7 @@ Verwenden Sie die folgenden Schlüssel-Wert-Paare, um entweder eine Zulassungsli
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>URL-Formate für die Liste zulässiger und blockierter Websites 
 Sie können verschiedene URL-Formate verwenden, um Ihre Listen für zulässige/blockierte Websites zu erstellen. Diese zulässigen Muster werden in der folgenden Tabelle beschrieben. Einige Hinweise, bevor Sie beginnen: 
-- Stellen Sie sicher, dass Sie bei der Eingabe in die Liste allen URLs **http** oder **https** voranstellen.
+- Stellen Sie beim Eingeben der URLs in die Liste sicher, dass Sie allen URLs **http://** oder **https://** voranstellen.
 - Sie können das Platzhaltersymbol (\*) entsprechend den Regeln in der folgenden Liste mit zulässigen Mustern verwenden.
 - Ein Platzhalter kann nur mit einer vollständigen Komponente des (durch Punkte getrennten) Hostnamens oder mit vollständigen Teilen des (durch Schrägstriche getrennten) Pfads übereinstimmen. `http://*contoso.com` wird beispielsweise **nicht** unterstützt.
 - Sie können Portnummern in der Adresse angeben. Wenn Sie keine Portnummer angeben, werden folgende Werte verwendet:

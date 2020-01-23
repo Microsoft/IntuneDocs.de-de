@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 01/15/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 443e1e2fff2a0c4641d3446bf72e455cc92ce784
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: d42651b11891f3d830c0d90e70a9ecd98ea5bfb7
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907286"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036617"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Senden benutzerdefinierter Benachrichtigungen in Intune  
 
@@ -89,13 +89,13 @@ Intune verfolgt die von Ihnen gesendeten benutzerdefinierten Benachrichtigungen 
 
 ## <a name="send-a-custom-notification-to-a-single-device"></a>Senden einer benutzerdefinierten Benachrichtigung an ein einzelnes Gerät  
 
-1. Melden Sie sich mit einem Konto mit Zugriffsberechtigungen zum Erstellen und Senden von Benachrichtigungen beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an, und navigieren Sie zu **Geräte** > **Alle Geräte**.  
+1. Melden Sie sich mit einem Konto mit Zugriffsberechtigungen zum Erstellen und Senden von Benachrichtigungen beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an, und navigieren Sie zu **Geräte** > **Alle Geräte**.
 
-2. Wählen Sie das Gerät aus, an das Sie eine Benachrichtigung senden möchten.  
+2. Doppelklicken Sie auf den Namen des verwalteten Geräts, an das Sie eine Benachrichtigung senden möchten, um die Seite *Übersicht* für dieses Gerät zu öffnen.
 
-3. Wählen Sie in der **Übersicht** für das Gerät oben rechts auf der Seite die Option **...** (Auslassungszeichen) aus.  
+3. Wählen Sie auf der Seite **Übersicht** die Geräteaktion **Benutzerdefinierte Benachrichtigung senden** aus, um den Bereich *Benutzerdefinierte Benachrichtigung senden* zu öffnen. Wenn diese Option nicht verfügbar ist, wählen Sie oben rechts auf der Seite die Option **...** (drei Auslassungspunkte) aus, und klicken Sie dann auf **Benutzerdefinierte Benachrichtigung senden**.
 
-4. Wählen Sie die Geräteaktion **Benutzerdefinierte Benachrichtigung senden** aus, um den Bereich *Benutzerdefinierte Benachrichtigung senden* zu öffnen, in dem Sie die folgenden Informationen zur Nachricht angeben:  
+4. Geben Sie im Bereich **Benutzerdefinierte Benachrichtigung senden** die folgenden Details zur Nachricht an:  
 
    - **Titel:** Geben Sie einen Titel für diese Benachrichtigung an. Titel sind auf 50 Zeichen beschränkt.  
    - **Body** (Text): Geben Sie die Nachricht an. Nachrichten sind auf 500 Zeichen beschränkt.  

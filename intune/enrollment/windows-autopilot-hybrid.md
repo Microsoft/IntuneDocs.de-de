@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc618f2502647ba33a16cff4305b9f4671e05996
-ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
+ms.openlocfilehash: d87a4b5d46a5f0d40cebe3dbcaff211ff508d667
+ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74558187"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125309"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Bereitstellen von in Azure AD Hybrid eingebundenen Geräten mit Intune und Windows Autopilot
 Sie können in Azure AD Hybrid eingebundene Geräte mithilfe von Intune und Windows Autopilot einrichten. Führen Sie dazu die Schritte in diesen Artikel durch.
@@ -209,17 +209,30 @@ Es dauert etwa 15 Minuten, bis sich der Status des Geräteprofils von *Nicht zug
 ## <a name="create-and-assign-a-domain-join-profile"></a>Erstellen und Zuweisen eines Domänenbeitrittsprofils
 
 1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
-1. Geben Sie die folgenden Eigenschaften ein:
-   - **Name**: Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
-   - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein.
+2. Geben Sie die folgenden Eigenschaften ein:
+   - **Name:** Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
+   - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein.
    - **Plattform**: Wählen Sie **Windows 10 und höher** aus.
    - **Profiltyp**: Wählen Sie **Domänenbeitritt (Vorschau)** aus.
-1. Wählen Sie **Einstellungen** aus, und geben Sie anschließend ein **Computernamenspräfix**, einen **Domänennamen** und optional eine **Organisationseinheit** im [DN-Format](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name) ein. 
+3. Wählen Sie **Einstellungen** aus, und geben Sie ein **Computernamenpräfix** und einen **Domänennamen** an.
+4. (Optional) Geben Sie eine **Organisationseinheit** (OE) im [DN-Format](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name) an. Optionen
+   - Geben Sie eine OE an, in der Sie die Steuerung an Ihr Windows 2016-Gerät delegiert haben, auf dem der Intune-Connector ausgeführt wird.
+   - Geben Sie eine OE an, in der Sie die Steuerung an die Stammcomputer in Ihrer lokalen Active Directory-Instanz delegiert haben.
+   - Wenn Sie diese Angaben leer lassen, wird das Computerobjekt im Standardcontainer von Active Directory erstellt („CN=Computers“, falls Sie diese Einstellung nie [geändert](https://support.microsoft.com/en-us/help/324949/redirecting-the-users-and-computers-containers-in-active-directory-dom) haben).
+   
+   Hier sind einige gültige Beispiele:
+   - OU=Level 1,OU=Level2,DC=contoso,DC=com
+   - OU=Mine,DC=contoso,DC=com
+   
+   Hier sind einige ungültige Beispiele:
+   - CN=Computers,DC=contoso,DC=com (Sie können keinen Container angeben. Lassen Sie den Wert stattdessen leer, damit der Standardwert für die Domäne verwendet wird.)
+   - OU=Mine (Sie müssen die Domäne über die Attribute für „DC=“ angeben.)
+     
    > [!NOTE]
    > Verwenden Sie keine Anführungszeichen um den Wert in **Organisationseinheit**.
-1. Klicken Sie auf **OK** > **Erstellen**.  
+5. Klicken Sie auf **OK** > **Erstellen**.  
     Das Profil wird erstellt und in der Liste angezeigt.
-1. Um das Profil zuzuweisen, führen Sie die Schritte unter [Zuweisen eines Geräteprofils](../configuration/device-profile-assign.md#assign-a-device-profile) aus, und weisen Sie das Profil derselben Gruppe zu, die beim Schritt [Erstellen einer Gerätegruppe](windows-autopilot-hybrid.md#create-a-device-group) verwendet wurde.
+6. Um das Profil zuzuweisen, führen Sie die Schritte unter [Zuweisen eines Geräteprofils](../configuration/device-profile-assign.md#assign-a-device-profile) aus, und weisen Sie das Profil derselben Gruppe zu, die beim Schritt [Erstellen einer Gerätegruppe](windows-autopilot-hybrid.md#create-a-device-group) verwendet wurde.
    - Bereitstellen mehrerer Domänenbeitrittsprofile
    
      a. Erstellen Sie eine dynamische Gruppe, die alle Ihre Autopilot-Geräte mit einem bestimmten Autopilot-Bereitstellungsprofil enthält. Geben Sie dazu „(device.enrollmentProfileName -eq ‚Autopilot-Profilname‘)“ ein. 
