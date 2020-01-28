@@ -19,12 +19,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: ''
-ms.openlocfilehash: 039ec17b1a56a7339f2159d7af6ad1bd9280bf63
-ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
+ms.openlocfilehash: 6c1b6417489d1443596113a18476b9cbc8f3832e
+ms.sourcegitcommit: 8cc3eca2bce847b0c2b40d8531698e21df848878
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75855509"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75951455"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>Registrieren eines von Ihrer Organisation bereitgestellten iOS-Geräts für die Verwaltung
 
@@ -44,11 +44,7 @@ Wenn Sie Ihr eigenes iOS-Gerät anstelle eines organisationseigenen Geräts verw
 
 1. Schalten Sie Ihr iOS-Gerät ein.
 2. Stellen Sie auf Ihrem Gerät eine WLAN-Verbindung her, nachdem Sie Ihre **Sprache** ausgewählt haben.
-3. Wählen Sie auf der Anzeige **Set up iOS device** (iOS-Gerät einrichten) eine der folgenden Optionen aus:
-   - **Set up as new device** (Als neues Gerät einrichten)
-   - **Restore from iCloud backup** (Aus iCloud-Sicherung wiederherstellen)
-   - **Restore from iTunes backup** (Aus iTunes-Sicherung wiederherstellen)
-
+3. Klicken Sie auf dem Bildschirm **Set up iOS device** (iOS-Gerät einrichten) auf die Option **Set up as new device** (Als neues Gerät einrichten).  
 4. Sobald Sie die WLAN-Verbindung hergestellt haben, wird der Bildschirm **Konfiguration** angezeigt. Darin wird Folgendes mitgeteilt: **Ihr Gerät wird automatisch von [Ihrem Unternehmen] konfiguriert.**
 
    **Die Konfiguration ermöglicht [Ihrem Unternehmen] die drahtlose Verwaltung dieses Geräts. Ein Administrator unterstützt Sie bei der Einrichtung von E-Mail- und -Netzwerkkonten, der Installation und Konfiguration von Apps und der Remoteverwaltung von Einstellungen. Ein Administrator kann Features deaktivieren, Apps installieren und entfernen, Ihren Internetdatenverkehr überwachen und einschränken sowie eine Remotelöschung dieses Geräts ausführen.**

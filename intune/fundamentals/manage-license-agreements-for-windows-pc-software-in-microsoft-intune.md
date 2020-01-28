@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab5e5d3e645410b876a5d3d0be0eafed9c790780
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 831a22dfb6eebfe74b9886a1c83560f68a11c04e
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502655"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036590"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Verwalten von Lizenzverträgen für Windows-PC-Software in Microsoft Intune
 
@@ -51,7 +51,7 @@ Darüber hinaus können Sie Berichte zur Zahl der Installationen und Lizenzen f�
 > Der Arbeitsbereich **Lizenzen** wird erst dann in der Administratorkonsole angezeigt, wenn Sie mindestens einen Windows-PC mit dem Intune Windows PC-Client verwalten.
 
 ## <a name="add-microsoft-volume-licensing-agreements"></a>Hinzufügen von Microsoft-Volumenlizenzverträgen
-In Intune-Volumenlizenzverträgen werden Lizenzinformationen für Software bereitgestellt, die über Microsoft-Volumenlizenzverträge erworben wurde. Sie können Intune Microsoft-Volumenlizenzverträge hinzufügen, indem Sie passende Paare von Vertragsnummern angeben. Die Vertrags- oder Autorisierungsnummern müssen der richtigen Lizenz- oder Registrierungsnummer zugeordnet werden. Vertragsnummernpaare erhalten Sie vom [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842), wenn Sie Lizenzverträge erwerben.
+In Intune-Volumenlizenzverträgen werden Lizenzinformationen für Software bereitgestellt, die über Microsoft-Volumenlizenzverträge erworben wurde. Sie können Intune Microsoft-Volumenlizenzverträge hinzufügen, indem Sie passende Paare von Vertragsnummern angeben. Die Vertrags- oder Autorisierungsnummern müssen der richtigen Lizenz- oder Registrierungsnummer zugeordnet werden. Vertragsnummernpaare erhalten Sie vom [Volume Licensing Service Center (VLSC)](https://go.microsoft.com/fwlink/?LinkID=223842), wenn Sie Lizenzverträge erwerben.
 
 1. Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://admin.manage.microsoft.com/) die Option **Lizenzen** aus.
 
@@ -79,9 +79,9 @@ In Intune-Volumenlizenzverträgen werden Lizenzinformationen für Software berei
 
         - **Open Value-Kunden:** *Vertragsnummer*, *Vertragsnummer wiederholen*, *Vertragsname*
 
-        - **Open-Kunden:** *Autorisierungsnummer*, *zugehörige Lizenznummer*, *Vertragsname*
+        - **Open-Kunden:** *Autorisierungsnummer*, *Lizenznummer*, *Vertragsname*
 
-        - **Select- und Enterprise-Kunden:** *Vertragsnummer*, *zugehörige Registrierungsnummer*, *Vertragsname*
+        - **Select- und Enterprise-Kunden:** *Vertragsnummer*, *Registrierungsnummer*, *Vertragsname*
 
         Sie werden beim Hinzufügen eines neuen Vertrags von dem Formular **Verträge hinzufügen** aufgefordert, nach dieser Datei zu suchen.
 
@@ -93,7 +93,7 @@ In Intune-Volumenlizenzverträgen werden Lizenzinformationen für Software berei
 
         - **Vertragsname:** Geben Sie einen eindeutigen Namen für den Vertrag ein.
 
-            Der Vertragsname darf höchstens 256 Zeichen umfassen. Folgende Zeichen sind nicht zulässig: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Leerzeichen sind im Namen zulässig.
+            Der Vertragsname darf höchstens 256 Zeichen umfassen. Folgende Zeichen sind nicht zulässig: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Leerzeichen sind im Namen zulässig.
 
         - **Autorisierungs-/Vertragsnummer:** Geben Sie die Autorisierungs-/Vertragsnummer des Lizenzpaars ein.
 
@@ -116,7 +116,7 @@ In Intune-Volumenlizenzverträgen werden Lizenzinformationen für Software berei
 
 Die Ansicht **Alle Verträge** wird angezeigt, und Intune stellt eine Verbindung mit dem Microsoft VLSC her, um die angegebenen Vertragsnummernpaare zu überprüfen.
 
-Zum Aktualisieren der Volumenlizenzinformationen nach dem Hinzufügen von Lizenzverträgen in Intune klicken Sie auf der Seite **Übersicht über Lizenzen** auf **Jetzt aktualisieren**. Auf diese Weise werden die aktuellen Lizenzinformationen vom [Microsoft Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842)abgerufen.
+Zum Aktualisieren der Volumenlizenzinformationen nach dem Hinzufügen von Lizenzverträgen in Intune klicken Sie auf der Seite **Übersicht über Lizenzen** auf **Jetzt aktualisieren**. Auf diese Weise werden die aktuellen Lizenzinformationen vom [Microsoft Volume Licensing Service Center (VLSC)](https://go.microsoft.com/fwlink/?LinkId=223842)abgerufen.
 
 > [!IMPORTANT]
 > Bis zur Aktualisierung der Volumenlizenzinformationen stimmen die Daten in der Vertragsliste möglicherweise nicht mit den Berechtigungsinformationen auf der Seite **Vertragsübersicht** überein
@@ -146,7 +146,7 @@ Außerdem können Sie zusätzlich zu Microsoft-Volumenlizenzverträgen weitere T
 
 4. Geben Sie im Bereich **Vertragsdetails hinzufügen** Folgendes an:
 
-    - **Agreement name** (erforderlich). Der Vertragsname darf höchstens 256 Zeichen umfassen. Folgende Zeichen sind nicht zulässig: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Leerzeichen sind im Namen zulässig.
+    - **Agreement name** (erforderlich). Der Vertragsname darf höchstens 256 Zeichen umfassen. Folgende Zeichen sind nicht zulässig: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Leerzeichen sind im Namen zulässig.
 
     - **Herausgeber** (erforderlich). Wenn Sie mit der Eingabe eines Herausgebers beginnen, werden die Namen aller Herausgeber abgerufen, die die eingegebenen Buchstaben enthalten. Wenn Sie beispielsweise "soft" eingeben, werden alle Herausgebernamen abgerufen, die die Zeichenfolge "soft" im Namen enthalten, z. B. "Microsoft" und "Microsoft Research". Die Herausgebernamen werden vom Software Asset-Katalog bezogen. Bevor Sie den Produkttitel eingeben, müssen Sie den Herausgeber auswählen.
 
@@ -182,7 +182,7 @@ Softwarelizenzverträge können zu Lizenzgruppen hinzugefügt werden. Sie könne
 |                            |                                                                                                                                                                                                                                                                                                                                                                          |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |            Aufgabe            |                                                                                                                                                                                 Details                                                                                                                                                                                  |
-|   Erstellen einer Lizenzgruppe   |                                                            Wählen Sie auf der Seite <strong>Übersicht</strong> des Arbeitsbereichs <strong>Lizenzen</strong> im Menü <strong>Aufgaben</strong> die Option <strong>Lizenzgruppe erstellen</strong> aus. <strong>Hinweis:</strong> Sie können insgesamt bis zu 500 Lizenzgruppen erstellen.                                                             |
+|   Erstellen einer Lizenzgruppe   |                                                            Wählen Sie auf der Seite <strong>Übersicht</strong> des Arbeitsbereichs <strong>Lizenzen</strong> im Menü <strong>Aufgaben</strong> die Option <strong>Lizenzgruppe erstellen</strong> aus. <strong>Hinweis:</strong> Sie können insgesamt bis zu 500 Lizenzgruppen erstellen.                                                             |
 |   Umbenennen einer Lizenzgruppe   |                                                                                                      Wählen Sie im Arbeitsbereich <strong>Lizenzen</strong> eine Lizenzgruppe aus, und klicken Sie anschließend im Menü <strong>Aufgaben</strong> auf die Option <strong>Lizenzgruppe bearbeiten</strong>.                                                                                                       |
 |   Löschen einer Lizenzgruppe   |                                 Wählen Sie im Arbeitsbereich <strong>Lizenzen</strong> eine Lizenzgruppe aus, und klicken Sie anschließend im Menü <strong>Aufgaben</strong> auf die Option <strong>Lizenzgruppe löschen</strong>. <strong>Tipp:</strong> Alle Lizenzen in der Gruppe mit zu löschenden Lizenzen werden in die Lizenzgruppe <strong>Nicht zugewiesene Verträge</strong> verschoben.                                 |
 | Löschen von Lizenzverträgen | Wählen Sie im Arbeitsbereich <strong>Lizenzen</strong> einen Vertrag aus, und klicken Sie auf <strong>Löschen</strong>. <strong>Tipp:</strong> Klicken Sie nach dem Löschen von Volumenlizenzverträgen zum Aktualisieren der Lizenzinformationen auf der Seite <strong>Übersicht über Lizenzen</strong> oder auf der Registerkarte <strong>Allgemein</strong> für eine bestimmte Lizenzgruppe auf <strong>Jetzt aktualisieren</strong>. |

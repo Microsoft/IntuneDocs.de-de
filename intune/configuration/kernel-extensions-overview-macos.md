@@ -1,12 +1,12 @@
 ---
-title: Erstellen von macOS-Kernel Erweiterungen Geräte Profil mit Microsoft InTune-Azure | Microsoft-Dokumentation
+title: Erstellen von macOS-Kernelerweiterungsgeräteprofilen mit Microsoft Intune – Azure | Microsoft-Dokumentation
 titleSuffix: ''
-description: Fügen Sie ein macOS-Geräte Profil hinzu, oder erstellen Sie es, und konfigurieren Sie dann die Kernel Erweiterungen, um die außer Kraft Setzung von Benutzern, das Hinzufügen von Team Bezeichnern und ein Bündel Microsoft InTune und
+description: Hier erfahren Sie, wie Sie ein macOS-Geräteprofil hinzufügen oder erstellen und dann Kernelerweiterungen konfigurieren, um Überschreibungen und das Hinzufügen einer Bundle- und Team-ID in Microsoft Intune durch Benutzer zuzulassen.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 01/16/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,54 +16,54 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bce6b99723c5eada8f8f29e875a1df1daa02751a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1075054f3812e8c40f38e705a440c46ba09fdd0e
+ms.sourcegitcommit: 11cbd2a9d90dea20f6dc1f54f0a6acbeec3a71d6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059352"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76146768"
 ---
-# <a name="add-macos-kernel-extensions-in-intune"></a>Hinzufügen von macOS-Kernel Erweiterungen in InTune
+# <a name="add-macos-kernel-extensions-in-intune"></a>Hinzufügen von macOS-Kernelerweiterungen in Intune
 
-Auf macOS-Geräten können Sie Features auf Kernel Ebene hinzufügen. Diese Features greifen auf Teile des Betriebssystems zu, auf die reguläre Programme nicht zugreifen können. Ihre Organisation hat möglicherweise bestimmte Anforderungen oder Anforderungen, die in einer APP, einem Geräte Feature usw. nicht verfügbar sind. 
+Auf macOS-Geräten können Sie Features auf Kernelebene hinzufügen. Diese Features greifen auf Teile des Betriebssystems zu, auf die reguläre Programme nicht zugreifen können. In Ihrer Organisation gibt es möglicherweise bestimmte Bedürfnisse oder Anforderungen, die von einer App oder einem Gerätefeature nicht erfüllt werden können. 
 
-Fügen Sie zum Hinzufügen von Kernel Erweiterungen, die immer auf Ihren Geräten geladen werden dürfen, in Microsoft InTune "Kernel Erweiterungen" (kext) hinzu, und stellen Sie diese Erweiterungen dann auf Ihren Geräten bereit.
+Fügen Sie Kernelerweiterungen (KEXT) in Microsoft Intune hinzu, und stellen Sie diese Erweiterungen dann für Ihre Geräte bereit, wenn Sie Kernelerweiterungen verwenden möchten, die immer Ladevorgänge auf Ihren Geräten ausführen dürfen.
 
-Angenommen, Sie verfügen über ein Programm zum Überprüfen von Viren, das Ihr Gerät auf schädlichen Inhalt scannt. Sie können die Kernel Erweiterung dieses Virus Scan Programms als zulässige Kernel Erweiterung in InTune hinzufügen. Anschließend können Sie die Erweiterung den macOS-Geräten zuweisen.
+Angenommen, Sie haben ein Virenerkennungsprogramm, das Ihr Gerät auf schädliche Inhalte überprüft. In diesem Fall können Sie die Kernelerweiterung dieses Virenerkennungsprogramms als zulässige Kernelerweiterung in Intune hinzufügen. Weisen Sie die Erweiterung anschließend Ihren macOS-Geräten zu.
 
-Mit dieser Funktion können Administratoren es Benutzern ermöglichen, Kernel Erweiterungen außer Kraft zu setzen, Team-IDs hinzuzufügen und bestimmte Kernel Erweiterungen in InTune hinzuzufügen.
+Mithilfe dieses Features können Administratoren Benutzer dazu berechtigen, Kernelerweiterungen zu überschreiben sowie Team-IDs und bestimmte Kernelerweiterungen in Intune hinzuzufügen.
 
 Diese Funktion gilt für:
 
 - macOS 10.13.2 und höher
 
-Um dieses Feature verwenden zu können, müssen die Geräte wie folgt lauten:
+Wenn Sie dieses Feature verwenden möchten, muss Folgendes auf Ihre Geräte zutreffen:
 
-- In InTune registriert mithilfe von Apple Programm zur Geräteregistrierung (DEP). Weitere Informationen finden Sie unter [Automatisches Registrieren von macOS-Geräten](../enrollment/device-enrollment-program-enroll-macos.md) .
+- Ihre Geräte sind über das Programm zur Geräteregistrierung von Apple (DEP) bei Intune registriert. Weitere Informationen finden Sie unter [Automatisches Registrieren von macOS-Geräten mit dem Programm zur Geräteregistrierung oder Apple School Manager](../enrollment/device-enrollment-program-enroll-macos.md).
 
   ODER
 
-- Registriert bei InTune mit "Benutzer genehmigter Registrierung" (Apple-Laufzeit). Weitere Informationen finden [Sie unter Vorbereiten auf Änderungen an Kernel Erweiterungen in macOS High Sierra](https://support.apple.com/en-us/HT208019) (öffnet die Website von Apple).
+- Ihre Geräte sind über sogenanntes „user approved enrollment“ (Registrierung mit Benutzereinwilligung; Apple-Begriff) bei Intune registriert. Weitere Informationen finden Sie auf der Apple-Website [Auf Änderungen an Kernel-Erweiterungen in macOS High Sierra vorbereiten](https://support.apple.com/en-us/HT208019).
 
 Intune verwendet „Konfigurationsprofile“ zum Erstellen und Anpassen dieser Einstellungen für die Anforderungen Ihrer Organisation. Nachdem Sie diese Features in einem Profil hinzugefügt haben, können Sie das Profil auf macOS-Geräte in Ihrer Organisation übertragen oder für sie bereitstellen.
 
-In diesem Artikel erfahren Sie, wie Sie ein Geräte Konfigurations Profil mithilfe von Kernel Erweiterungen in InTune erstellen.
+In diesem Artikel erfahren Sie, wie Sie ein Gerätekonfigurationsprofil mithilfe von Kernelerweiterungen in Intune erstellen.
 
 > [!TIP]
-> Weitere Informationen zu Kernel Erweiterungen finden Sie unter [Übersicht über die Kernel Erweiterung](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/Extend/Extend.html) (öffnet die Website von Apple).
+> Weitere Informationen zu Kernelerweiterungen finden Sie auf der Apple-Website [Kernel Extension Overview (Übersicht über Kernelerweiterungen)](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/Extend/Extend.html).
 
 ## <a name="what-you-need-to-know"></a>Was Sie wissen müssen
 
-- Nicht signierte Legacy-Kernel Erweiterungen können hinzugefügt werden.
-- Stellen Sie sicher, dass Sie die richtige Team-ID und Bündel-ID der Kernel Erweiterung eingeben. InTune überprüft die eingegebenen Werte nicht. Wenn Sie falsche Informationen eingeben, funktioniert die Erweiterung auf dem Gerät nicht.
+- Nicht signierte Vorgängerversionen von Kernelerweiterungen können hinzugefügt werden.
+- Es ist wichtig, dass Sie die richtige Team-ID und Bundle-ID der Kernelerweiterung eingeben. Intune überprüft die eingegebenen Werte nicht. Wenn Sie falsche Informationen eingeben, funktioniert die Erweiterung auf dem Gerät nicht. Eine Team-ID ist genau zehn alphanumerische Zeichen lang. 
 
 > [!NOTE]
-> Apple hat Informationen über Signierung und Notarisierung für die gesamte Software veröffentlicht. Unter macOS 10.14.5 und höher müssen Kernel Erweiterungen, die über InTune bereitgestellt werden, die notalisierungsrichtlinie von Apple nicht erfüllen.
+> Bei Apple stehen Informationen zum Signieren und zur Notarisierung sämtlicher Software zur Verfügung. Ab macOS 10.14.5 müssen Kernelerweiterungen, die über Intune bereitgestellt werden, nicht mehr der Notarisierungsrichtlinie von Apple entsprechen.
 >
-> Informationen zu dieser notariations Richtlinie sowie zu allen Updates oder Änderungen finden Sie in den folgenden Ressourcen:
+> Informationen zu dieser Notarisierungsrichtlinie sowie sämtliche Aktualisierungen oder Änderungen finden Sie auf den folgenden Apple-Websites:
 >
-> - [Notariierung der APP vor der Verteilung](https://developer.apple.com/documentation/security/notarizing_your_app_before_distribution) (öffnet die Website von Apple) 
-> - [Vorbereiten auf Änderungen an Kernel Erweiterungen in macOS High Sierra](https://support.apple.com/en-us/HT208019) (öffnet die Website von Apple)
+> - [Notarizing your app before distribution (Notarisierung Ihrer App vor der Verteilung)](https://developer.apple.com/documentation/security/notarizing_your_app_before_distribution) 
+> - [Auf Änderungen an Kernel-Erweiterungen in macOS High Sierra vorbereiten](https://support.apple.com/en-us/HT208019)
 
 ## <a name="create-the-profile"></a>Erstellen des Profils
 
@@ -71,10 +71,10 @@ In diesem Artikel erfahren Sie, wie Sie ein Geräte Konfigurations Profil mithil
 2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Geben Sie die folgenden Eigenschaften ein:
 
-    - **Name**: Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
+    - **Name:** Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
     - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
     - **Plattform**: Wählen Sie **macOS** aus.
-    - **Profiltyp**: Wählen Sie **Erweiterungen**aus.
+    - **Profiltyp:** Klicken Sie auf **Erweiterungen**.
     - **Einstellungen**: Geben Sie die Einstellungen ein, die Sie konfigurieren möchten. Eine Liste aller Einstellungen und ihrer Funktionen finden Sie unter:
 
         - [macOS](kernel-extensions-settings-macos.md)

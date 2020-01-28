@@ -12,12 +12,12 @@ metadata:
   author: ErikjeMS
   ms.author: erikje
   ms.date: 09/13/2019
-  ms.openlocfilehash: 40327827833a9c4ba87888dbfb6b3cd1af2febde
-  ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+  ms.openlocfilehash: 726efeb7ea552db423332617fff074dbc14f478d
+  ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 10/16/2019
-  ms.locfileid: "72509320"
+  ms.lasthandoff: 01/26/2020
+  ms.locfileid: "76753996"
 landingContent:
 - title: Remoteausführung von Geräteaktionen
   linkLists:
@@ -79,5 +79,5 @@ landingContent:
       url: device-lost-mode.md
     - text: Löschen von Daten von einem macOS-Gerät
       url: device-erase.md
-    - text: Aktivierungssperre umgehen
-      url: device-activation-lock-bypass.md
+    - text: Aktivierungssperre deaktivieren
+      url: device-activation-lock-disable.md
