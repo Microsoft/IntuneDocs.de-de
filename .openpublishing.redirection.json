@@ -7249,5 +7249,10 @@
 			"source_path": "intune/configuration/wired-network-settings-macos.md", 
 			"redirect_url": "/intune/fundamentals/what-is-intune",
 			"redirect_document_id": false  
+		},
+        {
+			"source_path": "intune/remote-actions/device-activation-lock-bypass.md", 
+			"redirect_url": "/intune/remote-actions/device-activation-lock-disable",
+			"redirect_document_id": false  
 		}    ]
 }
