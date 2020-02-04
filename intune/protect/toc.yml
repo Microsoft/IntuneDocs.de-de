@@ -12,7 +12,7 @@
       href: quickstart-set-password-length-android.md
     - name: Senden von Benachrichtigungen an nicht konforme Geräte
       href: quickstart-send-notification.md
-- name: Lernprogramme
+- name: Tutorials
   items:
     - name: Schützen von E-Mail auf verwalteten Geräten
       href: tutorial-protect-email-on-enrolled-devices.md
@@ -46,7 +46,7 @@
           href: privacy-data-audit-export-delete.md
         - name: Windows Information Protection
           href: windows-information-protection-configure.md
-- name: Schrittanleitungen
+- name: Anleitungen
   items:
     - name: 'Festlegen von Regeln für Geräte, um den Zugriff auf Ressourcen zuzulassen'
       items:
@@ -56,7 +56,7 @@
           href: create-compliance-policy.md
         - name: Standortbasierte Konformität
           href: use-network-locations.md
-        - name: Aktionen bei Inkompatibilität
+        - name: Aktionen bei Nichtkonformität
           href: actions-for-noncompliance.md
         - name: Überwachen der Gerätekonformität
           href: compliance-policy-monitor.md
@@ -225,6 +225,20 @@
           href: troubleshoot-conditional-access.md
         - name: Problembehandlung für Zertifikatconnector
           href: troubleshoot-certificate-connector-events.md
+        - name: Problembehandlung bei SCEP-Zertifikatprofilen
+          items:
+            - name: Problembehandlung bei SCEP-Zertifikatprofilen
+              href: troubleshoot-scep-certificate-profiles.md
+            - name: Profilbereitstellung auf Geräten
+              href: troubleshoot-scep-certificate-profile-deployment.md
+            - name: Kommunikation zwischen Geräten und NDES
+              href: troubleshoot-scep-certificate-device-to-ndes.md
+            - name: NDES-Vorgänge
+              href: troubleshoot-scep-certificate-ndes-policy-module.md
+            - name: Zertifikatübermittlung an Geräte
+              href: troubleshoot-scep-certificate-delivery.md
+            - name: Berichterstellung für die Zertifikatbereitstellung
+              href: troubleshoot-scep-certificate-reporting.md
         - name: Exchange Connector-Problembehandlung
           items:
             - name: Exchange Connector-Problembehandlung
@@ -237,7 +251,7 @@
           href: troubleshoot-bitlocker-policies.md
         - name: Problembehandlung bei der Jamf Pro-Integration
           href: troubleshoot-jamf.md
-- name: Referenz
+- name: Reference
   items:
     - name: API zum Hinzufügen einer Drittanbieter-Zertifizierungsstelle
       href: scep-libraries-apis.md
@@ -267,7 +281,7 @@
           href: compliance-policy-create-windows-8-1.md
         - name: 'Konformitätsrichtlinieneinstellungen: Windows Phone 8.1'
           href: compliance-policy-create-windows-8-1.md
-    - name: Fehlercodes und Beschreibungen
+    - name: Fehlercodes und -beschreibungen
       items:
         - name: Fehler bei Softwareupdates
           href: software-update-agent-error-codes.md

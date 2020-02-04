@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: e745290991da4d80c7e3839250edbfdd64ef1b7a
-ms.sourcegitcommit: 01c57ac880dcb5f474908977c89810f5bedaf326
+ms.openlocfilehash: 9aa82268fb02f5124e48eb303f19cf32be02c284
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760964"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912630"
 ---
 Diese Hinweise enthalten wichtige Informationen, die Ihnen bei der Vorbereitung auf künftige Änderungen und Features im Zusammenhang mit Intune helfen können.
 
@@ -77,20 +77,6 @@ Die Unterstützung für Webclips unter iOS und Android ist bald verfügbar. Wenn
 #### <a name="additional-information"></a>Zusätzliche Informationen
 Weitere Informationen finden Sie in unserer Dokumentation zur [Verwendung von Microsoft Edge mit App-Schutzrichtlinien](../apps/manage-microsoft-edge.md) oder in unserem [Blogbeitrag zur Unterstützung](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269).
 
-### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>Stellen Sie sich auf eine Änderung ein: Aktualisierte Registrierung von dedizierten Android Enterprise-Geräten in Intune<!--5198878-->
-Mit dem Novemberrelease (1911-Release) in Intune erhalten dedizierte Android Enterprise-Geräte mehr Unterstützung für die Bereitstellung von SCEP-Gerätezertifikaten, um den zertifikatbasierten Zugriff auf WLAN-Profile zu ermöglichen. Diese Änderung umfasst auch einige geringfügige Änderungen am Flow bei der Registrierung von dedizierten Android Enterprise-Geräten.
-
-#### <a name="how-does-this-affect-me"></a>Wie wirkt sich das auf mich aus?
-Wenn Sie in Ihrer Umgebung dedizierte Android Enterprise-Geräte verwalten, werden Sie ab November einige Änderungen bemerken.
-
-- Für neue Registrierungen von dedizierten Android Enterprise-Geräten: Endbenutzern werden während der Registrierung andere Schritte auf den Geräten angezeigt. Die Registrierung wird weiterhin gleich beginnen (mit QR, NFC, Zero Touch oder einem Gerätebezeichner), mit der Veröffentlichung der Dienstversion vom November wird jedoch ein obligatorischer App-Installationsschritt eingeführt.
-- Für vorhandene Android-Geräte, die als dedizierte Geräte registriert sind: Intune startet die automatische Installation der Microsoft Intune-App auf Geräten ab Anfang November. Sie müssen also keine Maßnahmen ergreifen. Die App wird automatisch auf Geräte heruntergeladen und installiert. 
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wie kann ich mich auf diese Änderung vorbereiten?
-Planen Sie die Aktualisierung Ihres Endbenutzer-Leitfadens, und informieren Sie Ihren Helpdesk über diese Änderung. Klicken Sie für weitere Details und Screenshots auf „Zusätzliche Informationen“. Wir werden die Seite zu den Neuerungen aktualisieren, wenn die Einführung dieser Änderung beginnt.
-
-#### <a name="additional-information"></a>Zusätzliche Informationen
-[https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
 
 ### <a name="end-of-support-for-legacy-pc-management"></a>Ende der Unterstützung für die Legacy-PC-Verwaltung
 
