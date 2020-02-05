@@ -7,30 +7,14 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 9aa82268fb02f5124e48eb303f19cf32be02c284
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 6064fb657454106a8a7213e0bbbcecdcef765857
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912630"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966356"
 ---
 Diese Hinweise enthalten wichtige Informationen, die Ihnen bei der Vorbereitung auf künftige Änderungen und Features im Zusammenhang mit Intune helfen können.
-
-### <a name="updated-feature-new-rbac-role-coming-to-intune--4253397--"></a>Aktualisiertes Feature: Neue RBAC-Rolle für Intune geplant<!--4253397-->
-Im Januar-Update für den Intune-Dienst ist die Veröffentlichung einer neuen Sicherheitsrolle in Intune geplant. Diese Rolle wird in Intune als „Sicherheits-Manager für Endpunkte“ angezeigt und ist eine Erweiterung der Azure AD-Rolle „Sicherheitsadministrator“.
- 
-#### <a name="how-does-this-affect-me"></a>Wie wirkt sich das auf mich aus?
-Aktuell stehen in Azure AD für Sicherheitsbeauftragte drei Rollen zur Verfügung:
-- Mit der Rolle „Sicherheitsleseberechtigter“ in Azure AD wird Lesezugriff auf Intune erteilt.
-- Mit der Rolle „Sicherheitsoperator“ in Azure AD wird Lesezugriff auf Intune erteilt.
-- „Sicherheitsadministrator“ in Azure AD. Mit Veröffentlichung des Januar-Updates von Intune werden neben den Leseberechtigungen für Intune über die Rolle „Sicherheits-Manager für Endpunkte“ die folgenden neuen Berechtigungen erteilt:
-    - Richtlinien zur Gerätekonformität: Lesen, Erstellen, Aktualisieren, Löschen, Zuweisen
-    - Verwaltete Geräte: Lesen, Löschen, Aktualisieren
-    - Sicherheitsbaselines: Lesen, Erstellen, Aktualisieren, Löschen, Zuweisen
-    - Sicherheitsaufgaben: Lesen, Aktualisieren
- 
-### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Was muss ich als Vorbereitung auf diese Veränderung tun?
-Überprüfen Sie noch heute Ihre Intune-RBAC-Rollen. Wenn Sie aktuell nur über die Rolle „Globale Administratoren“ verfügen, sind keine Änderungen erforderlich. Wenn Sie Rollen verwenden und die Granularität der Rolle „Sicherheits-Manager für Endpunkte“ nutzen möchten, weisen Sie diese Rolle zu, wenn Sie verfügbar ist. Auf der Intune-Seite [Neuerungen](../fundamentals/whats-new.md) finden Sie aktuelle Informationen zur Intune-Version. 
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>Aktualisierte Unterstützungsanweisung für die mobile Adobe Acrobat Reader Intune-App<!--5746776-->
 Ende August haben wir in MC188653 mitgeteilt, dass die mobile Adobe Acrobat Reader Intune-App am 1. Dezember 2019 eingestellt wird, und dass Adobe plant, die App-Schutzrichtlinien von Intune innerhalb ihrer Acrobat Reader-Haupt-App zu unterstützen. Seitdem haben wir Feedback der Kunden erhalten, dass die IT-Administratoren mehr Zeit benötigen, sich auf die Änderungen einzustellen, und dass die Endbenutzer mehr Zeit benötigen, Adobe Acrobat Reader für Intune zu verwenden. Angesichts der hohen Nutzung der Adobe Acrobat Reader Intune-App auf Endgeräten und deren Bedeutung für Unternehmensszenarios möchten wir sicherstellen, dass jede Funktion den Anforderungen Ihres Unternehmens an den App-Schutz entspricht. 
