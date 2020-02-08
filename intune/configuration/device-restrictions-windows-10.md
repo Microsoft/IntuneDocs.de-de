@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/28/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81da5ca8e7eaa76f9a6705cc9e3c816234c461db
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
-ms.translationtype: HT
+ms.openlocfilehash: 0dd1ecb5666b8bbb8b26a001be56372d86839f31
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517557"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812331"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Einstellungen für Windows 10-Geräte (und höher) zum Zulassen oder Einschränken von Features mit Intune
 
@@ -39,8 +39,11 @@ Diese Einstellungen werden erst einem Gerätekonfigurationsprofil in Intune hinz
 
 Diese Einstellungen verwenden den [ApplicationManagement-Richtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement), der auch die unterstützten Windows-Editionen auflistet.
 
-- **App Store** (nur mobile Geräte): **Nicht konfiguriert** (Standard) ermöglicht Endbenutzern Zugriff auf den App Store auf mobilen Geräten. **Blockieren** verhindert die Verwendung von App Store.
-- **Apps aus Store automatisch aktualisieren**: **Nicht konfiguriert** (Standard) ermöglicht die automatische Aktualisierung von Apps, die aus dem Microsoft Store installiert wurden. **Blockieren** verhindert, dass Updates automatisch installiert werden.
+- **App Store** (nur mobil): Mit der Option **Blockieren** wird verhindert, dass Endbenutzer über mobile Geräte auf den App Store zugreifen. Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, wird diese Einstellung nicht von Intune geändert oder aktualisiert. Möglicherweise lässt das Betriebssystem standardmäßig zu, dass Endbenutzer auf den App Store zugreifen.
+- **Apps aus Store automatisch aktualisieren:** Mit der Option **Blockieren** wird verhindert, dass Updates automatisch über den Microsoft Store installiert werden. Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, wird diese Einstellung nicht von Intune geändert oder aktualisiert. Möglicherweise lässt das Betriebssystem standardmäßig zu, dass Apps, die aus dem Microsoft Store heruntergeladen werden, automatisch aktualisiert werden.
+
+  [ApplicationManagement/AllowAppStoreAutoUpdate-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
+
 - **Installation vertrauenswürdiger Apps**: Wählen Sie diese Option aus, wenn Apps installiert werden können, die nicht aus dem Microsoft Store stammen. Dies wird auch als Querladen bezeichnet. Querladen bedeutet Installieren und anschließendes Ausführen oder Testen einer App, die nicht durch den Microsoft Store zertifiziert ist. Beispielsweise kann es sich um eine App handeln, die nur für Ihr Unternehmen intern ist. Folgende Optionen sind verfügbar:
   - **Nicht konfiguriert** (Standardeinstellung): Diese Einstellung wird von Intune nicht geändert oder aktualisiert.
   - **Blockieren:** Verhindert Querladen. Apps, die nicht auf dem Microsoft Store stammen, können nicht installiert werden.
@@ -51,16 +54,36 @@ Diese Einstellungen verwenden den [ApplicationManagement-Richtlinien-CSP](https:
   - **Zulassen:** Erlaubt den Entwicklermodus und das Querladen von Apps.
 
   Unter [Aktivieren des Geräts für die Entwicklung](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development) finden Sie weitere Informationen zu dieser Funktion.
+  
+  [ApplicationManagement/AllowAllTrustedApps-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps)
 
-- **Gemeinsam genutzte App-Benutzerdaten:** Wählen Sie **Zulassen** aus, um Anwendungsdaten für verschiedene Benutzer auf dem gleichen Gerät und andere Instanzen dieser App freizugeben. **Nicht konfiguriert** (Standard) verhindert das Freigeben von Daten für andere Benutzer und andere Instanzen der gleichen App.
-- **Nur privaten Store verwenden:** **Zulassen** erlaubt nur das Herunterladen von Apps aus einem privaten Store und nicht aus dem öffentlichen Store (einschließlich eines Einzelhandelskatalogs). **Nicht konfiguriert** (Standard) ermöglicht das Herunterladen von Apps aus einem privaten und einem öffentlichen Store.
-- **Store-App starten:** **Blockieren**: Mit dieser Option deaktivieren Sie auf Geräten alle Apps, die vorinstalliert waren oder aus dem Microsoft Store heruntergeladen wurden. **Nicht konfiguriert** (Standard) erlaubt das Öffnen dieser Apps.
-- **App-Daten in Systemvolume installieren:** **Blockieren** hindert Apps daran, Daten im Systemvolume des Geräts zu speichern. **Nicht konfiguriert** (Standard) erlaubt Apps das Speichern von Daten auf dem Systemvolume.
-- **Apps auf Systemlaufwerk installieren:** **Blockieren** hindert Apps daran, eine Installation auf dem Systemlaufwerk des Geräts auszuführen. **Nicht konfiguriert** (Standard) erlaubt Apps Installationen auf dem Systemlaufwerk.
-- **Game DVR (nur Desktop):** **Blockieren** deaktiviert die Windows-Spieleaufzeichnung und -übertragung. **Nicht konfiguriert** (Standard) lässt die Aufzeichnung und Übertragung von Spielen zu.
+- **Gemeinsam genutzte App-Benutzerdaten:** Wählen Sie **Zulassen** aus, um Anwendungsdaten für verschiedene Benutzer auf dem gleichen Gerät und andere Instanzen dieser App freizugeben. Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, wird diese Einstellung nicht von Intune geändert oder aktualisiert. Möglicherweise verhindert das Betriebssystem standardmäßig das Freigeben von Daten für andere Benutzer und andere Instanzen der gleichen App.
+
+  [ApplicationManagement/AllowSharedUserAppData-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowshareduserappdata)
+
+- **Nur privaten Store verwenden:** **Zulassen** erlaubt nur das Herunterladen von Apps aus einem privaten Store und nicht aus dem öffentlichen Store (einschließlich eines Einzelhandelskatalogs). Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, wird diese Einstellung nicht von Intune geändert oder aktualisiert. Möglicherweise lässt das Betriebssystem standardmäßig zu, dass Apps aus privaten und öffentlichen Stores heruntergeladen werden.
+
+  [ApplicationManagement/RequirePrivateStoreOnly-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+
+- **Store-App starten:** **Blockieren**: Mit dieser Option deaktivieren Sie auf Geräten alle Apps, die vorinstalliert waren oder aus dem Microsoft Store heruntergeladen wurden. Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, wird diese Einstellung nicht von Intune geändert oder aktualisiert. Möglicherweise lässt das Betriebssystem standardmäßig zu, dass diese Apps geöffnet werden.
+
+  [ApplicationManagement/DisableStoreOriginatedApps-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-disablestoreoriginatedapps)
+
+- **App-Daten in Systemvolume installieren:** **Blockieren** hindert Apps daran, Daten im Systemvolume des Geräts zu speichern. Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, wird diese Einstellung nicht von Intune geändert oder aktualisiert. Möglicherweise lässt das Betriebssystem standardmäßig zu, dass Apps Daten auf dem Systemdatenträgervolume speichern.
+
+  [ApplicationManagement/RestrictAppDataToSystemVolume-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictappdatatosystemvolume)
+
+- **Apps auf Systemlaufwerk installieren:** **Blockieren** hindert Apps daran, eine Installation auf dem Systemlaufwerk des Geräts auszuführen. Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, wird diese Einstellung nicht von Intune geändert oder aktualisiert. Möglicherweise lässt das Betriebssystem standardmäßig zu, dass Apps auf dem Systemlaufwerk gespeichert werden.
+
+  [ApplicationManagement/RestrictAppToSystemVolume-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictapptosystemvolume)
+
+- **Game DVR (nur Desktop):** **Blockieren** deaktiviert die Windows-Spieleaufzeichnung und -übertragung. Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, wird diese Einstellung nicht von Intune geändert oder aktualisiert. Möglicherweise lässt das Betriebssystem standardmäßig zu, dass Spiele aufgezeichnet und übertragen werden.
+
+  [ApplicationManagement/AllowGameDVR-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowgamedvr)
+
 - **Apps nur aus Store:** Diese Einstellung bestimmt, was geschieht, wenn Benutzer Apps aus anderen Quellen als dem Microsoft Store installieren. Folgende Optionen sind verfügbar:
 
-  - **Nicht konfiguriert** (Standardeinstellung): Diese Einstellung ermöglicht Endbenutzern die Installation von Apps aus anderen Quellen als dem Microsoft Store, einschließlich der Installation von Apps, die in anderen Richtlinieneinstellungen definiert wurden.  
+  - **Nicht konfiguriert** (Standardeinstellung): Diese Einstellung wird von Intune nicht geändert oder aktualisiert. Möglicherweise lässt das Betriebssystem standardmäßig zu, dass Endbenutzer Apps aus anderen Quellen als dem Microsoft Store herunterladen, einschließlich der Installation von Apps, die in anderen Richtlinieneinstellungen definiert sind.  
   - **Anywhere:** Diese Einstellung deaktiviert App-Empfehlungen und ermöglicht Benutzern die Installation von Apps aus beliebigen Quellen.  
   - **Nur Store:** Diese Einstellung erzwingt, dass Endbenutzer nur Apps aus dem Microsoft Store installieren können.
   - **Empfehlungen:** Diese Einstellung legt fest, dass dem Benutzer eine Meldung angezeigt wird, die den Download aus dem Microsoft Store empfiehlt, wenn er eine App aus dem Internet installiert, die auch im Store verfügbar ist.  
@@ -68,11 +91,11 @@ Diese Einstellungen verwenden den [ApplicationManagement-Richtlinien-CSP](https:
 
   [SmartScreen/EnableAppInstallControl-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
-- **Benutzerkontrolle über Installationen**: Bei Festlegung auf **Nicht konfiguriert** (Standard) verhindert der Windows Installer, dass Benutzer die Installationsoptionen ändern, die in der Regel für Systemadministratoren reserviert sind, etwa durch Eingeben des Installationsverzeichnisses. **Blockieren** ermöglicht es Benutzern, diese Installationsoptionen zu ändern, und einige der Sicherheitsfeatures des Windows Installers werden umgangen.
+- **Benutzerkontrolle über Installationen:** Mit der Option **Blockieren** wird verhindert, dass Benutzer die Installationsoptionen ändern, die in der Regel für Systemadministratoren reserviert sind, etwa durch Eingeben des Installationsverzeichnisses. Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, wird diese Einstellung nicht von Intune geändert oder aktualisiert. Möglicherweise verhindert der Windows Installer standardmäßig, dass Benutzer diese Installationsoptionen ändern, und einige der Sicherheitsfeatures des Windows Installers werden umgangen.
 
   [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
 
-- **Apps mit erhöhten Rechten installieren**: Bei Festlegung auf **Nicht konfiguriert** (Standard) wendet das System bei der Installation von Programmen die Berechtigungen des aktuellen Benutzers an, die nicht von einem Systemadministrator bereitgestellt oder angeboten werden. **Blockieren** weist den Windows Installer an, bei der Installation von Programmen auf dem System erhöhte Rechte anzuwenden. Diese Berechtigungen werden auf alle Programme ausgeweitet.
+- **Apps mit erhöhten Rechten installieren:** Mit der Option **Blockieren** wird der Windows Installer angewiesen, erhöhte Berechtigungen zu verwenden, wenn er ein Programm auf dem System installiert. Diese Berechtigungen werden auf alle Programme ausgeweitet. Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, wird diese Einstellung nicht von Intune geändert oder aktualisiert. Möglicherweise wendet das System standardmäßig bei der Installation von Programmen die Berechtigungen des aktuellen Benutzers an, die nicht von einem Systemadministrator bereitgestellt oder angeboten werden. 
 
   [ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges)
 
@@ -232,7 +255,7 @@ Diese Einstellungen verwenden den [Benutzeroberflächenrichtlinien-CSP](https://
 
 - **URL zu Bild für gesperrten Bildschirm (nur Desktop):** Geben Sie die URL zu einem Bild im JPG-, JPEG- oder PNG-Format ein, das als Hintergrund für den Windows-Sperrbildschirm verwendet wird. Geben Sie beispielsweise `https://contoso.com/image.png` ein. Diese Einstellung sperrt das Bild und kann nicht nachträglich geändert werden.
 
-  [Personalization/LockScreenImageUrl-CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/personalization-csp)
+  [Personalization/LockScreenImageUrl-CSP](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp)
 
 - **Vom Benutzer konfigurierbares Bildschirmtimeout (nur Mobilgeräte):** **Zulassen** ermöglicht Benutzern das Konfigurieren des Bildschirmtimeouts. **Nicht konfiguriert** (Standard) stellt Benutzern diese Option nicht zur Verfügung.
 

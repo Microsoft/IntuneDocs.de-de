@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a5381d139247424d976b6b510d62681f623203a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ac63ef1f35e7b4730e275c6c9e566c53463c72ce
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490506"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754795"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Verwenden von Azure AD für den Zugriff auf die Intune-APIs in Microsoft Graph
 
@@ -62,7 +62,7 @@ Weitere Informationen finden Sie unter:
 
 So registrieren Sie eine App, um die Microsoft Graph-API zu verwenden:
 
-1. Melden Sie sich mithilfe administrativer Anmelde Informationen bei [InTune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+1. Melden Sie sich mit Administratoranmeldeinformationen bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 
     Dazu können Sie Folgendes verwenden:
     - Die Administratorkonto des Mandanten
@@ -90,15 +90,15 @@ So registrieren Sie eine App, um die Microsoft Graph-API zu verwenden:
 
     1. Notieren Sie sich den Wert von **Anwendungs-ID**.
 
-    2. Wählen Sie **Einstellungen** &gt; **API-Zugriff** &gt; **Erforderliche Berechtigungen**.
+    2. Klicken Sie auf **Einstellungen** &gt; **API-Zugriff** &gt; **Erforderliche Berechtigungen**.
 
     <img src="../media/azure-ad-req-perm.png" width="483" height="186" alt="The Required permissions setting" />
 
-6. Wählen Sie auf dem Blatt **Erforderliche Berechtigungen** nacheinander **Hinzufügen** &gt; **API-Zugriff hinzufügen** &gt; **API auswählen**.
+6. Klicken Sie auf dem Blatt **Erforderliche Berechtigungen** auf **Hinzufügen** &gt; **API-Zugriff hinzufügen** &gt; **Hiermit wählen Sie eine API aus**.
 
     <img src="../media/azure-ad-add-graph.png" width="436" height="140" alt="The Microsoft Graph setting" />
 
-7. Wählen Sie auf dem Blatt **API auswählen** nacheinander **Microsoft Graph** &gt; **Auswählen**.  Das Blatt **Zugriff aktivieren** wird geöffnet, auf dem die für Ihre Anwendung verfügbaren Berechtigungsbereiche aufgeführt sind.
+7. Klicken Sie auf dem Blatt **Hiermit wählen Sie eine API aus** auf **Microsoft Graph** &gt; **Auswählen**.  Das Blatt **Zugriff aktivieren** wird geöffnet, auf dem die für Ihre Anwendung verfügbaren Berechtigungsbereiche aufgeführt sind.
 
     <img src="../media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
@@ -240,7 +240,7 @@ Derzeit erfordern alle Intune-Berechtigungsbereiche Administratorzugriff.  Dies 
 
 - Die folgenden Remoteaktionen sind ebenfalls zulässig:
   - Geräte suchen
-  - Aktivierungssperre umgehen
+  - Aktivierungssperre deaktivieren
   - Remoteunterstützung anfordern
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All
@@ -344,7 +344,7 @@ Dieses Beispiel zeigt, wie Sie C# zum Abrufen einer Liste von Geräten verwenden
 3. Fügen Sie im Projektmappen-Explorer das NuGet-Paket mit der Microsoft ADAL dem Projekt hinzu.
 
     1. Klicken Sie mit der rechten Maustaste auf den Projektmappen-Explorer.
-    2. Wählen Sie **NuGet-Pakete verwalten** &gt; **Durchsuchen** aus.
+    2. Wählen Sie **NuGet-Pakete verwalten** &gt; **Durchsuchen**.
     3. Wählen Sie `Microsoft.IdentityModel.Clients.ActiveDirectory` aus, und klicken Sie anschließend auf **Installieren**.
 
     <img src="../media/aad-auth-cpp-install-package.png" width="624" height="458" alt="Selecting the Azure AD identity model module" />

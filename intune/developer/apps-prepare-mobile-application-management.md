@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8b5b323c4bb80cd15bf9c6c8f0f7a8be577d6bf
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 842af9c8fffcb3755c81260739f4949768e75bac
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653936"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912674"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Vorbereiten von branchenspezifischen Apps für App-Schutzrichtlinien
 
@@ -41,7 +41,6 @@ Weitere Informationen zum App Wrapping Tool für App-Schutzrichtlinien auf Gerä
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>Gründe für die Verwendung des App Wrapping Tools
 
 * Ihre App verfügt nicht über integrierte Datenschutzfunktionen.
-* Ihre App ist einfach aufgebaut.
 * Ihre App wird intern bereitgestellt.
 * Sie haben keinen Zugriff auf den Quellcode der App.
 * Sie haben die App nicht entwickelt.
@@ -63,7 +62,6 @@ Weitere Informationen zum SDK finden Sie unter [Übersicht](app-sdk.md). Ein Ein
 ### <a name="reasons-to-use-the-sdk"></a>Gründe für die Verwendung des SDKs
 
 * Ihre App verfügt nicht über integrierte Datenschutzfunktionen.
-* Ihre App ist komplex und enthält viele Oberflächen.
 * Ihre App wird in einem öffentlichen App Store wie Google Play oder Apple App Store bereitgestellt.
 * Sie sind ein App-Entwickler mit dem entsprechenden technischen Hintergrund zur Verwendung des SDKs.
 * Ihre App verfügt über andere SDK-Integrationen.
@@ -76,13 +74,13 @@ Weitere Informationen zum SDK finden Sie unter [Übersicht](app-sdk.md). Ein Ein
 |**iOS**|Ja – [Intune App SDK-Xamarin-Bindungen](app-sdk-xamarin.md) verwenden|Nein|
 |**Android**| Ja – [Intune App SDK-Xamarin-Bindungen](app-sdk-xamarin.md) verwenden|Nein|
 
-### <a name="not-using-an-app-development-platform-listed-above"></a>Sie verwenden keine oben aufgeführte App-Entwicklungsplattform?
+## <a name="not-using-an-app-development-platform-listed-above"></a>Sie verwenden keine der oben aufgeführten Plattformen für die App-Entwicklung?
 
 Das Intune SDK-Entwicklungsteam testet und unterstützt aktiv Apps, die mit dem nativen Android-, iOS- (Obj-C, Swift), Xamarin-, Xamarin.Forms- und Cordova-Plattformen erstellt wurden. Während einige Kunden das Intune SDK erfolgreich in andere Plattformen wie React Native und NativeScript integrieren konnten, bieten wir keine expliziten Anleitungen oder Plug-Ins für App-Entwickler, die andere als unsere unterstützten Plattformen verwenden. 
 
 ## <a name="feature-comparison"></a>Funktionsvergleich
 
-In dieser Tabelle sind die Einstellungen aufgeführt, die Sie für das App SDK und App Wrapping Tool verwenden können.
+In der folgenden Tabelle werden die Einstellungen aufgelistet, die aktiviert sind, wenn eine App das App SDK oder das App Wrapping Tool verwendet. Für einige Features ist es erforderlich, dass App-Entwickler Logik anwenden, die über die grundlegende Integration in das Intune SDK hinausgeht. Diese Features werden daher nicht aktiviert, wenn die App das App Wrapping Tool verwendet. 
 
 |Komponente|App SDK|App Wrapping Tool|
 |-----------|---------------------|-----------|
@@ -105,9 +103,9 @@ In dieser Tabelle sind die Einstellungen aufgeführt, die Sie für das App SDK u
 |Blockieren von Bildschirmaufnahmen (nur Android)|X|X|
 |Unterstützung von MAM ohne Geräteregistrierung|X|X|
 |Vollständiges Zurücksetzen von App-Daten|X|X|
-|Selektives Zurücksetzen von Geschäfts-, Schul- oder Unikontodaten in Szenarien mit mehreren Identitäten <br><br>**Hinweis:** Für iOS wird beim Entfernen des Verwaltungsprofils auch die App entfernt.|X||
+|Selektives Zurücksetzen von Geschäfts-, Schul- oder Unikontodaten in Szenarios mit mehreren Identitäten <br><br>**Hinweis:** Für iOS wird beim Entfernen des Verwaltungsprofils auch die App entfernt.|X||
 |Verhindern von „Speichern unter“|X||
-|Gezielte Anwendungskonfiguration (oder App-Konfiguration über den "MAM-Kanal")|X||
+|Gezielte Anwendungskonfiguration (oder App-Konfiguration über den MAM-Kanal)|X|X|
 |Unterstützung von mehreren Identitäten|X||
 |Anpassbarer Stil |X|||
 |Bedarfsgesteuerte VPN-Verbindungen mit Anwendungen mit Citrix mVPN|X|X| 
@@ -117,8 +115,13 @@ In dieser Tabelle sind die Einstellungen aufgeführt, die Sie für das App SDK u
 |iOS-Mindestbetriebssystem erfordern|X|X|
 |Mindestversion für das Android-Sicherheitspatch erfordern (nur Android)|X|X|
 |Mindestversion des Intune SDK für iOS erfordern (nur iOS)|X|X|
-|SafetyNet-Geräte Nachweis (nur Android)|X|X|
-|Bedrohungs Überprüfung für Apps (nur Android)|X|X|
+|SafetyNet-Gerätenachweis (nur Android)|X|X|
+|Bedrohungsüberprüfung für Apps (nur Android)|X|X|
+|Maximale Risikostufe für den Mobile Threat Defense-Anbieter verlangen|X||
+|Konfigurieren von App-Benachrichtigungsinhalt für Organisationskonten|X|X|
+|Verwendung von genehmigten Tastaturen verlangen (nur Android)|X|X|
+|App-Schutzrichtlinie verlangen (bedingter Zugriff)|X||
+|Genehmigte Client-App verlangen (bedingter Zugriff)|X||
 
 ## <a name="next-steps"></a>Nächste Schritte
 

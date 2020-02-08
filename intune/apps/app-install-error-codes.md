@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/21/2020
+ms.date: 01/27/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8ade7676cb8f6265dd63eb1ba7847c50f526a9a
-ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
-ms.translationtype: HT
+ms.openlocfilehash: 3502b1c1a73a9e98ed2901fc24dc69ab09136427
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76541860"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812442"
 ---
 # <a name="intune-app-installation-error-reference"></a>Referenz zu Fehlercodes bei der Installation der Intune-App
 
@@ -30,7 +30,7 @@ Sie können Anwendungsfehler nicht nur mithilfe der angegebenen Schritte beheben
 
 ## <a name="android-app-installation-errors"></a>Installationsfehler bei Android-Apps
 
-In diesem Abschnitt geht es sowohl um die Registrierung als Geräteadministrator (Device Administrator, DA) als auch über Samsung KNOX. Weitere Informationen finden Sie unter [Android-Geräteadministratorregistrierung](../enrollment/android-enroll-device-administrator.md) und [Automatisches Registrieren von Android-Geräten mit Samsung Knox Mobile Enrollment](../enrollment/android-samsung-knox-mobile-enroll.md). 
+In diesem Abschnitt werden die Geräteadministratorregistrierung und die Samsung Knox-Registrierung erwähnt. Weitere Informationen dazu finden Sie unter [Android-Geräteadministratorregistrierung](../enrollment/android-enroll-device-administrator.md) und [Automatisches Registrieren von Android-Geräten mit Samsung Knox Mobile Enrollment](../enrollment/android-samsung-knox-mobile-enroll.md). 
 
 | Fehlercode (Hex) | Fehlercode (Dez) | Fehlermeldung/-code | Beschreibung |
 |--------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -78,7 +78,7 @@ In den folgenden Fehlermeldungen und -beschreibungen finden Sie weitere Informat
 | 0x87D13B9A | -2016330854 | Unbekanntes Problem. Bitte versuchen Sie es erneut. | Die Installation der App ist aus einem unbekannten Grund fehlgeschlagen. Versuchen Sie es später erneut. |
 | 0x87D13B9B | -2016330853 | Fehler bei der App-Installation. Der Versuch wird von Intune bei der nächsten Gerätesynchronisierung wiederholt. | Bei der App-Installation ist ein Gerätefehler aufgetreten. Synchronisieren Sie das Gerät, und versuchen Sie, die App noch mal zu installieren. |
 | 0x87d13b7e | -2016330882 | Fehler bei der Lizenzzuweisung mit Apple-Fehler „Keine weiteren VPP-Lizenzen“.  | Dieses Verhalten ist beabsichtigt. Den Fehler können Sie beheben, indem Sie zusätzliche VPP-Lizenzen erwerben, oder Lizenzen von Benutzern freigeben, für die sie nicht mehr benötigt werden. |
-| 0x87d13b6e | -2016330898 | App Install Failure 12024: Unknown cause. (App-Installationsfehler 12024: Grund unbekannt)  | Apple hat nicht mit genügend Informationen bereitgestellt, um ermitteln zu können, warum die Installation fehlgeschlagen ist.   Nichts zu melden. |
+| 0x87d13b6e | -2016330898 | App-Installationsfehler 12024: Ursache unbekannt.  | Apple hat nicht mit genügend Informationen bereitgestellt, um ermitteln zu können, warum die Installation fehlgeschlagen ist.   Nichts zu melden. |
 | 0x87d13b7f | -2016330881 | Die erforderliche App-Konfigurationsrichtlinie ist nicht vorhanden. Stellen Sie sicher, dass die Richtlinie für dieselbe(n) Gruppe(n) vorgesehen ist.  | Für die App ist eine App-Konfiguration erforderlich, es ist jedoch keine entsprechende App-Konfiguration vorhanden. Der Administrator sollte sicherstellen, dass die erforderliche App-Konfiguration für die Gruppen gilt, für die die App bereitgestellt werden soll. |
 | 0x87d13b69 | -2016330903 | Die VPP-Gerätelizenzierung gilt nur für Geräte unter iOS 9.0 und höher.  | Aktualisieren Sie betroffene iOS-Geräte auf iOS 9.0 oder höher. |
 | 0x87d13b8f | -2016330865 | The application is installed on the device but is unmanaged. (Die Anwendung ist auf dem Gerät installiert, wird aber nicht verwaltet.)  | Dieser Fehler tritt nur bei branchenspezifischen Apps auf. Die App wurde außerhalb von Intune installiert. Deinstallieren Sie die App auf dem Gerät, um diesen Fehler zu beheben. Bei der nächsten Gerätesynchronisierung sollte das Gerät die App aus Intune installieren. |
@@ -90,9 +90,7 @@ In den folgenden Fehlermeldungen und -beschreibungen finden Sie weitere Informat
 | 0x87D13B72 | -2016330894 | Ihre Internetverbindung wurde getrennt.  | Fehler bei der Prüfung des App-Manifests aufgrund der Netzwerkkonnektivität (Verbindung unterbrochen). |
 | 0x87D13B73 | -2016330893 | Ihre Internetverbindung wurde getrennt.  | Fehler bei der Prüfung des App-Manifests aufgrund der Netzwerkkonnektivität (Internetverbindung unterbrochen) |
 | 0x87D13B77 | -2016330889 | Die sichere Verbindung konnte nicht hergestellt werden.  | Fehler bei der Prüfung des App-Manifests aufgrund der Netzwerkkonnektivität (sichere Verbindung fehlgeschlagen). |
-| 0x87D13B6F | -2016330897 |  |   |
 | 0x87D13B80 | -2016330880 | CannotConnectToITunesStoreError (Fehler „Verbindung zu iTunes nicht möglich“) | Fehler bei der App-Installation aufgrund einer fehlgeschlagenen Verbindung zu iTunes |
-| 0x87D13B6E | -2016330898 |   | Fehler bei der Prüfung des App-Manifests aufgrund der Netzwerkkonnektivität (unbekannt) |
 | 0x87D13B9F  | -2016330849 | The VPP App has an update available (Für die VPP-APP ist ein Update verfügbar) | Dieser Code wird zurückgegeben, wenn eine VPP-App installiert ist, aber eine neuere Version zur Verfügung steht. |
 
 ## <a name="other-installation-errors"></a>Andere Installationsfehler
