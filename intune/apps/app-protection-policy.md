@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c340ffaacad303c4ff395c84d92e3907e42a521
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: e0f36e648c404858332245c5b1b457c9f6824614
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036646"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971880"
 ---
 # <a name="app-protection-policies-overview"></a>Übersicht über App-Schutzrichtlinien
 
@@ -82,7 +82,7 @@ Intune bietet eine Reihe von Funktionen, die die Installation der erforderlichen
 Die Plattform für Schutzrichtlinien für Intune-Apps ist auf die Plattformunterstützung für mobile Office-Anwendungen für Android- und iOS-Geräte ausgerichtet. Weitere Informationen finden Sie im Abschnitt **Mobile Apps** unter [Systemanforderungen für Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
 
 > [!IMPORTANT]
-> Das Intune-Unternehmensportal ist auf dem Gerät erforderlich, um App-Schutzrichtlinien unter Android zu erhalten. Weitere Informationen finden Sie unter [Zugriffsanforderungen für Apps im Intune-Unternehmensportal ](../fundamentals/end-user-mam-apps-android.md#access-apps).
+> Das Intune-Unternehmensportal ist auf dem Gerät erforderlich, damit das Gerät App-Schutzrichtlinien unter Android empfangen kann. Weitere Informationen finden Sie unter [Zugriffsanforderungen für Apps im Intune-Unternehmensportal](../fundamentals/end-user-mam-apps-android.md#access-apps).
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>So schützen App-Schutzrichtlinien Ihre App-Daten
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 01/28/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95186e4d1e54737ffeaa5e4c9728d188c2f867d6
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 881d0f095d2144ae42db4825336275980a19f419
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206634"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812364"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Häufige Fragen, Probleme und entsprechende Behebungen mit Geräterichtlinien und -profilen in Microsoft Intune
-
-
 
 Erhalten Sie Antworten auf häufige Fragen zur Arbeit mit Geräteprofilen und -richtlinien in Intune. In diesem Artikel werden u. a. Check-In-Zeitintervalle und weitere Informationen aufgelistet.
 
@@ -83,6 +81,8 @@ Verschiedene Aktionen können eine Benachrichtigung auslösen, z. B. das Zuweis
 Geräte checken bei Intune entweder beim Erhalt einer Benachrichtigung zum Einchecken oder während ihres geplanten Eincheckvorgangs ein. Wenn Sie für ein Gerät oder einen Benutzer ausdrücklich eine Aktion durchführen, z. B. Sperren, Zurücksetzen der Kennung, App-, Profil- oder Richtlinienzuweisung, fordert Intune das Gerät sofort zum Einchecken auf, um die Updates zu empfangen.
 
 Andere Änderungen, wie etwa die Überarbeitung der Kontaktinformationen in der Unternehmensportal-App, führen nicht zu einer sofortigen Benachrichtigung der Geräte.
+
+Die Einstellungen in der Richtlinie oder im Profil werden bei jedem Einchecken angewendet. Der Blogbeitrag [Windows 10 MDM policy refresh](https://www.petervanderwoude.nl/post/windows-10-mdm-policy-refresh/) (Windows 10-MDM-Richtlinienaktualisierung) ist eine gute Ressource.
 
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>Wie finde ich heraus, welche Einstellungen angewendet werden, wenn für denselben Benutzer oder dasselbe Gerät mehrere Richtlinien zugewiesen werden?
 

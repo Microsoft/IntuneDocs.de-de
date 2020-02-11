@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7170f723707ef709ef464b35bc3f6d3297341cf1
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 099d68568cd920c9ae3f328b4e9fba95424e46fd
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956205"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755271"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Hinzufügen von Apps zu Microsoft Intune 
 
@@ -74,10 +74,10 @@ Die folgende Tabelle führt die verschiedenen App-Typen auf und erläutert, wie 
 
 <sup>1</sup> Weitere Informationen zu Android Enterprise und den Android-Arbeitsprofilen finden Sie unter [Grundlegendes zu lizenzierten Apps](apps-add.md#understanding-licensed-apps).
 
-Sie können eine App in Microsoft Intune hinzufügen, indem Sie **Apps** > **Alle Apps** > **Hinzufügen** auswählen. Der Bereich **App hinzufügen** wird geöffnet. Dort können Sie den **App-Typ** auswählen. 
+Sie können eine App in Microsoft Intune hinzufügen, indem Sie **Apps** > **Alle Apps** > **Hinzufügen** auswählen. Der Bereich **App-Typ auswählen** wird geöffnet, in dem Sie den **App-Typ** auswählen können. 
 
 >[!TIP]
-> Eine branchenspezifische App wird über eine App-Installationsdatei hinzugefügt. Fügen Sie beispielweise die Anwendung hinzu, um eine branchenspezifische iOS-App zu installieren, indem Sie im Bereich **App hinzufügen** **Branchenspezifische App** als **App-Typ** auswählen. Wählen Sie dann die App-Paketdatei (mit der Erweiterung „IPA“) aus. Solche Apps werden in der Regel intern geschrieben.
+> Eine branchenspezifische App wird über eine App-Installationsdatei hinzugefügt. Um beispielweise eine branchenspezifische iOS-App zu installieren, fügen Sie die Anwendung hinzu, indem Sie im Bereich **App-Typ auswählen** die Option **Branchenspezifische App** als **App-Typ** auswählen. Wählen Sie dann die App-Paketdatei (mit der Erweiterung „IPA“) aus. Solche Apps werden in der Regel intern geschrieben.
 
 ## <a name="assess-app-requirements"></a>Bewerten der App-Anforderungen
 Sie müssen als IT-Administrator nicht nur festlegen, welche Apps Ihre Gruppe verwenden soll, sondern auch die Funktionen bestimmen, die jede Gruppe bzw. Untergruppe benötigt. Für jede App bestimmen Sie die benötigten Plattformen und legen fest, welche Gruppen von Benutzern die App verwenden müssen, welche Konfigurationsrichtlinien für diese Gruppen gelten und welche Schutzrichtlinien angewendet werden sollen.  

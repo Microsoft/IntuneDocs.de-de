@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -16,16 +16,16 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4a4c6d40dc729fb72210c455c7819baaf89de3b
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 03b8f050dc6232b87d1149aff0a93cd7b06839cd
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691830"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755407"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Signieren Sie branchenspezifische Apps, damit sie mit Intune auf Windows-Geräten bereitgestellt werden können
 
-Als Intune-Administrator können Sie universelle branchenspezifische Apps – einschließlich der Unternehmensportal-App – auf Windows 8.1 Desktop- oder Windows 10 Desktop- und Mobile-Geräten bereitstellen. Zum Bereitstellen von APPX-Apps auf Windows 8.1 Desktop- oder Windows 10 Desktop- und Mobile-Geräten können Sie ein codesignierendes Zertifikat einer öffentlichen Zertifizierungsstelle verwenden, der Ihre Windows-Geräte bereits vertrauen. Sie können auch Ihre eigene Zertifizierungsstelle verwenden.
+Als Intune-Administrator können Sie universelle branchenspezifische Apps – einschließlich der Unternehmensportal-App – auf Windows 8.1 Desktop- oder Windows 10 Desktop- und Mobile-Geräten bereitstellen. Zum Bereitstellen von *APPX*-Apps auf Windows 8.1 Desktop- oder Windows 10 Desktop- und Mobile-Geräten können Sie ein codesignierendes Zertifikat einer öffentlichen Zertifizierungsstelle verwenden, der Ihre Windows-Geräte bereits vertrauen. Sie können auch Ihre eigene Zertifizierungsstelle verwenden.
 
  > [!NOTE]
  > Windows 8.1 Desktop erfordert entweder eine Unternehmensrichtlinie zum Aktivieren des Querladens oder die Nutzung von Schlüsseln zum Querladen (für in die Domäne eingebundene Geräte automatisch aktiviert). Weitere Informationen finden Sie unter [Windows 8 Sideloading Requirements](https://blogs.technet.microsoft.com/scd-odtsp/2012/09/27/windows-8-sideloading-requirements-from-technet/) (Anforderungen für das Querladen von Windows 8).
@@ -52,10 +52,11 @@ Wenn Sie die App für Benutzer und Geräte als erforderlich bereitstellen, benö
 
 Wenn Ihr Windows 10-Gerät der Zertifizierungsstelle nicht bereits vertraut, müssen Sie das codesignierende Zertifikat in das Intune-Portal hochladen, nachdem Sie Ihr APPX-Paket signiert und in den Intune-Dienst hochgeladen haben:
 
-1. Klicken Sie auf „Client-Apps“.
-2. Klicken Sie auf „Windows Enterprise-Zertifikate“.
-3. Klicken Sie unter „Codesignierendes Zertifikat“ auf „Datei auswählen“.
-4. Wählen Sie Ihre CER-Datei aus, und klicken Sie auf „Hochladen“.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Klicken Sie auf **Mandantenverwaltung** > **Connectors und Token** > **Windows-Unternehmenszertifikate**.
+3. Wählen Sie unter **Codesignaturzertifikat-Datei** eine Datei aus.
+4. Wählen Sie Ihre *CER*-Datei aus, und klicken Sie auf **Öffnen**.
+5. Klicken Sie auf **Hochladen**, um Ihre Zertifikatdatei zu Intune hinzuzufügen.
 
 Jetzt lädt jedes Windows 10 Desktop- und Mobile-Gerät mit einer APPX-Bereitstellung durch den Intune-Dienst automatisch das entsprechende Unternehmenszertifikat herunter, und die Anwendung kann nach der Installation gestartet werden.
 
@@ -94,7 +95,7 @@ Wenn Sie keinen Zugriff auf den Microsoft Store ermöglichen möchten, können S
       ![Abbildung mit dem Ordner „Dependencies“ und der APPXBUN-Datei](./media/app-sideload-windows/Win10CP-Dependencies-save.png)
    2. Platzieren Sie die neun Abhängigkeitspakete im Ordner „Dependencies“.  
       Sind die Abhängigkeiten nicht wie hier beschrieben strukturiert, werden sie von Intune nicht erkannt und nicht hochgeladen. In diesem Fall tritt der folgende Fehler auf:  
-      ![Fehlermeldung: Die Windows-App-Abhängigkeit muss angegeben werden.](./media/app-sideload-windows/Win10CP-error-message.png)
+      <img alt="Error message - The Windows app dependency must be provided." src="./media/app-sideload-windows/Win10CP-error-message.png" width="200">
 6. Kehren Sie zu Intune zurück, und laden Sie die Unternehmensportal-App als neue App hoch. Stellen Sie sie als erforderliche App für die gewünschte Gruppe von Zielbenutzern bereit.  
 
 Weitere Informationen zur Behandlung von Abhängigkeiten für universelle Apps durch Intune finden Sie unter [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) (Bereitstellen einer APPXBUNDLE-Datei mit Abhängigkeiten über Microsoft Intune MDM).  

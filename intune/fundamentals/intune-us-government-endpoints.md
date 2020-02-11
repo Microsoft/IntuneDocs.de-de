@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02c1508dd3eb9c8a8932c1504c6f4d0a53c5a0d5
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: dfa93bb758447c872d172ded7706fd7507a42f11
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207382"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966282"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>US Government-Endpunkte für Microsoft Intune
 
@@ -61,7 +61,7 @@ In den folgenden Tabellen sind die Ports und Dienste aufgeführt, auf die der In
 - ADRS: https:\//enterpriseregistration.microsoftonline.us
 
 ## <a name="windows-push-notification-services"></a>Windows-Pushbenachrichtigungsdienste
-Für von Intune verwaltete Windows-Geräte, die mithilfe von mobiler Geräteverwaltung (Mobile Device Management, MDM) verwaltet werden, sind Windows-Pushbenachrichtigungsdienste (Windows Push Notification Services, WNS) für Geräteaktionen und andere sofortige Aktivitäten erforderlich. Weitere Informationen finden Sie unter [Enterprise-Firewall und Proxykonfigurationen zur Unterstützung von WNS-Datenverkehr](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config).
+Für von Intune verwaltete Geräte, die mithilfe der mobilen Geräteverwaltung (Mobile Device Management, MDM) verwaltet werden, sind Windows-Pushbenachrichtigungsdienste (Windows Push Notification Services, WNS) für Geräteaktionen und andere sofortige Aktivitäten erforderlich. Weitere Informationen finden Sie unter [Enterprise-Firewall und Proxykonfigurationen zur Unterstützung von WNS-Datenverkehr](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config).
 
 ## <a name="apple-device-network-information"></a>Informationen zum Netzwerk von Apple-Geräten
 

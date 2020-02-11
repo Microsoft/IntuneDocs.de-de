@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52f907b8762322684ec9e21910745a197c3dbe4e
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: babe556d6810ad027a1b0b3cae6364c99bc9a07c
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564317"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812515"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Verwalten des Webzugriffs durch einen mittels Microsoft Intune-Richtlinien geschützte Browser
 
@@ -36,6 +36,9 @@ Mit einem durch eine Intune-Richtlinie geschützten Browser (Microsoft Edge oder
 - Einmaliges Anmelden
 - Anwendungskonfigurationseinstellungen
 - Integration des Azure-Anwendungsproxys
+
+> [!IMPORTANT]
+> Der Intune Managed Browser wird eingestellt. Verwenden Sie Microsoft Edge für Ihre geschützte Intune-Browserumgebung. 
 
 ## <a name="microsoft-edge-support"></a>Microsoft Edge-Unterstützung
 
@@ -174,7 +177,7 @@ Verwenden Sie das oben beschriebene Verfahren, um eine Microsoft Edge-App-Konfig
 
 | Key                              |  Wert   |
 |----------------------------------|----------|
-| **com.microsoft.intune.useEdge** | **TRUE** |
+| **com.microsoft.intune.useEdge** | **true** |
 
 > [!NOTE]
 > Vergewissern Sie sich in der App-Schutzrichtlinie, die Microsoft Edge und die in der App-Konfiguration angegebenen zugehörigen Apps verwaltet, dass die folgenden Einstellungen für die Datenschutzrichtlinie festgelegt sind:
@@ -203,7 +206,7 @@ Microsoft Edge, Intune Managed Browser und der [Azure AD-Anwendungsproxy]( https
 #### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>Schritt 1: Aktivieren der automatischen Umleitung von Outlook zu einem geschützten Browser
 Outlook muss mit einer App-Schutzrichtlinie konfiguriert werden, mit der Einstellung **Anzeige von Webinhalten auf den Managed Browser beschränken** möglich ist.
 
-#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>Schritt 2: Zuweisen einer App-Konfigurationsrichtlinie für den geschützten Browser
+#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>Schritt 2: Zuweisen einer App-Konfigurationsrichtlinie für den geschützten Browser
 Dieses Verfahren konfiguriert die Managed Browser- oder Microsoft Edge-App, damit die App-Proxyumleitung verwendet wird. 
 
 Öffnen Sie in den Konfigurationseinstellungen für die Richtlinie die Registerkarte **Edge**, und wählen Sie **Aktivieren** als Wert für die Umleitung des Anwendungsproxys aus. Durch Aktivieren dieser Einstellung erhalten Benutzer Zugriff auf Unternehmenslinks und lokale Web-Apps, die über den Azure-Anwendungsproxy veröffentlicht wurden.

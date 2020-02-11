@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83b8c48d2bb594ca8b9c527d78922332e582363f
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: a56d8f7aface3628ba5bc8985128ebb49c9cf404
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860294"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812172"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Legen Sie mit Intune Regeln auf Geräten fest, um Zugriff auf Ressourcen in Ihrer Organisation zu gewähren
 
@@ -91,7 +91,11 @@ Intune umfasst zudem einige integrierte Konformitätsrichtlinieneinstellungen. D
   - **Konform** (*Standard*): Das Sicherheitsfeature ist nicht aktiviert
   - **Nicht konform:** Das Sicherheitsfeature ist aktiviert
 
-  Ist einem Gerät keine Konformitätsrichtlinie zugewiesen, dann wird dieses Gerät standardmäßig als konform erachtet. Wenn Sie den bedingten Zugriff mit Konformitätsrichtlinien verwenden, sollten Sie die Standardeinstellung auf **Nicht konform** festlegen. Falls ein Benutzer nicht konform ist, weil ihm keine Richtlinie zugewiesen ist, zeigt die [Unternehmensportal-App](../apps/company-portal-app.md) `No compliance policies have been assigned` an.
+  Ist einem Gerät keine Konformitätsrichtlinie zugewiesen, dann wird dieses Gerät standardmäßig als konform erachtet. Wenn Sie den bedingten Zugriff mit Konformitätsrichtlinien verwenden, sollten Sie die Standardeinstellung auf **Nicht konform** festlegen. Falls ein Benutzer nicht konform ist, weil ihm keine Richtlinie zugewiesen ist, zeigt die [Unternehmensportal-App](../apps/company-portal-app.md)`No compliance policies have been assigned` an.
+
+
+> [!NOTE]
+> Die erweiterte Jailbreakerkennung für iOS-Geräte wurde in Intune vorübergehend deaktiviert.
 
 - **Verbesserte Erkennung von Jailbreaks**: Ist diese Einstellung aktiviert, werden iOS-Geräte bei Intune regelmäßiger eingecheckt. Durch die Aktivierung dieser Eigenschaft werden die Ortungsdienste des Gerätes verwendet und der Akkuverbrauch wird beeinflusst. Die Standortdaten des Benutzers werden nicht in Intune gespeichert.
 
@@ -115,16 +119,16 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 |**Richtlinieneinstellung**| **Plattform** |
 | --- | ----|
 | **PIN- oder Kennwortkonfiguration** | - **Android 4.0 und höher:** Isoliert<br>- **Samsung Knox Standard 4.0 und höher:** Isoliert<br>- **Android Enterprise:** Isoliert  <br>  <br>- **iOS 8.0 oder höher:** Wiederhergestellt<br>- **macOS 10.11 und höher:** Wiederhergestellt  <br>  <br>- **Windows 8.1 und höher:** Wiederhergestellt<br>- **Windows Phone 8.1 oder höher:** Wiederhergestellt|
-| **Geräteverschlüsselung** | - **Android 4.0 und höher:** Isoliert<br>- **Samsung Knox Standard 4.0 und höher:** Isoliert<br>- **Android Enterprise:** Isoliert<br><br>- **iOS 8.0 oder höher:** Wiederhergestellt (durch Festlegen der PIN)<br>- **macOS 10.11 und höher:** Wiederhergestellt (durch Festlegen der PIN)<br><br>- **Windows 8.1 und höher:** Nicht verfügbar<br>- **Windows Phone 8.1 oder höher:** Wiederhergestellt |
-| **Per Jailbreak oder Rootzugriff manipuliertes Gerät** | - **Android 4.0 und höher:** Unter Quarantäne gestellt (keine Einstellung)<br>- **Samsung Knox Standard 4.0 und höher:** Unter Quarantäne gestellt (keine Einstellung)<br>- **Android Enterprise:** Unter Quarantäne gestellt (keine Einstellung)<br><br>- **iOS 8.0 oder höher:** Unter Quarantäne gestellt (keine Einstellung)<br>- **macOS 10.11 und höher:** Nicht verfügbar<br><br>- **Windows 8.1 und höher:** Nicht verfügbar<br>- **Windows Phone 8.1 oder höher:** Nicht verfügbar |
-| **E-Mail-Profil** | - **Android 4.0 und höher:** Nicht verfügbar<br>- **Samsung Knox Standard 4.0 und höher:** Nicht verfügbar<br>- **Android Enterprise:** Nicht verfügbar<br><br>- **iOS 8.0 oder höher:** Isoliert<br>- **macOS 10.11 und höher:** Isoliert<br><br>- **Windows 8.1 und höher:** Nicht verfügbar<br>- **Windows Phone 8.1 oder höher:** Nicht verfügbar |
-| **Minimale Version des Betriebssystems** | - **Android 4.0 und höher:** Isoliert<br>- **Samsung Knox Standard 4.0 und höher:** Isoliert<br>- **Android Enterprise:** Isoliert<br><br>- **iOS 8.0 oder höher:** Isoliert<br>- **macOS 10.11 und höher:** Isoliert<br><br>- **Windows 8.1 und höher:** Isoliert<br>- **Windows Phone 8.1 oder höher:** Isoliert |
-| **Maximale Version des Betriebssystems** | - **Android 4.0 und höher:** Isoliert<br>- **Samsung Knox Standard 4.0 und höher:** Isoliert<br>- **Android Enterprise:** Isoliert<br><br>- **iOS 8.0 oder höher:** Isoliert<br>- **macOS 10.11 und höher:** Isoliert<br><br>- **Windows 8.1 und höher:** Isoliert<br>- **Windows Phone 8.1 oder höher:** Isoliert |
-| **Windows-Integritätsnachweis** | - **Android 4.0 und höher:** Nicht verfügbar<br>- **Samsung Knox Standard 4.0 und höher:** Nicht verfügbar<br>- **Android Enterprise:** Nicht verfügbar<br><br>- **iOS 8.0 oder höher:** Nicht verfügbar<br>- **macOS 10.11 und höher:** Nicht verfügbar<br><br>- **Windows 10 und Windows 10 Mobile:** Isoliert<br>- **Windows 8.1 und höher:** Isoliert<br>- **Windows Phone 8.1 oder höher:** Nicht verfügbar |
+| **Geräteverschlüsselung** | - **Android 4.0 und höher:** Isoliert<br>- **Samsung Knox Standard 4.0 und höher:** Isoliert<br>- **Android Enterprise:** Isoliert<br><br>- **iOS 8.0 oder höher:** Wiederhergestellt (durch Festlegen der PIN)<br>- **macOS 10.11 und höher:** Wiederhergestellt (durch Festlegen der PIN)<br><br>- **Windows 8.1 und höher:** Nicht zutreffend<br>- **Windows Phone 8.1 oder höher:** Wiederhergestellt |
+| **Per Jailbreak oder Rootzugriff manipuliertes Gerät** | - **Android 4.0 und höher:** Unter Quarantäne gestellt (keine Einstellung)<br>- **Samsung Knox Standard 4.0 und höher:** Unter Quarantäne gestellt (keine Einstellung)<br>- **Android Enterprise:** Unter Quarantäne gestellt (keine Einstellung)<br><br>- **iOS 8.0 oder höher:** Unter Quarantäne gestellt (keine Einstellung)<br>- **macOS 10.11 und höher:** Nicht zutreffend<br><br>- **Windows 8.1 und höher:** Nicht zutreffend<br>- **Windows Phone 8.1 oder höher:** Nicht zutreffend |
+| **E-Mail-Profil** | - **Android 4.0 und höher:** Nicht zutreffend<br>- **Samsung Knox Standard 4.0 und höher:** Nicht zutreffend<br>- **Android Enterprise:** Nicht zutreffend<br><br>- **iOS 8.0 oder höher:** Isoliert<br>- **macOS 10.11 und höher:** Isoliert<br><br>- **Windows 8.1 und höher:** Nicht zutreffend<br>- **Windows Phone 8.1 oder höher:** Nicht zutreffend |
+| **Minimales Release des Betriebssystems** | - **Android 4.0 und höher:** Isoliert<br>- **Samsung Knox Standard 4.0 und höher:** Isoliert<br>- **Android Enterprise:** Isoliert<br><br>- **iOS 8.0 oder höher:** Isoliert<br>- **macOS 10.11 und höher:** Isoliert<br><br>- **Windows 8.1 und höher:** Isoliert<br>- **Windows Phone 8.1 oder höher:** Isoliert |
+| **Maximales Release des Betriebssystems** | - **Android 4.0 und höher:** Isoliert<br>- **Samsung Knox Standard 4.0 und höher:** Isoliert<br>- **Android Enterprise:** Isoliert<br><br>- **iOS 8.0 oder höher:** Isoliert<br>- **macOS 10.11 und höher:** Isoliert<br><br>- **Windows 8.1 und höher:** Isoliert<br>- **Windows Phone 8.1 oder höher:** Isoliert |
+| **Windows-Integritätsnachweis** | - **Android 4.0 und höher:** Nicht zutreffend<br>- **Samsung Knox Standard 4.0 und höher:** Nicht zutreffend<br>- **Android Enterprise:** Nicht zutreffend<br><br>- **iOS 8.0 oder höher:** Nicht zutreffend<br>- **macOS 10.11 und höher:** Nicht zutreffend<br><br>- **Windows 10 und Windows 10 Mobile:** Isoliert<br>- **Windows 8.1 und höher:** Isoliert<br>- **Windows Phone 8.1 oder höher:** Nicht zutreffend |
 
 ---------------------------
 
-**Bereinigt:** Das Betriebssystem des Geräts erzwingt die Konformität. Beispiel: Der Benutzer ist gezwungen, eine PIN festzulegen.
+**Bereinigt:** Das Betriebssystem des Geräts erzwingt die Konformität. Es ist z.B. erforderlich, dass der Benutzer eine PIN festlegt.
 
 **In Quarantäne:** Das Betriebssystem des Geräts erzwingt keine Konformität. Android- und Android Enterprise-Geräte zwingen den Benutzer z. B. nicht dazu, das Gerät zu verschlüsseln. Wenn das Gerät nicht kompatibel ist, erfolgen die folgenden Aktionen:
 

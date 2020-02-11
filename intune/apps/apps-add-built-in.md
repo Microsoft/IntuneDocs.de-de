@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a92699ccce4f0b2590e526b3442cd45bfda6407c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: e299601f69a7052ea52f9da2537306cb8556982b
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563597"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755373"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Hinzufügen von integrierten Apps zu Microsoft Intune
 
@@ -39,32 +39,43 @@ In früheren Versionen der Intune-Konsole stellte Intune mehrere standardmäßig
 So fügen Sie eine integrierte App Ihren verfügbaren Apps in Microsoft Intune hinzu
 1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 2. Wählen Sie **Apps** > **Alle Apps** > **Hinzufügen** aus.
-3. Wählen Sie im App-Bereich **Hinzufügen** in der Liste **App-Typ** die Option **Integrierte App** aus.
-4. Wählen Sie **App auswählen** aus.
-5. Wählen Sie im Bereich **Integrierte App** die Apps aus, die enthalten sein sollen.
-6. Klicken Sie anschließend im Bereich **App hinzufügen** auf **Hinzufügen**.
+3. Wählen Sie im Bereich **App-Typ auswählen** aus den verfügbaren **Store-App**-Typen die Option **Integrierte App** aus.
+4. Klicken Sie auf **Auswählen**. Die **App hinzufügen**-Schritte werden angezeigt.
+5. Klicken Sie auf der Seite **Integrierte Apps auswählen** auf **App auswählen**, um die einzuschließenden Apps auszuwählen.
+6. Wählen Sie die integrierten Apps aus, die Sie einschließen möchten. 
+7. Nachdem Sie die Apps ausgewählt haben, klicken Sie im Bereich **Integrierte Apps auswählen** auf **Auswählen**.
+8. Klicken Sie auf **Weiter**, um die Seite **Bereichsmarkierungen** anzuzeigen.
+9. Klicken Sie auf **Bereichstags auswählen**, um optional Bereichsmarkierungen für die App hinzuzufügen. Weitere Informationen dazu finden Sie unter [Verwenden der rollenbasierten Zugriffssteuerung und Bereichsmarkierungen für verteilte IT](~/fundamentals/scope-tags.md).
+10. Klicken Sie auf **Weiter**, um die Seite **Zuweisungen** anzuzeigen.
+11. Wählen Sie die Gruppenzuweisungen für die App aus. Weitere Informationen finden Sie unter [Hinzufügen von Gruppen zum Organisieren von Benutzern und Geräten](~/fundamentals/groups-add.md). 
+12. Klicken Sie auf **Weiter**, um die Seite **Überprüfen + erstellen** anzuzeigen. Überprüfen Sie die Werte und Einstellungen, die Sie für die App eingegeben haben.
+13. Klicken Sie abschließend auf **Erstellen**, um Intune die App hinzuzufügen.
 
+    Die von Ihnen erstellte App wird auf dem Blatt **Übersicht** angezeigt.
 
 ## <a name="configure-app-information"></a>Konfigurieren von App-Informationen
 
 Sie können die Informationen zu der integrierten App ändern. Diese Informationen helfen Ihnen, die App in Intune zu identifizieren, und Endbenutzer können sie leichter im Unternehmensportal finden.
 1. Wählen Sie **Apps** > **Alle Apps** und dann die integrierte App aus, die Sie ändern möchten.  
    Es wird ein Bereich für die integrierte App angezeigt.
-2. Wählen Sie **Eigenschaften** > **Konfigurieren** aus.
+2. Wählen Sie **Eigenschaften** aus.
+3. Wählen Sie neben **App-Information** die Option **Bearbeiten** aus.
 4. Im Bereich **App-Informationen** können Sie die folgenden Informationen ändern:
-    - **Name**: Geben Sie den Namen der integrierten App ein, wie er im Unternehmensportal angezeigt wird. Stellen Sie sicher, dass alle Namen eindeutig sind. Wenn ein App-Name zweimal vergeben wird, wird den Benutzern im Unternehmensportal nur eine der Apps angezeigt.
-    - **Beschreibung**: Geben Sie eine Beschreibung der App ein. 
+    - **Name:** Geben Sie den Namen der integrierten App ein, wie er im Unternehmensportal angezeigt wird. Stellen Sie sicher, dass alle Namen eindeutig sind. Wenn ein App-Name zweimal vergeben wird, wird den Benutzern im Unternehmensportal nur eine der Apps angezeigt.
+    - **Beschreibung:** Geben Sie eine Beschreibung der App ein. 
     - **Herausgeber**: Geben Sie den Namen des Herausgebers der App ein.
     - **Kategorie**: Wählen Sie optional mindestens eine der Kategorien für integrierte Apps aus. Die Einstellung dieser Option erleichtert Benutzern, die App im Unternehmensportal zu finden.
-    - **Diese App als ausgewählte App im Unternehmensportal anzeigen:** Präsentieren Sie die App herausgehoben auf der Hauptseite des Unternehmensportals, wenn die Benutzer nach Apps suchen.
+    - **Diese App als ausgewählte App im Unternehmensportal anzeigen**: Präsentieren Sie die App herausgehoben auf der Hauptseite des Unternehmensportals, wenn die Benutzer nach Apps suchen.
     - **Informations-URL**: Geben Sie optional eine URL zu einer Website ein, die Informationen über diese App enthält. Diese URL wird Benutzern im Unternehmensportal angezeigt.
     - **URL zu den Datenschutzbestimmungen**: Geben Sie optional eine URL zu einer Website ein, die Datenschutzinformationen für diese App enthält. Diese URL wird Benutzern im Unternehmensportal angezeigt.
     - **Entwickler**: Geben Sie optional den Namen des App-Entwicklers ein.
     - **Besitzer**: Geben Sie optional einen Namen für den Besitzer dieser App ein, (z. B. *Personalabteilung*).
     - **Anmerkungen**: Geben Sie Hinweise zu dieser App ein.
     - **Symbol hochladen:** Laden Sie ein Symbol hoch, das mit der App angezeigt wird, wenn Benutzer das Unternehmensportal durchsuchen.
-4. Wählen Sie **OK** aus.
-5. Wählen Sie im Bereich **Eigenschaften** die Option **Speichern**.
+5. Klicken Sie auf **Überprüfen + speichern**, um die Seite **Überprüfen + erstellen** anzuzeigen. Überprüfen Sie die Werte und Einstellungen, die Sie für die App eingegeben haben.
+13. Klicken Sie abschließend auf **Speichern**, um die App in Intune zu aktualisieren.
+
+    Die von Ihnen erstellte App wird auf dem Blatt **Übersicht** angezeigt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
