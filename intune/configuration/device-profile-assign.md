@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 252af3c7447b59ee6aaeb4cb05bed0579ae8af4c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 5b61c333f41054194b44c7517e508fe1ef6d28d4
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206702"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812372"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune
 
@@ -31,7 +31,11 @@ Wenn Sie ein Profil erstellen, enthält es alle Einstellungen, die Sie vorgenomm
 In diesem Artikel wird erklärt, wie Sie ein Profil zuweisen können, und Sie erhalten Informationen zur Verwendung von Bereichsmarkierungen für Ihre Profile.
 
 > [!NOTE]  
-> Wenn ein Profil entfernt oder die Gerätezuweisung aufgehoben wird, behält die Einstellung möglicherweise den vorhandenen Wert bei. Die Einstellung wird nicht auf einen Standardwert zurückgesetzt. Wenn Sie die Einstellung auf einen anderen Wert ändern möchten, erstellen Sie ein neues Profil, und weisen Sie dieses zu.
+> Wenn ein Profil entfernt wird oder nicht mehr einem Gerät zugewiesen ist, kann dies je nach den Einstellungen im Profil verschiedene Folgen haben. Die Einstellungen basieren auf CSPs, und jeder CSP kann mit der Entfernung des Profils anders umgehen. Eine Einstellung könnte z. B. den vorhandenen Wert beibehalten und nicht auf einen Standardwert zurücksetzen. Das Verhalten wird von jedem CSP im Betriebssystem gesteuert. Eine Liste der Windows-CSPs finden Sie in der [Referenz des Konfigurationsdienstanbieters (Configuration Service Provider, CSP)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
+>
+> Wenn Sie den Wert einer Einstellung ändern möchten, erstellen Sie ein neues Profil, konfigurieren Sie die Einstellung **Nicht konfiguriert**, und weisen Sie das Profil zu. Nach Anwendung auf das Gerät sollten Benutzer die Einstellung auf ihren bevorzugten Wert ändern können.
+>
+> Zum Konfigurieren dieser Einstellungen empfehlen wir die Bereitstellung für eine Pilotgruppe. Weitere Hinweise zum Intune-Rollout finden Sie unter [Entwickeln eines Rolloutplans](../fundamentals/planning-guide-rollout-plan.md).
 
 ## <a name="before-you-begin"></a>Vorbereitung
 

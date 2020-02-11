@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d9fbbbb80cf25861b2e0afbf3d01cfca3ece5fd
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 7cda7404d24ccb9bb1c42d6bb66d77f29ac925ac
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991766"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812459"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Entfernen von Geräten durch Zurücksetzen, Abkoppeln oder manuelles Aufheben der Registrierung des Geräts
 
@@ -88,7 +88,7 @@ In den folgenden Tabellen wird beschrieben, welche Daten entfernt werden und wel
 
 |Datentyp|iOS|
 |-------------|-------|
-|Von Intune installierte Unternehmens-Apps und zugehörige Daten|**Über das Unternehmensportal installierte Apps:** Für Apps, die am Verwaltungsprofil angeheftet sind, werden alle App-Daten und Apps entfernt. Zu diesen Apps gehören diejenigen, die ursprünglich aus dem App Store installiert und später als Unternehmens-Apps verwaltet werden. <br /><br /> **Microsoft-Apps mit mobiler App-Verwaltung, die aus dem App Store installiert wurden**: Bei Apps, die nicht vom Unternehmensportal verwaltet werden, werden die Daten der Unternehmensapps, die durch die Mobile Application Management (MAM)-Verschlüsselung innerhalb des lokalen Speichers der App geschützt sind, entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App geschützt sind, bleiben verschlüsselt und unbrauchbar, werden aber nicht entfernt. Persönliche App-Daten und die Apps selbst werden nicht entfernt.|
+|Von Intune installierte Unternehmens-Apps und zugehörige Daten|**Über das Unternehmensportal installierte Apps:** Für Apps, die am Verwaltungsprofil angeheftet sind, werden alle App-Daten und Apps entfernt. Hierzu zählen auch Apps, die ursprünglich aus dem App Store installiert und später als Unternehmens-Apps verwaltet wurden, es sei denn, die App ist so konfiguriert, dass sie bei der Geräteentfernung nicht deinstalliert wird. <br /><br /> **Microsoft-Apps mit mobiler App-Verwaltung, die aus dem App Store installiert wurden**: Bei Apps, die nicht vom Unternehmensportal verwaltet werden, werden die Daten der Unternehmensapps, die durch die Mobile Application Management (MAM)-Verschlüsselung innerhalb des lokalen Speichers der App geschützt sind, entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App geschützt sind, bleiben verschlüsselt und unbrauchbar, werden aber nicht entfernt. Persönliche App-Daten und die Apps selbst werden nicht entfernt.|
 |Einstellung|Von der Intune-Richtlinie festgelegte Konfigurationen werden nicht mehr erzwungen. Benutzer können die Einstellungen ändern.|
 |Einstellungen für WLAN- und VPN-Profil|Entfernt.|
 |Zertifikatprofil-Einstellungen|Zertifikate werden entfernt und gesperrt.|

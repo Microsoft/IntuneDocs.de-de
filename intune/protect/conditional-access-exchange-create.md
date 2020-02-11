@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 01/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 644297777e8a103d6ffdc5f025ebf8f29591fda8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d04897d38c1b46f27fe86e72ecfa6856aa9eece2
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188472"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755652"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Erstellen einer Richtlinie für bedingten Zugriff auf Exchange lokal und das ältere Exchange Online Dedicated
 
@@ -84,40 +84,57 @@ Bevor Sie das folgende Verfahren zum Einrichten der Zugriffssteuerung für Excha
 
 3. Klicken Sie im Bereich **Zugriff auf Exchange lokal** auf die Option **Ja**, um *die Zugriffssteuerung von Exchange lokal zu aktivieren*.
 
+   > [!div class="mx-imgBorder"]
+   > ![Beispielscreenshot des Exchange-Bildschirms für lokalen Zugriff](./media/conditional-access-exchange-create/exchange-on-premises-access.png)
+
 4. Klicken Sie unter **Zuweisung** auf **Wählen Sie die Gruppen aus, die eingeschlossen werden sollen**, und wählen Sie mindestens eine Gruppe aus, um den Zugriff zu konfigurieren.
 
    Die Richtlinie für bedingten Zugriff für Exchange lokal wird auf die Mitglieder der von Ihnen ausgewählten Gruppen angewendet. Benutzer, die diese Richtlinie erhalten, müssen ihre Geräte bei Intune registrieren und die Anforderungen der Konformitätsprofile erfüllen, bevor sie auf Exchange lokal zugreifen können.
 
-5. Um Gruppen auszuschließen, klicken Sie auf **Wählen Sie die Gruppen aus, die ausgeschlossen werden sollen**, und wählen Sie mindestens eine Gruppe aus, die für den Zugriff auf Exchange lokal von den Anforderungen zum Registrieren von Geräten und Einhalten der Konformitätsprofile ausgenommen werden sollen. 
+   > [!div class="mx-imgBorder"]
+   > ![Auswählen der Gruppen, die eingeschlossen werden sollen](./media/conditional-access-exchange-create/select-groups.png)
 
-6. Als Nächstes konfigurieren Sie Einstellungen für den Intune-Connector für Exchange lokal.  Klicken Sie im Fenster *Zugriff auf Exchange lokal* unter **Setup** auf **Lokaler Connector für Exchange ActiveSync**, und wählen Sie den Connector für die Exchange-Organisation aus, den Sie konfigurieren möchten.
+5. Um Gruppen auszuschließen, klicken Sie auf **Wählen Sie die Gruppen aus, die ausgeschlossen werden sollen**, und wählen Sie mindestens eine Gruppe aus, die für den Zugriff auf Exchange lokal von den Anforderungen zum Registrieren von Geräten und Einhalten der Konformitätsprofile ausgenommen werden sollen.
 
-7. Klicken Sie unter **Einstellungen** auf **Benutzerbenachrichtigungen**, um die Standard-E-Mail-Nachricht zu ändern, die an Benutzer gesendet wird, wenn diese auf Exchange lokal zugreifen möchten, ihre Geräte aber nicht konform sind. Die Nachrichtenvorlage verwendet Markupsprache.  Sie sehen während der Eingabe auch eine Vorschau der Nachricht.
+   Wählen Sie **Speichern** aus, um die Konfiguration zu speichern, und kehren Sie zum Bereich **Exchange-Zugriff** zurück.
+
+6. Als Nächstes konfigurieren Sie Einstellungen für den Intune-Connector für Exchange lokal. Wählen Sie in der Konsole **Mandantenverwaltung** > **Exchange-Zugriff**> **Lokaler Connector für Exchange ActiveSync** und dann den Connector für die Exchange-Organisation aus, den Sie konfigurieren möchten.
+
+7. Wählen Sie für **Benutzerbenachrichtigungen** die Option **Bearbeiten** aus, um den Workflow **Organisation bearbeiten** zu öffnen, in dem Sie die *Benutzerbenachrichtigung*-Meldung ändern können.
+
+   > [!div class="mx-imgBorder"]
+   > ![Beispielscreenshot des Workflows „Organisation bearbeiten“ für Benachrichtigungen](./media/conditional-access-exchange-create/edit-organization-user-notification.png)
+
+   Ändern Sie die Standard-E-Mail-Nachricht, die an Benutzer gesendet wird, wenn diese lokal auf Exchange zugreifen möchten, ihre Geräte aber nicht konform sind. Die Nachrichtenvorlage verwendet Markupsprache. Sie sehen während der Eingabe auch eine Vorschau der Nachricht.
+
+   Wählen Sie **Überprüfen und speichern** und dann **Speichern** aus, um Ihre Änderungen zu speichern und die Konfiguration des lokalen Zugriffs auf Exchange abzuschließen.
+
    > [!TIP]
    > Weitere Informationen zur Markupsprache finden Sie in diesem Wikipedia-[Artikel](https://en.wikipedia.org/wiki/Markup_language).
- 
-   Klicken Sie auf **OK**, um Ihre Änderungen zu speichern und die Konfiguration des Zugriffs auf Exchange lokal abzuschließen.
 
-8. Wählen Sie als Nächstes **Erweiterte Einstellungen für den Zugriff auf Exchange Active Sync** aus, um den Bereich *Erweiterte Einstellungen für den Zugriff auf Exchange Active Sync* zu öffnen, in dem Sie Regeln für den Gerätezugriff konfigurieren:  
+8. Wählen Sie als Nächstes **Erweiterte Einstellungen für den Zugriff auf Exchange Active Sync** aus, um den Workflow *Erweiterte Einstellungen für den Zugriff auf Exchange Active Sync* zu öffnen, in dem Sie Regeln für den Gerätezugriff konfigurieren.
+
+   > [!div class="mx-imgBorder"]
+   > ![Beispielscreenshot des Workflows „Organisation bearbeiten“ für erweiterte Einstellungen](./media/conditional-access-exchange-create/edit-organization-advanced-settings.png)
 
    - Legen Sie unter **Zugriff nicht verwalteter Geräte** die globale Standardregel für den Zugriff von Geräten fest, für die die Regeln für bedingten Zugriff oder andere Regeln nicht gelten:
 
      - **Zugriff zulassen**: Alle Geräte können sofort auf Exchange lokal zugreifen. Geräte von Benutzern in Gruppen, die Sie im vorherigen Verfahren als „eingeschlossen“ konfiguriert haben, werden blockiert, wenn sie später als „nicht konform mit den Konformitätsrichtlinien“ oder „nicht in Intune registriert“ ausgewertet werden.
 
-     - **Zugriff blockieren** und **Quarantäne**: Der Zugriff auf Exchange lokal wird sofort für alle Geräte blockiert. Geräte von Benutzern in Gruppen, die Sie im vorherigen Verfahren als „eingeschlossen“ konfiguriert haben, erhalten Zugriff, nachdem die Geräte in Intune registriert und als konform ausgewertet wurden. 
+     - **Zugriff blockieren** und **Quarantäne**: Der Zugriff auf Exchange lokal wird sofort für alle Geräte blockiert. Geräte von Benutzern in Gruppen, die Sie im vorherigen Verfahren als „eingeschlossen“ konfiguriert haben, erhalten Zugriff, nachdem die Geräte in Intune registriert und als konform ausgewertet wurden.
 
        Android-Geräte *ohne* Samsung-Knox-Standard unterstützen diese Einstellung nicht und werden immer blockiert.
 
-   -  Klicken Sie bei **Geräteplattformausnahmen** auf **Hinzufügen**, und geben Sie die für Ihre Umgebung erforderlichen Plattforminformationen an. 
-   
+   - Wählen Sie bei **Geräteplattformausnahmen** die Option **Hinzufügen** aus, und geben Sie die für Ihre Umgebung erforderlichen Informationen an.
+
       Wenn die Einstellung **Zugriff nicht verwalteter Geräte** auf **blockiert** festgelegt ist, erhalten Geräte, die registriert und konform sind, auch dann Zugriff, wenn eine Plattformausnahme diesen blockieren würde.  
-   
-   Klicken Sie auf **OK**, um Ihre Änderungen zu speichern.
 
-9. Klicken Sie auf **Speichern**, um die Richtlinie für bedingten Zugriff auf Exchange zu speichern.
+9. Klicken Sie auf **OK**, um Ihre Änderungen zu speichern.
 
-Als Nächstes erstellen Sie eine Konformitätsrichtlinie und weisen diese den Benutzern in Intune zu, um ihre mobilen Geräte auszuwerten. Siehe [Erste Schritte mit der Gerätekonformität](device-compliance-get-started.md).
+10. Wählen Sie **Überprüfen und speichern** und dann **Speichern** aus, um die Richtlinie für bedingten Zugriff auf Exchange zu speichern.
 
 ## <a name="next-steps"></a>Nächste Schritte
+
+Als Nächstes erstellen Sie eine Konformitätsrichtlinie und weisen diese den Benutzern in Intune zu, um ihre mobilen Geräte auszuwerten. Siehe [Erste Schritte mit der Gerätekonformität](device-compliance-get-started.md).
 
 [Problembehandlung für den Intune-Connector für Exchange lokal in Microsoft Intune](https://support.microsoft.com/help/4471887)
