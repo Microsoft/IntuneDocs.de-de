@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d77a275e3a48845f56b22ecc21b75f664ea619c5
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: 0872eef38e3ea5a70ebb64d3ae3c62069045fa97
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691744"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754621"
 ---
 # <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>Einrichten der iOS- und iPadOS-Benutzerregistrierung (Vorschau)
 
@@ -54,23 +54,14 @@ Ein Registrierungsprofil definiert die Einstellungen, die bei der Registrierung 
 
 3. Wählen Sie **Weiter** aus.
 
-4. Auf der Seite **Einstellungen** können Sie Benutzern bei der Registrierung die Wahl lassen. Sie können auch eine Standardeinstellung festlegen.
+4. Wählen Sie auf der Seite **Einstellungen** eine der folgenden Optionen für **Registrierungstyp** aus:
 
     ![Seite „Einstellungen“](./media/ios-user-enrollment/settings-page.png)
 
-    - Wenn Sie möchten, dass alle Benutzer in diesem Profil die Benutzerregistrierung verwenden, gehen Sie wie folgt vor:
-        1. Legen Sie **Benutzer muss Gerätetyp auswählen** auf **Nicht konfiguriert** fest.
-        2. Wählen Sie für **Standardregistrierungstyp**, die Option **Benutzerregistrierung** aus.
-    - Wenn Sie möchten, dass alle Benutzer in diesem Profil die Geräteregistrierung verwenden, gehen Sie wie folgt vor:
-        1. Legen Sie **Benutzer muss Gerätetyp auswählen** auf **Nicht konfiguriert** fest.
-        2. Wählen Sie für **Standardregistrierungstyp**, die Option **Geräteregistrierung** aus.
-    - Wenn Sie allen Benutzern in dieser Gruppe die Wahl des Registrierungstyps überlassen möchten, wählen Sie **Erforderlich** für **Benutzer muss Gerätetyp auswählen** aus. Wenn Benutzer ihre Geräte registrieren, haben sie die Möglichkeit, zwischen **Ich besitze dieses Gerät** und **(Unternehmen) besitzt dieses Gerät** zu wählen. Bei Wahl der ersten Option wird das Gerät über die Benutzerregistrierung registriert. Bei Wahl der zweiten Option wird das Gerät über die Geräteregistrierung registriert. Wenn der Benutzer **Ich besitze dieses Gerät** wählt, erhält er eine weitere Option, um das gesamte Gerät oder nur sichere arbeitsbezogene Apps und Daten abzusichern. Die Wahl des Endbenutzers, ob er das Gerät besitzt, bestimmt nur, welcher Registrierungstyp auf seinem Gerät implementiert wird. Diese Benutzerauswahl wird in Intune nicht im Attribut „Gerätebesitz“ berücksichtigt. Weitere Informationen zur Benutzererfahrung finden Sie unter [Einrichten des iOS-Gerätezugriffs auf Unternehmensressourcen](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).
+    - **Geräteregistrierung**: Alle Benutzer in diesem Profil verwenden die Geräteregistrierung.
+    - **Benutzerregistrierung**: Alle Benutzer in diesem Profil verwenden die Benutzerregistrierung.
+    - **Basierend auf Benutzerauswahl festlegen**: Alle Benutzer in dieser Gruppe können wählen, welchen Registrierungstyp sie verwenden möchten. Wenn Benutzer ihre Geräte registrieren, haben sie die Möglichkeit, zwischen **Ich besitze dieses Gerät** und **(Unternehmen) besitzt dieses Gerät** zu wählen. Bei Wahl der zweiten Option wird das Gerät über die Geräteregistrierung registriert. Wenn der Benutzer **Ich besitze dieses Gerät** wählt, erhält er eine weitere Option, um das gesamte Gerät oder nur sichere arbeitsbezogene Apps und Daten abzusichern. Die Wahl des Endbenutzers, ob er das Gerät besitzt, bestimmt, welcher Registrierungstyp auf seinem Gerät implementiert wird. Diese Benutzerauswahl wird in Intune auch im Attribut „Gerätebesitz“ berücksichtigt. Weitere Informationen zur Benutzererfahrung finden Sie unter [Einrichten des iOS-Gerätezugriffs auf Unternehmensressourcen](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).
     
-    > [!NOTE]
-    > Der folgende Hinweis ist ungenau und wird von der Benutzeroberfläche entfernt.
-    > „Damit der bedingte Zugriff auf Geräten funktioniert, die für die Benutzerregistrierung vorgesehen sind, müssen Sie die App Azure Authenticator als erforderliche App per Push an diese Benutzergruppe übertragen, um einmaliges Anmelden und Workplace Join zu aktivieren.”
-    > Als Administrator müssen Sie keine Maßnahmen ergreifen, um die Authenticator-App per Push an Ihre Benutzer zu verteilen. Ihre Benutzer werden im Unternehmensportal angewiesen, die Authenticator-App zu installieren, um die Benutzerregistrierung abzuschließen und sicherzustellen, dass diese Szenarien ordnungsgemäß funktionieren.
-
 5. Wählen Sie **Weiter** aus.
 
 6. Wählen Sie auf der Seite **Zuweisungen** die Benutzergruppen mit den Benutzern aus, denen Sie dieses Profil zuweisen möchten. Sie können das Profil allen Benutzern oder bestimmten Gruppen zuweisen. Alle Benutzer in den ausgewählten Gruppen verwenden den oben gewählten Registrierungstyp. Gerätegruppen werden für Szenarien zur Benutzerregistrierung nicht unterstützt, da die Funktion auf Benutzeridentitäten statt auf Geräten basiert. Sie können das Profil allen Benutzern oder bestimmten Gruppen zuweisen.

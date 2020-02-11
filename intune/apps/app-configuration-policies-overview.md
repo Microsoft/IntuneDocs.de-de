@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 800193921e608a0d0c29dad5cf85b8781e715441
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 8c9dc1d95806bcddf423bb4d92dbdf4961c15809
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885810"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812478"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>App-Konfigurationsrichtlinien für Microsoft Intune
 
@@ -95,8 +95,8 @@ Sie können die App-Konfigurationsrichtlinie mithilfe der folgenden drei Methode
 
 Auf nicht verwalteten Geräten können Sie mit dem **Intune-Diagnoseprotokoll** die iOS-Konfiguration in Bezug auf die Konfiguration verwalteter Apps überprüfen. Zusätzlich zu den unten angegebenen Schritten können Sie über Microsoft Edge auf Protokolle für verwaltete Apps zugreifen. Weitere Informationen finden Sie unter [Verwenden von Microsoft Edge unter iOS für den Zugriff auf Protokolle für verwaltete Apps](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs).
 
-1. Falls noch nicht auf dem Gerät installiert, laden Sie den **Intune Managed Browser** aus dem App Store herunter und installieren ihn. Weitere Informationen finden Sie unter [Durch Microsoft Intune geschützte Apps](apps-supported-intune-apps.md).
-2. Starten Sie den **Intune Managed Browser**, und wählen Sie auf der Navigationsleiste **Info** > **Intune-Hilfe** aus.
+1. Falls noch nicht auf dem Gerät installiert, laden Sie den **Microsoft Edge**-Browser aus dem App Store herunter und installieren ihn. Weitere Informationen finden Sie unter [Durch Microsoft Intune geschützte Apps](apps-supported-intune-apps.md).
+2. Starten Sie **Microsoft Edge**, und wählen Sie auf der Navigationsleiste **Info** > **Intune-Hilfe** aus.
 3. Klicken Sie auf **Erste Schritte**.
 4. Klicken Sie auf **Protokolle freigeben**.
 5. Verwenden Sie die E-Mail-App Ihrer Wahl, um das Protokoll an sich selbst zu senden, damit Sie es auf Ihrem PC einsehen können. 
@@ -139,8 +139,8 @@ Ihre Anwendungskonfigurationsdetails sollten mit den für Ihren Mandanten konfig
 
 Auf verwalteten Geräten können Sie mit dem **Intune-Diagnoseprotokoll** die iOS-Konfiguration in Bezug auf die Konfiguration verwalteter Apps überprüfen.
 
-1. Falls noch nicht auf dem Gerät installiert, laden Sie den **Intune Managed Browser** aus dem App Store herunter und installieren ihn. Weitere Informationen finden Sie unter [Durch Microsoft Intune geschützte Apps](apps-supported-intune-apps.md).
-2. Starten Sie den **Intune Managed Browser**, und wählen Sie auf der Navigationsleiste **Info** > **Intune-Hilfe** aus.
+1. Falls noch nicht auf dem Gerät installiert, laden Sie den **Microsoft Edge**-Browser aus dem App Store herunter und installieren ihn. Weitere Informationen finden Sie unter [Durch Microsoft Intune geschützte Apps](apps-supported-intune-apps.md).
+2. Starten Sie **Microsoft Edge**, und wählen Sie auf der Navigationsleiste **Info** > **Intune-Hilfe** aus.
 3. Klicken Sie auf **Erste Schritte**.
 4. Klicken Sie auf **Protokolle freigeben**.
 5. Verwenden Sie die E-Mail-App Ihrer Wahl, um das Protokoll an sich selbst zu senden, damit Sie es auf Ihrem PC einsehen können. 

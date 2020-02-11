@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01ca17c9f8e3fd86e12f225621e6dc0e07bb4acb
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 3cf4c2abb5506f297af8a4e77145abea5360381b
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564083"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755356"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Zuweisen von Office 365 zu macOS-Geräten mit Microsoft Intune
 
@@ -38,47 +38,52 @@ Bevor Sie damit beginnen, macOS-Geräten Office 365 hinzuzufügen, sollten Sie s
 - Intune unterstützt nur das Hinzufügen von Office-Apps, die in der Office 2016 für Mac-Suite enthalten sind.
 - Wenn Office-Apps geöffnet sind, wenn Intune die App-Suite installiert, verlieren Benutzer möglicherweise Daten aus nicht gespeicherten Dateien.
 
-## <a name="create-and-configure-the-app-suite"></a>Erstellen und Konfigurieren der App-Suite
+## <a name="select-the-office-365-suite-app-type"></a>Auswählen des App-Typs Office 365 Suite
 
-Fügen Sie Office 365 aus dem Bereich **Apps** hinzu.
 1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 2. Wählen Sie **Apps** > **Alle Apps** > **Hinzufügen** aus.
-3. Wählen Sie aus der Liste **App-Typ** in der Gruppe **Office 365 Suite** **macOS** aus.
-4. Klicken Sie auf **Informationen zur App Suite**, um Informationen zur App-Suite abzurufen.  
-    Diese Informationen helfen Ihnen dabei, die App-Suite in Intune zu identifizieren. Außerdem können Benutzer sie im Unternehmensportal leichter finden.
-5. Geben Sie die folgenden Informationen ein:
+3. Wählen Sie **macOS** im Abschnitt **Office 365 Suite** des Bereichs **App-Typ auswählen** aus.
+4. Klicken Sie auf **Auswählen**. Die **Office 365 Suite hinzufügen**-Schritte werden angezeigt.
+
+## <a name="step-1---app-suite-information"></a>Schritt 1: Informationen zur App-Suite
+
+In diesem Schritt stellen Sie Informationen über die App-Suite bereit. Diese Informationen helfen Ihnen dabei, die App-Suite in Intune zu identifizieren. Außerdem können Benutzer sie im Unternehmensportal leichter finden.
+
+1. Auf der Seite **Informationen zur App-Suite** können Sie die Standardwerte bestätigen oder ändern:
     - **Name der Suite**: Geben Sie den Namen der App-Suite so ein, wie er im Unternehmensportal angezeigt wird. Stellen Sie sicher, dass alle Suitenamen eindeutig sind. Wenn ein Sammlungsname zweimal vergeben wird, wird den Benutzern im Unternehmensportal nur eine der Apps angezeigt.
-    - **Beschreibung der Suite**: Geben Sie eine Beschreibung der App-Suite ein.
+    - **Beschreibung der Suite**: Geben Sie eine Beschreibung der App-Suite ein. Sie können die Apps auflisten, die Sie einschließen möchten.
     - **Herausgeber**: Als Herausgeber wird Microsoft angezeigt.
-    - **Kategorie**: Wählen Sie eine der integrierten oder von Ihnen erstellten App-Kategorien aus. Diese Einstellung erleichtert den Benutzern die Suche nach der App-Suite im Unternehmensportal.
+    - **Kategorie**: Wählen Sie optional eine oder mehrere der integrierten oder von Ihnen erstellten App-Kategorien aus. Diese Einstellung erleichtert den Benutzern die Suche nach der App-Suite im Unternehmensportal.
     - **Diese App als ausgewählte App im Unternehmensportal anzeigen**: Wählen Sie diese Option, um die App-Suite auf der Hauptseite des Unternehmensportals hervorgehoben anzuzeigen, wenn die Benutzer nach Apps suchen.
     - **Informations-URL**: Geben Sie optional eine URL zu einer Website ein, die Informationen über diese App enthält. Diese URL wird Benutzern im Unternehmensportal angezeigt.
     - **URL zu den Datenschutzbestimmungen**: Geben Sie optional eine URL zu einer Website ein, die Datenschutzinformationen für diese App enthält. Diese URL wird Benutzern im Unternehmensportal angezeigt.
     - **Entwickler**: Als Entwickler wird Microsoft angezeigt.
     - **Besitzer**: Als Besitzer wird Microsoft angezeigt.
-    - **Anmerkungen**: Geben Sie optional Hinweise zu dieser App ein.
+    - **Anmerkungen**: Geben Sie Hinweise zu dieser App ein.
     - **Logo**: Das Office 365-Logo wird gemeinsam mit der App angezeigt, wenn Benutzer das Unternehmensportal durchsuchen.
-6. Wählen Sie **OK** aus.
-7. Klicken Sie anschließend im Bereich **App hinzufügen** auf **Hinzufügen**.  
-    Die Suite wird in der Liste der Apps als einzelnen Eintrag angezeigt.
+2. Klicken Sie auf **Weiter**, um die Seite **Bereichsmarkierungen** anzuzeigen.
 
-## <a name="configure-app-assignments"></a>Konfigurieren von App-Zuweisungen
+## <a name="step-2---select-scope-tags-optional"></a>Schritt 2: Auswählen von Bereichsmarkierungen (optional)
+Sie können Bereichsmarkierungen verwenden, um zu bestimmen, wer Client-App-Informationen in Intune anzeigen kann. Ausführliche Informationen zu Bereichsmarkierungen finden Sie unter [Use role-based access control and scope tags for distributed IT](../fundamentals/scope-tags.md) (Verwenden der rollenbasierten Zugriffssteuerung und von Bereichsmarkierungen für verteilte IT).
 
-In diesem Schritt konfigurieren Sie Zuweisungen für die App-Suite. 
+1. Klicken Sie auf **Bereichstags auswählen**, um optional Bereichsmarkierungen für die App-Suite hinzuzufügen. 
+2. Klicken Sie auf **Weiter**, um die Seite **Zuweisungen** anzuzeigen.
 
-1. Wählen Sie aus der Liste mit Apps die App-Suite **Office 365** aus, um den Übersichtsbereich **Office 365** anzuzeigen.
-2. Wählen Sie im Bereich **Office 365** **Assignments** aus.
-3. Wählen Sie **Gruppe hinzufügen** aus, um eine Gruppe hinzuzufügen, die die App-Suite verwenden wird.  
-    Der Bereich **Gruppe hinzufügen** wird angezeigt.
-4. Legen Sie den **Zuweisungstyp** auf **Erforderlich** oder **Verfügbar** fest.
-5. Ordnen Sie die Suite den von Ihnen ausgewählten Gruppen zu. Weitere Informationen finden Sie unter [Zuweisen von Apps zu Gruppen mit Microsoft Intune](apps-deploy.md).
+## <a name="step-3---assignments"></a>Schritt 3: Zuweisungen
+
+1. Wählen Sie die Gruppenzuweisungen **Erforderlich** oder **Für registrierte Geräte verfügbar** für die App-Suite aus. Weitere Informationen finden Sie unter [Hinzufügen von Gruppen zum Organisieren von Benutzern und Geräten](~/fundamentals/groups-add.md) und [Zuweisen von Apps zu Gruppen mit Microsoft Intune](apps-deploy.md).
 
     >[!Note]
-    > Sie können die Office 365-App nicht über Intune deinstallieren.
+    > Sie können die Office 365 für macOS-App-Suite nicht über Intune deinstallieren.
 
-5. Wählen Sie im Bereich **Zuweisen** **OK** aus.
-6. Wählen Sie im Bereich **Gruppe hinzufügen** die Option **OK** aus.
-7. Wählen Sie **Speichern** aus, um Ihre Zuweisungen zu committen.
+2. Klicken Sie auf **Weiter**, um die Seite **Überprüfen + erstellen** anzuzeigen. 
+
+## <a name="step-4---review--create"></a>Schritt 4: Überprüfen und Erstellen
+
+1. Überprüfen Sie die Werte und Einstellungen, die Sie für die App-Suite eingegeben haben.
+2. Klicken Sie abschließend auf **Erstellen**, um Intune die App hinzuzufügen.
+
+    Das **Übersicht**-Blatt der Office 365 Windows 10-App-Suite, die Sie erstellt haben, wird angezeigt. Die Suite wird in der Liste der Apps als einzelnen Eintrag angezeigt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

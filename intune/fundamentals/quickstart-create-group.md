@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 01/17/2020
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d73cc367e6c3308b34c2d2dd14c9fed94d80ba74
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d9b06043dd10f92b6176d4b2e9f90f1b7c87aac9
+ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72813409"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540950"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>Schnellstart: Erstellen einer Gruppe zum Verwalten von Benutzern
 
@@ -36,22 +36,23 @@ Wenn Sie über kein Intune-Abonnement verfügen, [registrieren Sie sich für ein
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
+- Microsoft Intune-Abonnement: [Registrieren Sie sich für eine kostenlose Testversion](../fundamentals/free-trial-sign-up.md).
 - Um dieser Schnellstartanleitung zu folgen, müssen Sie [einen Benutzer erstellen](quickstart-create-user.md).
 
-## <a name="sign-in-to-intune"></a>Anmelden bei Intune
+## <a name="sign-in-to-intune-in-the-microsoft-endpoint-manager"></a>Anmelden bei Intune im Microsoft Endpoint Manager
 
-Melden Sie sich beim [Intune](https://aka.ms/intuneportal)-Portal als [globaler Administrator oder Intune-Dienstadministrator](users-add.md#types-of-administrators) an. Wenn Sie ein Testabonnement für Intune erstellt haben, besitzt das Konto, mit dem Sie das Abonnement erstellt haben, die Rolle des globalen Administrators.
+Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) als [globaler Administrator oder Intune-Dienstadministrator](users-add.md#types-of-administrators) an. Wenn Sie ein Testabonnement für Intune erstellt haben, besitzt das Konto, mit dem Sie das Abonnement erstellt haben, die Rolle des globalen Administrators.
 
 ## <a name="create-a-group"></a>Erstellen einer Gruppe
 
 Mit den folgenden Schritten erstellen Sie eine Gruppe, die im späteren Verlauf dieser Schnellstartreihe verwendet wird. So erstellen Sie eine Gruppe:
 
-1. Sobald Sie den Bereich **Microsoft Intune** geöffnet haben, wählen Sie **Gruppen** > **Neue Gruppe** aus.
+1. Sobald Sie den **Microsoft Endpoint Manager** geöffnet haben, wählen Sie die Option **Gruppen** > **Neue Gruppe** aus.
 2. Wählen Sie im Dropdownfeld **Gruppentyp** die Option **Sicherheit** aus.
 3. Geben Sie im Feld **Gruppenname** den Namen für die neue Gruppe (z.B. **Contoso Testers**) ein.
-4. Fügen Sie eine **Beschreibung** für die Gruppe hinzu.
+4. Fügen Sie eine **Gruppenbeschreibung** für die Gruppe hinzu.
 5. Legen Sie den **Mitgliedschaftstyp** auf **Zugewiesen** fest. 
-6. Klicken Sie auf **Mitglieder**, und wählen Sie mindestens ein Mitglied aus der Liste für die Gruppe aus.
+6. Wählen Sie den Link unter **Mitglieder** aus, und fügen Sie mindestens ein Mitglied aus der Liste für die Gruppe hinzu.
 
     ![Screenshot: Erstellen einer Gruppe in Microsoft Intune](./media/quickstart-create-group/quickstart-use-groups-01.png)
 

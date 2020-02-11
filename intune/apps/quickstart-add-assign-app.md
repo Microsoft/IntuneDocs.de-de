@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d09857c4e5b63947a6e3b3140f673f0887f7f920
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 40337b3c45885dacf486173814044a27b7f3f6cc
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563409"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755067"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Schnellstart: Hinzufügen und Zuweisen einer Client-App
 
@@ -45,20 +45,18 @@ Eine App kann eingefügt werden, damit Intune Aspekte der App verwalten kann.
 
 Führen Sie die folgenden Schritte aus, um eine App zu Intune hinzuzufügen:
 1. Wählen Sie in [Intune](https://aka.ms/intuneportal) die Option **Apps** > **Alle Apps** > **Hinzufügen** aus. 
-2. Wählen Sie **Windows 10** im Abschnitt **Office 365 Suite** des Dropdownfelds **App-Typ** aus.
-3. Klicken Sie auf **App-Suite konfigurieren**, um die Office-Apps auszuwählen, die dem Intune-Benutzer zugewiesen werden sollen.
-4. Klicken Sie auf **OK**, um die standardmäßig ausgewählten Apps zu akzeptieren.
-5. Klicken Sie auf **Informationen zur App-Suite**.
-6. Geben Sie **Microsoft Office 365-App-Suite** als **Name der Suite** ein.
-7. Geben Sie **Microsoft Office 365-App-Suite** als **Beschreibung der Suite** ein.
-8. Klicken Sie neben **Diese App als ausgewählte App im Unternehmensportal anzeigen** auf **Ja**.
-9. Klicken Sie auf **OK**.
-
-    ![Screenshot vom Hinzufügen der App-Informationen](./media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
-
-10. Klicken Sie auf **Einstellungen der App-Suite**.
-11. Wählen Sie **Monatlich** im Dropdownfeld **Updatekanal** aus.
-12. Klicken Sie auf **OK** > **Hinzufügen**.
+2. Wählen Sie **Windows 10** im Abschnitt **Office 365 Suite** des Bereichs **App-Typ auswählen** aus.
+3. Klicken Sie auf **Auswählen**. Die **App hinzufügen**-Schritte werden angezeigt.
+4. Bestätigen Sie die Standarddetails auf der Seite **Informationen zur App-Suite**.
+5. Klicken Sie auf **Weiter**, um die Seite **App-Suite konfigurieren** anzuzeigen.
+6. Wählen Sie neben **Updatekanal** im Dropdownfeld **Monatlich** aus.
+7. Bestätigen Sie die restlichen Standarddetails auf der Seite ***App-Suite konfigurieren**.
+8. Klicken Sie auf **Weiter**, um die Seite **Bereichsmarkierungen** anzuzeigen.
+9. Klicken Sie auf **Bereichstags auswählen**, um optional Bereichsmarkierungen für die App hinzuzufügen. Weitere Informationen dazu finden Sie unter [Verwenden der rollenbasierten Zugriffssteuerung und Bereichsmarkierungen für verteilte IT](~/fundamentals/scope-tags.md).
+10. Klicken Sie auf **Weiter**, um die Seite **Zuweisungen** anzuzeigen.
+11. Wählen Sie die Gruppenzuweisungen für die App aus. Weitere Informationen finden Sie unter [Hinzufügen von Gruppen zum Organisieren von Benutzern und Geräten](~/fundamentals/groups-add.md). 
+12. Klicken Sie auf **Weiter**, um die Seite **Überprüfen + erstellen** anzuzeigen. Überprüfen Sie die Werte und Einstellungen, die Sie für die App eingegeben haben.
+13. Klicken Sie abschließend auf **Erstellen**, um Intune die App hinzuzufügen.
 
 ## <a name="assign-the-app-to-a-group"></a>Zuweisen der App zu einer Gruppe
 

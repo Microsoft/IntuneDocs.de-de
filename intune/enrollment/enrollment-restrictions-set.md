@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4246dab0cf22053d76fdd50f99de53e827332a23
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 0dac0607fcaa92ebe65a7ddacc3cd91c63bf246e
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547813"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971874"
 ---
 # <a name="set-enrollment-restrictions"></a>Festlegen von Registrierungseinschränkungen
 
@@ -82,12 +82,13 @@ Auf den Gerätetyp und das Gerätelimit bezogene Registrierungsbeschränkungen w
    > Windows 10 gibt die Buildnummer während der Registrierung nicht an. Wenn Sie zum Beispiel in Build 10.0.17134.100 eine Eingabe vornehmen und das Gerät über Build 10.0.17134.174 verfügt, wird es während der Registrierung blockiert.
 
 6. Wählen Sie unter **Persönliches Eigentum** die Option **Zulassen** für die Plattformen, die Sie als Geräte im persönlichen Besitz zulassen möchten.
-7. Klicken Sie auf **Weiter**, um zur Seite **Zuweisungen** zu gelangen.
-8. Klicken Sie auf **Wählen Sie die Gruppen aus, die eingeschlossen werden sollen.** , und verwenden Sie dann das Suchfeld, um die Gruppen zu finden, die Sie in diese Einschränkung einschließen möchten. Die Beschränkung gilt nur für Gruppen, denen sie zugewiesen ist. Wenn Sie nicht mindestens einer Gruppe eine Beschränkung zuweisen, hat sie keine Wirkung. Klicken Sie anschließend auf **Auswählen**. 
+7. Geben Sie unter **Gerätehersteller** eine durch Trennzeichen getrennte Liste der Hersteller ein, die Sie blockieren möchten.
+8. Klicken Sie auf **Weiter**, um zur Seite **Zuweisungen** zu gelangen.
+9. Klicken Sie auf **Wählen Sie die Gruppen aus, die eingeschlossen werden sollen.** , und verwenden Sie dann das Suchfeld, um die Gruppen zu finden, die Sie in diese Einschränkung einschließen möchten. Die Beschränkung gilt nur für Gruppen, denen sie zugewiesen ist. Wenn Sie nicht mindestens einer Gruppe eine Beschränkung zuweisen, hat sie keine Wirkung. Klicken Sie anschließend auf **Auswählen**. 
     ![Screenshot: Auswählen der Plattformeinstellungen](./media/enrollment-restrictions-set/select-groups.png)
-9. Klicken Sie auf **Weiter**, um zur Seite **Überprüfen + erstellen** zu gelangen.
-10. Klicken Sie auf **Erstellen**, um die Einschränkung zu erstellen.
-11. Die neue Beschränkung wird mit einer Priorität knapp über dem Standardwert erstellt. Sie können [die Priorität ändern](#change-enrollment-restriction-priority).
+10. Klicken Sie auf **Weiter**, um zur Seite **Überprüfen + erstellen** zu gelangen.
+11. Klicken Sie auf **Erstellen**, um die Einschränkung zu erstellen.
+12. Die neue Beschränkung wird mit einer Priorität knapp über dem Standardwert erstellt. Sie können [die Priorität ändern](#change-enrollment-restriction-priority).
 
 
 ## <a name="create-a-device-limit-restriction"></a>Erstellen einer Gerätelimiteinschränkung

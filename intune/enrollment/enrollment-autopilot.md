@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb98ee2974cefeebb90689207388d5fe9229dad2
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: e9da7acfc34dbd25902fc6fb9617ba395216a9b3
+ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036664"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76977800"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrieren von Windows-Geräten in Intune mithilfe von Windows Autopilot  
 Windows Autopilot vereinfacht das Registrieren von Geräten in Intune. Das Erstellen und Warten von benutzerdefinierten Images des Betriebssystems ist ein langwieriger Prozess. Es kann ebenfalls Zeit in Anspruch nehmen, diese benutzerdefinierten Images von Betriebssystemen auf neue Geräte anzuwenden, um diese für die Verwendung vorzubereiten, bevor Sie sie Ihren Benutzern zur Verfügung stellen. Mit Microsoft Intune und Autopilot können Sie Ihren Benutzern neue Geräte geben, ohne die benutzerdefinierten Images des Betriebssystems auf den Geräten erstellen, verwalten und auf diese anwenden zu müssen. Wenn Sie Intune zum Verwalten von Autopilot-Geräten verwenden, können Sie Richtlinien, Profile und Apps usw. verwalten, nachdem diese registriert sind. Eine Übersicht über die Vorteile, Szenarios und Voraussetzungen finden Sie unter [Übersicht über Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -158,6 +158,13 @@ Nachdem Sie ein Autopilot-Gerät hochgeladen haben, können Sie bestimmte Gerät
 Warnungen zeigen an, wie viele Autopilot-Programmgeräte keine Autopilot-Bereitstellungsprofile aufweisen. Verwenden Sie die Informationen aus der Warnung, um Profile zu erstellen und sie den nicht zugeordneten Geräten zuzuweisen. Wenn Sie auf die Warnung klicken, sehen Sie die vollständige Liste der Windows Autopilot-Geräte zusammen mit detaillierten Informationen.
 
 Um Warnungen zu nicht zugewiesenen Geräten anzuzeigen, klicken Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) auf **Geräte** > **Übersicht** > **Registrierungswarnungen** > **Nicht zugewiesene Geräte**.  
+
+## <a name="autopilot-deployments-report"></a>Bericht über Autopilot-Bereitstellungen
+Sie können Details zu jedem Gerät, das über Windows Autopilot bereitgestellt wird, anzeigen.
+Navigieren Sie zum [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), und klicken Sie auf **Geräte** > **Überwachen** > **Autopilot deployments** (Autopilot-Bereitstellungen), um den Bericht anzuzeigen.
+Die Daten sind für 30 Tage nach der Bereitstellung verfügbar.
+
+Dieser Bericht befindet sich in der Vorschau. Gerätebereitstellungsdatensätze werden zurzeit nur durch neue Intune-Registrierungsereignisse ausgelöst. Dies bedeutet, dass alle Bereitstellungen, die keine neue Intune-Registrierung auslösen, von diesem Bericht nicht erfasst werden. Dies schließt jede Art von Zurücksetzung ein, die die Registrierung und den Benutzeranteil der intensiven Autopilot-Benutzerunterstützung beibehält.
 
 ## <a name="assign-a-user-to-a-specific-autopilot-device"></a>Hinzufügen eines Benutzers zu einem bestimmten Autopilot-Gerät
 

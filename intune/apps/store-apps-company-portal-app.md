@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93570bc9dab20801ea6681f6a142de62990a1c57
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 061644a1c83b02902a6bbdaf3cfbd04815d32ea3
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712965"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755033"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Manuelles Hinzufügen der Windows 10-Unternehmensportal-App mithilfe von Microsoft Intune
 
@@ -56,7 +56,7 @@ Benutzer können die Unternehmensportal-App selbst über den Microsoft Store ins
     Diese Aktion muss für die x86-, x64- und ARM-Architektur ausgeführt werden:<br> 
     *Es gibt 9 erforderliche Frameworkpakete, wenn Sie Version 1507 als Mindestversion für das Betriebssystem auswählen, 12 Pakete für Version 1511 und 15 Pakete für Version 1607.* .
 
-8. Laden Sie im Azure-Portal die Unternehmensportal-App als neue App in Microsoft Intune hoch. Fügen Sie die Anwendung hinzu, indem Sie „branchenspezifische App“ als **App-Typ** in dem Bereich **App hinzufügen** auswählen. Wählen Sie dann die App-Paketdatei (mit der Erweiterung „.AppxBundle“) aus.
+8. Laden Sie im Azure-Portal die Unternehmensportal-App als neue App in Microsoft Intune hoch. Fügen Sie die Anwendung hinzu, indem Sie „Branchenspezifische App“ als **App-Typ** in dem Bereich **App-Typ auswählen** auswählen. Wählen Sie dann die App-Paketdatei (mit der Erweiterung „.AppxBundle“) aus.
 
 9. Wählen Sie unter **App-Abhängigkeitsdateien auswählen** alle Abhängigkeiten aus, die Sie in Schritt 7 durch Klicken bei gedrückter UMSCHALTTASTE heruntergeladen haben, und stellen Sie sicher, dass die Spalte **Hinzugefügt** für die von Ihnen benötigten Architekturen **Ja** anzeigt.
 

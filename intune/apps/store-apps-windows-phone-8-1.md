@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3168d517ebbb59dc9d6fe5a9c262ad8e1c909619
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: d43e0f913020e3e2e8b0ac463d5983447d7c1fa2
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563808"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754948"
 ---
 # <a name="add-windows-phone-81-store-apps-to-microsoft-intune"></a>Hinzufügen einer Windows Phone 8.1 Store-App zu Microsoft Intune
 
@@ -36,10 +36,13 @@ Mit den folgenden Schritten können Sie eine Windows Phone 8.1 Store-App aus dem
 
 1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 2. Wählen Sie **Apps** > **Alle Apps** > **Hinzufügen** aus.
-3. Wählen Sie im Bereich **App hinzufügen** als **App-Typ** die Option **Windows Phone 8.1** aus, und klicken Sie auf **App-Informationen**.
-4. Fügen Sie im Bereich **App-Informationen** die App-Informationen hinzu. Abhängig von der ausgewählten App wurden einige der Werte in diesem Bereich möglicherweise automatisch ausgefüllt:
-    - **Name**: Geben Sie den Namen der App so ein, wie er im Unternehmensportal angezeigt werden soll. Stellen Sie sicher, dass der App-Name eindeutig ist. Bei doppelten App-Namen wird den Benutzern im Unternehmensportal nur ein Name angezeigt.
-    - **Beschreibung**: Geben Sie eine Beschreibung der App ein. Die Beschreibung wird Benutzern im Unternehmensportal angezeigt.
+3. Wählen Sie im Bereich **App-Typ auswählen** unter den verfügbaren **Store-App**-Typen **Windows Phone 8.1 Store-App** aus.
+4. Klicken Sie auf **Auswählen**.<br>
+   Die **App hinzufügen**-Schritte werden angezeigt.
+5. Um die **App-Informationen** für Windows Phone 8.1 Store-Apps zu konfigurieren, navigieren Sie zum [Microsoft Store](https://www.microsoft.com/store/apps/windows-phone), und suchen Sie nach der App, die Sie bereitstellen möchten. Zeigen Sie die App-Seite an, und notieren Sie sich die App-Details. 
+6. Fügen Sie auf der Seite **App-Informationen** die App-Details hinzu:
+    - **Name:** Geben Sie den Namen der App so ein, wie er im Unternehmensportal angezeigt werden soll. Stellen Sie sicher, dass der App-Name eindeutig ist. Bei doppelten App-Namen wird den Benutzern im Unternehmensportal nur ein Name angezeigt.
+    - **Beschreibung:** Geben Sie eine Beschreibung der App ein. Die Beschreibung wird Benutzern im Unternehmensportal angezeigt.
     - **Herausgeber**: Geben Sie den Namen des Herausgebers der App ein.
     - **Appstore-URL**: Geben Sie die App-Store-URL der App ein, die Sie erstellen möchten.
     - **Kategorie**: Wählen Sie optional eine oder mehrere der integrierten oder von Ihnen erstellten App-Kategorien aus. Dadurch ist es für Benutzer einfacher, die App im Unternehmensportal zu finden.
@@ -50,8 +53,15 @@ Mit den folgenden Schritten können Sie eine Windows Phone 8.1 Store-App aus dem
     - **Besitzer**: Geben Sie optional einen Namen für den Besitzer dieser App ein, z.B. *Personalabteilung*.
     - **Anmerkungen**: Geben Sie optional Hinweise zu dieser App ein.
     - **Logo**: Laden Sie optional ein Symbol hoch, das der App zugeordnet wird. Dieses Symbol wird mit der App angezeigt, wenn Benutzer das Unternehmensportal durchsuchen.
-5. Wählen Sie **OK** aus.
-6. Wählen Sie **Hinzufügen** aus.
+7. Klicken Sie auf **Weiter**, um die Seite **Bereichsmarkierungen** anzuzeigen.
+8. Klicken Sie auf **Bereichstags auswählen**, um optional Bereichsmarkierungen für die App hinzuzufügen. Weitere Informationen dazu finden Sie unter [Verwenden der rollenbasierten Zugriffssteuerung und Bereichsmarkierungen für verteilte IT](~/fundamentals/scope-tags.md).
+9. Klicken Sie auf **Weiter**, um die Seite **Zuweisungen** anzuzeigen.
+10. Wählen Sie die Gruppenzuweisungen für die App aus. Weitere Informationen finden Sie unter [Hinzufügen von Gruppen zum Organisieren von Benutzern und Geräten](~/fundamentals/groups-add.md). 
+11. Klicken Sie auf **Weiter**, um die Seite **Überprüfen + erstellen** anzuzeigen. Überprüfen Sie die Werte und Einstellungen, die Sie für die App eingegeben haben.
+12. Klicken Sie abschließend auf **Erstellen**, um Intune die App hinzuzufügen.
+
+Die von Ihnen erstellte App wird im Blatt **Übersicht** angezeigt.
+
 
 Die von Ihnen erstellte App wird in der Liste der Apps angezeigt, in der Sie sie den ausgewählten Gruppen zuweisen können.
 

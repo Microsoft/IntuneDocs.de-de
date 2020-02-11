@@ -18,18 +18,37 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d42651b11891f3d830c0d90e70a9ecd98ea5bfb7
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: 73b7617ad6a2d9aa756ddf9a8a4833289e5710ff
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036617"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517490"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Senden benutzerdefinierter Benachrichtigungen in Intune  
 
 Verwenden Sie Microsoft Intune zum Senden benutzerdefinierter Benachrichtigungen an die Benutzer von verwalteten iOS- und Android-Geräten. Diese Nachrichten werden wie auch Benachrichtigungen von anderen Anwendungen auf dem Gerät als Standardpushbenachrichtigungen von der Unternehmensportal-App und der Microsoft Intune-App auf dem Gerät eines Benutzers angezeigt. Benutzerdefinierte Intune-Benachrichtigungen werden von macOS- und Windows-Geräten nicht unterstützt.   
 
 Benutzerdefinierte Benachrichtigungsnachrichten enthalten einen kurzen Titel und einen Nachrichtentext mit maximal 500 Zeichen. Diese Nachrichten können für jeden allgemeinen Kommunikationszweck angepasst werden.
+
+### <a name="what-the-notification-looks-like-on-an-ios-device"></a>So sieht die Benachrichtigung auf einem iOS-Gerät aus
+
+Wenn Sie die Unternehmensportal-App auf einem iOS-Gerät geöffnet haben, ähnelt die Benachrichtigung dem folgenden Screenshot:
+
+> [!div class="mx-imgBorder"]
+> ![Unternehmensportal: iOS-Testbenachrichtigung](./media/custom-notifications/105046-1.png)
+
+Wenn das Gerät gesperrt ist, ähnelt die Benachrichtigung dem folgenden Screenshot:
+
+> [!div class="mx-imgBorder"]
+> ![iOS-Testbenachrichtigung für gesperrte Geräte](./media/custom-notifications/105046-2.png)
+
+### <a name="what-the-notification-looks-like-on-an-android-device"></a>So sieht die Benachrichtigung auf einem Android-Gerät aus
+
+Wenn Sie die Unternehmensportal-App auf einem Android-Gerät geöffnet haben, ähnelt die Benachrichtigung dem folgenden Screenshot:
+
+> [!div class="mx-imgBorder"]
+> ![Android-Testbenachrichtigung](./media/custom-notifications/105046-3.png)
 
 ## <a name="common-scenarios-for-sending-custom-notifications"></a>Allgemeine Szenarios für das Senden von benutzerdefinierten Benachrichtigungen  
 

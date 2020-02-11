@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6c28b222307ee20e3198033ef6aa4af3d756e7e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 19c1bb959212ebeaea40f7089cba5533b6efeb71
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72681315"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912606"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Einrichten der Symantec Endpoint Protection Mobile-Integration in Intune
 
@@ -40,7 +40,7 @@ Führen Sie die folgenden Schritte aus, um die Symantec Endpoint Protection Mobi
 - Das Azure AD-Konto muss ein globales Administratorkonto sein, um die Integration auszuführen.
 ### <a name="network-setup"></a>Netzwerkeinrichtung
 
-Um sicherzustellen, dass das Netzwerk ordnungsgemäß für die Integration in das SEP Mobile-Setup konfiguriert ist, können Sie den Symantec-Artikel [Setting up your network configuration](https://portal.skycure.com/articles/Documentation/Setting-up-your-network-configuration-26-8-2016) (Einrichten Ihrer Netzwerkkonfiguration) zu Rate ziehen.
+Um sicherzustellen, dass das Netzwerk ordnungsgemäß für die Integration in das SEP Mobile-Setup konfiguriert ist, können Sie den Symantec-Artikel [Konfigurieren von Symantec Endpoint Protection Manager nach der Installation](https://support.symantec.com/us/en/article.HOWTO80819.html) zu Rate ziehen.
 
 ### <a name="full-integration-vs-read-only"></a>Die vollständige Integration unterstützt im Vergleich zu Read-only
 

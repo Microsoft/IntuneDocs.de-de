@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e990cd94c0f8622d07e59b4130566a1dc2953a1c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 15d6a67cb41455a1e3c0830e9ed242bfa52b0269
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563999"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912657"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Zuweisen von Apps zu Gruppen mit Microsoft Intune
 
@@ -132,7 +132,7 @@ Schritte zum Zuweisen einer verwalteten Google Play-App zu nicht verwalteten Ger
 Wenn ein selektiver APP-Löschbefehl in der Intune-Konsole ausgegeben wird, wird das Geschäftskonto automatisch aus der Play Store-App entfernt, und der Endbenutzer sieht ab diesem Zeitpunkt keine Geschäfts-Apps mehr im Play Store-App-Katalog. Wenn das Geschäftskonto von einem Gerät entfernt wird, bleiben aus dem Play Store installierte Apps auf dem Gerät installiert und werden nicht deinstalliert. 
 
 ## <a name="app-uninstall-setting-for-ios-managed-apps"></a>Einstellung zum Deinstallieren von Apps für verwaltete iOS-Apps
-Bei iOS-Geräten können Sie auswählen, was mit verwalteten Apps geschehen soll, wenn die Registrierung des Geräts bei Intune aufgehoben oder das Verwaltungsprofil mithilfe der Einstellung **Deinstallieren beim Entfernen des Geräts** entfernt wird. Diese Einstellung gilt nur für Apps auf einem registrierten Gerät und erst nach deren Installation als verwaltete Apps. Die Einstellung kann nicht für Web-Apps oder Weblinks konfiguriert werden. 
+Bei iOS-Geräten können Sie auswählen, was mit verwalteten Apps geschehen soll, wenn die Registrierung des Geräts bei Intune aufgehoben oder das Verwaltungsprofil mithilfe der Einstellung **Deinstallieren beim Entfernen des Geräts** entfernt wird. Diese Einstellung gilt nur für Apps auf einem registrierten Gerät und erst nach deren Installation als verwaltete Apps. Die Einstellung kann nicht für Web-Apps oder Weblinks konfiguriert werden. Nur durch die mobile Anwendungsverwaltung (Mobile Application Management, MAM) geschützte Daten werden nach der Deaktivierung durch eine selektive App-Zurücksetzung entfernt.
 
 Folgende Standardwerte werden bei neuen Zuweisungen vorab für die Einstellung aufgefüllt:
 

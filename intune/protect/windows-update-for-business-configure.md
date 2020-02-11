@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/14/2020
+ms.date: 01/29/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc9dd03714e24dae4b0c7afe9206c6a8d7d36c13
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: e478402f826809bda4f81315d5a1a4ff6e1a8b88
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956288"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886798"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Verwalten von Windows 10-Softwareupdates in Intune
 
@@ -71,7 +71,7 @@ Die folgenden Voraussetzungen müssen erfüllt sein, um Windows-Updates für Win
 
 ## <a name="windows-10-update-rings"></a>Windows 10-Updateringe
 
-Erstellen Sie Updateringe, die festlegen, wann und wie Windows Ihre Windows 10-Geräte mit Feature- und Qualitätsupdates aktualisiert. Ab Windows 10 enthalten neue Feature- und Qualitätsupdates die Inhalte aller früheren Updates. Sie können sich also sicher sein, dass Ihre Windows 10-Geräte auf dem neuesten Stand sind, wenn Sie das neueste Update installiert haben. Im Gegensatz zu früheren Versionen von Windows müssen Sie nun anstelle eines Teilupdates das gesamte Update installieren.
+Erstellen Sie Updateringe, die festlegen, wann und wie Windows Ihre Windows 10-Geräte mit Feature- und Qualitätsupdates aktualisiert. Ab Windows 10 enthalten neue Feature- und Qualitätsupdates die Inhalte aller früheren Updates. Sie können sich also sicher sein, dass Ihre Windows 10-Geräte auf dem neuesten Stand sind, wenn Sie das neueste Update installiert haben. Im Gegensatz zu früheren Versionen von Windows müssen Sie nun anstelle eines Teilupdates das gesamte Update installieren.
 
 In Windows 10-Updateringen werden [Bereichstags](../fundamentals/scope-tags.md) unterstützt. Sie können Bereichstags für Updateringe verwenden, um das Filtern und Verwalten der verwendeten Konfigurationen zu erleichtern.
 
@@ -92,7 +92,7 @@ In Windows 10-Updateringen werden [Bereichstags](../fundamentals/scope-tags.md) 
 
 6. Klicken Sie unter **Zuweisungen** auf **Wählen Sie die Gruppen aus, die eingeschlossen werden sollen.** , und weisen Sie dann den Updatering mindestens einer Gruppe zu. Klicken Sie auf **+ Auszuschließende Gruppen auswählen**, um die Zuweisung anzupassen. Wählen Sie **Weiter** aus, um den Vorgang fortzusetzen.
 
-7. Überprüfen Sie die Einstellungen unter **Überprüfen + erstellen**, und klicken Sie dann auf **Erstellen**, um Ihren Windows 10-Updatering zu speichern. Ihr neuer Updatering wird in der Liste mit den Updateringen angezeigt.
+7. Überprüfen Sie die Einstellungen unter **Überprüfen + erstellen**, und wählen Sie dann **Erstellen** aus, um Ihren Windows 10-Updatering zu speichern. Ihr neuer Updatering wird in der Liste mit den Updateringen angezeigt.
 
 ### <a name="manage-your-windows-10-update-rings"></a>Verwalten Ihrer Windows 10-Updateringe
 
@@ -205,20 +205,22 @@ Wenn ein Gerät eine Richtlinie für Windows 10-Featureupdates erhält, geschieh
 
 - Anders als bei der Verwendung der Funktion *Anhalten* mit einem Updatering, der nach 35 Tagen abläuft, bleibt die Richtlinie des Windows 10-Featureupdates weiterhin aktiv. Geräte installieren erst dann eine neue Windows-Version, wenn Sie die Richtlinie für Windows 10-Featureupdates ändern oder entfernen. Wenn Sie die Richtlinie bearbeiten, um eine neuere Version anzugeben, können Geräte die Features von dieser Windows-Version installieren.
 
+### <a name="prerequisites-for-windows-10-feature-updates"></a>Voraussetzungen für Windows 10-Featureupdates
+
+Die folgenden Voraussetzungen müssen erfüllt sein, um Windows 10-Featureupdates in Intune zu verwenden.
+
+- Geräte müssen bei Intune MDM registriert und mit Azure AD verknüpft oder bei Azure AD registriert sein.
+- Um die Richtlinie „Featureupdates“ mit Intune verwenden zu können, muss auf Geräten Telemetrie aktiviert sein, wobei die Mindesteinstellung [*Standard*](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) ist. Telemetrie wird unter *Berichterstellung und Telemetrie* als Teil einer Richtlinie des Typs [Geräteeinschränkung](../configuration/device-restrictions-configure.md) konfiguriert.
+  
+  Geräte, die die Richtlinie „Featureupdates“ empfangen und bei denen Telemetrie auf *Nicht konfiguriert* festgelegt, also deaktiviert ist, installieren möglicherweise eine spätere Version von Windows als in der Richtlinie „Featureupdates“ definiert. Die Voraussetzung, Telemetrie anzufordern, wird derzeit geprüft, während sich dieses Feature in Richtung allgemeine Verfügbarkeit weiterentwickelt.
+
 ### <a name="limitations-for-windows-10-feature-updates"></a>Einschränkungen für Windows 10-Featureupdates
 
 - Wenn Sie eine *Windows 10-Featureupdate*-Richtlinie auf einem Gerät bereitstellen, das auch eine *Windows 10-Updatering*-Richtlinie empfängt, überprüfen Sie den Updatering für die folgenden Konfigurationen:
   - Der **Rückstellungszeitraum für Funktionsupdates (Tage)** muss auf **0** festgelegt werden.
   - Featureupdates für den Updatering müssen *ausgeführt werden*. Sie dürfen nicht angehalten werden.
 
-- Richtlinien für Windows 10-Featureupdates können bei Ausführung über die Windows-Willkommensseite nicht angewendet werden und gelten erst bei der ersten Windows Update-Überprüfung nach der Bereitstellung eines Geräts (in der Regel ein Tag). Darüber hinaus erhalten Geräte, die mit Autopilot bereitgestellt wurden, diese Richtlinie nicht.
-
-  Diese Einschränkung wird untersucht, um festzustellen, ob sie in Zukunft unterstützt werden kann.
-
-> [!IMPORTANT]
-> Um die Richtlinie „Featureupdates“ mit Intune verwenden zu können, muss auf Geräten Telemetrie aktiviert sein, wobei die Mindesteinstellung [*Standard*](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) ist. Telemetrie wird unter *Berichterstellung und Telemetrie* als Teil einer Richtlinie des Typs [Geräteeinschränkung](../configuration/device-restrictions-configure.md) konfiguriert.
->
-> Geräte, die die Richtlinie „Featureupdates“ empfangen und bei denen Telemetrie auf *Nicht konfiguriert* festgelegt, also deaktiviert ist, installieren möglicherweise eine spätere Version von Windows als in der Richtlinie „Featureupdates“ definiert. Die Voraussetzung, Telemetrie anzufordern, wird derzeit geprüft, während sich dieses Feature in Richtung allgemeine Verfügbarkeit weiterentwickelt.
+- Richtlinien für Windows 10-Featureupdates können bei Autopilot-Ausführung über die Windows-Willkommensseite (Out Of Box Experience, OOBE) nicht angewendet werden und gelten erst bei der ersten Windows Update-Überprüfung nach der Bereitstellung eines Geräts (in der Regel ein Tag).
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Erstellen und Zuweisen von Windows 10-Featureupdates
 
@@ -242,10 +244,12 @@ In diesem Bereich können Sie folgende Aktionen ausführen:
 - Wählen Sie **Eigenschaften** aus, um die Bereitstellung zu ändern.  Wählen Sie im Bereich *Eigenschaften* die Option **Bearbeiten** aus, um die *Bereitstellungseinstellungen und Zuweisungen* zu öffnen, wo Sie dann die Bereitstellung ändern können.
 - Wählen Sie **Endbenutzer-Updatestatus** aus, um Informationen zur Richtlinie anzuzeigen.
 
+## <a name="validation-and-reporting-for-windows-10-updates"></a>Validierung und Berichterstellung für Windows 10-Updates
+
+Verwenden Sie für Windows 10-Update Ringe und Windows 10-Featureupdates [Berichte zur Updatekonformität für Intune](../windows-update-compliance-reports.md), um den Updatestatus von Geräten zu überwachen. Diese Lösung verwendet [Updatekonformität](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor) mit Ihrem Azure-Abonnement.
+
 ## <a name="next-steps"></a>Nächste Schritte
 
 [Windows-Updateeinstellungen für Intune](../windows-update-settings.md)
-
-[Berichte zur Updatekonformität für Intune](../windows-update-compliance-reports.md)
 
 [Problembehandlung bei Windows 10-Updateringen](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)

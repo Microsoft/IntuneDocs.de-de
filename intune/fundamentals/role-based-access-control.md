@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a03366037f9b0eced70f0375b3f4b39401e3141
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8441a93a34af68a680aec2f48b3a5375fa74558c
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509814"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754302"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Rollenbasierte Zugriffssteuerung für Microsoft Intune
 
@@ -39,7 +39,7 @@ Eine Rolle definiert die Berechtigungen, die den ihr zugewiesenen Benutzern gew�
 Sie können sowohl integrierte als auch benutzerdefinierte Rollen verwenden. Integrierte Rollen decken einige häufige Szenarios in Intune ab. Sie können aber auch Ihre [eigenen benutzerdefinierten Rollen](create-custom-role.md) mit den gewünschten Berechtigungen erstellen. Mehrere Azure Active Directory-Rollen beinhalten den Zugriff auf Intune.
 Wenn Sie eine Rolle abrufen möchten, klicken Sie auf **Intune** > **Rollen** > **Alle Rollen**, und wählen Sie eine Rolle aus. Dann werden die folgenden Seiten angezeigt:
 
-- **Eigenschaften**: der Name, die Beschreibung, der Typ, die Zuweisungen und die Bereichsmarkierungen für die Rolle 
+- **Eigenschaften:** der Name, die Beschreibung, der Typ, die Zuweisungen und die Bereichsmarkierungen für die Rolle 
 - **Berechtigungen**: Listet eine Reihe von Optionen auf, die die Berechtigungen der jeweiligen Rolle definieren
 - **Zuweisungen:** Eine Liste mit [Rollenzuweisungen]( assign-role.md), in der definiert wird, welche Benutzer Zugriff auf welche Benutzer/Geräte haben. Eine Rolle kann mehrere Zuweisungen aufweisen, und ein Benutzer kann Teil mehrerer Zuweisungen sein.
 
@@ -52,6 +52,7 @@ Sie können Gruppen ohne weitere Konfiguration integrierte Rollen zuweisen. Sie 
 - **Anwendungs-Manager**: Verwaltet mobile und verwaltete Anwendungen und kann Geräteinformationen lesen sowie Gerätekonfigurationsprofile anzeigen.
 - **Intune-Rollenadministrator**: Verwaltet benutzerdefinierte Intune-Rollen und fügt integrierten Intune-Rollen Aufgaben hinzu. Dies ist die einzige Intune-Rolle, die Administratoren Berechtigungen zuweisen kann.
 - **Schuladministrator**: Verwaltet Windows 10-Geräte in [Intune for Education](../introduction-intune-education.md).
+- **Endpunktsicherheits-Manager**: Verwaltet Sicherheits- und Konformitätsfeatures, wie z. B. Sicherheitsbaselines, Gerätekonformität, bedingter Zugriff und Microsoft Defender ATP.
 
 ### <a name="custom-roles"></a>Benutzerdefinierte Rollen
 Sie können mithilfe von benutzerdefinierten Berechtigungen Ihre eigenen Rollen erstellen. Weitere Informationen zu benutzerdefinierten Rollen finden Sie unter [Create a custom role (Erstellen von benutzerdefinierten Rollen)](create-custom-role.md).
@@ -62,7 +63,7 @@ Sie können mithilfe von benutzerdefinierten Berechtigungen Ihre eigenen Rollen 
 | Globaler Administrator | Lesen + Schreiben | Lesen + Schreiben |
 | Intune-Dienstadministrator | Lesen + Schreiben | Lesen + Schreiben |
 | Administrator für bedingten Zugriff | Keine | Keine |
-| Sicherheitsadministrator | Schreibgeschützt | Schreibgeschützt |
+| Sicherheitsadministrator | Schreibgeschützt (vollständige Administratorberechtigungen für den Endpunkt-Sicherheitsknoten) | Schreibgeschützt |
 | Sicherheitsoperator | Schreibgeschützt | Schreibgeschützt |
 | Sicherheitsleseberechtigter | Schreibgeschützt | Schreibgeschützt |
 | Complianceadministrator | Keine | Schreibgeschützt |
@@ -86,7 +87,7 @@ Eine Rollenzuweisung definiert Folgendes:
 Sie können Ihren Benutzern sowohl benutzerdefinierte als auch integrierte Rollen zuweisen. Um einer Intune-Rolle zugewiesen zu werden, muss der Benutzer über eine Intune-Lizenz verfügen.
 Wenn Sie eine Rollenzuweisung abrufen möchten, klicken Sie auf **Intune** > **Rollen** > **Alle Rollen**, und wählen Sie erst eine Rolle und dann eine Zuweisung aus. Dann werden die folgenden Seiten angezeigt:
 
-- **Eigenschaften**: der Name, die Beschreibung, die Rolle, die Mitglieder, die Bereiche und die Markierungen einer Zuweisung
+- **Eigenschaften:** der Name, die Beschreibung, die Rolle, die Mitglieder, die Bereiche und die Markierungen einer Zuweisung
 - **Mitglieder**: Alle Benutzer in den aufgelisteten Azure-Sicherheitsgruppen haben die Berechtigung, die Benutzer/Geräte zu verwalten, die in „Bereich (Gruppen)“ aufgelistet sind.
 - **Bereich (Gruppen)** : Alle Benutzer/Geräte in diesen Azure-Sicherheitsgruppen können von den Benutzern verwaltet werden, die unter „Mitglieder“ aufgeführt sind.
 - **[Bereich (Tags)](scope-tags.md)** : Benutzer, die unter „Mitglieder“ aufgeführt sind, können die Ressourcen sehen, die dieselben Bereichsmarkierungen aufweisen.

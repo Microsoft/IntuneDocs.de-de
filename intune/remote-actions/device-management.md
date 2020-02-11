@@ -16,13 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-redirect_url: https://docs.microsoft.com/intune
-ms.openlocfilehash: ff82b1ed70d3021c33a166c694e3efe5d10905e0
-ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
+ms.openlocfilehash: dde69fc70522684193f9cf6712a2192f77110dab
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75731363"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754251"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Was ist die Microsoft Intune Geräteverwaltung?
 
@@ -62,7 +61,7 @@ Die verfügbaren Aktionen hängen von der Geräteplattform und der Konfiguration
   - [Zurücksetzen](devices-wipe.md#wipe)
   - [Remotesperre](device-remote-lock.md)
   - [Kennung zurücksetzen](device-passcode-reset.md)
-  - [Umgehen der Aktivierungssperre](device-activation-lock-bypass.md) (nur iOS)
+  - [Deaktivieren der Aktivierungssperre](device-activation-lock-bypass.md) (nur iOS)
   - [Sauberer Start](device-fresh-start.md) (nur Windows)
   - [Modus für verlorene Geräte](device-lost-mode.md) (nur iOS)
   - [Gerät suchen](device-locate.md) (nur iOS)
