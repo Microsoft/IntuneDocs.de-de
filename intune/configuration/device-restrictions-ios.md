@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/13/2020
+ms.date: 02/04/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f99479200e66b080e107475f0a031c5756da6051
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
-ms.translationtype: HT
+ms.openlocfilehash: dc252068d963d75bf6ade79852d6ba01bda8800b
+ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754574"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051608"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>iOS- und iPadOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune
 
@@ -420,8 +420,6 @@ Gilt für Geräte mit iOS 9.3 und höher
   Um die URL einer App zu suchen, öffnen Sie den iTunes App Store, und suchen Sie nach der App. Suchen Sie beispielsweise nach `Microsoft Remote Desktop` oder `Microsoft Word`. Wählen Sie die App aus, und kopieren Sie die URL.
 
   Sie können auch iTunes verwenden, um die App zu suchen, und dann die Aufgabe **Link kopieren**, um die App-URL abzurufen.
-  
-  Weitere Informationen zum Ermitteln einer Bündel-ID finden Sie unter [Ermitteln der Bündel-ID für eine iOS-App](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app).
 
 - **App-Bündel-ID:** Geben Sie die [App-Bündel-ID](bundle-ids-built-in-ios-apps.md) der gewünschten App ein. Sie können sowohl integrierte Apps als auch branchenspezifische Apps anzeigen oder ausblenden. Eine Liste der integrierten Apple-Apps finden Sie auf [dieser Apple-Website](https://support.apple.com/HT208094).
 - **App-Name:** Geben Sie den App-Namen der gewünschten App ein. Sie können sowohl integrierte Apps als auch branchenspezifische Apps anzeigen oder ausblenden. Eine Liste der integrierten Apple-Apps finden Sie auf [dieser Apple-Website](https://support.apple.com/HT208094).
@@ -559,7 +557,9 @@ Hinweis zum Datenroaming (Tipp oder wichtiger Hinweis, um Verwirrung beim Kunden
 
 ## <a name="autonomous-single-app-mode"></a>Modus der autonomen einzelnen App
 
-Verwenden Sie diese Einstellungen, um iOS-Geräte zur Ausführung bestimmter Apps im Modus der autonomen einzelnen App zu konfigurieren. Wenn dieser Modus konfiguriert ist und die App ausgeführt wird, wird das Gerät gesperrt. Es kann nur die App ausführen. Fügen Sie z. B. eine App hinzu, mit der Benutzer einen Test auf dem Gerät durchführen können. Wenn die Aktionen der App abgeschlossen sind, oder Sie diese Richtlinie entfernen, kehrt das Gerät in seinen normalen Zustand zurück.
+Verwenden Sie diese Einstellungen, um iOS-/iPadOS-Geräte zur Ausführung bestimmter Apps im autonomen Einzelanwendungsmodus zu konfigurieren. Wenn dieser Modus konfiguriert ist und der Benutzer eine der konfigurierten Apps startet, wird das Gerät für diese App gesperrt. Der Benutzer kann erst die App bzw. den Task wechseln, wenn er die zulässige App schließt.
+
+Sie können beispielsweise für eine Schul- oder Universitätsumgebung eine App hinzufügen, mit der Benutzer einen Test auf dem Gerät durchführen können. Alternativ können Sie auch das Gerät in der Unternehmensportal-App sperren, bis sich der Endbenutzer authentifiziert hat. Wenn der Benutzer die App-Aktionen abschließt oder Sie diese Richtlinie entfernen, kehrt das Gerät in seinen normalen Zustand zurück.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Die Einstellungen gelten für: Automatisierte Geräteregistrierung (überwacht)
 

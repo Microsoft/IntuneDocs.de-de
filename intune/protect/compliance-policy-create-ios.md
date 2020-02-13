@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 02/07/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3b83b764af415349b287df2a09f9b4c355734c28
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e9bcfed67eda96bb4d79317bcc69d21a5f8197bc
+ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810234"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77074630"
 ---
 # <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>iOS-Einstellungen, um Geräte mit Intune als konform oder nicht konform zu kennzeichnen
 
@@ -31,7 +31,7 @@ In diesem Artikel werden die verschiedenen Konformitätseinstellungen aufgeführ
 Diese Funktion gilt für:
 
 - iOS
-- ipados
+- iPadOS
 
 Als Intune-Administrator verwenden Sie diese Konformitätseinstellungen, um die Ressourcen Ihrer Organisation zu schützen. Weitere Informationen zu Konformitätsrichtlinien und ihren Aufgaben finden Sie unter [Erste Schritte bei der Gerätekonformität](device-compliance-get-started.md).
 
@@ -58,10 +58,10 @@ Weitere Informationen zu E-Mail-Profilen finden Sie unter [Konfigurieren des Zug
   - **Blockieren**: Geräte mit Jailbreak oder entfernten Nutzungsbeschränkungen werden als nicht konform gekennzeichnet.  
 
 - **Gerät darf höchstens die Gerätebedrohungsstufe aufweisen** *(iOS 8.0 und höher)* :  
-  Verwenden Sie diese Einstellung, um die Risikobewertung als Konformitäts Bedingung zu verwenden. Wählen Sie die zulässige Bedrohungsstufe aus:  
+  Verwenden Sie diese Einstellung, um die Risikobewertung als Konformitätsbedingung zu verwenden. Wählen Sie die zulässige Bedrohungsstufe aus:  
   - **Nicht konfiguriert** (*Standardeinstellung*): Diese Einstellung wird nicht für die Konformitätsprüfung ausgewertet.
   - **Gesichert**: Diese Option ist die sicherste und bedeutet, dass auf dem Gerät keine Bedrohungen vorhanden sein können. Wenn auf dem Gerät Bedrohungen jeglicher Stufen erkannt werden, wird es als nicht konform bewertet.
-  - **Niedrig**: Das Gerät wird als konform bewertet, wenn nur Bedrohungen auf niedrigen Stufen vorliegen. Durch Bedrohungen höherer Stufen wird das Gerät in einen nicht kompatiblen Status versetzt.
+  - **Niedrig**: Das Gerät wird als konform bewertet, wenn nur Bedrohungen auf niedrigen Stufen vorliegen. Jegliche Bedrohung einer höheren Stufe bewirkt, dass das Gerät in den Status „Nicht konform“ eingestuft wird.
   - **Mittel**: Das Gerät wird als konform bewertet, wenn auf dem Gerät Bedrohungen auf niedriger oder mittlerer Stufe gefunden werden. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht konform bewertet.
   - **Hoch**: Dies ist die am wenigsten sichere Option, die alle Bedrohungsebenen zulässt. Es ist möglicherweise hilfreich, diese Lösung nur zu Berichtszwecken zu verwenden.
 
@@ -69,16 +69,16 @@ Weitere Informationen zu E-Mail-Profilen finden Sie unter [Konfigurieren des Zug
 
 ### <a name="operating-system-version"></a>Version des Betriebssystems  
 
-- **Minimal Erforderliches Betriebssystem** *(IOS 8,0 und höher)* :  
+- **Minimale Version des Betriebssystems** *(iOS 8.0 und höher)* :  
   Wenn ein Gerät die Anforderung an die Mindestversion des Betriebssystems nicht erfüllt, wird es als nicht konform gemeldet. Ein Link zur Vorgehensweise zum Upgrade wird angezeigt. Der Endbenutzer kann sein Gerät aktualisieren. Danach kann er auf Organisationsressourcen zugreifen.
 
-- **Maximal zulässige Betriebssystemversion** *(IOS 8,0 und höher)* :  
+- **Maximale Betriebssystemversion** *(iOS 8.0 und höher)* :  
   Wird auf einem Gerät eine neuere Betriebssystemversion als in der Regel verwendet, wird der Zugriff auf Organisationsressourcen gesperrt. Der Endbenutzer wird aufgefordert, sich an den zuständigen IT-Administrator zu wenden. Das Gerät kann solange nicht auf Organisationsressourcen zugreifen, bis die Regel geändert und die betreffende Betriebssystemversion zugelassen wird.
 
-- **Mindestversion des Betriebssystem Builds** *(IOS 8,0 und höher)* :  
+- **Mindestbuildversion des Betriebssystems** *(iOS 8.0 und höher)* :  
   Wenn Apple Sicherheitsupdates veröffentlicht, wird in der Regel die Nummer des Builds aktualisiert, nicht die Betriebssystemversion. Verwenden Sie diese Funktion, um eine zulässige minimale Buildnummer am Gerät einzugeben.
 
-- **Maximale Version des Betriebs systembuilds** *(IOS 8,0 und höher)* :  
+- **Höchste Buildversion des Betriebssystems** *(iOS 8.0 und neuer)* :  
   Wenn Apple Sicherheitsupdates veröffentlicht, wird in der Regel die Nummer des Builds aktualisiert, nicht die Betriebssystemversion. Verwenden Sie diese Funktion, um eine zulässige maximale Buildnummer am Gerät einzugeben.
 
 ## <a name="system-security"></a>Systemsicherheit
@@ -86,14 +86,14 @@ Weitere Informationen zu E-Mail-Profilen finden Sie unter [Konfigurieren des Zug
 ### <a name="password"></a>Kennwort
 
 > [!NOTE]
-> Nachdem eine Konformitäts- oder Konfigurationsrichtlinie auf ein iOS-Gerät angewendet wurde, werden Benutzer alle 15 Minuten dazu aufgefordert, eine Kennung festzulegen. Benutzer erhalten kontinuierlich eine Aufforderung, bis sie eine Kennung festgelegt haben. Wenn eine Kennung für das IOS-Gerät festgelegt ist, wird der Verschlüsselungs Vorgang automatisch gestartet. Das Gerät bleibt verschlüsselt, bis die Kennung deaktiviert ist.
+> Nachdem eine Konformitäts- oder Konfigurationsrichtlinie auf ein iOS-Gerät angewendet wurde, werden Benutzer alle 15 Minuten dazu aufgefordert, eine Kennung festzulegen. Benutzer erhalten kontinuierlich eine Aufforderung, bis sie eine Kennung festgelegt haben. Wenn ein Passcode für das iOS-Gerät festgelegt ist, wird der Verschlüsselungsprozess automatisch gestartet. Das Gerät bleibt verschlüsselt, bis der Passcode deaktiviert ist.
 
 - **Anfordern eines Kennworts zum Entsperren mobiler Geräte:**  
   - **Nicht konfiguriert** (*Standardeinstellung*): Diese Einstellung wird nicht für die Konformitätsprüfung ausgewertet.  
   - **Erforderlich**: Benutzer müssen ein Kennwort eingeben, bevor sie auf ihr Gerät zugreifen können. iOS-Geräte mit Kennwort sind verschlüsselt.
 
 - **Einfache Kennwörter:**  
-  - **Nicht konfiguriert** (*Standardeinstellung*): Benutzer können einfache Kenn Wörter wie **1234** oder **1111**erstellen.
+  - **Nicht konfiguriert** (*Standardeinstellung*): Benutzer können einfache Kennwörter wie **1234** oder **1111** erstellen.
   - **Blockieren**: Benutzer können kein einfaches Kennwort wie **1234** oder **1111** erstellen. 
 
 - **Minimale Kennwortlänge:**  
@@ -108,7 +108,7 @@ Weitere Informationen zu E-Mail-Profilen finden Sie unter [Konfigurieren des Zug
   Wenn Sie eine höhere Anzahl festlegen, muss der Benutzer ein komplexeres Kennwort erstellen.
 
 - **Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts** *(iOS 8.0 und höher)* :  
-  Geben Sie an, wie schnell der Bildschirm gesperrt ist, bevor ein Benutzer ein Kennwort eingeben muss, um auf das Gerät zuzugreifen. Zu den Optionen gehören der Standardwert *nicht konfiguriert*, *sofort*und *1 Minute* bis *4 Stunden*.
+  Geben Sie an, wie lange der Bildschirm gesperrt bleiben soll, bevor ein Benutzer ein Kennwort für den Zugriff auf das Gerät eingeben muss. Zu den Optionen gehören der Standardwert *Nicht konfiguriert*, *Sofort* sowie von *1 Minute* bis *4 Stunden*.
 
 - **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung:**  
   Geben Sie die Leerlaufzeit ein, bevor das Gerät seinen Bildschirm sperrt. Zu den Optionen gehören standardmäßig *nicht konfiguriert*, *sofort*und *1 Minute* bis *15 Minuten*.

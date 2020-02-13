@@ -14,16 +14,16 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: 0a5e90c6bc6b352f4d7a0fc0ae22c65110563461
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ed2d00541c2d89efd0f8cd6aa60f29c527656fc0
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68354409"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971819"
 ---
 # <a name="metadata-and-markdown-template"></a>Metadaten- und Markdown-Vorlage
 
-Diese docs.ms-Vorlage enthält Beispiele für Markdown-Syntax sowie Anleitungen zum Festlegen der Metadaten. Sie steht im Stammverzeichnis jedes EM-Pilotrepositorys (z. B. „~/Azure-RMSDocs-pr /template.md“) zur Verfügung und soll als Markdown-Datei gelesen werden, obwohl Sie die [veröffentlichte Version](https://stage.docs.microsoft.com/en-us/rights-management/template) verwenden können, um festzustellen, wie die Markdown-Beispiele dargestellt werden.
+Diese docs.ms-Vorlage enthält Beispiele für Markdownsyntax sowie Anleitungen zum Festlegen der Metadaten. Sie steht im Stammverzeichnis jedes EM-Pilotrepositorys (z. B. „~/Azure-RMSDocs-pr /template.md“) zur Verfügung und soll als Markdown-Datei gelesen werden, obwohl Sie die [veröffentlichte Version](https://stage.docs.microsoft.com/en-us/rights-management/template) verwenden können, um festzustellen, wie die Markdown-Beispiele dargestellt werden.
 
 Beim Erstellen einer Markdown-Datei sollten Sie die Vorlage in eine neue Datei kopieren, die Metadaten wie unten angegeben ausfüllen, die H1-Überschrift oben auf den Titel des Artikels festlegen und den Inhalt löschen. 
 
@@ -34,26 +34,26 @@ Den vollständigen Metadatenblock finden Sie oben, unterteilt in erforderliche F
 
 - Sie **müssen** ein Leerzeichen zwischen dem Doppelpunkt (:) und dem Wert für ein Metadatenelement einfügen.
 - Wenn ein optionales Metadatenelement keinen Wert aufweist, kommentieren Sie das Element mit einem # (lassen Sie es nicht leer und verwenden Sie kein „na“). Wenn Sie einen Wert einem Element hinzufügen, das auskommentiert wurde, sollten Sie das # unbedingt löschen.
-- Doppelpunkte in einem Wert (z. B. ein Titel) unterbrechen den Metadaten-Parser. Verwenden Sie stattdessen die HTML-Codierung „&#58;“ (z. B. „Titel: Azure Rights Management&#58; die Grundlagen | Azure RMS“).
-- **Titel**: Dieser Titel wird in Suchergebnissen angezeigt. Der Titel sollte mit einem senkrechten Strich (|) gefolgt vom Namen des Diensts (z. B. siehe oben) enden. Der Titel muss nicht (und sollte nicht) mit dem Titel in der H1-Überschrift übereinstimmen. Er sollte ungefähr 65 Zeichen (einschließlich | NAME DES DIENSTS) umfassen.
-- **Autor**, **Manager**, **Prüfer**: Das Autorenfeld sollte den **Github-Benutzernamen** des Autors enthalten, nicht den Alias.  Die Felder „Manager“ und „Prüfer“ sollten andererseits Aliasnamen enthalten. „ms.reviewer“ gibt den Namen des Projektmanagers an, der dem Artikel oder Dienst zugeordnet ist.
-- **ms.assetid**: Dies ist die GUID des Artikels in Großbuchstaben. Wenn Sie eine neue Markdowndatei erstellen, rufen Sie eine GUID unter [https://www.guidgenerator.com](https://www.guidgenerator.com) ab. 
-- **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: Mögliche Werte für diese Elemente finden Sie [hier](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default).
+- Doppelpunkte in einem Wert (z.B. einem Titel) unterbrechen den Metadatenparser. Verwenden Sie stattdessen die HTML-Codierung &#58; (z. B. "title: Azure Rights Management&#58; Grundlagen | Azure RMS").
+- **title**: Dieser Titel wird in Suchmaschinenergebnissen angezeigt. Der Titel sollte mit einem senkrechten Strich (|) gefolgt vom Namen des Diensts enden (siehe z.B. oben). Der Titel muss nicht (und sollte wahrscheinlich nicht) mit dem Titel in der H1-Überschrift übereinstimmen. Er sollte ungefähr 65 Zeichen lang sein (einbezogener Inhalt | DIENSTNAME).
+- **author**, **manager**, **reviewer**: Das author-Feld sollte den **Github-Benutzernamen** des Autors enthalten, nicht seinen Alias.  Andererseits sollten die Felder „manager“ und „reviewer“ Aliase enthalten. „ms.reviewer“ gibt den Namen des PM an, der dem Artikel oder Dienst zugeordnet ist.
+- **ms.assetid**: Dies ist die GUID des Artikels aus CAPS. Wenn Sie eine neue Markdowndatei erstellen, rufen Sie eine GUID unter [https://www.guidgenerator.com](https://www.guidgenerator.com) ab. 
+- **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: Die möglichen Werte für diese Elemente finden Sie [hier](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default).
 
-## <a name="basic-markdown-and-gfm"></a>Grundlegendes Markdown und GFM
+## <a name="basic-markdown-and-gfm"></a>Basis-Markdownversionen und GFM
 
-Alle grundlegenden und Github-flavored Markdowns werden unterstützt. Weitere Informationen dazu finden Sie unter:
+Alle Basis-Markdownversionen und GFM (Github-flavored Markdown, spezielles Github-Markdown) werden unterstützt. Weitere Informationen hierzu finden Sie unter:
 
-- [Baseline-Markdown-Syntax](https://daringfireball.net/projects/markdown/syntax)
-- [GFM-Dokumentation (Github-flavored Markdown)](https://guides.github.com/features/mastering-markdown)
+- [Markdown: Syntax](https://daringfireball.net/projects/markdown/syntax)
+- [Dokumentation zu Github-Flavored Markdown (GFM)](https://guides.github.com/features/mastering-markdown)
 
 ## <a name="headings"></a>Überschriften
 
-Beispiele für Überschriften der ersten und zweiten Ebene finden Sie oben. 
+Beispiele für Überschriften der ersten und zweiten Ebene siehe oben. 
 
-Im Thema **darf nur** eine Überschrift der ersten Ebene vorhanden sein, die als Titel auf der Seite angezeigt wird.  
+Es **darf** nur eine Überschrift der ersten Ebene in Ihrem Thema geben, die als Titel auf der Seite angezeigt wird.  
 
-Überschriften der zweiten Ebene generiert das Inhaltsverzeichnis auf der Seite, die im Abschnitt „In diesem Artikel“ unter dem Seitentitel angezeigt wird.
+Überschriften der zweiten Ebene generieren das Inhaltsverzeichnis auf der Seite, das im Abschnitt „In diesem Artikel“ unterhalb des Titels auf der Seite angezeigt wird.
 
 ### <a name="third-level-heading"></a>Überschrift der dritten Ebene
 #### <a name="fourth-level-heading"></a>Überschrift der vierten Ebene
@@ -72,23 +72,23 @@ Im Thema **darf nur** eine Überschrift der ersten Ebene vorhanden sein, die als
 
 ## <a name="links"></a>Links
 
-Verwenden Sie für die Verknüpfung mit einer Markdown-Datei im gleichen Repository [relative Links](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2). 
+Um eine Verknüpfung mit einer Markdowndatei im gleichen Repository herzustellen, verwenden Sie [relative Links](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2). 
 
 - Beispiel: [Was ist Azure Rights Management?](./understand-explore/what-is-azure-rights-management.md)
 
-Um einen Header in der gleichen Markdown-Datei zu verknüpfen, zeigen Sie die Quelle des veröffentlichten Artikels an, suchen Sie nach der ID des Headers (z. B. `id="blockquote"`), und verknüpfen Sie mit # + ID (z. B. `#blockquote`).
+Um eine Verknüpfung mit einer Überschrift in der gleichen Markdowndatei herzustellen, zeigen Sie die Quelle des veröffentlichten Artikels an, und suchen Sie die ID der Überschrift (z.B. `id="blockquote"`, und stellen Sie mit # + ID die Verknüpfung her (z.B. `#blockquote`).
 
-- Beispiel: [Blockquotes](#blockquote)
+- Beispiel: [Blockzitate](#blockquote)
 
-Verwenden Sie für die Verknüpfung mit einem Header in einer Markdown-Datei im gleichen Repository relative Links und Hashtag-Links.
+Um eine Verknüpfung mit einer Überschrift in einer Markdowndatei im gleichen Repository herzustellen, verwenden Sie relative Verknüpfung + Hashtagverknüpfung.
 
 - Beispiel: [technische Übersicht des Anmeldevorgangs](./understand-explore/rms-for-individuals-user-signup.md#technical-overview-of-the-sign-up-process)
 
-Um eine externe Datei zu verknüpfen, verwenden Sie den vollständigen URL als Link.
+Um eine Verknüpfung mit einer externen Datei herzustellen, verwenden Sie die vollständige URL als Link.
 
-- Beispiel: [Github](http://www.github.com)
+- Beispiel: [GitHub](http://www.github.com)
 
-Wenn eine URL in einer Markdown-Datei angezeigt wird, wird sie in einen klickbaren Link umgewandelt.
+Wenn eine URL in einer Markdowndatei angezeigt wird, wird sie in einen klickbaren Link umgewandelt.
 
 - Beispiel: http://www.github.com
 
@@ -96,9 +96,9 @@ Wenn eine URL in einer Markdown-Datei angezeigt wird, wird sie in einen klickbar
 
 ### <a name="ordered-lists"></a>Sortierte Listen
 
-1. Dieses 
-1. Ist
-1. Eine
+1. This 
+1. Is
+1. An
 1. Sortierte
 1. List  
 
@@ -106,36 +106,36 @@ Wenn eine URL in einer Markdown-Datei angezeigt wird, wird sie in einen klickbar
 #### <a name="ordered-list-with-an-embedded-list"></a>Sortierte Liste mit einer eingebetteten Liste
 
 1. Here
-1. kommt
-1. eine
-1. eingebettete
+1. comes
+1. an
+1. embedded
     1. Miss Scarlett
     1. Professor Plum
 1. sortierte
-1. list
+1. Liste
 
 
 ### <a name="unordered-lists"></a>Unsortierte Listen
 
-- Dieses
+- This
 - ist
 - einer
-- Aufzählung
-- list
+- bulleted
+- Liste
 
 
 #### <a name="unordered-list-with-an-embedded-lists"></a>Unsortierte Liste mit einer eingebetteten Liste
 
-- Dieses 
+- This 
 - Aufzählung 
-- list
+- Liste
   - Mrs. Peacock
   - Mr. Green
 - enthält  
 - Andere
     1. Colonel Mustard
     1. Mrs. White
-- Listen
+- lists
 
 
 ## <a name="horizontal-rule"></a>Horizontale Regel
@@ -144,11 +144,11 @@ Wenn eine URL in einer Markdown-Datei angezeigt wird, wird sie in einen klickbar
 
 ## <a name="tables"></a>Tabellen
 
-| Tabellen        | Sind           | Gut  |
+| Tabellen        | Sind           | cool  |
 | ------------- |:-------------:| -----:|
-| Sp 3 ist      | rechtsbündig | $1600 |
-| Sp 2 ist      | zentriert      |   12 $ |
-| SP 1 ist der Standard | linksbündig     |    $1 |
+| SP 3 ist      | rechtsbündig | 1\.600 $ |
+| SP 2 ist      | zntriert      |   12 $ |
+| SP 1 ist standardmäßig | linksbündig     |    $1 |
 
 
 ## <a name="code"></a>Code
@@ -165,21 +165,21 @@ Wenn eine URL in einer Markdown-Datei angezeigt wird, wird sie in einen klickbar
 
 Dies ist ein Beispiel für `in-line code`.
 
-## <a name="blockquotes"></a>Blockquotes
+## <a name="blockquotes"></a>Blockzitate
 
-> Die Trockenheit hatte nun zehn Millionen Jahre lang angehalten, und die Herrschaft der schrecklichen Echsen hatte längst geendet. Hier am Äquator, in dem Kontinent, der eines Tages zu Afrika werden würde, hatte der Kampf ums Überleben eine neue Wildheit erreicht, und ein Sieger war noch nicht in Sicht. In diesem trostlosen und verdorrten Land konnte nur der Kleine, der Schnelle oder der Wilde gedeihen oder zumindest überleben.
+> Die Trockenheit hatte nun zehn Millionen Jahre lang angehalten, und die Herrschaft der schrecklichen Echsen hatte längst geendet. Hier am Äquator, in dem Kontinent, der eines Tages Afrika heißen sollte, hatte der Existenzkampf einen neuen Gipfel der Grausamkeit erreicht, und der Sieger war noch nicht in Sicht. In diesem trostlosen und verdorrten Land konnte nur der Kleine, der Schnelle oder der Wilde gedeihen oder zumindest überleben.
 
 ## <a name="images"></a>Bilder
 
 ### <a name="static-image"></a>Statisches Bild
 
-![dies ist der alternative Text](./media/AzRMS_elements.png)
+![Dies ist der alternative Text.](./media/AzRMS_elements.png)
 
 ### <a name="linked-image"></a>Verknüpftes Bild
 
-[![alternativer Text für verknüpftes Bild](./media/AzRMS_elements.png)](https://azure.microsoft.com) 
+[![Alternativer Text für verknüpftes Bild](./media/AzRMS_elements.png)](https://azure.microsoft.com) 
 
-### <a name="animated-gif"></a>Animiertes GIF
+### <a name="animated-gif"></a>Animierte GIF-Datei
 
 ![Animiertes GIF](./media/hololens.gif)
 
@@ -190,7 +190,7 @@ Dies ist ein Beispiel für `in-line code`.
 > [!NOTE]
 > Dies ist ein HINWEIS
 
-### <a name="warning"></a>Warning
+### <a name="warning"></a>Warnung
 
 > [!WARNING]
 > Dies ist eine WARNUNG
@@ -212,11 +212,11 @@ Dies ist ein Beispiel für `in-line code`.
 <iframe src="http://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/Azure-Active-Directory-Connect-Express-Settings/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
 
-### <a name="youtube"></a>YouTube
+### <a name="youtube"></a>Youtube
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/R6_eWWfNB54" frameborder="0" allowfullscreen></iframe>
 
-## <a name="docsms-extentions"></a>docs.ms-Erweiterungen
+## <a name="docsms-extensions"></a>docs.MS-Erweiterungen
 
 ### <a name="button"></a>Schaltfläche
 
@@ -227,10 +227,10 @@ Dies ist ein Beispiel für `in-line code`.
 
 > [!div class="op_single_selector"]
 - [foo](/rights-management/template.md)
-- [bar](/rights-management/scratch.md)
+- [Balken](/rights-management/scratch.md)
 
-### <a name="step-by-step"></a>Schrittweise
+### <a name="step-by-step"></a>Schritt für Schritt
 
 >[!div class="step-by-step"]
-[Zurück](https://www.example.com)
-[Weiter](https://www.example.com)
+[Vor](https://www.example.com)
+[weiter](https://www.example.com)
