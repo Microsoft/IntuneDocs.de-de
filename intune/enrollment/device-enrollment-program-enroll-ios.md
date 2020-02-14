@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/07/2019
+ms.date: 02/04/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,31 +18,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39775f3acf1a1c3da7c836afe1699958560d509a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b3fe6d1e2a0dcdeafad56d3facccb96f5d0721e4
+ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74691851"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77074664"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Automatisches Registrieren von iOS-Geräten mit dem Programm zur Geräteregistrierung von Apple
 
-Sie können Intune so einrichten, dass über das [Programm zur Geräteregistrierung](https://deploy.apple.com) von Apple erworbene iOS-Geräte registriert werden. Mit dem Programm zur Geräteregistrierung (Device Enrollment Program, DEP) können Sie eine große Anzahl von Geräten registrieren, ohne diese jemals zu berühren. Geräte wie iPhones und iPads können direkt an Benutzer geliefert werden. Wenn der Benutzer das Gerät anschaltet, wird der Setup-Assistent mit vordefinierten Einstellungen ausgeführt, und das Gerät wird für die Verwaltung registriert.
+Sie können Intune so einrichten, dass über das [Programm zur Geräteregistrierung](https://deploy.apple.com) von Apple erworbene iOS-Geräte registriert werden. Mit dem Programm zur Geräteregistrierung (Device Enrollment Program, DEP) können Sie eine große Anzahl von Geräten registrieren, ohne diese jemals zu berühren. Geräte wie iPhones, iPads und MacBooks können direkt an Benutzer geliefert werden. Wenn der Benutzer das Gerät anschaltet, wird der Setup-Assistent, der in der Regel eine schnelle und unkomplizierte Installation für Apple-Produkte bietet, mit vordefinierten Einstellungen ausgeführt, und das Gerät wird für die Verwaltung registriert.
 
-Zur Aktivierung der DEP-Registrierung können Sie sowohl das Intune-Portal als auch das Apple DEP-Portal verwenden. Sie benötigen auch eine Liste von Seriennummern oder eine Bestellnummer, um Geräte in Intune zur Verwaltung zuweisen zu können. Sie erstellen DEP-Registrierungsprofile, die Einstellungen enthalten, die für Geräte während der Registrierung gelten. Beachten Sie, dass die DEP-Registrierung nicht mit einem [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md)-Konto verwendet werden kann.
+Um die DEP-Registrierung möglich zu machen, müssen Sie die Portale von Intune und Apple Business Manager (ABM) oder Apple School Manager (ASM) verwenden. Sie benötigen auch eine Liste von Seriennummern oder eine Bestellnummer, um Geräte in Intune zur Verwaltung in ABM/ASM zuweisen zu können. Sie erstellen DEP-Registrierungsprofile in Intune, die Einstellungen enthalten, die für Geräte während der Registrierung gelten. Beachten Sie, dass die DEP-Registrierung nicht mit einem [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md)-Konto verwendet werden kann.
 
 > [!NOTE]
-> DEP legt Gerätekonfigurationen fest, die vom Endbenutzer nicht entfernt werden können. Daher muss das Gerät vor der [Migration zu DEP](../fundamentals/migration-guide-considerations.md) zurückgesetzt werden, um es in den werkseitigen Zustand zurückzuversetzen.
+> DEP legt Gerätekonfigurationen fest, die vom Endbenutzer nicht zwangsläufig entfernt werden können. Daher muss das Gerät vor der [Migration zu DEP](../fundamentals/migration-guide-considerations.md) zurückgesetzt werden, um es in den werkseitigen Zustand zurückzuversetzen.
 
 ## <a name="dep-and-the-company-portal"></a>DEP und das Unternehmensportal
 
-DEP-Registrierungen sind nicht kompatibel mit der App Store-Version der Unternehmensportal-App. Sie können Benutzern Zugriff auf die Unternehmensportal-App auf einem DEP-Gerät gewähren. Um ihnen Zugriff zu gewähren, übertragen Sie die App auf das Gerät, indem Sie **Unternehmensportal mit VPP installieren** (Volume Purchase Program) im DEP-Profil verwenden. Weitere Informationen finden Sie unter [Automatisches Registrieren von iOS-Geräten mit dem Programm zur Geräteregistrierung von Apple](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile).
+DEP-Registrierungen sind nicht kompatibel mit der App Store-Version der Unternehmensportal-App. Sie können Benutzern Zugriff auf die Unternehmensportal-App auf einem DEP-Gerät gewähren. Sie sollten diesen Zugriff bereitstellen, damit Benutzer wählen können, welche Unternehmens-Apps sie auf ihrem Gerät verwenden möchten, oder damit sie eine moderne Authentifizierungsmethode verwenden können, um den Registrierungsprozess abzuschließen. 
 
- Sie können die Unternehmensportal-App auf Geräten installieren, die bereits mit DEP registriert sind. Stellen Sie dazu die Unternehmensportal-App über Intune mit einer angewendeten [Anwendungskonfigurationsrichtlinie](../apps/app-configuration-policies-use-ios.md) bereit.
+Sie können die moderne Authentifizierung während der Registrierung aktivieren, indem Sie die App per Push mithilfe von **Unternehmensportal mit VPP installieren** im DEP-Profil auf das Gerät übertragen. Weitere Informationen finden Sie unter [Automatisches Registrieren von iOS-Geräten mit dem Programm zur Geräteregistrierung von Apple](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile).
+
+Damit das Unternehmensportal automatisch Updates erhält und um die Unternehmensportal-App auf Geräten bereitzustellen, die bereits mit DEP registriert sind, stellen Sie die Unternehmensportal-App über Intune als erforderliche VPP-App (Volume Purchase Program, Programm zur Geräteregistrierung) mit angewendeter [Anwendungskonfigurationsrichtlinie](../apps/app-configuration-policies-use-ios.md) bereit.
 
 ## <a name="what-is-supervised-mode"></a>Überwachter Modus
 
-Apple hat für iOS 5 den überwachten Modus eingeführt. Ein iOS-Gerät im überwachten Modus kann über zusätzliche Steuerelemente verwaltet werden. Dies ist bei unternehmenseigenen Geräten besonders nützlich. Intune unterstützt die Konfiguration von Geräten für den überwachten Modus als Teil des Apple-Programms zur Geräteregistrierung (DEP).
+Apple hat für iOS 5 den überwachten Modus eingeführt. Ein iOS-Gerät im überwachten Modus kann mit mehr Steuerelementen verwaltet werden, z B. „Bildschirmaufnahme blockieren“ und der Blockierung installierter Apps aus dem App Store. Dies ist bei unternehmenseigenen Geräten besonders nützlich. Intune unterstützt die Konfiguration von Geräten für den überwachten Modus als Teil des Apple-Programms zur Geräteregistrierung (DEP).
 
 Die Unterstützung für nicht überwachte DEP-Geräte ist seit iOS 11 veraltet. In iOS 11 und höher müssen für DEP konfigurierte Geräte immer überwacht sein. Das DEP-Flag „is_supervised“ wird in zukünftigen iOS-Versionen ignoriert.
 
@@ -63,7 +65,7 @@ Die Unterstützung für nicht überwachte DEP-Geräte ist seit iOS 11 veraltet. 
 
 Bevor Sie iOS-Geräte mit DEP registrieren können, benötigen Sie ein DEP-Token-Datei (.p7m) von Apple. Mit diesem Token kann Intune Informationen zu DEP-Geräten synchronisieren, die Ihrem Unternehmen gehören. Damit kann Intune außerdem Registrierungsprofile zu Apple hochladen und diesen Profilen Geräte zuweisen.
 
-Verwenden Sie das Apple DEP-Portal, um ein DEP-Token zu erstellen. Sie verwenden das DEP-Portal auch, um in Intune Geräte für die Verwaltung zuzuweisen.
+Sie verwenden das Portal von Apple Business Manager oder Apple School Manager zum Erstellen eines Tokens. Sie verwenden das ABM/ASM-Portal auch, um in Intune Geräte für die Verwaltung zuzuweisen.
 
 > [!NOTE]
 > Wenn Sie das Token vor der Migration zu Azure aus dem klassischen Intune-Portal löschen, stellt Intune womöglich ein gelöschtes Apple DEP-Token wieder her. Sie können das DEP-Token erneut aus dem Azure-Portal löschen.
@@ -81,7 +83,7 @@ Verwenden Sie das Apple DEP-Portal, um ein DEP-Token zu erstellen. Sie verwenden
 3. Wählen Sie **Laden Sie Ihr Zertifikat mit öffentlichem Schlüssel herunter** aus, um die Verschlüsselungsschlüsseldatei (PEM) herunterzuladen und lokal zu speichern. Die PEM-Datei wird verwendet, um ein Vertrauensstellungszertifikat vom Apple Device Enrollment Program-Portal anzufordern.
 
 
-### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>Schritt 2. Verwenden Sie Ihren Schlüssel, um ein Token von Apple herunterzuladen.
+### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>Schritt 2: Verwenden Sie Ihren Schlüssel, um ein Token von Apple herunterzuladen.
 
 1. Wählen Sie **Create a token for Apple's Device Enrollment Program** (Token für das Programm zur Geräteregistrierung von Apple erstellen) aus, um das Portal des Bereitstellungsprogramms von Apple zu öffnen. Melden Sie sich mit der Apple-ID Ihres Unternehmens an. Diese Apple-ID kann später zum Erneuern Ihres DEP-Token verwendet werden.
 2. Wählen Sie im [Portal des Bereitstellungsprogramms](https://deploy.apple.com) von Apple die Option **Erste Schritte** für das **Programm zur Geräteregistrierung** aus.
@@ -91,7 +93,7 @@ Verwenden Sie das Apple DEP-Portal, um ein DEP-Token zu erstellen. Sie verwenden
 
 5. Das Dialogfeld **&lt;Servername&gt; hinzufügen** wird geöffnet, und die Meldung **Laden Sie Ihren öffentlichen Schlüssel hoch** wird angezeigt. Wählen Sie **Datei auswählen** aus, um die PEM-Datei hochzuladen, und wählen Sie anschließend **Weiter** aus.
 
-6. Wechseln Sie zu **Bereitstellungsprogramme** &gt; **Programm zur Geräteregistrierung** &gt; **Geräte verwalten**.
+6. Wechseln Sie zu **Bereitstellungsprogramm** &gt; **Programm zur Geräteregistrierung** &gt; **Geräte verwalten**.
 7. Geben Sie unter **Geräte auswählen nach** an, wie die Geräte identifiziert werden sollen:
     - **Seriennummer**
     - **Reihenfolge**

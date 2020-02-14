@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e64741a92804ec4149b654480166720ff3092e35
-ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
+ms.openlocfilehash: 3ae5a7508f27dbf15a58ba3386e744bb63bf102b
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76258498"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125012"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Verwalten des Webzugriffs mithilfe von Microsoft Edge mit Microsoft Intune
 
@@ -285,16 +285,27 @@ Verwenden Sie das folgende Schlüssel-Wert-Paar, um zu konfigurieren, ob diese w
 
 |    Key    |    Wert    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    'com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock'    |    Bei Festlegung auf **True** werden eingeschränkte Links direkt mit dem Feature „InPrivate-Browsen“ geöffnet.<p>Bei Festlegung auf **False** (Standardeinstellung) kann der Benutzer auswählen, einen eingeschränkten Link entweder mit InPrivate-Browsing oder mit seinem persönlichen (MSA) Konto zu öffnen.    |
+|    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** (Standardeinstellung) erlaubt es Microsoft Edge, Benutzer an ihren persönlichen Kontext weiterzuleiten, um blockierte Websites zu öffnen.<p>**False** verhindert, dass Microsoft Edge Benutzer weiterleitet. Benutzern wird einfach eine Meldung angezeigt, die besagt, dass die Website, auf die sie versuchen zuzugreifen, gesperrt ist.    |
 
 ## <a name="open-restricted-links-directly-in-inprivate-tab-pages"></a>Direktes Öffnen eingeschränkter Links in den InPrivate-Registerkartenseiten
 
-Sie können konfigurieren, ob eingeschränkte Links direkt mit dem Feature „InPrivate-Browsen“ geöffnet werden sollen, was den Benutzern ein nahtloses Browsen ermöglicht. Benutzern müssen auf diese Weise nicht erst zu ihrem persönlichen Kontext wechseln, um eine Website anzuzeigen. Das InPrivate-Browsen wird als nicht verwaltetes Feature betrachtet, sodass Benutzer keinen Zugriff erhalten, wenn sie den Modus „InPrivate-Browsen“ verwenden. 
+Sie können konfigurieren, ob eingeschränkte Links direkt mit dem Feature „InPrivate-Browsen“ geöffnet werden sollen, was den Benutzern ein nahtloses Browsen ermöglicht. Benutzern müssen auf diese Weise nicht erst zu ihrem persönlichen Kontext wechseln, um eine Website anzuzeigen. Das InPrivate-Browsen wird als nicht verwaltetes Feature betrachtet, sodass Benutzer keinen Zugriff erhalten, wenn sie den Modus „InPrivate-Browsen“ verwenden.
 
 |    Key    |    Wert    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** erlaubt es Microsoft Edge, Benutzer an ihren persönlichen Kontext weiterzuleiten, um blockierte Websites zu öffnen.<p>**Block** verhindert, dass Microsoft Edge Benutzer weiterleitet. Benutzern wird einfach eine Meldung angezeigt, die besagt, dass die Website, auf die sie versuchen zuzugreifen, gesperrt ist.    |
 
+## <a name="disable-microsoft-edge-prompt-to-save-passwords"></a>Deaktivieren von Microsoft Edge-Aufforderung zum Speichern von Kennwörtern
+
+|    Key    |    Wert    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock`    |    Bei Festlegung auf **True** werden eingeschränkte Links direkt mit dem Feature „InPrivate-Browsen“ geöffnet.<p>Bei Festlegung auf **False** (Standardeinstellung) kann der Benutzer auswählen, einen eingeschränkten Link entweder mit InPrivate-Browsing oder mit seinem persönlichen (MSA) Konto zu öffnen.    |
+
+Standardmäßig bietet Microsoft Edge auf iOS an, die Kennwörter Ihrer Benutzer im Schlüsselbund zu speichern. Wenn Sie diese Aufforderung für Ihre Organisation deaktivieren möchten, konfigurieren Sie die folgende Einstellung:
+
+|    Key    |    Wert    |
+|-----------|-------------|
+|     'com.microsoft.intune.mam.managedbrowser.disableFeatures'    |    Durch **password** wird die Aufforderung zum Speichern von Kennwörtern deaktiviert.    |
 
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>Verwenden von Microsoft Edge unter iOS für den Zugriff auf Protokolle für verwaltete Apps 
 

@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2019
+ms.date: 02/07/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3b391bb4ab064c080083e2c31dc28483f6d419a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 7e38e4f8552b6ef217d264cfa74597bda5c665ab
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098220"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125046"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Updates der Benutzeroberfläche für Endbenutzer-Apps in Intune
 
@@ -36,9 +36,14 @@ Wenn Sie ein Mitarbeiter oder Kursteilnehmer sind, sollten Sie sich die Screensh
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/whats-new-app-ui/account-move-rom-iwp-user-1712.png)--->
 
+## <a name="week-of-february-3-2020"></a>Woche am 3. Februar 2020
+
+### <a name="screen-removed-from-company-portal-android-work-profile-enrollment---6103987---"></a>Bildschirm aus dem Unternehmensportal bzw. der Android-Arbeitsprofilregistrierung entfernt <!--6103987 -->
+Der Bildschirm **Wie geht es weiter?** wurde aus dem Registrierungsflow des Android-Arbeitsprofils im Unternehmensportal entfernt, um die Handhabung zu optimieren. Wechseln Sie zu [Registrieren mit dem Android-Arbeitsprofil](/intune-user-help/enroll-device-android-work-profile), um den aktualisierten Registrierungsflow für das Android-Arbeitsprofil anzuzeigen.  
+
 ## <a name="week-of-november-11-2019"></a>Woche vom 11. November 2019  
 
-#### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>Web-Apps, die aus der Windows-Unternehmensportal-App gestartet werden<!-- 5030972 -->
+### <a name="web-apps-launched-from-the-windows-company-portal-app----5030972---"></a>Web-Apps, die aus der Windows-Unternehmensportal-App gestartet werden <!-- 5030972 -->
 Endbenutzer können Web-Apps jetzt direkt aus der Windows-Unternehmensportal-App starten. Endbenutzer können die Web-App auswählen und dann die Option **Im Browser öffnen** auswählen. Die veröffentlichte Web-URL wird direkt einem Webbrowser geöffnet. Diese Funktionalität wird in der nächsten Woche eingeführt. Weitere Informationen über Web-Apps finden Sie unter [Hinzufügen von Web-Apps zu Microsoft Intune](~/apps/web-app.md).
 
 ![Beispielbild einer Web-App, die aus der Windows-Unternehmensportal-App gestartet wird](./media/whats-new-app-ui/webapp-open-in-browser.png)  
@@ -167,13 +172,13 @@ Die Unternehmensportalwebsite wurde auf der Grundlage von Kundenfeedback um neue
 
 Folgende Updates werden Sie bemerken:  
 
-- optimierte Workflows auf allen Geräteplattformen
-- eine verbesserte Geräteidentifikation und optimierte Registrierungsworkflows
-- aussagekräftigere Fehlermeldungen
+- Optimierte Workflows für alle Geräteplattformen
+- Verbesserte Geräteidentifikations- und Registrierungsflows
+- Nützlichere Fehlermeldungen
 - Benutzerfreundlichere Sprache, weniger technischer Jargon
 - Möglichkeit zur Freigabe direkter Links für Apps
 - Verbesserte Leistung bei großen App-Katalogen
-- verbesserte Barrierefreiheit für alle Benutzer  
+- Mehr Barrierefreiheit für alle Benutzer  
 
 |Aktualisiert|Zurück|
 |---|---|
@@ -183,15 +188,15 @@ Folgende Updates werden Sie bemerken:
 ## <a name="week-of-july-16-2018"></a>Woche vom 16. Juli 2018  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Weitere Synchronisierungsoptionen in der Unternehmensportal-App für Windows   
-Mit der Unternehmensportal-App für Windows können Sie nun direkt über die Windows-Taskleiste und das Startmenü eine Synchronisierung starten. Dieses Feature ist besonders hilfreich, wenn Sie nur Geräte synchronisieren und auf Unternehmensressourcen zugreifen müssen. Klicken Sie mit der rechten Maustaste auf das Unternehmensportalsymbol, das an die Taskleiste oder das **Startmenü** angeheftet ist, um das neue Feature zu verwenden. Klicken Sie in den Menüoptionen (auch als Sprungliste bezeichnet) auf **Dieses Gerät synchronisieren**. Die Unternehmensportal-App wird geöffnet und zeigt die Seite **Einstellungen** an. Außerdem wird die Synchronisierung gestartet.  
+Mit der Unternehmensportal-App für Windows können Sie nun direkt über die Windows-Taskleiste und das Startmenü eine Synchronisierung starten. Dieses Feature ist besonders hilfreich, wenn Ihre einzige Aufgabe darin besteht, Geräte zu synchronisieren und auf Unternehmensressourcen zuzugreifen. Klicken Sie mit der rechten Maustaste auf das Unternehmensportalsymbol, das an die Taskleiste oder das **Startmenü** angeheftet ist, um das neue Feature zu verwenden. Klicken Sie in den Menüoptionen (auch als Sprungliste bezeichnet) auf **Dieses Gerät synchronisieren**. Die Unternehmensportal-App wird geöffnet und zeigt die Seite **Einstellungen** an. Außerdem wird die Synchronisierung gestartet.  
 
 ![Screenshot der Windows-Taskleiste auf dem Desktop eines Geräts Es wurde auf das Symbol der Unternehmensportal-App geklickt, um ein Menü mit den Optionen „An Taskleiste anheften“, „Fenster schließen“ und „Dieses Gerät synchronisieren“ anzuzeigen.](./media/whats-new-app-ui/sync-device-from-start-menu-1807.png)  
 
-### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Geänderte Durchsuchen-Funktion in der Unternehmensportal-App für Windows  
+### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Neue Suchvorgänge in der Unternehmensportal-App für Windows  
 
 Beim Durchsuchen von oder Suchen nach Apps in der Unternehmensportal-App für Windows können Sie nun zwischen der Ansicht **Kacheln** und der neue Ansicht **Details** wechseln. In dieser neuen Ansicht werden Anwendungsdetails wie Name, Herausgeber, Veröffentlichungsdatum und Installationsstatus angezeigt.  
 
-Auf der Seite **Apps** können Sie sich in der Ansicht **Installiert** Details zu abgeschlossenen und laufenden App-Installationen anzeigen lassen.  
+In der Ansicht **Installiert** der Seite **Apps** werden Details zu abgeschlossenen und laufenden App-Installationen angezeigt.  
 
 Beispielscreenshot der Ansicht „Kacheln“:  
  
@@ -262,7 +267,7 @@ Wenn Sie [Gerätegruppenzuordnung](../enrollment/device-group-mapping.md) aktivi
 
 ### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Verbesserungen des Workflows für das Gerätesetup im Unternehmensportal für iOS in Version 2.9.0 <!-- 1417174 -->
 
-Der Workflow für die Geräteinstallation in der Unternehmensportal-App unter iOS wurde verbessert. Die Sprache ist nun benutzerfreundlicher. Zudem haben wir Bildschirme nach Möglichkeit zusammengefasst. Zudem haben wir die Sprache speziell für Ihr Unternehmen angepasst, indem der Name Ihres Unternehmens im gesamten Setuptext verwendet wird.
+Der Workflow für die Geräteeinrichtung in der Unternehmensportal-App für iOS wurde verbessert. Die Sprache ist nun benutzerfreundlicher. Zudem haben wir Bildschirme nach Möglichkeit zusammengefasst. Zudem haben wir die Sprache speziell für Ihr Unternehmen angepasst, indem der Name Ihres Unternehmens im gesamten Setuptext verwendet wird.
 
 > [!NOTE]
 > Wir verwenden den Unternehmensnamen, den Sie im Azure-Portal unter **Microsoft Intune** > **Client-Apps** > **Branding des Unternehmensportals** > **Unternehmensname** festgelegt haben. Wenn Sie diesen Wert nicht festgelegt haben, verwenden wir den Namen des Mandanten, der unter **Azure Active Directory** > **Eigenschaften** > **Name** festgelegt wurde. Wenn Sie im Branding des Unternehmensportals keinen Unternehmensnamen festgelegt haben und nicht möchten, dass der Mandantennamen angezeigt wird, empfiehlt es sich, den Unternehmensnamen auf der Registerkarte „Branding des Unternehmensportals“ festzulegen. Wenn Sie nicht möchten, dass diese Zeichenfolge in der Kopfzeile im Unternehmensportal angezeigt wird, können Sie das Kontrollkästchen „Unternehmensnamen neben Logo anzeigen“ deaktivieren.
@@ -310,7 +315,7 @@ Das bekannte Problem, dass im iOS-Unternehmensportal Symbole in der App-Kachel a
 ## <a name="week-of-october-2-2017"></a>Woche vom 2. Oktober 2017
 
 ### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>Verbesserungen des Workflows für das Gerätesetup im Unternehmensportal <!-- 1490692 -->
-Der Workflow für die Geräteinstallation in der Unternehmensportal-App unter Android wurde verbessert. Die Sprache ist nun benutzerfreundlicher und spezifisch für Ihr Unternehmen. Zudem haben wir wo es möglich war Bildschirme vereint. 
+Der Workflow für die Geräteeinrichtung in der Unternehmensportal-App für Android wurde verbessert. Die Sprache ist nun benutzerfreundlicher und spezifisch für Ihr Unternehmen. Zudem haben wir wo es möglich war Bildschirme vereint. 
 
 |Vorher|Danach|
 |---|---|
@@ -340,7 +345,7 @@ Außerdem wurde der Aktivierungsbildschirm für bedingten Zugriff auf E-Mails ak
 
 ### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Vereinfachung der Formulierung für die Unternehmensportal-App für Android <!-- 1396349 -->  
 
-Der Registrierungsvorgang für die Unternehmensportal-App für Android wurde durch einen neuen Text vereinfacht, um Endbenutzern eine einfachere Registrierung zu bieten. Wenn Sie über eine benutzerdefinierte Registrierungsdokumentation verfügen, sollten Sie diese aktualisieren, damit diese die neuesten Bildschirme anzeigt. Unten finden Sie Abbildungen von Beispielen:
+Der Registrierungsvorgang für die Unternehmensportal-App für Android wurde durch einen neuen Text vereinfacht, um Endbenutzern eine einfachere Registrierung zu bieten. Wenn Sie eine benutzerdefinierte Registrierungsdokumentation verwenden, aktualisieren Sie sie gemäß der neuen Bildschirme. Unten finden Sie Abbildungen von Beispielen:
 
 |Vorher|Danach|
 |---|---|
@@ -465,7 +470,7 @@ Das Gerät kann immer noch für die vollständige Verwaltung registriert werden.
 
 ### <a name="improvements-to-app-syncing-with-windows-10-creators-update---676505--"></a>Verbesserungen bei der App-Synchronisierung mit dem Windows 10 Creators Update <!--676505-->
 
-Die Unternehmensportal-App für Windows 10 löst nun automatisch eine Synchronisierung für App-Installationsanforderungen für Geräte mit dem Windows 10 Creators Update (Version 1703) aus. Dadurch wird das Problem beseitigt, dass App-Installationen während des Zustands „Synchronisierung ausstehend“ verzögert reagieren. Darüber hinaus können Benutzer die Synchronisierung innerhalb der App manuell initiieren.
+Die Unternehmensportal-App für Windows 10 löst nun automatisch eine Synchronisierung für App-Installationsanforderungen für Geräte mit dem Windows 10 Creators Update (Version 1703) aus. Dadurch wird das Problem beseitigt, dass App-Installationen während des Zustands „Synchronisierung ausstehend“ verzögert reagieren. Darüber hinaus können Benutzer in der App manuell eine Synchronisierung auslösen.
 
 ![Ein Bild der Unternehmensportal-App für Windows 10, wobei sich der Download von Microsoft Word aus dem App-Store des Unternehmensportals im ausstehenden Status befindet.](./media/whats-new-app-ui/w10_download_pending_after_1706.png)
 
@@ -602,7 +607,7 @@ Es folgen die Pläne für Möglichkeiten zum Verbessern der Benutzererfahrung du
 > Bei den Abbildungen unten kann es sich um eine Vorschau handeln, und das angekündigte Produkt kann sich von den abgebildeten Versionen unterscheiden.  
 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 * [Microsoft Intune-Blog](https://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roadmap für die Cloudplattform](https://www.microsoft.com/cloud-platform/roadmap)
 * [Neuerungen in Intune](whats-new.md)

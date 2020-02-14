@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dc2e2ce7e19933accdb1063ccacf99fa3f54b09
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: b0145a17434d8b309806f468bf066d54ae117144
+ms.sourcegitcommit: 1aaff35fddb3d06458d739968d28971fed0bb2ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563967"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77155359"
 ---
 # <a name="configure-microsoft-launcher"></a>Konfigurieren von Microsoft Launcher
 
@@ -31,13 +31,13 @@ Microsoft Launcher ist eine Android-App, mit der Benutzer ihr Smartphone persona
 
 Auf vollständig verwalteten Android Enterprise-Geräten ermöglicht Launcher es den IT-Administratoren eines Unternehmens auch, die Startbildschirme verwalteter Geräte durch Auswahl von Hintergrundbildern, Apps und Symbolpositionen anzupassen. Damit kann das Erscheinungsbild aller verwalteten Android-Geräte über verschiedene OEM-Geräte- und Systemversionen hinweg standardisiert werden. 
 
-## <a name="how-to-configure-the-microsoft-managed-home-screen-app"></a>Konfigurieren der Managed Home Screen-App von Microsoft 
+## <a name="how-to-configure-the-microsoft-launcher-app"></a>Konfigurieren der Microsoft Launcher-App 
 
-Navigieren Sie zum [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), und wählen Sie **Apps** > **App-Konfigurationsrichtlinien** aus. Fügen Sie eine Konfigurationsrichtlinie für **Verwaltete Geräte** unter **Android** hinzu, und wählen Sie **Microsoft Launcher** als zugeordnete App aus. Klicken Sie auf **Konfigurationseinstellungen**, um die verschiedenen verfügbaren Einstellungen für Managed Home Screen zu konfigurieren. 
+Navigieren Sie zum [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), und wählen Sie **Apps** > **App-Konfigurationsrichtlinien** aus. Fügen Sie eine Konfigurationsrichtlinie für **Verwaltete Geräte** unter **Android** hinzu, und wählen Sie **Microsoft Launcher** als zugeordnete App aus. Klicken Sie auf **Konfigurationseinstellungen**, um die verschiedenen verfügbaren Einstellungen für Microsoft Launcher zu konfigurieren. 
 
 ## <a name="choosing-a-configuration-settings-format"></a>Auswählen eines Formats für die Konfigurationseinstellungen 
 
-Es gibt zwei Methoden, mit denen Sie Konfigurationseinstellungen für Managed Home Screen definieren können: 
+Es gibt zwei Methoden, mit denen Sie Konfigurationseinstellungen für Microsoft Launcher definieren können: 
 
 - **Konfigurations-Designer** ermöglicht Ihnen das Konfigurieren von Einstellungen über eine benutzerfreundliche Oberfläche, auf der Sie Features aktivieren oder deaktivieren und Werte festlegen können. Bei dieser Methode gibt es einige deaktivierte Konfigurationsschlüssel mit dem Werttyp „BundleArray“. Diese Konfigurationsschlüssel können nur durch Eingabe von JSON-Daten konfiguriert werden. 
 
@@ -75,8 +75,8 @@ Zusätzlich zu den konfigurierbaren Einstellungen, die in der Tabelle „Konfigu
 
 |    Konfigurationsschlüssel    |    Werttyp    |    Standardwert    |    Beschreibung     |
 |----------------------------------------------------------------------------------------------------|-------------------|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    Anwendungen für die Zulassungsliste festlegen<br>JSON-Schlüssel:`com.microsoft.launcher.HomeScreen.Applications`    |    BundleArray    | Weitere Informationen finden Sie unter: [Anwendungen für die Zulassungsliste festlegen](configure-microsoft-launcher.md#set-allow-listed-applications)</sup>    |    Hiermit können Sie aus den Apps, die auf dem Gerät installiert sind, diejenige Gruppe von Apps definieren, die auf dem Startbildschirm sichtbar sein soll. Sie können die Apps definieren, indem Sie die Paketnamen der Apps eingeben, die Sie sichtbar machen möchten. Mit `com.android.settings` beispielsweise kann über den Startbildschirm auf Einstellungen zugegriffen werden. Die Apps, die Sie der Zulassungsliste in diesem Abschnitt hinzufügen, müssen bereits auf dem Gerät installiert sein, um auf dem Startbildschirm angezeigt zu werden.<p>Eigenschaften:<ul><li>**Paket**: Der Name des Anwendungspakets</li><li>**Klasse:** Die Anwendungsaktivität, die für eine bestimmte App-Seite gilt. Wenn dieser Wert leer ist, wird die Standard-App-Seite verwendet.</li></ul>      |
-|    App-Reihenfolge auf dem Startbildschirm<br>JSON-Schlüssel: `com.microsoft.launcher.HomeScreen.AppOrder`    |    BundleArray    |    Weitere Informationen finden Sie unter: [App-Reihenfolge auf dem Startbildschirm](configure-microsoft-launcher.md#home-screen-app-order)      |    Ermöglicht es Ihnen, die App-Reihenfolge auf dem Startbildschirm anzugeben.<p>Eigenschaften:<br><ul><li>**Typ:** Der einzige unterstützte Typ ist `application`.</li><li>**Position**: Die Position des Anwendungssymbols auf dem Startbildschirm. Die Zählung beginnt bei Position 1 oben links und wird von links nach rechts und von oben nach unten fortgeführt.</li><li>**Paket**: Der Name des Anwendungspakets.</li><li>**Klasse:** Die Anwendungsaktivität, die für eine bestimmte App-Seite gilt. Wenn dieser Wert leer ist, wird die Standard-App-Seite verwendet.</li></ul>    |
+|    Anwendungen für die Zulassungsliste festlegen<br>JSON-Schlüssel:`com.microsoft.launcher.HomeScreen.Applications`    |    BundleArray    | Siehe: [Anwendungen für die Zulassungsliste festlegen](configure-microsoft-launcher.md#set-allow-listed-applications)</sup>    |    Hiermit können Sie aus den Apps, die auf dem Gerät installiert sind, diejenige Gruppe von Apps definieren, die auf dem Startbildschirm sichtbar sein soll. Sie können die Apps definieren, indem Sie die Paketnamen der Apps eingeben, die Sie sichtbar machen möchten. Mit `com.android.settings` beispielsweise kann über den Startbildschirm auf Einstellungen zugegriffen werden. Die Apps, die Sie der Zulassungsliste in diesem Abschnitt hinzufügen, müssen bereits auf dem Gerät installiert sein, um auf dem Startbildschirm angezeigt zu werden.<p>Eigenschaften:<ul><li>**Paket**: Der Name des Anwendungspakets</li><li>**Klasse:** Die Anwendungsaktivität, die für eine bestimmte App-Seite gilt. Wenn dieser Wert leer ist, wird die Standard-App-Seite verwendet.</li></ul>      |
+|    App-Reihenfolge auf dem Startbildschirm<br>JSON-Schlüssel: `com.microsoft.launcher.HomeScreen.AppOrder`    |    BundleArray    |    Siehe: [App-Reihenfolge auf dem Startbildschirm](configure-microsoft-launcher.md#home-screen-app-order)      |    Ermöglicht es Ihnen, die App-Reihenfolge auf dem Startbildschirm anzugeben.<p>Eigenschaften:<br><ul><li>**Typ:** Der einzige unterstützte Typ ist `application`.</li><li>**Position**: Die Position des Anwendungssymbols auf dem Startbildschirm. Die Zählung beginnt bei Position 1 oben links und wird von links nach rechts und von oben nach unten fortgeführt.</li><li>**Paket**: Der Name des Anwendungspakets.</li><li>**Klasse:** Die Anwendungsaktivität, die für eine bestimmte App-Seite gilt. Wenn dieser Wert leer ist, wird die Standard-App-Seite verwendet.</li></ul>    |
 
 ### <a name="set-allow-listed-applications"></a>Festlegen von Anwendungen für die Zulassungsliste
 

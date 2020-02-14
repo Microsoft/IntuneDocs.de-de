@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cc873079d9a139edfa2217d97806afe0c5bbf28
-ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
+ms.openlocfilehash: 7279921719677fce0845517aefc5958f57ce13cb
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "75545955"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075704"
 ---
 # <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>Erstellen einer Mobile Threat Defense-App-Schutzrichtlinie (MTD) mit Intune
 
@@ -49,7 +49,7 @@ Voraussetzungen für die App-Schutzrichtlinie mit MTD:
 
 Verwenden Sie die Prozedur, um [eine iOS-/iPadOS- oder Android-App-Schutzrichtlinie zu erstellen](../apps/app-protection-policies.md#app-protection-policies-for-iosipados-and-android-apps), und verwenden Sie die folgenden Informationen von den Seiten *Apps*, *Bedingter Start* und *Zuweisungen*:
 
-- **Apps**: Wählen Sie die App für den Mobile Threat Defense-Partner aus, den Sie verwenden.
+- **Apps**: Wählen Sie die Apps aus, für die die App-Schutzrichtlinien gelten sollen. Für diese Featuregruppe werden diese Apps blockiert oder basierend auf der Geräterisikobewertung des Mobile Threat Defense-Anbieters selektiv zurückgesetzt. 
 - **Bedingter Start:**  Wählen Sie in der Dropdownliste unter *Gerätebedingungen***Maximal zulässige Bedrohungsstufe für Gerät** aus.
 
   Optionen für den **Wert** der Bedrohungsstufe:

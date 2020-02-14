@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 02/10/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,25 +15,22 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: 44078f61e4f1939b1f0b15b3dde5ac54938ffbc3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9fb4aab6b02c6ad6a5d2f18ca9d15beafc12d58a
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059974"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124808"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Übermittlungsoptimierungseinstellungen in Microsoft Intune
 
-Mithilfe von Intune können Sie die Übermittlungsoptimierungseinstellungen für Ihre Windows 10-Geräte verwenden, um die Auslastung der Bandbreite zu verringern, wenn diese Geräte Anwendungen und Updates herunterladen. Die Übermittlungsoptimierung wird als Bestandteil Ihrer Gerätekonfigurationsprofile konfiguriert.  
+Verwenden Sie mithilfe von Intune die Übermittlungsoptimierungseinstellungen für Ihre Windows 10-Geräte, um die Auslastung der Bandbreite zu verringern, wenn diese Geräte Anwendungen und Updates herunterladen. Konfigurieren Sie die Übermittlungsoptimierung im Rahmen Ihrer Gerätekonfigurationsprofile.  
 
 In diesem Artikel wird beschrieben, wie Sie Übermittlungsoptimierungseinstellungen als Teil eines Gerätekonfigurationsprofils konfigurieren können. Nachdem Sie ein Profil erstellt haben, sollten Sie dieses Ihren Windows 10-Geräten zuweisen oder für diese bereitstellen. 
 
-Eine Liste der von Intune unterstützten Übermittlungsoptimierungseinstellungen finden Sie unter [Delivery optimization settings for Intune (Übermittlungsoptimierungseinstellungen für Intune)](../delivery-optimization-settings.md).  
+Eine Liste der von Intune unterstützten Übermittlungsoptimierungseinstellungen finden Sie unter [Übermittlungsoptimierungseinstellungen für Intune](../delivery-optimization-settings.md).  
 
 Weitere Informationen zur Übermittlungsoptimierung unter Windows 10 finden Sie in der Windows-Dokumentation unter [Delivery Optimization updates (Updates für die Übermittlungsoptimierung)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization).  
-
-> [!NOTE]
-> **Softwareupdates – Windows 10-Updateringe** wird durch die Einstellungen für **Übermittlungsoptimierung** ersetzt. Ihre vorhandenen Updateringe können zur Verwendung der Einstellungen für die **Übermittlungsoptimierung** geändert werden. [Wechseln vorhandener Updateringe zur Übermittlungsoptimierung](#move-existing-update-rings-to-delivery-optimization) (in diesem Artikel)
 
 ## <a name="create-the-profile"></a>Erstellen des Profils
 
@@ -43,8 +40,8 @@ Weitere Informationen zur Übermittlungsoptimierung unter Windows 10 finden Sie
 
 3. Geben Sie die folgenden Eigenschaften ein:
 
-    - **Name**: Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
-    - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    - **Name:** Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
+    - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
     - **Plattform**: Wählen Sie **Windows 10 und höher** aus.
     - **Profiltyp**: Wählen Sie **Übermittlungsoptimierung** aus.
 
@@ -54,20 +51,25 @@ Weitere Informationen zur Übermittlungsoptimierung unter Windows 10 finden Sie
 
 Das Profil wird erstellt und in der Liste angezeigt. [Weisen](device-profile-assign.md) Sie als Nächstes das Profil zu, und [überwachen Sie dessen Status](device-profile-monitor.md).
 
-## <a name="move-existing-update-rings-to-delivery-optimization"></a>Wechseln vorhandener Updateringe zur Übermittlungsoptimierung
+<!-- ## Move existing update rings to delivery optimization
 
-Die **Übermittlungsoptimierungseinstellungen** ersetzen die **Softwareupdates im Rahmen der Windows 10-Updateringe**. Ihre vorhandenen Updateringe können problemlos zur Verwendung der Einstellungen für die **Übermittlungsoptimierung** geändert werden. Wenn Sie beim Erstellen eines Übermittlungsoptimierungsprofils dieselben Einstellungen beibehalten möchten, verwenden Sie denselben *Downloadmodus für Übermittlungsoptimierung*, und legen Sie dann die Einstellungen fest, die Sie bereits verwenden. Sie können die Übermittlungsoptimierungseinstellungen allerdings auch erneut konfigurieren, um sämtliche zusätzlichen Einstellungen zu nutzen, die das Übermittlungsoptimierungsprofil verwalten kann.
+**Delivery optimization** settings replace **Software updates – Windows 10 Update Rings**. Your existing update rings can be easily changed to use the **Delivery optimization** settings. To maintain the same settings when you create a delivery optimization profile, use the same *Delivery optimization download mode* and then set the same settings as you already use. However, you can choose to reconfigure delivery optimization settings to take advantage of the full range of addition settings that the Delivery Optimization profile can manage. 
+-->
 
-1. Erstellen Sie ein Konfigurationsprofil für die Übermittlungsoptimierung:
+## <a name="remove-delivery-optimization-from-windows-10-update-rings"></a>Entfernen der Übermittlungsoptimierung aus den Windows 10-Updateringen
+
+Die Übermittlungsoptimierung war zuvor als Teil der Softwareupdateringe konfiguriert. Ab Februar 2019 werden die Einstellungen der Übermittlungsoptimierung jedoch als Teil eines Gerätekonfigurationsprofils für Übermittlungsoptimierungen konfiguriert, das zusätzliche Einstellungen enthält, die mehr Auswirkungen als nur die Softwareupdateübermittlung an Geräte haben. Wenn Sie die Übermittlungsoptimierungseinstellungen noch nicht aus Ihren Updateringen entfernt haben, tun Sie dies jetzt, indem Sie sie auf *Nicht konfiguriert* festlegen und anschließend ein Übermittlungsoptimierungsprofil verwenden, um den größeren Bereich verfügbarer Optionen zu verwalten.
+
+1. Erstellen Sie ein Gerätekonfigurationsprofil für die Übermittlungsoptimierung:
 
     1. Wählen Sie im Microsoft Endpoint Manager Admin Center die Option **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
     2. Geben Sie die folgenden Eigenschaften ein:
 
-        - **Name**: Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
-        - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+        - **Name:** Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
+        - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
         - **Plattform**: Wählen Sie **Windows 10 und höher** aus.
         - **Profiltyp**: Wählen Sie **Übermittlungsoptimierung** aus.
-        - **Einstellungen:** Legen Sie für den **Downloadmodus für Übermittlungsoptimierung** den Modus fest, der bereits vom vorhanden Softwareupdatering verwendet wird, wenn Sie die Einstellungen für Ihre Geräte nicht ändern möchten. Folgende Optionen sind verfügbar:
+        - **Einstellungen**: Legen Sie für den **Downloadmodus für Übermittlungsoptimierung** den Modus fest, der bereits vom vorhanden Softwareupdatering verwendet wird, wenn Sie die Einstellungen für Ihre Geräte nicht ändern möchten. Folgende Optionen sind verfügbar:
             - **Nicht konfiguriert**
             - **Nur HTTP, kein Peering**
             - **HTTP kombiniert mit Peering hinter derselben NAT**
@@ -80,7 +82,7 @@ Die **Übermittlungsoptimierungseinstellungen** ersetzen die **Softwareupdates i
 2. Weisen Sie dieses neue Profil den gleichen Geräten und Benutzern zu, die zu dem vorhandenen Softwareupdatering gehören. In [Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune](device-profile-assign.md) sind die Schritte aufgeführt.
 
 3. Heben Sie die Konfiguration des vorhandenen Softwarerings auf:
-    1. Wechseln Sie im Microsoft Endpoint Manager Admin Center zu **Softwareupdates** > „Windows 10-Updateringe“.
+    1. Wechseln Sie im Microsoft Endpoint Manager Admin Center zu **Softwareupdates** > Windows 10-Updateringe.
     2. Wählen Sie in der Liste Ihren Updatering aus.
     3. Legen Sie in den Einstellungen für den **Downloadmodus für Bereitstellungsoptimierung** **Nicht konfiguriert** fest.
     4. Wählen Sie zum Speichern der Änderungen **OK** > **Speichern** aus.

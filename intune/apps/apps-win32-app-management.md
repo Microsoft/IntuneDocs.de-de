@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c120fab1da43230888866cba9d818d7b433b711e
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: dbefd797fead7113045ee7e7655b715a0b4961fd
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755288"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075823"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Eigenständiges Intune – Win32-App-Verwaltung
 
@@ -204,7 +204,7 @@ Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-A
         2. Wenn Sie die Anforderungsregeln festgelegt haben, wählen Sie **OK** aus.
 2. Klicken Sie auf **Weiter**, um die Seite **Erkennungsregeln** anzuzeigen.   
 
-### <a name="step-4-detection-rules"></a>Schritt 4: Erkennungsregeln
+## <a name="step-4-detection-rules"></a>Schritt 4: Erkennungsregeln
 
 1. Konfigurieren Sie auf der Seite **Erkennungsregeln** die Regeln, mit denen erkannt wird, ob die App vorhanden ist.
     
@@ -268,7 +268,7 @@ Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-A
 
 2. Nachdem Sie Ihre Regel(n) hinzugefügt haben, wählen Sie **Weiter** aus, um die Seite **Abhängigkeiten** anzuzeigen.
 
-### <a name="step-5-dependencies"></a>Schritt 5: -Abhängigkeiten
+## <a name="step-5-dependencies"></a>Schritt 5: -Abhängigkeiten
 
 App-Abhängigkeiten sind Anwendungen, die installiert sein müssen, bevor Ihre Win32-App installiert werden kann. Sie können anfordern, dass andere Apps als Abhängigkeiten installiert werden. Das heißt, das Gerät muss die abhängige(n) App(s) installieren, bevor die Win32-App installiert wird. Es sind maximal 100 Abhängigkeiten möglich. Dazu zählen die Abhängigkeiten aller eingeschlossenen Abhängigkeiten sowie die App selbst. Sie können Win32-App-Abhängigkeiten erst hinzufügen, nachdem Ihre Win32-App zu Intune hinzugefügt und darin hochgeladen wurde. Sobald Ihre Win32-App hinzugefügt wurde, sehen Sie die Option **Abhängigkeiten** im Bereich für Ihre Win32-App. 
 
