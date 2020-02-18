@@ -1,11 +1,11 @@
 ---
 title: Registrieren eines Android-Arbeitsprofils im Intune-Unternehmensportal | Microsoft-Dokumentation
-description: Erstellen eines Arbeits Profils und Registrieren eines Geräts mit InTune-Unternehmensportal.
+description: Erstellen eines Arbeitsprofils und Registrieren eines Geräts im Intune-Unternehmensportal
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: ''
-ms.openlocfilehash: ced722fd671826e828b4dd79956a7dad1010bd84
-ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
+ms.openlocfilehash: 003141402c1d068775caee6ca4405efc5ca7552f
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75856750"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124859"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Registrieren eines Geräts mit dem Android-Arbeitsprofil
 
@@ -36,51 +36,48 @@ Weitere Informationen dazu finden Sie unter [Was geschieht beim Erstellen eines 
 
 ## <a name="create-work-profile-and-enroll-device"></a>Erstellen eines Arbeitsprofils und Registrieren eines Geräts
 
-1. Öffnen Sie die Unternehmensportal-App, und melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an. Wenn Sie die kostenlose App nicht installiert haben, installieren Sie Sie über [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).  
+1. Öffnen Sie die Unternehmensportal-App, und melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an. Wenn Sie die kostenlose App noch nicht installiert haben, installieren Sie sie von [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).  
 
 2. Tippen Sie auf dem Bildschirm **Unternehmenszugriff einrichten** auf **BEGINNEN**.  
 
-    ![Screenshot des Bildschirms zum Einrichten des Unternehmens Zugriffs](./media/access-setup-work-profile-1911.png)  
+    ![Screenshot des Bildschirms „Unternehmenszugriff einrichten“](./media/access-setup-work-profile-1911.png)  
 
 3. Überprüfen Sie, was Ihre Organisation sehen kann und was nicht. Tippen Sie dann auf **WEITER**. 
 
-    ![Beispiel Bild Unternehmensportal, wir kümmern uns um den Datenschutz Bildschirm, der die Schaltfläche "weiter" hervorhebt.](./media/android-privacy-screen-1911.png)  
-4. Überprüfen Sie, was Sie in den anstehenden Schritten erwarten können. Tippen Sie dann auf **weiter**.  
+    ![Beispielbild des Unternehmensportals mit dem Bildschirm „We care about your privacy“ (Ihre Privatsphäre ist uns wichtig) mit hervorgehobener Schaltfläche „Continue“ (Weiter)](./media/android-privacy-screen-1911.png)  
 
-    ![Beispiel Bild Unternehmensportal, der nächste Bildschirm, Hervorhebung der Schaltfläche Weiter.](./media/android-wp-04-1908.png)  
+4. Überprüfen Sie die Google-Bedingungen zum Erstellen eines Arbeitsprofils. Tippen Sie anschließend auf **ACCEPT & CONTINUE** (ZUSTIMMEN & WEITER). Die Darstellung dieses Bildschirms variiert basierend auf der Android-Version Ihres Geräts. 
 
-5. Überprüfen Sie die Google-Bedingungen zum Erstellen eines Arbeits Profils. Tippen Sie anschließend auf **ACCEPT & CONTINUE** (ZUSTIMMEN & WEITER). Die Darstellung dieses Bildschirms variiert basierend auf der Android-Version Ihres Geräts. 
+    ![Screenshot der Arbeitsprofilbedingungen von Google](./media/android-wp-05-1908.png)  
 
-    ![Screenshot der Arbeitsprofil Bedingungen von Google](./media/android-wp-05-1908.png)  
+5. Warten Sie, während das Arbeitsprofil eingerichtet wird.  
 
-6. Warten Sie, während das Arbeitsprofil eingerichtet ist.  
+    ![Screenshot des Bildschirms „Setting up work profile“ (Arbeitsprofil wird eingerichtet)](./media/android-wp-05a-1908.png)  
 
-    ![Screenshot des Bildschirms "Einrichten von Arbeits Profilen".](./media/android-wp-05a-1908.png)  
+   Abhängig von Ihrer Android-Version wird möglicherweise ein zusätzlicher Bildschirm angezeigt. Darauf erkennen Sie, dass der Einrichtungsprozess zur Hälfte abgeschlossen ist. Wenn dieser Bildschirm angezeigt wird, warten Sie einige Minuten, bis Sie umgeleitet und bei der Unternehmensportal-App angemeldet werden.  
 
-   Abhängig von Ihrer Android-Version wird möglicherweise ein zusätzlicher Bildschirm angezeigt. Es zeigt an, dass Sie sich in der Mitte des Setups befinden. Wenn dieser Bildschirm angezeigt wird, warten Sie einige Minuten, bis Sie umgeleitet und bei der Unternehmensportal-App angemeldet sind.  
+    ![Screenshot des Bildschirms „You‘re halfway there“ (Fast geschafft) mit Umleitungsmeldung](./media/android-wp-05b-1908.png)  
 
-    ![Screenshot des Bildschirms "Sie sind in der Mitte" mit der Umleitungs Meldung.](./media/android-wp-05b-1908.png)  
+6. Überprüfen Sie auf dem Bildschirm **Unternehmenszugriff einrichten**, ob Ihr Arbeitsprofil erstellt wurde. Tippen Sie dann auf **WEITER**.  
 
-7. Überprüfen Sie auf dem Bildschirm **Unternehmens Zugriff einrichten** , ob Ihr Arbeitsprofil erstellt wurde. Tippen Sie dann auf **WEITER**.  
+    ![Screenshot des Bildschirms „Unternehmenszugriff einrichten“, wo gerade ein Arbeitsprofil eingerichtet wird](./media/work-profile-complete-1911.png)  
 
-    ![Screenshot des Setups des Unternehmens Zugriffs, das zeigt, dass das Arbeitsprofil erstellt wurde](./media/work-profile-complete-1911.png)  
+7. Überprüfen Sie, ob Ihr Arbeitsprofil aktiv ist. Tippen Sie dann auf **WEITER**. 
 
-8. Überprüfen Sie, ob Ihr Arbeitsprofil aktiv ist. Tippen Sie dann auf **WEITER**. 
+    ![Screenshot des Bildschirms „Unternehmenszugriff einrichten“, wo das Arbeitsprofil aktiv ist](./media/work-profile-active-1911.png)  
 
-    ![Screenshot des Unternehmens Zugriffs Setups, das zeigt, dass das Arbeitsprofil aktiv ist.](./media/work-profile-active-1911.png)  
+8. In Ihrer Organisation ist es möglicherweise erforderlich, dass Sie Ihre Geräteeinstellungen aktualisieren. Tippen Sie auf **AUFLÖSEN**, um eine Einstellung anzupassen. Wenn Sie mit dem Aktualisieren der Einstellungen fertig sind, tippen Sie auf **WEITER**.    
 
-9. In Ihrer Organisation ist es möglicherweise erforderlich, dass Sie Ihre Geräteeinstellungen aktualisieren. Tippen Sie auf **Auflösen** , um eine Einstellung anzupassen. Wenn Sie mit dem Aktualisieren der Einstellungen fertig sind, tippen Sie auf **weiter**.    
-
-    ![Beispiel Abbildung Unternehmensportal, Bildschirm "Geräteeinstellungen aktualisieren", Hervorhebung der Schaltflächen auflösen und fortfahren.](./media/resolve-settings-1911.png) 
+    ![Beispielabbildung des Unternehmensportals mit dem Bildschirm „Geräteeinstellungen aktualisieren“ mit hervorgehobenen Schaltflächen „Resolve“ (Auflösen) und „Continue“ (Weiter)](./media/resolve-settings-1911.png) 
 
 
-10. Wenn das Setup abgeschlossen ist, tippen Sie auf **Fertig**.  
+9. Wenn das Setup abgeschlossen ist, tippen Sie auf **FERTIG**.  
 
-    ![Beispiel Abbildung Unternehmensportal, Bildschirm "Unternehmens Zugriff einrichten", zeigt die abgeschlossene Schaltfläche "Setup" und "Fertig".](./media/work-profile-done-1911.png)  
+    ![Beispielabbildung des Unternehmensportals, Bildschirm „Geräteeinstellungen aktualisieren“, mit dem abgeschlossenen Setup und hervorgehobener Schaltfläche „Done“ (Fertig)](./media/work-profile-done-1911.png)  
 
 
 ## <a name="next-steps"></a>Nächste Schritte  
 
-Nachdem Ihr Gerät registriert wurde, können Sie Schul-oder Arbeits-apps auf Ihrem Gerät installieren. Wechseln Sie zum verwalteten Google Play Store, um diese apps zu suchen und zu installieren. 
+Nachdem Ihr Gerät registriert wurde, können Sie Apps für Schule, Uni oder Arbeit auf Ihrem Gerät installieren. Wechseln Sie zum verwalteten Google Play Store, um diese Apps zu suchen und zu installieren. 
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).
