@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f368f5f15f71246a2899f2acb7a791d65df26c99
-ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
+ms.openlocfilehash: a727cf03f53ee003c27708a04ad475f0b370c487
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75857042"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414999"
 ---
 # <a name="intune-discovered-apps"></a>Von Intune ermittelte Apps
 
@@ -59,7 +59,7 @@ In der folgenden Liste erhalten Sie Informationen zum Plattformtyp der App, zu d
 | Windows 8.1 | Nur verwaltete Apps | Nur verwaltete Apps | Alle 7 Tage ab der Geräteregistrierung |
 | Windows Phone 8 | Nur verwaltete Apps | Nur verwaltete Apps | Alle 7 Tage ab der Geräteregistrierung |
 | Windows RT | Nur verwaltete Apps | Nur verwaltete Apps | Alle 7 Tage ab der Geräteregistrierung |
-| iOS | Nur verwaltete Apps | Alle auf dem Gerät installierten Apps | Alle 7 Tage ab der Geräteregistrierung |
+| iOS/iPadOS | Nur verwaltete Apps | Alle auf dem Gerät installierten Apps | Alle 7 Tage ab der Geräteregistrierung |
 | macOS | Nur verwaltete Apps | Alle auf dem Gerät installierten Apps | Alle 7 Tage ab der Geräteregistrierung |
 | Android | Nur verwaltete Apps | Alle auf dem Gerät installierten Apps | Alle 7 Tage ab der Geräteregistrierung |
 | Android Enterprise | Nur verwaltete Apps | Nur im Arbeitsprofil installierte Apps | Alle 7 Tage ab der Geräteregistrierung |
