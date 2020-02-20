@@ -12,12 +12,12 @@ metadata:
   author: ErikjeMS
   ms.author: erikje
   ms.date: 09/13/2019
-  ms.openlocfilehash: 726efeb7ea552db423332617fff074dbc14f478d
-  ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+  ms.openlocfilehash: d4c2a3b09a4c63b87109322a139bdbddefbe5458
+  ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 01/26/2020
-  ms.locfileid: "76753996"
+  ms.lasthandoff: 02/18/2020
+  ms.locfileid: "77438037"
 landingContent:
 - title: Remoteausführung von Geräteaktionen
   linkLists:
@@ -71,11 +71,11 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Orten von iOS-Geräten
+    - text: Orten von iOS-/iPadOS-Geräten
       url: device-locate.md
-    - text: Aktivieren des überwachten iOS-Modus
+    - text: Aktivieren des überwachten iOS-/iPadOS-Modus
       url: device-supervised-mode.md
-    - text: Aktivieren des iOS-Modus für verlorene Geräte
+    - text: Aktivieren des iOS-/iPadOS-Modus für verlorene Geräte
       url: device-lost-mode.md
     - text: Löschen von Daten von einem macOS-Gerät
       url: device-erase.md

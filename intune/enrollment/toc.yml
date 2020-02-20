@@ -16,11 +16,11 @@
       href: quickstart-setup-auto-enrollment.md
     - name: Registrierung Ihres Windows 10-Geräts
       href: quickstart-enroll-windows-device.md
-- name: Lernprogramme
+- name: Tutorials
   items:
     - name: Verwenden von Autopilot zum Registrieren von Windows-Geräten
       href: tutorial-use-autopilot-enroll-devices.md
-    - name: Verwenden von DEP zur Registrierung von iOS-Geräten
+    - name: Verwenden von DEP zur Registrierung von iOS/iPadOS-Geräten
       href: tutorial-use-device-enrollment-program-enroll-ios.md
 - name: Konzepte
   items:
@@ -40,7 +40,7 @@
       href: device-enrollment-manager-enroll.md
     - name: Zuweisen von Geräten zu Gruppen
       href: device-group-mapping.md
-- name: Schrittanleitungen
+- name: Anleitungen
   items:
     - name: Einrichten der Windows-Registrierung
       items:
@@ -84,12 +84,12 @@
         - name: Registrierung mobiler Geräte für Samsung Knox
           href: android-samsung-knox-mobile-enroll.md
           displayName: kda; kme
-    - name: Einrichten der iOS-Registrierung
+    - name: Einrichten der iOS/iPadOS-Registrierung
       href: ios-enroll.md
       items:
         - name: Geräteregistrierungsprogramm
           href: device-enrollment-program-enroll-ios.md
-        - name: Einrichten der iOS- und iPadOS-Benutzerregistrierung
+        - name: Einrichten der iOS/iPadOS- und iPadOS-Benutzerregistrierung
           href: ios-user-enrollment.md
         - name: Unterstützte Aktionen und Optionen der Benutzerregistrierung
           href: ios-user-enrollment-supported-actions.md
@@ -109,7 +109,7 @@
         - name: Behandlung von Problemen bei der Geräteregistrierung
           href: troubleshoot-device-enrollment-in-intune.md
           displayName: sso
-        - name: Behandlung von Problemen bei der Registrierung von iOS-Geräten
+        - name: Behandlung von Problemen bei der Registrierung von iOS/iPadOS-Geräten
           href: troubleshoot-ios-enrollment-errors.md
         - name: Behandlung von Problemen bei der Registrierung von Windows-Geräten
           href: troubleshoot-windows-enrollment-errors.md
