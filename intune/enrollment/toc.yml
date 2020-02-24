@@ -100,7 +100,7 @@
     - name: Einrichten der macOS-Registrierung
       href: macos-enroll.md
       items:
-        - name: Programm zur Geräteregistrierung oder Apple School Manager
+        - name: Automatische Geräteregistrierung
           href: device-enrollment-program-enroll-macos.md
     - name: Unvollständiger Registrierungsbericht
       href: enrollment-report-company-portal-abandon.md

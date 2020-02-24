@@ -11,13 +11,13 @@ metadata:
   ms.collection: collection
   author: dougeby
   ms.author: dougeby
-  ms.date: 09/16/2019
-  ms.openlocfilehash: afd555e5f245ee9bc28bd21268ae64ae69afbad3
-  ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+  ms.date: 02/18/2020
+  ms.openlocfilehash: d6404a4c77507374b5e8759ba2078e541cde35d8
+  ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 10/16/2019
-  ms.locfileid: "72492538"
+  ms.lasthandoff: 02/20/2020
+  ms.locfileid: "77511050"
 landingContent:
 - title: Zuweisen von Features und Einstellungen zu Geräten
   linkLists:
@@ -27,7 +27,7 @@ landingContent:
       url: device-profiles.md
   - linkListType: quickstart
     links:
-    - text: Erstellen eines E-Mail-Geräteprofils für iOS
+    - text: Erstellen eines E-Mail-Geräteprofils für iOS/iPadOS
       url: quickstart-email-profile.md
   - linkListType: how-to-guide
     links:
@@ -69,11 +69,11 @@ landingContent:
       url: wi-fi-settings-configure.md
     - text: Steuern von Zugriff, Konten und Energiefunktionen auf gemeinsam genutzten PCs oder von mehreren Benutzern verwendeten Geräten
       url: shared-user-device-settings.md
-- title: Einstellungen für iOS
+- title: Einstellungen für iOS/iPadOS
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Hinzufügen von iOS-Gerätefunktionseinstellungen
+    - text: Hinzufügen von Einstellungen für iOS- und iPadOS-Gerätefeatures
       url: device-features-configure.md
     - text: Konfigurieren von Einstellungen für Geräteeinschränkungen
       url: device-restrictions-configure.md
@@ -81,7 +81,7 @@ landingContent:
       url: email-settings-configure.md
     - text: Erstellen von VPN-Profilen zum Herstellen einer Verbindung mit VPN-Servern
       url: vpn-settings-configure.md
-    - text: Erstellen von App-bezogenen VPN-Profilen für iOS-Geräte
+    - text: Erstellen von Pro-App-VPN-Profilen für iOS- und iPadOS-Geräte
       url: vpn-setting-configure-per-app.md
     - text: Hinzufügen und Verwenden von WLAN-Einstellungen auf Ihren Geräten
       url: wi-fi-settings-configure.md
@@ -89,7 +89,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Hinzufügen von iOS-Gerätefunktionseinstellungen
+    - text: Hinzufügen von Einstellungen für iOS- und iPadOS-Gerätefeatures
       url: device-features-configure.md
     - text: Konfigurieren von Einstellungen für Geräteeinschränkungen
       url: device-restrictions-configure.md
@@ -137,7 +137,7 @@ landingContent:
       url: device-restrictions-android.md
     - text: Android Enterprise
       url: device-restrictions-android-for-work.md
-    - text: iOS
+    - text: iOS/iPadOS
       url: ios-device-features-settings.md
     - text: macOS
       url: macos-device-features-settings.md
@@ -145,7 +145,7 @@ landingContent:
       url: delivery-optimization-settings.md
     - text: Windows Holographic for Business
       url: device-restrictions-windows-holographic.md
-    - text: Windows 8.1
+    - text: Windows 8.1
       url: device-restrictions-windows-8-1.md
     - text: Windows Phone 8.1
       url: device-restrictions-windows-phone-8-1.md

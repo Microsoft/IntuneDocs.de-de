@@ -27,7 +27,7 @@
       items:
         - name: Orten eines verlorenen iOS-/iPadOS-Geräts
           href: device-locate.md
-        - name: Aktivieren des iiOS-/iPadOSOS-Modus für verlorene Geräte
+        - name: Aktivieren des iOS-/iPadOS-Modus für verlorene Geräte
           href: device-lost-mode.md
         - name: Aktivieren des überwachten iOS-/iPadOS-Modus
           href: device-supervised-mode.md

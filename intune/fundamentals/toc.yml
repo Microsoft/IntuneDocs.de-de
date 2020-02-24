@@ -9,7 +9,7 @@
     - name: Übersicht über die Geräteverwaltung
       href: what-is-device-management.md
       displayName: teamviewer
-    - name: Neuheiten
+    - name: Neuerungen
       href: whats-new.md
       items:
         - name: Neuheiten bei der App-Benutzeroberfläche
@@ -23,13 +23,13 @@
     - name: Intune kostenlos testen
       href: free-trial-sign-up.md
       displayName: 'tenant; trial; get started, start; help'
-    - name: Erstellen von Benutzern
+    - name: Erstellen eines Benutzers
       href: quickstart-create-user.md
     - name: Erstellen einer Gruppe
       href: quickstart-create-group.md
     - name: Erstellen und Zuweisen einer benutzerdefinierten Rolle
       href: quickstart-create-custom-role.md
-- name: Lernprogramme
+- name: Tutorials
   items:
     - name: Exemplarische Vorgehensweise für Intune in Microsoft Endpoint Manager
       href: tutorial-walkthrough-endpoint-manager.md
@@ -63,11 +63,11 @@
       href: manage-os-versions.md
     - name: Verwalten von Windows Holographic
       href: windows-holographic-for-business.md
-- name: Schrittanleitungen
+- name: Anleitungen
   items:
     - name: Planen der Bereitstellung
       items:
-        - name: Planning guide (Planungshandbuch)
+        - name: Planungshandbuch
           href: planning-guide.md
           items:
             - name: Bestimmen von Zielsetzungen
@@ -102,7 +102,7 @@
                   href: migration-guide-configure-policies.md
                 - name: Konfigurieren von App-Schutzrichtlinien
                   href: migration-guide-app-protection-policies.md
-                - name: Überlegungen zur Migration
+                - name: Migrationsüberlegungen
                   href: migration-guide-considerations.md
             - name: Migration
               href: migration-guide-campaign.md
@@ -127,7 +127,7 @@
               href: end-user-mam-apps-ios.md
             - name: Beziehen von Android-Apps
               href: end-user-apps-android.md
-            - name: Beziehen von iOS-Apps
+            - name: Beziehen von iOS/iPadOS-Apps
               href: end-user-apps-ios.md
             - name: Beziehen von Windows-Apps
               href: end-user-apps-windows.md
@@ -201,10 +201,6 @@
           href: tenant-status.md
         - name: Unterstützung von Benutzern beim Beheben von Problemen
           href: help-desk-operators.md
-        - name: Überwachungsprotokolle für Intune-Aktivitäten
-          href: monitor-audit-logs.md
-        - name: Überprüfen von Protokollen mit Azure Monitor
-          href: review-logs-using-azure-monitor.md
         - name: Verwenden der Intune-Dokumentation
           href: use-docs.md
         - name: Anfordern von Support
@@ -213,9 +209,13 @@
       items:
         - name: Intune-Berichte
           href: reports.md
-- name: Referenz
+        - name: Überwachungsprotokolle für Intune-Aktivitäten
+          href: monitor-audit-logs.md
+        - name: Überprüfen von Protokollen mit Azure Monitor
+          href: review-logs-using-azure-monitor.md
+- name: Reference
   items:
-    - name: Fehlercodes und Beschreibungen
+    - name: Fehlercodes und -beschreibungen
       items:
         - name: Behandlung von Problemen mit dem Zugriff auf Unternehmensressourcen
           href: troubleshoot-company-resource-access-problems.md
@@ -233,7 +233,7 @@
           href: ui-changes.md
         - name: Klassische Intune-Gruppen
           href: groups-get-started.md
-        - name: iOS-Einstellungen für Bildungseinrichtungen
+        - name: iOS/iPadOS-Einstellungen für Bildungseinrichtungen
           items:
             - name: iPad
               href: education-settings-configure-ios.md
