@@ -1,7 +1,7 @@
 ---
-title: Abmelden eines Benutzers eines iOS-Geräts
+title: Abmelden eines Benutzers eines iOS-/iPadOS-Geräts
 titleSuffix: Microsoft Intune
-description: Erfahren Sie, wie Sie den aktuellen Benutzer eines iOS-Geräts mit Intune abmelden.
+description: Erfahren Sie, wie Sie den aktuellen Benutzer eines iOS-/iPadOS-Geräts mit Intune abmelden.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fdb23916319b06fb4d85b913209d1ac9e007d551
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6e23f95d169a95244abc8669eb9a19150cff8138
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713174"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413693"
 ---
-# <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>Abmelden des aktuellen Benutzers eines mit Intune verwalteten iOS-Geräts
+# <a name="logout-the-current-user-on-intune-managed-iosipados-devices"></a>Abmelden des aktuellen Benutzers eines mit Intune verwalteten iOS-/iPadOS-Geräts
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -35,7 +35,7 @@ Mit der Aktion **Aktiven Benutzer abmelden** wird der aktuelle Benutzer auf eine
 
 - Windows – Nicht unterstützt
 - Windows Phone – Nicht unterstützt
-- iOS – Unterstützt auf iOS 9.3 und höher (nur freigegebene iPad-Geräte)
+- iOS/iPadOS – Unterstützt auf iOS/iPadOS 9.3 und höher (nur freigegebene iPad-Geräte)
 - macOS – Nicht unterstützt
 - Android – Nicht unterstützt
 
@@ -43,7 +43,7 @@ Mit der Aktion **Aktiven Benutzer abmelden** wird der aktuelle Benutzer auf eine
 
 1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an, und wählen Sie **Geräte** aus.
 4. Wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Alle Geräte** aus.
-5. Wählen Sie aus der Liste der von Ihnen verwalteten Geräte ein iOS-Gerät und dann den Geräteremotevorgang **Aktiven Benutzer abmelden** aus.
+5. Wählen Sie aus der Liste der von Ihnen verwalteten Geräte ein iOS-/iPadOS-Gerät und dann den Geräteremotevorgang **Aktiven Benutzer abmelden** aus.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

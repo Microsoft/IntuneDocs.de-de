@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b58cbd0aa07babd36c7a7e5aa3dcc5b8d32d58a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e28f8a2cc43e4ca210a391151383633da457c056
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415035"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437918"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>In Intune unterstützte Betriebssysteme und Browser
 
@@ -87,12 +87,12 @@ Die folgenden Samsung-Geräte unterstützen KNOX nicht. Sie werden von der Unter
 
 ### <a name="windows-pc-software-client"></a>Softwareclient für Windows-PCs
 
-Ein [Intune-Softwareclient](manage-windows-pcs-with-microsoft-intune.md) auf Windows-PCs als eine alternative Registrierungsmethode bereitgestellt und installiert werden. Diese Funktionalität ist nur im klassischen Intune-Portal verfügbar. Sie können den Intune-Softwareclient zum Verwalten von PCs mit Windows 7 und höher (mit Ausnahme der Windows 10 Home-Edition) verwenden.
+Ein [Intune-Softwareclient](manage-windows-pcs-with-microsoft-intune.md) auf Windows-PCs als eine alternative Registrierungsmethode bereitgestellt und installiert werden. Diese Funktionalität ist nur im klassischen Intune-Portal verfügbar. Sie können den Intune-Softwareclient zum Verwalten von PCs mit Windows 10 und höher (mit Ausnahme der Windows 10 Home-Edition) verwenden.
 
 > [!Note]
 > Microsoft hat angekündigt, dass der Support für Windows 7 am 14. Januar 2020 endet. Ab diesem Datum wird auch der Support von Intune für Windows 7-Geräte eingestellt.
 >
-> Weitere Informationen finden Sie unter [Intune – Planen für Änderungen: Support für Windows 7 endet bald](https://docs.microsoft.com/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7).
+> Weitere Informationen finden Sie unter [Intune – Planen für Änderungen: Support für Windows 7 endet](https://docs.microsoft.com/intune/fundamentals/whats-new#windows-7-ends-extended-support-).
 >
 > Microsoft Intune stellt die Unterstützung für die Silverlight-basierte Intune-Konsole am 15. Oktober 2020 ein. Damit einhergehend endet auch die Unterstützung für den über die Silverlight-Konsole konfigurierten PC-Softwareclient (auch als PC-Agent bezeichnet).
 >

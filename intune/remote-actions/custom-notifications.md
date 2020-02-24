@@ -1,7 +1,7 @@
 ---
 title: Senden benutzerdefinierter Benachrichtigungen an Benutzer mit Microsoft Intune
 titleSuffix: Microsoft Intune
-description: Verwenden von Intune zum Erstellen und Senden benutzerdefinierter Pushbenachrichtigungen an Benutzer von iOS- und Android-Geräten
+description: Verwenden von Intune zum Erstellen und Senden benutzerdefinierter Pushbenachrichtigungen an Benutzer von iOS-/iPadOS- und Android-Geräten
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -18,30 +18,30 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73b7617ad6a2d9aa756ddf9a8a4833289e5710ff
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 412dc631f2092d1eb7d9a7332b903a4742472202
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517490"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413883"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Senden benutzerdefinierter Benachrichtigungen in Intune  
 
-Verwenden Sie Microsoft Intune zum Senden benutzerdefinierter Benachrichtigungen an die Benutzer von verwalteten iOS- und Android-Geräten. Diese Nachrichten werden wie auch Benachrichtigungen von anderen Anwendungen auf dem Gerät als Standardpushbenachrichtigungen von der Unternehmensportal-App und der Microsoft Intune-App auf dem Gerät eines Benutzers angezeigt. Benutzerdefinierte Intune-Benachrichtigungen werden von macOS- und Windows-Geräten nicht unterstützt.   
+Verwenden Sie Microsoft Intune zum Senden benutzerdefinierter Benachrichtigungen an die Benutzer von verwalteten iOS-/iPadOS- und Android-Geräten. Diese Nachrichten werden wie auch Benachrichtigungen von anderen Anwendungen auf dem Gerät als Standardpushbenachrichtigungen von der Unternehmensportal-App und der Microsoft Intune-App auf dem Gerät eines Benutzers angezeigt. Benutzerdefinierte Intune-Benachrichtigungen werden von macOS- und Windows-Geräten nicht unterstützt.   
 
 Benutzerdefinierte Benachrichtigungsnachrichten enthalten einen kurzen Titel und einen Nachrichtentext mit maximal 500 Zeichen. Diese Nachrichten können für jeden allgemeinen Kommunikationszweck angepasst werden.
 
-### <a name="what-the-notification-looks-like-on-an-ios-device"></a>So sieht die Benachrichtigung auf einem iOS-Gerät aus
+### <a name="what-the-notification-looks-like-on-an-iosipados-device"></a>So sieht die Benachrichtigung auf einem iOS-/iPadOS-Gerät aus
 
-Wenn Sie die Unternehmensportal-App auf einem iOS-Gerät geöffnet haben, ähnelt die Benachrichtigung dem folgenden Screenshot:
+Wenn Sie die Unternehmensportal-App auf einem iOS-/iPadOS-Gerät geöffnet haben, ähnelt die Benachrichtigung dem folgenden Screenshot:
 
 > [!div class="mx-imgBorder"]
-> ![Unternehmensportal: iOS-Testbenachrichtigung](./media/custom-notifications/105046-1.png)
+> ![Unternehmensportal: iOS-/iPadOS-Testbenachrichtigung](./media/custom-notifications/105046-1.png)
 
 Wenn das Gerät gesperrt ist, ähnelt die Benachrichtigung dem folgenden Screenshot:
 
 > [!div class="mx-imgBorder"]
-> ![iOS-Testbenachrichtigung für gesperrte Geräte](./media/custom-notifications/105046-2.png)
+> ![iOS-/iPadOS-Testbenachrichtigung für gesperrte Geräte](./media/custom-notifications/105046-2.png)
 
 ### <a name="what-the-notification-looks-like-on-an-android-device"></a>So sieht die Benachrichtigung auf einem Android-Gerät aus
 
@@ -75,14 +75,14 @@ Wenn Sie die Unternehmensportal-App auf einem Android-Gerät geöffnet haben, ä
 - Wenn Sie Nachrichten an einzelne Geräte senden, können Sie nur bis zu 10 Nachrichten pro Stunde an ein und dasselbe Gerät senden. 
 - Sie können Benachrichtigungen an mehrere Benutzer oder Geräte senden, indem Sie die Benachrichtigung Gruppen zuweisen. Beim Verwenden von Gruppen kann jede Benachrichtigung direkt an bis zu 25 Gruppen gerichtet werden. Verschachtelte Gruppen zählen nicht zu dieser Gesamtanzahl.  
 
-  Gruppen können Benutzer oder Geräte umfassen, Nachrichten werden allerdings nur an Benutzer gesendet. Nachrichten werden an jedes iOS- oder Android-Gerät gesendet, das von einem Benutzer registriert wurde.  
+  Gruppen können Benutzer oder Geräte umfassen, Nachrichten werden allerdings nur an Benutzer gesendet. Nachrichten werden an jedes iOS-/iPadOS- oder Android-Gerät gesendet, das von einem Benutzer registriert wurde.  
 - Sie können Benachrichtigungen an einzelne Geräte senden. Anstatt Gruppen zu verwenden, wählen Sie ein Gerät aus und verwenden dann remote eine [Geräteaktion](device-management.md#available-device-actions), um die benutzerdefinierte Benachrichtigung zu senden.  
 
 **Lieferung:**  
 - Intune sendet Nachrichten an die Unternehmensportal-App oder Microsoft Intune-App der Benutzer, die dann die Pushbenachrichtigung erstellt. Benutzer müssen nicht bei der App angemeldet sein, damit die Benachrichtigung auf dem Gerät übermittelt wird.  
 - Intune kann ebenso wie die Unternehmensportal-App und die Microsoft Intune-App die Lieferung einer benutzerdefinierten Benachrichtigung nicht garantieren. Nach mehreren Stunden Verzögerung werden möglicherweise benutzerdefinierte Benachrichtigungen angezeigt, die dann nicht für dringende Nachrichten verwendet werden sollten.  
-- Benutzerdefinierte Benachrichtigungsnachrichten von Intune werden auf Geräten als Standardpushbenachrichtigungen angezeigt. Wenn die Unternehmensportal-App auf einem iOS-Gerät beim Empfang der Benachrichtigung geöffnet ist, wird in der App anstelle einer Pushbenachrichtigung eine Benachrichtigung angezeigt.  
-- Benutzerdefinierte Benachrichtigungen können je nach Geräteeinstellungen sowohl auf iOS- als auch auf Android-Geräten auf dem Sperrbildschirm sichtbar sein.  
+- Benutzerdefinierte Benachrichtigungsnachrichten von Intune werden auf Geräten als Standardpushbenachrichtigungen angezeigt. Wenn die Unternehmensportal-App auf einem iOS-/iPadOS-Gerät beim Empfang der Benachrichtigung geöffnet ist, wird in der App anstelle einer Pushbenachrichtigung eine Benachrichtigung angezeigt.  
+- Benutzerdefinierte Benachrichtigungen können je nach Geräteeinstellungen sowohl auf iOS-/iPadOS- als auch auf Android-Geräten auf dem Sperrbildschirm sichtbar sein.  
 - Auf Android-Geräten haben andere Apps möglicherweise Zugriff auf die Daten in Ihren benutzerdefinierten Benachrichtigungen. Verwenden Sie diese nicht für vertrauliche Kommunikation.  
 - Benutzer von Geräten, deren Registrierung vor kurzem aufgehoben wurde, und aus einer Gruppe entfernte Benutzer erhalten möglicherweise trotzdem eine benutzerdefinierte Benachrichtigung, die später an diese Gruppe gesendet wurde.  Gleiches gilt, wenn Sie einen Benutzer zu einer Gruppe hinzufügen, nachdem eine benutzerdefinierte Benachrichtigung an die Gruppe gesendet wurde: Es ist möglich, dass der neu hinzugefügte Benutzer diese zuvor gesendete Benachrichtigung empfängt.  
 
@@ -127,7 +127,7 @@ Intune verarbeitet die Nachricht sofort. Die einzige Bestätigung dafür, dass d
 
 Benutzern werden auf einem Gerät benutzerdefinierte Benachrichtigungsnachrichten angezeigt, die von Intune als Standardpushbenachrichtigung von der Unternehmensportal-App oder Microsoft Intune-App gesendet werden. Diese Benachrichtigungen ähneln den Pushbenachrichtigungen, die Benutzer von anderen Apps auf dem Gerät erhalten.  
 
-Wenn die Unternehmensportal-App auf iOS-Geräten beim Empfang der Benachrichtigung geöffnet ist, wird in der App anstelle einer Pushbenachrichtigung eine Benachrichtigung angezeigt.  
+Wenn die Unternehmensportal-App auf iOS-/iPadOS-Geräten beim Empfang der Benachrichtigung geöffnet ist, wird in der App anstelle einer Pushbenachrichtigung eine Benachrichtigung angezeigt.  
 
 Die Benachrichtigung bleibt so lange erhalten, bis Sie vom Benutzer geschlossen wird.  
 

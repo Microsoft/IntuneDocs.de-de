@@ -1,6 +1,6 @@
 ---
 title: Neustarten von Geräten mit Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Neustarten von Windows- und iOS-Geräten mit Microsoft Intune im Azure-Portal mithilfe der Remoteaktion „Neu starten“.
+description: Neustarten von Windows- und iOS-/iPadOS-Geräten mit Microsoft Intune im Azure-Portal mithilfe der Remoteaktion „Neu starten“.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82ebf35d0eb435f2df4e6cf55274808e6fa690f4
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 54fa0f796e96a2487793197cbbbe548fd8490856
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517540"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415614"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Remoteneustart von Geräten mit Intune
 
@@ -35,10 +35,10 @@ Die Geräteaktion **Neu starten** führt dazu, dass das von Ihnen gewählte Ger�
 - Windows – unter Windows 8.1 und höher unterstützt
 - Windows Phone – Unterstützt auf Windows Phone 8.1 und später
 - Android-Kioskgeräte – unterstützt unter Android 7.0 und höher
-- iOS – Unterstützt
+- iOS/iPadOS – Unterstützt
 
     > [!Note]  
-    > Für diesen Befehl wird ein überwachtes Gerät und das Zugriffsrecht **Gerätesperre** benötigt. Das Gerät wird sofort neu gestartet. Kennungsgeschützte iOS-Geräte verbinden sich nach dem Neustart nicht wieder mit einem WLAN-Netzwerk. Nach dem Neustart kann das Gerät möglicherweise nicht mehr mit dem Server kommunizieren.
+    > Für diesen Befehl wird ein überwachtes Gerät und das Zugriffsrecht **Gerätesperre** benötigt. Das Gerät wird sofort neu gestartet. Kennungsgeschützte iOS-/iPadOS-Geräte stellen nach dem Neustart nicht wieder eine Verbindung mit einem WLAN-Netzwerk her. Nach dem Neustart kann das Gerät möglicherweise nicht mehr mit dem Server kommunizieren.
 - macOS – Nicht unterstützt
 - Android- und Android-Arbeitsprofilgeräte: Nicht unterstützt
 

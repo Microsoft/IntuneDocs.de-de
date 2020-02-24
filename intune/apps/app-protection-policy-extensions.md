@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ff4fcd7d1b2115c4fbe0bc00759ef3d60482904
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: e568bb5520b4f8cc242cb58a1ee48e8729f4e387
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692097"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414592"
 ---
 # <a name="protecting-application-extensions"></a>Schützen von Anwendungserweiterungen
 
@@ -31,7 +31,7 @@ In diesem Artikel sind die App-Schutzrichtlinien für Erweiterungen in Microsoft
 
 ## <a name="add-ins-for-outlook-app"></a>Add-Ins für die Outlook-App
 
-Über Outlook-Add-Ins können Sie beliebte Apps in den E-Mail-Client integrieren. Add-Ins für Outlook sind im Web, unter Windows und Mac und für Outlook für Android und iOS verfügbar. Die Intune APP SDK- und Intune-App-Schutzrichtlinien umfassen keine Unterstützung für die Verwaltung von Add-Ins für Outlook, es gibt jedoch andere Möglichkeiten, die Verwendung einzuschränken. Da Add-Ins über Microsoft Exchange verwaltet werden, können die Benutzer Daten und Nachrichten über Outlook und nicht verwaltete Add-In-Anwendungen freigeben, sofern diese Add-Ins von Exchange nicht für den Benutzer deaktiviert wurden.
+Über Outlook-Add-Ins können Sie beliebte Apps in den E-Mail-Client integrieren. Add-Ins für Outlook sind im Web, unter Windows, Mac und Outlook für Android und iOS/iPadOS verfügbar. Die Intune APP SDK- und Intune-App-Schutzrichtlinien umfassen keine Unterstützung für die Verwaltung von Add-Ins für Outlook, es gibt jedoch andere Möglichkeiten, die Verwendung einzuschränken. Da Add-Ins über Microsoft Exchange verwaltet werden, können die Benutzer Daten und Nachrichten über Outlook und nicht verwaltete Add-In-Anwendungen freigeben, sofern diese Add-Ins von Exchange nicht für den Benutzer deaktiviert wurden.
 
 Wenn Sie verhindern möchten, dass Endbenutzer auf Outlook-Add-Ins zugreifen und diese installieren (dies hat Auswirkungen auf alle Outlook-Clients), nehmen Sie im Exchange Admin Center die folgenden Änderungen an den Rollen vor:
 

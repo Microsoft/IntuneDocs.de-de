@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b5f973e5ce169edcf6149b0588c905d8497cca2
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: c7a6914e8174023704cfc593ec08a525ec5889f3
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885745"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437901"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Erstellen und Zuweisen von App-Schutzrichtlinien
 
@@ -65,7 +65,7 @@ Befolgen Sie beim Erstellen neuer App-Schutzrichtlinien für iOS-/iPadOS- und An
     | Wert/Option | Beschreibung |
     |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Auf Apps auf allen Gerätetypen anwenden | Verwenden Sie diese Option, um die Richtlinie auf Apps auf Geräten mit beliebigem Verwaltungsstatus anzuwenden. Klicken Sie auf **Nein**, um die Richtlinie auf Apps auf bestimmten Gerätetypen anzuwenden. Weitere Informationen finden Sie unter [Verwendung von App-Schutzrichtlinien als Ziel, basierend auf dem Status der Geräteverwaltung](#target-app-protection-policies-based-on-device-management-state). |
-    |     Device types (Gerätetypen) | Verwenden Sie diese Option, um anzugeben, ob diese Richtlinie für mit MDM verwaltete oder nicht verwaltete Geräte gilt. Wählen Sie für iOS-App-Richtlinien **Unmanaged devices** (Nicht verwaltete Geräte) und **Managed devices** (Verwaltete Geräte) aus. Wählen Sie für Android-App-Richtlinien **Unmanaged Devices** (Nicht verwaltete Geräte), **Android device administrator** (Android-Geräteadministrator) und **Android Enterprise** aus.  |
+    |     Device types (Gerätetypen) | Verwenden Sie diese Option, um anzugeben, ob diese Richtlinie für mit MDM verwaltete oder nicht verwaltete Geräte gilt. Wählen Sie für iOS-/iPadOS-App-Richtlinien **Unmanaged devices** (Nicht verwaltete Geräte) und **Managed devices** (Verwaltete Geräte) aus. Wählen Sie für Android-App-Richtlinien **Unmanaged Devices** (Nicht verwaltete Geräte), **Android device administrator** (Android-Geräteadministrator) und **Android Enterprise** aus.  |
     | Public apps (Öffentliche Apps) | Klicken Sie auf **Select public apps** (Öffentliche Apps auswählen), um die gewünschten Apps als Ziel auszuwählen. |
     | Custom apps (Benutzerdefinierte Apps) | Klicken Sie auf **Select custom apps** (Benutzerdefinierte Apps auswählen), um basierend auf einer Paket-ID benutzerdefinierte Apps als Ziel auszuwählen. |
     
@@ -103,7 +103,7 @@ Befolgen Sie beim Erstellen neuer App-Schutzrichtlinien für iOS-/iPadOS- und An
 
 Endbenutzer können die Apps aus dem App Store oder aus Google Play herunterladen. Weitere Informationen finden Sie in folgenden Quellen:
 * [Was Sie erwartet, wenn Ihre Android-App von App-Schutzrichtlinien verwaltet wird](../fundamentals/end-user-mam-apps-android.md)
-* [Was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird](../fundamentals/end-user-mam-apps-ios.md)
+* [Was Sie erwartet, wenn Ihre iOS-/iPadOS-App von App-Schutzrichtlinien verwaltet wird](../fundamentals/end-user-mam-apps-ios.md)
 
 ## <a name="change-existing-policies"></a>Ändern vorhandener Richtlinien
 Sie können eine vorhandene Richtlinie bearbeiten und sie auf die als Ziel festgelegten Benutzer anwenden. Wenn Sie vorhandene Richtlinien ändern, werden diese Änderungen für bei der App angemeldete Benutzer erst nach 8 Stunden sichtbar.
@@ -123,7 +123,7 @@ Für eine sofortige Anzeige der Änderungen muss der Endbenutzer sich von der Ap
     | Wert/Option | Beschreibung |
     |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Auf Apps auf allen Gerätetypen anwenden | Verwenden Sie diese Option, um die Richtlinie auf Apps auf Geräten mit beliebigem Verwaltungsstatus anzuwenden. Klicken Sie auf **Nein**, um die Richtlinie auf Apps auf bestimmten Gerätetypen anzuwenden. Weitere Informationen finden Sie unter [Verwendung von App-Schutzrichtlinien als Ziel, basierend auf dem Status der Geräteverwaltung](#target-app-protection-policies-based-on-device-management-state). |
-    |     Device types (Gerätetypen) | Verwenden Sie diese Option, um anzugeben, ob diese Richtlinie für mit MDM verwaltete oder nicht verwaltete Geräte gilt. Wählen Sie für iOS-App-Richtlinien **Unmanaged devices** (Nicht verwaltete Geräte) und **Managed devices** (Verwaltete Geräte) aus. Wählen Sie für Android-App-Richtlinien **Unmanaged Devices** (Nicht verwaltete Geräte), **Android device administrator** (Android-Geräteadministrator) und **Android Enterprise** aus.  |
+    |     Device types (Gerätetypen) | Verwenden Sie diese Option, um anzugeben, ob diese Richtlinie für mit MDM verwaltete oder nicht verwaltete Geräte gilt. Wählen Sie für iOS-/iPadOS-App-Richtlinien **Unmanaged devices** (Nicht verwaltete Geräte) und **Managed devices** (Verwaltete Geräte) aus. Wählen Sie für Android-App-Richtlinien **Unmanaged Devices** (Nicht verwaltete Geräte), **Android device administrator** (Android-Geräteadministrator) und **Android Enterprise** aus.  |
     | Public apps (Öffentliche Apps) | Klicken Sie auf **Select public apps** (Öffentliche Apps auswählen), um die gewünschten Apps als Ziel auszuwählen. |
     | Custom apps (Benutzerdefinierte Apps) | Klicken Sie auf **Select custom apps** (Benutzerdefinierte Apps auswählen), um basierend auf einer Paket-ID benutzerdefinierte Apps als Ziel auszuwählen. |
 
@@ -166,7 +166,7 @@ Für eine sofortige Anzeige der Änderungen muss der Endbenutzer sich von der Ap
 ## <a name="target-app-protection-policies-based-on-device-management-state"></a>Verwendung von App-Schutzrichtlinien als Ziel, basierend auf dem Status der Geräteverwaltung
 Viele Organisationen erlauben Benutzern sowohl die Verwendung von mit Intune-MDM verwalteten Geräten (z.B. unternehmenseigene Geräte) als auch die Verwendung von nicht verwalteten Geräten, die nur mit Intune App-Schutzrichtlinien geschützt werden. Nicht verwaltete Geräte werden häufig als BYOD-Geräte (Bring Your Own Device) bezeichnet.
 
-Da die App-Schutzrichtlinien von Intune an die Identität eines Benutzers gekoppelt sind, können die Schutzeinstellungen sowohl auf registrierte (MDM-verwaltete) als auch auf nicht registrierte Geräte (kein MDM) angewendet werden. Aus diesem Grund können Sie mit einer App-Schutzrichtlinie von Intune entweder Intune-registrierte oder nicht registrierte iOS- und Android-Geräte als Ziel verwenden. Sie können über eine Schutzrichtlinie für nicht verwaltete Geräte verfügen, bei denen Steuerelemente für die Verhinderung von Datenverlust (DLP) vorhanden sind, und über eine separate Schutzrichtlinie für mit MDM-verwaltete Geräte, bei denen die DLP-Steuerelemente nicht so streng sind. Weitere Informationen dazu, wie dies bei persönlichen Android Enterprise-Geräten funktioniert, finden Sie unter [App-Schutzrichtlinien und Arbeitsprofile](android-deployment-scenarios-app-protection-work-profiles.md).
+Da die App-Schutzrichtlinien von Intune an die Identität eines Benutzers gekoppelt sind, können die Schutzeinstellungen sowohl auf registrierte (MDM-verwaltete) als auch auf nicht registrierte Geräte (kein MDM) angewendet werden. Aus diesem Grund können Sie mit einer App-Schutzrichtlinie von Intune entweder Intune-registrierte oder nicht registrierte iOS-/iPadOS- und Android-Geräte als Ziel verwenden. Sie können über eine Schutzrichtlinie für nicht verwaltete Geräte verfügen, bei denen Steuerelemente für die Verhinderung von Datenverlust (DLP) vorhanden sind, und über eine separate Schutzrichtlinie für mit MDM-verwaltete Geräte, bei denen die DLP-Steuerelemente nicht so streng sind. Weitere Informationen dazu, wie dies bei persönlichen Android Enterprise-Geräten funktioniert, finden Sie unter [App-Schutzrichtlinien und Arbeitsprofile](android-deployment-scenarios-app-protection-work-profiles.md).
 
 Um diese Richtlinien zu erstellen, navigieren Sie in der Intune-Konsole zu **Apps** > **App-Schutzrichtlinien**, und wählen Sie dann **Richtlinie hinzufügen** aus. Sie können auch eine vorhandene App-Schutzrichtlinie bearbeiten. Navigieren Sie zur Seite **Apps**, und bestätigen Sie, dass die Option **Auf Apps auf allen Gerätetypen anwenden** auf den Standardwert **Ja** festgelegt ist, wenn die App-Schutzrichtlinie sowohl auf verwaltete als auch auf nicht verwaltete Geräte angewendet werden soll. Wenn Sie eine feiner abgestufte Zuweisung basierend auf dem Verwaltungszustand durchführen möchten, legen Sie die Option **Auf Apps auf allen Gerätetypen anwenden** auf **Nein** fest. 
 
@@ -182,15 +182,15 @@ Um diese Richtlinien zu erstellen, navigieren Sie in der Intune-Konsole zu **App
 
 Für iOS sind zusätzliche App-Konfigurationseinstellungen erforderlich, um App-Schutzrichtlinieneinstellungen für Apps auf in Intune registrierten Geräten bereitzustellen:
 
-- **IntuneMAMUPN** muss für alle mit MDM verwalteten Anwendungen konfiguriert sein. Weitere Informationen finden Sie unter [Verwalten der Datenübertragung zwischen iOS-Apps in Microsoft Intune](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
-- **IntuneMAMDeviceID** muss für alle mit MDM verwalteten Drittanbieter- und Branchenanwendungen konfiguriert sein. **IntuneMAMDeviceID** sollte auf das Geräte-ID-Token konfiguriert sein. Beispiel: `key=IntuneMAMDeviceID, value={{deviceID}}`. Weitere Informationen finden Sie unter [Hinzufügen von App-Konfigurationsrichtlinien für verwaltete iOS-Geräte](app-configuration-policies-use-ios.md).
+- **IntuneMAMUPN** muss für alle mit MDM verwalteten Anwendungen konfiguriert sein. Weitere Informationen finden Sie unter [Verwalten der Datenübertragung zwischen iOS-/iPadOS-Apps in Microsoft Intune](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
+- **IntuneMAMDeviceID** muss für alle mit MDM verwalteten Drittanbieter- und Branchenanwendungen konfiguriert sein. **IntuneMAMDeviceID** sollte auf das Geräte-ID-Token konfiguriert sein. Beispiel: `key=IntuneMAMDeviceID, value={{deviceID}}`. Weitere Informationen finden Sie unter [Hinzufügen von App-Konfigurationsrichtlinien für verwaltete iOS-/iPadOS-Geräte](app-configuration-policies-use-ios.md).
 - Wenn nur **IntuneMAMDeviceID** konfiguriert ist, betrachtet die Intune-APP das Gerät als nicht verwaltet.
 
 > [!NOTE]
-> Spezifische iOS-Supportinfomationen über App-Schutzrichtlinien basierend auf dem Status der Geräteverwaltung finden Sie unter [MAM protection policies targeted based on management state (Angesteuerte MAM-Schutzrichtlinien basierend auf dem Verwaltungsstatus)](../fundamentals/whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state).
+> Spezifische iOS-/iPadOS-Supportinfomationen über App-Schutzrichtlinien basierend auf dem Status der Geräteverwaltung finden Sie unter [Anwenden von MAM-Schutzrichtlinien je nach Verwaltungsstatus](../fundamentals/whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state).
 
 ## <a name="policy-settings"></a>Richtlinieneinstellungen
-Eine vollständige Liste der Richtlinieneinstellungen für iOS und Android finden Sie unter den folgenden Links:
+Eine vollständige Liste der Richtlinieneinstellungen für iOS/iPadOS und Android finden Sie unter den folgenden Links:
 
 - [iOS-Richtlinien](app-protection-policy-settings-ios.md)
 - [Android-Richtlinien](app-protection-policy-settings-android.md)
@@ -200,4 +200,4 @@ Eine vollständige Liste der Richtlinieneinstellungen für iOS und Android finde
 
 ## <a name="see-also"></a>Weitere Informationen:
 * [Was Sie erwartet, wenn Ihre Android-App von App-Schutzrichtlinien verwaltet wird](../fundamentals/end-user-mam-apps-android.md)
-* [Was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird](../fundamentals/end-user-mam-apps-ios.md)
+* [Was Sie erwartet, wenn Ihre iOS-/iPadOS-App von App-Schutzrichtlinien verwaltet wird](../fundamentals/end-user-mam-apps-ios.md)

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: babe556d6810ad027a1b0b3cae6364c99bc9a07c
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: c7c47a829f8f609528f45b30d0dd9bf56d9d8eb9
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812515"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414902"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Verwalten des Webzugriffs durch einen mittels Microsoft Intune-Richtlinien geschützte Browser
 
@@ -42,7 +42,7 @@ Mit einem durch eine Intune-Richtlinie geschützten Browser (Microsoft Edge oder
 
 ## <a name="microsoft-edge-support"></a>Microsoft Edge-Unterstützung
 
-Sie können die Microsoft Edge-Unterstützung für Unternehmensszenarios auf iOS- und Android-Geräten verwenden. Microsoft Edge unterstützt alle Verwaltungsszenarios, die Intune Managed Browser auch unterstützt, und enthält Verbesserungen der Benutzerfreundlichkeit. Die folgenden durch Intune-Richtlinien aktivierten Microsoft Edge-Unternehmensfeatures sind verfügbar:
+Sie können die Microsoft Edge-Unterstützung für Unternehmensszenarios auf iOS-/iPadOS- und Android-Geräten verwenden. Microsoft Edge unterstützt alle Verwaltungsszenarios, die Intune Managed Browser auch unterstützt, und enthält Verbesserungen der Benutzerfreundlichkeit. Die folgenden durch Intune-Richtlinien aktivierten Microsoft Edge-Unternehmensfeatures sind verfügbar:
 
 - **Doppelte Identitäten:** Benutzer können sowohl Geschäftskonten als auch persönliche Konten zum Browsen hinzufügen. Die beiden Identitäten sind vollständig voneinander getrennt, ähnlich wie bei Office 365 und Outlook. Intune-Administratoren können die gewünschten Richtlinien für geschütztes Browsen im Geschäftskonto festlegen. 
 - **Integration von Intune-App-Schutzrichtlinien:** Administratoren können jetzt App-Schutzrichtlinien für Microsoft Edge erstellen. U. a. können sie in diesem Rahmen festlegen, wie und ob Benutzer Inhalte ausschneiden, kopieren und einfügen können, ob Bildschirmaufnahmen zulässig sind, und sie können sicherstellen, dass von Benutzern ausgewählte Links nur in anderen verwalteten Apps geöffnet werden.
@@ -57,9 +57,9 @@ Der Microsoft Edge-Browser und Intune Managed Browser sind Webbrowser-Apps, die 
 
 Betriebssystemanforderungen für Browserrichtlinien:
 - Android 4 und höher oder
-- iOS 8.0 oder höher
+- iOS/iPadOS 8.0 und höher.
 
-Frühere Versionen von Android und iOS können Managed Browser weiterhin verwenden, allerdings können keine neuen Versionen der App installiert werden, und einige App-Funktionen sind möglicherweise nicht verfügbar. Es wird empfohlen, dass Sie diese Geräte auf eine unterstützte Betriebssystemversion aktualisieren.
+Frühere Versionen von Android und iOS/iPadOS können Managed Browser weiterhin verwenden, allerdings können keine neuen Versionen der App installiert werden, und einige App-Funktionen sind möglicherweise nicht verfügbar. Es wird empfohlen, dass Sie diese Geräte auf eine unterstützte Betriebssystemversion aktualisieren.
 
 >[!NOTE]
 >Managed Browser unterstützt nicht das Kryptografieprotokoll von Secure Sockets Layer-Version 3 (SSLv3).
@@ -123,9 +123,9 @@ Managed Browser unterstützt nicht die klassischen Richtlinien für den bedingte
 
 ## <a name="single-sign-on-to-azure-ad-connected-web-apps-in-policy-protected-browsers"></a>Einmaliges Anmelden bei mit Azure AD verbundenen Web-Apps in richtliniengeschützten Browsern
 
-Microsoft Edge und Intune Managed Browser unter iOS und Android können für alle Web-Apps (SaaS und lokal), die mit Azure AD verbunden sind, die Möglichkeit des einmaligen Anmeldens (Single Sign-on, SSO) nutzen. Wenn die Microsoft Authenticator-App unter iOS bzw. die Intune-Unternehmensportal-App unter Android vorhanden sind, können Benutzer eines mit Richtlinien geschützten Browser auf mit Azure AD verbundene Web-Apps zugreifen und müssen dafür nicht erneut ihre Anmeldeinformationen eingeben.
+Microsoft Edge und Intune Managed Browser unter iOS/iPadOS und Android können für alle Web-Apps (SaaS und lokal), die mit Azure AD verbunden sind, die Möglichkeit des einmaligen Anmeldens (Single Sign-on, SSO) nutzen. Wenn die Microsoft Authenticator-App unter iOS/iPadOS bzw. die Intune-Unternehmensportal-App unter Android vorhanden sind, können Benutzer eines mit Richtlinien geschützten Browsers auf mit Azure AD verbundene Web-Apps zugreifen und müssen dafür nicht erneut ihre Anmeldeinformationen eingeben.
 
-Für SSO muss Ihr Gerät unter iOS durch Microsoft Authenticator und unter Android durch das Intune-Unternehmensportal registriert sein. Benutzer, die die Authenticator-App oder das Intune-Unternehmensportal verwenden, werden dazu aufgefordert, ihre Geräte zu registrieren, wenn sie zu einer mit Azure AD verbundenen Web-App im richtliniengeschützten Browser navigieren, es sei denn, ihr Gerät wurde bereits von einer anderen Anwendung registriert. Nachdem das Gerät mit dem von Intune verwalteten Konto registriert wurde, ist für dieses Konto für mit Azure AD verbundene Web-Apps SSO aktiviert. 
+Für SSO muss Ihr Gerät unter iOS/iPadOS durch Microsoft Authenticator und unter Android durch das Intune-Unternehmensportal registriert sein. Benutzer, die die Authenticator-App oder das Intune-Unternehmensportal verwenden, werden dazu aufgefordert, ihre Geräte zu registrieren, wenn sie zu einer mit Azure AD verbundenen Web-App im richtliniengeschützten Browser navigieren, es sei denn, ihr Gerät wurde bereits von einer anderen Anwendung registriert. Nachdem das Gerät mit dem von Intune verwalteten Konto registriert wurde, ist für dieses Konto für mit Azure AD verbundene Web-Apps SSO aktiviert. 
 
 > [!NOTE]
 > Bei der Geräteregistrierung handelt es sich um einen einfachen Check-In beim Azure AD-Dienst. In diesem Zusammenhang wird keine vollständige Geräteregistrierung verwendet, und die IT-Abteilung erhält keine zusätzlichen Berechtigungen auf das Gerät.
@@ -138,7 +138,7 @@ Für SSO muss Ihr Gerät unter iOS durch Microsoft Authenticator und unter Andro
 1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 2. Wählen Sie **Apps** > **App-Konfigurationsrichtlinien** > **Hinzufügen** > **Verwaltete Apps** aus.
 3. Geben Sie auf der Seite **Grundeinstellungen** des Bereichs **App-Konfigurationsrichtlinie erstellen** einen **Namen** und optional eine **Beschreibung** für die App-Konfigurationseinstellungen ein.
-4. Wählen Sie **Öffentliche App auswählen** und dann **Managed Browser** und/oder **Microsoft Edge** für iOS, für Android oder für beides aus.
+4. Wählen Sie **Öffentliche App auswählen** und dann **Managed Browser** und/oder **Microsoft Edge** für iOS/iPadOS, für Android oder für beides aus.
 5. Klicken Sie auf **Auswählen**, um zum Bereich **App-Konfigurationsrichtlinie erstellen** zurückzukehren.
 6. Klicken Sie auf **Weiter**, um die Seite **Einstellungen** anzuzeigen.
 7. Definieren Sie auf der Seite **Einstellungen** Schlüssel-Wert-Paare, um Konfigurationen für die App bereitzustellen. In den folgenden Abschnitten erhalten Sie weitere Informationen zu den unterschiedlichen Schlüssel-Wert-Paaren, die Sie definieren können.
@@ -186,7 +186,7 @@ Verwenden Sie das oben beschriebene Verfahren, um eine Microsoft Edge-App-Konfig
 
 ## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>Konfigurieren von Anwendungsproxyeinstellungen für geschützte Browser
 
-Microsoft Edge, Intune Managed Browser und der [Azure AD-Anwendungsproxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) können gemeinsam verwendet werden, um die folgenden Szenarien für Benutzer von iOS- und Android-Geräten zu unterstützen:
+Microsoft Edge, Intune Managed Browser und der [Azure AD-Anwendungsproxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) können gemeinsam verwendet werden, um die folgenden Szenarien für Benutzer von iOS-/iPadOS- und Android-Geräten zu unterstützen:
 
 - Ein Benutzer lädt die Microsoft Outlook-App herunter und meldet sich an. Die Intune-App-Schutzrichtlinien werden automatisch angewendet. Diese verschlüsseln gespeicherte Daten und hindern den Benutzer daran, Unternehmensdateien auf nicht verwaltete Apps oder Speicherorte auf dem Gerät zu übertragen. Klickt der Benutzer dann auf einen Link zu einer Intranetwebsite in Outlook, können Sie angeben, dass der Link in einer geschützten Browser-Anwendung anstatt in einem anderen Browser geöffnet wird. Der geschützte Browser erkennt, dass diese Intranetwebsite dem Benutzer über den Anwendungsproxy verfügbar gemacht wurde. Der Benutzer wird automatisch über den Anwendungsproxy weitergeleitet, um sich mit einer anwendbaren Option für die mehrstufige Authentifizierung und den bedingten Zugriff zu authentifizieren, bevor er zur Intranetsite gelangt. Auf diese Website, die im Remotezugriff zuvor noch nicht gefunden werden konnte, kann nun zugegriffen werden, und der Link funktioniert in Outlook erwartungsgemäß.
 - Ein Remotebenutzer öffnet die geschützte Browser-Anwendung und navigiert mit der internen URL zu einer Intranetwebsite. Der geschützte Browser erkennt, dass diese Intranetwebsite dem Benutzer über den Anwendungsproxy verfügbar gemacht wurde. Der Benutzer wird automatisch über den Anwendungsproxy weitergeleitet, um sich mit einer anwendbaren Option für die mehrstufige Authentifizierung und den bedingten Zugriff zu authentifizieren, bevor er zur Intranetsite gelangt. Auf diese Website, die im Remotezugriff zuvor noch nicht gefunden werden konnte, kann nun zugegriffen werden.
@@ -316,9 +316,9 @@ Geben Sie über die Prozedur zum Erstellen einer Microsoft Edge- oder Managed Br
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>Zugreifen auf Protokolle von verwalteten Apps mithilfe des Managed Browsers unter iOS
 
-Endbenutzer, auf deren iOS-Gerät der Managed Browser installiert ist, können den Verwaltungsstatus aller von Microsoft veröffentlichten Apps anzeigen. Sie können Protokolle für die Problembehandlung ihrer verwalteten iOS-Apps senden.
+Endbenutzer, auf deren iOS-/iPadOS-Gerät der Managed Browser installiert ist, können den Verwaltungsstatus aller von Microsoft veröffentlichten Apps anzeigen. Sie können Protokolle für die Problembehandlung ihrer verwalteten iOS-/iPadOS-Apps senden.
 
-1. Öffnen Sie die iOS-**Einstellungen**.
+1. Öffnen Sie iOS-/iPadOS-**Einstellungen**.
 2. Wählen Sie die Anwendungseinstellungen für den **Managed Browser** aus.
 3. Schalten Sie **Intune-Diagnose aktivieren** um, um den Browser in den Problembehandlungsmodus zu versetzen.
 4. Öffnen Sie den **Managed Browser**. Klicken Sie auf **Intune-App-Status anzeigen**, um die Richtlinieneinstellungen für einzelne Anwendungen zu überprüfen.
@@ -345,7 +345,7 @@ Eine Liste der in den App-Protokollen gespeicherten Einstellungen finden Sie unt
 ### <a name="turn-off-usage-data"></a>Deaktivieren von Nutzungsdaten
 Microsoft sammelt automatisch anonyme Daten über die Leistung und die Verwendung von Managed Browser, um Microsoft-Produkte und -Dienste zu verbessern. Benutzer können die Erfassung von Daten mithilfe der Einstellung für **Nutzungsdaten** auf ihren Geräten deaktivieren. Sie haben keine Kontrolle über die Erfassung dieser Daten.
 
-- Auf iOS-Geräten können von Benutzern besuchte Websites, deren Zertifikat abgelaufen oder nicht vertrauenswürdig ist, nicht geöffnet werden.
+- Auf iOS-/iPadOS-Geräten können von Benutzern besuchte Websites, deren Zertifikat abgelaufen oder nicht vertrauenswürdig ist, nicht geöffnet werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

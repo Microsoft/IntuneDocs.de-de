@@ -15,12 +15,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d0b4f8d5124924d013e7ac131dafc947a95c7b65
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 99738de7efc473c7886762534c6e377b4dba8397
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059797"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415108"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Anwendungsschutzrichtlinien und Arbeitsprofile für Android Enterprise-Geräte in Intune
 
@@ -55,7 +55,7 @@ Einzelne Android-Apps werden auf verschiedene Weise für APP aktiviert:
 
 Eine Liste der mit APP aktivierten Anwendungen finden Sie unter [Verwaltete Anwendungen mit einer umfangreichen Sammlung von Schutzrichtlinien für mobile Anwendungen](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
-## <a name="deployment-scenarios"></a>Bereitstellungsszenarios
+## <a name="deployment-scenarios"></a>Bereitstellungsszenarien
 
 Dieser Abschnitt beschreibt die wichtigsten Merkmale von APP-WE- und Android Enterprise-Arbeitsprofil-Bereitstellungsszenarien.
 
@@ -106,7 +106,7 @@ Office-Anwendungen wie Outlook und OneDrive weisen Verhalten mit „mehreren Ide
 
 Wenn Sie Arbeitsprofile verwenden, möchten Sie dieses Verhalten mit mehreren Identitäten ggf. deaktivieren. Wenn Sie es deaktivieren, können Badgeinstanzen der App im Arbeitsprofil nur mit einer Organisationsidentität konfiguriert werden. Verwenden Sie die App-Konfigurationseinstellung „Zulässige Konten“ für die Unterstützung von Office Android-Apps.
 
-Weitere Informationen finden Sie unter [Bereitstellen von Outlook für iOS und Android App-Konfigurationseinstellungen](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
+Weitere Informationen finden Sie unter [Bereitstellen von Outlook für iOS-/iPadOS- und Android-App-Konfigurationseinstellungen](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## <a name="when-to-use-intune-app"></a>Verwenden von Intune APP
 

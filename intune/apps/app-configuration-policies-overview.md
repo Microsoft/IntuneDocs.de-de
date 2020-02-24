@@ -1,7 +1,7 @@
 ---
 title: App-Konfigurationsrichtlinien für Microsoft Intune
 titleSuffix: ''
-description: Erfahren Sie, wie Sie App-Konfigurationsrichtlinien in Microsoft Intune für iOS- oder Android-Geräte verwenden.
+description: Erfahren Sie, wie Sie App-Konfigurationsrichtlinien in Microsoft Intune für iOS-/iPadOS- oder Android-Geräte verwenden.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c9dc1d95806bcddf423bb4d92dbdf4961c15809
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: a2cf53b26c1617ca7fc493c837e57823c23781bc
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812478"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414855"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>App-Konfigurationsrichtlinien für Microsoft Intune
 
 Mit App-Konfigurationsrichtlinien können Sie App-Einrichtungsprobleme beseitigen, indem Sie diese Konfigurationseinstellungen einer Richtlinie zuweisen, die Endbenutzern zugewiesen ist, bevor diese die App ausführen. Die Einstellungen werden dann automatisch bereitgestellt, wenn die App auf dem Gerät des Endbenutzers konfiguriert wird. Endbenutzer müssen keine Maßnahmen ergreifen. Die Konfigurationseinstellungen sind für jede App eindeutig. 
 
-Sie können App-Konfigurationsrichtlinien erstellen und verwenden, um Konfigurationseinstellungen für iOS- oder Android-Apps anzugeben. Mithilfe dieser Konfigurationseinstellungen kann eine App unter Verwendung der App-Konfiguration und -Verwaltung angepasst werden. Die Konfigurationsrichtlinieneinstellungen werden verwendet, wenn die App danach sucht (in der Regel beim ersten Ausführen der App). 
+Sie können App-Konfigurationsrichtlinien erstellen und verwenden, um Konfigurationseinstellungen für iOS-/iPadOS- oder Android-Apps anzugeben. Mithilfe dieser Konfigurationseinstellungen kann eine App unter Verwendung der App-Konfiguration und -Verwaltung angepasst werden. Die Konfigurationsrichtlinieneinstellungen werden verwendet, wenn die App danach sucht (in der Regel beim ersten Ausführen der App). 
 
 Beispielsweise kann eine App-Konfigurationseinstellung erfordern, dass Sie folgende Informationen angeben:
 
@@ -71,7 +71,7 @@ Die Auswahl von **Verwaltete Apps** als **Geräteregistrierungstyp** bezieht sic
 ![Geräteregistrierungstyp](./media/app-configuration-policies-overview/device-enrollment-type.png)
 
 > [!NOTE]
-> Für Apps mit mehreren Identitäten, z. B. Microsoft Outlook, können Benutzereinstellungen berücksichtigt werden. Bei einem Posteingang mit Relevanz wird die Benutzereinstellung beispielsweise berücksichtigt und die Konfiguration nicht geändert. Mit anderen Parametern können Sie steuern, ob ein Benutzer die Einstellung ändern kann oder nicht. Weitere Informationen finden Sie unter [Bereitstellen von Outlook für iOS- und Android-App-Konfigurationseinstellungen](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
+> Für Apps mit mehreren Identitäten, z. B. Microsoft Outlook, können Benutzereinstellungen berücksichtigt werden. Bei einem Posteingang mit Relevanz wird die Benutzereinstellung beispielsweise berücksichtigt und die Konfiguration nicht geändert. Mit anderen Parametern können Sie steuern, ob ein Benutzer die Einstellung ändern kann oder nicht. Weitere Informationen finden Sie unter [Bereitstellen von Outlook für iOS-/iPadOS- und Android-App-Konfigurationseinstellungen](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## <a name="validate-the-applied-app-configuration-policy"></a>Überprüfen der angewendeten App-Konfigurationsrichtlinie
 
@@ -93,7 +93,7 @@ Sie können die App-Konfigurationsrichtlinie mithilfe der folgenden drei Methode
 
 ### <a name="ios-configuration-on-unmanaged-devices"></a>iOS-Konfiguration auf nicht verwalteten Geräten
 
-Auf nicht verwalteten Geräten können Sie mit dem **Intune-Diagnoseprotokoll** die iOS-Konfiguration in Bezug auf die Konfiguration verwalteter Apps überprüfen. Zusätzlich zu den unten angegebenen Schritten können Sie über Microsoft Edge auf Protokolle für verwaltete Apps zugreifen. Weitere Informationen finden Sie unter [Verwenden von Microsoft Edge unter iOS für den Zugriff auf Protokolle für verwaltete Apps](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs).
+Auf nicht verwalteten Geräten können Sie mit dem **Intune-Diagnoseprotokoll** die iOS-/iPadOS-Konfiguration in Bezug auf die Konfiguration verwalteter Apps überprüfen. Zusätzlich zu den unten angegebenen Schritten können Sie über Microsoft Edge auf Protokolle für verwaltete Apps zugreifen. Weitere Informationen finden Sie unter [Verwenden von Microsoft Edge unter iOS/iPadOS für den Zugriff auf Protokolle für verwaltete Apps](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs).
 
 1. Falls noch nicht auf dem Gerät installiert, laden Sie den **Microsoft Edge**-Browser aus dem App Store herunter und installieren ihn. Weitere Informationen finden Sie unter [Durch Microsoft Intune geschützte Apps](apps-supported-intune-apps.md).
 2. Starten Sie **Microsoft Edge**, und wählen Sie auf der Navigationsleiste **Info** > **Intune-Hilfe** aus.
@@ -137,7 +137,7 @@ Ihre Anwendungskonfigurationsdetails sollten mit den für Ihren Mandanten konfig
 
 ### <a name="ios-configuration-on-managed-devices"></a>iOS-Konfiguration auf verwalteten Geräten
 
-Auf verwalteten Geräten können Sie mit dem **Intune-Diagnoseprotokoll** die iOS-Konfiguration in Bezug auf die Konfiguration verwalteter Apps überprüfen.
+Auf verwalteten Geräten können Sie mit dem **Intune-Diagnoseprotokoll** die iOS-/iPadOS-Konfiguration in Bezug auf die Konfiguration verwalteter Apps überprüfen.
 
 1. Falls noch nicht auf dem Gerät installiert, laden Sie den **Microsoft Edge**-Browser aus dem App Store herunter und installieren ihn. Weitere Informationen finden Sie unter [Durch Microsoft Intune geschützte Apps](apps-supported-intune-apps.md).
 2. Starten Sie **Microsoft Edge**, und wählen Sie auf der Navigationsleiste **Info** > **Intune-Hilfe** aus.
@@ -149,7 +149,7 @@ Auf verwalteten Geräten können Sie mit dem **Intune-Diagnoseprotokoll** die iO
 
 ### <a name="android-configuration-on-managed-devices"></a>Android-Konfiguration auf verwalteten Geräten
 
-Auf verwalteten Geräten können Sie mit dem **Intune-Diagnoseprotokoll** die iOS-Konfiguration in Bezug auf die Konfiguration verwalteter Apps überprüfen.
+Auf verwalteten Geräten können Sie mit dem **Intune-Diagnoseprotokoll** die iOS-/iPadOS-Konfiguration in Bezug auf die Konfiguration verwalteter Apps überprüfen.
 
 Um auf einem Android-Gerät Protokolle zu erfassen, müssen Sie oder der Endbenutzer die Protokolle über eine USB-Verbindung (oder die Entsprechung von **Datei-Explorer** auf dem Gerät) vom Gerät herunterladen. Gehen Sie dazu so vor:
 
@@ -173,7 +173,7 @@ Wenn die Protokolle einen Konfigurationsparameter anzeigen, der eigentlich angew
 
 ### <a name="managed-devices"></a>Verwaltete Geräte
 
-- Erfahren Sie, wie Sie die App-Konfiguration mit Ihren iOS-Geräten verwenden.  Siehe [Hinzufügen von App-Konfigurationsrichtlinien für verwaltete iOS-Geräte](app-configuration-policies-use-ios.md).
+- Erfahren Sie, wie Sie die App-Konfiguration mit Ihren iOS-/iPadOS-Geräten verwenden.  Siehe [Hinzufügen von App-Konfigurationsrichtlinien für verwaltete iOS-/iPadOS-Geräte](app-configuration-policies-use-ios.md).
 - Erfahren Sie, wie Sie die App-Konfiguration mit Ihren Android-Geräten verwenden.  Siehe [Add app configuration policies for managed Android devices (Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Android-Geräte)](app-configuration-policies-use-android.md).
 
 ### <a name="managed-apps"></a>Verwaltete Apps

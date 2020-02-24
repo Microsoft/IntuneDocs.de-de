@@ -1,7 +1,7 @@
 ---
 title: Abrufen eines Apple-MDM-Push-Zertifikats für Intune
 titleSuffix: ''
-description: Rufen Sie ein Apple-MDM-Push-Zertifikat zum Verwalten von iOS-Geräten mit Intune ab.
+description: Rufen Sie ein Apple-MDM-Pushzertifikat zum Verwalten von iOS-/iPadOS-Geräten mit Intune ab.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,24 +18,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 178e1a3d0f58eb925c4d48be10bfa46e68c6b2c6
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 673f63194b46ca7e4dbf1206d363cbe70c6e6098
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955455"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414422"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Abrufen eines Apple-MDM-Push-Zertifikats
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Für die Verwaltung von iOS- und macOS-Geräten ist ein MDM-Pushzertifikat erforderlich. Wenn Sie das Zertifikat zu Intune hinzugefügt haben, können Ihre Benutzer ihre Geräte registrieren, indem sie folgende Hilfsmittel verwenden:
+Für die Verwaltung von iOS-/iPadOS- und macOS-Geräten durch Intune ist ein Apple-MDM-Pushzertifikat erforderlich. Wenn Sie das Zertifikat zu Intune hinzugefügt haben, können Ihre Benutzer ihre Geräte registrieren, indem sie folgende Hilfsmittel verwenden:
 
 - die Unternehmensportal-App
 
 - Methoden von Apple zur Massenregistrierung, z.B. das Programm zur Geräteregistrierung, Apple School Manager oder Apple Configurator.
 
-Weitere Informationen zu Registrierungsoptionen finden Sie unter [Auswählen der Registrierungsmethode für iOS-Geräte](ios-enroll.md).
+Weitere Informationen zu Registrierungsoptionen finden Sie unter [Auswählen der Registrierungsmethode für iOS-/iPadOS-Geräte](ios-enroll.md).
 
 Wenn ein Pushzertifikat abläuft, müssen Sie dieses erneuern. Vergewissern Sie sich dabei, dass Sie dieselbe Apple-ID wie bei der Erstellung des ersten Pushzertifikats verwenden.
 
@@ -48,7 +48,7 @@ Klicken Sie auf **Ich stimme zu.** , um Microsoft die Berechtigung zu erteilen, 
 
 ![Der Bildschirm „MDM-Push-Zertifikat konfigurieren“, auf dem MDM Push nicht eingerichtet ist.](./media/apple-mdm-push-certificate-get/create-mdm-push-certificate.png)
 
-### <a name="step-2-download-the-intune-certificate-signing-request-required-to-create-an-apple-mdm-push-certificate"></a>Schritt 2. Laden Sie die erforderliche Anforderung zur Signierung eines Intune-Zertifikats herunter, um ein Apple-MDM-Pushzertifikat erstellen zu können.
+### <a name="step-2-download-the-intune-certificate-signing-request-required-to-create-an-apple-mdm-push-certificate"></a>Schritt 2: Laden Sie die erforderliche Anforderung zur Signierung eines Intune-Zertifikats herunter, um ein Apple-MDM-Pushzertifikat erstellen zu können.
 Klicken Sie auf **CSR herunterladen**, um die Anforderungsdatei herunterzuladen und lokal zu speichern. Die Datei wird verwendet, um ein Vertrauensstellungszertifikat vom Apple Push Certificates-Portal anzufordern.
 
 ### <a name="step-3-create-an-apple-mdm-push-certificate"></a>Schritt 3: Erstellen eines Apple-MDM-Pushzertifikats
@@ -64,7 +64,7 @@ Notieren Sie sich diese ID, damit Sie sich daran erinnern, wenn Sie das Zertifik
 Wechseln Sie zur Zertifikatsdatei (.pem), wählen Sie **Öffnen** aus, und wählen Sie dann **Hochladen**aus. Mit dem Push-Zertifikat kann Intune Apple-Geräte registrieren und verwalten.
 
 ## <a name="renew-apple-mdm-push-certificate"></a>Erneuern eines Apple-MDM-Push-Zertifikats
-Das Apple-MDM-Push-Zertifikat ist für ein Jahr gültig und muss jährlich erneuert werden, um die Geräteverwaltung von iOS und macOS beizubehalten. Wenn Ihr Zertifikat abläuft können registrierte Apple-Geräte nicht kontaktiert werden.
+Das Apple-MDM-Pushzertifikat ist für ein Jahr gültig und muss jährlich erneuert werden, um die Geräteverwaltung von iOS/iPadOS und macOS beizubehalten. Wenn Ihr Zertifikat abläuft können registrierte Apple-Geräte nicht kontaktiert werden.
 
 Das Zertifikat ist mit der Apple-ID verknüpft, die verwendet wurde, um es zu erstellen. Erneuern Sie das MDM-Push-Zertifikat mit derselben Apple-ID, mit der es erstellt wurde.
 
@@ -73,7 +73,7 @@ Das Zertifikat ist mit der Apple-ID verknüpft, die verwendet wurde, um es zu er
 3. Wählen Sie **Eigenes MDM-Push-Zertifikat erstellen** aus, um zum Apple Push Certificates Portal zu gelangen. Suchen Sie das Zertifikat, das Sie erneuern möchten, und wählen Sie **Erneuern** aus.
 4. Schreiben Sie auf dem Bildschirm **Push-Zertifikat erneuern** Notizen, die Ihnen zukünftig bei der Identifizierung des Zertifikats helfen. Klicken Sie auf **Datei auswählen**, um die neue Anforderungsdatei zu durchsuchen, die Sie heruntergeladen haben und dann auf **Hochladen**.
    > [!TIP]
-   > Ein Zertifikat kann durch die Benutzer-ID identifiziert werden. Überprüfen Sie die **Antragsteller-ID** in den Zertifikatdetails, um den GUID-Teil der Benutzer-ID zu finden. Wenn Sie ein registriertes iOS-Gerät verwenden, klicken Sie auf **Einstellungen** > **Allgemein** > **Gerät** **Verwaltung** > **Verwaltungsprofil** > **Weitere Details** > **Verwaltungsprofil**. Das zweite Zeilenelement **Thema**, enthält die eindeutige GUID, die Sie mit dem Zertifikat im Apple Push Certificates-Portal vergleichen können.
+   > Ein Zertifikat kann durch die Benutzer-ID identifiziert werden. Überprüfen Sie die **Antragsteller-ID** in den Zertifikatdetails, um den GUID-Teil der Benutzer-ID zu finden. Wenn Sie ein registriertes iOS-/iPadOS-Gerät verwenden, klicken Sie auf **Einstellungen** > **Allgemein** > **Gerät** **Verwaltung** > **Verwaltungsprofil** > **Weitere Details** > **Verwaltungsprofil**. Das zweite Zeilenelement **Thema**, enthält die eindeutige GUID, die Sie mit dem Zertifikat im Apple Push Certificates-Portal vergleichen können.
  
 6. Wählen Sie auf dem Bildschirm **Bestätigen** die Option **Herunterladen** aus, und speichern Sie die PEM-Datei lokal.
 7. Wählen Sie in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) das Symbol zum Durchsuchen des **Apple-MDM-Push-Zertifikats** aus, wählen Sie die PEM-Datei, die Sie von Apple heruntergeladen haben und anschließend **Hochladen** aus.

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36a84296aabd2d78cbc3cdc14ffb8f696afa5c22
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 899e2d2dc8458d0909f01e9dfcc1056874ef0fa7
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205257"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437969"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Überwachen von App-Schutzrichtlinien
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -51,8 +51,8 @@ Die Beibehaltungsdauer für den Schutz von App-Daten beträgt 90 Tage. Alle App-
 - **Gekennzeichnete Benutzer:** Die Anzahl von Benutzern, bei deren Geräten Probleme auftreten. Geräte mit Jailbreak (iOS) oder Rooting (Android) werden unter **Gekennzeichnete Benutzer** gemeldet. Hier werden auch Benutzer gemeldet, deren Geräte von der Google-SafetyNet-Überprüfung beim Gerätenachweis gekennzeichnet wurden (wenn diese vom IT-Administrator aktiviert wurde). 
 - **Benutzer mit potenziell schädlichen Apps**: Die Anzahl der Benutzer, die eine schädliche App auf ihrem Android-Gerät haben könnten, wird von Google Play Protect erkannt. 
 - **Benutzerstatus für iOS** und **Benutzerstatus für Android**: Die Anzahl von Benutzern, die eine App verwendet haben und denen eine Richtlinie in einem geschäftlichen Kontext für die entsprechende Plattform zugewiesen ist. Diese Informationen zeigen die Anzahl der von der Richtlinie verwalteten Benutzer sowie die Anzahl der Benutzer an, die eine App verwenden, die von keiner Richtlinie in einem geschäftlichen Kontext erfasst wird. Sie sollten erwägen, diese Benutzer zur Richtlinie hinzuzufügen.
-- **Beliebteste geschützte iOS-Apps** und **Beliebteste geschützte Android-Apps**: Auf Grundlage der am meisten verwendeten iOS- und Android-Apps wird hier die Anzahl von geschützten und nicht geschützten Apps nach Plattform angezeigt.
-- **Meistverwendete konfigurierte iOS-Apps ohne Registrierung** und **Meistverwendete konfigurierte Android-Apps ohne Registrierung**: Auf Grundlage der am meisten verwendeten iOS- und Android-Apps für Geräte ohne Registrierung wird hier die Anzahl von konfigurierten Apps nach Plattform angezeigt (wie bei Verwendung einer App-Konfigurationsrichtlinie).
+- **Beliebteste geschützte iOS-/iPadOS-Apps** und **Beliebteste geschützte Android-Apps**: Auf Grundlage der am meisten verwendeten iOS-/iPadOS- und Android-Apps wird hier die Anzahl von geschützten und nicht geschützten Apps nach Plattform angezeigt.
+- **Meistverwendete konfigurierte iOS-/iPadOS-Apps ohne Registrierung** und **Meistverwendete konfigurierte Android-Apps ohne Registrierung**: Auf Grundlage der am meisten verwendeten iOS-/iPadOS- und Android-Apps für Geräte ohne Registrierung wird hier die Anzahl von konfigurierten Apps nach Plattform angezeigt (wie bei Verwendung einer App-Konfigurationsrichtlinie).
 
     > [!NOTE]
     > Wenn Sie über mehrere Richtlinien pro Plattform verfügen, gilt ein Benutzer als durch eine Richtlinie verwaltet, wenn ihm mindestens eine Richtlinie zugewiesen ist.
@@ -170,9 +170,9 @@ Führen Sie diese Schritte aus, um eine App-Schutzdatei (CSV) oder eine App-Konf
     ![Screenshot des Dialogfelds „Bericht speichern“ zur Bestätigung](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
    
 > [!NOTE]
-> Intune bietet zusätzliche Felder zur Geräteberichtserstellung, einschließlich Feldern für App-Registrierungs-ID, Android-Hersteller, Modell und Sicherheitspatchversion sowie iOS-Modell. In Intune greifen Sie auf diese Felder zu, indem Sie **Apps** > **Status des App-Schutzes** > **Bericht zum App-Schutz: iOS, Android** auswählen. Darüber hinaus bieten diese Parameter Unterstützung bei der Konfiguration der Liste **Zulassen** für den Gerätehersteller (Android), der Liste **Zulassen** für das Gerätemodell (Android und iOS) sowie der Einstellung **Niedrigste zulässige Android-Sicherheitsversion**.   
+> Intune bietet zusätzliche Felder zur Geräteberichtserstellung, einschließlich Feldern für App-Registrierungs-ID, Android-Hersteller, Modell und Sicherheitspatchversion sowie iOS-/iPadOS-Modell. In Intune greifen Sie auf diese Felder zu, indem Sie **Apps** > **Status des App-Schutzes** > **Bericht zum App-Schutz: iOS/iPadOS, Android** auswählen. Darüber hinaus bieten diese Parameter Unterstützung bei der Konfiguration der Liste **Zulassen** für den Gerätehersteller (Android), der Liste **Zulassen** für das Gerätemodell (Android und iOS) sowie der Einstellung **Niedrigste zulässige Android-Sicherheitsversion**.   
  
 ## <a name="see-also"></a>Weitere Informationen:
-- [Verwalten der Datenübertragung zwischen iOS-Apps](data-transfer-between-apps-manage-ios.md)
+- [Verwalten der Datenübertragung zwischen iOS-/iPadOS-Apps](data-transfer-between-apps-manage-ios.md)
 - [Was Sie erwartet, wenn Ihre Android-App von App-Schutzrichtlinien verwaltet wird](../fundamentals/end-user-mam-apps-android.md)
-- [Was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird](../fundamentals/end-user-mam-apps-ios.md)
+- [Was Sie erwartet, wenn Ihre iOS-/iPadOS-App von App-Schutzrichtlinien verwaltet wird](../fundamentals/end-user-mam-apps-ios.md)

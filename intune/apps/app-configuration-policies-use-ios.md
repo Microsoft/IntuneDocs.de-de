@@ -1,7 +1,7 @@
 ---
-title: Hinzufügen App-Konfigurationsrichtlinien für verwaltete iOS-Geräte
+title: Hinzufügen von App-Konfigurationsrichtlinien für verwaltete iOS-/iPadOS-Geräte
 titleSuffix: Microsoft Intune
-description: Erfahren Sie, wie Sie App-Konfigurationsrichtlinien zum Bereitstellen von Konfigurationsdaten für eine iOS-App beim Ausführen verwenden.
+description: Erfahren Sie, wie Sie App-Konfigurationsrichtlinien zum Bereitstellen von Konfigurationsdaten für eine iOS-/iPadOS-App beim Ausführen verwenden.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d4bbd0a5b57391edad726c7e936d0072a791673
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 6044ff5f8d169e36a11f9289f1772c809723b7fc
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755764"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77438003"
 ---
-# <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Hinzufügen App-Konfigurationsrichtlinien für verwaltete iOS-Geräte
+# <a name="add-app-configuration-policies-for-managed-iosipados-devices"></a>Hinzufügen von App-Konfigurationsrichtlinien für verwaltete iOS-/iPadOS-Geräte
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um benutzerdefinierte Konfigurationseinstellungen für eine iOS-App anzugeben. Mit diesen Konfigurationseinstellungen kann eine App basierend auf den Anweisungen des App-Herstellers angepasst werden. Diese Konfigurationseinstellungen (Schlüssel und Werte) müssen Sie vom Hersteller der App abrufen. Sie geben diese Einstellungen als Schlüssel und Werte oder als XML-Daten an, die die Schlüssel und Werte enthalten, um die App zu konfigurieren.
+Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um benutzerdefinierte Konfigurationseinstellungen für eine iOS-/iPadOS-App anzugeben. Mit diesen Konfigurationseinstellungen kann eine App basierend auf den Anweisungen des App-Herstellers angepasst werden. Diese Konfigurationseinstellungen (Schlüssel und Werte) müssen Sie vom Hersteller der App abrufen. Sie geben diese Einstellungen als Schlüssel und Werte oder als XML-Daten an, die die Schlüssel und Werte enthalten, um die App zu konfigurieren.
 
 Wie der Microsoft Intune-Administrator können Sie steuern, welche Benutzerkonten Microsoft Office-Anwendungen auf verwalteten Geräten hinzugefügt werden. Sie können den Zugriff auf zulässige Organisationsbenutzerkonten beschränken und persönliche Konten auf registrierten Geräten blockieren. Die unterstützenden Anwendungen verarbeiten die App-Konfiguration und entfernen und blockieren nicht genehmigte Konten. Die Konfigurationsrichtlinieneinstellungen werden verwendet, wenn die App danach sucht (in der Regel beim ersten Ausführen).
 
@@ -41,7 +41,7 @@ Nachdem Sie eine App-Konfigurationsrichtlinie hinzugefügt haben, können Sie di
 Nachdem Sie die eingeschlossenen Gruppen für Ihre Anwendungskonfigurationsrichtlinie ausgewählt haben, können Sie auch die bestimmten auszuschließenden Gruppen auswählen. Weitere Informationen finden Sie unter [Einschließen und Ausschließen von App-Zuweisungen in Microsoft Intune](apps-inc-exl-assignments.md).
 
 > [!TIP]
-> Dieser Richtlinientyp ist zurzeit nur für Geräte unter iOS 8.0 und höher verfügbar. Er unterstützt die folgenden App-Installationstypen:
+> Dieser Richtlinientyp ist zurzeit nur für Geräte unter iOS/iPadOS 8.0 und höher verfügbar. Er unterstützt die folgenden App-Installationstypen:
 >
 > - **Verwaltete iOS-App aus dem App Store**
 > - **App-Paket für iOS**
@@ -106,7 +106,7 @@ Die Zeichen \{\{ und \}\} werden nur von Tokentypen verwendet und dürfen nicht 
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Nur Zulassen von konfigurierten Organisationskonten in Apps mit mehreren Identitäten 
 
-Verwenden Sie für iOS-Geräte die folgenden Schlüssel-Wert-Paare:
+Verwenden Sie für iOS-/iPadOS-Geräte die folgenden Schlüssel-Wert-Paare:
 
 | **Key** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -177,17 +177,17 @@ Darüber hinaus unterstützt Intune die folgenden Tokentypen in der Eigenschafts
 - \{\{deviceid\}\}: z.B. **b9841cd9-9843-405f-be28-b2265c59ef97**
 - \{\{userid\}\}: z.B. **3ec2c00f-b125-4519-acf0-302ac3761822**
 - \{\{username\}\}: z.B. **John Doe**
-- \{\{serialnumber\}\}: z.B. **F4KN99ZUG5V2** (für iOS-Geräte)
-- \{\{serialnumberlast4digits\}\}: z.B. **G5V2** (für iOS-Geräte)
+- \{\{serialnumber\}\}: z. B. **F4KN99ZUG5V2** (für iOS-/iPadOS-Geräte)
+- \{\{serialnumberlast4digits\}\}: z. B. **G5V2** (für iOS-/iPadOS-Geräte)
 - \{\{aaddeviceid\}\}: z.B. **ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
 ## <a name="configure-the-company-portal-app-to-support-ios-dep-devices"></a>Konfigurieren der Unternehmensportal-App zur Unterstützung von iOS-DEP-Geräten
 
-DEP-Registrierungen (Apple-Programm zur Geräteregistrierung) sind nicht kompatibel mit der App Store-Version der Unternehmensportal-App. Sie können die Unternehmensportal-App jedoch für die Unterstützung von iOS-DEP-Geräten konfigurieren.
+DEP-Registrierungen (Apple-Programm zur Geräteregistrierung) sind nicht kompatibel mit der App Store-Version der Unternehmensportal-App. Sie können die Unternehmensportal-App jedoch für die Unterstützung von iOS-/iPadOS-DEP-Geräten konfigurieren.
 
 1. Fügen Sie in Intune ggf. das Intune-Unternehmensportal hinzu (**Intune** > **Apps** > **Alle Apps** > **Hinzufügen**).
 2. Klicken Sie auf **Apps** > **App-Konfigurationsrichtlinien**, um eine App-Konfigurationsrichtlinie für die Unternehmensportal-App zu erstellen.
-3. Erstellen Sie mithilfe der unten stehenden XML-Daten eine App-Konfigurationsrichtlinie. Weitere Informationen zum Erstellen einer App-Konfigurationsrichtlinie und zum Eingeben von XML-Daten finden Sie unter [Hinzufügen von App-Konfigurationsrichtlinien für verwaltete iOS-Geräte](app-configuration-policies-use-ios.md).
+3. Erstellen Sie mithilfe der unten stehenden XML-Daten eine App-Konfigurationsrichtlinie. Weitere Informationen zum Erstellen einer App-Konfigurationsrichtlinie und zum Eingeben von XML-Daten finden Sie unter [Hinzufügen von App-Konfigurationsrichtlinien für verwaltete iOS-/iPadOS-Geräte](app-configuration-policies-use-ios.md).
 
     ``` xml
     <dict>
@@ -205,11 +205,11 @@ DEP-Registrierungen (Apple-Programm zur Geräteregistrierung) sind nicht kompati
 4. Fordern Sie die Benutzer bei der automatischen Installation auf, sich bei der Unternehmensportal-App anzumelden.
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>Überwachen des Konfigurationsstatus von iOS-Apps pro Gerät 
-Sobald eine Konfigurationsrichtlinie zugewiesen wurde, können Sie den Konfigurationsstatus von iOS-Apps für jedes verwaltete Gerät überwachen. Klicken Sie im Azure-Portal unter **Microsoft Intune** auf **Geräte** > **Alle Geräte**. Wählen Sie aus der Liste der verwalteten Geräte ein Gerät aus, für das ein Bereich angezeigt werden soll. Wählen Sie im Gerätebereich **App-Konfiguration** aus.  
+Sobald eine Konfigurationsrichtlinie zugewiesen wurde, können Sie den Konfigurationsstatus von iOS-/iPadOS-Apps für jedes verwaltete Gerät überwachen. Klicken Sie im Azure-Portal unter **Microsoft Intune** auf **Geräte** > **Alle Geräte**. Wählen Sie aus der Liste der verwalteten Geräte ein Gerät aus, für das ein Bereich angezeigt werden soll. Wählen Sie im Gerätebereich **App-Konfiguration** aus.  
 
 ## <a name="additional-information"></a>Zusätzliche Informationen
 
-- [Bereitstellen von Outlook für iOS- und Android-App-Konfigurationseinstellungen](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
+- [Bereitstellen von Outlook für iOS-/iPadOS- und Android-App-Konfigurationseinstellungen](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

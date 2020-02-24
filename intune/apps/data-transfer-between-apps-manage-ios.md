@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80ae9b3b1ab274e236ad43c52569574718d3eec4
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: ef9810f9414af4d1f57fa71189a6960b491800c0
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839302"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414888"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Verwalten der Datenübertragung zwischen iOS-Apps in Microsoft Intune
 
@@ -45,7 +45,7 @@ Verwenden Sie App-Schutzrichtlinien mit dem iOS-Feature **Open-in Management**, 
 ## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>Konfigurieren der Benutzer-UPN-Einstellung für Microsoft Intune oder Drittanbieter-EMM
 Die Konfiguration der Benutzer-UPN-Einstellung ist **erforderlich**, damit Geräte, die mit Intune oder der EMM-Lösung eines Drittanbieters verwaltet werden, das registrierte Benutzerkonto identifizieren können. Die UPN-Konfigurationen funktioniert in Verbindung mit den App-Schutzrichtlinien, die Sie über Intune bereitstellen. Das folgende Verfahren stellt einen allgemeinen Ablauf zum Konfigurieren der UPN-Einstellung und der resultierenden Benutzeroberfläche dar:
 
-1. [Erstellen und Zuweisen von App-Schutzrichtlinien](app-protection-policies.md) für iOS im [Azure-Portal](https://portal.azure.com). Konfigurieren Sie Richtlinieneinstellungen für alle Unternehmensanforderungen, und wählen Sie die iOS-Apps aus, für die diese Richtlinie gelten soll.
+1. [Erstellen und Zuweisen von App-Schutzrichtlinien](app-protection-policies.md) für iOS/iPadOS im [Azure-Portal](https://portal.azure.com). Konfigurieren Sie Richtlinieneinstellungen für alle Unternehmensanforderungen, und wählen Sie die iOS-Apps aus, für die diese Richtlinie gelten soll.
 
 2. Stellen Sie die Apps und das E-Mail-Profil bereit, das mit Intune oder der MDM-Lösung eines Drittanbieters verwaltet werden soll, indem Sie die folgenden allgemeinen Schritte ausführen. Dies wird auch im *Beispiel 1* behandelt.
 
@@ -90,7 +90,7 @@ Die Konfiguration der Benutzer-UPN-Einstellung ist **erforderlich**, damit Gerä
 
 1. Ein Benutzer öffnet die Microsoft OneDrive-App auf einem registrierten iOS-Gerät und meldet sich bei seinem Geschäftskonto an.  Das vom Benutzer angegebene Konto muss dem in den App-Konfigurationseinstellungen für die Microsoft OneDrive-App festgelegten Konto-UPN entsprechen.
 
-2. Nach dem Anmelden werden die vom Adminstrator konfigurierten Einstellungen für Anwendungsschutzrichtlinien auf das Benutzerkonto in Microsoft OneDrive angewendet.  Hierzu gehört auch, dass die Einstellung **Organisationsdaten an andere Apps senden** auf den Wert **Per Richtlinie verwaltete Apps mit Betriebssystemfreigabe** festgelegt wird.
+2. Nach dem Anmelden werden die vom Administrator konfigurierten App-Einstellungen auf das Benutzerkonto in Microsoft OneDrive angewendet.  Hierzu gehört auch, dass die Einstellung **Organisationsdaten an andere Apps senden** auf den Wert **Per Richtlinie verwaltete Apps mit Betriebssystemfreigabe** festgelegt wird.
 
 3. Der Benutzer zeigt die Vorschau einer Arbeitsdatei an und versucht, diese über Open-in für eine verwaltete iOS-App freizugeben.  
 
@@ -105,7 +105,7 @@ Die Konfiguration der Benutzer-UPN-Einstellung ist **erforderlich**, damit Gerä
 1. Wenn die Word-App gestartet wird, gibt es zwei Möglichkeiten:
    1. Die Daten werden durch Intune-Anwendungsschutzrichtlinien geschützt, wenn Folgendes gilt:
       - Der Benutzer ist bei einem Geschäftskonto angemeldet, das dem in den App-Konfigurationseinstellungen für die Microsoft Word-App festgelegten Konto-UPN entspricht. 
-      - Die vom Adminstrator konfigurierten Einstellungen für Anwendungsschutzrichtlinien werden auf das Benutzerkonto in Microsoft Word angewendet.  Hierzu gehört auch, dass die Einstellung **Daten von anderen Apps empfangen** auf den Wert **Alle Apps mit eingehenden Organisationsdaten** festgelegt wird.
+      - Die vom Adminstrator konfigurierten App-Einstellungen werden auf das Benutzerkonto in Microsoft Word angewendet.  Hierzu gehört auch, dass die Einstellung **Daten von anderen Apps empfangen** auf den Wert **Alle Apps mit eingehenden Organisationsdaten** festgelegt wird.
       - Die Daten werden erfolgreich übertragen, und das Dokument wird in der App mit der Identität des Geschäftskontos gekennzeichnet.  Intune-Anwendungsschutzrichtlinien schützen die Benutzeraktionen für das Dokument.
    1. Die Daten werden **nicht** durch Intune-Anwendungsschutzrichtlinien geschützt, wenn Folgendes gilt:
       - Der Benutzer ist **nicht** bei seinem Geschäftskonto angemeldet.

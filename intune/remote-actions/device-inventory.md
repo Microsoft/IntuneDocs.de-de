@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11e3465c583197582a545cdd6f4b71bc8d24e115
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: af4270587ab5894d52a7d12b1c2082b7b3298e51
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754200"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413739"
 ---
 # <a name="see-device-details-in-intune"></a>Anzeigen von Gerätedetails in Intune
 
@@ -73,25 +73,25 @@ Je nach Netzbetreiber der Geräte werden möglicherweise nicht alle Details erfa
 |Sicherheitspatchebene|Die Sicherheitspatchebene für das Gerät|Android|
 |Gesamtmenge des Speicherplatzes|Der gesamte Speicherplatz auf dem Gerät (in GB).|Windows, iOS|
 |Freier Speicherplatz|Der gesamte freie Speicherplatz auf dem Gerät (in GB).|Windows, iOS|
-|IMEI|Die International Mobile Equipment Identity des Geräts.|Windows, iOS, Android|
-|MEID|Der Mobile Equipment Identifier des Geräts.|Windows, iOS, Android|
-|Hersteller|Der Hersteller des Geräts.|Windows, iOS, Android|
-|Modell|Das Gerätemodell.|Windows, iOS, Android|
-|Telefonnummer|Die dem Gerät zugewiesene Telefonnummer.|Windows, iOS, Android*|
-|Netzbetreiber des Abonnenten|Der Mobilfunkanbieter des Geräts.|Windows, iOS, Android|
-|Mobilfunktechnologie|Das vom Gerät verwendete Funksystem.|Windows, iOS, Android|
-|WiFi-MAC|Die Media Access Control-Adresse des Geräts.|Windows, iOS, Android|
-|ICCID|Der Integrated Circuit Card Identifier, die eindeutige Identifikationsnummer der SIM-Karte.|Windows, iOS, Android|
-|Registrierungsdatum|Datum und Uhrzeit der Registrierung des Gerät bei Intune.|Windows, iOS, Android|
-|Letzter Kontakt|Datum und Uhrzeit der letzten Verbindung des Gerät bei Intune.|Windows, iOS, Android|
+|IMEI|Die International Mobile Equipment Identity des Geräts.|Windows, iOS/iPadOS, Android|
+|MEID|Der Mobile Equipment Identifier des Geräts.|Windows, iOS/iPadOS, Android|
+|Hersteller|Der Hersteller des Geräts.|Windows, iOS/iPadOS, Android|
+|Modell|Das Gerätemodell.|Windows, iOS/iPadOS, Android|
+|Telefonnummer|Die dem Gerät zugewiesene Telefonnummer.|Windows, iOS/iPadOS, Android*|
+|Netzbetreiber des Abonnenten|Der Mobilfunkanbieter des Geräts.|Windows, iOS/iPadOS, Android|
+|Mobilfunktechnologie|Das vom Gerät verwendete Funksystem.|Windows, iOS/iPadOS, Android|
+|WiFi-MAC|Die Media Access Control-Adresse des Geräts.|Windows, iOS/iPadOS, Android|
+|ICCID|Der Integrated Circuit Card Identifier, die eindeutige Identifikationsnummer der SIM-Karte.|Windows, iOS/iPadOS, Android|
+|Registrierungsdatum|Datum und Uhrzeit der Registrierung des Gerät bei Intune.|Windows, iOS/iPadOS, Android|
+|Letzter Kontakt|Datum und Uhrzeit der letzten Verbindung des Gerät bei Intune.|Windows, iOS/iPadOS, Android|
 |Code zur Umgehung der Aktivierungssperre|Der Code, mit dem die Aktivierungssperre deaktiviert werden kann.|iOS|
-|Registriert bei Azure AD|Wenn **Ja** ausgewählt ist, wurde das Gerät bei Azure Active Directory registriert.|Windows, iOS, Android|
-|Für Intune registriert|Wenn **Ja** angegeben wird, wurde das Gerät bei Intune registriert.|Windows, iOS, Android|
-|Konformität|Der Konformitätszustand des Geräts.|Windows, iOS, Android|
-|EAS aktiviert|Wenn **Ja** ausgewählt ist, ist das Gerät mit einem Exchange-Postfach synchronisiert.|Windows, iOS, Android|
-|EAS-Aktivierungs-ID|Die Exchange ActiveSync-ID des Geräts.|Windows, iOS, Android|
-|Überwacht|Wenn **Ja** ausgewählt ist, haben die Administratoren die Kontrolle über das Gerät verbessert.|Windows, iOS, Android|
-|Verschlüsselt|Wenn **Ja** ausgewählt ist, werden die auf dem Gerät gespeicherten Daten verschlüsselt.|Windows, iOS, Android|
+|Registriert bei Azure AD|Wenn **Ja** ausgewählt ist, wurde das Gerät bei Azure Active Directory registriert.|Windows, iOS/iPadOS, Android|
+|Für Intune registriert|Wenn **Ja** angegeben wird, wurde das Gerät bei Intune registriert.|Windows, iOS/iPadOS, Android|
+|Konformität|Der Konformitätszustand des Geräts.|Windows, iOS/iPadOS, Android|
+|EAS aktiviert|Wenn **Ja** ausgewählt ist, ist das Gerät mit einem Exchange-Postfach synchronisiert.|Windows, iOS/iPadOS, Android|
+|EAS-Aktivierungs-ID|Die Exchange ActiveSync-ID des Geräts.|Windows, iOS/iPadOS, Android|
+|Überwacht|Wenn **Ja** ausgewählt ist, haben die Administratoren die Kontrolle über das Gerät verbessert.|Windows, iOS/iPadOS, Android|
+|Verschlüsselt|Wenn **Ja** ausgewählt ist, werden die auf dem Gerät gespeicherten Daten verschlüsselt.|Windows, iOS/iPadOS, Android|
 
 > [!Note]  
 > Die Telefonnummer wird auf dedizierten oder vollständig verwalteten Android Enterprise-Geräten nicht inventarisiert.

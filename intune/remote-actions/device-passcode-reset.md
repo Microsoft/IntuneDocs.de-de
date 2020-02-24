@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a5629e6a318836e23c6a2f7fceb59363a0ed72
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: cd6e58efa096c006780c17d991a9ea5da26099d4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812495"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415544"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Zurücksetzen oder Entfernen einer Gerätekennung in Intune
 
@@ -35,8 +35,8 @@ In diesem Dokument wird die Kennungsrückstellung auf Dienstebene sowie die Kenn
 | ---- | ---- |
 | Geräte unter Android Version 6.x oder früher | Ja |
 | Als Gerätebesitzer registrierte Android-Unternehmensgeräte | Ja |
-| iOS-Geräte | Ja |
-| Über die Benutzerregistrierung registrierte iOS-Geräte | Nein |
+| iOS-/iPadOS-Geräte | Ja |
+| Über die Benutzerregistrierung registrierte iOS-/iPadOS-Geräte | Nein |
 | Über ein Arbeitsprofil registrierte Android-Geräte | Nein |
 | Geräte unter Android 7.0 und höher | Nein |
 | macOS | Nein |
@@ -68,9 +68,9 @@ Unterstützte Android Enterprise-Geräte, die mit einem Arbeitsprofil registrier
 Für Android Enterprise-Geräte mit Version 8.x oder höher, die mit einem Arbeitsprofil registriert sind, werden Benutzer benachrichtigt, dass sie Ihre zurückgesetzte Kennung sofort nach dem Abschluss der Registrierung aktivieren müssen. Die Benachrichtigung wird angezeigt, wenn das Kennwort für ein Arbeitsprofil erforderlich ist und festgelegt wurde. Sobald die Kennung eingegeben wurde, wird die Benachrichtigung verworfen.
 
 
-## <a name="remove-ios-passcodes"></a>Entfernen von iOS-Kennungen
+## <a name="remove-iosipados-passcodes"></a>Entfernen von iOS-/iPadOS-Kennungen
 
-Kennungen werden von iOS-Geräten entfernt und nicht zurückgesetzt. Wenn eine Konformitätsrichtlinie für Kennungen festgelegt wurde, fordert das Gerät den Benutzer dazu auf, in den Einstellungen eine neue Kennung festzulegen.
+Kennungen werden von iOS-/iPadOS-Geräten entfernt und nicht zurückgesetzt. Wenn eine Konformitätsrichtlinie für Kennungen festgelegt wurde, fordert das Gerät den Benutzer dazu auf, in den Einstellungen eine neue Kennung festzulegen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

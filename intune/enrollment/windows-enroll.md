@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: add92c038e33ba1b5873eb0e9588242f8f3d0f57
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 75914dc77fe351fffda21768b0136e636c567998
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207433"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415125"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Registrierung von Windows-Geräten
 
@@ -119,7 +119,7 @@ Registrierungsanleitungen für Endbenutzer finden Sie unter [Registrieren Ihres 
 Weitere Informationen zu Endbenutzeraufgaben finden Sie unter [Ressourcen zu Endbenutzerszenarios in Microsoft Intune](../fundamentals/end-user-educate.md).
 
 ## <a name="registration-and-enrollment-cnames"></a>Registrieren von CNAME-Einträgen
-Azure Active Directory umfasst einen weiteren CNAME, der für die Registrierung von iOS-, Android- und Windows-Geräten verwendet wird. Für den bedingten Intune-Zugriff müssen Geräte registriert werden. Dieser Vorgang wird auch als „dem Arbeitsplatz beitreten“ bezeichnet. Wenn Sie den bedingten Zugriff verwenden möchten, müssen Sie auch den CNAME-Eintrag „EnterpriseRegistration“ für jeden Unternehmensnamen konfigurieren.
+Azure Active Directory umfasst einen weiteren CNAME, der für die Registrierung von iOS-/iPadOS-, Android- und Windows-Geräten verwendet wird. Für den bedingten Intune-Zugriff müssen Geräte registriert werden. Dieser Vorgang wird auch als „dem Arbeitsplatz beitreten“ bezeichnet. Wenn Sie den bedingten Zugriff verwenden möchten, müssen Sie auch den CNAME-Eintrag „EnterpriseRegistration“ für jeden Unternehmensnamen konfigurieren.
 
 | Typ | Hostname | Verweist auf | TTL |
 | --- | --- | --- | --- |

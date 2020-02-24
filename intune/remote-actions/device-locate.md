@@ -1,6 +1,6 @@
 ---
-title: Auffinden von verlorenen iOS-Geräten mit Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Finden Sie verloren gegangene oder gestohlene iOS-Geräte, indem Sie das Feature „Gerät suchen“ in Microsoft Intune verwenden. Hier erhalten Sie weitere Informationen zu Sicherheit und Datenschutz bei Verwendung der Aktion „Gerät suchen“.
+title: Auffinden von verlorenen iOS-/iPadOS-Geräten mit Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Finden Sie verloren gegangene oder gestohlene iOS-/iPadOS-Geräte, indem Sie das Feature „Gerät suchen“ in Microsoft Intune verwenden. Hier erhalten Sie weitere Informationen zu Sicherheit und Datenschutz bei Verwendung der Aktion „Gerät suchen“.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,22 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 817f46558932c074abc37b45d2885496419a0db0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: dc276a6235fb4951c83b62e3c488145062814728
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712427"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415575"
 ---
-# <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Suchen nach verlorenen oder gestohlenen iOS-Geräten mit Intune
+# <a name="locate-lost-or-stolen-iosipados-devices-with-intune"></a>Suchen nach verlorenen oder gestohlenen iOS-/iPadOS-Geräten mit Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Verwenden Sie die Aktion **Gerät suchen**, um den Standort eines verloren gegangenen oder gestohlenen iOS-Geräts auf einer Karte anzuzeigen. Das Gerät muss sich im überwachten Modus befinden. Bevor Sie diese Aktion verwenden, stellen Sie sicher, dass sich das Gerät im [Modus für verlorene Geräte](device-lost-mode.md) befindet.
+Verwenden Sie die Aktion **Gerät suchen**, um den Standort eines verloren gegangenen oder gestohlenen iOS-/iPadOS-Geräts auf einer Karte anzuzeigen. Das Gerät muss sich im überwachten Modus befinden. Bevor Sie diese Aktion verwenden, stellen Sie sicher, dass sich das Gerät im [Modus für verlorene Geräte](device-lost-mode.md) befindet.
 
 ## <a name="supported-platforms"></a>Unterstützte Plattformen
 
-- iOS 9.3 und höher
+- iOS/iPadOS 9.3 und höher
 
 Dieses Feature wird für die folgenden Betriebssysteme nicht unterstützt: 
 - Windows
@@ -43,16 +43,16 @@ Dieses Feature wird für die folgenden Betriebssysteme nicht unterstützt:
 
 1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 3. Klicken Sie auf **Geräte** und dann auf **Alle Geräte**.
-4. Wählen Sie aus der Liste der von Ihnen verwalteten Geräten ein iOS-Gerät aus, und klicken Sie auf **...Weitere**. Wählen Sie dann die Remotegeräteaktion **Gerät suchen** aus.
+4. Wählen Sie aus der Liste der von Ihnen verwalteten Geräten ein iOS-/iPadOS-Gerät aus, und klicken Sie auf **...Weitere**. Wählen Sie dann die Remotegeräteaktion **Gerät suchen** aus.
 5. Wenn das Gerät gefunden wurde, wird der Standort unter **Gerät suchen** angezeigt.
     ![Screenshot von „Gerät suchen“ mithilfe von Intune in Azure](./media/device-locate/locate-device.png)
 
 
 ## <a name="activate-lost-mode-sound-alert-on-an-ios-device"></a>Aktivieren der Akustikwarnung des Modus für verlorene Geräte auf einem iOS-Gerät
 
-Wenn eine Person ihr unter iOS 9.3 oder höher verwendetes Gerät verloren hat, können Sie das Gerät remote auslösen, um eine Akustikwarnung auszugeben, damit der Benutzer es finden kann. Das Gerät muss sich im [Modus für verlorene Geräte](device-lost-mode.md) befinden.
+Wenn eine Person ihr unter iOS/iPadOS 9.3 oder höher verwendetes Gerät verloren hat, können Sie das Gerät remote auslösen, um eine Akustikwarnung auszugeben, damit der Benutzer es finden kann. Das Gerät muss sich im [Modus für verlorene Geräte](device-lost-mode.md) befinden.
 
-Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Option **Geräte** > **Alle Geräte**, dann ein iOS-Gerät und anschließend **Übersicht** > **Weitere** > **Klang für den Modus für verlorene Geräte wiedergeben (nur überwachen)** aus.
+Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Option **Geräte** > **Alle Geräte**, dann ein iOS-/iPadOS-Gerät und anschließend **Übersicht** > **Weitere** > **Klang für den Modus für verlorene Geräte wiedergeben (nur überwachen)** aus.
 
 Der Sound wird so lange wiedergegeben, bis der Benutzer den Sound auf dem Gerät deaktiviert oder der Modus für verlorene Geräte für das Gerät beendet wird.
 

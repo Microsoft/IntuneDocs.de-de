@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b643ed41d01b70376dac32c26a66dcf9f9735ceb
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: c4b3313d5ec7fe81944431276a63bfafb7a1b3dc
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907218"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413632"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Zurücksetzen der Kennung auf Windows-Geräten mit Intune
 
@@ -60,7 +60,7 @@ Ersetzen Sie die *Mandanten-ID* durch Ihre Azure AD-Verzeichnis-ID, die unter **
 Legen Sie den Wert diesen CSP auf **TRUE** fest.
 
 > [!TIP]
-> Nachdem Sie eine Richtlinie erstellt haben, weisen Sie sie einer Gruppe zu (oder stellen Sie sie bereit). Die Richtlinie kann Benutzergruppen oder einer Gerätegruppe zugewiesen werden. Wenn Sie sie einer Benutzergruppe zuweisen, kann diese Gruppe Benutzer beinhalten, die andere Geräte verwenden, z.B. ein iOS-Gerät. Technisch gesehen gilt die Richtlinie nicht, dennoch werden diese Geräte in den Statusdetails aufgeführt.
+> Nachdem Sie eine Richtlinie erstellt haben, weisen Sie sie einer Gruppe zu (oder stellen Sie sie bereit). Die Richtlinie kann Benutzergruppen oder einer Gerätegruppe zugewiesen werden. Wenn Sie sie einer Benutzergruppe zuweisen, kann diese Gruppe Benutzer beinhalten, die andere Geräte verwenden, z. B. ein iOS-/iPadOS-Gerät. Technisch gesehen gilt die Richtlinie nicht, dennoch werden diese Geräte in den Statusdetails aufgeführt.
 
 ## <a name="reset-the-passcode"></a>Zurücksetzen der Kennung
 

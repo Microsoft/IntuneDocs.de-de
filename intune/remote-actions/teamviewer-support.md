@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0372c9629e111c460b095d8c0236305866da42e3
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: 812b2e40c32b1442e632739c3964eb57027e6d9e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907201"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413728"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>Verwenden von TeamViewer für die Remoteverwaltung von Intune-Geräten
 
@@ -29,7 +29,7 @@ Von Intune verwaltete Geräte können mit [TeamViewer](https://www.teamviewer.co
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-- Verwenden Sie ein unterstütztes Gerät. Mit Intune verwaltete Android Device Admin-, Android-Arbeitsprofil-, Windows-, iOS- und macOS-Geräte unterstützen Remoteverwaltung. TeamViewer bietet möglicherweise keine Unterstützung für Windows Holographic (HoloLens), Windows Team (Surface Hub) oder Windows 10 S. Unter [TeamViewer](https://www.teamviewer.com) finden Sie für sämtliche Updates Informationen zu Unterstützungsmöglichkeiten.
+- Verwenden Sie ein unterstütztes Gerät. Mit Intune verwaltete Android Device Admin-, Android-Arbeitsprofil-, Windows-, iOS-/iPadOS- und macOS-Geräte unterstützen Remoteverwaltung. TeamViewer bietet möglicherweise keine Unterstützung für Windows Holographic (HoloLens), Windows Team (Surface Hub) oder Windows 10 S. Unter [TeamViewer](https://www.teamviewer.com) finden Sie für sämtliche Updates Informationen zu Unterstützungsmöglichkeiten.
 
 > [!NOTE]
 > Dedizierte und vollständig verwaltete Android-Geräte werden nicht unterstützt.

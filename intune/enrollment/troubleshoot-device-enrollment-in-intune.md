@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 328a578f4d2ada41bed17839f1f85b3b9add80fa
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 9cb323dc6f8110d77343fb11c9e0a1c40f9e3cd8
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885958"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415281"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Behandlung von Problemen bei der Geräteregistrierung in Microsoft Intune
 
@@ -36,7 +36,7 @@ Dieser Artikel enthält Vorschläge zur Behandlung von Problemen bei der [Gerät
 Bevor Sie mit der Problembehandlung beginnen, stellen Sie sicher, dass Intune ordnungsgemäß konfiguriert wurde, um die Registrierung zu ermöglichen. Informationen zu diesen Konfigurationsanforderungen finden Sie unter:
 
 - [Vorbereiten der Registrierung von Geräten in Microsoft Intune](../fundamentals/setup-steps.md)
-- [Einrichten der iOS- und Mac-Geräteverwaltung](../ios-enroll.md)
+- [Einrichten der iOS-/iPadOS- und Mac-Geräteverwaltung](../ios-enroll.md)
 - [Einrichten der Windows-Geräteverwaltung](windows-enroll.md)
 - [Einrichten der Android-Geräteverwaltung](android-enroll.md) – Keine weiteren Schritte erforderlich
 
@@ -49,7 +49,7 @@ Sie können auch sicherstellen, dass Uhrzeit und Datum auf dem Gerät des Benutz
 Ihre Benutzer verwalteter Geräte können Registrierungs- und Diagnoseprotokolle erfassen, die Sie überprüfen können. Benutzeranleitungen zur Erfassung der Protokolle finden Sie unter:
 
 - [Senden von Android-Registrierungsfehlern an Ihren IT-Administrator](https://docs.microsoft.com/intune-user-help/send-enrollment-errors-to-your-it-admin-android)
-- [Send iOS errors to your IT admin (Senden von iOS-Fehlern an Ihren IT-Administrator)](https://docs.microsoft.com/intune-user-help/send-errors-to-your-it-admin-ios)
+- [Senden von iOS-/iPadOS-Fehlern an Ihren IT-Administrator](https://docs.microsoft.com/intune-user-help/send-errors-to-your-it-admin-ios)
 
 
 ## <a name="general-enrollment-issues"></a>Allgemeine Probleme bei der Registrierung
@@ -93,7 +93,7 @@ Entfernen Sie alte Geräteeinträge, um zu verhindern, dass das Limit erreicht w
 
 4. Wenn auch dies fehlschlägt, überprüfen Sie, ob die Anmeldeinformationen des Benutzers korrekt mit Azure Active Directory synchronisiert wurden.
 
-5. Wenn sich der Benutzer erfolgreich angemeldet hat, werden Sie auf einem iOS-Gerät aufgefordert, die Intune-Unternehmensportal-App zu installieren und sich zu registrieren. Auf einem Android-Geräten müssen Sie die Intune-Unternehmensportal-App manuell installieren, wonach Sie die Registrierung erneut versuchen können.
+5. Wenn sich der Benutzer erfolgreich angemeldet hat, werden Sie auf einem iOS-/iPadOS-Gerät aufgefordert, die Intune-Unternehmensportal-App zu installieren und sich zu registrieren. Auf einem Android-Geräten müssen Sie die Intune-Unternehmensportal-App manuell installieren, wonach Sie die Registrierung erneut versuchen können.
 
 ### <a name="mdm-authority-not-defined"></a>MDM-Autorität nicht definiert
 **Problem:** Sie erhalten die Fehlermeldung **MDM-Autorität nicht definiert**.
@@ -244,23 +244,23 @@ Die folgenden Schritte beschreiben nur eine von vielen Methoden und Tools, die S
 Wenn das Serverzertifikat ordnungsgemäß installiert wurde, werden in den Ergebnissen alle Häkchen angezeigt. Wenn das oben beschriebene Problem vorhanden ist, wird in den Abschnitten „Certificate Name Matches“ und „SSL Certificate is correctly Installed“ des Berichts ein rotes X angezeigt.
 
 
-## <a name="ios-issues"></a>iOS-Probleme
+## <a name="iosipados-issues"></a>iOS-/iPadOS-Probleme
 
-### <a name="ios-enrollment-errors"></a>iOS-Registrierungsfehler
-In der folgenden Tabelle sind Fehler aufgeführt, die bei der Registrierung von iOS-Geräten bei Intune auftreten können.
+### <a name="iosipados-enrollment-errors"></a>iOS-/iPadOS-Registrierungsfehler
+In der folgenden Tabelle sind Fehler aufgeführt, die bei der Registrierung von iOS-/iPadOS-Geräten bei Intune auftreten können.
 
 |Fehlermeldung|Problem|Lösung|
 |-------------|-----|----------|
-|NoEnrollmentPolicy|Keine Registrierungsrichtlinie gefunden|Vergewissern Sie sich, dass alle für die Registrierung erforderlichen Komponenten, wie der Apple Push Notification Service (APNs), eingerichtet wurden, und dass „iOS as a platform“ (iOS als Plattform) aktiviert ist. Anweisungen hierzu finden Sie unter [Einrichten der iOS- und Mac-Geräteverwaltung](../ios-enroll.md).|
-|DeviceCapReached|Es sind bereits zu viele mobile Geräte registriert.|Der Benutzer muss eines seiner derzeit registrierten mobilen Geräte aus dem Unternehmensportal entfernen, bevor ein weiteres mobiles Gerät registriert werden kann. Sehen Sie sich die Anweisungen für Ihren Gerätetyp an: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
-|APNSCertificateNotValid|Es liegt ein Problem mit dem Zertifikat vor, über das die Kommunikation Ihres mobilen Geräts mit Ihrem Unternehmensnetzwerk ermöglicht wird.<br /><br />|Über den Apple Push Notification Service (APNs) ist der Zugriff auf registrierte iOS-Geräte möglich. Die Registrierung schlägt fehl und diese Meldung wird angezeigt, wenn:<ul><li>Die Schritte zum Abrufen eines APNs-Zertifikats nicht abgeschlossen wurden oder</li><li>Das Zertifikat des APNs abgelaufen ist.</li></ul>Überprüfen Sie die Informationen über das Einrichten von Benutzern unter [Synchronisieren von Active Directory und Hinzufügen von Benutzern zu Intune](../fundamentals/users-add.md) und [Erstellen von Gruppen zum Organisieren von Benutzern und Geräten](../fundamentals/groups-add.md).|
-|AccountNotOnboarded|Es liegt ein Problem mit dem Zertifikat vor, über das die Kommunikation Ihres mobilen Geräts mit Ihrem Unternehmensnetzwerk ermöglicht wird.<br /><br />|Über den Apple Push Notification Service (APNs) ist der Zugriff auf registrierte iOS-Geräte möglich. Die Registrierung schlägt fehl und diese Meldung wird angezeigt, wenn:<ul><li>Die Schritte zum Abrufen eines APNs-Zertifikats nicht abgeschlossen wurden oder</li><li>Das Zertifikat des APNs abgelaufen ist.</li></ul>Weitere Informationen finden Sie unter [Einrichten der iOS- und Mac-Geräteverwaltung](../ios-enroll.md).|
-|DeviceTypeNotSupported|Der Benutzer hat möglicherweise versucht, eine Registrierung mit einem Nicht-iOS-Gerät auszuführen. Der Mobilgerättyp, den Sie versuchen zu registrieren, wird nicht unterstützt.<br /><br />Stellen Sie sicher, dass auf dem Gerät mindestens Version 8.0 von iOS ausgeführt wird.<br /><br />|Stellen Sie sicher, dass auf dem Gerät des Benutzers mindestens die iOS-Version 8.0 ausgeführt wird.|
-|UserLicenseTypeInvalid|Das Gerät kann nicht registriert werden, da das Benutzerkonto noch kein Mitglied einer erforderlichen Benutzergruppe ist.<br /><br />|Bevor Benutzer ihre Geräte registrieren können, müssen sie Mitglied der richtigen Benutzergruppe sein. Diese Meldung bedeutet, dass der Benutzer den falschen Lizenztyp für die Autorität für die Verwaltung mobiler Geräte hat. Diese Fehlermeldung wird z. B. angezeigt, wenn die beiden folgenden Punkte zutreffen:<ol><li>Intune wurde als Autorität für die Verwaltung mobiler Geräte festgelegt.</li><li>Sie verwenden eine System Center 2012 R2 Configuration Manager-Lizenz.</li></ol>Weitere Informationen finden Sie in den folgenden Artikeln:<br /><br />Weitere Informationen finden Sie unter [Einrichten der iOS- und Mac-Geräteverwaltung](../ios-enroll.md) und im Abschnitt über das Einrichten von Benutzern in [Synchronisieren von Active Directory und Hinzufügen von Benutzern zu Intune](../fundamentals/users-add.md) und unter [Erstellen von Gruppen zum Organisieren von Benutzern und Geräten](../fundamentals/groups-add.md).|
+|NoEnrollmentPolicy|Keine Registrierungsrichtlinie gefunden|Vergewissern Sie sich, dass alle für die Registrierung erforderlichen Komponenten wie der Apple Push Notification Service (APNs) eingerichtet wurden, und dass „iOS/iPadOS als Plattform“ aktiviert ist. Anweisungen hierzu finden Sie unter [Einrichten der iOS-/iPadOS- und Mac-Geräteverwaltung](../ios-enroll.md).|
+|DeviceCapReached|Es sind bereits zu viele mobile Geräte registriert.|Der Benutzer muss eines seiner derzeit registrierten mobilen Geräte aus dem Unternehmensportal entfernen, bevor ein weiteres mobiles Gerät registriert werden kann. Sehen Sie sich die Anweisungen für Ihren Gerätetyp an: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS/iPadOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
+|APNSCertificateNotValid|Es liegt ein Problem mit dem Zertifikat vor, über das die Kommunikation Ihres mobilen Geräts mit Ihrem Unternehmensnetzwerk ermöglicht wird.<br /><br />|Über den Apple Push Notification Service (APNs) ist der Zugriff auf registrierte iOS-/iPadOS-Geräte möglich. Die Registrierung schlägt fehl und diese Meldung wird angezeigt, wenn:<ul><li>Die Schritte zum Abrufen eines APNs-Zertifikats nicht abgeschlossen wurden oder</li><li>Das Zertifikat des APNs abgelaufen ist.</li></ul>Überprüfen Sie die Informationen über das Einrichten von Benutzern unter [Synchronisieren von Active Directory und Hinzufügen von Benutzern zu Intune](../fundamentals/users-add.md) und [Erstellen von Gruppen zum Organisieren von Benutzern und Geräten](../fundamentals/groups-add.md).|
+|AccountNotOnboarded|Es liegt ein Problem mit dem Zertifikat vor, über das die Kommunikation Ihres mobilen Geräts mit Ihrem Unternehmensnetzwerk ermöglicht wird.<br /><br />|Über den Apple Push Notification Service (APNs) ist der Zugriff auf registrierte iOS-/iPadOS-Geräte möglich. Die Registrierung schlägt fehl und diese Meldung wird angezeigt, wenn:<ul><li>Die Schritte zum Abrufen eines APNs-Zertifikats nicht abgeschlossen wurden oder</li><li>Das Zertifikat des APNs abgelaufen ist.</li></ul>Weitere Informationen finden Sie unter [Einrichten der iOS-/iPadOS- und Mac-Geräteverwaltung](../ios-enroll.md).|
+|DeviceTypeNotSupported|Der Benutzer hat möglicherweise versucht, eine Registrierung mit einem Nicht-iOS-Gerät auszuführen. Der Mobilgerättyp, den Sie versuchen zu registrieren, wird nicht unterstützt.<br /><br />Stellen Sie sicher, dass auf dem Gerät mindestens Version 8.0 von iOS-/iPadOS ausgeführt wird.<br /><br />|Stellen Sie sicher, dass auf dem Gerät des Benutzers mindestens die iOS-/iPadOS-Version 8.0 ausgeführt wird.|
+|UserLicenseTypeInvalid|Das Gerät kann nicht registriert werden, da das Benutzerkonto noch kein Mitglied einer erforderlichen Benutzergruppe ist.<br /><br />|Bevor Benutzer ihre Geräte registrieren können, müssen sie Mitglied der richtigen Benutzergruppe sein. Diese Meldung bedeutet, dass der Benutzer den falschen Lizenztyp für die Autorität für die Verwaltung mobiler Geräte hat. Diese Fehlermeldung wird z. B. angezeigt, wenn die beiden folgenden Punkte zutreffen:<ol><li>Intune wurde als Autorität für die Verwaltung mobiler Geräte festgelegt.</li><li>Sie verwenden eine System Center 2012 R2 Configuration Manager-Lizenz.</li></ol>Weitere Informationen finden Sie in den folgenden Artikeln:<br /><br />Weitere Informationen finden Sie unter [Einrichten der iOS-/iPadOS- und Mac-Geräteverwaltung](../ios-enroll.md) und im Abschnitt über das Einrichten von Benutzern in [Synchronisieren von Active Directory und Hinzufügen von Benutzern zu Intune](../fundamentals/users-add.md) und unter [Erstellen von Gruppen zum Organisieren von Benutzern und Geräten](../fundamentals/groups-add.md).|
 |MdmAuthorityNotDefined|Die Autorität für die Verwaltung mobiler Geräte wurde nicht festgelegt.<br /><br />|Die Autorität für die Verwaltung mobiler Geräte wurde in Intune festgelegt.<br /><br />Überprüfen Sie Punkt 1 im Abschnitt „Schritt 6: Registrieren mobiler Geräte und Installieren einer App“ unter [Erste Schritte mit einer 30-Tage-Testversion von Microsoft Intune](../fundamentals/free-trial-sign-up.md).|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cant-communicate-with-them"></a>Geräte sind inaktiv oder die Verwaltungskonsole kann nicht mit ihnen kommunizieren.
-**Problem:** iOS-Geräte sind nicht beim Intune-Dienst eingecheckt. Geräte müssen in regelmäßigen Abständen beim Dienst eingecheckt sein, um den Zugriff auf geschützte Unternehmensressourcen zu behalten. Für nicht eingecheckte Geräte gilt Folgendes:
+**Problem:** iOS-/iPadOS-Geräte sind nicht beim Intune-Dienst eingecheckt. Geräte müssen in regelmäßigen Abständen beim Dienst eingecheckt sein, um den Zugriff auf geschützte Unternehmensressourcen zu behalten. Für nicht eingecheckte Geräte gilt Folgendes:
 
 - Sie können keine Richtlinien, Apps und Remotebefehle vom Intune-Dienst empfangen.
 - Sie werden in der Administratorkonsole mit dem Status **Fehlerhaft** angezeigt.
@@ -268,15 +268,15 @@ In der folgenden Tabelle sind Fehler aufgeführt, die bei der Registrierung von 
 
 **Lösung:** Teilen Sie die folgenden Lösungen mit Ihren Endbenutzern, damit Sie wieder Zugriff auf Unternehmensressourcen erhalten.
 
-Wenn Benutzer die iOS-Unternehmensportal-App starten, können sie sehen, ob deren Gerät keinen Kontakt mehr mit Intune hat. Wenn erkannt wird, dass kein Kontakt mehr mit Intune besteht, wird automatisch versucht, eine Synchronisation mit Intune durchzuführen, um die Verbindung wieder herzustellen (Benutzer sehen die **Synchronisierungsversuch...** - Meldung).
+Wenn Benutzer die iOS-/iPadOS-Unternehmensportal-App starten, können sie sehen, ob ihre Geräte keinen Kontakt mehr mit Intune haben. Wenn erkannt wird, dass kein Kontakt mehr mit Intune besteht, wird automatisch versucht, eine Synchronisation mit Intune durchzuführen, um die Verbindung wieder herzustellen (Benutzer sehen die **Synchronisierungsversuch...** - Meldung).
 
   ![Versuch, Benachrichtigungen zu synchronisieren](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_trying_to_sync_notification.png)
 
-Wenn die Synchronisierung erfolgreich ist, sehen Sie die Inlinemeldung **Synchronisierung erfolgreich** in der iOS-Unternehmensportal-App, die zeigt, dass der Integritätsstatus Ihres Geräts gut ist.
+Wenn die Synchronisierung erfolgreich ist, sehen Sie die Inlinemeldung **Synchronisierung erfolgreich** in der iOS-/iPadOS-Unternehmensportal-App, die zeigt, dass der Integritätsstatus Ihres Geräts gut ist.
 
   ![Benachrichtigung „Synchronisierung erfolgreich“](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_sync_successful_notification.png)
 
-Wenn die Synchronisierung nicht erfolgreich ist, sehen Benutzer die Inlinemeldung **Synchronisierung nicht möglich** in der iOS-Unternehmensportal-App.
+Wenn die Synchronisierung nicht erfolgreich ist, sehen Benutzer die Inlinemeldung **Synchronisierung nicht möglich** in der iOS-/iPadOS-Unternehmensportal-App.
 
   ![Benachrichtigung „Synchronisierung nicht möglich“](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_unable_to_sync_notification.png)
 
@@ -287,7 +287,7 @@ Um das Problem zu beheben, müssen Benutzer die Schaltfläche **Set up** (Einric
 Sobald die Geräte registriert sind, ist ihr Integritätsstatus gut, und sie erhalten erneut Zugriff auf Unternehmensressourcen.
 
 ### <a name="verify-ws-trust-13-is-enabled"></a>Sicherstellen, dass WS-Trust 1.3 aktiviert ist
-**Problem:** Geräte des Programms zur Geräteregistrierung für iOS können nicht registriert werden
+**Problem:** Geräte des Programms zur Geräteregistrierung (Device Enrollment Program, DEP) für iOS/iPadOS können nicht registriert werden
 
 Für die Registrierung von Geräten des Programms zur Geräteregistrierung mit Benutzeraffinität muss der Endpunkt „WS-Trust 1.3 Username/Mixed“ aktiviert sein, um Benutzertoken anzufordern. Dieser Endpunkt wird von Active Directory standardmäßig aktiviert. Eine Liste der aktivierten Endpunkte erhalten Sie mithilfe des PowerShell-Cmdlets „Get-AdfsEndpoint“ und der Suche nach dem Endpunkt Trust/13/UsernameMixed. Beispiel:
 
@@ -301,7 +301,7 @@ Weitere Informationen finden Sie unter [Best practices for securing Active Direc
 
 
 ### <a name="profile-installation-failed"></a>Fehler bei der Profilinstallation
-**Problem:** Sie erhalten auf einem iOS-Gerät die Fehlermeldung **Fehler bei der Profilinstallation**.
+**Problem:** Sie erhalten auf einem iOS-/iPadOS-Gerät die Fehlermeldung **Fehler bei der Profilinstallation**.
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>Schritte zur Problembehandlung bei fehlgeschlagener Profilinstallation
 
@@ -313,9 +313,9 @@ Weitere Informationen finden Sie unter [Best practices for securing Active Direc
 
 4. Navigieren Sie zu [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com), und versuchen Sie das Profil zu installieren, wenn Sie dazu aufgefordert werden.
 
-5. Vergewissern Sie sich, dass Safari für iOS der Standardbrowser ist und dass Cookies aktiviert sind.
+5. Vergewissern Sie sich, dass Safari für iOS/iPadOS der Standardbrowser ist und dass Cookies aktiviert sind.
 
-### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>Das iOS-Gerät des Benutzers verharrt mehr als 10 Minuten bei einem Registrierungsbildschirm.
+### <a name="users-iosipados-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>Das iOS-/iPadOS-Gerät des Benutzers bleibt mehr als 10 Minuten bei einem Registrierungsbildschirm hängen.
 
 **Problem:** Ein Gerät verbleibt während der Registrierung auf einem von zwei Bildschirmen:
 - Erwarten der endgültigen Konfiguration von „Microsoft“.
@@ -323,11 +323,11 @@ Weitere Informationen finden Sie unter [Best practices for securing Active Direc
 
 Das Problem kann in den folgenden Fällen auftreten:
 - Die Apple-Dienste sind temporär ausgefallen oder
-- Für die iOS-Registrierung ist die Verwendung von VPP-Token festgelegt, wie in der Tabelle gezeigt, aber es gibt ein Problem mit dem VPP-Token.
+- Für die iOS-/iPadOS-Registrierung ist die Verwendung von VPP-Token festgelegt, wie in der Tabelle gezeigt, aber es gibt ein Problem mit dem VPP-Token.
 
 | Registrierungseinstellungen | Wert |
 | ---- | ---- |
-| Plattform | iOS |
+| Plattform | iOS/iPadOS |
 | Benutzeraffinität | Mit Benutzeraffinität registrieren |
 |Mit dem Unternehmensportal anstelle des Apple Setup-Assistenten authentifizieren | Ja |
 | Installieren des Unternehmensportals mit VPP | Token verwenden: Tokenadresse |

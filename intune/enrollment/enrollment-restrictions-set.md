@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dac0607fcaa92ebe65a7ddacc3cd91c63bf246e
-ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
+ms.openlocfilehash: 1263df126b371780b3c5c14ae619f0cb7c83d475
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76971874"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415304"
 ---
 # <a name="set-enrollment-restrictions"></a>Festlegen von Registrierungseinschränkungen
 
@@ -44,11 +44,11 @@ Sie können u.a. die folgenden spezifischen Registrierungsbeschränkungen festle
 - Geräteplattformen, die registriert werden können:
   - Android-Geräteadministrator
   - Android Enterprise-Arbeitsprofil
-  - iOS
+  - iOS/iPadOS
   - macOS
   - Windows
   - Windows Mobile
-- Plattformbetriebssystem-Version für iOS, Android-Geräteadministrator, Android Enterprise-Arbeitsprofil, Windows und Windows Mobile. (Es können nur Windows 10-Versionen verwendet werden. Dieses Feld bleibt leer, wenn Windows 8.1 zulässig ist.)
+- Plattformbetriebssystem-Version für iOS/iPadOS, Android-Geräteadministrator, Android Enterprise-Arbeitsprofil, Windows und Windows Mobile. (Es können nur Windows 10-Versionen verwendet werden. Dieses Feld bleibt leer, wenn Windows 8.1 zulässig ist.)
   - Mindestens erforderliche Version
   - Maximal zulässige Version
 - Beschränken von [persönlichen Geräten](device-enrollment.md#bring-your-own-device) (nur iOS, Android-Geräteadministrator, Android Enterprise-Arbeitsprofil, macOS, Windows und Windows Mobile).
@@ -67,7 +67,7 @@ Auf den Gerätetyp und das Gerätelimit bezogene Registrierungsbeschränkungen w
 5. Wählen Sie unter **Versionen** die Mindest- und die Maximalversion aus, die von den Plattformen unterstützt werden soll. Versionseinschränkungen gelten nur für Geräte, die beim Unternehmensportal registriert sind.
      Folgende Versionsformate werden unterstützt:
     - Android-Geräteadministrator und Android Enterprise-Arbeitsprofil unterstützen „Hauptversion.Nebenversion.Revision.Build“.
-    - iOS unterstützt major.minor.rev. Die Betriebssystemversionen gelten nicht für Apple-Geräte, die mit dem Programm zur Geräteregistrierung, dem Apple School Manager oder der App Apple Configurator registriert werden.
+    - iOS/iPadOS unterstützt major.minor.rev. Die Betriebssystemversionen gelten nicht für Apple-Geräte, die mit dem Programm zur Geräteregistrierung, dem Apple School Manager oder der App Apple Configurator registriert werden.
     - Windows unterstützt major.minor.build.rev nur für Windows 10.
     
     > [!IMPORTANT]
@@ -158,8 +158,8 @@ Die folgenden persönlichen Registrierungsmethoden werden ebenso blockiert:
 \* Diese werden nicht blockiert, wenn sie bei Autopilot registriert sind.
 
 
-## <a name="blocking-personal-ios-devices"></a>Blockieren privater iOS-Geräte
-Standardmäßig klassifiziert Intune iOS-Geräte als privat. Um als unternehmenseigen klassifiziert zu werden, muss ein iOS-Gerät eine der folgenden Bedingungen erfüllen:
+## <a name="blocking-personal-iosipados-devices"></a>Blockieren privater iOS-/iPadOS-Geräte
+Standardmäßig klassifiziert Intune iOS-/iPadOS-Geräte als privat. Um als unternehmenseigen klassifiziert zu werden, muss ein iOS-/iPadOS-Gerät eine der folgenden Bedingungen erfüllen:
 - Mit einer Seriennummer oder IMEI registriert.
 - Registriert mithilfe der automatisierten Geräteregistrierung (früher Programm zur Geräteregistrierung)
 

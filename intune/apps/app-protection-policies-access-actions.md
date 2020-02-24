@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0440e2d6f5890b20ccf020c40bb1037bcfcae38
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 64faf797c69302e2a5cdbdde090330ab99fcc2e4
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564123"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437884"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Selektives Löschen von Daten in Intune über durch App-Schutzrichtlinien festgelegte bedingte Startaktionen
 
@@ -49,7 +49,7 @@ Sie können diese Einstellungen verwenden, um die Unternehmensdaten bei Nichtkon
 Die Tabelle für die Einstellungen der App-Schutzrichtlinien enthält Spalten für **Einstellungen**, **Werte** und **Aktionen**.
 
 ### <a name="ios-policy-settings"></a>iOS-Richtlinieneinstellungen
-Für iOS können Sie mithilfe der Dropdownliste **Einstellung** Aktionen für die folgenden Einstellungen konfigurieren:
+Für iOS/iPadOS können Sie mithilfe der Dropdownliste **Einstellung** Aktionen für die folgenden Einstellungen konfigurieren:
 - Maximal zulässige PIN-Versuche
 - Offline-Toleranzperiode
 - Geräte mit Jailbreak/entfernten Nutzungsbeschränkungen
@@ -59,7 +59,7 @@ Für iOS können Sie mithilfe der Dropdownliste **Einstellung** Aktionen für di
 - Gerätemodelle
 - Maximal zulässige Gerätebedrohungsstufe
 
-Geben Sie eine durch Semikolons getrennte Liste der iOS-Modellbezeichner ein, um die **Gerätemodelle**-Einstellung zu verwenden. Bei den Werten wird nicht zwischen Groß- und Kleinschreibung unterschieden. Einen iOS-Modellbezeichner in der Spalte „Gerätetyp“ finden Sie in der Intune-Berichterstellung für die Eingabe der Gerätemodell(e) und in der [HockeyApp-Dokumentation](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types) oder in diesem [GitHub-Repository von Drittanbietern](https://gist.github.com/adamawolf/3048717).<br>
+Geben Sie eine durch Semikolons getrennte Liste der iOS/iPadOS-Modellbezeichner ein, um die **Gerätemodelle**-Einstellung zu verwenden. Bei den Werten wird nicht zwischen Groß- und Kleinschreibung unterschieden. Einen iOS/iPadOS-Modellbezeichner in der Spalte „Gerätetyp“ finden Sie in der Intune-Berichterstellung für die Eingabe der Gerätemodelle und in der [HockeyApp-Dokumentation](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types) oder in diesem [GitHub-Repository von Drittanbietern](https://gist.github.com/adamawolf/3048717).<br>
 Beispieleingabe: *iPhone5,2;iPhone5,3*
 
 Auf Endbenutzergeräten führt der Intune-Client Aktionen auf Grundlage eines einfachen Abgleichs der Zeichenfolgen der Gerätemodelle aus, die in Intune für Anwendungsschutzrichtlinien angegeben sind. Die Übereinstimmung hängt ausschließlich davon ab, was das Gerät meldet. Sie (der IT-Administrator) können sicherstellen, dass das gewünschte Verhalten eintritt, indem Sie diese Einstellung basierend auf mehrerer Geräteherstellern und -modellen und für eine kleine Benutzergruppe testen. Der Standardwert lautet **Nicht konfiguriert**.<br>
@@ -67,8 +67,8 @@ Legen Sie eine der folgenden Aktionen fest:
 - Angegebene zulassen (nicht Angegebene blockieren)
 - Angegebene zulassen (nicht Angegebene löschen)
 
-**Was geschieht, wenn der IT-Administrator eine andere Liste von iOS-Modellbezeichnern zwischen den Richtlinien einfügt, die für die gleichen Apps für den gleichen Intune-Benutzer vorgesehen sind?**<br>
-Wenn ein Konflikt zwischen zwei App-Schutzrichtlinien für konfigurierte Werte entsteht, verwendet Intune in der Regel den restriktivsten Ansatz. Daher wäre die resultierende Richtlinie, die an die Ziel-App gesendet wird, die von dem entsprechenden Intune-Benutzer geöffnet wird, eine Schnittmenge des/der aufgelisteten iOS-Modellbezeichner/s in *Richtlinie A* und *Richtlinie B*, die für die gleiche App- bzw. Benutzerkombination gilt. Zum Beispiel gibt *Richtlinie A* „iPhone5,2;iPhone5,3“ an, während *Richtlinie B* „iPhone5,3“ angibt. Die resultierende Richtlinie, unter die der Intune-Benutzer durch *Richtlinie A* und *Richtlinie B* fällt, wäre demnach „iPhone5,3“. 
+**Was geschieht, wenn der IT-Administrator eine andere Liste von iOS/iPadOS-Modellbezeichnern zwischen den Richtlinien einfügt, die für die gleichen Apps des gleichen Intune-Benutzers vorgesehen sind?**<br>
+Wenn ein Konflikt zwischen zwei App-Schutzrichtlinien für konfigurierte Werte entsteht, verwendet Intune in der Regel den restriktivsten Ansatz. Daher wäre die resultierende Richtlinie, die an die Ziel-App gesendet wird, die von dem entsprechenden Intune-Benutzer geöffnet wird, eine Schnittmenge des/der aufgelisteten iOS/iPadOS-Modellbezeichner/s in *Richtlinie A* und *Richtlinie B*, die für die gleiche App/Benutzer-Kombination gilt. Zum Beispiel gibt *Richtlinie A* „iPhone5,2;iPhone5,3“ an, während *Richtlinie B* „iPhone5,3“ angibt. Die resultierende Richtlinie, unter die der Intune-Benutzer durch *Richtlinie A* und *Richtlinie B* fällt, wäre demnach „iPhone5,3“. 
 
 ### <a name="android-policy-settings"></a>Android-Richtlinieneinstellungen
 
@@ -93,7 +93,7 @@ Beispieleingabe: *Hersteller A;Hersteller B*
 >[!NOTE]
 > Dies sind einige gängige Hersteller, die von Geräten mit Intune-Verwendung gemeldet werden, sie können als Eingabe verwendet werden: Asus;Blackberry;Bq;Gionee;Google;Hmd global;Htc;Huawei;Infinix;Kyocera;Lemobile;Lenovo;Lge;Motorola;Oneplus;Oppo;Samsung;Sharp;Sony;Tecno;Vivo;Vodafone;Xiaomi;Zte;Zuk
 
-Auf Endbenutzergeräten führt der Intune-Client Aktionen auf Grundlage eines einfachen Abgleichs der Zeichenfolgen der Gerätemodelle aus, die in Intune für Anwendungsschutzrichtlinien angegeben sind. Die Übereinstimmung hängt ausschließlich davon ab, was das Gerät meldet. Sie (der IT-Administrator) können sicherstellen, dass das gewünschte Verhalten eintritt, indem Sie diese Einstellung basierend auf mehreren Geräteherstellern und -modellen und für eine kleine Benutzergruppe testen. Der Standardwert lautet **Nicht konfiguriert**.<br>
+Auf Endbenutzergeräten führt der Intune-Client Aktionen auf Grundlage eines einfachen Abgleichs der Zeichenfolgen der Gerätemodelle aus, die in Intune für Anwendungsschutzrichtlinien angegeben sind. Die Übereinstimmung hängt ausschließlich davon ab, was das Gerät meldet. Sie (der IT-Administrator) können sicherstellen, dass das gewünschte Verhalten eintritt, indem Sie diese Einstellung basierend auf mehrerer Geräteherstellern und -modellen und für eine kleine Benutzergruppe testen. Der Standardwert lautet **Nicht konfiguriert**.<br>
 Legen Sie eine der folgenden Aktionen fest: 
 - Angegebene zulassen (nicht Angegebene blockieren)
 - Angegebene zulassen (nicht Angegebene löschen)

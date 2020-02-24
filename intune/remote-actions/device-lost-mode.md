@@ -1,6 +1,6 @@
 ---
-title: Aktivieren des Modus für verlorene iOS-Geräte mit Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Aktivieren oder starten Sie den Modus für verlorene Geräte, um mithilfe von Microsoft Intune eine Meldung zu erstellen, die auf dem Sperrbildschirm eines verloren gegangenen oder gestohlenen iOS-Geräts angezeigt wird. Hier erhalten Sie auch weitere Informationen zu Sicherheit und Datenschutz bei Verwendung der Aktion „Modus für verlorene Geräte“.
+title: Aktivieren des Modus für verlorene iOS-/iPadOS-Geräte mit Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Aktivieren oder starten Sie den Modus für verlorene Geräte, um mithilfe von Microsoft Intune eine Meldung zu erstellen, die auf dem Sperrbildschirm eines verloren gegangenen oder gestohlenen iOS-/iPadOS-Geräts angezeigt wird. Hier erhalten Sie auch weitere Informationen zu Sicherheit und Datenschutz bei Verwendung der Aktion „Modus für verlorene Geräte“.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,22 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2956be9e32587c3bf86ce009a6927269c11ffced
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9a4103c819c0d4bd377b9c6ab2359cb7465cdd9c
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712234"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415598"
 ---
-# <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Aktivieren des Modus für verlorene Geräte auf iOS-Geräten mit Intune
+# <a name="enable-lost-mode-on-iosipados-devices-with-intune"></a>Aktivieren des Modus für verlorene Geräte auf iOS-/iPadOS-Geräten mit Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Durch die Geräteaktion **Modus für verlorene Geräte** können Sie den Modus für verlorene Geräte auf verlorenen oder gestohlenen iOS-Geräten aktivieren. In diesem Modus können Sie eine Meldung und eine Telefonnummer angeben, die auf dem Sperrbildschirm des Geräts angezeigt werden. Um den Modus für verlorene Geräte nutzen zu können, muss es sich bei dem Gerät um ein firmeneigenes iOS-Gerät im überwachten Modus handeln.
+Durch die Geräteaktion **Modus für verlorene Geräte** können Sie den Modus für verlorene Geräte auf verlorenen oder gestohlenen iOS-/iPadOS-Geräten aktivieren. In diesem Modus können Sie eine Meldung und eine Telefonnummer angeben, die auf dem Sperrbildschirm des Geräts angezeigt werden. Um den Modus für verlorene Geräte nutzen zu können, muss es sich bei dem Gerät um ein firmeneigenes iOS-/iPadOS-Gerät im überwachten Modus handeln.
 
 ## <a name="supported-platforms"></a>Unterstützte Plattformen
 
-- iOS 9.3 und höher
+- iOS/iPadOS 9.3 und höher
 
 Dieses Feature wird für die folgenden Betriebssysteme nicht unterstützt: 
 - Windows
@@ -43,7 +43,7 @@ Dieses Feature wird für die folgenden Betriebssysteme nicht unterstützt:
 
 1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 3. Klicken Sie auf **Geräte** und dann auf **Alle Geräte**.
-4. Wählen Sie aus der Liste der von Ihnen verwalteten Geräte ein iOS-Gerät aus, und wählen Sie dann **Modus für verlorene Geräte (nur überwacht)** aus.
+4. Wählen Sie aus der Liste der von Ihnen verwalteten Geräte ein iOS-/iPadOS-Gerät aus, und wählen Sie dann **Modus für verlorene Geräte (nur überwacht)** aus.
 5. Wählen Sie unter **Modus für verlorene Geräte** die Option **Aktivieren** aus.
 6. Geben Sie unter **Auf dem Sperrbildschirm anzuzeigende Meldung** eine Meldung ein, die auf dem Sperrbildschirm des Geräts angezeigt werden soll.
 7. Optional können Sie auch im Feld **Anzuzeigende Telefonnummer** eine Telefonnummer eingeben.
