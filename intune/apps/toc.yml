@@ -82,12 +82,16 @@
               href: apps-win32-s-mode.md
         - name: Hinzufügen bestimmter Apps
           items:
-            - name: Unternehmensportal-App
+            - name: 'Unternehmensportal-App: Autopilot'
+              href: store-apps-company-portal-autopilot.md
+            - name: 'Unternehmensportal-App: Download'
               href: store-apps-company-portal-app.md
             - name: Microsoft Edge für Windows 10
               href: apps-windows-edge.md
             - name: Microsoft Edge für macOS
               href: apps-edge-macos.md
+            - name: Microsoft Defender ATP für macOS
+              href: apps-advanced-threat-protection-macos.md
         - name: PowerShell-Skripts
           href: intune-management-extension.md
     - name: Zuweisen von Apps
