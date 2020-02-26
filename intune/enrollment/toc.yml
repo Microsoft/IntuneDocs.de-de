@@ -113,3 +113,5 @@
           href: troubleshoot-ios-enrollment-errors.md
         - name: Behandlung von Problemen bei der Registrierung von Windows-Geräten
           href: troubleshoot-windows-enrollment-errors.md
+        - name: Behandlung von Problemen bei der Registrierung von Android-Geräten
+          href: troubleshoot-android-enrollment.md
