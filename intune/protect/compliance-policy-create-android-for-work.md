@@ -215,7 +215,7 @@ Als Intune-Administrator verwenden Sie diese Konformitätseinstellungen, um die 
 
 - **Apps von unbekannten Quellen blockieren**: 
   - **Nicht konfiguriert** (*Standardeinstellung*): Diese Einstellung wird nicht für die Konformitätsprüfung ausgewertet.
-  - **Blockieren** von Geräten mit **Sicherheits** > **unbekannten Quellen** (*unter Android 4,0 über Android 7. x unterstützt. Nicht von Android 8.0 und höher unterstützt).  
+  - **Blockieren** von Geräten mit **Sicherheits** > **unbekannten Quellen** (*unter Android 4,0 über Android 7. x unterstützt. Nicht von Android 8.0 und höher unterstützt*).  
 
   Für das Sideloading von Apps müssen unbekannte Quellen zugelassen werden. Wenn Sie kein Sideloading von Android-Apps durchführen, legen Sie für dieses Feature **Blockieren** fest, um diese Konformitätsrichtlinie zu aktivieren.
 
