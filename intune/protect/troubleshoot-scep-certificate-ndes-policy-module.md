@@ -90,8 +90,7 @@ Moderne Browser und Browser auf mobilen Geräten ignorieren den *Allgemeinen Nam
      Name = externer Servername  
      DNS-Name = interner Servername
 
-### <a name="ndespluginlog-contains-an-error-403--forbidden-access-is-denied"></a>„„NDESPlugin.log“ enthält den Fehler 403 – 
-Verboten: Zugriff verweigert.“
+### <a name="ndespluginlog-contains-an-error-403--forbidden-access-is-denied"></a>„„NDESPlugin.log“ enthält den Fehler 403 – Verboten: Zugriff verweigert.“
 
 Wenn die folgenden Protokolle den Fehler 403 enthalten, der etwa wie folgt aussieht, ist das Clientzertifikat möglicherweise nicht vertrauenswürdig oder ungültig:
 
