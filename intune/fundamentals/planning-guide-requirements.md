@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c72cf963822284702f6b924ca506f8ec1157e91
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a03a92f715496b3c647a12bb99457d151ead54a3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505140"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514930"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Bestimmen von Anforderungen von Anwendungsfallszenarien
 
@@ -35,13 +35,13 @@ Möglicherweise gibt es auch Organisationsgruppen für das unternehmensweite Anw
 
 Hier sehen Sie einige Beispiele für die Anwendungsfallanforderungen einer Organisation mit verschiedenen Anforderungskonstellationen für jedes Szenario aus Anwendungsfällen und untergeordneten Anwendungsfällen sowie für jede Organisationsgruppe und mobile Geräteplattform. In der folgenden Tabelle können Sie außerdem die Anwendungsfallanforderungen Ihrer Organisation eintragen:
 
-| **Anwendungsfälle** | **Untergeordnete Anwendungsfälle** | **Gruppen** | **Geräteplattformen** | **Anforderungen** |
+| **Anwendungsfälle** | **Untergeordnete Anwendungsfälle** | **Gruppen** | **Geräteplattformen** | **Requirements** |
 |:---:|:---:|:---:|:---:|:---:|
-| Unternehmen | Information-Worker | Personalabteilung, Finanzabteilung | iOS | Sichere E-Mail, Geräteeinstellungen, Profile, Apps |                                                          
-| Unternehmen | Führungskräfte | Personalabteilung, Finanzabteilung | iOS | Sichere E-Mail, Geräteeinstellungen, Profile, Apps |                                                         
+| Unternehmen | Information-Worker | Personalabteilung, Finanzabteilung | iOS/iPadOS | Sichere E-Mail, Geräteeinstellungen, Profile, Apps |                                                          
+| Unternehmen | Führungskräfte | Personalabteilung, Finanzabteilung | iOS/iPadOS | Sichere E-Mail, Geräteeinstellungen, Profile, Apps |                                                         
 | Unternehmen | Kiosk | Einzelhandel | Android | Geräteeinstellungen, Profile, Apps |
-| BYOD | Information-Worker | Marketing, Vertrieb | iOS | Sichere E-Mail, Geräteeinstellungen, Profile, Apps |                                                         
-| BYOD | Führungskräfte | Marketing, Vertrieb | iOS | Sichere E-Mail, Geräteeinstellungen, Profile, Apps |
+| BYOD | Information-Worker | Marketing, Vertrieb | iOS/iPadOS | Sichere E-Mail, Geräteeinstellungen, Profile, Apps |                                                         
+| BYOD | Führungskräfte | Marketing, Vertrieb | iOS/iPadOS | Sichere E-Mail, Geräteeinstellungen, Profile, Apps |
 
 Sie können [eine Vorlage der obigen Tabelle herunterladen](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0), um die Anforderungen an die Szenarien für Anwendungsfälle und untergeordnete Anwendungsfälle Ihrer Organisation einzutragen.
 
