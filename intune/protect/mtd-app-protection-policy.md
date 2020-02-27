@@ -50,7 +50,7 @@ Voraussetzungen für die App-Schutzrichtlinie mit MTD:
 Verwenden Sie die Prozedur, um [eine iOS-/iPadOS- oder Android-App-Schutzrichtlinie zu erstellen](../apps/app-protection-policies.md#app-protection-policies-for-iosipados-and-android-apps), und verwenden Sie die folgenden Informationen von den Seiten *Apps*, *Bedingter Start* und *Zuweisungen*:
 
 - **Apps**: Wählen Sie die Apps aus, für die die App-Schutzrichtlinien gelten sollen. Für diese Featuregruppe werden diese Apps blockiert oder basierend auf der Geräterisikobewertung des Mobile Threat Defense-Anbieters selektiv zurückgesetzt. 
-- **Bedingter Start:**  Wählen Sie in der Dropdownliste unter *Gerätebedingungen***Maximal zulässige Bedrohungsstufe für Gerät** aus.
+- **Bedingter Start:**  Wählen Sie in der Dropdownliste unter *Gerätebedingungen* **Maximal zulässige Bedrohungsstufe für Gerät** aus.
 
   Optionen für den **Wert** der Bedrohungsstufe:
 
