@@ -1,11 +1,11 @@
 ---
 title: Verwenden von VPN-Einstellungen für Android Enterprise in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Weitere Informationen finden Sie unter alle Einstellungen zum Erstellen von VPN-Verbindungen auf Android-Unternehmens Geräten in Microsoft InTune. Geben Sie den Verbindungs Namen, die IP-Adresse oder den FQDN des VPN-Servers ein, wählen Sie aus, wie sich Benutzer authentifizieren, und wählen Sie Citrix, SonicWALL, Check Point Capsule und Pulse Secure-Verbindungstypen aus.
+description: Lernen Sie alle Einstellungen kennen, die Sie zum Erstellen von VPN-Verbindungen auf Android Enterprise-Geräten in Microsoft Intune benötigen. Geben Sie den Namen der Verbindung und die IP-Adresse oder FQDN des VPN-Servers ein. Wählen Sie die Art der Authentifizierung von Benutzern sowie die Verbindungstypen Citrix, SonicWall, Check Point Capsule und Pulse Secure aus.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/06/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,25 +15,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0c11be374e36ec32feb9540f6cfd4f1bc794e9c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 81300651355e52f438ea2a314eeb1d0d48e3fcbc
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206311"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510863"
 ---
-# <a name="android-enterprise-device-settings-to-configure-vpn-in-intune"></a>Android Enterprise-Geräteeinstellungen zum Konfigurieren von VPN in InTune
+# <a name="android-enterprise-device-settings-to-configure-vpn-in-intune"></a>Android Enterprise-Geräteeinstellungen zur VPN-Konfiguration in Intune
 
-
-
-In diesem Artikel werden die verschiedenen VPN-Verbindungseinstellungen aufgeführt und beschrieben, die Sie auf Android Enterprise-Geräten steuern können. Verwenden Sie diese Einstellungen als Teil ihrer MDM-Lösung (Mobile Device Management, Verwaltung mobiler Geräte), um eine VPN-Verbindung zu erstellen, auszuwählen, wie das VPN authentifiziert wird, und wählen einen VPN-Servertyp aus.
+In diesem Artikel werden die verschiedenen VPN-Verbindungseinstellungen aufgeführt und beschrieben, die Sie auf Android Enterprise-Geräten steuern können. Verwenden Sie diese Einstellungen als Teil Ihrer MDM-Lösung (Mobile Device Management, Verwaltung mobiler Geräte), um etwa eine VPN-Verbindung zu erstellen und die Art der Authentifizierung sowie den VPN-Servertyp auszuwählen.
 
 Als Intune-Administrator können Sie für Ihre Android Enterprise-Geräte VPN-Einstellungen erstellen und ihnen zuweisen. 
 
-Weitere Informationen zu VPN-Profilen in InTune finden Sie unter [VPN-profile](vpn-settings-configure.md).
+Weitere Informationen zu VPN-Profilen in Intune finden Sie unter [VPN-Profile](vpn-settings-configure.md).
 
 > [!NOTE]
-> Zum Konfigurieren des Always on-VPN müssen Sie ein VPN-Profil erstellen und außerdem ein [Geräte Einschränkungs](device-restrictions-android-for-work.md#connectivity) Profil mit der konfigurierten Always on-VPN-Einstellung erstellen.
+> Erstellen Sie zur Konfiguration des Always On-VPN ein VPN-Profil sowie ein Profil für [Geräteeinschränkungen](device-restrictions-android-for-work.md#connectivity) mit konfigurierter Always On-VPN-Einstellung.
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
@@ -77,4 +75,4 @@ Weitere Informationen zu VPN-Profilen in InTune finden Sie unter [VPN-profile](v
 
 [Zuweisen von Profilen](device-profile-assign.md) und [Überwachen von Profilen](device-profile-monitor.md)
 
-Sie können auch VPN-Profile für [Android](vpn-settings-android.md)-, [IOS](vpn-settings-ios.md)-, [macOS](vpn-settings-macos.md)-, [Windows 10-und spätere](vpn-settings-windows-10.md), [Windows 8.1](vpn-settings-windows-8-1.md)-und [Windows Phone 8,1](vpn-settings-windows-phone-8-1.md) -Geräte erstellen.
+Sie können VPN-Profile auch für Geräte erstellen, die unter [Android](vpn-settings-android.md), [iOS/iPadOS](vpn-settings-ios.md), [macOS](vpn-settings-macos.md), [Windows 10 und höher](vpn-settings-windows-10.md), [Windows 8.1](vpn-settings-windows-8-1.md) sowie [Windows Phone 8.1](vpn-settings-windows-phone-8-1.md) ausgeführt werden.

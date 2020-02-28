@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3affffdf69445ced667d718587303a5409423bf
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 0d9e61cbe4f6d6e07c61fe182e639e715996f9ee
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502398"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514437"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Verhindern von Datenverlusten auf nicht verwalteten Geräten mit Microsoft Intune
 
@@ -47,7 +47,7 @@ Der folgende Maßnahmenplan kann verwendet werden, wenn Sie die folgenden Anford
 
 ## <a name="action-plan"></a>Maßnahmenplan
 
-Für iOS- und Android-Geräte:
+Für iOS-/iPadOS- und Android-Geräte:
 
 1. Erfahren Sie, wie [App-Schutzrichtlinien](../apps/app-protection-policy.md) funktionieren.
 2. Erfahren Sie, wie Sie [App-Schutzrichtlinien für mobile Office-Apps erstellen und bereitstellen](../apps/app-protection-policies.md).
@@ -63,7 +63,7 @@ Für Windows 10-Geräte:
 
 Geben Sie nach Bedarf die folgenden Links frei, um zusätzliche Informationen bereitzustellen:
 
-* [Was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird](../fundamentals/end-user-mam-apps-ios.md)
+* [Was Sie erwartet, wenn Ihre iOS-/iPadOS-App von App-Schutzrichtlinien verwaltet wird](../fundamentals/end-user-mam-apps-ios.md)
 * [Was Sie erwartet, wenn Ihre Android-App von App-Schutzrichtlinien verwaltet wird](../fundamentals/end-user-mam-apps-android.md)
 
 ## <a name="next-steps"></a>Nächste Schritte

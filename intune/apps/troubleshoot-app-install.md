@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be66f99006b06dce9f9bfe21eafa9f2be302e7b9
-ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
-ms.translationtype: MTE75
+ms.openlocfilehash: 13aea23f58c69d5c7e38f77ae7dfa19bd12edd35
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76540978"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511650"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Problembehandlung bei der App-Installation
 
@@ -50,7 +50,7 @@ Intune stellt anhand von Apps, die auf dem jeweiligen Benutzergerät installiert
     > Eine App kann mehreren Gruppen zugewiesen werden – jedoch mit unterschiedlichen beabsichtigten Aktionen (Absichten) für die App. Beispielsweise zeigt eine aufgelöste Absicht für eine App **Ausgeschlossen** an, wenn die App bei der App-Zuweisung für einen Benutzer ausgeschlossen wird. Weitere Informationen finden Sie unter [Auflösung von Konflikten zwischen App-Absichten](apps-deploy.md#how-conflicts-between-app-intents-are-resolved).<br><br>
     > Wenn ein Installationsfehler bei einer erforderlichen App auftritt, können entweder Sie oder Ihr Helpdesk das Gerät synchronisieren und die App-Installation erneut versuchen.
 
-Die Details zum App-Installationsfehler weisen auf das Problem hin. Anhand dieser Informationen können Sie ermitteln, welche Maßnahmen sich am besten zur Problembehandlung eignen. Weitere Informationen zur Problembehandlung bei der App-Installation finden Sie unter [Installationsfehler bei Android-Apps](app-install-error-codes.md#android-app-installation-errors) und [Installationsfehler bei iOS-Apps](app-install-error-codes.md#ios-app-installation-errors).
+Die Details zum App-Installationsfehler weisen auf das Problem hin. Anhand dieser Informationen können Sie ermitteln, welche Maßnahmen sich am besten zur Problembehandlung eignen. Weitere Informationen zur Problembehandlung bei der App-Installation finden Sie unter [Installationsfehler bei Android-Apps](app-install-error-codes.md#android-app-installation-errors) und [Installationsfehler bei iOS-Apps](app-install-error-codes.md#ios-and-ipados-app-installation-errors).
 
 > [!Note]  
 > Sie können auch auf den Bereich **Problembehandlung** zugreifen, indem Sie in Ihrem Browser zu [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) navigieren.
@@ -65,7 +65,7 @@ Wenn es bei der Installation von Apps zu Problemen kommt, sollten Sie die folgen
   3. Navigieren Sie zu [Azure Active Directory-Benutzer](https://portal.azure.com/#pane/Microsoft_AAD_IAM/UsersManagementMenupane/AllUsers).
   4. Wählen Sie den betroffenen Benutzer aus, und klicken Sie auf **Geräte**.
   5. Wenn der Benutzer das festgelegte Limit überschritten hat, löschen Sie abgelaufene Einträge, die nicht mehr benötigt werden.
-- Überprüfen Sie bei iOS-DEP-Geräten, ob der Benutzer im Geräteübersichtsbereich in Intune als **Vom Benutzer registriert** aufgeführt ist. Wenn „NA“ angezeigt wird, stellen Sie eine Konfigurationsrichtlinie für das Intune-Unternehmensportal bereit. Weitere Informationen finden Sie unter [Konfigurieren der Unternehmensportal-App zur Unterstützung von iOS-DEP-Geräten](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices).
+- Überprüfen Sie bei iOS-/iPadOS-DEP-Geräten, ob der Benutzer im Geräteübersichtsbereich von Intune als **Vom Benutzer registriert** aufgeführt ist. Wenn „NA“ angezeigt wird, stellen Sie eine Konfigurationsrichtlinie für das Intune-Unternehmensportal bereit. Weitere Informationen finden Sie unter [Konfigurieren der Unternehmensportal-App zur Unterstützung von iOS-DEP-Geräten](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-and-ipados-dep-devices).
 
 ## <a name="win32-app-installation-troubleshooting"></a>Problembehandlung bei der Installation von Win32-Apps
 
@@ -121,5 +121,5 @@ Mithilfe der Informationen im Artikel [Problembehandlung beim Packen, Bereitstel
 ## <a name="next-steps"></a>Nächste Schritte
 
 - Weitere Informationen zur Intune-Problembehandlung finden Sie unter [Verwenden des Problembehandlungsportals zur Unterstützung von Benutzern Ihres Unternehmens](../fundamentals/help-desk-operators.md). 
-- Erfahren Sie mehr über bekannte Probleme in Microsoft Intune. Weitere Informationen finden Sie unter [Mit Intune zum Kundenerfolg](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess).
+- Erfahren Sie mehr über bekannte Probleme in Microsoft Intune. Weitere Informationen finden Sie unter [Intune Customer Success](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess).
 - Benötigen Sie zusätzliche Hilfe? Weitere Informationen finden Sie unter [Anfordern von Support für Microsoft Intune](../fundamentals/get-support.md).

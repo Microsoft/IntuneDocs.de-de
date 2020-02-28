@@ -17,12 +17,12 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0094cdd12b2594cb60260d768daec8c5bed04c9c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 3812d19122cf4dd85edf00a6fa12d9f2b89529aa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510257"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514590"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Verwenden des Problembehandlungsportals zur Unterstützung von Benutzern Ihres Unternehmens
 
@@ -59,14 +59,14 @@ Klicken Sie im Bereich „Problembehandlung“ auf **Benutzer auswählen**, um B
 
 Sie können den Bereich **Problembehandlung** verwenden, um Benutzerinformationen zu überprüfen.
 
-![Dashboard zur Problembehandlung mit nummerierten, in der folgenden Tabelle beschriebenen Bereichen](./media/help-desk-operators/troubleshooting-dash.png)
+![Dashboard „Problembehandlung“ mit nummerierten, in der folgenden Tabelle beschriebenen Bereichen](./media/help-desk-operators/troubleshooting-dash.png)
 
 | Bereich | Name | Beschreibung |
 | ---  | ---  | ---         |
 | 1.   | Kontostatus  | Zeigt den Status des aktuellen Intune-Mandanten als **Aktiv** oder **Inaktiv** an.       |
 | 2.   | Benutzerauswahl  | Der Name des aktuell ausgewählten Benutzers. Klicken Sie auf **Benutzer wechseln**, um einen neuen Benutzer auszuwählen.       |
 | 3.   | Benutzerstatus  | Zeigt den Status der Intune-Lizenz des Benutzers, die Anzahl von Geräten, die jeweilige Gerätekompatibilität, die Anzahl von Apps und die App-Kompatibilität an.       |
-| 4.   | Benutzerinformationen  | Verwenden Sie die Liste in diesem Bereich, um die zu überprüfenden Details auszuwählen. <br>Sie können Folgendes auswählen: <ul><li>Client-Apps<li>Konformitätsrichtlinien<li> Konfigurationsrichtlinien<li>App-Schutzrichtlinien <li>Registrierungseinschränkungen</ul>      |
+| 4.   | Benutzerinformationen  | Verwenden Sie die Liste in diesem Bereich, um die zu überprüfenden Details auszuwählen. <br>Sie können Folgendes auswählen: <ul><li>Client-Apps<li>Kompatibilitätsrichtlinien<li> Konfigurationsrichtlinien<li>App-Schutzrichtlinien <li>Registrierungseinschränkungen</ul>      |
 | 5.   | Gruppenmitgliedschaft  | Zeigt die aktuellen Gruppen, denen der ausgewählte Benutzer als Mitglied angehört.       |
 
 <!-- this section needs to be updated
@@ -269,7 +269,7 @@ Wenn Sie eine Zeile mit einem Fehler auswählen, werden mehr Details angezeigt.
 
 | Fehler | Details |
 |-------------|----------|
-| iOS Timeout or Failure (iOS-Timeout oder -Fehler.). | Ein Timeout zwischen Gerät und Intune, weil der Benutzer zu lange für die Registrierung gebraucht hat |
+| iOS-/iPadOS-Timeout oder -Fehler | Ein Timeout zwischen Gerät und Intune, weil der Benutzer zu lange für die Registrierung gebraucht hat |
 | Benutzer nicht gefunden oder nicht lizenziert. | Der Benutzer ist nicht lizenziert oder wurde aus dem Dienst entfernt. |
 | Gerät bereits registriert. | Der Benutzer hat versucht, ein Gerät über das Unternehmensportal zu registrieren, das noch für einen anderen Benutzer registriert ist. |
 | Not onboarded into Intune (Nicht in Intune integriert.). | Der Benutzer hat versucht, ein Gerät zu registrieren, auf dem Intune-MDM nicht konfiguriert war. |
@@ -286,14 +286,14 @@ Wenn Sie eine Zeile mit einem Fehler auswählen, werden mehr Details angezeigt.
 | Unerwartete Autopilot-Registrierungsmethode. | Das Gerät hat versucht, sich über eine nicht zugelassene Methode zu registrieren. |
 | Autopilot-Gerät entfernt. | Das Gerät, das versucht, sich zu registrieren, wurde für dieses Konto aus Autopilot entfernt. |
 | Gerätekapazität erreicht | Die Registrierung wurde aufgrund einer vom Administrator konfigurierten zulässigen Anzahl von Geräten blockiert. |
-| Apple-Onboarding | Die Registrierung aller iOS-Geräte wurde blockiert, weil ein Apple-MDM-Push-Zertifikat in Intune fehlt oder abgelaufen ist. |
+| Apple-Onboarding | Die Registrierung aller iOS-/iPadOS-Geräte wurde blockiert, weil ein MDM-Push-Zertifikat von Apple in Intune fehlt oder abgelaufen ist. |
 | Gerät nicht vorab registriert. | Das Gerät wurde nicht vorab als Unternehmensgerät registriert, und alle Registrierungen von Privatgeräten wurden von einem Administrator blockiert. |
 | Das Feature wird nicht unterstützt. | Vermutlich hat der Benutzer versucht, sein Gerät über eine Registrierungsmethode zu registrieren, die von Ihrer Intune-Konfiguration nicht unterstützt wird. |
 
 ## <a name="collect-available-data-from-mobile-device"></a>Erfassen verfügbarer Daten mobiler Geräte
 
 Verwenden Sie die folgenden Ressourcen beim Erfassen von Gerätedaten, wenn Sie Geräteprobleme eines Benutzers beheben:
-- [Senden von iOS-Registrierungsfehlern an Ihren IT-Administrator](/intune-user-help/send-errors-to-your-it-admin-ios)
+- [Senden von iOS-/iPadOS-Registrierungsfehlern an Ihren IT-Administrator](/intune-user-help/send-errors-to-your-it-admin-ios)
 - [Verwenden der ausführlichen Protokollierung zur Unterstützung des Supports Ihres Unternehmens bei der Behebung von Geräteproblemen](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
 - [Senden von Android-Protokollen an den Support Ihres Unternehmens mithilfe eines USB-Kabels](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 - [Senden von Android-Diagnosedatenprotokollen an Ihren IT-Administrator per E-Mail](/intune-user-help/send-logs-to-your-it-admin-by-email-android)

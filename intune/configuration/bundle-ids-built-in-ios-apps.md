@@ -1,12 +1,12 @@
 ---
-title: iOS-Bündel-IDs für integrierte Apps in Microsoft Intune – Azure | Microsoft-Dokumentation
+title: iOS-/iPadOS-Bündel-IDs für integrierte Apps in Microsoft Intune – Azure | Microsoft-Dokumentation
 titleSuffix: ''
-description: Hier finden Sie eine Liste der Bündel-IDs für integrierte iOS-Apps. Verwenden Sie diese Bündel-IDs, um Apps in Gerätekonfigurationsprofilen und Richtlinien in Microsoft Intune explizit zuzulassen.
+description: In diesem Artikel werden die Bündel-IDs für integrierte iOS- und iPadOS-Apps aufgelistet. Verwenden Sie diese Bündel-IDs, um Apps in Gerätekonfigurationsprofilen und Richtlinien in Microsoft Intune explizit zuzulassen.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e151481b090e1e666bfdb2759015adde6f1d66a9
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
-ms.translationtype: MTE75
+ms.openlocfilehash: 10c6ea8e3afd7bb1f5a583c0088c72fc155cb0f9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691847"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513298"
 ---
-# <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Bündel-IDs für integrierte iOS-Apps, die Sie in Intune verwenden können
+# <a name="bundle-ids-for-built-in-ios-and-ipados-apps-you-can-use-in-intune"></a>Bündel-IDs für integrierte iOS- und iPadOS-Apps, die Sie in Intune verwenden können
 
-Wenn Sie Features auf iOS-Geräten konfigurieren, können Sie auch die integrierten Apps auf iOS-Geräten hinzufügen. Dieser Artikel enthält eine Liste der Bündel-IDs einiger gängiger integrierter iOS-Apps. Um die Bündel-ID von anderen Apps zu finden, wenden Sie sich an den Softwarehersteller. Mehr dazu finden Sie in der Apple-Liste der [iOS-Bündel-IDs](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web) (öffnet die Website von Apple).
+Beim Konfigurieren von Funktionen auf iOS-/iPadOS-Geräte können Sie auch die integrierten Apps auf iOS-/iPadOS-Geräten hinzufügen. Dieser Artikel enthält eine Liste der Bündel-IDs einiger gängiger integrierter iOS-/iPadOS-Apps. Um die Bündel-ID von anderen Apps zu finden, wenden Sie sich an den Softwarehersteller. Informationen hierzu finden Sie in der Apple-Liste der [iOS-/iPadOS-Bündel-IDs](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web) (öffnet die Website von Apple).
 
 ## <a name="bundle-ids"></a>Bündel-IDs
 
@@ -36,7 +36,7 @@ Wenn Sie Features auf iOS-Geräten konfigurieren, können Sie auch die integrier
 | com.apple.mobilecal         | Kalender     | Apple     |
 | com.apple.camera            | Kamera       | Apple     |
 | com.apple.mobiletimer       | Clock        | Apple     |
-| com. Apple. Clips             | Clips        | Apple     |
+| com.apple.clips             | Clips        | Apple     |
 | com.apple.compass           | Compass      | Apple     |
 | com.apple.MobileAddressBook | Kontakte     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
@@ -55,7 +55,7 @@ Wenn Sie Features auf iOS-Geräten konfigurieren, können Sie auch die integrier
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.apple.mobilemail        | Mail         | Apple     |
 | com.apple.Maps              | Zuordnungen         | Apple     |
-| com. Apple. Measure           | Maßeinheit      | Apple     |
+| com.apple.measure           | Maßeinheit      | Apple     |
 | com.apple.MobileSMS         | Nachrichten     | Apple     |
 | com.apple.Music             | Musik        | Apple     |
 | com.apple.news              | News         | Apple     |
@@ -69,7 +69,7 @@ Wenn Sie Features auf iOS-Geräten konfigurieren, können Sie auch die integrier
 | com.apple.reminders         | Reminders    | Apple     |
 | com.apple.mobilesafari      | Safari       | Apple     |
 | com.apple.Preferences       | Einstellung     | Apple     |
-| com. Apple. Verknüpfungen         | Verknüpfungen    | Apple     |
+| com.apple.shortcuts         | Verknüpfungen    | Apple     |
 | com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | Stocks       | Apple     |
 | com.apple.tips              | Tipps         | Apple     |
@@ -78,8 +78,8 @@ Wenn Sie Features auf iOS-Geräten konfigurieren, können Sie auch die integrier
 | com.apple.VoiceMemos        | VoiceMemos   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |
 | com.apple.Bridge            | Überwachen        | Apple     |
-| com.apple.weather           | Weather      | Apple     |      
+| com.apple.weather           | Weather      | Apple     |
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Verwenden Sie diese Bündel-IDs, um [Gerätefeatures](ios-device-features-settings.md) zu konfigurieren und um auf iOS-Geräten [einige Einstellungen zuzulassen oder einzuschränken](device-restrictions-ios.md).
+Verwenden Sie diese Bündel-IDs, um [Gerätefunktionen](ios-device-features-settings.md) zu konfigurieren und auf iOS-/iPadOS-Geräten [einige Einstellungen zuzulassen oder einzuschränken](device-restrictions-ios.md).

@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ab41026cd9b2ceeaaa478fc27c984d0d89db4c5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 3a15bf0bd8ed0a46f330b159e45d0a5d5a4c7059
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74058527"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510383"
 ---
 # <a name="device-management-overview"></a>Übersicht über die Geräteverwaltung
 
@@ -33,7 +33,7 @@ Mithilfe eines Anbieters für die Geräteverwaltung können Unternehmen sicherst
 
 Die Antwort ist [Microsoft Intune](what-is-intune.md). Intune bietet die Verwaltung mobiler Geräte (MDM) und mobiler Anwendungen (MAM). Zu den Hauptaufgaben einer jeden MDM- oder MAM-Lösung gehören:
 
-- Unterstützen einer vielseitigen mobilen Umgebung und sicheres Verwalten von iOS-, Android-, Windows- und macOS-Geräten
+- Unterstützen einer vielseitigen mobilen Umgebung und sicheres Verwalten von iOS-/iPadOS-, Android-, Windows- und macOS-Geräten
 - Sicherstellen, dass Geräte und Apps die Sicherheitsanforderungen der Organisation erfüllen
 - Erstellen von Richtlinien, um die Daten Ihrer Organisation auf organisationseigenen und privaten Geräten zu schützen
 - Verwenden einer einzelnen, einheitlichen mobilen Lösung zur Durchsetzung dieser Richtlinien und zur Verwaltung von Geräten, Anwendungen, Benutzern und Gruppen
@@ -41,13 +41,13 @@ Die Antwort ist [Microsoft Intune](what-is-intune.md). Intune bietet die Verwalt
 
 Intune ist in Microsoft Azure und Microsoft 365 enthalten und lässt sich in Azure Active Directory (Azure AD) integrieren. Azure AD hilft bei der Kontrolle, welche Personen auf welche Daten Zugriff haben.
 
-## <a name="microsoft-intune"></a>Microsoft Intune
+## <a name="microsoft-intune"></a>Microsoft Intune
 
 Viele Unternehmen wie Microsoft verwenden Intune, um proprietäre Daten zu schützen, auf die Benutzer von ihren unternehmenseigenen und privaten mobilen Geräten aus zugreifen können. Intune enthält Konfigurationsrichtlinien für Geräte und Apps, Richtlinien für Softwareupdates und Installationsstatus (Diagramme, Tabellen und Berichte), die Ihnen helfen, den Datenzugriff zu schützen und zu überwachen.
 
 Es ist üblich, dass Benutzer über mehrere Geräte verfügen, die unterschiedliche Plattformen verwenden. So kann ein Mitarbeiter z. B. Surface Pro für die Arbeit und ein mobiles Android-Gerät für den privaten Gebrauch nutzen. Außerdem ist es üblich, dass eine Person von diesen verschiedenen Geräten aus auf Unternehmensressourcen wie Microsoft Outlook und SharePoint zugreift.
 
-Mit Intune können Sie mehrere Geräte pro Person und die darauf ausgeführten verschiedenen Plattformen verwalten, einschließlich iOS, macOS, Android und Windows. Intune unterscheidet dabei zwischen Richtlinien und Einstellungen nach Geräteplattform. Dadurch ist es einfach, Geräte einer bestimmten Plattform zu verwalten und anzuzeigen.
+Mit Intune können Sie mehrere Geräte pro Person und die darauf ausgeführten verschiedenen Plattformen verwalten, einschließlich iOS/iPadOS, macOS, Android und Windows. Intune unterscheidet dabei zwischen Richtlinien und Einstellungen nach Geräteplattform. Dadurch ist es einfach, Geräte einer bestimmten Plattform zu verwalten und anzuzeigen.
 
 **[Allgemeine Szenarien](common-scenarios.md)** ist eine hervorragende Ressource, um zu sehen, wie Intune häufige Fragen beim Arbeiten mit mobilen Geräten beantwortet. Sie finden Szenarien zu den folgenden Themen:  
 
@@ -55,7 +55,7 @@ Mit Intune können Sie mehrere Geräte pro Person und die darauf ausgeführten v
 - Sicherer und geschützter Zugriff auf Office 365
 - Verwenden privater Geräte für den Zugriff auf Unternehmensressourcen
 
-Weitere Informationen zu InTune finden Sie unter [Was ist InTune](what-is-intune.md)?.
+Weitere Informationen zu Intune finden Sie unter [Was ist Microsoft Intune?](what-is-intune.md).
 
 ## <a name="integration-with-secure-and-protect-services"></a>Integration mit Diensten für Sicherheit und Schutz
 
@@ -63,7 +63,7 @@ Eine Hauptaufgabe einer jeden Lösung für die Geräteverwaltung ist es, Sicherh
 
 - **Microsoft 365** ist eine Schlüsselkomponente zur Vereinfachung gängiger IT-Aufgaben. Im Microsoft 365 Admin Center können Sie Benutzer erstellen und Gruppen verwalten. Außerdem erhalten Sie Zugriff auf andere Dienste wie z.B. Intune und Azure AD.
 
-  Erstellen Sie z.B. in Microsoft 365 eine iOS-Gerätegruppe. Verwenden Sie dann Intune, um Richtlinien an die iOS-Gerätegruppe weiterzugeben, die sich auf iOS-Features konzentrieren, z. B. Zugriff auf den App Store, Verwendung von AirDrop, Sicherung in iCloud, Verwendung des Webfilters von Apple und mehr.
+  Erstellen Sie z. B. in Microsoft 365 eine iOS-/iPadOS-Gerätegruppe. Verwenden Sie dann Intune, um Richtlinien an die iOS-/iPadOS-Gerätegruppe weiterzugeben, die sich auf iOS-/iPadOS-Funktionen konzentrieren, z. B. den Zugriff auf den App Store, die Verwendung von AirDrop, die Sicherung in iCloud, die Verwendung des Webfilters von Apple und mehr.
 
 - **Windows Defender** enthält viele Sicherheitsfeatures zum Schutz von Windows 10-Geräten. Wenn Sie z. B. Intune und Windows Defender zusammen verwenden, haben Sie die folgenden Möglichkeiten:
 
@@ -86,7 +86,7 @@ Wenn Sie Intune einrichten, können Sie Geräte auch ausschließlich im Azure-Po
 
 Das [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) ist eine zentrale Anlaufstelle für die Verwaltung und Durchführung von Aufgaben für Ihre mobilen Geräte. Dieser Arbeitsbereich enthält die Dienste für die Geräteverwaltung, einschließlich Intune und Azure Active Directory, sowie für die Verwaltung von Clientanwendungen.
 
-Im Verwaltungs Center für die Geräteverwaltung können Sie folgende Aktionen ausführen:
+Im Admin Center für die Geräteverwaltung haben Sie folgende Optionen:
 
 - [Registrieren von Geräten](../enrollment/device-enrollment.md)
 - [Festlegen der Gerätekonformität](../protect/device-compliance-get-started.md)
@@ -97,7 +97,7 @@ Im Verwaltungs Center für die Geräteverwaltung können Sie folgende Aktionen a
 - [Verwalten von Rollen](role-based-access-control.md)  
 - Verwalten von Softwareupdates
   - [Verwalten von Windows 10-Updates](../protect/windows-update-for-business-configure.md)  
-  - [Verwalten von iOS-Updates](../protect/software-updates-ios.md)  
+  - [Verwalten von iOS-/iPadOS-Updates](../protect/software-updates-ios.md)  
 - [Azure Active Directory](https://docs.microsoft.com/azure/active-directory)  
 - [Verwalten von Benutzern](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [Verwalten von Gruppen und Mitglieder](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)

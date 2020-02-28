@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3502b1c1a73a9e98ed2901fc24dc69ab09136427
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
-ms.translationtype: MTE75
+ms.openlocfilehash: ef20d378740eae73c41521d8dfc7f8fdd853fdb9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812442"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513897"
 ---
 # <a name="intune-app-installation-error-reference"></a>Referenz zu Fehlercodes bei der Installation der Intune-App
 
@@ -51,17 +51,17 @@ In diesem Abschnitt werden die Geräteadministratorregistrierung und die Samsung
 | 0xC7D14FB1  | -942583887 | Der Endbenutzer hat die App-Installation abgebrochen. | Der Benutzer hat die App explizit deinstalliert. Diese Fehlermeldung wird zurückgegeben, wenn die Installation durch das Android-Betriebssystem vom Benutzer abgebrochen wurde. Als die Eingabeaufforderung zur Betriebssysteminstallation angezeigt wurde, hat der Benutzer auf die Schaltfläche „Abbrechen“ geklickt oder die Eingabeaufforderung einfach geschlossen. Diese Fehlermeldung wird nur für DA-Szenarien zurückgegeben. Bei KNOX-Szenarios wird der Benutzer nicht zur Installation aufgefordert. Diese kann im Hintergrund erfolgen. Intune zeigt eine Benachrichtigung an, auf die Benutzer klicken können, um den Vorgang zu wiederholen. Handelt es sich um eine verfügbare App, kann die Benachrichtigung geschlossen werden. Wenn die App jedoch erforderlich ist, kann die Benachrichtigung nicht geschlossen werden. Bitten Sie den Benutzer, die Installation nicht abzubrechen. |
 | 0xC7D14FB9 | -942583879 | Der Endbenutzer hat die App-Installation abgebrochen. (bei der Annahmeaufforderung) | Bitten Sie den Benutzer, die in Intune bereitgestellte App zu akzeptieren und bei Aufforderung zu installieren. |
 
-## <a name="ios-app-installation-errors"></a>Installationsfehler bei iOS-Apps
+## <a name="ios-and-ipados-app-installation-errors"></a>Installationsfehler bei iOS- und iPadOS-Apps
 
-In den folgenden Fehlermeldungen und -beschreibungen finden Sie weitere Informationen zu iOS-Installationsfehlern. 
+In den folgenden Fehlermeldungen und -beschreibungen finden Sie weitere Informationen zu iOS-/iPadOS-Installationsfehlern. 
 
 | Fehlercode (Hex) | Fehlercode (Dez) | Fehlermeldung/-code | Beschreibung/Tipps zur Problembehandlung |
 |--------------------|------------------|------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0x87D12906 | -2016335610 | Fehler beim Apple MDM-Agent: Fehler beim App-Installationsbefehl ohne Angabe der Fehlerursache. Versuchen Sie nochmals, die App zu installieren. | Ein Fehler beim Ausführen des Installationsbefehls wurde vom Apple-MDM-Agent zurückgegeben. |
 | 0x87D1313C | -2016333508 | Die Netzwerkverbindung auf dem Client wurde getrennt oder unterbrochen. Weitere Versuche in einer besseren Netzwerkumgebung sollten erfolgreich sein. | Die Netzwerkverbindung wurde unterbrochen, während die aktualisierte URL des Downloaddiensts an das Gerät gesendet wurde. Insbesondere konnte ein Server mit dem angegebenen Hostnamen nicht gefunden werden. |
-| 0x87D11388 | -2016341112 | Das iOS-Gerät ist derzeit ausgelastet.  | Das iOS-Gerät war ausgelastet, was zu einem Fehler führte. Das Gerät wurde gesperrt. Der Benutzer muss das Gerät entsperren, damit die App installiert werden kann. |
-| 0x87D13B64 | -2016330908 | Fehler bei der App-Installation.  | Ein Fehler bei der App-Installation ist aufgetreten. Zur Behebung dieses Fehlers werden Protokolle der iOS-Konsole benötigt. |
-| 0x87D13B66 | -2016330906 | Die App wird verwaltet, ist jedoch abgelaufen oder wurde vom Benutzer entfernt.  | Entweder hat der Benutzer die App explizit deinstalliert, die App ist abgelaufen und es war kein Download möglich, oder die App-Erkennung führt zu keiner Übereinstimmung mit der Antwort des Geräts.   Darüber hinaus kann dieser Fehler aufgrund eines Plattformfehlers von iOS 9.2.2 auftreten. |
+| 0x87D11388 | -2016341112 | Das iOS-/iPadOS-Gerät ist derzeit ausgelastet.  | Das iOS-/iPadOS-Gerät war ausgelastet, was zu einem Fehler führte. Das Gerät wurde gesperrt. Der Benutzer muss das Gerät entsperren, damit die App installiert werden kann. |
+| 0x87D13B64 | -2016330908 | Fehler bei der App-Installation.  | Ein Fehler bei der App-Installation ist aufgetreten. Zur Behebung dieses Fehlers werden Protokolle der iOS-/iPadOS-Konsole benötigt. |
+| 0x87D13B66 | -2016330906 | Die App wird verwaltet, ist jedoch abgelaufen oder wurde vom Benutzer entfernt.  | Entweder hat der Benutzer die App explizit deinstalliert, die App ist abgelaufen und es war kein Download möglich, oder die App-Erkennung führt zu keiner Übereinstimmung mit der Antwort des Geräts.   Darüber hinaus kann dieser Fehler aufgrund eines Plattformfehlers von iOS/iPadOS 9.2.2 auftreten. |
 | 0x87D13B60 | -2016330912 | Die App ist für die Installation geplant, benötigt jedoch einen Einlösecode, um die Transaktion abschließen zu können.  | Dieser Fehler tritt in der Regel bei iOS Store-Apps auf, bei denen es sich um bezahlte Apps handelt. |
 | 0x87D1041C | -2016345060 | Die Anwendung wurde nach erfolgreicher Installation nicht erkannt.  | Die App-Erkennung stimmte nicht mit der Antwort des Geräts überein. |
 | 0x87D13B62 | -2016330910 | Der Benutzer hat die angebotene Installation der App abgelehnt.  | Während der ersten App-Installation hat der Benutzer auf „Abbrechen“ geklickt. Bitten Sie den Benutzer, die Installationsanforderung das nächste Mal zu akzeptieren. |
@@ -70,7 +70,7 @@ In den folgenden Fehlermeldungen und -beschreibungen finden Sie weitere Informat
 | 0x87D13B93 | -2016330861 | VPP-Apps können nur auf einem freigegebenen iPad installiert werden. | Die Apps müssen über das Apple Volume Purchase Program bezogen werden, damit sie auf einem freigegebenen iPad installiert werden können. |
 | 0x87D13B94 | -2016330860 | Wenn der App Store deaktiviert ist, können keine Apps installiert werden. | Der App Store muss aktiviert sein, damit der Benutzer die App installieren kann. |
 | 0x87D13B95 | -2016330859 | Es wurde keine VPP-Lizenz für die App gefunden. | Versuchen Sie, die App-Lizenz zu widerrufen und neu zuzuweisen. |
-| 0x87D13B96 | -2016330858 | System-Apps können nicht mit Ihrem MDM-Anbieter installiert werden. | Die Installation von Apps, die auf dem iOS-Betriebssystem vorinstalliert sind, wird nicht unterstützt. |
+| 0x87D13B96 | -2016330858 | System-Apps können nicht mit Ihrem MDM-Anbieter installiert werden. | Die Installation von Apps, die auf dem iOS-/iPadOS-Betriebssystem vorinstalliert sind, wird nicht unterstützt. |
 | 0x87D13B97 | -2016330857 | Wenn sich das Gerät im Modus für verlorene Geräte befindet, können keine Apps installiert werden. | Im Modus für verlorene Geräte wird jegliche Nutzung des Geräts blockiert. Deaktivieren Sie den Modus für verlorene Geräte, um Apps installieren zu können. |
 | 0x87D13B98 | -2016330856 | Wenn sich das Gerät im Kioskmodus befindet, können keine Apps installiert werden. | Versuchen Sie, dieses Gerät zu einer Ausschlussgruppe für die Konfigurationsrichtlinie für den Kioskmodus hinzuzufügen, um Apps zu installieren. |
 | 0x87D13B9C | -2016330852 | Auf diesem Gerät können keine 32-Bit-Apps installiert werden. | Das Gerät unterstützt nicht die Installation von 32-Bit-Apps. Versuchen Sie, die 64-Bit-Version der App bereitzustellen. |
@@ -80,7 +80,7 @@ In den folgenden Fehlermeldungen und -beschreibungen finden Sie weitere Informat
 | 0x87d13b7e | -2016330882 | Fehler bei der Lizenzzuweisung mit Apple-Fehler „Keine weiteren VPP-Lizenzen“.  | Dieses Verhalten ist beabsichtigt. Den Fehler können Sie beheben, indem Sie zusätzliche VPP-Lizenzen erwerben, oder Lizenzen von Benutzern freigeben, für die sie nicht mehr benötigt werden. |
 | 0x87d13b6e | -2016330898 | App-Installationsfehler 12024: Ursache unbekannt.  | Apple hat nicht mit genügend Informationen bereitgestellt, um ermitteln zu können, warum die Installation fehlgeschlagen ist.   Nichts zu melden. |
 | 0x87d13b7f | -2016330881 | Die erforderliche App-Konfigurationsrichtlinie ist nicht vorhanden. Stellen Sie sicher, dass die Richtlinie für dieselbe(n) Gruppe(n) vorgesehen ist.  | Für die App ist eine App-Konfiguration erforderlich, es ist jedoch keine entsprechende App-Konfiguration vorhanden. Der Administrator sollte sicherstellen, dass die erforderliche App-Konfiguration für die Gruppen gilt, für die die App bereitgestellt werden soll. |
-| 0x87d13b69 | -2016330903 | Die VPP-Gerätelizenzierung gilt nur für Geräte unter iOS 9.0 und höher.  | Aktualisieren Sie betroffene iOS-Geräte auf iOS 9.0 oder höher. |
+| 0x87d13b69 | -2016330903 | Die VPP-Gerätelizenzierung gilt nur für Geräte unter iOS/iPadOS 9.0 und höher.  | Aktualisieren Sie betroffene iOS-/iPadOS-Geräte auf iOS/iPadOS 9.0 oder höher. |
 | 0x87d13b8f | -2016330865 | The application is installed on the device but is unmanaged. (Die Anwendung ist auf dem Gerät installiert, wird aber nicht verwaltet.)  | Dieser Fehler tritt nur bei branchenspezifischen Apps auf. Die App wurde außerhalb von Intune installiert. Deinstallieren Sie die App auf dem Gerät, um diesen Fehler zu beheben. Bei der nächsten Gerätesynchronisierung sollte das Gerät die App aus Intune installieren. |
 | 0x87d13b68 | -2016330904 | Der Benutzer hat die App-Verwaltung abgelehnt.  | Bitten Sie den Benutzer, die App-Verwaltung zu akzeptieren. |
 | 0x87d1279d | -2016335971 | Unbekannter Fehler.  | Dieser Fehler tritt bei Apps aus dem iOS Store auf, das Fehlerszenario ist jedoch nicht bekannt. |

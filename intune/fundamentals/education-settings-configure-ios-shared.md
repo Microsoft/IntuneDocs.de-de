@@ -1,7 +1,7 @@
 ---
-title: Intune-Einstellungen für freigegebene Geräte für die iOS-Classroom-App
+title: Intune-Einstellungen für freigegebene iOS-/iPadOS-Geräte für die Classroom-App
 titleSuffix: Microsoft Intune
-description: In diesem Artikel erfahren Sie mehr über die Intune-Einstellungen zur Steuerung von Einstellungen für die Classroom-App auf iOS-Geräten.
+description: In diesem Artikel erfahren Sie mehr über die Intune-Einstellungen zur Steuerung von Einstellungen für die Classroom-App auf iOS-/iPadOS-Geräten.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,23 +18,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0edfd9b8ee8b45952d9c22d5365d09d125ea7710
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 412dc9a12f5a13b5fbd738f3ac1b5b1033a2635b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74784254"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514709"
 ---
 # <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Konfigurieren von Intune-Einstellungen für Bildungseinrichtungen für freigegebene iPad-Geräte
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 > [!NOTE]
-> InTune unterstützt derzeit nicht das Konfigurieren der Classroom-app. Dieser Artikel gilt nur für Benutzer mit vorhandenen iOS-Education-Profilen in Intune.
+> In Intune wird derzeit die Konfiguration der Classroom-App nicht unterstützt. Dieser Artikel gilt nur für Benutzer mit vorhandenen iOS-/iPadOS-Education-Profilen in Intune.
 
-Intune unterstützt die iOS-App „Classroom“, mit der Lehrkräfte Schüler/Studenten durch den Unterricht führen und deren Geräte im Kursraum steuern können. Neben der Classroom-App unterstützt Apple, dass ein iPad-Gerät so konfiguriert werden kann, dass mehrere Schüler/Studenten es benutzen können. In diesem Artikel erfahren Sie, wie Sie dies mit Intune erreichen können.
+Intune unterstützt die iOS-/iPadOS-Classroom-App, mit der Lehrkräfte die Kursteilnehmer durch den Unterricht führen und deren Geräte im Kursraum steuern können. Neben der Classroom-App unterstützt Apple, dass ein iPad-Gerät so konfiguriert werden kann, dass mehrere Schüler/Studenten es benutzen können. In diesem Artikel erfahren Sie, wie Sie dies mit Intune erreichen können.
 
-Informationen zum Konfigurieren dedizierter (1:1) iPad-Geräte zur Verwendung der Classroom-App finden Sie unter [Vorgehensweise: Konfigurieren von Intune-Einstellungen für die iOS-App „Classroom“](education-settings-configure-ios.md).
+Informationen zum Konfigurieren dedizierter iPad-Geräte (1:1) zur Verwendung der Classroom-App finden Sie unter [Vorgehensweise: Konfigurieren von Intune-Einstellungen für die Classroom-App auf iOS-/iPadOS-Geräten](education-settings-configure-ios.md).
 
 ## <a name="before-you-start"></a>Vorbereitung
 
@@ -64,7 +64,7 @@ Sie können Informationen mithilfe einer der folgenden Methoden in SDS importier
 - [Erfahren Sie mehr über die Lizenzierung in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal)
 
 
-## <a name="step-2---create-and-assign-an-ios-education-profile-in-intune"></a>Schritt 2: Erstellen und Zuweisen eines iOS-Bildungsprofils in Intune
+## <a name="step-2---create-and-assign-an-iosipados-education-profile-in-intune"></a>Schritt 2: Erstellen und Zuweisen eines iOS-/iPadOS-Education-Profils in Intune
 
 ### <a name="configure-general-settings"></a>Konfigurieren allgemeiner Einstellungen
 
@@ -72,7 +72,7 @@ Sie können Informationen mithilfe einer der folgenden Methoden in SDS importier
 3. Wählen Sie im Bereich **Intune** die Option **Gerätekonfiguration** aus.
 2. Klicken Sie im Bereich **Gerätekonfiguration** im Abschnitt **Verwalten** auf **Profile**.
 5. Klicken Sie im Bereich „Profile“ auf **Profil erstellen**.
-6. Geben Sie im Bereich **Profil erstellen** einen **Namen** und eine **Beschreibung** für das iOS-Bildungsprofil ein.
+6. Geben Sie im Bereich **Profil erstellen** einen **Namen** und eine **Beschreibung** für das iOS-/iPadOS-Education-Profil ein.
 7. Wählen Sie in der Dropdownliste **Plattform** die Option **iOS** aus.
 8. Wählen Sie in der Dropdownliste **Profiltyp** die Option **Bildungswesen** aus.
 9. Wählen Sie **Einstellungen** > **Konfigurieren** aus.

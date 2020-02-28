@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61b703837598ddbe2c0c44874928b4444466c811
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
-ms.translationtype: MTE75
+ms.openlocfilehash: f3b32268d0b04dee84a737b9a1c768bc4fab7202
+ms.sourcegitcommit: 3964e6697b4d43e2c69a15e97c8d16f8c838645b
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886782"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77556498"
 ---
 # <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>Troubleshooting für BitLocker-Richtlinien in Microsoft Intune
 
@@ -35,11 +35,13 @@ Mit Microsoft Intune verfügen Sie über die folgenden Methoden zum Verwalten vo
 
 - **Gerätekonfigurationsrichtlinien:** In Intune sind für das Erstellen eines Gerätekonfigurationsprofils zur Verwaltung von Endpoint Protection bestimmte integrierte Richtlinienoptionen verfügbar. [Erstellen Sie ein Geräteprofil für Endpoint Protection](endpoint-protection-configure.md#create-a-device-profile-containing-endpoint-protection-settings), klicken Sie unter *Plattform* auf **Windows 10 und höher**, und klicken Sie dann unter *Einstellungen* auf die Option **Windows-Verschlüsselung**, damit diese Optionen angezeigt werden. 
 
-   Informationen zu den verfügbaren Optionen und Features finden Sie hier: [Windows-Verschlüsselung](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption).
+   Informationen zu den verfügbaren Optionen und Funktionen finden Sie unter [Windows-Verschlüsselung](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption).
 
 - **Sicherheitsbaselines**: [Sicherheitsbaselines](security-baselines.md) sind bekannte Einstellungsgruppen und Standardwerte, die vom relevanten Sicherheitsteam für den Schutz von Windows-Geräten empfohlen werden. Unterschiedliche Baselinequellen, z. B. die *MDM-Sicherheitsbaseline* oder die *Microsoft Defender ATP-Baseline*, können prinzipiell dieselben Einstellungen verwalten. Außerdem gibt es Baseline-spezifische Einstellungen. Mit ihnen können auch dieselben Einstellungen verwaltet werden, die Sie mit den Gerätekonfigurationsrichtlinien verwalten. 
 
-Zusätzlich zu Intune ist es möglich, dass BitLocker-Einstellungen auf andere Weise verwaltet werden, z. B. per Gruppenrichtlinie, oder manuell von einem Gerätebenutzer festgelegt werden.
+Sobald der Benutzer ein Gerät zu Azure AD hinzufügt, wird die BitLocker-Geräteverschlüsselung zusätzlich zu Intune für Hardware automatisch aktiviert, die mit modernem Standby und HSTI kompatibel ist und eine der beiden Funktionen verwendet. Azure AD bietet ein Portal, in dem Wiederherstellungsschlüssel ebenfalls gesichert werden, sodass Benutzer bei Bedarf ihren eigenen Wiederherstellungsschlüssel für Self-Service abrufen können.
+
+Zudem können BitLocker-Einstellungen auf andere Weise verwaltet, z. B. per Gruppenrichtlinie, oder manuell von einem Gerätebenutzer festgelegt werden.
 
 Unabhängig davon, wie Einstellungen auf ein Gerät angewendet werden, verwenden BitLocker-Richtlinien den [BitLocker-Konfigurationsdienstanbieter (Configuration Service Provider, CSP)](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp), um die Verschlüsselung auf dem Gerät zu konfigurieren. Der BitLocker-CSP ist in Windows integriert, und wenn Intune eine BitLocker-Richtlinie für ein zugewiesenes Gerät bereitstellt, schreibt der BitLocker-CSP auf dem Gerät die entsprechenden Werte in die Windows-Registrierung, sodass die Einstellungen dieser Richtlinie übernommen werden können.
 
@@ -103,7 +105,7 @@ Confirm-SecureBootUEFI
 
 ### <a name="review-the-devices-registry-key-configuration"></a>Überprüfen der Registrierungsschlüsselkonfiguration für Geräte
 
-Nachdem die BitLocker-Richtlinie erfolgreich auf einem Gerät bereitgestellt wurde, können Sie den folgenden Registrierungsschlüssel auf dem Gerät anzeigen. Dort können Sie die Konfiguration der BitLocker-Einstellungen überprüfen: *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\BitLocker*. Beispiel:
+Nachdem die BitLocker-Richtlinie erfolgreich auf einem Gerät bereitgestellt wurde, können Sie den folgenden Registrierungsschlüssel auf dem Gerät anzeigen. Dort können Sie die Konfiguration der BitLocker-Einstellungen überprüfen:  *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\BitLocker*. Beispiel:
 
 ![BitLocker-Registrierungsschlüssel](./media/troubleshooting-bitlocker-policies/registry.png)
 
@@ -164,6 +166,15 @@ Sie sollten nun gut darüber informiert sein, wie Sie überprüfen, ob die BitLo
 
   2. **BitLocker wird nicht auf jeder Hardware unterstützt.**
      Selbst wenn Sie eine geeignete Windows-Version verwenden, kann es sein, dass die zugrunde liegende Gerätehardware die Anforderungen für die BitLocker-Verschlüsselung nicht erfüllt. Die [Systemanforderungen für BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) finden Sie in der Windows-Dokumentation. Sie sollten aber insbesondere überprüfen, ob das Gerät über einen kompatiblen TPM-Chip (1.2 oder höher) und eine TCG-konforme BIOS- oder UEFI-Firmware (Trusted Computing Group) verfügt.
+     
+**Die BitLocker-Verschlüsselung wird nicht automatisch ausgeführt**: Sie haben eine Richtlinie für Endpoint Protection konfiguriert und die Einstellung „Warnung zu anderer Datenträgerverschlüsselung“ auf „Blockieren“ festgelegt, doch der Verschlüsselungsassistent wird weiterhin angezeigt:
+
+- **Bestätigen Sie, dass die Windows-Version die automatische Verschlüsselung unterstützt**: Die dafür erforderliche Mindestversion ist 1803. Ist der Benutzer kein Administrator auf dem Gerät, lautet die Mindestversion 1809. Darüber hinaus wurde bei Version 1809 Unterstützung für Geräte hinzugefügt, die modernen Standby nicht unterstützen.
+
+**Ein mit BitLocker verschlüsseltes Gerät wird als nicht kompatibel mit den Konformitätsrichtlinien von Intune angezeigt**: Dieses Problem tritt auf, wenn die BitLocker-Verschlüsselung noch nicht abgeschlossen ist. Je nach Faktoren wie der Größe des Datenträgers, der Anzahl von Dateien und den BitLocker-Einstellungen, kann die BitLocker-Verschlüsselung einige Zeit in Anspruch nehmen. Sobald die Verschlüsselung abgeschlossen ist, wird das Gerät als kompatibel angezeigt. Auch direkt nach der Installation von Windows-Updates können Geräte vorübergehend als nicht kompatibel angezeigt werden.
+
+**Geräte werden mithilfe eines 128-Bit-Algorithmus verschlüsselt, obwohl in der Richtlinie 256 Bit angegeben sind**: Die Standardverschlüsselung eines Laufwerks erfolgt in Windows 10 über XTS-AES mit 128 Bit. Informationen zum Festlegen einer 256-Bit-Verschlüsselung für BitLocker im Autopilot-Modus finden Sie in [diesem Handbuch](https://techcommunity.microsoft.com/t5/intune-customer-success/setting-256-bit-encryption-for-bitlocker-during-autopilot-with/ba-p/323791#).
+
 
 **Beispieluntersuchung**
 

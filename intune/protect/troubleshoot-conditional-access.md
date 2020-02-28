@@ -17,20 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c662de98ffa497c5fbc89ac1b78ed8537ff0d80c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 0d6dc10eca80a7d403d0ff44c25d3cfaed85fafa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71732697"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514199"
 ---
 # <a name="troubleshoot-conditional-access"></a>Problembehandlung beim bedingten Zugriff
 In diesem Artikel wird beschrieben, wie Sie vorgehen müssen, wenn Ihre Benutzer keinen Zugriff auf Ressourcen erhalten, die mit bedingtem Zugriff geschützt sind, oder wenn Benutzer auf geschützte Ressourcen zugreifen können, aber blockiert werden sollten.
 
-Mit InTune und bedingtem Zugriff können Sie den Zugriff auf Dienste wie die folgenden schützen:
+Mit Intune und bedingtem Zugriff können Sie den Zugriff auf folgende Dienste schützen:
 - Office 365-Dienste wie Exchange Online, SharePoint Online und Skype for Business Online
 - Exchange lokal
-- Verschiedene andere Dienste
+- verschiedene weitere Dienste
 
 Mithilfe dieser Funktion können Sie sicherstellen, dass nur bei Intune registrierte und den von Ihnen entweder in der Intune-Verwaltungskonsole oder in Azure Active Directory festgelegten Regeln für den bedingten Zugriff entsprechende Geräte Zugriff auf die Unternehmensressourcen haben. 
 
@@ -46,23 +46,23 @@ Damit der bedingte Zugriff funktioniert, müssen die folgenden Anforderungen erf
 
 - Exchange ActiveSync muss auf dem Gerät aktiviert werden, wenn der Benutzer den nativen E-Mail-Client des Geräts anstelle von Outlook verwendet. Dies geschieht für Windows Phone-, iOS- und Android-/Knox-Geräte automatisch.
 
-- Für lokales Exchange muss Ihr InTune Exchange Connector ordnungsgemäß konfiguriert sein. Weitere Informationen finden Sie unter [Problembehandlung für den Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md).
+- Für Exchange lokal muss Ihr Intune Exchange Connector ordnungsgemäß konfiguriert sein. Weitere Informationen finden Sie unter [Problembehandlung für den Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md).
 
-- Für lokales Skype müssen Sie die hybride Hybrid Authentifizierung konfigurieren. Weitere Informationen finden Sie unter [Hybrid modern auth Overview](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview).
+- Für lokales Skype müssen Sie die hybride moderne Authentifizierung konfigurieren. Weitere Informationen finden Sie unter [Übersicht über die hybride moderne Authentifizierung](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview).
 
 Sie können diese Bedingungen für alle Geräte im Azure-Portal und im Geräteinventurbericht anzeigen.
 
 ## <a name="devices-appear-compliant-but-users-are-still-blocked"></a>Geräte scheinen konform zu sein, aber Benutzer sind immer noch gesperrt
 
-- Stellen Sie sicher, dass dem Benutzer eine InTune-Lizenz für eine ordnungsgemäße Kompatibilitäts Bewertung zugewiesen ist.
+- Vergewissern Sie sich, dass der Benutzer über eine Intune-Lizenz verfügt, um eine ordnungsgemäße Konformitätsbewertung zu gewährleisten.
 
 - Nicht-Knox-Android-Geräten wird der Zugriff erst gewährt, wenn der Benutzer in der erhaltenen Quarantäne-E-Mail auf den Link **Jetzt starten** klickt. Dies gilt auch dann, wenn der Benutzer bereits bei Intune registriert ist. Wenn der Benutzer die E-Mail mit dem Link auf seinem Mobiltelefon nicht erhält, kann er über einen PC auf seine E-Mail zugreifen und sie an ein E-Mail-Konto auf seinem Gerät weiterleiten.
 
 - Wenn ein Gerät zum ersten Mal registriert wird, kann es einige Zeit dauern, bis Konformitätsinformationen für ein Gerät registriert werden. Warten Sie einige Minuten, und versuchen Sie es erneut.
 
-- Bei iOS-Geräten kann ein vorhandenes E-Mail-Profil die Bereitstellung eines von Intune verwalteten E-Mail-Profils blockieren, das diesem Benutzer zugewiesen wurde, wodurch das Gerät nicht konform ist. In diesem Szenario informiert das Unternehmensportal den Benutzer darüber, dass die Konformität aufgrund des manuell konfigurierten E-Mail-Profils nicht besteht, und fordert den Benutzer dazu auf, dieses Profil zu entfernen. Sobald der Benutzer das bestehende E-Mail-Profil entfernt, kann das Intune-E-Mail-Profil erfolgreich bereitgestellt werden. Um dieses Problem zu vermeiden, weisen Sie Ihre Benutzer an, vor der Registrierung alle vorhandenen E-Mail-Profile auf ihrem Gerät zu entfernen.
+- Bei iOS-/iPadOS-Geräten kann ein vorhandenes E-Mail-Profil die Bereitstellung eines vom Administrator erstellten E-Mail-Profils von Intune blockieren, das diesem Benutzer zugewiesen wurde, wodurch das Gerät nicht konform ist. In diesem Szenario informiert das Unternehmensportal den Benutzer darüber, dass die Konformität aufgrund des manuell konfigurierten E-Mail-Profils nicht besteht, und fordert den Benutzer dazu auf, dieses Profil zu entfernen. Sobald der Benutzer das bestehende E-Mail-Profil entfernt, kann das Intune-E-Mail-Profil erfolgreich bereitgestellt werden. Um dieses Problem zu vermeiden, weisen Sie Ihre Benutzer an, vor der Registrierung alle vorhandenen E-Mail-Profile auf ihrem Gerät zu entfernen.
 
-- Ein Gerät kann beim Überprüfen der Kompatibilität hängen bleiben, wodurch verhindert wird, dass der Benutzer einen weiteren Eincheckvorgang startet. Wenn Sie ein Gerät in diesem Status haben:
+- Ein Gerät kann beim Überprüfen der Kompatibilität hängen bleiben, wodurch verhindert wird, dass der Benutzer einen weiteren Eincheckvorgang startet. Wenn Sie über ein Gerät in diesem Zustand verfügen, gehen Sie wie folgt vor:
   - Stellen Sie sicher, dass das Gerät die neueste Version der Unternehmensportal-App verwendet.
   - Starten Sie das Gerät neu.
   - Überprüfen Sie, ob das Problem in verschiedenen Netzwerken (z.B. Mobilfunk, WLAN usw.) weiterhin besteht.
@@ -76,11 +76,11 @@ Sie können diese Bedingungen für alle Geräte im Azure-Portal und im Gerätein
 
 - Ein Android-Gerät, das angemeldet und konform ist, kann weiterhin blockiert werden und einen Quarantänehinweis erhalten, wenn es zum ersten Mal versucht, auf Unternehmensressourcen zuzugreifen. Wenn dies der Fall ist, stellen Sie sicher, dass die Unternehmensportal-App nicht ausgeführt wird, und wählen Sie dann in der Quarantäne-E-Mail den Link **Jetzt starten** aus, um die Auswertung auszulösen. Dies sollte nur dann erforderlich sein, wenn der bedingte Zugriff zum ersten Mal aktiviert wird.
 
-- Ein registriertes Android-Gerät kann den Benutzer zur Eingabe von "keine Zertifikate gefunden" auffordern und erhält keinen Zugriff auf O365-Ressourcen. Der Benutzer muss die Option *Browserzugriff aktivieren* auf dem registrierten Gerät wie folgt aktivieren:
+- Ein registriertes Android-Gerät fordert den Benutzer möglicherweise mit der Meldung „Keine Zertifikate gefunden“ und dem verweigerten Zugriff auf O365-Ressourcen auf. Der Benutzer muss die Option *Browserzugriff aktivieren* auf dem registrierten Gerät wie folgt aktivieren:
   1. Öffnen Sie die Unternehmensportal-App.
   2. Wechseln Sie über die Schaltfläche mit den drei Punkten (...) oder die Hardwaremenü-Schaltfläche zur Seite „Einstellungen“.
   3. Wählen Sie die Schaltfläche *Browserzugriff aktivieren* aus.
-  4. Melden Sie sich im Chrome-Browser aus Office 365 ab, und starten Sie Chrome neu.  
+  4. Melden Sie sich im Chrome-Browser von Office 365 ab, und starten Sie Chrome erneut.  
 
 
 ## <a name="devices-are-blocked-and-no-quarantine-email-is-received"></a>Geräte werden blockiert und es wird keine Quarantäne-E-Mail empfangen
@@ -97,20 +97,20 @@ Sie können diese Bedingungen für alle Geräte im Azure-Portal und im Gerätein
 
 - Wenn das Gerät gezielt zurückgesetzt oder von Intune außer Betrieb gesetzt wird, hat es nach der Deaktivierung möglicherweise noch mehrere Stunden lang Zugriff. Dies liegt daran, dass Exchange die Zugriffsrechte sechs Stunden lang zwischenspeichert. Ziehen Sie in diesem Szenario andere Möglichkeiten zum Datenschutz auf abgekoppelten Geräten in Betracht.
 
-- Surface Hub, Massen registrierte und dem-registrierte Windows-Geräte können den bedingten Zugriff unterstützen, wenn ein Benutzer angemeldet ist, dem eine Lizenz für InTune zugewiesen ist. Allerdings müssen Sie die Konformitäts Richtlinie für Gerätegruppen (nicht für Benutzergruppen) bereitstellen, um die Auswertung zu korrigieren.
+- Surface Hub-Geräte, in einem Massenvorgang registrierte Geräte und DEM-registrierte Windows-Geräte können den bedingten Zugriff unterstützen, wenn ein Benutzer angemeldet ist, dem eine Lizenz für Intune zugewiesen ist. Allerdings müssen Sie Gerätegruppen (nicht Benutzergruppen) die Konformitätsrichtlinie bereitstellen, um eine korrekte Auswertung zu ermöglichen.
 
-- Überprüfen Sie die Zuweisungen für Ihre Konformitätsrichtlinien und Ihre Richtlinien für bedingte Zugriffe. Wenn ein Benutzer nicht in der Gruppe, der die Richtlinien zugewiesen ist, oder in einer ausgeschlossenen Gruppe ist, wird der Benutzer nicht blockiert. Nur Geräte für Benutzer einer zugeordneten Gruppe werden auf Konformität geprüft.
+- Überprüfen Sie die Zuweisungen für Ihre Konformitätsrichtlinien und Ihre Richtlinien für bedingte Zugriffe. Wenn sich ein Benutzer nicht in der Gruppe befindet, der die Richtlinien zugewiesen sind, oder wenn er sich in einer ausgeschlossenen Gruppe befindet, wird der Benutzer nicht blockiert. Nur Geräte für Benutzer einer zugeordneten Gruppe werden auf Konformität geprüft.
 
 ## <a name="noncompliant-device-is-not-blocked"></a>Nicht konformes Gerät wird nicht blockiert
 
-Wenn ein Gerät nicht konform ist, aber weiterhin Zugriff hat, führen Sie die folgenden Aktionen aus.
+Ist ein Gerät nicht kompatibel, besitzt aber weiterhin Zugriff, gehen Sie folgendermaßen vor:
 
 - Überprüfen Sie die Ziel- und Ausschlussgruppen. Wenn sich ein Benutzer nicht in der richtigen Zielgruppe oder in der Ausschlussgruppe befindet, wird er nicht blockiert. Nur die Geräte der Benutzer in einer Zielgruppe werden hinsichtlich der Kompatibilität überprüft.
 
 - Stellen Sie sicher, dass das Gerät ermittelt wird. Verweist der Exchange Connector auf einen Exchange 2010-Clientzugriffsserver, obwohl sich der Benutzer auf einem Exchange 2013-Server befindet? In diesem Fall kann Intune die Verbindung des Geräts mit Exchange nicht erkennen, wenn die Exchange-Standardregel „Zulassen“ lautet, auch wenn sich der Benutzer in der Zielgruppe befindet.
 
 - Überprüfen Sie die Existenz und den Zugriffsstatus des Geräts in Exchange:
-  - Verwenden Sie dieses PowerShell-Cmdlet, um eine Liste aller mobilen Geräte für ein Postfach abzurufen: „Get-ActiveSyncDeviceStatistics -mailbox mbx“. Wenn das Gerät nicht aufgeführt ist, greift es nicht auf Exchange zu.
+  - Verwenden Sie das folgende PowerShell-Cmdlet, um eine Liste aller mobilen Geräte für ein Postfach abzurufen: „Get-ActiveSyncDeviceStatistics -mailbox mbx“. Wenn das Gerät nicht aufgeführt ist, greift es nicht auf Exchange zu.
   
   - Wenn das Gerät aufgeführt ist, verwenden Sie das Cmdlet „Get-CASmailbox -identity:’upn’ | fl“, um ausführliche Informationen zum Zugriffsstatus zu erhalten und diese Informationen dem Microsoft-Support bereitzustellen.
 

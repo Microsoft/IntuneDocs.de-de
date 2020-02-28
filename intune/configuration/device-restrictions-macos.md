@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6513c09f252d5a914ace4e57e5a593877a387172
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 3d26c4c6cd05a411555f7824ad21b72431eb569c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206549"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511171"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>macOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune
 
@@ -36,11 +36,11 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 [Erstellen Sie ein Konfigurationsprofil mit Geräteeinschränkungen](../device-restrictions-configure.md).
 
 > [!NOTE]
-> Diese Einstellungen gelten für verschiedene Registrierungs Typen. Weitere Informationen zu den verschiedenen Registrierungs Typen finden Sie unter [macOS](../macos-enroll.md)-Registrierung.
+> Diese Einstellungen gelten für verschiedene Registrierungstypen. Weitere Informationen zu den verschiedenen Registrierungstypen finden Sie unter [macOS-Registrierung](../macos-enroll.md).
 
 ## <a name="general"></a>Allgemein
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung und automatisierte Geräteregistrierung
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Die Einstellungen gelten für: Geräteregistrierung und Automatische Geräteregistrierung
 
 - **Definitionssuche**: **Blockieren** hindert Benutzer daran, ein Wort zu markieren und dann auf dem Gerät nach seiner Definition zu suchen. **Nicht konfiguriert** (Standard) ermöglicht den Zugriff auf die Definitionssuchfunktion.
 - **Dictation**: **Blockieren** verhindert, dass der Benutzer die Spracheingabe zur Eingabe von Text verwenden kann. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, die Spracheingabe zu verwenden.
@@ -62,29 +62,29 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
     Diese Funktion gilt für:  
     - macOS 10.13.4 und höher
 
-- **Screenshots**: das Gerät muss in der automatisierten Geräteregistrierung (DEP) von Apple registriert werden. Wenn " **blockieren**" festgelegt ist, können Benutzer keinen Screenshot der Anzeige speichern. Außerdem wird verhindert, dass die Classroom-App Remote Bildschirme beobachtet. **Nicht konfiguriert** (Standardeinstellung) ermöglicht Benutzern das Erfassen von Screenshots und ermöglicht der Classroom-APP das Anzeigen von Remote Bildschirmen.
+- **Screenshots**: Das Gerät muss bei der automatischen Geräteregistrierung (DEP) von Apple registriert sein. Wurde die Einstellung auf **Blockieren** festgelegt, können Benutzer keinen Screenshot der Anzeige speichern. Außerdem wird verhindert, dass die Classroom-App Remotebildschirme überwacht. Bei der Standardeinstellung **Nicht konfiguriert** können Benutzer Screenshots erstellen, und die Classroom-App darf Remotebildschirme anzeigen.
 
-### <a name="settings-apply-to-automated-device-enrollment"></a>Einstellungen gelten für: automatisierte Geräteregistrierung
+### <a name="settings-apply-to-automated-device-enrollment"></a>Die Einstellungen gelten für: Automatisierte Geräteregistrierung
 
-- **Remote Bildschirm Überwachung über die Classroom-App**: **Deaktivieren** hindert Lehrkräfte an der Verwendung der Classroom-APP, um die Bildschirme Ihrer Studenten anzuzeigen. **Nicht konfiguriert** (Standardeinstellung) ermöglicht es Lehrkräften, die Bildschirme Ihrer Schüler und Studenten anzuzeigen.
+- **Remotebildschirmüberwachung über Classroom-App**: Mit der Einstellung **Deaktivieren** wird verhindert, dass Lehrkräfte über die Classroom-App die Bildschirme der Kursteilnehmer anzeigen können. Bei der Standardeinstellung **Nicht konfiguriert** können Lehrkräfte die Bildschirme der Kursteilnehmer anzeigen.
 
-  Um diese Einstellung zu verwenden, legen Sie die Einstellung **Screenshots** auf **nicht konfiguriert** fest (Screenshots sind zulässig).
+  Legen Sie hierfür den Wert für **Screenshots** auf **Nicht konfiguriert** fest (Screenshots sind zulässig).
 
-- **Nicht Aufforderungs Bildschirm Überwachung durch Classroom-App**: erlauben Sie den Lehrkräften, die Bildschirme Ihrer Studenten anzuzeigen, ohne **dass** der Student zustimmen muss. **Nicht konfiguriert** (Standard) erfordert, dass der Student zustimmt, bevor der Lehrer die Bildschirme sehen kann.
+- **Unangekündigte Bildschirmüberwachung über Classroom-App**: Mit der Einstellung **Zulassen** ist es Lehrkräften möglich, die Bildschirme der Kursteilnehmer ohne deren Zustimmung anzuzeigen. Bei der Standardeinstellung **Nicht konfiguriert** ist vor dem Anzeigen der Bildschirme die Zustimmung der Kursteilnehmer erforderlich.
 
-  Um diese Einstellung zu verwenden, legen Sie die Einstellung **Screenshots** auf **nicht konfiguriert** fest (Screenshots sind zulässig).
+  Legen Sie hierfür den Wert für **Screenshots** auf **Nicht konfiguriert** fest (Screenshots sind zulässig).
 
-- **Schüler/Studenten müssen die Berechtigung zum Verlassen der Classroom-Klasse anfordern** **:** erzwingt, dass Schüler/Studenten, die an einem nicht verwalteten Kurs Kurs angemeldet sind, die Genehmigung des Lehr Kurses erhalten **Nicht konfiguriert** (Standardeinstellung): ermöglicht Student, den Kurs zu verlassen, wenn sich der Student entscheidet.
+- **Kursteilnehmer müssen die Erlaubnis zum Verlassen der Classroom-Klasse anfordern**: Mit der Einstellung **Anfordern** müssen Kursteilnehmer, die bei einem nicht verwalteten Classroom-Kurs angemeldet sind, zum Verlassen des Kurses die Erlaubnis der Lehrkraft anfordern. Bei der Standardeinstellung **Nicht konfiguriert** können die Kursteilnehmer den Kurs jederzeit verlassen.
 
-- **Lehrkräfte können Geräte oder apps in der Classroom-App automatisch sperren**: mit **zulassen** können Lehrer das Gerät oder die APP eines Studenten sperren, ohne die Genehmigung des Studenten zu erhalten. **Nicht konfiguriert** (Standard) erfordert, dass der Student zustimmt, bevor der Lehrer das Gerät oder die App Sperren kann.
+- **Lehrkräfte können Geräte oder Apps in der Classroom-App automatisch sperren**: Mit der Einstellung **Zulassen** können Lehrkräfte die Geräte oder Apps von Kursteilnehmern ohne deren Zustimmung sperren. Bei der Standardeinstellung **Nicht konfiguriert** ist vor dem Sperren eines Geräts oder einer App die Zustimmung des Kursteilnehmers erforderlich.
 
-- **Schüler/Studenten können der Classroom-Klasse automatisch beitreten**: mit " **zulassen** " können Studenten einer Klasse beitreten, ohne den Lehrer aufzufordern **Nicht konfiguriert** (Standard) erfordert die Genehmigung eines Lehrkräfte für den Beitritt zu einer Klasse.
+- **Kursteilnehmer können der Classroom-Klasse automatisch beitreten**: Mit der Einstellung **Zulassen** können Kursteilnehmer einer Klasse beitreten, ohne die Lehrkraft um Erlaubnis fragen zu müssen. Bei der Standardeinstellung **Nicht konfiguriert** ist für den Beitritt zu einer Klasse die Zustimmung der Lehrkraft erforderlich.
 
 ## <a name="password"></a>Kennwort
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung und automatisierte Geräteregistrierung
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Die Einstellungen gelten für: Geräteregistrierung und Automatische Geräteregistrierung
 
-- **Kennwort:** **Anfordern** der Kennworteingabe durch den Endbenutzer für den Zugriff auf das Gerät. **Nicht konfiguriert** (Standard) erfordert kein Kennwort. Außerdem werden keine Einschränkungen erzwungen, wie z. b. das Blockieren einfacher Kenn Wörter oder das Festlegen einer Mindestlänge.
+- **Kennwort:** **Anfordern** der Kennworteingabe durch den Endbenutzer für den Zugriff auf das Gerät. Bei der Standardeinstellung **Nicht konfiguriert** ist kein Kennwort erforderlich. Außerdem werden keine Einschränkungen erzwungen, wie z. B. das Blockieren einfacher Kennwörter oder das Festlegen einer Mindestlänge.
   - **Erforderlicher Kennworttyp:** Gibt an, ob das Kennwort rein numerisch sein darf oder ob es alphanumerisch sein muss (also Buchstaben und Zahlen enthalten muss).
 
     Diese Funktion gilt für:  
@@ -114,7 +114,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
 ## <a name="built-in-apps"></a>Integrierte Apps
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung und automatisierte Geräteregistrierung
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Die Einstellungen gelten für: Geräteregistrierung und Automatische Geräteregistrierung
 
 - **AutoAusfüllen in Safari blockieren**: **Blockieren** deaktiviert auf dem Gerät das AutoAusfüllen-Feature in Safari. **Nicht konfiguriert** (Standard) ermöglicht Benutzern, die AutoAusfüllen-Einstellungen im Browser zu ändern.
 - **Kamera blockieren**: Wählen Sie **Blockieren** aus, um den Zugriff auf die Kamera des Geräts zu verhindern. **Nicht konfiguriert** (Standard) ermöglicht den Zugriff auf die Kamera des Geräts.
@@ -127,32 +127,32 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
 ## <a name="restricted-apps"></a>Eingeschränkte Apps
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung und automatisierte Geräteregistrierung
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Die Einstellungen gelten für: Geräteregistrierung und Automatische Geräteregistrierung
 
-- **Typ der Liste der eingeschränkten apps**: Erstellen Sie eine Liste von apps, die Benutzer nicht installieren oder verwenden dürfen. Folgende Optionen sind verfügbar:
+- **Liste der eingeschränkten App-Typen:** Mit dieser Einstellung wird eine Liste der Apps erstellt, die Benutzer nicht installieren oder verwenden dürfen. Folgende Optionen sind verfügbar:
 
-  - **Nicht konfiguriert** (Standard): Es gibt keine Einschränkungen von InTune. Benutzer haben Zugriff auf apps, die Sie zuweisen, und integrierte apps.
-  - **Unzulässige Apps:** Nicht von Intune verwaltete Apps, die nicht auf dem Gerät installiert werden sollen. Benutzer werden daran gehindert, eine unzulässige APP zu installieren. Wenn jedoch ein Benutzer eine APP aus dieser Liste installiert, wird er in InTune gemeldet.
-  - **Genehmigte Apps:** Apps, die Benutzer installieren dürfen. Benutzer dürfen keine Apps installieren, die in dieser Liste nicht aufgeführt sind. Apps, die von Intune verwaltet werden, sind automatisch zugelassen. Benutzer werden nicht daran gehindert, eine App zu installieren, die nicht in der Liste zulässiger Apps enthalten ist. Wenn dies der Fall ist, wird er in InTune gemeldet.
-- **App-Bündel-ID:** Geben Sie die [App-Bündel-ID](bundle-ids-built-in-ios-apps.md) der gewünschten App ein. Sie können integrierte apps und branchenspezifische apps anzeigen oder ausblenden. Die Apple-Website enthält eine Liste [integrierter Apple-Apps](https://support.apple.com/HT208094).
-- **App-Name:** Geben Sie den App-Namen der gewünschten App ein. Sie können integrierte apps und branchenspezifische apps anzeigen oder ausblenden. Die Apple-Website enthält eine Liste [integrierter Apple-Apps](https://support.apple.com/HT208094).
+  - **Nicht konfiguriert** (Standardeinstellung): Bei dieser Einstellung liegen keine Einschränkungen durch Intune vor. Benutzer können auf integrierte Apps und Apps zugreifen, die Sie ihnen zuweisen.
+  - **Unzulässige Apps:** Nicht von Intune verwaltete Apps, die nicht auf dem Gerät installiert werden sollen. Benutzer können unzulässige Apps nicht installieren. Wenn ein Benutzer jedoch eine App aus dieser Liste installiert, wird dies in Intune gemeldet.
+  - **Genehmigte Apps:** Apps, die Benutzer installieren dürfen. Benutzer dürfen keine Apps installieren, die in dieser Liste nicht aufgeführt sind. Apps, die von Intune verwaltet werden, sind automatisch zugelassen. Benutzer werden nicht daran gehindert, eine App zu installieren, die nicht in der Liste zulässiger Apps enthalten ist. Wenn sie es jedoch tun, wird dies in Intune gemeldet.
+- **App-Bündel-ID:** Geben Sie die [App-Bündel-ID](bundle-ids-built-in-ios-apps.md) der gewünschten App ein. Sie können sowohl integrierte Apps als auch branchenspezifische Apps anzeigen oder ausblenden. Eine Liste der integrierten Apple-Apps finden Sie auf [dieser Apple-Website](https://support.apple.com/HT208094).
+- **App-Name:** Geben Sie den App-Namen der gewünschten App ein. Sie können sowohl integrierte Apps als auch branchenspezifische Apps anzeigen oder ausblenden. Eine Liste der integrierten Apple-Apps finden Sie auf [dieser Apple-Website](https://support.apple.com/HT208094).
 - **Herausgeber**: Geben Sie den Herausgeber der gewünschten App ein.
 
 Um diesen Listen Apps hinzuzufügen, können Sie:
 
-- **Add**: Wählen Sie diese Option aus, um die Liste der apps zu erstellen
-- **Importieren** Sie eine CSV-Datei mit den Details der App, einschließlich der URL. Verwenden Sie das Format `<app bundle ID>, <app name>, <app publisher>`. Sie können auch **exportieren** , um eine Liste der von Ihnen hinzugefügten apps im gleichen Format zu erstellen.
+- **Hinzufügen**: Verwenden Sie diese Option, um Ihre Liste mit Apps zu erstellen.
+- **Importieren** Sie eine CSV-Datei mit den Details der App, einschließlich der URL. Verwenden Sie das Format `<app bundle ID>, <app name>, <app publisher>`. Oder **exportieren** Sie eine Datei im selben Format, um eine Liste der hinzugefügten Apps zu erstellen.
 
 ## <a name="connected-devices"></a>Verbundene Geräte
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung und automatisierte Geräteregistrierung
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Die Einstellungen gelten für: Geräteregistrierung und Automatische Geräteregistrierung
 
 - **AirDrop blockieren**: **Blockieren** verhindert die Verwendung von AirDrop auf dem Gerät. **Nicht konfiguriert** (Standard) ermöglicht die Verwendung von AirDrop zum Austauschen von Inhalten mit Geräten in der Nähe.
 - **Automatisches Entsperren mit Apple Watch blockieren**: **Blockieren** hindert Benutzer daran, ihr macOS-Gerät mit ihrer Apple Watch zu entsperren. Die Standardeinstellung **Nicht konfiguriert** erlaubt Benutzern, ihr macOS-Gerät mit ihrer Apple Watch zu entsperren.
 
 ## <a name="cloud-and-storage"></a>Cloud und Speicher
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung und automatisierte Geräteregistrierung
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Die Einstellungen gelten für: Geräteregistrierung und Automatische Geräteregistrierung
 
 - **Synchronisierung zwischen iCloud und Keychain blockieren:** Wählen Sie **Blockieren** aus, um die Synchronisierung von in der Keychain gespeicherten Anmeldeinformationen mit iCloud zu deaktivieren. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, diese Anmeldeinformationen zu synchronisieren.
 - **iCloud-Dokumentsynchronisierung blockieren**: **Blockieren** hindert iCloud daran, Dokumente und Daten zu synchronisieren. **Nicht konfiguriert** (Standard) erlaubt die Dokument- und Schlüssel-/Wertsynchronisierung in Ihrem iCloud-Speicher.
@@ -162,15 +162,15 @@ Um diesen Listen Apps hinzuzufügen, können Sie:
 - **iCloud-Sicherung von Erinnerungen blockieren**: **Blockieren** hindert iCloud an der Synchronisierung mit der Erinnerungen-App von macOS. Die Standardeinstellung **Nicht konfiguriert** lässt die Synchronisierung der Erinnerungen-App mit iCloud zu.
 - **iCloud-Lesezeichensicherung blockieren**: **Blockieren** hindert iCloud an der Synchronisierung der Lesezeichen auf Geräten. Die Standardeinstellung **Nicht konfiguriert** lässt die Synchronisierung von Lesezeichen mit iCloud zu.
 - **iCloud-Notizensicherung blockieren**: **Blockieren** hindert iCloud an der Synchronisierung der Notizen auf Geräten. Die Standardeinstellung **Nicht konfiguriert** lässt die Synchronisierung von Notizen mit iCloud zu.
-- **Icloud-Fotobibliothek blockieren**: der **Block** deaktiviert die icloud-Fotobibliothek und verhindert, dass icloud die Geräte Fotos synchronisiert. Fotos, die nicht vollständig aus der iCloud-Fotomediathek heruntergeladen wurden, werden aus dem lokalen Speicher des jeweiligen Geräts entfernt. **Nicht konfiguriert** (Standardeinstellung) ermöglicht die Synchronisierung von Fotos zwischen dem Gerät und der icloud-Fotobibliothek.
-- **Übergabe**: **nicht konfiguriert** (Standardeinstellung): ermöglicht Benutzern das Starten der Arbeit auf einem macOS-Gerät und das anschließende fortsetzen der Arbeit, die Sie auf einem anderen ios-oder macOS-Gerät gestartet haben. **Block** verhindert die Übergabe Funktion auf dem Gerät. 
+- **iCloud-Fotomediathek blockieren**: Mit der Einstellung **Blockieren** wird die iCloud-Fotomediathek deaktiviert und die Synchronisierung der Gerätefotos verhindert. Fotos, die nicht vollständig aus der iCloud-Fotomediathek heruntergeladen wurden, werden aus dem lokalen Speicher des jeweiligen Geräts entfernt. Mit der Standardeinstellung **Nicht konfiguriert** ist die Synchronisierung von Fotos zwischen dem Gerät und der iCloud-Fotomediathek möglich.
+- **Handoff:** Bei der Standardeinstellung **Nicht konfiguriert** können Benutzer mit der Arbeit auf einem macOS-Gerät beginnen und ihre Arbeit auf einem anderen iOS-/iPadOS- oder macOS-Gerät fortsetzen. Mit der Einstellung **Blockieren** wird die Handoff-Funktion auf dem Gerät verhindert. 
 
   Diese Funktion gilt für:  
   - macOS 10.15 und neuer
 
 ## <a name="domains"></a>Domänen
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung und automatisierte Geräteregistrierung
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Die Einstellungen gelten für: Geräteregistrierung und Automatische Geräteregistrierung
 
 - **E-Mail-Domänen-URL**: **Fügen** Sie der Liste eine oder mehrere URLs hinzu. Wenn Benutzer eine E-Mail von einer Domäne erhalten, die Sie nicht konfiguriert haben, wird die E-Mail in der macOS-Mail-App als nicht vertrauenswürdig gekennzeichnet.
 
@@ -178,4 +178,4 @@ Um diesen Listen Apps hinzuzufügen, können Sie:
 
 [Zuweisen von Profilen](../device-profile-assign.md) und [Überwachen von Profilen](../device-profile-monitor.md)
 
-Sie können auch Gerätefeatures und -einstellungen auf [iOS](../device-restrictions-ios.md)-Geräten einschränken.
+Sie können auch Gerätefunktionen und -einstellungen auf [iOS-/iPadOS](../device-restrictions-ios.md)-Geräten einschränken.

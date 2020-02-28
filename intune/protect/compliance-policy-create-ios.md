@@ -1,6 +1,6 @@
 ---
-title: Konformitätseinstellungen für iOS-Geräte in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Dieser Artikel enthält eine Liste aller Einstellungen, die Sie verwenden können, um Konformität für Ihre iOS-Geräte in Microsoft Intune festzulegen. Sie können eine E-Mail anfordern, Geräte des Typs „mit Jailbreak“ oder „rooted“ überprüfen, das zulässige minimale und maximale Betriebssystem festlegen, Kennwortbeschränkungen einrichten, einschließlich Kennwortlänge und Geräteinaktivität, Apps einschränken und mehr.
+title: Konformitätseinstellungen für iOS-/iPadOS-Geräte in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Dieser Artikel enthält eine Liste aller Einstellungen, die Sie zum Festlegen von Konformität für Ihre iOS-/iPadOS-Geräte in Microsoft Intune verwenden können. Sie können eine E-Mail anfordern, Geräte des Typs „mit Jailbreak“ oder „rooted“ überprüfen, das zulässige minimale und maximale Betriebssystem festlegen, Kennwortbeschränkungen einrichten, einschließlich Kennwortlänge und Geräteinaktivität, Apps einschränken und mehr.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9bcfed67eda96bb4d79317bcc69d21a5f8197bc
-ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
-ms.translationtype: MTE75
+ms.openlocfilehash: 437673878335b04b76c53b13f18acac32213720a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77074630"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514029"
 ---
-# <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>iOS-Einstellungen, um Geräte mit Intune als konform oder nicht konform zu kennzeichnen
+# <a name="iosipados-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>iOS-/iPadOS-Einstellungen, um Geräte mit Intune als konform oder nicht konform zu kennzeichnen
 
-In diesem Artikel werden die verschiedenen Konformitätseinstellungen aufgeführt und beschrieben, die Sie in Intune für iOS-Geräte festlegen können. Im Rahmen Ihrer MDM-Lösung (Mobile Device Management, Verwaltung mobiler Geräte) verwenden Sie diese Einstellungen, um Geräte des Typs „rooted“ (mit Jailbreak) als nicht konform zu markieren, eine zulässige Bedrohungsstufe festzulegen, den Ablauf von Kennwörtern einzurichten und vieles mehr.
+In diesem Artikel werden die verschiedenen Konformitätseinstellungen aufgeführt und beschrieben, die Sie in Intune für iOS-/iPadOS-Geräte konfigurieren können. Im Rahmen Ihrer MDM-Lösung (Mobile Device Management, Verwaltung mobiler Geräte) verwenden Sie diese Einstellungen, um Geräte des Typs „rooted“ (mit Jailbreak) als nicht konform zu markieren, eine zulässige Bedrohungsstufe festzulegen, den Ablauf von Kennwörtern einzurichten und vieles mehr.
 
 Diese Funktion gilt für:
 
@@ -86,11 +86,11 @@ Weitere Informationen zu E-Mail-Profilen finden Sie unter [Konfigurieren des Zug
 ### <a name="password"></a>Kennwort
 
 > [!NOTE]
-> Nachdem eine Konformitäts- oder Konfigurationsrichtlinie auf ein iOS-Gerät angewendet wurde, werden Benutzer alle 15 Minuten dazu aufgefordert, eine Kennung festzulegen. Benutzer erhalten kontinuierlich eine Aufforderung, bis sie eine Kennung festgelegt haben. Wenn ein Passcode für das iOS-Gerät festgelegt ist, wird der Verschlüsselungsprozess automatisch gestartet. Das Gerät bleibt verschlüsselt, bis der Passcode deaktiviert ist.
+> Nachdem eine Konformitäts- oder Konfigurationsrichtlinie auf ein iOS-/iPadOS-Gerät angewendet wurde, werden Benutzer alle 15 Minuten dazu aufgefordert, einen Passcode festzulegen. Benutzer erhalten kontinuierlich eine Aufforderung, bis sie eine Kennung festgelegt haben. Sobald für das iOS-/iPadOS-Gerät ein Passcode festgelegt wurde, wird der Verschlüsselungsprozess automatisch gestartet. Das Gerät bleibt verschlüsselt, bis der Passcode deaktiviert ist.
 
 - **Anfordern eines Kennworts zum Entsperren mobiler Geräte:**  
   - **Nicht konfiguriert** (*Standardeinstellung*): Diese Einstellung wird nicht für die Konformitätsprüfung ausgewertet.  
-  - **Erforderlich**: Benutzer müssen ein Kennwort eingeben, bevor sie auf ihr Gerät zugreifen können. iOS-Geräte mit Kennwort sind verschlüsselt.
+  - **Erforderlich**: Benutzer müssen ein Kennwort eingeben, bevor sie auf ihr Gerät zugreifen können. iOS-/iPadOS-Geräte mit Kennwort sind verschlüsselt.
 
 - **Einfache Kennwörter:**  
   - **Nicht konfiguriert** (*Standardeinstellung*): Benutzer können einfache Kennwörter wie **1234** oder **1111** erstellen.
@@ -125,7 +125,7 @@ Weitere Informationen zu E-Mail-Profilen finden Sie unter [Konfigurieren des Zug
   Sie können Apps einschränken, indem Sie ihre Bündel-IDs der Richtlinie hinzufügen. Wenn die App auf einem Gerät installiert wird, wird das Gerät als nicht konform gekennzeichnet.
 
   - **App-Name**: Geben Sie einen benutzerfreundlichen Namen ein, damit Sie die Bündel-ID einfacher identifizieren können.
-  - **App-Bündel-ID**: Geben Sie die eindeutige Bündel-ID ein, die vom App-Anbieter zugewiesen wurde. Informationen zum Ermitteln der Bündel-ID finden Sie unter [How to find the bundle ID for an iOS app (Ermitteln der Bündel-ID für eine iOS-App)](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) (öffnet eine andere Microsoft-Website).  
+  - **App-Bündel-ID**: Geben Sie die eindeutige Bündel-ID ein, die vom App-Anbieter zugewiesen wurde. Informationen zum Ermitteln der Bündel-ID finden Sie unter [Ermitteln der Bündel-ID für eine iOS-/iPadOS-App](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) (öffnet eine andere Microsoft-Website).  
 
 ## <a name="next-steps"></a>Nächste Schritte
 

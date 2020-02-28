@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/12/2018
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.reviewer: tycast
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2bee04eabb7036d9a28ac628175b27f763d0ccb
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 47be57dece7867109565622ec2a1380e9a9d57d7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207059"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512499"
 ---
 # <a name="windows-10-and-windows-holographic-device-settings-to-add-vpn-connections-using-intune"></a>Geräteeinstellungen für Windows 10 und Windows Holographic zum Hinzuzufügen von VPN-Verbindungen mithilfe von Intune
 
@@ -143,7 +143,7 @@ Weitere Informationen zum Erstellen von benutzerdefinierten EAP-XML finden Sie u
 
   ![Auswählen der drei Punkte, Klicken und Ziehen zum Verschieben des DNS-Suffixes](./media/vpn-settings-windows-10/vpn-settings-windows10-move-dns-suffix.png)
 
-- Regeln für die **Richtlinien Tabelle für die Namensauflösung (** Name Resolution Policy Table, NRPT) definieren, wie DNS Namen auflöst, wenn eine Verbindung mit dem VPN besteht. Wenn eine VPN-Verbindung hergestellt wurde, können Sie festlegen, welche DNS-Server von der VPN-Verbindung verwendet werden sollen.
+- **Regeln der Richtlinientabelle für die Namensauflösung**: Über die Regeln der Richtlinientabelle für die Namensauflösung (Name Resolution Policy Table, NRPT) wird definiert, wie ein DNS Namen auflöst, wenn eine Verbindung mit dem VPN hergestellt wird. Wenn eine VPN-Verbindung hergestellt wurde, können Sie festlegen, welche DNS-Server von der VPN-Verbindung verwendet werden sollen.
 
   Sie können Regeln zur Tabelle hinzufügen, die die Domäne, den DNS-Server, den Proxy oder andere Komponenten betreffen, um die eingegebene Domäne aufzulösen. Diese Regeln werden von der VPN-Verbindung verwendet, wenn Benutzer eine Verbindung mit den eingegebenen Domänen herstellen.
 
@@ -185,4 +185,4 @@ Wenn der Benutzer beispielsweise bereits mit einem vertrauenswürdigen DNS-Suffi
 
 Das Profil ist nun erstellt, führt aber noch keine Aktionen durch. Die nächsten Schritte sind das [Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune](device-profile-assign.md) und das [Überwachen von Geräteprofilen in Microsoft Intune](device-profile-monitor.md).
 
-Konfigurieren Sie die VPN-Einstellungen für [Android-](vpn-settings-android.md), [iOS-](vpn-settings-ios.md) und [macOS-Geräte](vpn-settings-macos.md).
+Konfigurieren Sie VPN-Einstellungen für Geräte, die unter [Android](vpn-settings-android.md), [iOS/iPadOS](vpn-settings-ios.md) und [macOS](vpn-settings-macos.md) ausgeführt werden.

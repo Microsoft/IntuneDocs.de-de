@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/26/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c24c120b033a4db0162e985ef185932dd931eda
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 492c90bc1d032b32ebc3a4b8465163085674f245
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506922"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511445"
 ---
 # <a name="use-custom-settings-for-macos-devices-in-microsoft-intune"></a>Verwenden benutzerdefinierter Einstellungen für macOS-Geräte in Microsoft Intune
 
@@ -32,9 +32,9 @@ Wenn Sie macOS-Geräte verwenden, gibt es zwei Möglichkeiten, benutzerdefiniert
 - [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12)
 - [Apple-Profil-Manager](https://support.apple.com/profile-manager)
 
-Mit diesen beiden Tools können Sie Einstellungen in ein Konfigurationsprofil exportieren. Diese Datei importieren Sie dann in Intune und weisen das Profil Ihren macOS-Benutzern und -Geräten zu. Nach der Zuweisung werden die Einstellungen verteilt. Außerdem erstellen Sie eine Baseline oder einen Standard für macOS in Ihrer Organisation.
+Mit diesen beiden Tools können Sie Einstellungen in ein Konfigurationsprofil exportieren. Diese Datei importieren Sie dann in Intune und weisen das Profil Ihren macOS-Benutzern und -Geräten zu. Nach der Zuweisung werden die Einstellungen verteilt. Zudem wird über diese Einstellungen in Ihrer Organisation eine Baseline oder ein Standard für macOS erstellt.
 
-Dieser Artikel enthält eine Anleitung zur Verwendung von Apple Configurator und Apple Profile Manager und beschreibt die Eigenschaften, die Sie konfigurieren können.
+Dieser Artikel enthält eine Anleitung zur Verwendung von Apple Configurator und des Apple-Profil-Managers sowie eine Beschreibung der Eigenschaften, die Sie konfigurieren können.
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
@@ -56,13 +56,13 @@ Dieser Artikel enthält eine Anleitung zur Verwendung von Apple Configurator und
 
 ## <a name="custom-configuration-profile-settings"></a>Einstellungen für das benutzerdefinierte Konfigurationsprofil
 
-- **Name des benutzerdefinierten Konfigurationsprofils:** Geben Sie einen Namen für die Richtlinie ein. Dieser Name wird auf dem Gerät und im Intune-Status angezeigt.
-- **Konfigurationsprofildatei:** Navigieren Sie zum mit Apple Configurator oder dem Apple-Profil-Manager erstellten Konfigurationsprofil. Die importierte Datei wird im Bereich **Dateiinhalt** angezeigt.
+- **Name des benutzerdefinierten Konfigurationsprofils**: Geben Sie einen Namen für die Richtlinie ein. Dieser Name wird auf dem Gerät und im Intune-Status angezeigt.
+- **Konfigurationsprofildatei**: Navigieren Sie zum Konfigurationsprofil, das Sie mit Apple Configurator oder dem Apple-Profil-Manager erstellt haben. Die importierte Datei wird im Bereich **Dateiinhalt** angezeigt.
 
-  Sie können den `.mobileconfig` Dateien auch Geräte Token hinzufügen. Geräte Token werden verwendet, um gerätespezifische Informationen hinzuzufügen. Geben Sie zum Beispiel zur Anzeige der Seriennummer `{{serialnumber}}` ein. Auf dem Gerät wird der Text ähnlich wie `123456789ABC`angezeigt, der für jedes Gerät eindeutig ist. Achten Sie darauf, bei der Eingabe von Variablen geschweifte Klammern `{{ }}` zu verwenden. [App-Konfigurationstoken](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) umfassen eine Reihe von Variablen, die Sie nutzen können. Zudem können Sie `deviceid` oder einen anderen gerätespezifischen Wert verwenden.
+  Sie können Ihren `.mobileconfig`-Dateien auch Gerätetoken hinzufügen. Gerätetoken werden verwendet, um gerätespezifische Informationen hinzuzufügen. Geben Sie zum Beispiel zur Anzeige der Seriennummer `{{serialnumber}}` ein. Auf dem Gerät wird ein Text angezeigt, der für jedes Gerät eindeutig ist und der etwa folgendermaßen aussieht: `123456789ABC`. Achten Sie darauf, bei der Eingabe von Variablen geschweifte Klammern `{{ }}` zu verwenden. [App-Konfigurationstoken](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) umfassen eine Reihe von Variablen, die Sie nutzen können. Zudem können Sie `deviceid` oder einen anderen gerätespezifischen Wert verwenden.
 
   > [!NOTE]
-  > Variablen werden nicht in der Benutzeroberfläche überprüft und beachten die Groß-/Kleinschreibung. Daher gibt es möglicherweise Profile, die mit fehlerhaften Eingaben gespeichert wurden. Wenn Sie beispielsweise `{{DeviceID}}` anstelle von `{{deviceid}}` eingeben, wird die Zeichenfolge anstelle der eindeutigen Geräte-ID angezeigt. Stellen Sie sicher, dass Sie die richtigen Informationen eingeben.
+  > Variablen werden nicht auf der Benutzeroberfläche überprüft, und es wird die Groß-/Kleinschreibung berücksichtigt. Daher gibt es möglicherweise Profile, die mit fehlerhaften Eingaben gespeichert wurden. Wenn Sie beispielsweise `{{DeviceID}}` anstelle von `{{deviceid}}` eingeben, wird die Zeichenfolge anstelle der eindeutigen Geräte-ID angezeigt. Vergewissern Sie sich, dass die eingegebenen Informationen korrekt sind.
 
 Wählen Sie **OK** > **Erstellen** aus, um die Änderungen zu speichern. Das Profil wird erstellt und in der Profilliste angezeigt.
 
@@ -70,4 +70,4 @@ Wählen Sie **OK** > **Erstellen** aus, um die Änderungen zu speichern. Das Pro
 
 Das Profil ist nun erstellt, führt aber noch keine Aktionen durch. [Weisen Sie anschließend das Profil zu](device-profile-assign.md).
 
-Weitere Informationen finden Sie im [Artikel zum Erstellen eines Profils auf einem iOS-Gerät](../custom-settings-ios.md).
+Weitere Informationen finden Sie unter [Erstellen eines Profils auf einem iOS-/iPadOS-Gerät](../custom-settings-ios.md).

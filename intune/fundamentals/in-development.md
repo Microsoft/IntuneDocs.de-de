@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cafe9d3036a727d79de88eda050399138da55675
-ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
-ms.translationtype: MTE75
+ms.openlocfilehash: 7113552e09a7c7fa145a452e56575bfaf5297c3e
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76977749"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514562"
 ---
 # <a name="in-development-for-microsoft-intune---february-2020"></a>In der Entwicklung befindliche Microsoft Intune-Features: Februar 2020
 
@@ -65,8 +65,8 @@ Microsoft aktualisiert die Unternehmensportal-App auf Windows-Geräten, sodass f
 In der Unternehmensportal-App werden zusätzliche Statusmeldungen zur App-Installation für Endbenutzer angezeigt. Die folgenden Bedingungen gelten für neue Win32-Abhängigkeitsfunktionen:
 - Die App konnte nicht installiert werden. Vom Administrator definierte Abhängigkeiten wurden nicht erfüllt.
 
-### <a name="retarget-web-clips-to-microsoft-edge-on-ios-devices---5455276---"></a>Festlegen von Microsoft Edge als Zielbrowser für Webclips auf iOS-Geräten<!-- 5455276 -->
-Webclips, die als angeheftete Web-Apps auf iOS-Geräten fungieren, müssen aktualisiert werden. Neu bereitgestellte Webclips werden in Microsoft Edge geöffnet, anstatt in Intune Managed Browser, wenn sie in einem geschützten Browser geöffnet werden müssen. Bereits vorhandene Webclips müssen neu zugewiesen werden, damit sie in Microsoft Edge anstatt in Managed Browser geöffnet werden.
+### <a name="retarget-web-clips-to-microsoft-edge-on-iosipados-devices---5455276---"></a>Festlegen von Microsoft Edge als Zielbrowser für Webclips auf iOS-/iPadOS-Geräten<!-- 5455276 -->
+Webclips, die als angeheftete Web-Apps auf iOS-/iPadOS-Geräten fungieren, müssen aktualisiert werden. Neu bereitgestellte Webclips werden in Microsoft Edge geöffnet, anstatt in Intune Managed Browser, wenn sie in einem geschützten Browser geöffnet werden müssen. Bereits vorhandene Webclips müssen neu zugewiesen werden, damit sie in Microsoft Edge anstatt in Managed Browser geöffnet werden.
 
 ### <a name="macos-company-portal-user-experience-improvements---5568987---"></a>Verbesserungen an den Funktionen des macOS-Unternehmensportals<!-- 5568987 -->
 Es werden Verbesserungen bei der Geräteregistrierung für macOS sowie an der Unternehmensportal-App für Mac durchgeführt. Sie können Folgendes erwarten:
@@ -92,22 +92,22 @@ Ein neues Gerätekonfigurationsprofil für macOS ist verfügbar, das kabelgebund
 Gilt für:
 - macOS
 
-### <a name="vpn-profiles-with-ikev2-vpn-connections-can-use-always-on-with-ios-devices----1947932-idready---"></a>VPN-Profile mit IKEv2-VPN-Verbindungen können Always On auf iOS-Geräten verwenden <!-- 1947932 idready -->
-Auf iOS-Geräten können Sie ein VPN-Profil erstellen, das eine IKEv2-Verbindung verwendet. Navigieren Sie dafür zu **Gerätekonfiguration** > **Profile** > **Profil erstellen** > **iOS/iPadOS**, um die Plattform auszuwählen, und wählen Sie dann den Profiltyp **VPN** aus. In einem zukünftigen Update können Sie Always On mit IKEv2 konfigurieren. Wenn die IKEv2-VPN-Profile konfiguriert sind, stellen sie automatisch eine Verbindung zum VPN her und bleiben verbunden bzw. stellen im Fall eines Verbindungsverlusts die Verbindung schnell wieder her. Die Verbindung bleibt bestehen, selbst wenn das Netzwerk gewechselt wird oder Geräte neu gestartet werden.
+### <a name="vpn-profiles-with-ikev2-vpn-connections-can-use-always-on-with-iosipados-devices----1947932-idready---"></a>VPN-Profile mit IKEv2-VPN-Verbindungen können Always On auf iOS-/iPadOS-Geräten verwenden <!-- 1947932 idready -->
+Auf iOS-/iPadOS-Geräten können Sie ein VPN-Profil erstellen, das eine IKEv2-Verbindung verwendet. Navigieren Sie hierfür zu **Gerätekonfiguration** > **Profile** > **Profil erstellen** > **iOS/iPadOS**, um die Plattform auszuwählen, und wählen Sie anschließend den Profiltyp **VPN** aus. In einem zukünftigen Update können Sie Always On mit IKEv2 konfigurieren. Wenn die IKEv2-VPN-Profile konfiguriert sind, stellen sie automatisch eine Verbindung zum VPN her und bleiben verbunden bzw. stellen im Fall eines Verbindungsverlusts die Verbindung schnell wieder her. Die Verbindung bleibt bestehen, selbst wenn das Netzwerk gewechselt wird oder Geräte neu gestartet werden.
 
-Unter iOS ist das Always On-VPN auf IKEv2-Profile beschränkt.
+Unter iOS/iPadOS ist das Always On-VPN auf IKEv2-Profile beschränkt.
 
-Die derzeit konfigurierbaren IKEv2-Einstellungen finden Sie unter [Hinzufügen von VPN-Einstellungen auf iOS-Geräten in Microsoft Intune](../configuration/vpn-settings-ios.md#ikev2-settings).
+Die derzeit konfigurierbaren IKEv2-Einstellungen finden Sie unter [Hinzufügen von VPN-Einstellungen auf iOS-/iPadOS-Geräten in Microsoft Intune](../configuration/vpn-settings-ios.md#ikev2-settings).
 
 Gilt für:
 - iOS
 
-### <a name="improved-user-interface-experience-when-creating-configuration-profiles-on-ios-and-macos-devices---5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984-idready---"></a>Verbesserte Benutzeroberfläche für das Erstellen von Konfigurationsprofilen auf iOS- und macOS-Geräten<!-- 5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984 idready -->
-Wenn Sie ein Profil für iOS- oder macOS-Geräte erstellen, wird das Microsoft Endpoint Manager Admin Center entsprechend aktualisiert. Diese Änderung wirkt sich auf die folgenden Gerätekonfigurationsprofile aus. (Navigieren Sie zu **Geräte** > **Konfigurationsprofile** > **Profil erstellen** > **iOS** oder **macOS**, um die Plattform auszuwählen):
+### <a name="improved-user-interface-experience-when-creating-configuration-profiles-on-iosipados-and-macos-devices---5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984-idready---"></a>Verbesserte Benutzeroberfläche für das Erstellen von Konfigurationsprofilen auf iOS-/iPadOS- und macOS-Geräten<!-- 5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984 idready -->
+Wenn Sie ein Profil für iOS-/iPadOS- oder macOS-Geräte erstellen, wird das Microsoft Endpoint Manager Admin Center entsprechend aktualisiert. Diese Änderung wirkt sich auf die folgenden Gerätekonfigurationsprofile aus. (Navigieren Sie zu **Geräte** > **Konfigurationsprofile** > **Profil erstellen** > **iOS** oder **macOS**, um die Plattform auszuwählen):
 
-- Benutzerdefiniert: iOS, macOS
-- Gerätefeatures: iOS, macOS
-- Geräteeinschränkungen: iOS, macOS
+- Benutzerdefiniert: iOS/iPadOS, macOS
+- Gerätefunktionen: iOS/iPadOS, macOS
+- Geräteeinschränkungen: iOS/iPadOS, macOS
 - Endpoint Protection: macOS
 - Erweiterungen: macOS
 - Einstellungsdatei: macOS
@@ -182,7 +182,7 @@ Sie können abgeleitete Anmeldeinformationen auf vollständig verwalteten Androi
 ### <a name="use-antivirus-policy-to-manage-settings-for-microsoft-defender-antivirus-and-the-windows-security-experience--6131401---"></a>Verwenden der Antivirusrichtlinie zum Verwalten von Einstellungen für Microsoft Defender Antivirus und der Windows-Sicherheitsumgebung<!--6131401 -->
 Über den Knoten *Endpunktsicherheit* können Sie Einstellungen für **Antivirus** konfigurieren. Wenn Sie die Richtlinie für Antivirus konfigurieren, definieren Sie die Einstellungen für Ihre Windows 10-Geräte über zwei Profiltypen:
 
-- Microsoft Defender Antivirus: Verwalten Sie Einstellungen für den Cloudschutz, für Antivirenausschlüsse, für die Wiederherstellung, für Überprüfungsoptionen und vieles mehr.
+- Microsoft Defender Antivirus: Verwalten Sie Einstellungen für den Cloudschutz, Antivirenausschlüsse, die Wiederherstellung, Überprüfungsoptionen und vieles mehr.
 - Windows-Sicherheitsumgebung: Verwalten Sie, wie Benutzer mit Windows-Sicherheitseinstellungen auf ihren Geräten arbeiten können. Sie können konfigurieren, was Endbenutzer im Microsoft Defender Security Center anzeigen können und welche Benachrichtigungen sie erhalten. 
 
 <!-- ***********************************************-->
