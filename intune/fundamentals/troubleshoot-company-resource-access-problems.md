@@ -1,6 +1,6 @@
 ---
 title: Fehler und Statuscodes in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: See a list of the errors, status code, descriptions, and resolutions when using MDM managed devices, getting access to company resources, errors on iOS devices, and OMA response errors in Microsoft Intune (Anzeigen einer Liste mit Fehlern, Statuscode, Beschreibungen und Lösungen bei der Verwendung von mit der mobilen Geräteverwaltung verwalteten Geräten, Zugreifen auf Unternehmensressourcen, Fehler bei iOS-Geräten und OMA-Fehlermeldungen in Microsoft Intune).
+description: Hier finden Sie eine Liste mit Fehlern, Statuscodes, Beschreibungen und Lösungen bei der Verwendung von MDM-verwalteten Geräten und beim Zugriff auf Unternehmensressourcen sowie mit Fehlern bei iOS/iPadOS-Geräten und OMA-Fehlermeldungen in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17a8ebfcad2bcf485771f26184377aeb2c4bf4e1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: bf31ce5f812603534f30b3b3aa3836ede0be6f6d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509791"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510587"
 ---
 # <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Häufige Fehlercodes und Beschreibungen in Microsoft Intune
 
@@ -36,7 +36,7 @@ Falls Sie Support benötigen, können Sie [Support für Microsoft Intune](../get
 |---------------|-----------------|--------------|
 |10 (APP_CI_ENFORCEMENT_IN_PROGRESS)|Installation läuft||
 |20 (APP_CI_ENFORCEMENT_IN_PROGRESS_WAITING_CONTENT)|Warten auf Inhalt||
-|30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|Inhalt wird abgerufen.|Mögliche Ursache: Auftragsstatus 30 gibt an, dass beim Herunterladen einer App durch einen Benutzer ein Fehler aufgetreten ist.<br /><br />Mögliche Ursachen können sein:<br /><br />Die Internetverbindung des Geräts wurde während des Downloads unterbrochen.<br /><br />Möglicherweise ist das Zertifikat abgelaufen, das bei der Registrierung für das Gerät ausgestellt wurde.<br /><br />Lösung:<br /><br />Starten Sie die Unternehmens-Apps-Anwendung in der Systemsteuerung auf dem Gerät, um zu prüfen, ob das Gerätezertifikat noch gültig ist. Andernfalls müssen Sie das Gerät erneut registrieren.<br /><br />Vergewissern Sie sich, dass das Gerät mit dem Internet verbunden ist, und rufen Sie die App erneut ab.|
+|30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|Inhalt wird abgerufen.|Mögliche Ursache: Auftragsstatus 30 gibt an, dass beim Herunterladen einer App durch einen Benutzer ein Fehler aufgetreten ist.<br /><br />Mögliche Ursachen können sein:<br /><br />Die Internetverbindung des Geräts wurde während des Downloads unterbrochen.<br /><br />Möglicherweise ist das Zertifikat abgelaufen, das bei der Registrierung für das Gerät ausgestellt wurde.<br /><br />Lösung:<br /><br />Starten Sie die Unternehmens-Apps-Anwendung in der Systemsteuerung auf dem Gerät, um zu prüfen, ob das Gerätezertifikat noch gültig ist. Andernfalls müssen Sie das Gerät erneut registrieren.<br /><br />Vergewissern Sie sich, dass das Gerät mit dem Internet verbunden ist, und rufen Sie die App erneut ab.|
 |40 (APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|Download abgeschlossen.||
 |50 (APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|Installation läuft||
 |60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Installationsfehler|Die heruntergeladene App konnte nicht installiert werden.<br /><br />Das Codesignaturzertifikat, mit dem die Anwendung signiert wurde, ist nicht auf dem Gerät vorhanden.<br /><br />Eine Frameworkabhängigkeit, von der die Anwendung abhängt, ist nicht auf dem Gerät installiert.<br /><br />Stellen Sie sicher, dass das Codesignaturzertifikat, mit dem die App signiert wurde, auf dem Gerät vorhanden ist. Lassen Sie sich zudem vom Administrator bestätigen, dass ein solches Zertifikat für alle im Unternehmen registrierten Windows RT-Geräte vorgesehen war.<br /><br />Falls der Installationsfehler aufgrund einer fehlenden Frameworkabhängigkeit aufgetreten ist, muss der Administrator die Anwendung erneut veröffentlichen und dabei das Framework zusammen mit dem Anwendungspaket verpacken.<br /><br />Das heruntergeladene Anwendungspaket ist kein gültiges Paket, wurde möglicherweise beschädigt oder ist nicht mit der Version des Betriebssystems auf dem Gerät kompatibel.|
@@ -78,7 +78,7 @@ Falls Sie Support benötigen, können Sie [Support für Microsoft Intune](../get
 |-2016341111|0x87D11389|iOS-Gerät hat einen unerwarteten Leerlaufstatus zurückgegeben.|
 |-2016341112|0x87D11388|iOS-Gerät ist derzeit ausgelastet.|
 
-## <a name="errors-returned-by-ios-devices"></a>iOS-Geräte haben Fehler zurückgegeben.
+## <a name="errors-returned-by-iosipados-devices"></a>Von iOS/iPadOS-Geräten zurückgegebene Fehler
 
 ### <a name="company-portal-errors"></a>Unternehmensportalfehler
 
@@ -87,7 +87,7 @@ Falls Sie Support benötigen, können Sie [Support für Microsoft Intune](../get
 |__Interner Serverfehler__ <br>Anscheinend konnten Sie uns aufgrund eines internen Fehlers auf unserem Server nicht erreichen. Wiederholen Sie den Vorgang, und wenden Sie sich an Ihren IT-Administrator, wenn das Problem weiterhin besteht.|Fehler 500|Dieser Fehler wird wahrscheinlich durch ein Problem mit dem Intune-Dienst verursacht. Das Problem muss auf Seite des Intune-Diensts behoben werden und liegt wahrscheinlich nicht an kundenseitigen Problemen.|
 |__Vorübergehend nicht verfügbar__ <br>Anscheinend konnten Sie uns nicht erreichen, da unser Dienst vorübergehend nicht verfügbar ist. Wiederholen Sie den Vorgang, und wenden Sie sich an Ihren IT-Administrator, wenn das Problem weiterhin besteht.|Fehler 503|Dieser Fehler liegt wahrscheinlich an einem vorübergehenden Problem mit dem Intune-Dienst, z. B. aufgrund von Wartungsmaßnahmen. Das Problem muss auf Seite des Intune-Diensts behoben werden und liegt wahrscheinlich nicht an kundenseitigen Problemen.|
 |__Verbindung mit Server konnte nicht hergestellt werden__ <br>Anscheinend konnten Sie uns nicht erreichen. Wiederholen Sie den Vorgang, und wenden Sie sich an Ihren IT-Administrator, wenn das Problem weiterhin besteht.|Keinem HTTP-Statuscode zugeordnet|Es konnte keine sichere Verbindung mit dem Server hergestellt werden. Dies liegt wahrscheinlich an einem SSL-Problem mit den verwendeten Zertifikaten. Dieses Problem kann aufgrund von Kundenkonfigurationen auftreten, die mit den Anforderungen von Apple zur App Transport Security (ATS) nicht kompatibel sind.|
-|__Es ist ein Fehler aufgetreten__ <br>Der Unternehmensportalclient konnte nicht geladen werden. Wiederholen Sie den Vorgang, und wenden Sie sich an Ihren IT-Administrator, wenn das Problem weiterhin besteht.|Fehler 400|Ein Fehler mit einem HTTP-Statuscode im 400er-Bereich, der keine ausführlichere Fehlermeldung aufweist, erhält diese Anzeige. Dies ist ein clientseitiger Fehler, der in der Unternehmensportal-App für iOS auftritt.|
+|__Es ist ein Fehler aufgetreten__ <br>Der Unternehmensportalclient konnte nicht geladen werden. Wiederholen Sie den Vorgang, und wenden Sie sich an Ihren IT-Administrator, wenn das Problem weiterhin besteht.|Fehler 400|Ein Fehler mit einem HTTP-Statuscode im 400er-Bereich, der keine ausführlichere Fehlermeldung aufweist, erhält diese Anzeige. Dies ist ein clientseitiger Fehler, der in der Unternehmensportal-App für iOS/iPadOS auftritt.|
 |__Der Server kann nicht erreicht werden__ <br>Anscheinend konnten Sie uns nicht erreichen. Wiederholen Sie den Vorgang, und wenden Sie sich an Ihren IT-Administrator, wenn das Problem weiterhin besteht.|Fehler 500|Ein Fehler mit einem HTTP-Statuscode im 500er-Bereich, der keine ausführlichere Fehlermeldung aufweist, erhält diese Anzeige. Dies ist ein dienstseitiger Fehler, der beim Intune-Dienst aufgetreten ist.|
 
 ### <a name="service-errors"></a>Dienstfehler
@@ -304,72 +304,72 @@ Falls Sie Support benötigen, können Sie [Support für Microsoft Intune](../get
 
 |Statuscode|Hexadezimaler Fehlercode|Fehlermeldung|
 |---------------|--------------------------|-----------------|
-|-2016344008|0x87D10838|(1404): Zugriff auf Zertifikat verweigert|
-|-2016344009|0x87D10837|(1403): Zertifikat nicht gefunden|
-|-2016344010|0x87D10836|DCMO(1402): Fehler beim Vorgang|
-|-2016344011|0x87D10835|DCMO(1401): Der Benutzer hat den Vorgang bei Aufforderung nicht akzeptiert|
+|-2016344008|0x87D10838|(1404): Zugriff auf Zertifikat verweigert.|
+|-2016344009|0x87D10837|(1403): Zertifikat nicht gefunden.|
+|-2016344010|0x87D10836|DCMO(1402): Fehler bei Vorgang.|
+|-2016344011|0x87D10835|DCMO(1401): Der Benutzer hat den Vorgang bei Aufforderung nicht akzeptiert.|
 |-2016344012|0x87D10834|DCMO(1400): Clientfehler|
-|-2016344108|0x87D107D4|DCMO(1204): Gerätefunktion ist deaktiviert. Benutzer ist zur Reaktivierung berechtigt.|
-|-2016344109|0x87D107D3|DCMO(1203): Gerätefunktion ist deaktiviert. Benutzer ist zur Reaktivierung nicht berechtigt.|
+|-2016344108|0x87D107D4|DCMO(1204): Gerätefunktion ist deaktiviert. Der Benutzer ist zur Reaktivierung berechtigt.|
+|-2016344109|0x87D107D3|DCMO(1203): Gerätefunktion ist deaktiviert. Der Benutzer ist nicht zur Reaktivierung berechtigt.|
 |-2016344110|0x87D107D2|DCMO(1202): Aktivierung wurde erfolgreich ausgeführt, doch die Gerätefunktion ist derzeit getrennt.|
 |-2016344111|0xF3FB4D95|DCMO(1201): Aktivierung wurde erfolgreich ausgeführt, und die Gerätefunktion ist derzeit angefügt.|
 |-2016344112|0x87D107D0|DCMO(1200): Der Vorgang wurde erfolgreich ausgeführt.|
 |-2016345595|0x87D10205|Syncml(517): Die Antwort auf einen unteilbaren Befehl war zu groß für eine Einzelmeldung.|
-|-2016345596|0x87D10204|Syncml(516): Der Befehl befand sich in einem unteilbaren Element, und bei Atomic ist ein Fehler aufgetreten. Der Befehl konnte nicht zurückgesetzt werden.|
-|-2016345598|0x87D10202|Syncml(514): Der SyncML-Befehl wurde nicht ausgeführt, weil der Vorgang vor Verarbeitung des Befehls abgebrochen wurde.|
+|-2016345596|0x87D10204|Syncml(516): Der Befehl befand sich in einem unteilbaren Element, und bei diesem Vorgang ist ein Fehler aufgetreten. Der Befehl konnte nicht zurückgesetzt werden.|
+|-2016345598|0x87D10202|Syncml(514): Der SyncML-Befehl wurde nicht erfolgreich ausgeführt, weil der Vorgang vor Verarbeitung des Befehls abgebrochen wurde.|
 |-2016345599|0x87D10201|Syncml(513): Der Empfänger unterstützt die angegebene Version des SyncML-Synchronisierungsprotokolls in der SyncML-Abfragemeldung nicht oder weist sie zurück.|
-|-2016345600|0x87D10200|Syncml(512): Bei der Synchronisierungssitzung ist ein Anwendungsfehler aufgetreten.|
-|-2016345601|0x87D101FF|Syncml(511): Bei der Verarbeitung der Anforderung ist auf dem Server ein schwerwiegender Fehler aufgetreten.|
-|-2016345602|0x87D101FE|Syncml(510): Bei der Verarbeitung der Anforderung ist ein Fehler aufgetreten. Ursache des Fehlers ist ein Fehler im Datenspeicher des Empfängers.|
-|-2016345603|0x87D101FD|Syncml(509): Zur künftigen Verwendung reserviert.|
+|-2016345600|0x87D10200|Syncml(512): Anwendungsfehler bei der Synchronisierungssitzung.|
+|-2016345601|0x87D101FF|Syncml(511): Schwerwiegender Serverfehler beim Verarbeiten der Anforderung.|
+|-2016345602|0x87D101FE|Syncml(510): Fehler beim Verarbeiten der Anforderung. Ursache des Fehlers ist ein Fehler im Datenspeicher des Empfängers.|
+|-2016345603|0x87D101FD|Syncml(509): Reserviert für zukünftige Verwendung.|
 |-2016345604|0x87D101FC|Syncml(508): Aufgrund eines Fehlers muss der aktuelle Synchronisierungszustand des Clients auf dem Server aktualisiert werden.|
-|-2016345605|0x87D101FB|Syncml(507): Aufgrund des Fehlers konnte keiner der SyncML-Befehle in einem unteilbaren Element ausgeführt werden.|
-|-2016345606|0x87D101FA|Syncml(506): Bei der Verarbeitung der Anforderung ist ein Fehler aufgetreten.|
+|-2016345605|0x87D101FB|Syncml(507): Aufgrund eines Fehlers konnte keiner der SyncML-Befehle in einem unteilbaren Element ausgeführt werden.|
+|-2016345606|0x87D101FA|Syncml(506): Anwendungsfehler beim Verarbeiten der Anforderung.|
 |-2016345607|0x87D101F9|Syncml(505): Der Empfänger unterstützt die angegebene Version der SyncML DTD in der SyncML-Abfragemeldung nicht oder weist sie zurück.|
-|-2016345608|0x87D101F8|Syncml(504): In seiner Funktion als Gateway oder Proxy empfing der Empfänger keine rechtzeitige Antwort von dem im URI angegebenen vorgelagerten Empfänger (z. B. HTTP, FTP, LDAP), oder von einem anderen Hilfsempfänger (z. B. DNS) auf den bei der Erfüllung der Anforderung zugegriffen werden muss.|
-|-2016345609|0x87D101F7|Syncml(503): Die Anforderung kann derzeit aufgrund einer zeitweisen Überlastung oder einer Wartung des Empfängers nicht verarbeitet werden.|
-|-2016345610|0x87D101F6|Syncml(502): In seiner Funktion als Gateway oder Proxy empfing der Empfänger eine ungültige Antwort vom vorgelagerten Empfänger, auf den er zur Erfüllung der Anforderung zugegriffen hat.|
+|-2016345608|0x87D101F8|Syncml(504): In seiner Funktion als Gateway oder Proxy hat der Empfänger nicht rechtzeitig eine Antwort von dem im URI angegebenen Upstreamempfänger (z. B. HTTP, FTP, LDAP), oder von einem anderen Hilfsempfänger erhalten, auf den bei der Erfüllung der Anforderung zugegriffen werden muss (z. B. DNS).|
+|-2016345609|0x87D101F7|Syncml(503): Die Anforderung kann derzeit aufgrund einer zeitweiligen Überlastung oder einer Wartung des Empfängers nicht verarbeitet werden.|
+|-2016345610|0x87D101F6|Syncml(502): In seiner Funktion als Gateway oder Proxy hat der Empfänger eine ungültige Antwort von dem Upstreamempfänger erhalten, auf den er zur Erfüllung der Anforderung zugegriffen hat.|
 |-2016345611|0x87D101F5|Syncml(501): Der Empfänger unterstützt den zur Erfüllung der Anforderung erforderlichen Befehl nicht.|
 |-2016345612|0x87D101F4|Syncml(500): Aufgrund einer unerwarteten Bedingung konnte die Anforderung vom Empfänger nicht erfüllt werden.|
 |-2016345684|0x87D101AC|Syncml(428): Fehler beim Verschieben.|
 |-2016345685|0x87D101AB|Syncml(427): Das übergeordnete Element enthält untergeordnete Elemente und kann daher nicht gelöscht werden.|
 |-2016345686|0x87D101AA|Syncml(426): Ein unvollständiges Element wurde nicht angenommen.|
-|-2016345687|0x87D101A9|Syncml(425): Beim Anforderungsbefehl ist ein Fehler aufgetreten, weil der Absender auf dem Empfänger keine ausreichende Zugriffssteuerungsberechtigung (ACL) besitzt.|
+|-2016345687|0x87D101A9|Syncml(425): Der angeforderte Befehl war nicht erfolgreich, weil der Absender keine ausreichende Zugriffssteuerungsberechtigung (ACL) für den Empfänger besitzt.|
 |-2016345688|0x87D101A8|Syncml(424): Das aufgeteilte Objekt wurde empfangen, seine Größe entsprach jedoch nicht dem im ersten Teil angegebenen Wert.|
-|-2016345689|0x87D101A7|Syncml(423): Beim Anforderungsbefehl ist ein Fehler aufgetreten, weil das „vorläufig gelöschte“ Element zuvor auf dem Server dauerhaft gelöscht wurde.|
-|-2016345690|0x87D101A6|Syncml(422): Beim Anforderungsbefehl ist ein Fehler aufgetreten, weil das CGI-Skript im LocURI fehlerhaft war.|
-|-2016345691|0x87D101A5|Syncml(421): Beim Anforderungsbefehl ist ein Fehler aufgetreten, weil die angegebene Suchgrammatik unbekannt war.|
-|-2016345692|0x87D101A4|Syncml(420): Auf dem Empfänger ist nicht genügend Speicherplatz für die restlichen Synchronisierungsdaten vorhanden.|
-|-2016345693|0x87D101A3|Syncml(419): Aufgrund der Clientanforderung entstand ein Konflikt, der zugunsten des Serverbefehls gelöst wurde.|
-|-2016345694|0x87D101A2|Syncml(418): Der angeforderte Put- oder Add-Befehl konnte nicht ausgeführt werden, da das Ziel bereits vorhanden ist.|
-|-2016345695|0x87D101A1|Syncml(417): Die Anforderung konnte derzeit nicht ausgeführt werden und sollte später vom Anfordernden erneut versucht werden.|
-|-2016345696|0x87D101A0|Syncml(416): Die Anforderung konnte nicht ausgeführt werden, da die angeforderte Bytegröße zu hoch war.|
-|-2016345697|0x87D1019F|Syncml(415): Typ oder Format des Mediums nicht unterstützt.|
-|-2016345698|0x87D1019E|Syncml(414): Der angeforderte Befehl wurde nicht ausgeführt, weil der URI für die Verarbeitung durch den Empfänger zu lang ist.|
-|-2016345699|0x87D1019D|Syncml(413): Die Anforderung wird vom Empfänger abgewiesen, da das angeforderte Element für die Verarbeitung durch den Empfänger zu groß ist.|
-|-2016345700|0x87D1019C|Syncml(412): Die Anforderung wurde auf dem Empfänger nicht verarbeitet, da sie unvollständig oder nicht ordnungsgemäß war.|
-|-2016345701|0x87D1019B|Syncml(411): Der Anforderungsbefehl muss eine Bytegrößen- oder Bytelängenangabe im Metaelementtyp enthalten.|
+|-2016345689|0x87D101A7|Syncml(423): Der angeforderte Befehl war nicht erfolgreich, weil das als vorläufig gelöscht angegebene Element zuvor auf dem Server dauerhaft gelöscht wurde.|
+|-2016345690|0x87D101A6|Syncml(422): Der angeforderte Befehl war auf dem Server nicht erfolgreich, weil das CGI-Skript im LocURI ein falsches Format aufwies.|
+|-2016345691|0x87D101A5|Syncml(421): Der angeforderte Befehl war auf dem Server nicht erfolgreich, weil die angegebene Suchgrammatik unbekannt war.|
+|-2016345692|0x87D101A4|Syncml(420): Auf dem Empfänger ist nicht genügend Speicherplatz für die verbleibenden Synchronisierungsdaten vorhanden.|
+|-2016345693|0x87D101A3|Syncml(419): Die Clientanforderung hat einen Konflikt verursacht, der zugunsten des Serverbefehls gelöst wurde.|
+|-2016345694|0x87D101A2|Syncml(418): Der angeforderte Put- oder Add-Befehl konnte nicht ausgeführt werden, weil das Ziel bereits vorhanden ist.|
+|-2016345695|0x87D101A1|Syncml(417): Die Anforderung kann momentan nicht ausgeführt werden. Der ursprüngliche Absender sollte die Anforderung später erneut senden.|
+|-2016345696|0x87D101A0|Syncml(416): Fehler bei der Anforderung, weil der Wert für die Bytegröße in der Anforderung zu hoch war.|
+|-2016345697|0x87D1019F|Syncml(415): Typ oder Format des Mediums werden nicht unterstützt.|
+|-2016345698|0x87D1019E|Syncml(414): Der angeforderte Befehl war nicht erfolgreich, weil der URI für die Verarbeitung durch den Empfänger zu lang ist.|
+|-2016345699|0x87D1019D|Syncml(413): Die Anforderung wird vom Empfänger abgewiesen, weil das angeforderte Element für die Verarbeitung durch den Empfänger zu groß ist.|
+|-2016345700|0x87D1019C|Syncml(412): Die Anforderung wurde auf dem Empfänger nicht verarbeitet, da sie unvollständig war oder ein falsches Format aufwies.|
+|-2016345701|0x87D1019B|Syncml(411): Der Anforderungsbefehl muss eine Bytegröße oder eine Bytelänge im Metaelementtyp enthalten.|
 |-2016345702|0x87D1019A|Syncml(410): Das angeforderte Ziel befindet sich nicht mehr auf dem Empfänger, und der Weiterleitungs-URI ist unbekannt.|
-|-2016345703|0x87D10199|Syncml(409): Die Anforderung konnte nicht erfüllt werden, da bei den Datenversionen auf Client und Server ein Aktualisierungskonflikt besteht.|
-|-2016345704|0x87D10198|Syncml(408): Eine erwartete Meldung wurde nicht innerhalb des festgelegten Zeitraums empfangen.|
-|-2016345705|0x87D10197|Syncml(407): Der angeforderte Befehl konnte nicht ausgeführt werden, da vom Absender richtige Authentifizierungsdaten bereitgestellt werden müssen.|
-|-2016345706|0x87D10196|Syncml(406): Der angeforderte Befehl konnte nicht ausgeführt werden, da eine optionale Funktion in der Anforderung nicht unterstützt wird.|
+|-2016345703|0x87D10199|Syncml(409): Die Anforderung konnte nicht erfüllt werden, weil ein Aktualisierungskonflikt zwischen den Datenversionen auf Client und Server vorliegt.|
+|-2016345704|0x87D10198|Syncml(408): Eine erwartete Meldung wurde nicht innerhalb des erforderlichen Zeitraums empfangen.|
+|-2016345705|0x87D10197|Syncml(407): Der angeforderte Befehl war nicht erfolgreich, weil vom Absender richtige Authentifizierungsdaten bereitgestellt werden müssen.|
+|-2016345706|0x87D10196|Syncml(406): Der angeforderte Befehl war nicht erfolgreich, weil eine optionale Funktion in der Anforderung nicht unterstützt wird.|
 |-2016345707|0x87D10195|Syncml(405): Der angeforderte Befehl ist auf dem Ziel nicht zulässig.|
 |-2016345708|0x87D10194|Syncml(404): Das angeforderte Ziel wurde nicht gefunden.|
-|-2016345709|0x87D10193|Syncml(403): Der angeforderte Befehl konnte nicht ausgeführt werden, er wurde jedoch vom Empfänger verstanden.|
-|-2016345710|0x87D10192|Syncml(402): Der angeforderte Befehl konnte nicht ausgeführt werden, da die richtige Bezahlung erforderlich ist.|
-|-2016345711|0x87D10191|Syncml(401): Der angeforderte Befehl konnte nicht ausgeführt werden, da vom Absender richtige Authentifizierungsdaten bereitgestellt werden müssen.|
+|-2016345709|0x87D10193|Syncml(403): Der angeforderte Befehl war nicht erfolgreich, konnte jedoch vom Empfänger interpretiert werden.|
+|-2016345710|0x87D10192|Syncml(402): Der angeforderte Befehl war nicht erfolgreich, weil eine ordnungsgemäße Bezahlung erforderlich ist.|
+|-2016345711|0x87D10191|Syncml(401): Der angeforderte Befehl war nicht erfolgreich, weil vom Absender geeignete Authentifizierungsdaten bereitgestellt werden müssen.|
 |-2016345712|0x87D10190|Syncml(400): Der angeforderte Befehl konnte aufgrund eines Syntaxfehlers nicht ausgeführt werden.|
 |-2016345807|0x87D10131|Syncml(305): Auf das angeforderte Ziel muss über den angegebenen Proxy-URI zugegriffen werden.|
 |-2016345808|0x87D10130|Syncml (304): Der angeforderte SyncML-Befehl wurde auf dem Ziel nicht ausgeführt.|
-|-2016345809|0x87D1012F|Syncml(303): Das angeforderte Ziel ist bei einem anderen URI zu finden.|
-|-2016345810|0x87D1012E|Syncml(302): Das angeforderte Ziel wurde vorübergehend zu einem anderen URI verschoben.|
-|-2016345811|0x87D1012D|Syncml(301): Das angeforderte Ziel hat einen neuen URI.|
+|-2016345809|0x87D1012F|Syncml(303): Das angeforderte Ziel besitzt einen anderen URI.|
+|-2016345810|0x87D1012E|Syncml(302): Das angeforderte Ziel wurde vorübergehend an einen anderen URI verschoben.|
+|-2016345811|0x87D1012D|Syncml(301): Das angeforderte Ziel besitzt einen neuen URI.|
 |-2016345812|0x87D1012C|Syncml(300): Das angeforderte Ziel ist eines von mehreren Alternativen.|
-|-2016345896|0x87D100D8|Syncml(216): Der Befehl befand sich in einem unteilbaren Element, und bei Atomic ist ein Fehler aufgetreten. Dieser Befehl wurde erfolgreich rückgängig gemacht.|
-|-2016345897|0x87D100D7|Syncml(215): Ein Befehl wurde aufgrund einer Benutzerinteraktion nicht ausgeführt, da der Benutzer die Wahl nicht akzeptiert hat.|
+|-2016345896|0x87D100D8|Syncml(216): Der Befehl befand sich in einem unteilbaren Element, und bei diesem Vorgang ist ein Fehler aufgetreten. Dieser Befehl wurde erfolgreich rückgängig gemacht.|
+|-2016345897|0x87D100D7|Syncml(215): Ein Befehl wurde aufgrund einer Benutzerinteraktion nicht ausgeführt, und der Benutzer hat die Auswahl nicht akzeptiert.|
 |-2016345898|0x87D100D6|Syncml(214): Vorgang abgebrochen. Der SyncML-Befehl wurde erfolgreich abgeschlossen, aber in der Sitzung werden keine weiteren Befehle verarbeitet.|
-|-2016345899|0x87D100D5|Syncml(213): Aufgeteiltes Element wurde akzeptiert und gepuffert.|
+|-2016345899|0x87D100D5|Syncml(213): Aufgeteiltes Element akzeptiert und gepuffert.|
 |-2016345900|0x87D100D4|Syncml(212): Authentifizierung akzeptiert. Für den Rest der Synchronisierungssitzung ist keine weitere Authentifizierung erforderlich. Dieser Antwortcode kann nur als Antwort auf eine Anforderung verwendet werden, in der die Anmeldeinformationen bereitgestellt wurden.|
 |-2016345901|0x87D100D3|Syncml(211): Element nicht gelöscht. Das angeforderte Element wurde nicht gefunden. Es wurde möglicherweise zuvor gelöscht.|
 |-2016345902|0x87D100D2|Syncml(210): Ohne Archivieren löschen. Die Antwort gibt an, dass die angeforderten Daten erfolgreich gelöscht wurden, ohne sie jedoch vor dem Löschen zu archivieren, da diese OPTIONALE Funktion von der Implementierung nicht unterstützt wurde.|

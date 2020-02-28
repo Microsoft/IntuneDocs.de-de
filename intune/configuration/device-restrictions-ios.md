@@ -1,12 +1,12 @@
 ---
-title: 'iOS-Geräteeinstellungen in Microsoft Intune: Azure | Microsoft-Dokumentation'
+title: 'iOS/iPadOS-Geräteeinstellungen in Microsoft Intune: Azure | Microsoft-Dokumentation'
 titleSuffix: ''
-description: Fügen Sie Einstellungen auf iOS-Geräten hinzu, konfigurieren oder erstellen Sie sie, um Funktionen einzuschränken. Zu diesen gehört das Festlegen von Anforderungen für Kennwörter, die Anpassung des Sperrbildschirms, die Verwendung integrierter Apps, das Hinzufügen eingeschränkter oder genehmigter Apps, die Handhabung von Bluetooth-Geräten, das Herstellen einer Verbindung zur Cloud für Sicherung und Speicherung, die Aktivierung den Kioskmodus, das Hinzufügen und die Steuerung von Domänen und wie Benutzer mit dem Safari-Webbrowser in Microsoft Intune interagieren.
+description: Fügen Sie Einstellungen auf iOS/iPadOS-Geräten hinzu, konfigurieren oder erstellen Sie sie, um Funktionen einzuschränken. Zu diesen gehört das Festlegen von Anforderungen für Kennwörter, die Anpassung des Sperrbildschirms, die Verwendung integrierter Apps, das Hinzufügen eingeschränkter oder genehmigter Apps, die Handhabung von Bluetooth-Geräten, die Verbindungsherstellung mit der Cloud für Sicherung und Speicherung, die Aktivierung des Kioskmodus, das Hinzufügen und die Steuerung von Domänen und die Art der Benutzerinteraktion mit dem Safari-Webbrowser in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/04/2020
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc252068d963d75bf6ade79852d6ba01bda8800b
-ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
-ms.translationtype: MTE75
+ms.openlocfilehash: 1e352ca0c0100ebe1756d621feb725e040521901
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051608"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513066"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>iOS- und iPadOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune
 
 In diesem Artikel werden die verschiedenen Einstellungen aufgeführt und beschrieben, die Sie auf iOS- und iPadOS-Geräten steuern können. Verwenden Sie als Bestandteil Ihrer Lösung für die mobile Geräteverwaltung (Mobile Device Management, MDM) diese Einstellungen, um Features zuzulassen oder zu deaktivieren, Kennwortregeln festzulegen, bestimmte Apps zu erlauben oder einzuschränken usw.
 
-Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugefügt und dann Ihren iOS-Geräten zugewiesen oder bereitgestellt.
+Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugefügt und dann Ihren iOS/iPadOS-Geräten zugewiesen oder auf diesen bereitgestellt.
 
 > [!TIP]
 > Für diese Einstellungen werden die MDM-Einstellungen von Apple verwendet. Weitere Informationen zu diesen Einstellungen finden Sie auf der Apple-Website zu den [MDM-Einstellungen von Apple](https://support.apple.com/guide/mdm/welcome/web).
@@ -37,7 +37,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 [Erstellen Sie ein Konfigurationsprofil mit Geräteeinschränkungen](../device-restrictions-configure.md).
 
 > [!NOTE]
-> Diese Einstellungen gelten für verschiedene Registrierungstypen, wobei einige Einstellungen für alle Registrierungsoptionen gelten. Weitere Informationen zu den verschiedenen Registrierungstypen finden Sie unter [iOS-Registrierung](../ios-enroll.md).
+> Diese Einstellungen gelten für verschiedene Registrierungstypen, wobei einige Einstellungen für alle Registrierungsoptionen gelten. Weitere Informationen zu den verschiedenen Registrierungstypen finden Sie unter [iOS/iPadOS-Registrierung](../ios-enroll.md).
 
 ## <a name="general"></a>Allgemein
 
@@ -45,7 +45,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
 - **Nutzungsdaten freigeben**: Wählen Sie **Blockieren** aus, um zu verhindern, dass das Gerät Diagnose- und Nutzungsdaten an Apple sendet. **Nicht konfiguriert** (Standard) erlaubt das Senden dieser Daten.
 
-- **Bildschirmaufnahme:** Wählen Sie **Blockieren** aus, um zu verhindern, dass Screenshots oder Bildschirmaufnahmen auf dem Gerät vorgenommen werden. Ab iOS 9.0 werden auch Bildschirmaufzeichnungen blockiert. **Nicht konfiguriert** (Standard) erlaubt dem Benutzer, den Bildschirminhalt als Bild oder Video zu erfassen.
+- **Bildschirmaufnahme:** Wählen Sie **Blockieren** aus, um zu verhindern, dass Screenshots oder Bildschirmaufnahmen auf dem Gerät vorgenommen werden. Ab iOS/iPadOS 9.0 werden auch Bildschirmaufzeichnungen blockiert. **Nicht konfiguriert** (Standard) erlaubt dem Benutzer, den Bildschirminhalt als Bild oder Video zu erfassen.
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Die Einstellungen gelten für: Geräteregistrierung, automatisierte Geräteregistrierung (überwacht)
 
@@ -61,6 +61,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
   Diese Funktion gilt für:  
   - iOS 9.3.2 und neuer
+  - iOS 13.0 und höher
 
 - **Beobachtung von Remotebildschirmen durch Classroom-App**: Wählen Sie **Blockieren** aus, um zu verhindern, dass die Classroom-App den Bildschirm des Geräts remote anzeigt. **Nicht konfiguriert** (Standard) erlaubt der Classroom-App von Apple, den Bildschirm anzuzeigen.
 
@@ -68,21 +69,22 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
   Diese Funktion gilt für:  
   - iOS 9.3 und höher
+  - iOS 13.0 und höher
 
-- **Unangekündigte Bildschirmüberwachung über Classroom-App**: Wenn diese Einstellung auf **Zulassen** festgelegt wird, können Lehrer im Hintergrund die Bildschirme der iOS-Geräte ihrer Kursteilnehmer mithilfe der Classroom-App überwachen, ohne dass die Kursteilnehmer dies mitbekommen. In einer Klasse registrierte Kursteilnehmergeräte, die die Classroom-App verwenden, gewähren der Lehrkraft des Kurses automatisch die Berechtigung. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature deaktiviert.
+- **Unangekündigte Bildschirmüberwachung über Classroom-App**: Wenn diese Einstellung auf **Zulassen** festgelegt wird, können Lehrkräfte die Bildschirme der iOS/iPadOS-Geräte ihrer Kursteilnehmer mithilfe der Classroom-App überwachen, ohne dass die Kursteilnehmer dies mitbekommen. In einer Klasse registrierte Kursteilnehmergeräte, die die Classroom-App verwenden, gewähren der Lehrkraft des Kurses automatisch die Berechtigung. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature deaktiviert.
 
   Legen Sie **Blockieren** für die Einstellung **Bildschirmaufnahme** fest, um diese Einstellung zu verwenden.
 
 - **Vertrauen für Unternehmens-App:** Wählen Sie **Blockieren** aus, um die Schaltfläche **Trust Enterprise Developer** (Unternehmensentwickler vertrauen) über „Einstellungen > Allgemein > Profile & Geräteverwaltung“ auf dem Gerät zu entfernen. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer zu wählen, ob Apps, die nicht aus dem App Store heruntergeladen wurden, vertraut werden soll.
-- **Kontoänderung**: Bei Festlegung auf **Blockieren** kann der Benutzer die gerätespezifischen Einstellungen nicht über die iOS-App „Einstellungen“ aktualisieren. Der Benutzer kann z. B. nicht neue Gerätekonten erstellen oder Benutzernamen bzw. Kennwort ändern. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, diese Einstellungen zu ändern.
+- **Kontoänderung**: Bei Festlegung auf **Blockieren** kann der Benutzer die gerätespezifischen Einstellungen nicht über die iOS/iPadOS-App „Einstellungen“ aktualisieren. Der Benutzer kann z. B. nicht neue Gerätekonten erstellen oder Benutzernamen bzw. Kennwort ändern. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, diese Einstellungen zu ändern.
 
-  Diese Funktion gilt auch für Einstellungen, auf die über die iOS-Einstellungen-App zugegriffen werden kann, wie z. B. E-Mail, Kontakte, Kalender, Twitter und mehr. Diese Funktion gilt nicht für Apps mit Kontoeinstellungen, die nicht über die iOS-Einstellungen-App konfiguriert werden können, wie z. B. die Microsoft Outlook-App.
+  Diese Funktion gilt auch für Einstellungen, auf die über die iOS/iPadOS-App „Einstellungen“ zugegriffen werden kann, wie z. B. E-Mail, Kontakte, Kalender, Twitter und mehr. Diese Funktion gilt nicht für Apps mit Kontoeinstellungen, die nicht über die iOS/iPadOS-App „Einstellungen“ konfiguriert werden können, wie z. B. die Microsoft Outlook-App.
 
 - **Bildschirmzeit**: Wählen Sie **Blockieren**, um zu verhindern, dass Benutzer ihre eigenen Einschränkungen in „Bildschirmzeit“ (Geräteeinstellungen) vornehmen. **Nicht konfiguriert** erlaubt dem Benutzer das Konfigurieren von Geräteeinschränkungen (z. B. Jugendschutz oder Inhalts- und Datenschutzeinschränkungen) auf dem Gerät.
 
   Diese Einstellung hieß zuvor **Aktivieren von Einschränkungen in den Geräteeinstellungen**. Auswirkungen dieser Änderung:  
   
-  - iOS 11.4.1 und früher: Durch die Option **Blockieren** kann verhindert werden, dass Endbenutzer die für sie geltenden Einschränkungen in den Geräteeinstellungen bearbeiten. Dieses Verhalten bewirkt dasselbe, sodass es keine Änderungen für Endbenutzer gibt.
+  - iOS 11.4.1 und älter: Durch die Option **Blockieren** kann verhindert werden, dass Endbenutzer die für sie geltenden Einschränkungen in den Geräteeinstellungen bearbeiten. Dieses Verhalten bewirkt dasselbe, sodass es keine Änderungen für Endbenutzer gibt.
   - iOS 12.0 und höher: **Blockieren** verhindert, dass Endbenutzer die für sie geltende **Bildschirmzeit** (einschließlich Einschränkungen von Inhalt und Datenschutz) in den Geräteeinstellungen (Einstellungen > Allgemein > Bildschirmzeit) bearbeiten. Bei auf iOS 12.0 aktualisierten Geräten wird die Registerkarte „Einschränkungen“ in den Geräteeinstellungen nicht mehr angezeigt (Einstellungen > Allgemein > Geräteverwaltung > Verwaltungsprofil > Einschränkungen). Diese Einstellungen befinden sich unter **Bildschirmzeit**.
   
 - **Verwendung der Option zum Löschen aller Inhalte und Einstellungen auf dem Gerät**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer die Option zum Löschen aller Inhalte und Einstellungen auf dem Gerät verwenden können. **Nicht konfiguriert** (Standard) ermöglicht Benutzern den Zugriff auf diese Einstellungen.
@@ -91,7 +93,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 - **Hintergrundbild ändern**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Hintergrundbilder geändert werden können. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, das Hintergrundbild des Geräts zu ändern.
 - **Änderung der Vertrauenseinstellungen für Unternehmens-Apps**: **Blockieren** verhindert, dass der Benutzer die Vertrauensstellungseinstellungen für die Unternehmens-App auf überwachten Geräten ändert. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, Apps zu vertrauen, die nicht aus dem App Store heruntergeladen wurden.
 - **Konfigurationsprofiländerungen**: **Blockieren** verhindert Konfigurationsprofiländerungen auf dem Gerät. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, Konfigurationsprofile zu installieren.
-- **Aktivierungssperre**: Wählen Sie **Zulassen** aus, um die Aktivierungssperre auf überwachten iOS-Geräten zu aktivieren. Die Aktivierungssperre erschwert die erneute Aktivierung verlorener oder gestohlener Geräte.
+- **Aktivierungssperre**: Wählen Sie **Zulassen** aus, um die Aktivierungssperre auf überwachten iOS/iPadOS-Geräten zu aktivieren. Die Aktivierungssperre erschwert die erneute Aktivierung verlorener oder gestohlener Geräte.
 - **Entfernen von Apps blockieren**: Wenn Sie **Blockieren** auswählen, können Benutzer keine Apps entfernen. **Nicht konfiguriert** (Standard) ermöglicht Benutzern, Apps vom Gerät zu entfernen.
 - **USB-Zubehör bei gesperrtem Gerät zulassen**: **Zulassen**: USB-Zubehör kann Daten mit einem Gerät austauschen, das seit mehr als einer Stunde gesperrt ist. **Nicht konfiguriert** (Standardeinstellung): Der Modus mit USB-Einschränkung auf dem Gerät wird nicht aktualisiert, und USB-Zubehör wird daran gehindert, Daten vom Gerät zu übertragen, wenn dieses länger als eine Stunde gesperrt ist.
 - **Automatische Datums- und Uhrzeiteinstellung erzwingen**: **Anfordern** erzwingt, dass überwachte Geräte das Datum und die Uhrzeit automatisch einstellen. Die Zeitzone für das Gerät wird aktualisiert, wenn das Gerät über Mobilfunkverbindungen verfügt oder WLAN mit Standortdiensten aktiviert ist.
@@ -99,24 +101,28 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
   Diese Funktion gilt für:  
   - iOS 11.3 und neuer
+  - iOS 13.0 und höher
 
 - **Das Beschränken von Classroom auf eine App und das Sperren von Geräten ohne vorherige Aufforderung zulassen**: **Aktivieren** ermöglicht Lehrkräften das Sperren von Apps oder das Sperren des Geräts mithilfe der Classroom-App, ohne den Kursteilnehmer aufzufordern. Das Sperren von Apps bedeutet, dass das Gerät nur auf die von der Lehrkraft angegebenen Apps zugreifen kann. Die Standardeinstellung **Nicht konfiguriert** verhindert, dass Lehrkräfte Anwendungen oder Geräte, die die Classroom-App verwenden, sperren, ohne die Lernenden zu fragen.
 
   Diese Funktion gilt für:  
   - iOS 11.0 und neuer
+  - iOS 13.0 und höher
 
 - **Classroom-Kursen automatisch ohne Aufforderung beitreten**: **Aktivieren** erlaubt es Lernenden, einem Kurs in der Classroom-App automatisch beizutreten, ohne die Lehrkraft zu fragen. In der Standardeinstellung **Nicht konfiguriert** wird die Lehrkraft gefragt, wenn Lernende einem Kurs in der Classroom-App beitreten möchten.
 
   Diese Funktion gilt für:  
   - iOS 11.0 und neuer
+  - iOS 13.0 und höher
 
 - **VPN-Erstellung blockieren**: **Blockieren** hindert Benutzer daran, VPN-Konfigurationseinstellungen zu erstellen. **Nicht konfiguriert** (Standard) ermöglicht Benutzern das Erstellen von VPNs auf dem Gerät.
 - **eSIM-Einstellungen ändern**: **Blockieren** hindert Benutzer am Entfernen oder Hinzufügen eines Mobilfunktarifplans zum eSIM auf dem Gerät. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, diese Einstellungen zu ändern.
 
   Diese Funktion gilt für:  
   - iOS 12.1 und neuer
+  - iOS 13.0 und höher
 
-- **Softwareupdates zurückstellen**: In der Standardeinstellung **Nicht konfiguriert** werden Softwareupdates auf dem Gerät angezeigt, sobald Apple sie veröffentlicht. Wenn beispielsweise ein iOS-Update von Apple an einem bestimmten Datum veröffentlicht wird, wird dieses Update normalerweise um oder am Veröffentlichungsdatum auf dem Gerät angezeigt.
+- **Softwareupdates zurückstellen**: In der Standardeinstellung **Nicht konfiguriert** werden Softwareupdates auf dem Gerät angezeigt, sobald Apple sie veröffentlicht. Wenn beispielsweise ein iOS/iPadOS-Update von Apple an einem bestimmten Datum veröffentlicht wird, wird dieses Update normalerweise am Veröffentlichungsdatum auf dem Gerät angezeigt.
 
   **Aktivieren** ermöglicht Ihnen, die Anzeige von Softwareupdates auf Geräten zu verzögern (0-90 Tage). Diese Einstellung steuert nicht, ob Updates installiert werden oder nicht. 
 
@@ -126,6 +132,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
     Diese Einstellung gilt für:  
     - iOS 11.3 und neuer
+    - iOS 13.0 und höher
 
 ## <a name="password"></a>Kennwort
 
@@ -159,13 +166,13 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
 - **Anzahl von fehlgeschlagenen Anmeldungen, bevor das Gerät zurückgesetzt wird:** Geben Sie die Anzahl der Anmeldungen ein, die fehlschlagen können, bevor das Gerät zurückgesetzt wird (zwischen 4 und 11).
   
-  iOS verfügt über integrierte Sicherheit, die sich auf diese Einstellung auswirken kann. iOS kann die Auslösung der Richtlinie beispielsweise je nach Anzahl der Anmeldefehler verzögern. Die wiederholte Eingabe desselben Kennworts kann beispielsweise auch als ein Versuch anerkannt werden. Das [iOS-Sicherheitshandbuch von Apple](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) (Apple-Website) ist eine gute Ressource mit ausführlichen Informationen zu Kennwörtern.
+  Die integrierte iOS/iPadOS-Sicherheit kann sich auf diese Einstellung auswirken. iOS/iPadOS kann die Auslösung der Richtlinie beispielsweise je nach Anzahl der Anmeldefehler verzögern. Die wiederholte Eingabe desselben Kennworts kann beispielsweise auch als ein Versuch anerkannt werden. Der [iOS/iPadOS-Sicherheitsleitfaden von Apple](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) (Apple-Website) ist eine gute Ressource mit ausführlichen Informationen zu Passcodes.
   
-- **Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts<sup>1</sup>:** Geben Sie an, wie lange das Gerät im Leerlauf bleiben kann, bevor der Benutzer sein Kennwort erneut eingeben muss. Wenn Sie einen längeren Zeitraum eingeben, als derzeit auf dem Gerät eingestellt ist, ignoriert das Gerät Ihre Eingabe. Wird auf Geräten ab iOS 8.0 unterstützt.
+- **Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts<sup>1</sup>:** Geben Sie an, wie lange das Gerät im Leerlauf bleiben kann, bevor der Benutzer sein Kennwort erneut eingeben muss. Wenn Sie einen längeren Zeitraum eingeben, als derzeit auf dem Gerät eingestellt ist, ignoriert das Gerät Ihre Eingabe. Unterstützt auf Geräten mit iOS 8.0+ und iPadOS 13.0+.
 
 - **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung<sup>1</sup>:** Geben Sie an, wie viele Minuten ein Gerät höchstens inaktiv sein darf, bevor es automatisch gesperrt wird.
 
-  **iOS-Optionen:**  
+  **iOS/iPadOS-Optionen:**  
 
   - **Nicht konfiguriert** (Standard): Diese Einstellung wird von Intune nicht verändert.
   - **Sofort:** Der Bildschirm wird nach 30 Sekunden Inaktivität gesperrt.
@@ -174,7 +181,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
   - **3:** Der Bildschirm wird nach drei Minuten Inaktivität gesperrt.
   - **4**: Der Bildschirm wird nach vier Minuten Inaktivität gesperrt.
   - **5:** Der Bildschirm wird nach fünf Minuten Inaktivität gesperrt.
-    
+
   **iPadOS-Optionen:**  
 
   - **Nicht konfiguriert** (Standard): Diese Einstellung wird von Intune nicht verändert.
@@ -184,7 +191,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
   - **10:** Der Bildschirm wird nach zehn Minuten Inaktivität gesperrt.
   - **15:** Der Bildschirm wird nach 15 Minuten Inaktivität gesperrt.
 
-  Wenn ein Wert nicht für iOS oder iPadOS zulässig ist, verwendet Apple den *niedrigsten* nächstgelegenen Wert. Wenn Sie beispielsweise `4` Minuten angeben, verwenden iPadOS-Geräte `2` Minuten. Wenn Sie `10` Minuten angeben, verwenden iOS-Geräte `5` Minuten. Dies ist eine Apple-Einschränkung.
+  Wenn ein Wert nicht für iOS und iPadOS zulässig ist, verwendet Apple den *niedrigsten* nächstgelegenen Wert. Wenn Sie beispielsweise `4` Minuten angeben, verwenden iPadOS-Geräte `2` Minuten. Wenn Sie `10` Minuten angeben, verwenden iOS-Geräte `5` Minuten. Dies ist eine Apple-Einschränkung.
   
   > [!NOTE]
   > Die Benutzeroberfläche von Intune für diese Einstellung trennt die von iOS und iPadOS unterstützten Werte nicht voneinander. Diese Benutzeroberfläche wird in einem zukünftigen Release möglicherweise aktualisiert.
@@ -197,6 +204,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
   Face ID gilt für:  
   - iOS 11.0 und neuer
+  - iOS 13.0 und höher
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Die Einstellungen gelten für: Automatisierte Geräteregistrierung (überwacht)
 
@@ -208,8 +216,9 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
     Face ID gilt für:  
     - iOS 11.0 und neuer
+    - iOS 13.0 und höher
 
-- **AutoAusfüllen für Kennwörter blockieren**: Wählen Sie **Blockieren** aus, um die Verwendung des Features zum automatischen Ausfüllen von Kennwörtern unter iOS zu verhindern. Das Wählen von **Blockieren** bewirkt auch Folgendes:
+- **AutoAusfüllen für Kennwörter blockieren**: Wählen Sie **Blockieren** aus, um die Verwendung des Features zum automatischen Ausfüllen von Kennwörtern unter iOS/iPadOS zu verhindern. Das Wählen von **Blockieren** bewirkt auch Folgendes:
 
   - Benutzer werden nicht aufgefordert, in Safari oder beliebigen Apps gespeicherte Kennwörter zu verwenden.
   - Automatische sichere Kennwörter sind deaktiviert, und sichere Kennwörter werden Benutzern nicht empfohlen.
@@ -222,6 +231,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
   Diese Funktion gilt für:  
   - iOS 11.0 und neuer
+  - iOS 13.0 und höher
   
 <sup>1</sup> Wenn Sie die Einstellungen **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung** und **Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts** konfigurieren, werden diese nacheinander angewendet. Wenn Sie beispielsweise den Wert für beide Einstellungen auf **5** Minuten einstellen, wird der Bildschirm automatisch nach fünf Minuten deaktiviert, und das Gerät wird nach weiteren fünf Minuten gesperrt. Wenn der Benutzer den Bildschirm jedoch manuell deaktiviert, wird die zweite Einstellung sofort angewendet. Im selben Beispiel wird das Gerät fünf Minuten später gesperrt, nachdem der Benutzer den Bildschirm deaktiviert hat.
 
@@ -247,25 +257,25 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
   > [!NOTE]
   > Wenn diese Einstellung blockiert wird, werden Tastaturen von Drittanbietern, die über den App Store installiert wurden, ebenfalls blockiert.
 
-  - **Lesen aus verwalteten Kontaktkonten für nicht verwaltete Apps zulassen**: Wenn **Zulassen** für diese Einstellung festgelegt wird, können nicht verwaltete Apps wie die integrierte iOS-App „Kontakte“ Kontaktinformationen aus verwalteten Apps wie der mobilen Outlook-App lesen und auf diese zugreifen. **Nicht konfiguriert** (Standard) verhindert, dass die integrierte App „Kontakte“ auf dem Gerät gelesen oder Duplikate entfernt werden können.  
+  - **Lesen aus verwalteten Kontaktkonten für nicht verwaltete Apps zulassen**: Wenn **Zulassen** für diese Einstellung festgelegt wird, können nicht verwaltete Apps wie die integrierte iOS/iPadOS-App „Kontakte“ Kontaktinformationen aus verwalteten Apps wie der mobilen Outlook-App lesen und auf diese zugreifen. **Nicht konfiguriert** (Standard) verhindert, dass die integrierte App „Kontakte“ auf dem Gerät gelesen oder Duplikate entfernt werden können.  
   
     Mit dieser Einstellung kann das Lesen von Kontaktinformationen zugelassen oder verhindert werden. Das Synchronisieren von Kontakten zwischen den Apps wird nicht von dieser Einstellung gesteuert.
   
     Wenn Sie diese Einstellung verwenden möchten, legen Sie die Einstellung **Anzeige von Unternehmensdokumenten in nicht verwalteten Apps**auf **Blockieren** fest.
 
-  Weitere Informationen zu diesen beiden Einstellungen und deren Auswirkung auf die Kontaktexportsynchronisierung von Outlook für iOS finden Sie unter [Tipp zur Unterstützung: Verwenden von benutzerdefinierten Intune-Profileinstellungen mit der nativen iOS-App „Kontakte“](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453).
+  Weitere Informationen zu diesen beiden Einstellungen und deren Auswirkung auf die Kontaktexportsynchronisierung von Outlook für iOS/iPadOS finden Sie unter [Tipp zur Unterstützung: Verwenden von benutzerdefinierten Intune-Profileinstellungen mit der nativen iOS/iPadOS-App „Kontakte“](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453).
 
 - **AirDrop als nicht verwaltetes Ziel behandeln:** **Anfordern** erzwingt, dass AirDrop als nicht verwaltetes Drop-Ziel behandelt wird. Es hindert verwaltete Apps daran, Daten mithilfe von AirDrop zu senden. 
 - **Anzeige nicht unternehmenseigener Dokumente in Unternehmens-Apps:** **Blockieren** verhindert, dass nicht unternehmenseigene Dokumente in Unternehmens-Apps angesehen werden können. **Nicht konfiguriert** (Standard) gestattet die Anzeige beliebiger Dokumente in verwalteten Unternehmens-Apps.
 
-  Wenn Sie **Blockieren** für diese Einstellung festlegen, wird auch die Kontaktexportsynchronisierung in Outlook für iOS verhindert. Weitere Informationen finden Sie unter [Tipp zur Unterstützung: Aktivieren der Kontaktsynchronisierung von Outlook für iOS mit iOS 12-MDM-Steuerelementen](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Enabling-Outlook-iOS-Contact-Sync-with-iOS12-MDM/ba-p/298453).
+  Wenn Sie **Blockieren** für diese Einstellung festlegen, wird auch die Kontaktexportsynchronisierung in Outlook für iOS/iPadOS verhindert. Weitere Informationen finden Sie unter [Tipp zur Unterstützung: Aktivieren der Kontaktsynchronisierung von Outlook für iOS/iPadOS mit iOS12-MDM-Steuerelementen](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Enabling-Outlook-iOS-Contact-Sync-with-iOS12-MDM/ba-p/298453).
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Die Einstellungen gelten für: Geräteregistrierung, automatisierte Geräteregistrierung (überwacht)
 
 - **iTunes Store-Kennwort für alle Käufe erforderlich:** Wenn **Erforderlich** festgelegt wird, muss der Benutzer seine Apple-ID und sein Kennwort für jeden In-App- oder iTunes-Kauf eingeben. **Nicht konfiguriert** (Standardeinstellung): Bei dieser Einstellungen wird kein Kennwort für Käufe angefordert.
 - **In-App-Einkäufe:** Wählen Sie **Blockieren** aus, um In-App-Einkäufe im Store zu verhindern. **Nicht konfiguriert** (Standard) ermöglicht Einkäufe im Store in einer ausgeführten App.
 - **Download content from iBook store flagged as 'Erotica'** (Als „Erotik“ gekennzeichneten Inhalt aus dem iBooks Store herunterladen): Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer Medien aus dem iBook Store herunterladen, die als „Erotik“ gekennzeichnet sind. **Nicht konfiguriert** (Standard) gestattet dem Benutzer das Herunterladen von Büchern aus der Kategorie „Erotik“.
-- **Schreiben von Kontakten in nicht verwaltete Kontaktkonten für verwaltete Apps zulassen**: Wenn **Zulassen** für diese Einstellung festgelegt wird, können verwaltete Apps wie die mobile Outlook-App Kontaktinformationen (einschließlich Geschäftskontakte) in der integrierten iOS-App „Kontakte“ speichern oder mit ihr synchronisieren. Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt wird, können verwaltete Apps Kontaktinformationen nicht in der integrierten iOS-App „Kontakte“ auf dem Gerät speichern oder mit dieser synchronisieren.
+- **Schreiben von Kontakten in nicht verwaltete Kontaktkonten für verwaltete Apps zulassen**: Wenn **Zulassen** für diese Einstellung festgelegt wird, können verwaltete Apps wie die mobile Outlook-App Kontaktinformationen (einschließlich Geschäftskontakte) in der integrierten iOS/iPadOS-App „Kontakte“ speichern oder mit ihr synchronisieren. Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt wird, können verwaltete Apps Kontaktinformationen nicht in der integrierten iOS/iPadOS-App „Kontakte“ auf dem Gerät speichern oder mit dieser synchronisieren.
   
   Wenn Sie diese Einstellung verwenden möchten, legen Sie die Einstellung **Anzeige von Unternehmensdokumenten in nicht verwalteten Apps**auf **Blockieren** fest.
 
@@ -275,28 +285,29 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
 - **App Store:** **Blockieren** verhindert, dass auf überwachten Geräten auf den App Store zugegriffen werden kann. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
 
-  Ab iOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
+  Ab iOS/iPadOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
 
   - **Installieren von Apps über den App Store**: Wählen Sie **Blockieren** aus, um den App Store auf dem Startbildschirm des Geräts zu blockieren. Endbenutzer können weiterhin iTunes oder das Apple Configurator-Tool zum Installieren von Apps verwenden. **Nicht konfiguriert** (Standard) lässt den App Store auf dem Startbildschirm zu.
-  - **Automatische App-Downloads**: Wählen Sie **Blockieren** aus, um den automatischen Download von Apps zu verhindern, die auf anderen Geräten erworben wurden. Updates vorhandener Apps sind nicht betroffen. **Nicht konfiguriert** (Standard) ermöglicht, Apps auf das Gerät herunterzuladen, die auf anderen iOS-Geräten gekauft wurden.
+  - **Automatische App-Downloads**: Wählen Sie **Blockieren** aus, um den automatischen Download von Apps zu verhindern, die auf anderen Geräten erworben wurden. Updates vorhandener Apps sind nicht betroffen. **Nicht konfiguriert** (Standard) ermöglicht, Apps auf das Gerät herunterzuladen, die auf anderen iOS/iPadOS-Geräten gekauft wurden.
 
-- **Anstößige iTunes-Musik, Podcasts oder Nachrichteninhalte**: Wählen Sie **Blockieren** aus, um anstößige iTunes-Musik, Podcasts oder Nachrichteninhalte zu verhindern. **Nicht konfiguriert** (Standard) ermöglicht, dass das Gerät im Store auf nicht jugendfreie Inhalte zugreift. Ab iOS 13.0 sind möglicherweise überwachte Geräte erforderlich. 
+- **Anstößige iTunes-Musik, Podcasts oder Nachrichteninhalte**: Wählen Sie **Blockieren** aus, um anstößige iTunes-Musik, Podcasts oder Nachrichteninhalte zu verhindern. **Nicht konfiguriert** (Standard) ermöglicht, dass das Gerät im Store auf nicht jugendfreie Inhalte zugreift.
 
-  Ab iOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
+  Ab iOS/iPadOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
 
 - **Hinzufügen von Game Center-Freunden**: **Blockieren** verhindert, dass Benutzer Game Center-Freunde hinzufügen können. **Nicht konfiguriert** (Standard) gestattet dem Benutzer, im Game Center Freunde hinzuzufügen.
 
-  Ab iOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
+  Ab iOS/iPadOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
 
 - **Game Center**: **Blockieren** verhindert, dass die Game Center-App verwendet werden kann. **Nicht konfiguriert** (Standard) ermöglicht die Verwendung der Game Center-App auf dem Gerät.
 - **Multiplayerspiele:** Wählen Sie **Blockieren** aus, um Multiplayerspiele zu verhindern. **Nicht konfiguriert** (Standard) ermöglicht, dass der Benutzer Multiplayerspiele auf dem Gerät spielt.
 
-  Ab iOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
+  Ab iOS/iPadOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
 
 - **Zugriff auf Netzlaufwerk in Dateien-App:** Mithilfe des SMB-Protokolls (Server Message Block) können Geräte auf Dateien und andere Ressourcen auf einem Netzwerkserver zugreifen. Wenn **Deaktivieren** für diese Einstellung festgelegt wird, wird der Zugriff auf Dateien auf einem SMB-Netzwerklaufwerk verhindert. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
 
   Diese Funktion gilt für:  
-  - iOS und iPadOS 13.0 und höher
+  - iOS 13.0 und neuer
+  - iOS 13.0 und höher
 
 ## <a name="built-in-apps"></a>Integrierte Apps
 
@@ -325,11 +336,11 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
 - **Kamera:** Wählen Sie **Blockieren** aus, um den Zugriff auf die Kamera des Geräts zu verhindern. **Nicht konfiguriert** (Standard) ermöglicht den Zugriff auf die Kamera des Geräts.
 
-  Ab iOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
+  Ab iOS/iPadOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
 
   - **FaceTime:** Mit **Blockieren** verhindern Sie den Zugriff auf die FaceTime-App. **Nicht konfiguriert** (Standard) ermöglicht den Zugriff auf die FaceTime-App des Geräts.
 
-    Ab iOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
+    Ab iOS/iPadOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
 
 - **Siri-Filter für anstößige Ausdrücke**: **Anfordern** verhindert, dass Siri anstößige Ausdrücke diktiert oder verwendet.
 
@@ -349,16 +360,19 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
   Diese Funktion gilt für:  
   - iOS 4.0 und neuer
+  - iOS 13.0 und höher
 
 - **Mein iPhone suchen:** Die Standardeinstellung **Nicht konfiguriert** erlaubt die Verwendung des App-Features „Wo ist?“ zum Abrufen des ungefähren Standorts des Geräts. Die Einstellung **Blockieren** verhindert die Verwendung dieses Features der App. 
 
   Diese Funktion gilt für:  
-  - iOS 13.0 und iPadOS 13.0 und höher
+  - iOS 13.0 und neuer
+  - iOS 13.0 und höher
 
 - **Meine Freunde suchen:** Die Standardeinstellung **Nicht konfiguriert** erlaubt die Verwendung der App „Wo ist?“ zum Suchen von Familienmitgliedern und Freunden über ein Apple-Gerät oder iCloud.com. Die Einstellung **Blockieren** verhindert die Verwendung dieses Features der App.
 
   Diese Funktion gilt für:  
-  - iOS 13.0 und iPadOS 13.0 und höher
+  - iOS 13.0 und neuer
+  - iOS 13.0 und höher
 
 - **Änderungen an den Einstellungen der App "Meine Freunde suchen"** : **Blockieren** verhindert, dass Änderungen an den Einstellungen der App „Meine Freunde suchen“ durchgeführt werden. **Nicht konfiguriert** (Standard) ermöglicht Benutzern das Ändern von Einstellungen für die App „Meine Freunde suchen“.
 
@@ -368,11 +382,11 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
 - **Safari**: **Blockieren** der Verwendung des Safari-Browsers auf dem Gerät. **Nicht konfiguriert** (Standard) ermöglicht Benutzern die Verwendung des Safari-Browsers.
 
-  Ab iOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
+  Ab iOS/iPadOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
 
 - **AutoAusfüllen in Safari**: **Blockieren** deaktiviert auf dem Gerät das AutoAusfüllen-Feature in Safari. **Nicht konfiguriert** (Standard) ermöglicht Benutzern, die AutoAusfüllen-Einstellungen im Browser zu ändern.
 
-  Ab iOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
+  Ab iOS/iPadOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
 
 ## <a name="restricted-apps"></a>Eingeschränkte Apps
 
@@ -399,7 +413,7 @@ Um diesen Listen Apps hinzuzufügen, können Sie:
 
 ## <a name="show-or-hide-apps"></a>Apps ein- oder ausblenden
 
-Gilt für Geräte mit iOS 9.3 und höher
+Gilt für Geräte, auf denen iOS 9.3+ und iPadOS 13.0+ ausgeführt wird.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Die Einstellungen gelten für: Automatisierte Geräteregistrierung (überwacht)
 
@@ -459,6 +473,7 @@ Hinweis zum Datenroaming (Tipp oder wichtiger Hinweis, um Verwirrung beim Kunden
 
   Diese Funktion gilt für:  
   - iOS 11.0 und neuer
+  - iOS 13.0 und höher
 
 - **Änderung des persönlichen Hotspots durch den Benutzer:** Wenn diese Einstellung auf **Blockieren** festgelegt wird, kann der Benutzer die Einstellung für den privaten Hotspot nicht ändern. **Nicht konfiguriert** (Standardeinstellung): Bei dieser Einstellung können Benutzer ihren privaten Hotspot aktivieren oder deaktivieren.
 
@@ -466,6 +481,7 @@ Hinweis zum Datenroaming (Tipp oder wichtiger Hinweis, um Verwirrung beim Kunden
 
   Diese Funktion gilt für:  
   - iOS 12.2 und neuer
+  - iOS 13.0 und höher
 
 - **WLANs nur unter Verwendung von Konfigurationsprofilen beitreten**: **Anfordern** zwingt das Gerät, nur WLAN-Netzwerke zu verwenden, die mithilfe von Intune-Konfigurationsprofilen eingerichtet wurden. **Nicht konfiguriert** (Standard) ermöglicht dem Gerät, andere WLAN-Netzwerke zu verwenden.
 
@@ -478,7 +494,8 @@ Hinweis zum Datenroaming (Tipp oder wichtiger Hinweis, um Verwirrung beim Kunden
   Durch die Konfiguration dieser Einstellung werden Benutzer nicht daran gehindert, ein WLAN-Netzwerk auszuwählen.
 
   Diese Funktion gilt für:  
-  - iOS und iPadOS 13.0 und höher
+  - iOS 13.0 und neuer
+  - iOS 13.0 und höher
 
 ## <a name="connected-devices"></a>Verbundene Geräte
 
@@ -495,7 +512,7 @@ Hinweis zum Datenroaming (Tipp oder wichtiger Hinweis, um Verwirrung beim Kunden
 - **AirDrop**: **Blockieren** verhindert die Verwendung von AirDrop auf dem Gerät. **Nicht konfiguriert** (Standard) ermöglicht die Verwendung von AirDrop zum Austauschen von Inhalten mit Geräten in der Nähe.
 - **Apple Watch-Kopplung:** **Blockieren** verhindert die Kopplung mit einer Apple Watch. **Nicht konfiguriert** (Standard) ermöglicht die Gerätekopplung mit einer Apple Watch.
 - **Bluetooth-Änderung**: **Blockieren** hindert Benutzer daran, die Bluetootheinstellungen auf dem Gerät zu ändern. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, diese Einstellungen zu ändern.
-- **Hostkopplung zum Steuern der Geräte, mit denen ein iOS-Gerät gekoppelt werden kann**: **Nicht konfiguriert** (Standardeinstellung) ermöglicht die Hostkopplung, damit der Administrator steuern kann, mit welchen Geräten ein iOS-Gerät gekoppelt werden darf. **Blockieren** verhindert die Hostkopplung.
+- **Hostkopplung zum Steuern der Geräte, mit denen ein iOS/iPadOS-Gerät gekoppelt werden kann**: **Nicht konfiguriert** (Standardeinstellung) ermöglicht die Hostkopplung, damit der Administrator steuern kann, mit welchen Geräten ein iOS/iPadOS-Gerät gekoppelt werden darf. **Blockieren** verhindert die Hostkopplung.
 - **AirPrint blockieren**: Wählen Sie **Blockieren** aus, um die Verwendung des AirPrint-Features auf dem Gerät zu verhindern. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, AirPrint zu verwenden.
   - **Speicherung von AirPrint-Anmeldeinformationen im Schlüsselbund blockieren**: **Blockieren** verhindert, dass Benutzername und Kennwort auf dem Gerät im Keychain-Speicher gespeichert werden. **Nicht konfiguriert** (Standard) ermöglicht das Speichern von AirPrint-Benutzername und -Kennwort in der Keychain-App.
   - **Vertrauenswürdiges TLS-Zertifikat für AirPrint erforderlich**: **Anfordern** erzwingt, dass das Gerät für die TLS-Druckkommunikation ein vertrauenswürdiges Zertifikat verwendet.
@@ -504,11 +521,13 @@ Hinweis zum Datenroaming (Tipp oder wichtiger Hinweis, um Verwirrung beim Kunden
 
   Diese Funktion gilt für:  
   - iOS 11.0 und neuer
+  - iOS 13.0 und höher
 
 - **Zugriff auf Dateien in USB-Laufwerk:** Geräte können eine Verbindung mit Dateien auf einem USB-Laufwerk herstellen und diese öffnen. Wenn **Deaktivieren** für diese Einstellung festgelegt wird, wird der Gerätezugriff auf das USB-Laufwerk in der App „Dateien“ blockiert, wenn ein USB-Gerät mit dem Gerät verbunden ist. Wenn dieses Feature deaktiviert wird, können Endbenutzer auch keine Dateien auf ein USB-Laufwerk verschieben, das mit einem iPad verbunden ist. **Nicht konfiguriert** (Standardeinstellung): Bei dieser Einstellung wird der Zugriff auf ein USB-Laufwerk über die App „Dateien“ zugelassen.
 
   Diese Funktion gilt für:  
-  - iOS und iPadOS 13.0 und höher
+  - iOS 13.0 und neuer
+  - iOS 13.0 und höher
 
 ## <a name="keyboard-and-dictionary"></a>Tastatur und Wörterbuch
 
@@ -523,7 +542,8 @@ Hinweis zum Datenroaming (Tipp oder wichtiger Hinweis, um Verwirrung beim Kunden
 - **QuickPath:** Bei der Standardeinstellung **Nicht konfiguriert** können Benutzer QuickPath verwenden, wodurch eine kontinuierliche Eingabe über die Tastatur des Geräts ermöglicht wird. Benutzer können Wörter durch Wischgesten auf den Tasten schreiben. Wenn **Blockieren** festgelegt wird, können Benutzer QuickPath nicht verwenden. 
 
   Diese Funktion gilt für:  
-  - iOS 13.0 und iPadOS 13.0 und höher
+  - iOS 13.0 und neuer
+  - iOS 13.0 und höher
 
 ## <a name="cloud-and-storage"></a>Cloud und Speicher
 
@@ -539,21 +559,21 @@ Hinweis zum Datenroaming (Tipp oder wichtiger Hinweis, um Verwirrung beim Kunden
 - **Synchronisierung von Fotostreams in iCloud:** **Nicht konfiguriert** (Standardeinstellung) ermöglicht Benutzern das Aktivieren von **Mein Fotostream** auf ihren Geräten zum Synchronisieren mit iCloud, damit Fotos auf allen Geräten der Benutzer verfügbar sind. **Blockieren** verhindert die Fotostream-Synchronisierung mit iCloud. Wenn dieses Feature blockiert wird, kann es zu Datenverlust kommen. 
 - **iCloud-Fotomediathek:** Deaktivieren Sie mit **Blockieren** die Verwendung der iCloud-Fotomediathek zum Speichern von Fotos und Videos in der Cloud. Fotos, die nicht vollständig aus der iCloud-Fotomediathek auf das Gerät heruntergeladen wurden, werden vom Gerät entfernt. **Nicht konfiguriert** (Standard) ermöglicht die Verwendung der iCloud-Fotomediathek.
 - **Streaming freigegebener Fotos:** Wählen Sie **Blockieren** aus, um die **iCloud-Fotofreigabe** auf dem Gerät zu deaktivieren. **Nicht konfiguriert** (Standard) ermöglicht das Streaming freigegebener Fotos.
-- **Handoff:** Bei der Standardeinstellung **Nicht konfiguriert** können Benutzer mit der Arbeit auf einem iOS-Gerät beginnen und ihre Arbeit auf einem anderen iOS- oder macOS-Gerät fortsetzen. **Blockieren** verhindert diese Übergabe.
+- **Handoff:** Bei der Standardeinstellung **Nicht konfiguriert** können Benutzer mit der Arbeit auf einem iOS/iPadOS-Gerät beginnen und ihre Arbeit auf einem anderen iOS/iPadOS- oder macOS-Gerät fortsetzen. **Blockieren** verhindert diese Übergabe.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Die Einstellungen gelten für: Automatisierte Geräteregistrierung (überwacht)
 
 - **In iCloud sichern:** **Nicht konfiguriert** (Standardeinstellung) ermöglicht dem Benutzer, das Gerät in iCloud zu sichern. **Blockieren** hindert den Benutzer daran, das Gerät in iCloud zu sichern.
 
-  Ab iOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
+  Ab iOS/iPadOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
 
 - **iCloud-Dokumentsynchronisierung blockieren**: **Nicht konfiguriert** (Standard) erlaubt die Dokument- und Schlüssel-/Wertsynchronisierung in Ihrem iCloud-Speicher. **Blockieren** hindert iCloud daran, Dokumente und Daten zu synchronisieren.
 
-  Ab iOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
+  Ab iOS/iPadOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
 
 - **Synchronisierung zwischen iCloud und Keychain blockieren:** Wählen Sie **Blockieren** aus, um die Synchronisierung von in der Keychain gespeicherten Anmeldeinformationen mit iCloud zu deaktivieren. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, diese Anmeldeinformationen zu synchronisieren.
 
-  Ab iOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
+  Ab iOS/iPadOS 13.0 muss es sich bei Geräten mit dieser Einstellung um überwachte Geräte handeln.
 
 ## <a name="autonomous-single-app-mode"></a>Modus der autonomen einzelnen App
 
@@ -612,14 +632,14 @@ Sie können beispielsweise für eine Schul- oder Universitätsumgebung eine App 
 - **Zoomsteuerelement:** **Zulassen** von Änderungen des Zooms durch den Benutzer. **Nicht konfiguriert** verhindert Zoomänderungen.
 
 > [!NOTE]
-> Damit Sie ein iOS-Gerät für den Kioskmodus konfigurieren können, müssen Sie das Apple Configurator-Tool oder das Apple-Programm zur Geräteregistrierung verwenden, um das Gerät in den überwachten Modus zu versetzen. Informationen zur Verwendung des Apple Configurator-Tools finden Sie im Apple-Handbuch.
-> Wenn die iOS-App, die Sie eingeben, nach der Zuweisung des Profils installiert wird, wird das Gerät erst nach einem Neustart in den Kioskmodus versetzt.
+> Damit Sie ein iOS/iPadOS-Gerät für den Kioskmodus konfigurieren können, müssen Sie das Apple Configurator-Tool oder das Apple-Programm zur Geräteregistrierung verwenden, um das Gerät in den überwachten Modus zu versetzen. Informationen zur Verwendung des Apple Configurator-Tools finden Sie im Apple-Handbuch.
+> Wenn die iOS/iPadOS-App, die Sie eingeben, nach der Zuweisung des Profils installiert wird, wird das Gerät erst nach einem Neustart in den Kioskmodus versetzt.
 
 ## <a name="domains"></a>Domänen
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Die Einstellungen gelten für: Geräteregistrierung, automatisierte Geräteregistrierung (überwacht)
 
-- **Nicht markierte E-Mail-Domänen** > **E-Mail-Domänen-URL**: Fügen Sie der Liste eine oder mehrere URLs hinzu. Wenn Endbenutzer eine E-Mail von einer anderen Domäne als den von Ihnen eingegebenen erhalten, wird die E-Mail in der iOS-Mail-App als nicht vertrauenswürdig gekennzeichnet.
+- **Nicht markierte E-Mail-Domänen** > **E-Mail-Domänen-URL**: Fügen Sie der Liste eine oder mehrere URLs hinzu. Wenn Endbenutzer eine E-Mail von einer anderen Domäne als den von Ihnen eingegebenen erhalten, wird die E-Mail in der iOS/iPadOS-Mail-App als nicht vertrauenswürdig gekennzeichnet.
 
 - **Verwaltete Webdomänen** > **Webdomänen-URL**: Fügen Sie der Liste eine oder mehrere URLs hinzu. Wenn Dokumente von den Domänen, die Sie eingeben, heruntergeladen werden, gelten sie als verwaltet. Diese Einstellung gilt nur für Dokumente, die mit dem Safari-Browser heruntergeladen werden.
 
@@ -628,11 +648,12 @@ Sie können beispielsweise für eine Schul- oder Universitätsumgebung eine App 
 - **Domänen für automatisches Ausfüllen des Safari-Kennworts** > **Domänen-URL**: Fügen Sie der Liste eine oder mehrere URLs hinzu. Benutzer können nur Webkennwörter von URLs in dieser Liste speichern. Diese Einstellung gilt nur für den Safari-Browser und Geräte im überwachten Modus. Wenn Sie keine URLs eingeben, können Kennwörter von allen Websites gespeichert werden.
 
   Diese Einstellung gilt für:  
-  - iOS 9.3. und neuer
+  - iOS 9.3 und höher
+  - iOS 13.0 und höher
 
 ## <a name="settings-that-require-supervised-mode"></a>Einstellungen, die den überwachten Modus erfordern
 
-Der überwachte Modus von iOS kann nur während der ersten Einrichtung des Geräts über das Apple-Programm zur Geräteregistrierung oder mithilfe von Apple Configurator aktiviert werden. Sobald der überwachte Modus aktiviert ist, kann Intune ein Gerät mit folgenden Funktionen konfigurieren:
+Der überwachte Modus von iOS/iPadOS kann nur während der ersten Einrichtung des Geräts über das Apple-Programm zur Geräteregistrierung oder mithilfe von Apple Configurator aktiviert werden. Sobald der überwachte Modus aktiviert ist, kann Intune ein Gerät mit folgenden Funktionen konfigurieren:
 
 - App-Sperre (Einzelanwendungsmodus) 
 - Globaler HTTP-Proxy 

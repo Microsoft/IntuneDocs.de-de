@@ -1,11 +1,11 @@
 ---
-title: iOS-Gerätefunktionseinstellungen in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Schauen Sie sich alle Einstellungen an, um iOS-Geräte für AirPrint, das Layout des Startbildschirms, App-Benachrichtigungen, freigegebene Geräte, einmaliges Anmelden und Webinhaltsfiltereinstellungen in Microsoft Intune zu konfigurieren. Verwenden Sie diese Einstellungen in einem Gerätekonfigurationsprofil, um iOS-Geräte so zu konfigurieren, dass sie diese Apple-Funktionen in Ihrem Unternehmen nutzen.
+title: iOS/iPadOS-Gerätefunktionseinstellungen in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Schauen Sie sich alle Einstellungen an, um iOS- und iPadOS-Geräte für AirPrint, das Layout des Startbildschirms, App-Benachrichtigungen, freigegebene Geräte, einmaliges Anmelden und Webinhaltsfiltereinstellungen in Microsoft Intune zu konfigurieren. Verwenden Sie diese Einstellungen in einem Gerätekonfigurationsprofil, um iOS/iPadOS-Geräte so zu konfigurieren, dass sie diese Apple-Funktionen in Ihrem Unternehmen nutzen.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,44 +16,44 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85fc8bf002a4d5d00d2163c0b75c49d11dcd9b61
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 7f19ccfb6949dbfa0de62a8b711436ab9cde8c9c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206362"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512941"
 ---
-# <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>iOS- und iPadOS-Geräteeinstellungen zur Verwendung gängiger iOS-Features in Intune
+# <a name="ios-and-ipados-device-settings-to-use-common-iosipados-features-in-intune"></a>iOS- und iPadOS-Geräteeinstellungen zur Verwendung gängiger iOS/iPadOS-Features in Intune
 
-Intune enthält einige eingebaute Einstellungen, damit iOS-Benutzer verschiedene Apple-Funktionen auf ihren Geräten nutzen können. Administratoren können beispielsweise steuern, wie iOS-Benutzer AirPrint-Drucker verwenden, Apps und Ordner zum Dock und zu den Seiten auf dem Startbildschirm hinzufügen, App-Benachrichtigungen anzeigen, Details zu Bestandskennzeichen auf dem Sperrbildschirm anzeigen, Authentifizierung für einmaliges Anmelden verwenden und Benutzer mit Zertifikaten authentifizieren.
+Intune umfasst einige integrierte Einstellungen, damit iOS/iPadOS-Benutzer verschiedene Apple-Features auf ihren Geräten nutzen können. Administratoren können beispielsweise steuern, wie iOS/iPadOS-Benutzer AirPrint-Drucker verwenden, Apps und Ordner zum Dock und zu den Seiten auf dem Startbildschirm hinzufügen, App-Benachrichtigungen anzeigen, Details zu Bestandskennzeichen auf dem Sperrbildschirm anzeigen, Authentifizierung für einmaliges Anmelden verwenden und Benutzer mit Zertifikaten authentifizieren.
 
-Nutzen Sie diese Features, um iOS-Geräte im Rahmen Ihrer MDM-Lösung (Mobile Device Management, Verwaltung mobiler Geräte) zu verwalten.
+Nutzen Sie diese Features, um iOS/iPadOS-Geräte im Rahmen Ihrer MDM-Lösung (Mobile Device Management, Verwaltung mobiler Geräte) zu verwalten.
 
-In diesem Artikel werden diese Einstellungen mit ihren Funktionsbeschreibungen aufgeführt. Weitere Informationen zu diesen Features finden [Sie unter Hinzufügen von IOS-oder macOS-Geräte Funktionseinstellungen](../device-features-configure.md).
+In diesem Artikel werden diese Einstellungen mit ihren Funktionsbeschreibungen aufgeführt. Weitere Informationen zu diesen Gerätefeatures finden Sie unter [Hinzufügen von Einstellungen für iOS/iPadOS- oder macOS-Gerätefunktionen in Intune](../device-features-configure.md).
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
-[Erstellen Sie ein iOS-Gerätekonfigurationsprofil.](../device-features-configure.md)
+[Erstellen Sie ein iOS/iPadOS-Gerätekonfigurationsprofil.](../device-features-configure.md)
 
 > [!NOTE]
-> Diese Einstellungen gelten für verschiedene Registrierungs Typen, wobei einige Einstellungen auf alle Registrierungs Optionen angewendet werden. Weitere Informationen zu den verschiedenen Registrierungs Typen finden Sie unter [IOS](../ios-enroll.md)-Registrierung.
+> Diese Einstellungen gelten für verschiedene Registrierungstypen, wobei einige Einstellungen für alle Registrierungsoptionen gelten. Weitere Informationen zu den verschiedenen Registrierungstypen finden Sie unter [iOS/iPadOS-Registrierung](../ios-enroll.md).
 
 ## <a name="airprint"></a>AirPrint
 
-### <a name="settings-apply-to-all-enrollment-types"></a>Einstellungen gelten für: alle Registrierungs Typen
+### <a name="settings-apply-to-all-enrollment-types"></a>Die Einstellungen gelten für: Alle Registrierungstypen
 
 > [!NOTE]
-> Stellen Sie sicher, dass Sie alle Drucker dem gleichen Profil hinzufügen. Apple verhindert, dass mehrere airprint-Profile auf dasselbe Gerät abzielen.
+> Stellen Sie sicher, dass Sie alle Drucker demselben Profil hinzufügen. Apple verhindert, dass mehrere AirPrint-Profile auf dasselbe Gerät verweisen.
 
 - **IP-Adresse**: Geben Sie die IPv4- oder IPv6-Adresse des Druckers ein. Wenn Sie den Hostnamen verwenden, um Drucker zu identifizieren, erhalten Sie die IP-Adresse, indem Sie den Drucker am Terminal pingen. Der Abschnitt über das Abrufen von IP-Adresse und Pfad (in diesem Artikel) enthält weitere Details.
 - **Pfad:** Der Pfad ist für Drucker in Ihrem Netzwerk in der Regel `ipp/print`. Der Abschnitt über das Abrufen von IP-Adresse und Pfad (in diesem Artikel) enthält weitere Details.
-- **Port:** Geben Sie den Lauschport des AirPrint-Ziels ein. Wenn Sie diese Eigenschaft leer lassen, verwendet AirPrint den Standardport. In iOS 11.0 und höher verfügbar.
-- **TLS**: Wählen Sie **Aktivieren**, um AirPrint-Verbindungen mit Transport Layer Security (TLS) zu sichern. In iOS 11.0 und höher verfügbar.
+- **Port:** Geben Sie den Lauschport des AirPrint-Ziels ein. Wenn Sie diese Eigenschaft leer lassen, verwendet AirPrint den Standardport. In iOS 11.0+ und iPadOS 13.0+ verfügbar.
+- **TLS**: Wählen Sie **Aktivieren**, um AirPrint-Verbindungen mit Transport Layer Security (TLS) zu sichern. In iOS 11.0+ und iPadOS 13.0+ verfügbar.
 
-Zum Hinzufügen von airprint-Servern können Sie folgende Aktionen ausführen:
+Zum Hinzufügen von AirPrint-Servern können Sie folgende Schritte ausführen:
 
-- Über **Hinzufügen** wird der AirPrint-Server der Liste hinzugefügt. Viele airprint-Server können hinzugefügt werden.
-- **Importieren** Sie eine durch Trennzeichen getrennte Datei (.csv) mit diesen Informationen. Sie können auch **exportieren** , um eine Liste der von Ihnen hinzugefügten airprint-Server zu erstellen.
+- Über **Hinzufügen** wird der AirPrint-Server der Liste hinzugefügt. Es können zahlreiche AirPrint-Server hinzugefügt werden.
+- **Importieren** Sie eine durch Trennzeichen getrennte Datei (.csv) mit diesen Informationen. Oder erstellen Sie über **Exportieren** eine Liste der von Ihnen hinzugefügten AirPrint-Server.
 
 ### <a name="get-server-ip-address-resource-path-and-port"></a>Abrufen der IP-Adresse des Servers, des Ressourcenpfads und Ports
 
@@ -74,13 +74,14 @@ Um AirPrinter-Server hinzuzufügen, benötigen Sie die IP-Adresse des Druckers, 
 
 Diese Funktion gilt für:
 
-- IOS 9,3 oder höher
+- iOS 9.3 oder höher
+- iOS 13.0 und höher
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Einstellungen gelten für: automatisierte Geräteregistrierung (überwacht)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Die Einstellungen gelten für: Automatisierte Geräteregistrierung (überwacht)
 
 ### <a name="dock"></a>Dock
 
-Mit der Einstellung **Dock** können Sie dem Dock des iOS-Bildschirms bis zu sechs Elemente oder Ordner hinzufügen. Viele Geräte unterstützen weniger Elemente. Beispielsweise unterstützen iPhone-Geräte bis zu vier Elemente. In diesem Fall werden nur die ersten vier Elemente, die Sie hinzugefügt haben, auf dem Gerät angezeigt.
+Mit den **Dock**-Einstellungen können Sie dem Dock des iOS/iPadOS-Bildschirms bis zu sechs Elemente oder Ordner hinzufügen. Viele Geräte unterstützen weniger Elemente. Beispielsweise unterstützen iPhone-Geräte bis zu vier Elemente. In diesem Fall werden nur die ersten vier Elemente, die Sie hinzugefügt haben, auf dem Gerät angezeigt.
 
 Sie können für den Gerätedock bis zu **sechs** Elemente hinzufügen (Apps und Ordner kombiniert).
 
@@ -89,8 +90,8 @@ Sie können für den Gerätedock bis zu **sechs** Elemente hinzufügen (Apps und
 
   - **App**: Wählen Sie diese Option, um Apps zum Dock auf dem Bildschirm hinzuzufügen. Eingeben:
 
-    - **App-Name:** Geben Sie einen Namen für die App ein. Dieser Name wird für Ihre Referenz im Microsoft Endpoint Manager Admin Center verwendet. Er wird *nicht* auf dem iOS-Gerät angezeigt.
-    - **App-Bündel-ID:** Geben Sie die „Bündel-ID“ der App ein. Einige Beispiele finden Sie unter [Bündel-IDs für integrierte iOS-Apps](bundle-ids-built-in-ios-apps.md).
+    - **App-Name:** Geben Sie einen Namen für die App ein. Dieser Name wird zu Ihrer Referenz im Microsoft Endpoint Manager Admin Center verwendet. Er wird *nicht* auf dem iOS/iPadOS-Gerät angezeigt.
+    - **App-Bündel-ID:** Geben Sie die „Bündel-ID“ der App ein. Einige Beispiele finden Sie unter [Bundle-IDs für integrierte iOS/iPadOS-Apps](bundle-ids-built-in-ios-apps.md).
 
   - **Ordner**: Wählen Sie diese Option, um einen Ordner zum Dock auf dem Bildschirm hinzuzufügen.
 
@@ -99,24 +100,24 @@ Sie können für den Gerätedock bis zu **sechs** Elemente hinzufügen (Apps und
     - **Ordnername:** Geben Sie den Namen des Ordners ein. Dieser Name wird Benutzern auf ihren Geräten angezeigt.
     - **Liste der Seiten**: **Fügen Sie** eine Seite hinzu, und geben Sie die folgenden Eigenschaften ein:
 
-      - **Name der Seite**: Geben Sie einen Namen für die Seite ein. Dieser Name wird für Ihre Referenz im Microsoft Endpoint Manager Admin Center verwendet. Er wird *nicht* auf dem iOS-Gerät angezeigt.
-      - **App-Name:** Geben Sie einen Namen für die App ein. Dieser Name wird für Ihre Referenz im Microsoft Endpoint Manager Admin Center verwendet. Er wird *nicht* auf dem iOS-Gerät angezeigt.
-      - **App-Bündel-ID:** Geben Sie die „Bündel-ID“ der App ein. Einige Beispiele finden Sie unter [Bündel-IDs für integrierte iOS-Apps](bundle-ids-built-in-ios-apps.md).
+      - **Name der Seite**: Geben Sie einen Namen für die Seite ein. Dieser Name wird zu Ihrer Referenz im Microsoft Endpoint Manager Admin Center verwendet. Er wird *nicht* auf dem iOS/iPadOS-Gerät angezeigt.
+      - **App-Name:** Geben Sie einen Namen für die App ein. Dieser Name wird zu Ihrer Referenz im Microsoft Endpoint Manager Admin Center verwendet. Er wird *nicht* auf dem iOS/iPadOS-Gerät angezeigt.
+      - **App-Bündel-ID:** Geben Sie die „Bündel-ID“ der App ein. Einige Beispiele finden Sie unter [Bundle-IDs für integrierte iOS/iPadOS-Apps](bundle-ids-built-in-ios-apps.md).
 
       Sie können für den Gerätedock bis zu **20** Seiten hinzufügen.
 
 > [!NOTE]
-> Wenn Sie Symbole mithilfe der Dock-Einstellungen hinzufügen, sind die Symbole auf dem Startbildschirm und den Seiten gesperrt und können nicht verschoben werden. Dies kann bei iOS und MDM-Richtlinien von Apple absichtlich der Fall sein.
+> Wenn Sie Symbole mithilfe der Dock-Einstellungen hinzufügen, sind die Symbole auf dem Startbildschirm und den Seiten gesperrt und können nicht verschoben werden. Dies kann bei iOS/iPadOS- und MDM-Richtlinien von Apple absichtlich der Fall sein.
 
 #### <a name="example"></a>Beispiel
 
 Im folgenden Beispiel zeigt der Dockbildschirm nur die Anwendungen Safari, Mail und Stocks an. Die Mail-App wird ausgewählt, um deren Eigenschaften anzuzeigen:
 
-![Beispiel für iOS-Dockeinstellungen](./media/ios-device-features-settings/FfFiUcP.png)
+![Beispieleinstellungen für das iOS/iPadOS-Dock](./media/ios-device-features-settings/FfFiUcP.png)
 
 Wenn Sie einem iPhone die Richtlinie zuweisen, sieht der Dock etwa so aus:
 
-![Beispiel für das iOS-Docklayout eines iPhones](./media/ios-device-features-settings/bAgCe8F.png)
+![Beispiellayout für das iOS/iPadOS-Dock auf dem iPhone](./media/ios-device-features-settings/bAgCe8F.png)
 
 ### <a name="pages"></a>Seiten
 
@@ -129,7 +130,7 @@ Sie können bis zu **40** Seiten zu einem Gerät hinzufügen.
 
 - **Liste der Seiten**: **Fügen Sie** eine Seite hinzu, und geben Sie die folgenden Eigenschaften ein:
 
-  - **Name der Seite**: Geben Sie einen Namen für die Seite ein. Dieser Name wird für Ihre Referenz im Microsoft Endpoint Manager Admin Center verwendet und *nicht* auf dem IOS-Gerät angezeigt.
+  - **Name der Seite**: Geben Sie einen Namen für die Seite ein. Dieser Name wird zu Ihrer Referenz im Microsoft Endpoint Manager Admin Center verwendet und *nicht* auf dem iOS/iPadOS-Gerät angezeigt.
 
   Sie können auf einem Gerät bis zu **60** Elemente hinzufügen (Apps und Ordner kombiniert).
 
@@ -139,8 +140,8 @@ Sie können bis zu **40** Seiten zu einem Gerät hinzufügen.
 
       - **App**: Verwenden Sie diese Option, um Apps zu einer Seite auf dem Bildschirm hinzuzufügen. Geben Sie außerdem Folgendes ein:
 
-        - **App-Name:** Geben Sie einen Namen für die App ein. Dieser Name wird für Ihre Referenz im Microsoft Endpoint Manager Admin Center verwendet. Er wird *nicht* auf dem iOS-Gerät angezeigt.
-        - **App-Bündel-ID:** Geben Sie die „Bündel-ID“ der App ein. Einige Beispiele finden Sie unter [Bündel-IDs für integrierte iOS-Apps](bundle-ids-built-in-ios-apps.md).
+        - **App-Name:** Geben Sie einen Namen für die App ein. Dieser Name wird zu Ihrer Referenz im Microsoft Endpoint Manager Admin Center verwendet. Er wird *nicht* auf dem iOS/iPadOS-Gerät angezeigt.
+        - **App-Bündel-ID:** Geben Sie die „Bündel-ID“ der App ein. Einige Beispiele finden Sie unter [Bundle-IDs für integrierte iOS/iPadOS-Apps](bundle-ids-built-in-ios-apps.md).
 
       - **Ordner**: Wählen Sie diese Option, um einen Ordner zum Dock auf dem Bildschirm hinzuzufügen.
 
@@ -149,31 +150,31 @@ Sie können bis zu **40** Seiten zu einem Gerät hinzufügen.
         - **Ordnername:** Geben Sie einen Namen für den Ordner ein. Dieser Name wird Benutzern auf dem Gerät angezeigt.
         - **Hinzufügen**: Fügt dem Ordner Seiten hinzu. Geben Sie auch die folgenden Eigenschaften ein:
 
-          - **Name der Seite**: Geben Sie einen Namen für die Seite ein. Dieser Name wird für Ihre Referenz im Microsoft Endpoint Manager Admin Center verwendet. Er wird *nicht* auf dem iOS-Gerät angezeigt.
-          - **App-Name:** Geben Sie einen Namen für die App ein. Dieser Name wird für Ihre Referenz im Microsoft Endpoint Manager Admin Center verwendet. Er wird *nicht* auf dem iOS-Gerät angezeigt.
-          - **App-Bündel-ID:** Geben Sie die „Bündel-ID“ der App ein. Einige Beispiele finden Sie unter [Bündel-IDs für integrierte iOS-Apps](bundle-ids-built-in-ios-apps.md).
+          - **Name der Seite**: Geben Sie einen Namen für die Seite ein. Dieser Name wird zu Ihrer Referenz im Microsoft Endpoint Manager Admin Center verwendet. Er wird *nicht* auf dem iOS/iPadOS-Gerät angezeigt.
+          - **App-Name:** Geben Sie einen Namen für die App ein. Dieser Name wird zu Ihrer Referenz im Microsoft Endpoint Manager Admin Center verwendet. Er wird *nicht* auf dem iOS/iPadOS-Gerät angezeigt.
+          - **App-Bündel-ID:** Geben Sie die „Bündel-ID“ der App ein. Einige Beispiele finden Sie unter [Bundle-IDs für integrierte iOS/iPadOS-Apps](bundle-ids-built-in-ios-apps.md).
 
 #### <a name="example"></a>Beispiel
 
 Im folgenden Beispiel wird eine neue Seite mit dem Namen **Contoso** hinzugefügt. Diese Seite zeigt die Apps „Find Friends“ und „Settings“ an. Die Settings-App wird ausgewählt, um deren Eigenschaften anzuzeigen:
 
-![Beispiel für Einstellungen des iOS-Startbildschirms](./media/ios-device-features-settings/Jc2OxyX.png)
+![Beispieleinstellungen für den iOS/iPadOS-Startbildschirm in Intune](./media/ios-device-features-settings/Jc2OxyX.png)
 
 Wenn Sie einem iPhone die Richtlinie zuweisen, sieht die Seite etwa so aus:
 
-![iOS-Gerät mit geändertem Startbildschirm](./media/ios-device-features-settings/Bd37PHa.png)
+![iOS/iPadOS-Gerät mit geändertem Startbildschirm in Intune](./media/ios-device-features-settings/Bd37PHa.png)
 
 ## <a name="app-notifications"></a>App-Benachrichtigungen
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Einstellungen gelten für: automatisierte Geräteregistrierung (überwacht)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Die Einstellungen gelten für: Automatisierte Geräteregistrierung (überwacht)
 
 - **Hinzufügen**: Hinzufügen von Benachrichtigungen für Apps:
 
-    ![Hinzufügen von App-Benachrichtigungen in einem iOS-Profil in Intune](./media/ios-device-features-settings/ios-macos-app-notifications.png)
+    ![Hinzufügen von App-Benachrichtigungen in einem iOS/iPadOS-Profil in Intune](./media/ios-device-features-settings/ios-macos-app-notifications.png)
 
-  - **App-Bündel-ID**: Geben Sie die **App-Bündel-ID** der App ein, die Sie hinzufügen möchten. Einige Beispiele finden Sie unter [Bündel-IDs für integrierte iOS-Apps](bundle-ids-built-in-ios-apps.md).
-  - **App-Name:** Geben Sie die den Namen der App ein, die Sie hinzufügen möchten. Dieser Name wird für Ihre Referenz im Microsoft Endpoint Manager Admin Center verwendet. Er wird *nicht* auf dem Gerät angezeigt.
-  - **Herausgeber**: Geben Sie den Namen des Herausgebers der App ein, die Sie hinzufügen. Dieser Name wird für Ihre Referenz im Microsoft Endpoint Manager Admin Center verwendet. Er wird *nicht* auf dem Gerät angezeigt.
+  - **App-Bündel-ID**: Geben Sie die **App-Bündel-ID** der App ein, die Sie hinzufügen möchten. Einige Beispiele finden Sie unter [Bundle-IDs für integrierte iOS/iPadOS-Apps](bundle-ids-built-in-ios-apps.md).
+  - **App-Name:** Geben Sie die den Namen der App ein, die Sie hinzufügen möchten. Dieser Name wird zu Ihrer Referenz im Microsoft Endpoint Manager Admin Center verwendet. Er wird *nicht* auf dem Gerät angezeigt.
+  - **Herausgeber**: Geben Sie den Namen des Herausgebers der App ein, die Sie hinzufügen. Dieser Name wird zu Ihrer Referenz im Microsoft Endpoint Manager Admin Center verwendet. Er wird *nicht* auf dem Gerät angezeigt.
   - **Benachrichtigungen:** **Aktivieren** oder **deaktivieren** Sie das Senden von Benachrichtigungen von der App an das Gerät.
     - **In Mitteilungszentrale anzeigen**: **Aktivieren** Sie diese Option, um zuzulassen, dass Benachrichtigungen der App in der Mitteilungszentrale angezeigt werden. **Deaktivieren** Sie diese Option, um zu verhindern, dass Benachrichtigungen in der Mitteilungszentrale angezeigt werden.
     - **In Sperrbildschirm anzeigen**: **Aktivieren** Sie diese Option, damit Benachrichtigungen der App auf dem Sperrbildschirm des Geräts angezeigt werden. **Deaktivieren** Sie diese Option, um zu verhindern, dass Benachrichtigungen im Sperrbildschirm angezeigt werden.
@@ -189,8 +190,9 @@ Wenn Sie einem iPhone die Richtlinie zuweisen, sieht die Seite etwa so aus:
 Diese Funktion gilt für:
 
 - iOS 9.3 und höher
+- iOS 13.0 und höher
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Einstellungen gelten für: automatisierte Geräteregistrierung (überwacht)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Die Einstellungen gelten für: Automatisierte Geräteregistrierung (überwacht)
 
 - **Bestandskennzeicheninformationen:** Geben Sie Informationen zum Bestandskennzeichen des Geräts ein. Geben Sie beispielsweise `Owned by Contoso Corp` oder `Serial Number: {{serialnumber}}` ein.
 
@@ -201,17 +203,17 @@ Diese Funktion gilt für:
   Gerätetoken können auch verwendet werden, um gerätespezifische Informationen zu diesen Feldern hinzuzufügen. Geben Sie zum Beispiel zur Anzeige der Seriennummer `Serial Number: {{serialnumber}}` ein. Auf dem Sperrbildschirm sieht der Text dann in etwa so aus: `Serial Number 123456789ABC`. Achten Sie darauf, bei der Eingabe von Variablen geschweifte Klammern `{{ }}` zu verwenden. [App-Konfigurationstoken](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) umfassen eine Reihe von Variablen, die Sie nutzen können. Zudem können Sie `deviceName` oder einen anderen gerätespezifischen Wert verwenden.
 
   > [!NOTE]
-  > Variablen werden nicht in der Benutzeroberfläche überprüft und beachten die Groß-/Kleinschreibung. Daher gibt es möglicherweise Profile, die mit fehlerhaften Eingaben gespeichert wurden. Wenn Sie beispielsweise `{{DeviceID}}` anstelle von `{{deviceid}}` eingeben, wird die Zeichenfolge anstelle der eindeutigen Geräte-ID angezeigt. Stellen Sie sicher, dass Sie die richtigen Informationen eingeben.
+  > Variablen werden in der Benutzeroberfläche nicht überprüft, und die Groß-/Kleinschreibung muss beachtet werden. Daher gibt es möglicherweise Profile, die mit fehlerhaften Eingaben gespeichert wurden. Wenn Sie beispielsweise `{{DeviceID}}` anstelle von `{{deviceid}}` eingeben, wird die Zeichenfolge anstelle der eindeutigen Geräte-ID angezeigt. Stellen Sie sicher, dass die eingegebenen Informationen korrekt sind.
 
 ## <a name="single-sign-on"></a>Einmaliges Anmelden
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Einstellungen gelten für: Geräteregistrierung, automatisierte Geräteregistrierung (überwacht)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Die Einstellungen gelten für: Geräteregistrierung, automatisierte Geräteregistrierung (überwacht)
 
 - **Benutzernamensattribut aus AAD**: Intune sucht für jeden Azure AD-Benutzer nach diesem Attribut. Intune füllt anschließend das entsprechende Feld (z.B. „UPN“) auf, bevor die auf dem Gerät zu installierende XML-Nutzlast generiert wird. Folgende Optionen sind verfügbar:
 
   - **Benutzerprinzipalname**: Der Benutzerprinzipalname (UPN) wird wie folgt analysiert:
 
-    ![Benutzernamensattribut](./media/ios-device-features-settings/User-name-attribute.png)
+    ![SSO-Attribut für den iOS/iPadOS-Benutzernamen in Intune](./media/ios-device-features-settings/User-name-attribute.png)
 
     Sie können den Bereich auch mit dem Text überschreiben, den Sie in das Textfeld **Bereich** eingeben.
 
@@ -229,12 +231,12 @@ Diese Funktion gilt für:
 - **Bereich**: Geben Sie den Domänenteil der URL ein. Geben Sie beispielsweise `contoso.com` ein.
 - **URL-Präfixe, die einmaliges Anmelden verwenden**: **Fügen** Sie alle URLs in Ihrer Organisation hinzu, für die Benutzer eine Authentifizierung durch einmaliges Anmelden durchführen müssen.
 
-  Wenn ein Benutzer beispielsweise mit einer dieser Websites eine Verbindung herstellt, verwendet das iOS-Gerät die Anmeldeinformationen für Single Sign-On. Der Benutzer muss keine zusätzlichen Anmeldeinformationen eingeben. Wenn Sie die mehrstufige Authentifizierung aktiviert haben, müssen Benutzer die zweite Authentifizierungsmethode anwenden.
+  Wenn ein Benutzer beispielsweise eine Verbindung mit einer dieser Websites herstellt, verwendet das iOS/iPadOS-Gerät die SSO-Anmeldeinformationen. Der Benutzer muss keine zusätzlichen Anmeldeinformationen eingeben. Wenn Sie die mehrstufige Authentifizierung aktiviert haben, müssen Benutzer die zweite Authentifizierungsmethode anwenden.
 
   > [!NOTE]
   > Bei diesen URLs muss es sich um ordnungsgemäß formatierte FQDNs handeln. Bei Apple müssen diese im Format `http://<yourURL.domain>` sein.
 
-  Die URL-Übereinstimmungsmuster müssen entweder mit `http://` oder `https://` beginnen. Es wird ein einfacher Zeichenfolgenabgleich ausgeführt, sodass das URL-Präfix `http://www.contoso.com/` nicht mit `http://www.contoso.com:80/` übereinstimmt. Ab iOS 10.0 oder höher kann ein einzelnes Platzhalterzeichen (\*) verwendet werden, um alle übereinstimmenden Werte anzugeben. Beispielsweise entspricht `http://*.contoso.com/` sowohl `http://store.contoso.com/` als auch `http://www.contoso.com`.
+  Die URL-Übereinstimmungsmuster müssen entweder mit `http://` oder `https://` beginnen. Es wird ein einfacher Zeichenfolgenabgleich ausgeführt, sodass das URL-Präfix `http://www.contoso.com/` nicht mit `http://www.contoso.com:80/` übereinstimmt. With iOS 10.0+ und iPadOS 13.0+ kann ein einzelnes Platzhalterzeichen (\*) verwendet werden, um alle übereinstimmenden Werte anzugeben. Beispielsweise entspricht `http://*.contoso.com/` sowohl `http://store.contoso.com/` als auch `http://www.contoso.com`.
 
   Die Muster `http://.com` und `https://.com` stimmen mit allen HTTP- bzw. HTTPS-URLs überein.
 
@@ -248,7 +250,7 @@ Diese Funktion gilt für:
 
 ## <a name="web-content-filter"></a>Webinhaltsfilter
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Einstellungen gelten für: automatisierte Geräteregistrierung (überwacht)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Die Einstellungen gelten für: Automatisierte Geräteregistrierung (überwacht)
 
 - **Filtertyp**: Wählen, ob bestimmte Websites zugelassen werden sollen. Folgende Optionen sind verfügbar:
 
@@ -264,7 +266,7 @@ Diese Funktion gilt für:
   - **Nur bestimmte Websites** (nur für Safari-Webbrowser): Diese URLs werden den Lesezeichen im Safari-Browser hinzugefügt. Benutzer dürfen **nur** diese Websites besuchen, der Zugriff auf andere Websites ist nicht möglich. Verwenden Sie diese Option nur, wenn Sie genau wissen, auf welche URLs Benutzer zugreifen können.
 
     - **URL**: Geben Sie die URL der Website ein, die Sie zulassen möchten. Geben Sie beispielsweise `https://www.contoso.com` ein.
-    - **Lesezeichen Pfad**: Apple hat diese Einstellung geändert. Alle Lesezeichen werden im Ordner **genehmigte Sites** angezeigt. Lesezeichen gelangen nicht in den von Ihnen eingegebenen Lesezeichen Pfad.
+    - **Pfad als Lesezeichen speichern**: Apple hat diese Einstellung geändert. Alle Lesezeichen werden dem Ordner **Genehmigte Websites** hinzugefügt. Lesezeichen werden nicht in dem von Ihnen eingegebenen Lesezeichenpfad gespeichert.
     - **Titel**: Geben Sie einen beschreibenden Titel für das Lesezeichen ein.
 
     Wenn Sie keine URLs eingeben, können Endbenutzer nur auf `microsoft.com`, `microsoft.net` und `apple.com` zugreifen. Diese URLs werden von Intune automatisch zugelassen.
@@ -276,74 +278,74 @@ Diese Funktion gilt für:
 - iOS 13.0 und höher
 - iPadOS 13.0 und höher
 
-### <a name="settings-apply-to-all-enrollment-types"></a>Einstellungen gelten für: alle Registrierungs Typen
+### <a name="settings-apply-to-all-enrollment-types"></a>Die Einstellungen gelten für: Alle Registrierungstypen
 
-- **SSO-App-Erweiterungstyp**: Wählen Sie den Typ der SSO-App-Erweiterung. Folgende Optionen sind verfügbar:
+- **Typ der SSO-App-Erweiterung**: Wählen Sie den Typ der SSO-App-Erweiterung aus. Folgende Optionen sind verfügbar:
 
-  - **Nicht konfiguriert**: App-Erweiterungen werden nicht verwendet. Um eine APP-Erweiterung zu deaktivieren, können Sie den SSO-App-Erweiterungstyp auf **nicht konfiguriert**umstellen.
-  - **Umleitung**: Verwenden Sie eine generische, anpassbare Umleitungs-App-Erweiterung, um SSO mit modernen Authentifizierungs Abläufen auszuführen. Stellen Sie sicher, dass Sie die Erweiterungs-ID für die APP-Erweiterung Ihrer Organisation kennen.
-  - Anmelde **Informationen: verwenden**Sie eine generische, anpassbare App-Erweiterung für Anmelde Informationen, um SSO mit Authentifizierungs Läufen für die Anforderungs-und Antwort Ausführung auszuführen. Stellen Sie sicher, dass Sie die Erweiterungs-ID für die APP-Erweiterung Ihrer Organisation kennen.
-  - **Kerberos**: Verwenden Sie die integrierte Kerberos-Erweiterung von Apple, die unter IOS 13,0 (und höher) und ipados 13,0 (und neuer) enthalten ist. Bei dieser Option handelt es sich um eine Kerberos-spezifische **Version der Anmelde Informationen-App-** Erweiterung.
+  - **Nicht konfiguriert**: Es werden keine App-Erweiterungen verwendet. Um eine App-Erweiterung zu deaktivieren, können Sie den Typ der SSO-App-Erweiterung in **Nicht konfiguriert** ändern.
+  - **Umleitung**: Verwenden Sie eine generische, anpassbare App-Erweiterung für die Umleitung, um einmaliges Anmelden (SSO) mit modernen Authentifizierungsflows zu unterstützen. Stellen Sie sicher, dass Sie die Erweiterungs-ID für die App-Erweiterung Ihrer Organisation kennen.
+  - **Anmeldeinformationen**: Verwenden Sie eine generische, anpassbare App-Erweiterung für Anmeldeinformationen, um einmaliges Anmelden (SSO) mit Challenge-Response-Authentifizierungsflows zu unterstützen. Stellen Sie sicher, dass Sie die Erweiterungs-ID für die App-Erweiterung Ihrer Organisation kennen.
+  - **Kerberos**: Verwenden Sie die integrierte Kerberos-Erweiterung von Apple, die in iOS 13.0+ und iPadOS 13.0+ enthalten ist. Bei dieser Option handelt es sich um eine Kerberos-spezifische Version der App-Erweiterung vom Typ **Anmeldeinformationen**.
 
   > [!TIP]
-  > Mit den Typen **Redirect** und **Credential** fügen Sie eigene Konfigurationswerte hinzu, um die Erweiterung zu durchlaufen. Wenn Sie Anmelde Informationen **verwenden, sollten**Sie die von Apple bereitgestellten integrierten Konfigurationseinstellungen im **Kerberos** -Typ verwenden.
+  > Mit den Typen **Umleitung** und **Anmeldeinformationen** fügen Sie eigene Konfigurationswerte hinzu, die über die Erweiterung übergeben werden. Erwägen Sie bei Auswahl von **Anmeldeinformationen** die Verwendung integrierter Konfigurationseinstellungen, die von Apple für den Typ **Kerberos** bereitgestellt werden.
 
-- **Erweiterungs-ID** (Redirect und Credential): Geben Sie die Bündel-ID ein, die Ihre SSO-App-Erweiterung identifiziert, z. b. `com.apple.extensiblesso`.
+- **Erweiterungs-ID** (Umleitung und Anmeldeinformationen): Geben Sie den Bundlebezeichner ein, der Ihre SSO-App-Erweiterung identifiziert, z. B. `com.apple.extensiblesso`.
 
-- **Team-ID** (Redirect und Credential): Geben Sie die Team-ID Ihrer SSO-App-Erweiterung ein. Eine Team-ID ist eine Zeichenfolge mit einer alphanumerischen Zeichenfolge (Ziffern und Buchstaben) mit 10 Zeichen, wie z. b. `ABCDE12345`. Die Team-ID ist nicht erforderlich.
+- **Team-ID** (Umleitung und Anmeldeinformationen): Geben Sie die Team-ID Ihrer SSO-App-Erweiterung ein. Eine Team-ID ist eine aus 10 Zeichen bestehende alphanumerische (Ziffern und Buchstaben) Zeichenfolge, die von Apple generiert wird, z. B. `ABCDE12345`. Die Team-ID ist nicht erforderlich.
 
-  [Suchen Sie nach Ihrer Team-ID](https://help.apple.com/developer-account/#/dev55c3c710c) (öffnet die Website von Apple), die weitere Informationen enthält.
+  Auf der [Seite zur Team-ID-Ermittlung](https://help.apple.com/developer-account/#/dev55c3c710c) (öffnet die Website von Apple) finden Sie weitere Informationen.
 
-- **Bereich** (Credential und Kerberos): Geben Sie den Namen Ihres Authentifizierungs Bereichs ein. Der Bereichs Name sollte groß geschrieben werden, z. b. `CONTOSO.COM`. In der Regel ist Ihr Bereichs Name mit dem DNS-Domänen Namen identisch, aber in Großbuchstaben.
+- **Bereich** (Anmeldeinformationen und Kerberos): Geben Sie den Namen Ihres Authentifizierungsbereichs ein. Der Bereichsname sollte groß geschrieben werden, z. B. `CONTOSO.COM`. In der Regel ist Ihr Bereichsname mit dem DNS-Domänennamen identisch, besteht aber nur aus Großbuchstaben.
 
-- **Domänen** (Anmelde Informationen und Kerberos): Geben Sie die Domänen-oder Hostnamen der Standorte ein, die über SSO authentifiziert werden können. Wenn Ihre Website beispielsweise `mysite.contoso.com`ist, ist `mysite` der Hostname, und `contoso.com` ist der Domänen Name. Wenn Benutzer eine Verbindung mit einer dieser Websites herstellen, wird die Authentifizierungs Aufforderung von der APP-Erweiterung behandelt. Diese Authentifizierung ermöglicht es Benutzern, die Gesichts-ID, die Fingereingabe-ID oder Apple Pincode/Passcode für die Anmeldung zu verwenden.
+- **Domänen** (Anmeldeinformationen und Kerberos): Geben Sie die Domänen- oder Hostnamen der Standorte ein, die über SSO authentifiziert werden können. Wenn Ihre Website beispielsweise `mysite.contoso.com` lautet, ist `mysite` der Hostname und `contoso.com` der Domänenname. Wenn Benutzer eine Verbindung mit einer dieser Websites herstellen, verarbeitet die App-Erweiterung die Authentifizierung. Diese Authentifizierung ermöglicht es Benutzern Face ID, Touch ID oder eine PIN/einen Passcode von Apple für die Anmeldung zu verwenden.
 
-  - Alle Domänen in der Single Sign-on App-Erweiterung InTune-Profile müssen eindeutig sein. Sie können eine Domäne in Anmelde-App-Erweiterungs Profilen nicht wiederholen, auch wenn Sie unterschiedliche Typen von SSO-App-Erweiterungen verwenden.
-  - Diese Domänen beachten nicht die Groß-/Kleinschreibung.
+  - Alle Domänen in den Intune-Profilen für Ihre SSO-App-Erweiterung müssen eindeutig sein. Sie können eine Domäne nicht mehrfach in einem SSO-App-Erweiterungsprofil verwenden – selbst dann nicht, wenn Sie verschiedene Arten von SSO-App-Erweiterungen verwenden.
+  - Für diese Domänen erfolgt keine Beachtung der Groß-/Kleinschreibung.
 
-- **URLs** (nur Umleitung): Geben Sie die URL-Präfixe Ihrer Identitäts Anbieter ein, in deren Namen die Umleitungs-App-Erweiterung SSO ausführt. Wenn ein Benutzer zu diesen URLs umgeleitet wird, wird die SSO-App-Erweiterung eingreifen und SSO anfordern.
+- **URLs** (nur Umleitung): Geben Sie die URL-Präfixe der Identitätsanbieter an, in deren Namen die Umleitungs-App-Erweiterung die SSO-Authentifizierung durchführt. Wenn ein Benutzer an diese URLs umgeleitet wird, greift die SSO-App-Erweiterung und fordert eine SSO-Authentifizierung an.
 
-  - Alle URLs in ihren InTune-Single Sign-on App-Erweiterungs Profilen müssen eindeutig sein. Sie können eine Domäne in einem SSO-App-Erweiterungs Profil nicht wiederholen, auch wenn Sie unterschiedliche Typen von SSO-App-Erweiterungen verwenden.
-  - Die URLs müssen mit http://oder https://beginnen.
+  - Alle URLs in Ihren Intune-SSO-Erweiterungsprofilen müssen eindeutig sein. Sie können eine Domäne nicht mehrfach in einem SSO-App-Erweiterungsprofil verwenden – selbst dann nicht, wenn Sie verschiedene Arten von SSO-App-Erweiterungen verwenden.
+  - Die URLs müssen mit „http://“ oder „https://“ beginnen.
 
-- **Zusätzliche Konfiguration** (Umleitung und Anmelde Informationen): Geben Sie zusätzliche Erweiterungs spezifische Daten ein, die an die SSO-App-Erweiterung übergeben werden sollen:
-  - **Schlüssel**: Geben Sie den Namen des Elements ein, das Sie hinzufügen möchten, z. b. `user name`.
+- **Zusätzliche Konfiguration** (Umleitung und Anmeldeinformationen): Geben Sie zusätzliche erweiterungsspezifische Daten ein, die an die SSO-App-Erweiterung übergeben werden sollen:
+  - **Schlüssel**: Geben Sie den Namen des Elements ein, das Sie hinzufügen möchten, z. B. `user name`.
   - **Typ**: Geben Sie den Typ der Daten ein. Folgende Optionen sind verfügbar:
 
     - Zeichenfolge
-    - Boolescher Wert: Geben Sie unter **Konfigurations Wert**`True` oder `False`ein.
-    - Integer: Geben Sie unter **Konfigurations Wert**eine Zahl ein.
+    - Boolescher Wert: Geben Sie in **Konfigurationswert** entweder `True` oder `False` ein.
+    - Ganzzahl: Geben Sie in **Konfigurationswert** eine Zahl ein.
     
   - **Wert**: Geben Sie die Daten ein.
 
-  - **Add**: Wählen Sie diese Option aus, um die Konfigurationsschlüssel hinzuzufügen
+  - **Hinzufügen**: Wählen Sie diese Option aus, um Ihre Konfigurationsschlüssel hinzuzufügen.
 
-- **Verwendung von Keychain** (nur Kerberos): Wählen Sie **Block** aus, um zu verhindern, dass Kenn Wörter in der Keychain gespeichert und gespeichert werden. **Nicht konfiguriert** (Standardeinstellung): ermöglicht das Speichern und Speichern von Kenn Wörtern in der Keychain.
-- **Gesichts-ID, Fingereingabe-ID oder Kennung** (nur Kerberos) **: erzwingen** Sie, dass Benutzer ihre Gesichts-ID, Fingereingabe-ID oder Apple-Kennung eingeben, um sich bei den hinzugefügten Domänen anzumelden. **Nicht konfiguriert** (Standardeinstellung) erfordert nicht, dass Benutzer Biometrie oder Kennung für die Anmeldung verwenden.
-- **Standardbereich** (nur Kerberos): Wählen Sie **aktivieren** aus, um den von Ihnen eingegebenen **Bereichs** Wert als Standardbereich festzulegen. **Nicht konfiguriert** (Standard) legt keinen Standardbereich fest.
+- **Verwendung des Schlüsselbunds** (nur Kerberos): Wählen Sie **Blockieren** aus, um zu verhindern, dass Kennwörter im Schlüsselbund gespeichert werden. **Nicht konfiguriert** (Standardeinstellung): Ermöglicht das Speichern von Kennwörtern im Schlüsselbund.
+- **Face ID, Touch ID oder Passcode** (nur Kerberos): Durch Festlegung auf **Erzwingen** müssen die Benutzer sich über Face ID, Touch ID oder mit ihrem Apple-Passcode bei den von Ihnen hinzugefügten Domänen anmelden. **Nicht konfiguriert** (Standardeinstellung): Bei dieser Einstellung müssen sich Benutzer nicht mit biometrischen Daten oder einem Passcode anmelden.
+- **Standardbereich** (nur Kerberos): Wählen Sie **Aktivieren** aus, um den von Ihnen eingegebenen **Bereich** als Standardbereich festzulegen. **Nicht konfiguriert** (Standardeinstellung): Es ist kein Standardbereich festgelegt.
 
   > [!TIP]
   > - **Aktivieren** Sie diese Einstellung, wenn Sie mehrere Kerberos-SSO-App-Erweiterungen in Ihrer Organisation konfigurieren.
-  > - **Aktivieren** Sie diese Einstellung, wenn Sie mehrere Bereiche verwenden. Der von Ihnen eingegebene **Bereichs** Wert wird als Standardbereich festgelegt.
-  > - Wenn Sie nur über einen Bereich verfügen, lassen Sie ihn **nicht konfiguriert** (Standard).
+  > - **Aktivieren** Sie diese Einstellung, wenn Sie mehrere Bereiche verwenden. Der von Ihnen eingegebene **Bereich** wird als Standardbereich festgelegt.
+  > - Wenn Sie nur über einen Bereich verfügen, behalten Sie die Einstellung **Nicht konfiguriert** (Standardeinstellung) bei.
 
-- **Prinzipal Name** (nur Kerberos): Geben Sie den Benutzernamen des Kerberos-Prinzipals ein. Sie müssen den Bereichs Namen nicht einschließen. In `user@contoso.com`ist `user` z. b. der Prinzipal Name, und `contoso.com` ist der Bereichs Name.
+- **Prinzipalname** (nur Kerberos): Geben Sie den Benutzernamen des Kerberos-Prinzipals ein. Sie müssen den Bereichsnamen nicht einschließen. In `user@contoso.com` lautet der Prinzipalname beispielsweise `user`, und `contoso.com` ist der Bereichsname.
 
   > [!TIP]
-  > - Sie können auch Variablen im Prinzipal Namen verwenden, indem Sie die geschweiften Klammern `{{ }}`eingeben. Geben Sie z. b. `Username: {{username}}`ein, um den Benutzernamen anzuzeigen. 
-  > - Seien Sie jedoch mit der Variablen Ersetzung vorsichtig, da Variablen nicht in der Benutzeroberfläche überprüft werden und die Groß-und Kleinschreibung beachtet wird. Stellen Sie sicher, dass Sie die richtigen Informationen eingeben.
+  > - Sie können auch Variablen im Prinzipalnamen verwenden, indem Sie geschweifte Klammern `{{ }}` eingeben. Geben Sie z. B. `Username: {{username}}` ein, um den Benutzernamen anzuzeigen. 
+  > - Verwenden Sie die Variablenersetzung jedoch mit Bedacht, da die Variablen in der Benutzeroberfläche nicht validiert werden und die Groß- und Kleinschreibung berücksichtigt wird. Stellen Sie sicher, dass die eingegebenen Informationen korrekt sind.
 
-- **Active Directory Standortcode** (nur Kerberos): Geben Sie den Namen des Active Directory Standorts ein, der von der Kerberos-Erweiterung verwendet werden soll. Möglicherweise müssen Sie diesen Wert nicht ändern, da die Kerberos-Erweiterung möglicherweise automatisch den Active Directory Standort Codes findet.
-- **Cache Name** (nur Kerberos): Geben Sie den Namen des generischen Sicherheits Diensts (GSS) des Kerberos-Caches ein. Dieser Wert muss höchstwahrscheinlich nicht festgelegt werden.
-- **App-Bündel-IDs** (nur Kerberos): **fügen Sie** die APP Bundle Bezeichner hinzu, die Single Sign-on auf Ihren Geräten verwenden sollen. Diesen apps wird Zugriff auf das Kerberos-Ticket zum Erteilen von Tickets, das Authentifizierungs Ticket und das Authentifizieren von Benutzern für Dienste gewährt, auf die Sie Zugriff haben.
-- **Domänen Bereichs Zuordnung** (nur Kerberos): **fügen Sie** die Domänen-DNS-Suffixe hinzu, die dem Bereich zugeordnet werden sollen. Verwenden Sie diese Einstellung, wenn die DNS-Namen der Hosts nicht mit dem Bereichs Namen identisch sind. Wahrscheinlich ist es nicht erforderlich, diese benutzerdefinierte Domäne-zu-Bereich-Zuordnung zu erstellen.
-- **PKINIT-Zertifikat** (nur Kerberos): **Wählen Sie** die Kryptografie mit öffentlichem Schlüssel für die erste Authentifizierung (PKINIT) aus, die für die Kerberos-Authentifizierung verwendet werden kann. Sie können aus [PKCS](../protect/certficates-pfx-configure.md) -oder [SCEP](../protect/certificates-scep-configure.md) -Zertifikaten auswählen, die Sie in InTune hinzugefügt haben. Weitere Informationen zu Zertifikaten finden Sie [unter Verwenden von Zertifikaten für die Authentifizierung in Microsoft InTune](../protect/certificates-configure.md).
+- **Active Directory-Standortcode** (nur Kerberos): Geben Sie den Namen des Active Directory-Standorts ein, der von der Kerberos-Erweiterung verwendet werden soll. Möglicherweise müssen Sie diesen Wert nicht ändern, weil die Kerberos-Erweiterung den Active Directory-Standortcode ggf. automatisch ermittelt.
+- **Cachename** (nur Kerberos): Geben Sie den GSS-Namen (Generic Security Services) für den Kerberos-Cache ein. Dieser Wert muss höchstwahrscheinlich nicht festgelegt werden.
+- **App-Bundle-IDs** (nur Kerberos): Mit **Hinzufügen** werden die App-Bundle-IDs hinzugefügt, für die auf Ihren Geräten SSO verwendet werden soll. Diese Apps erhalten Zugriff auf das Kerberos-TGT (Ticket Granting Ticket) sowie das Authentifizierungsticket und authentifizieren Benutzer für Dienste, für die sie autorisiert sind.
+- **Domänenbereichszuordnung** (nur Kerberos): Mit **Hinzufügen** werden die Domänen-DNS-Suffixe hinzugefügt, die Ihrem Bereich zugeordnet werden sollen. Verwenden Sie diese Einstellung, wenn die DNS-Namen der Hosts nicht mit dem Bereichsnamen identisch sind. Wahrscheinlich ist es nicht erforderlich, diese Zuordnung zwischen benutzerdefinierter Domäne und Bereich zu erstellen.
+- **PKINIT-Zertifikat** (nur Kerberos): Durch **Auswählen** legen Sie das PKINIT-Zertifikat (Public Key Cryptography for Initial Authentication) fest, das für die Kerberos-Authentifizierung verwendet werden kann. Sie können aus [PKCS](../protect/certficates-pfx-configure.md)- oder [SCEP](../protect/certificates-scep-configure.md)-Zertifikaten auswählen, die Sie in Intune hinzugefügt haben. Weitere Informationen zu Zertifikaten finden Sie unter [Verwenden von Zertifikaten zur Authentifizierung in Microsoft Intune](../protect/certificates-configure.md).
 
 ## <a name="wallpaper"></a>Hintergrundbild
 
 Möglicherweise kommt es zu unerwartetem Verhalten, wenn ein Profil ohne Bild einem Gerät mit einem Bild zugewiesen wird. Angenommen, Sie erstellen z.B. ein Profil ohne Bild. Dieses Profil wird dann Geräten zugewiesen, für die bereits Bilder vorhanden sind. In diesem Szenario ändert sich das Bild möglicherweise in den Gerätestandard, oder es wird weiter das ursprüngliche Bild auf dem Gerät verwendet. Dieses Verhalten wird von der MDM-Plattform von Apple kontrolliert und eingeschränkt.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Einstellungen gelten für: automatisierte Geräteregistrierung (überwacht)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Die Einstellungen gelten für: Automatisierte Geräteregistrierung (überwacht)
 
 - **Position für die Anzeige des Hintergrundbilds**: Wählen Sie die Position auf dem Gerät, an dem das Bild angezeigt werden soll. Folgende Optionen sind verfügbar:
   - **Nicht konfiguriert:** Es ist kein benutzerdefiniertes Bild auf dem Gerät hinzugefügt. Das Gerät nutzt den Standard des Betriebssystems.
@@ -353,7 +355,7 @@ Möglicherweise kommt es zu unerwartetem Verhalten, wenn ein Profil ohne Bild ei
 - **Hintergrundbild**: Laden Sie ein vorhandenes PNG-, JPG- oder JPEG-Bild hoch, das Sie verwenden möchten. Achten Sie darauf, dass die Dateigröße kleiner als 750 KB ist. Sie können ein hinzugefügtes Bild auch **entfernen**.
 
 > [!TIP]
-> Um verschiedene Bilder auf dem Sperrbildschirm und dem Startbildschirm anzuzeigen, erstellen Sie ein Profil mit dem Sperrbildschirmbild. Erstellen Sie ein anderes Profil mit dem Startbildschirmbild. Fügen Sie beide Profile zu Ihren iOS-Benutzer- oder Gerätegruppen hinzu.
+> Um verschiedene Bilder auf dem Sperrbildschirm und dem Startbildschirm anzuzeigen, erstellen Sie ein Profil mit dem Sperrbildschirmbild. Erstellen Sie ein anderes Profil mit dem Startbildschirmbild. Fügen Sie beide Profile zu Ihren iOS/iPadOS-Benutzer- oder Gerätegruppen hinzu.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
