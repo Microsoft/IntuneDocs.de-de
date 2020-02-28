@@ -13,6 +13,8 @@
       href: quickstart-create-assign-app-policy.md
 - name: Tutorials
   items:
+    - name: Schützen von E-Mail auf verwalteten Geräten
+      href: ../protect/tutorial-protect-email-on-enrolled-devices.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
     - name: Schützen von E-Mails auf nicht verwalteten Geräten
       href: ../protect/tutorial-protect-email-on-unmanaged-devices.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
     - name: Konfigurieren von Slack zur Verwendung von Intune
