@@ -7,8 +7,8 @@
         },
         {
             "source_path": "intune/apps/app-configuration-policies-outlook-smime.md",
-            "redirect_url": "/intune/fundamentals/whats-new#smime-support-with-microsoft-outlook-for-ios",
-            "redirect_document_id": true
+            "redirect_url": "https://docs.microsoft.com/intune/fundamentals/whats-new#smime-support-with-microsoft-outlook-for-ios",
+            "redirect_document_id": false
         },
         {
             "source_path": "intune-user-help/what-happens-if-you-reset-your-device-using-the-company-portal-ios.md",
