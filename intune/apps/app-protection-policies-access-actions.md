@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64faf797c69302e2a5cdbdde090330ab99fcc2e4
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 0425b6a3f2c82f6ad2119286c8697f0eb0fc2f82
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437884"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513903"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Selektives Löschen von Daten in Intune über durch App-Schutzrichtlinien festgelegte bedingte Startaktionen
 
@@ -122,5 +122,5 @@ Sobald eine Einstellung vollständig konfiguriert wurde, wird die Zeile in einer
 
 Weitere Informationen zu den App-Schutzrichtlinien von Intune finden Sie unter:
 - [Erstellen und Zuweisen von App-Schutzrichtlinien](app-protection-policies.md)
-- [Einstellungen für App-Schutzrichtlinien für iOS](app-protection-policy-settings-ios.md)
+- [Einstellungen für App-Schutzrichtlinien für iOS/iPadOS](app-protection-policy-settings-ios.md)
 - [Einstellungen für App-Schutzrichtlinien in Microsoft Intune](app-protection-policy-settings-android.md) 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 099d68568cd920c9ae3f328b4e9fba95424e46fd
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: dc262dc67c967ffd2c6525c4370df8e9fa0e4dff
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755271"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511836"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Hinzufügen von Apps zu Microsoft Intune 
 
@@ -52,7 +52,7 @@ Die folgende Tabelle führt die verschiedenen App-Typen auf und erläutert, wie 
 | --- | --- | --- |
 | Android Store-Apps  | Store-App  | Wählen Sie **Android** als **App-Typ** aus, und geben Sie die Google Play Store-URL für die App ein. |
 | Android Enterprise-Apps  | Store-App  | Wählen Sie **Android** als **App-Typ** aus, und geben Sie die URL für die App im verwalteten Google Play Store ein. <sup>1</sup> |
-| iOS Store-Apps  | Store-App  | Wählen Sie **iOS** als **App-Typ** aus, suchen Sie nach der App, und wählen Sie die App in Intune aus. |
+| iOS/iPadOS Store-Apps  | Store-App  | Wählen Sie **iOS** als **App-Typ** aus, suchen Sie nach der App, und wählen Sie die App in Intune aus. |
 | Windows Phone 8.1 Store-Apps  | Store-App  | Wählen Sie **Windows Phone 8.1** als **App-Typ** aus, und geben Sie die Microsoft Store-URL für die App ein. |
 | Microsoft Store-Apps  | Store-App  | Wählen Sie **Windows** als **App-Typ** aus, und geben Sie die Microsoft Store-URL für die App ein. |
 | Verwaltete Google Play-Apps | Store-App  | Wählen Sie **Verwaltetes Google Play** als **App-Typ** aus, suchen Sie nach der App, und wählen Sie die App in Intune aus. |
@@ -61,10 +61,10 @@ Die folgende Tabelle führt die verschiedenen App-Typen auf und erläutert, wie 
 | Microsoft Edge, Version 77 und höher, für Windows 10 | Store-App | Wählen Sie **Windows 10** unter **Microsoft Edge, Version 77 und höher** als **App-Typ** aus. |
 | Microsoft Edge, Version 77 und höher, für macOS | Store-App | Wählen Sie **macOS** unter **Microsoft Edge, Version 77 und höher** als **App-Typ** aus. |
 | Branchenspezifische Android-Apps | LOB-App | Wählen Sie **Branchenspezifische App** als **App-Typ** aus, wählen Sie **App-Paketdatei** aus, und geben Sie dann eine Android-Installationsdatei mit der Erweiterung **APK** an.  |
-| Branchenspezifische iOS-Apps | LOB-App | Wählen Sie **Branchenspezifische App** als **App-Typ** aus, wählen Sie **App-Paketdatei** aus, und geben Sie dann eine iOS-Installationsdatei mit der Erweiterung **IPA** an.  |
+| Branchenspezifische iOS/iPadOS-Apps | LOB-App | Wählen Sie **Branchenspezifische App** als **App-Typ** aus, klicken Sie auf **App-Paketdatei**, und geben Sie dann eine iOS/iPadOS-Installationsdatei mit der Erweiterung **IPA** ein.  |
 | Branchenspezifische Windows Phone-Apps | LOB-App | Wählen Sie **Branchenspezifische App** als **App-Typ** aus, wählen Sie die **App-Paketdatei** aus, und geben Sie dann eine Windows Phone-Installationsdatei mit der Erweiterung **XAP** an.  |
 | Branchenspezifische Windows-Apps | LOB-App | Wählen Sie **Branchenspezifische App** als App-Typ und die **App-Paketdatei** aus, und geben Sie dann eine Windows-Installationsdatei mit der Erweiterung **.msi**, **.appx**, **.appxbundle**, **.msix** oder **.msixbundle** an. |
-| Integrierte iOS-App  | Integrierte App | Wählen Sie **Integrierte App** als **App-Typ** aus, und wählen Sie dann aus der Liste der bereitgestellten Apps die gewünschte integrierte App aus.  |
+| Integrierte iOS-/iPadOS-App  | Integrierte App | Wählen Sie **Integrierte App** als **App-Typ** aus, und wählen Sie dann aus der Liste der bereitgestellten Apps die gewünschte integrierte App aus.  |
 | Integrierte Android-App  | Integrierte App | Wählen Sie **Integrierte App** als **App-Typ** aus, und wählen Sie dann aus der Liste der bereitgestellten Apps die gewünschte integrierte App aus.  |
 | Web-Apps  | Web-App  | Wählen Sie **Weblink** als **App-Typ** aus, und geben Sie eine gültige URL ein, die auf die Web-App verweist.  |
 | Android Enterprise-System-Apps  | Store-App  | Wählen Sie **Android Enterprise-System-App** als **App-Typ** aus, und geben Sie dann den Namen der App, den Herausgeber und die Paketdatei ein.  |
@@ -77,7 +77,7 @@ Die folgende Tabelle führt die verschiedenen App-Typen auf und erläutert, wie 
 Sie können eine App in Microsoft Intune hinzufügen, indem Sie **Apps** > **Alle Apps** > **Hinzufügen** auswählen. Der Bereich **App-Typ auswählen** wird geöffnet, in dem Sie den **App-Typ** auswählen können. 
 
 >[!TIP]
-> Eine branchenspezifische App wird über eine App-Installationsdatei hinzugefügt. Um beispielweise eine branchenspezifische iOS-App zu installieren, fügen Sie die Anwendung hinzu, indem Sie im Bereich **App-Typ auswählen** die Option **Branchenspezifische App** als **App-Typ** auswählen. Wählen Sie dann die App-Paketdatei (mit der Erweiterung „IPA“) aus. Solche Apps werden in der Regel intern geschrieben.
+> Eine branchenspezifische App wird über eine App-Installationsdatei hinzugefügt. Fügen Sie die Anwendung hinzu, indem Sie im Bereich **App-Typ auswählen** die Option **Branchenspezifische App** als **App-Typ** auswählen, um beispielweise eine branchenspezifische iOS/iPadOS-App zu installieren. Wählen Sie dann die App-Paketdatei (mit der Erweiterung „IPA“) aus. Solche Apps werden in der Regel intern geschrieben.
 
 ## <a name="assess-app-requirements"></a>Bewerten der App-Anforderungen
 Sie müssen als IT-Administrator nicht nur festlegen, welche Apps Ihre Gruppe verwenden soll, sondern auch die Funktionen bestimmen, die jede Gruppe bzw. Untergruppe benötigt. Für jede App bestimmen Sie die benötigten Plattformen und legen fest, welche Gruppen von Benutzern die App verwenden müssen, welche Konfigurationsrichtlinien für diese Gruppen gelten und welche Schutzrichtlinien angewendet werden sollen.  
@@ -109,8 +109,8 @@ Verwenden Sie das [Handbuch zur Bereitstellungs-, Entwurfs- und Implementierungs
 ### <a name="determine-the-type-of-app-for-your-solution"></a>Bestimmen des App-Typs für Ihre Lösung
 
 Sie können unter folgenden App-Typen wählen:
-- **Apps aus dem Store**: Apps, die in die Stores von Microsoft, iOS oder Android hochgeladen wurden, sind Store-Apps. Der Anbieter der Store-App verwaltet die Updates für die App und stellt sie bereit. Wählen Sie die App aus der Store-Liste aus, und machen Sie sie mithilfe von Intune für alle Benutzer verfügbar.
-- **Intern erstellte (branchenspezifische) Apps**: Intern erstelle Apps gelten als branchenspezifische Apps. Die Funktionen dieses App-Typs wurden für eine der von Intune unterstützten Plattformen wie Windows, iOS, macOS oder Android erstellt. Ihre Organisation erstellt Updates als unabhängige Dateien und stellt sie für Sie bereit. Sie fügen dann mithilfe von Intune die Updates für die App-Benutzer hinzu und stellen sie bereit.
+- **Apps aus dem Store**: Apps, die in die Stores von Microsoft, iOS/iPadOS oder Android hochgeladen wurden, sind Store-Apps. Der Anbieter der Store-App verwaltet die Updates für die App und stellt sie bereit. Wählen Sie die App aus der Store-Liste aus, und machen Sie sie mithilfe von Intune für alle Benutzer verfügbar.
+- **Intern erstellte (branchenspezifische) Apps**: Intern erstelle Apps gelten als branchenspezifische Apps. Die Funktionen dieses App-Typs wurden für eine der von Intune unterstützten Plattformen wie Windows, iOS/iPadOS, macOS oder Android erstellt. Ihre Organisation erstellt Updates als unabhängige Dateien und stellt sie für Sie bereit. Sie fügen dann mithilfe von Intune die Updates für die App-Benutzer hinzu und stellen sie bereit.
 - **Apps im Web**: Web-Apps sind Client-Server-Anwendungen. Der Server stellt die Web-App bereit, welche die Benutzeroberfläche, den Inhalt und die Funktionen umfasst. Webhostingplattformen bieten häufig Vorteile unter anderen in den Bereichen Sicherheit und Lastenausgleich. Der App-Typ wird separat im Web verwaltet. Verwenden Sie Intune, um auf diesen App-Typ zu verweisen. Sie legen ebenfalls fest, welche Benutzergruppen auf diese App zugreifen können. Beachten Sie, dass Android keine Web-Apps unterstützt.
 
 Wenn Sie festlegen, welche Apps Ihre Organisation benötigt, überprüfen Sie, wie die Apps mit Clouddiensten zusammenarbeiten, auf welche Daten die App zugreift, ob die Apps für BYOD-Benutzer verfügbar sind und ob die Apps Internetzugriff erfordern.
@@ -128,7 +128,7 @@ Mit Intune verwaltete Apps können außerdem ohne Registrierung den App-Schutz a
 
 ### <a name="understanding-licensed-apps"></a>Grundlegendes zu lizenzierten Apps
 Sie sollten nicht nur zwischen Web-Apps, Store-Apps und branchenspezifischen Apps unterscheiden können, sondern auch zwischen Apps, die über ein Volumenlizenzprogramm (Volume Purchase Program) bezogen wurden, und lizenzierten Apps, wie z.B. folgende: 
-- **Apple Volume Purchasing Program für Unternehmen (iOS)** : Im iOS-App-Store können Sie mehrere Lizenzen für eine App erwerben, die in Ihrem Unternehmen ausgeführt werden soll. Durch den Erwerb mehrerer Kopien können Sie Apps in Ihrem Unternehmen effizient verwalten. Weitere Informationen finden Sie unter [Verwalten von iOS-Apps, die per Volumenlizenz erworben wurden](vpp-apps-ios.md).
+- **Apple Volume Purchasing Program für Unternehmen (iOS)** : Im iOS/iPadOS-App-Store können Sie mehrere Lizenzen für eine App erwerben, die in Ihrem Unternehmen ausgeführt werden soll. Durch den Erwerb mehrerer Kopien können Sie Apps in Ihrem Unternehmen effizient verwalten. Weitere Informationen finden Sie unter [Verwalten von iOS- und macOS-Apps, die über das Apple Volume Purchase Program mit Microsoft Intune erworben wurden](vpp-apps-ios.md).
 - **Android-Arbeitsprofil**: Das Zuweisen von Apps zu Android-Arbeitsprofilgeräten unterscheidet sich von deren Zuweisung zu „normalen“ Android-Geräten. Alle Apps, die für Android-Arbeitsprofile installiert werden, stammen aus dem verwalteten Google Play Store. Verwenden Sie zum Durchsuchen Intune, suchen Sie nach der gewünschten App, und genehmigen Sie sie. Die App wird dann im Knoten **Lizenzierte Apps** des Azure-Portals angezeigt, und Sie können die Zuweisung der App wie bei jeder anderen App verwalten.
 - **Microsoft Store für Unternehmen (Windows 10)** : Im Microsoft Store für Unternehmen können Sie Apps für Ihre Organisation suchen und einzeln oder mit Volumenlizenz erwerben. Indem Sie den Store mit Microsoft Intune verbinden, können Sie per Volumenlizenz erworbene Apps über das Azure-Portal verwalten. Weitere Informationen finden Sie unter [Verwalten von Apps aus dem Microsoft Store für Unternehmen](windows-store-for-business.md).
 
@@ -139,7 +139,7 @@ Sie sollten nicht nur zwischen Web-Apps, Store-Apps und branchenspezifischen App
 Bevor Sie damit beginnen, Apps hinzuzufügen und zuzuweisen, beachten Sie die folgenden Punkte:
 
 - Wenn Sie eine App aus einem Store hinzufügen und zuweisen, müssen Ihre Benutzer über ein Konto bei diesem Store verfügen, um die App installieren zu können.
-- Einige von Ihnen zugewiesene Apps oder Elemente sind möglicherweise von integrierten iOS-Apps abhängig. Wenn Sie z.B. ein Buch aus dem iOS-Store zuweisen, muss die iBooks-App auf dem Gerät vorhanden sein. Wenn Sie die integrierte iBooks-App entfernt haben, können Sie Intune nicht dazu verwenden, sie wieder zu aktivieren.
+- Einige von Ihnen zugewiesene Apps oder Elemente sind möglicherweise von integrierten iOS/iPadOS-Apps abhängig. Wenn Sie z. B. ein Buch aus dem iOS/iPadOS-Store zuweisen, muss die iBooks-App auf dem Gerät vorhanden sein. Wenn Sie die integrierte iBooks-App entfernt haben, können Sie Intune nicht dazu verwenden, sie wieder zu aktivieren.
 
 > [!IMPORTANT]
 > Wenn Sie den Namen der App über das Intune Azure-Portal ändern, nachdem Sie sie bereitgestellt und installiert haben, kann die App mit Befehlen nicht mehr erreicht werden.
@@ -153,7 +153,7 @@ Anforderungen für Cloudspeicherplatz:
 - Die maximale Dateigröße für hochgeladene Dateien beträgt 8 GB.
 
   > [!NOTE]
-  > Branchenspezifische Windows-Apps (LOB), einschließlich Win32, Windows Universal-AppX, Windows Universal-AppX-Paket, Windows Universal-MSIX und Windows Universal-MSIX-Paket haben eine Größenbeschränkung von 8 GB pro App. Für alle anderen branchenspezifischen Apps, einschließlich branchenspezifische iOS-Apps, gilt das Größenlimit von maximal 2 GB pro App.
+  > Branchenspezifische Windows-Apps (LOB), einschließlich Win32, Windows Universal-AppX, Windows Universal-AppX-Paket, Windows Universal-MSIX und Windows Universal-MSIX-Paket haben eine Größenbeschränkung von 8 GB pro App. Für alle anderen branchenspezifischen Apps, einschließlich branchenspezifische iOS/iPadOS-Apps, gilt das Größenlimit von maximal 2 GB pro App.
 
 ## <a name="create-and-edit-categories-for-apps"></a>Erstellen und Bearbeiten von Kategorien für Apps
 

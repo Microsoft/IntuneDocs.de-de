@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2020
+ms.date: 02/11/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6044ff5f8d169e36a11f9289f1772c809723b7fc
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: af3c4e05a47e015384716588a28a6074898e2f6a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77438003"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513961"
 ---
 # <a name="add-app-configuration-policies-for-managed-iosipados-devices"></a>Hinzufügen von App-Konfigurationsrichtlinien für verwaltete iOS-/iPadOS-Geräte
 
@@ -43,7 +43,7 @@ Nachdem Sie die eingeschlossenen Gruppen für Ihre Anwendungskonfigurationsricht
 > [!TIP]
 > Dieser Richtlinientyp ist zurzeit nur für Geräte unter iOS/iPadOS 8.0 und höher verfügbar. Er unterstützt die folgenden App-Installationstypen:
 >
-> - **Verwaltete iOS-App aus dem App Store**
+> - **Verwaltete iOS/iPadOS-App aus dem App Store**
 > - **App-Paket für iOS**
 >
 > Weitere Informationen zu Installationstypen von Apps finden Sie unter [Hinzufügen von Apps zu Microsoft Intune](apps-add.md). Weitere Informationen zum Einbinden der App-Konfiguration in das IPA-App-Paket für verwaltete Geräte finden Sie unter „Konfiguration einer verwalteten App“ in der [Entwicklerdokumentation von iOS](https://developer.apple.com/library/archive/samplecode/sc2279/Introduction/Intro.html).
@@ -108,9 +108,10 @@ Die Zeichen \{\{ und \}\} werden nur von Tokentypen verwendet und dürfen nicht 
 
 Verwenden Sie für iOS-/iPadOS-Geräte die folgenden Schlüssel-Wert-Paare:
 
-| **Key** | IntuneMAMAllowedAccountsOnly |
-|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Werte** | <ul><li>**Aktiviert**: Das einzige zulässige Konto ist das verwaltete Benutzerkonto, das von dem Schlüssel [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) definiert wird.</li><li>**Deaktiviert** (oder jeder andere Wert, der keine Übereinstimmung mit **Aktiviert** ohne Beachtung der Groß-/Kleinschreibung ist): Jedes Konto ist zulässig.</li></ul> |.
+| **Key** | **Werte** |
+|----|----|
+| IntuneMAMAllowedAccountsOnly | <ul><li>**Aktiviert**: Das einzige zulässige Konto ist das verwaltete Benutzerkonto, das von dem Schlüssel [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) definiert wird.</li><li>**Deaktiviert** (oder jeder andere Wert, der keine Übereinstimmung mit **Aktiviert** ohne Beachtung der Groß-/Kleinschreibung ist): Jedes Konto ist zulässig.</li></ul> |
+| IntuneMAMUPN | <ul><li>UPN des Kontos, das zur Anmeldung bei der App berechtigt ist</li><li> Für bei Intune registrierte Geräte kann das Token <code>{{userprincipalname}}</code> verwendet werden, um das angemeldete Benutzerkonto darzustellen.</li></ul>  |
 
    > [!NOTE]
    > Sie müssen OneDrive für iOS 10.34 oder höher, Outlook für iOS 2.99.0 oder höher oder Microsoft Edge für iOS 44.8.7 oder höher verwenden, und für die App müssen [Intune-App-Schutzrichtlinien](app-protection-policy.md) eingerichtet sein, wenn Sie nur konfigurierte Organisationskonten mit mehreren Identitäten zulassen.
@@ -181,7 +182,7 @@ Darüber hinaus unterstützt Intune die folgenden Tokentypen in der Eigenschafts
 - \{\{serialnumberlast4digits\}\}: z. B. **G5V2** (für iOS-/iPadOS-Geräte)
 - \{\{aaddeviceid\}\}: z.B. **ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
-## <a name="configure-the-company-portal-app-to-support-ios-dep-devices"></a>Konfigurieren der Unternehmensportal-App zur Unterstützung von iOS-DEP-Geräten
+## <a name="configure-the-company-portal-app-to-support-ios-and-ipados-dep-devices"></a>Konfigurieren der Unternehmensportal-App zur Unterstützung von iOS-und iPadOS-DEP-Geräten
 
 DEP-Registrierungen (Apple-Programm zur Geräteregistrierung) sind nicht kompatibel mit der App Store-Version der Unternehmensportal-App. Sie können die Unternehmensportal-App jedoch für die Unterstützung von iOS-/iPadOS-DEP-Geräten konfigurieren.
 
@@ -204,7 +205,7 @@ DEP-Registrierungen (Apple-Programm zur Geräteregistrierung) sind nicht kompati
 3. Stellen Sie das Unternehmensportal mit der App-Konfigurationsrichtlinie für die gewünschten Zielgruppen bereit. Stellen Sie sicher, dass die Richtlinie nur für Gerätegruppen bereitgestellt wird, die bereits mit DEP registriert sind.
 4. Fordern Sie die Benutzer bei der automatischen Installation auf, sich bei der Unternehmensportal-App anzumelden.
 
-## <a name="monitor-ios--app-configuration-status-per-device"></a>Überwachen des Konfigurationsstatus von iOS-Apps pro Gerät 
+## <a name="monitor-iosipados--app-configuration-status-per-device"></a>Überwachen des Konfigurationsstatus von iOS/iPadOS-Apps pro Gerät 
 Sobald eine Konfigurationsrichtlinie zugewiesen wurde, können Sie den Konfigurationsstatus von iOS-/iPadOS-Apps für jedes verwaltete Gerät überwachen. Klicken Sie im Azure-Portal unter **Microsoft Intune** auf **Geräte** > **Alle Geräte**. Wählen Sie aus der Liste der verwalteten Geräte ein Gerät aus, für das ein Bereich angezeigt werden soll. Wählen Sie im Gerätebereich **App-Konfiguration** aus.  
 
 ## <a name="additional-information"></a>Zusätzliche Informationen

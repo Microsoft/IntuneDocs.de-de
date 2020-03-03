@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,21 +18,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 061644a1c83b02902a6bbdaf3cfbd04815d32ea3
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 9c2083d6f259b62b2856e08fec5ebcb696cbc0df
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755033"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576450"
 ---
-# <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Manuelles Hinzufügen der Windows 10-Unternehmensportal-App mithilfe von Microsoft Intune
+# <a name="add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Hinzufügen der Windows 10-Unternehmensportal-App mithilfe von Microsoft Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Benutzer können die Unternehmensportal-App selbst über den Microsoft Store installieren, um Geräte zu verwalten und Apps zu installieren. Wenn Sie allerdings in Ihrem Unternehmen den Benutzern die Windows 10-Unternehmensportal-App zuweisen müssen, können Sie diesen Vorgang direkt über Intune durchführen. Dies ist selbst dann möglich, wenn Sie Intune nicht in den Microsoft Store für Unternehmen integriert haben.
+Benutzer können die Unternehmensportal-App selbst über den Microsoft Store installieren, um Geräte zu verwalten und Apps zu installieren. Wenn Sie allerdings in Ihrem Unternehmen den Benutzern die Windows 10-Unternehmensportal-App zuweisen müssen, können Sie diesen Vorgang direkt über Intune durchführen. Dies ist selbst dann möglich, wenn Sie Intune nicht in den Microsoft Store für Unternehmen integriert haben.
 
- > [!NOTE]
- > Wenn Sie die in diesem Artikel beschriebene Option nutzen möchten, müssen Sie bei jedem Release eines App-Updates das Update manuell zuweisen.
+ > [!IMPORTANT]
+ > Wenn Sie beim Herunterladen der Unternehmensportal-App wie in diesem Artikel beschrieben vorgehen möchten, müssen Sie bei jeder Veröffentlichung eines App-Updates manuelle Updates zuweisen. Informationen zur Bereitstellung der Unternehmensportal-App für Autopilot-Geräte unter Windows 10 finden Sie unter [Hinzufügen der Unternehmensportal-App für Autopilot-Geräte unter Windows 10](~/apps/store-apps-company-portal-autopilot.md).
 
 ## <a name="configure-settings-to-show-offline-apps"></a>Konfigurieren der Einstellungen zum Anzeigen von Offline-Apps
 1. Melden Sie sich beim [Microsoft Store für Unternehmen](https://www.microsoft.com/business-store) mit Ihrem Administratorkonto an.

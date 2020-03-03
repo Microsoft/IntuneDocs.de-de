@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24d0a8160d852a5a44f5df688b7e0bc230d56704
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: c454ae6184f4d2a7c3c31f3c61d2cf4331ac187c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966384"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514097"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Konfigurieren der Infrastruktur für die Unterstützung von SCEP mit Intune
 
@@ -148,7 +148,7 @@ Für die folgenden Abschnitte sind Kenntnisse über Windows Server 2012 R2 ode
        > [!IMPORTANT]
        > Fügen Sie nur die Anwendungsrichtlinien hinzu, die Sie benötigen. Sprechen Sie die auszuwählenden Optionen mit Ihren Sicherheitsadministratoren ab.
 
-     - Bearbeiten Sie für iOS- und macOS-Zertifikatvorlagen auch die **Schlüsselverwendung**, und stellen Sie sicher, dass die Option **Signatur ist Ursprungsnachweis** nicht aktiviert ist.
+     - Bearbeiten Sie für iOS/iPadOS- und macOS-Zertifikatvorlagen auch die **Schlüsselverwendung**, und stellen Sie sicher, dass die Option **Signatur ist Ursprungsnachweis** nicht aktiviert ist.
 
      ![Vorlage, Registerkarte „Erweiterungen“](./media/certificates-scep-configure/scep-ndes-extensions.jpg)  
 
@@ -217,7 +217,7 @@ Nachdem Sie [die SCEP-Zertifikatvorlage erstellt haben](#create-the-scep-certifi
 In der Standardeinstellung verwendet Intune den in der Vorlage konfigurierten Wert. Allerdings können Sie die Zertifizierungsstelle so konfigurieren, dass der Anforderer einen anderen Wert eingeben kann und dass dieser Wert über die Intune-Konsole festgelegt werden kann.
 
 > [!IMPORTANT]
-> Verwenden Sie für iOS und macOS immer einen Wert, der in der Vorlage festgelegt wird.
+> Verwenden Sie für iOS/iPadOS und macOS immer einen Wert, der in der Vorlage festgelegt wird.
 
 #### <a name="to-configure-a-value-that-can-be-set-from-within-the-intune-console"></a>Konfigurieren eines Werts, der über die Intune-Konsole festgelegt werden kann
 

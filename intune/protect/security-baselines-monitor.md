@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbf82c0bef88e4a6d0e790f4b0ecdf73d2731d5d
-ms.sourcegitcommit: 9bb1bcd9f1bdd53b470073da956bbd8b0935dfbc
+ms.openlocfilehash: 3d8ee4ec6a5bcb29a51b68cff7b840823b678636
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75556401"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569284"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Überwachen der Sicherheitsbaseline und von Profilen in Microsoft Intune
 
@@ -106,6 +106,18 @@ Das Überwachen des Profils bietet Ihnen einen Einblick in den Bereitstellungsst
 
    ![Anzeigen der verschiedenen Überwachungsoptionen für ein Sicherheitsbaselineprofil](./media/security-baselines-monitor/monitor-status-options.png)
 
+## <a name="view-endpoint-security-configurations-per-device"></a>Anzeigen der Endpunktsicherheitskonfigurationen pro Gerät
+
+Sie können Details zu den Sicherheitskonfigurationen anzeigen, die für ein bestimmtes Gerät gelten. Dadurch können Sie gegebenenfalls Einstellungen identifizieren, die fehlerhaft konfiguriert wurden.
+
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+
+2. Navigieren Sie zu **Geräte**  >  **Alle Geräte**, und wählen Sie das Gerät aus, das Sie anzeigen möchten.
+
+3. Klicken Sie in der Kategorie *Überwachen* auf **Endpoint security configuration** (Endpunktsicherheitskonfiguration), um die Liste der Sicherheitskonfigurationen anzuzeigen, die für das Gerät gelten.
+
+4. Sie können auf eine Endpunktsicherheitskonfiguration klicken, um sie aufzuklappen und weitere Informationen zur Bewertung dieser Sicherheitskonfiguration auf dem Gerät anzuzeigen.
+
 ## <a name="troubleshoot-using-per-setting-status"></a>Problembehandlung bei der Verwendung von Status pro Einstellung
 
 Sie haben eine Sicherheitsbaseline bereitgestellt, aber der Bereitstellungsstatus zeigt einen Fehler an. Die folgenden Schritte bieten Ihnen eine Anleitung zur Problembehandlung.
@@ -135,6 +147,7 @@ Auf Windows 10-Geräten ist ein integrierter MDM-Diagnoseinformationsbericht ver
 [Diagnostizieren von MDM-Fehlern in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) enthält weitere Informationen zu diesen integrierten Bericht.
 
 > [!TIP]
+>
 > - Einige Einstellungen werden auch in der GUID aufgelistet. Sie können für diese GUID in der lokalen Registrierung (Regedit) nach festgelegten Werten suchen.
 > - Die Protokolle der Ereignisanzeige können auch einige Fehlerinformationen zu der problematischen Einstellung enthalten (**Ereignisanzeige** > **Anwendungs- und Dienstprotokolle** > **Microsoft** > **Windows** > **DeviceManagement-Enterprise-Diagnostics-Provider** > **Admin** ).
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 89b4516017d7ac8bf1e27134db6a67a0a86b17cb
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 128f615a9551c31e6b0e0de4f1d269083874bf48
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206073"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515117"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Überwachen von Intune-Richtlinien zur Gerätekompatibilität
 
@@ -77,7 +77,7 @@ Beschreibungen der verschiedenen Zustände der Gerätekonformitätsrichtlinie:
   - Geräte, denen keine Konformitätsrichtlinie zugewiesen wurde und die keinen Auslöser für die Überprüfung auf Konformität besitzen
   - Geräte, die seit der letzten Aktualisierung der Konformitätsrichtlinie nicht eingecheckt wurden
   - Geräte, die keinem bestimmten Benutzer zugeordnet sind, z. B.:
-    - Über das Programm zur Geräteregistrierung von Apple erworbene iOS-Geräte ohne Benutzeraffinität
+    - Über das Programm zur Geräteregistrierung von Apple erworbene iOS/iPadOS-Geräte ohne Benutzeraffinität
     - Dedizierte Android Kiosk- oder Android Enterprise-Geräte
   - Geräte, die bei einem Geräteregistrierungs-Manager-Konto registriert sind
 

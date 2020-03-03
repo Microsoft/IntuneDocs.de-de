@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09c8a8819c288663936174e9317267c39eac63bc
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 77a4f0ea0ee076907d2a6cd14000c5cf319231e6
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437850"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513774"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>So erstellen Sie Ausnahmen für die Datenübertragungsrichtlinie für die Intune-App-Schutzrichtlinie
 
@@ -32,13 +32,13 @@ Als Administrator können Sie Ausnahmen für die Datenübertragungsrichtlinie f�
 >[!WARNING] 
 > Sie sind für Änderungen an der Richtlinie für Ausnahmen bei der Datenübertragung verantwortlich. Aufgrund von Zusätzen zu dieser Richtlinie können nicht verwaltete Apps (Apps, die nicht von Intune verwaltet werden) auf Daten zugreifen, die von verwalteten Apps geschützt werden. Dieser Zugriff auf geschützte Daten kann zu Datensicherheitslücken führen. Fügen Sie Datenübertragungsausnahmen nur für Apps hinzu, die von Ihrer Organisation verwendet werden müssen, von denen Intune APP (Application Protection Policies, Anwendungsschutzrichtlinien) jedoch nicht unterstützt wird. Fügen Sie außerdem nur Ausnahmen für Apps hinzu, die Ihrer Einschätzung nach kein Risiko für eine Datensicherheitslücke darstellen.
 
-Innerhalb einer Intune-Anwendungsschutzrichtlinie bedeutet das Festlegen von **Zulassen, dass die App Daten an andere Apps überträgt** auf **Richtlinienverwaltete Apps**, dass die App Daten nur an Apps übertragen kann, die von Intune verwaltet werden. Wenn Datenübertragungen an bestimmte Anwendungen zugelassen werden müssen, die Intune-Anwendungsschutzrichtlinien nicht unterstützen, können Sie Ausnahmen von dieser Richtlinie erstellen, indem Sie **Wählen Sie die Apps aus, die ausgenommen werden sollen** nutzen. Ausnahmen ermöglichen von Intune verwaltete Anwendungen, nicht verwaltete Anwendungen basierend auf dem URL-Protokoll (iOS) oder Paketnamen (Android) aufzurufen. Intune fügt der Liste mit den Ausnahmen standardmäßig wichtige native Anwendungen hinzu. 
+Innerhalb einer Intune-Anwendungsschutzrichtlinie bedeutet das Festlegen von **Zulassen, dass die App Daten an andere Apps überträgt** auf **Richtlinienverwaltete Apps**, dass die App Daten nur an Apps übertragen kann, die von Intune verwaltet werden. Wenn Datenübertragungen an bestimmte Anwendungen zugelassen werden müssen, die Intune-Anwendungsschutzrichtlinien nicht unterstützen, können Sie Ausnahmen von dieser Richtlinie erstellen, indem Sie **Wählen Sie die Apps aus, die ausgenommen werden sollen** nutzen. Ausnahmen ermöglichen es von Intune verwalteten Anwendungen, nicht verwaltete Anwendungen basierend auf dem URL-Protokoll (iOS/iPadOS) oder Paketnamen (Android) aufzurufen. Intune fügt der Liste mit den Ausnahmen standardmäßig wichtige native Anwendungen hinzu. 
 
 > [!NOTE]
 > Wenn Sie die Ausnahmen der Richtlinie für die Datenübertragung ändern oder erweitern (z.B. Einschränkungen der Vorgänge Ausschneiden, Kopieren und Einfügen), hat dies keine Auswirkungen auf andere App-Schutzrichtlinien. 
 
 ## <a name="ios-data-transfer-exceptions"></a>Datenübertragungsausnahmen bei iOS
-Bei einer Richtlinie für iOS/iPadOS können Sie Datenübertragungsausnahmen gemäß dem URL-Protokoll konfigurieren. In der vom Entwickler der App bereitgestellten Dokumentation finden Sie Informationen zum Hinzufügen einer Ausnahme sowie zu unterstützten URL-Protokollen. Weitere Informationen zu iOS-/iPadOS-Datenübertragungsausnahmen finden Sie unter [Einstellungen für App-Schutzrichtlinien für iOS-/iPadOS – Datenübertragungsausnahmen](app-protection-policy-settings-ios.md#data-transfer-exemptions).
+Bei einer Richtlinie für iOS/iPadOS können Sie Datenübertragungsausnahmen gemäß dem URL-Protokoll konfigurieren. In der vom Entwickler der App bereitgestellten Dokumentation finden Sie Informationen zum Hinzufügen einer Ausnahme sowie zu unterstützten URL-Protokollen. Weitere Informationen zu iOS-/iPadOS-Datenübertragungsausnahmen finden Sie unter [Datenübertragungsausnahmen](app-protection-policy-settings-ios.md#data-transfer-exemptions).
 
 > [!NOTE]
 > Microsoft verfügt über keine Methode, mit der das URL-Protokoll zum Erstellen von App-Ausnahmen für Drittanbieteranwendungen gesucht werden kann. 
@@ -71,5 +71,5 @@ Wenn Sie der MAM-Datenübertragungsrichtlinie das **Webex**-Paket als Ausnahme h
 ## <a name="next-steps"></a>Nächste Schritte
 
 - [Erstellen und Bereitstellen von App-Schutzrichtlinien](app-protection-policies.md)
-- [Einstellungen für App-Schutzrichtlinien für iOS – Datenübertragungsausnahmen](app-protection-policy-settings-ios.md#data-transfer-exemptions)
+- [Datenübertragungsausnahmen](app-protection-policy-settings-ios.md#data-transfer-exemptions)
 - [Einstellungen für App-Schutzrichtlinien für Android – Datenübertragungsausnahmen](app-protection-policy-settings-android.md#data-transfer-exemptions)
