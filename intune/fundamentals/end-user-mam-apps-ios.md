@@ -1,6 +1,6 @@
 ---
-title: iOS-Apps mit App-Schutzrichtlinien
-description: In diesem Thema erfahren Sie, was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird.
+title: iOS-/iPadOS-Apps mit App-Schutzrichtlinien
+description: In diesem Thema erfahren Sie, was Sie erwartet, wenn Ihre iOS-/iPadOS-App von App-Schutzrichtlinien verwaltet wird.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 165ce160339647e396b9cfc3a8374f21c77665f8
-ms.sourcegitcommit: f9dc50642efa8656054ef67f9335b9b46b655f93
+ms.openlocfilehash: c854811a9deb938613af872f3cf86244ab9121b3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "75606620"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514658"
 ---
-# <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird
+# <a name="what-to-expect-when-your-iosipados-app-is-managed-by-app-protection-policies"></a>Was Sie erwartet, wenn Ihre iOS-/iPadOS-App von App-Schutzrichtlinien verwaltet wird
 
 Intune-App-Schutzrichtlinien werden auf Geschäfts-, Schul- und Uni-Apps angewendet. Deshalb bemerken Mitarbeiter und Schüler/Studenten möglicherweise keine Unterschiede bei der Benutzeroberfläche, wenn sie ihre Apps in einem persönlichen Kontext nutzen. Im Geschäfts-, Schul- oder Uni-Kontext erhalten sie jedoch möglicherweise Aufforderungen, Kontoentscheidungen zu treffen, ihre Einstellungen zu aktualisieren oder Sie um Hilfe zu bitten. In diesem Artikel erfahren Sie, welche Erfahrungen Ihre Benutzer machen, wenn sie versuchen, auf Intune-geschützte Anwendungen zuzugreifen und diese zu verwenden.  
 
@@ -34,7 +34,7 @@ Wenn das Gerät **nicht bei Intune registriert** ist, wird der Benutzer beim ers
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
 
-<!---  ![Screenshot of the iOS device showing PIN prompt](./media/end-user-mam-apps-ios/iOS_AppPINPrompt.png) --->
+<!---  ![Screenshot of the iOS/iPadOS device showing PIN prompt](./media/end-user-mam-apps-ios/iOS_AppPINPrompt.png) --->
 
 Bei Geräten, die **für die Verwaltung in Intune registriert** sind, wird dem Benutzer eine Meldung angezeigt, dass seine App nun verwaltet wird.
 

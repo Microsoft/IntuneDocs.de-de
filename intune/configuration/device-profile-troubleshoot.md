@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 881d0f095d2144ae42db4825336275980a19f419
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 21497716f17ced83bdcc1952cb952151f993bb7b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812364"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511326"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Häufige Fragen, Probleme und entsprechende Behebungen mit Geräterichtlinien und -profilen in Microsoft Intune
 
@@ -36,11 +36,11 @@ Sie können dieses Problem beheben, indem Sie einen WLAN-Gastzugang einrichten. 
 
 Einige weitere Empfehlungen:  
 
-- Wenn das WLAN-Netzwerk, mit dem Sie die Verbindung herstellen, ein Kennwort oder eine Passphrase verwendet, müssen Sie eine direkte Verbindung mit dem Router herstellen können. Sie können das mit einem iOS-Gerät testen.
+- Wenn das WLAN-Netzwerk, mit dem Sie die Verbindung herstellen, ein Kennwort oder eine Passphrase verwendet, müssen Sie eine direkte Verbindung mit dem Router herstellen können. Sie können das mit einem iOS/iPadOS-Gerät testen.
 - Nachdem Sie erfolgreich eine Verbindung mit dem WLAN-Endpunkt (WLAN-Router) hergestellt haben, notieren Sie die verwendete SSID und die verwendete Anmeldeinformation (dieser Wert stellt das Kennwort oder die Passphrase dar).
 - Geben Sie die SSID und die Anmeldeinformation (Kennwort oder Passphrase) im Feld für den vorinstallierten Schlüssel ein. 
 - Führen Sie die Bereitstellung an eine Testgruppe mit eingeschränkter Benutzeranzahl aus, vorzugsweise nur das IT-Team. 
-- Synchronisieren Sie Ihr iOS-Gerät mit Intune. Registrieren Sie sich, wenn Sie noch nicht registriert sind. 
+- Synchronisieren Sie Ihr iOS/iPadOS-Gerät mit Intune. Registrieren Sie sich, wenn Sie noch nicht registriert sind. 
 - Probieren Sie, erneut eine Verbindung mit dem gleichen WLAN-Endpunkt (wie im ersten Schritt erwähnt) herzustellen.
 - Nehmen Sie das Rollout an größere Gruppen und zu gegebener Zeit an alle erwarteten Benutzer in Ihrer Organisation durch. 
 
@@ -54,7 +54,7 @@ Checkt ein Gerät nach der ersten Benachrichtigung nicht zum Abrufen der Richtli
 
 | Plattform | Aktualisierungszyklus|
 | --- | --- |
-| iOS | Etwa alle 8 Stunden |
+| iOS/iPadOS | Etwa alle 8 Stunden |
 | macOS | Etwa alle 8 Stunden |
 | Android | Etwa alle 8 Stunden |
 | Windows 10-PCs, die als Geräte registriert sind | Etwa alle 8 Stunden |
@@ -65,7 +65,7 @@ Wenn das Gerät erst kürzlich registriert wurde, wird der Eincheckvorgang aus K
 
 | Plattform | Häufigkeit |
 | --- | --- |
-| iOS | Für 1 Stunde alle 15 Minuten und dann etwa alle 8 Stunden |  
+| iOS/iPadOS | Für 1 Stunde alle 15 Minuten und dann etwa alle 8 Stunden |  
 | macOS | Für 1 Stunde alle 15 Minuten und dann etwa alle 8 Stunden | 
 | Android | Für 15 Minuten alle 3 Minuten, dann für 2 Stunden alle 15 Minuten und dann etwa alle 8 Stunden | 
 | Windows 10-PCs, die als Geräte registriert sind | Für 15 Minuten alle 3 Minuten, dann für 2 Stunden alle 15 Minuten und dann etwa alle 8 Stunden | 
@@ -102,7 +102,7 @@ Konflikte treten auf, wenn zwei Profileinstellungen identisch sind. Beispielswei
 
 Eine Richtlinie wird in der App bereitgestellt und tritt in Kraft. Eine zweite Richtlinie wird bereitgestellt. In diesem Szenario hat die erste Richtlinie Vorrang und gilt weiterhin. Die zweite Richtlinie wird als in Konflikt stehend angezeigt. Wenn beide Richtlinien gleichzeitig angewendet werden, also keine vorherige Richtlinie vorhanden ist, stehen beide in Konflikt. Alle in Konflikt stehenden Einstellungen werden auf die restriktivsten Werte festgelegt.
 
-## <a name="what-happens-when-ios-custom-policies-conflict"></a>Was geschieht, wenn Sie benutzerdefinierte iOS-Richtlinien in Konflikt stehen?
+## <a name="what-happens-when-iosipados-custom-policies-conflict"></a>Was geschieht, wenn benutzerdefinierte iOS/iPadOS-Richtlinien in Konflikt stehen?
 
 Intune bewertet nicht die Nutzlast von Apple-Konfigurationsdateien oder einer benutzerdefinierten OMA-URI-Richtlinie (Open Mobile Alliance Uniform Resource Identifier). Es dient lediglich als Übermittlungsmechanismus.
 
@@ -144,7 +144,7 @@ Wenn Sie ein Profil löschen oder ein Gerät aus einer Gruppe mit diesem Profil 
     - NFC zulassen
     - WLAN zulassen
 
-  - **iOS**: Alle Einstellungen werden entfernt, außer:
+  - **iOS/iPadOS:** Alle Einstellungen werden entfernt, außer:
   
     - Sprachroaming zulassen
     - Datenroaming zulassen
@@ -156,7 +156,7 @@ Windows Phone-Geräte lassen keine Verringerung der Sicherheitsstufe in Sicherhe
 
 Wenn Sie das Profil auf einen niedrigeren Sicherheitswert ändern möchten, müssen Sie die Sicherheitsrichtlinien zurücksetzen. Wischen Sie beispielsweise unter Windows 8.1 auf dem Desktop von rechts nach innen. Wählen Sie anschließend **Einstellungen** > **Systemsteuerung** aus. Wählen Sie das Applet **Benutzerkonten** aus. Im Navigationsmenü auf der linken Seite befindet sich im unteren Bereich der Link **Reset Security Policies** (Sicherheitsrichtlinien zurücksetzen). Wählen Sie ihn aus. Wählen Sie anschließend **Richtlinien zurücksetzen** aus.
 
-Andere MDM-Geräte, wie Android, Windows Phone 8.1 und höher, iOS sowie Windows 10, müssen möglicherweise entfernt und bei Intune neu registriert werden, damit Sie ein weniger restriktives Profil anwenden können.
+Andere MDM-Geräte, wie Android, Windows Phone 8.1 und höher, iOS/iPadOS sowie Windows 10, müssen möglicherweise entfernt und bei Intune neu registriert werden, damit Sie ein weniger restriktives Profil anwenden können.
 
 ## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Einige Einstellungen in einem Windows 10-Profil werden als „Nicht verfügbar“ zurückgegeben
 

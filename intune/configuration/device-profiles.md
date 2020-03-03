@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,23 +17,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 800bbd5199bd4389ee1ae8aa98a68e21456e7000
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 951d3df8b842f1a0e76f875ea9fc7921c413494f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206617"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513067"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Anwenden von Einstellungen und Funktionen auf Ihren Geräten mit Geräteprofilen in Microsoft Intune
 
 
 
-Microsoft Intune umfasst Einstellungen und Funktionen, die Sie auf unterschiedlichen Geräten in Ihrer Organisation aktivieren oder deaktivieren können. Diese Einstellungen und Funktionen werden zu „Konfigurationsprofilen“ hinzugefügt. Sie können Profile für unterschiedliche Geräte und Plattformen einrichten, z. B. für iOS, Android und Windows. Verwenden Sie Intune, um das Profil Geräten zuzuweisen.
+Microsoft Intune umfasst Einstellungen und Funktionen, die Sie auf unterschiedlichen Geräten in Ihrer Organisation aktivieren oder deaktivieren können. Diese Einstellungen und Funktionen werden zu „Konfigurationsprofilen“ hinzugefügt. Sie können Profile für unterschiedliche Geräte und Plattformen einrichten, z. B. für iOS/iPadOS, Android und Windows. Verwenden Sie Intune, um das Profil Geräten zuzuweisen.
 
 Im Rahmen Ihrer MDM-Lösung (Mobile Device Management, Verwaltung mobiler Geräte) können Sie diese Konfigurationsprofile verwenden, um verschiedene Aufgaben zu erledigen. Beispiele für Profile:
 
 - Verwenden Sie auf Windows 10-Geräten eine Profilvorlage, die ActiveX-Steuerelemente im Internet Explorer blockiert.
-- Ermöglichen Sie es Benutzern auf iOS- und macOS-Geräten, AirPrint-Drucker in Ihrer Organisation zu verwenden.
+- Ermöglichen Sie es Benutzern auf iOS/iPadOS- und macOS-Geräten, AirPrint-Drucker in Ihrer Organisation zu verwenden.
 - Gewähren oder verhindern Sie den Zugriff per Bluetooth auf das Gerät.
 - Erstellen Sie ein WLAN- oder VPN-Profil, das verschiedenen Geräten den Zugriff auf Ihr Unternehmensnetzwerk ermöglicht.
 - Verwalten Sie Softwareupdates, auch wenn sie installiert werden.
@@ -67,7 +67,7 @@ Dieses Features unterstützt folgende Betriebssysteme:
 
 ## <a name="custom-profile"></a>Benutzerdefiniertes Profil
 
-Mithilfe von [benutzerdefinierten Einstellungen](custom-settings-configure.md) können Administratoren Geräteeinstellungen zuweisen, die nicht in Intune integriert sind. So können beispielsweise auf Android-Geräten OMA-URI-Werte eingegeben werden. Auf iOS-Geräten können Sie eine Konfigurationsdatei importieren, die Sie in Apple Configurator erstellt haben.
+Mithilfe von [benutzerdefinierten Einstellungen](custom-settings-configure.md) können Administratoren Geräteeinstellungen zuweisen, die nicht in Intune integriert sind. So können beispielsweise auf Android-Geräten OMA-URI-Werte eingegeben werden. Auf iOS/iPadOS-Geräten können Sie eine Konfigurationsdatei importieren, die Sie in Apple Configurator erstellt haben.
 
 Dieses Features unterstützt folgende Betriebssysteme:
 
@@ -89,7 +89,7 @@ Dieses Features unterstützt folgende Betriebssysteme:
 
 ## <a name="device-features"></a>Gerätefunktionen
 
-Mit [Gerätefunktionen](device-features-configure.md) können Sie Funktionen auf iOS- und macOS-Geräten steuern, z.B. AirPrint, Benachrichtigungen und Nachrichten auf dem Sperrbildschirm.
+Mit [Gerätefunktionen](device-features-configure.md) können Sie Funktionen wie beispielsweise AirPrint, Benachrichtigungen und Nachrichten auf dem Sperrbildschirm auf iOS/iPadOS- und macOS-Geräten steuern.
 
 Dieses Features unterstützt folgende Betriebssysteme:
 
@@ -106,7 +106,7 @@ Dieses Features unterstützt folgende Betriebssysteme:
 
 ## <a name="device-restrictions"></a>Geräteeinschränkungen
 
-Mit [Geräteeinschränkungen](device-restrictions-configure.md) werden Einstellungen für Sicherheit, Hardware, Datenfreigabe und viele andere Einstellungen auf dem Gerät gesteuert. Sie können beispielsweise ein Geräteeinschränkungsprofil erstellen, das verhindert, dass Benutzer von iOS-Geräten auf die Kamera des Geräts zugreifen. 
+Mit [Geräteeinschränkungen](device-restrictions-configure.md) werden Einstellungen für Sicherheit, Hardware, Datenfreigabe und viele andere Einstellungen auf dem Gerät gesteuert. Sie können beispielsweise ein Geräteeinschränkungsprofil erstellen, das verhindert, dass Benutzer von iOS/iPadOS-Geräten auf die Kamera des Geräts zugreifen. 
 
 Dieses Features unterstützt folgende Betriebssysteme:
 
@@ -129,7 +129,7 @@ Dieses Features unterstützt folgende Betriebssysteme:
 
 Mit den [Education settings - Windows 10](education-settings-configure.md) (Education-Einstellungen: Windows 10) können Sie Optionen für die [Take a Test-Windows-App](https://education.microsoft.com/gettrained/win10takeatest) konfigurieren. Wenn Sie diese Optionen konfigurieren, können keine anderen Apps auf dem Gerät ausgeführt werden, bis der Test abgeschlossen ist.
 
-In den [Education settings - iOS](../fundamentals/education-settings-configure-ios-shared.md) (Education-Einstellungen: iOS) wird die iOS-Classroom-App so konfiguriert, dass der Unterricht strukturiert und Schüler-/Kursteilnehmer-Geräte im Kursraum gesteuert werden können. Sie können iPad-Geräte so konfigurieren, dass mehrere Schüler/Kursteilnehmer gemeinsam ein Gerät verwenden können.
+In den [Einstellungen für Bildungseinrichtungen (iOS/iPadOS)](../fundamentals/education-settings-configure-ios-shared.md) wird die iOS/iPadOS-Classroom-App so konfiguriert, dass der Unterricht strukturiert und Geräte von Schülern/Kursteilnehmern im Kursraum gesteuert werden können. Sie können iPad-Geräte so konfigurieren, dass mehrere Schüler/Kursteilnehmer gemeinsam ein Gerät verwenden können.
 
 ## <a name="email"></a>E-Mail
 
@@ -186,7 +186,7 @@ Dieses Features unterstützt folgende Betriebssysteme:
 
 - Windows 10 und höher
 
-Kioskeinstellungen sind auch als Geräteeinschränkungen für [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) und [ios](device-restrictions-ios.md#kiosk) verfügbar.
+Kioskeinstellungen sind auch als Geräteeinschränkungen für [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) und [iOS/iPadOS](device-restrictions-ios.md#kiosk) verfügbar.
 
 ## <a name="oemconfig"></a>OEMConfig
 
@@ -219,7 +219,7 @@ Dieses Features unterstützt folgende Betriebssysteme:
 
 ## <a name="update-policies"></a>Updaterichtlinien
 
-Im Artikel [iOS-Updaterichtlinien](../protect/software-updates-ios.md) erfahren Sie, wie Sie iOS-Richtlinien erstellen und zuweisen, um Softwareupdates auf Ihren iOS-Geräten zu installieren. Außerdem können Sie den Installationsstatus überprüfen.
+Im Artikel [Hinzufügen von iOS-Softwareupdaterichtlinien in Intune](../protect/software-updates-ios.md) erfahren Sie, wie Sie iOS/iPadOS-Richtlinien erstellen und zuweisen, um Softwareupdates auf Ihren iOS/iPadOS-Geräten zu installieren. Außerdem können Sie den Installationsstatus überprüfen.
 
 Informationen zu Updaterichtlinien für Windows-Geräte finden Sie unter [Übermittlungsoptimierung](delivery-optimization-windows.md). 
 

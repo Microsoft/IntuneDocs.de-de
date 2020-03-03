@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19c1bb959212ebeaea40f7089cba5533b6efeb71
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 9f639c4d2c2bcfa62f828fa18973fe6a513b1a82
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912606"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514862"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Einrichten der Symantec Endpoint Protection Mobile-Integration in Intune
 
@@ -54,7 +54,7 @@ SEP Mobile unterstützt zwei Arten der Integration in Intune:
 
 ### <a name="how-are-the-sep-mobile-apps-used-with-azure-ad-and-intune"></a>Wie werden die SEP Mobile-Apps mit Azure AD und Intune verwendet?
 
-- **iOS-App:** Ermöglicht Endbenutzern die Anmeldung bei Azure AD mithilfe einer iOS-App.
+- **iOS-App:** Diese ermöglicht Endbenutzern die Anmeldung bei Azure AD mithilfe einer iOS/iPadOS-App.
 
 - **Android-App:** Ermöglicht Endbenutzern die Anmeldung bei Azure AD mithilfe einer Android-App.
 
@@ -77,11 +77,11 @@ SEP Mobile unterstützt zwei Arten der Integration in Intune:
 
 5. Wenn die Anmeldeseite geöffnet wird, geben Sie Ihre Intune-Anmeldeinformationen ein, und klicken Sie dann auf **Accept** (Annehmen).
 
-    ![Abbildung der Intune-Anmeldeaufforderung in der iOS-App](./media/skycure-mtd-connector-integration/symantec-portal-basic-accept.png)
+    ![Abbildung der Intune-Anmeldeaufforderung in der iOS/iPadOS-App](./media/skycure-mtd-connector-integration/symantec-portal-basic-accept.png)
 
 6. Nachdem die App in Azure AD hinzugefügt wurde, sehen Sie einen Hinweis darauf, dass die App erfolgreich hinzugefügt wurde.
 
-    ![Abbildung des Bildschirms nach Abschluss des Vorgangs in der iOS-App](./media/skycure-mtd-connector-integration/symantec-portal-basic-added.png)
+    ![Abbildung des Bildschirms nach Abschluss des Vorgangs in der iOS/iPadOS-App](./media/skycure-mtd-connector-integration/symantec-portal-basic-added.png)
 
 7. Wiederholen Sie diese Schritte für die **SEP Mobile Android**- und **Management**-App.
 
@@ -112,9 +112,9 @@ SEP Mobile synchronisiert die Geräte und führt den Mobile Threat Defense-Diens
     ![Darstellung der Verzeichnis-ID im Azure-Portal](./media/skycure-mtd-connector-integration/symantec-azure-portal-directory-ID.png)
 
 ### <a name="optional-create-a-dedicated-security-group-for-devices-that-need-to-run-the-sep-mobile-apps"></a>(Optional) Erstellen einer dedizierten Sicherheitsgruppe für Geräte, die die SEP Mobile-Apps ausführen müssen
-1. Wählen Sie im [Azure-Portal](https://portal.azure.com) unter **Verwalten** **Benutzer und Gruppen** und dann **Alle Gruppen** aus.
+1. Wählen Sie im [Azure-Portal](https://portal.azure.com) unter **Verwalten****Benutzer und Gruppen** und dann **Alle Gruppen** aus.
 
-2. Wählen Sie die Schaltfläche **Hinzufügen** aus. Geben Sie einen **Namen** für die Gruppe ein. Wählen Sie unter **Mitgliedschaftstyp** **Zugewiesen** aus.
+2. Wählen Sie die Schaltfläche **Hinzufügen** aus. Geben Sie einen **Namen** für die Gruppe ein. Wählen Sie unter **Mitgliedschaftstyp****Zugewiesen** aus.
 
 3. Wählen Sie auf dem Blatt **Mitglieder** die Gruppenmitglieder und dann die Schaltfläche **Auswählen** aus.
 
@@ -126,21 +126,21 @@ SEP Mobile synchronisiert die Geräte und führt den Mobile Threat Defense-Diens
 
 2. Geben Sie Ihre **SEP Mobile-Administratoranmeldeinformationen** ein, und wählen Sie dann **Continue** (Fortfahren).
 
-3. Wechseln Sie zum Abschnitt **Settings (Einstellungen)**  > **Integrations (Integrationen)**  > **Intune** > **EMM Integration Selection (EMM-Integrationsauswahl)** .
+3. Wechseln Sie zum Abschnitt **Settings (Einstellungen)** > **Integrations (Integrationen)** > **Intune** > **EMM Integration Selection (EMM-Integrationsauswahl)**.
 
 4. Fügen Sie im Feld **Directory ID** (Verzeichnis-ID) die Verzeichnis-ID ein, die Sie im vorherigen Abschnitt aus Azure Active Directory kopiert haben, und speichern Sie die Einstellungen.
 
     ![Darstellung der Verzeichnis-ID im SEP Mobile-Portal](./media/skycure-mtd-connector-integration/symantec-portal-directory-ID.png)
 
-5. Wechseln Sie zum Abschnitt **Settings (Einstellungen)**  > **Integrations (Integrationen)**  > **Intune** > **Basic Setup (Grundlegende Installation)** .
+5. Wechseln Sie zum Abschnitt **Settings (Einstellungen)** > **Integrations (Integrationen)** > **Intune** > **Basic Setup (Grundlegende Installation)**.
 
 6. Wählen Sie neben **iOS App** die Schaltfläche **Add to Active Directory** (Zu Active Directory hinzufügen) aus.
 
-    ![Darstellung des Hinzufügens der iOS-App zu Active Directory](./media/skycure-mtd-connector-integration/symantec-portal-basic-add.png)
+    ![Darstellung des Hinzufügens der iOS/iPadOS-App zu Active Directory](./media/skycure-mtd-connector-integration/symantec-portal-basic-add.png)
 
 7. Melden Sie sich mit den Azure Active Directory-Anmeldeinformationen für das Office 365-Konto an, das das Verzeichnis verwaltet.
 
-8. Wählen Sie die Schaltfläche **Accept** (Annehmen), um Azure Active Directory die SEP Mobile iOS-App hinzuzufügen.
+8. Klicken Sie auf die Schaltfläche **Annehmen**, um Azure Active Directory die SEP Mobile iOS/iPadOS-App hinzuzufügen.
 
     ![Darstellung der Schaltfläche „Accept“ (Annehmen)](./media/skycure-mtd-connector-integration/symantec-portal-basic-accept.png)
 
@@ -150,7 +150,7 @@ SEP Mobile synchronisiert die Geräte und führt den Mobile Threat Defense-Diens
 
     ![Darstellung der Benutzergruppen für SEP Mobile-Apps](./media/skycure-mtd-connector-integration/symantec-portal-basic-groups.png)
 
-11. SEP Mobile synchronisiert die Geräte in den ausgewählten Gruppen und beginnt, Informationen an Intune zu senden. Sie können diese Daten im Abschnitt „Full Integration“ (Vollständige Integration) anzeigen. Wechseln Sie zum Abschnitt **Settings (Einstellungen)**  > **Integrations (Integrationen)**  > **Intune** > **Full Integration (Vollständige Integration)** .
+11. SEP Mobile synchronisiert die Geräte in den ausgewählten Gruppen und beginnt, Informationen an Intune zu senden. Sie können diese Daten im Abschnitt „Full Integration“ (Vollständige Integration) anzeigen. Wechseln Sie zum Abschnitt **Settings (Einstellungen)** > **Integrations (Integrationen)** > **Intune** > **Full Integration (Vollständige Integration)**.
 
      ![Abbildung, die anzeigt, dass die vollständige Integration von SEP Mobile abgeschlossen wurde.](./media/skycure-mtd-connector-integration/symantec-portal-basic-status.PNG)
 ## <a name="next-steps"></a>Nächste Schritte

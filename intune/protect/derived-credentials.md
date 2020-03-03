@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9e8bc347dc6336f665fcabfb4e716fef4818515
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 91442d262adb1d85217cb73f2f415766b89267af
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207201"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510519"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>Verwenden abgeleiteter Anmeldeinformationen in Microsoft Intune
 
@@ -37,7 +37,7 @@ Abgeleitete Anmeldeinformationen sind eine Implementierung der NIST-Richtlinien 
 
 - Der Intune-Administrator gibt für die folgenden Objekte **Derived credentials** (Abgeleitete Anmeldeinformationen) als *Authentifizierungsmethode* an:
 
-  - Allgemeine Profiltypen wie WLAN, VPN und E-Mail (einschließlich der nativen iOS-E-Mail-App)
+  - Allgemeine Profiltypen wie WLAN, VPN und E-Mail (einschließlich der nativen iOS/iPadOS-E-Mail-App)
 
   - App-Authentifizierung
 
@@ -76,7 +76,7 @@ Wichtige Details zur Verwendung der verschiedenen Zertifikataussteller finden Si
 
 Planen Sie die Bereitstellung der Intune-Unternehmensportal-App auf Geräten, die für abgeleitete Anmeldeinformationen registriert werden. Gerätebenutzer verwenden die Unternehmensportal-App, um den Registrierungsvorgang für Anmeldeinformationen zu starten.
 
-Informationen zu iOS-Geräten finden Sie im Artikel [Hinzufügen von iOS Store-Apps zu Microsoft Intune](../apps/store-apps-ios.md).
+Informationen zu iOS/iPadOS-Geräten finden Sie im Artikel [Hinzufügen von iOS Store-Apps zu Microsoft Intune](../apps/store-apps-ios.md).
 
 ## <a name="plan-for-derived-credentials"></a>Planen abgeleiteter Anmeldeinformationen
 
@@ -224,7 +224,7 @@ Verwenden Sie abgeleitete Anmeldeinformationen für die zertifikatbasierte Authe
 2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Legen Sie folgende Einstellungen fest:
 
-    - **Name:** Geben Sie einen aussagekräftigen Namen für das Profil ein. Benennen Sie Ihre Profile, damit Sie diese später leicht wiedererkennen. Ein guter Profilname ist beispielsweise **Abgeleitete Anmeldeinformationen für iOS-Geräteprofil**.
+    - **Name:** Geben Sie einen aussagekräftigen Namen für das Profil ein. Benennen Sie Ihre Profile, damit Sie diese später leicht wiedererkennen. Ein guter Profilname ist beispielsweise **Abgeleitete Anmeldeinformationen für iOS/iPadOS-Geräteprofile**.
     - **Beschreibung:** Geben Sie eine Beschreibung ein, die einen Überblick über die Einstellung und andere wichtige Details bietet.
     - **Plattform**: Wählen Sie **iOS/iPadOS** aus.
     - **Profiltyp**: Wählen Sie **Abgeleitete Anmeldeinformationen** aus.

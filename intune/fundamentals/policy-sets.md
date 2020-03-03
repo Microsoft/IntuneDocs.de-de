@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d302db46510b664aec5b0a71fd8b19985e29be37
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 48bfe727615f5165fc70ed2e08f98f01203dc895
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206124"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514828"
 ---
 # <a name="use-policy-sets-to-group-collections-of-management-objects"></a>Verwenden von Richtliniensätzen zur Gruppierung von Verwaltungsobjektsammlungen in Microsoft Intune
 
@@ -52,7 +52,7 @@ Sie können die folgenden Verwaltungsobjekte in einen Richtliniensatz einschlie�
 Wenn Sie einen Richtliniensatz erstellen, erstellen Sie eine einzelne Zuweisungseinheit und verwalten Zuordnungen zwischen verschiedenen Objekten. Ein Richtliniensatz ist ein Verweis auf externe Objekte. Alle Änderungen in den enthaltenen Objekten wirken sich auch auf den Richtliniensatz aus. Nachdem Sie einen Richtliniensatz erstellt haben, können Sie dessen Objekte und Zuweisungen wiederholt anzeigen und bearbeiten. 
 
 > [!NOTE]
-> Richtliniensätze unterstützen Windows-, Android-, macOS- und iOS-Einstellungen und können plattformübergreifend zugewiesen werden.
+> Richtliniensätze unterstützen Windows-, Android-, macOS- und iOS-/iPadOS-Einstellungen und können plattformübergreifend zugewiesen werden.
 
 ## <a name="how-to-create-a-policy-set"></a>Erstellen einer Richtlinie
 
@@ -82,15 +82,15 @@ Für Richtliniensätze, die neu in 1910 sind, liegen folgende bekannte Probleme 
 - Wenn beim Erstellen eines Richtliniensatzes ein bereichsbezogener Administrator versucht, einen Richtliniensatz zu erstellen, ohne dass Bereichsmarkierungen ausgewählt werden, schlägt die Validierung beim Aufrufen der Seite **Überprüfen + erstellen** fehl, und in der Statusleiste wird ein Fehler angezeigt. Der Administrator muss auf eine andere Seite wechseln und dann zur Seite **Review + Create** zurückkehren. Dadurch wird die Option **Erstellen** aktiviert.  
  
 - Die folgenden App-Typen werden derzeit von Richtliniensätzen unterstützt:
-    - iOS Store-App
-    - Branchenspezifische iOS-App
-    - Verwaltete branchenspezifische iOS-App
+    - iOS/iPadOS Store-App
+    - Branchenspezifische iOS-/iPadOS-App
+    - Verwaltete branchenspezifische iOS-/iPadOS-App
     - Android Store-App
     - Branchenspezifische Android-App
     - Verwaltete branchenspezifische Android-App
     - Office 365 ProPlus-Suite (Windows 10)
     - Weblink
-    - Integrierte iOS-App
+    - Integrierte iOS-/iPadOS-App
     - Integrierte Android-App
 
 - Das Festlegen einer Zuweisung für Richtliniensätze von **Alle Benutzer** auf **Autopilot-Profil** wird nicht unterstützt.
@@ -103,18 +103,18 @@ Für Richtliniensätze, die neu in 1910 sind, liegen folgende bekannte Probleme 
 
 - Zu den MAM-Richtlinientypen, die Richtliniensätze unterstützen, zählen die folgenden: 
     - MAM: verwalteter App-Schutz für WIP (Windows) mit MDM 
-    - MAM: verwalteter App-Schutz für iOS
+    - MAM: gezielt verwalteter App-Schutz für iOS/iPadOS
     - MAM: verwalteter App-Schutz für Android
-    - MAM: verwaltete App-Konfiguration für iOS
+    - MAM: gezielt verwaltete App-Konfiguration für iOS/iPadOS
     - MAM: verwaltete App-Konfiguration für Android
 
 - Zu den MAM-Richtlinientypen, die keine Richtliniensätze unterstützen, zählen die folgenden: 
     - MAM: verwalteter App-Schutz für WIP (Windows)
 
 - MAM verarbeitet Zuweisungen von Richtlinien als direkte Zuweisungen für die folgenden Richtlinientypen:
-    - MAM: verwalteter App-Schutz für iOS
+    - MAM: gezielt verwalteter App-Schutz für iOS/iPadOS
     - MAM: verwalteter App-Schutz für Android
-    - MAM: verwaltete App-Konfiguration für iOS
+    - MAM: gezielt verwaltete App-Konfiguration für iOS/iPadOS
     - MAM: verwaltete App-Konfiguration für Android
 
     Wenn einem Richtliniensatz, der für eine Gruppe bereitgestellt wird, eine Richtlinie hinzugefügt wird, wird die Gruppe in der Arbeitsauslastung als direkt zugewiesen angezeigt und nicht als „über den Richtliniensatz zugewiesen“. Folglich verarbeitet MAM keine Löschungen von Gruppenzuweisungen aus Richtliniensätzen.

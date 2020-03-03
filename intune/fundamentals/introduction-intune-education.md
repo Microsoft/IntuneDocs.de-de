@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71ccea34694bde8ea80a779b36ef612fcefb1add
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 97177f91edea1205f6e8349ee1a7194d0f5300e5
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510197"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514539"
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Inwiefern unterscheidet sich Intune for Education von der vollständigen Intune-Verwaltungsumgebung?
 
@@ -29,7 +29,7 @@ Intune for Education ermöglicht Lehrkräften und Schülern/Studenten ein produk
 
 ![Intune for Education-Konsole im Vergleich mit der Intune-Konsole.](./media/introduction-intune-education/intune-azure-vs-intuneEDU.png)
 
-Intune for Education ermöglicht Ihnen die Verwaltung von Windows 10- und iOS-Geräten mithilfe der vollständigen Funktionen für die Verwaltung von Mobilgeräten, die Intune bietet. In der Umgebung für die vollständige Geräteverwaltung können Sie Windows-, iOS- und Android-Geräte verwalten.  
+Intune for Education ermöglicht Ihnen die Verwaltung von Windows 10- und iOS-/iPadOS-Geräten mithilfe sämtlicher Features der mobilen Geräteverwaltung in Intune. In der Umgebung für die vollständige Geräteverwaltung können Sie Windows-, iOS-/iPadOS- und Android-Geräte verwalten.  
 
 Intune for Education kann eigenständig oder im Zusammenspiel mit der [in Intune verfügbaren vollständigen Umgebung zur Geräteverwaltung](what-is-intune.md) genutzt werden. Es kann auch zusammen mit den anderen Tools in [Microsoft Education](https://microsoft.com/education) verwendet werden, wodurch die Nutzung von Intune for Education mit anderen nützlichen Tools für Bildungseinrichtungen von Microsoft vereinfacht wird.  
 

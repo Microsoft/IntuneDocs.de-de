@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8748639f0407de7b1bb83f646b7decf8c838766
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 6dff94a9bfeb21f09b8a8c629e10ba562d7e642b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206668"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511424"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Erstellen eines Geräteprofils in Microsoft Intune
 
@@ -87,7 +87,7 @@ Inhalt dieses Artikels
 
      Wenn Sie beispielsweise **iOS/iPadOS** für die Plattform auswählen, werden Ihnen Profiltypoptionen ähnlich den folgenden angezeigt:
 
-     ![Erstellen eines iOS-Profils in Intune](./media/device-profile-create/create-device-profile.png)
+     ![Erstellen eines iOS/iPadOS-Profils in Intune](./media/device-profile-create/create-device-profile.png)
 
 4. Wählen Sie anschließend **OK** > **Erstellen** aus, um Ihre Änderungen zu speichern. Das Profil wird erstellt und in der Liste angezeigt.
 
@@ -171,10 +171,10 @@ Erstellen Sie Profile unter Berücksichtigung folgender Empfehlungen:
   **Profilname**: Administratorvorlage – OneDrive-Konfigurationsprofil für alle Windows 10-Benutzer  
   **Profilbeschreibung**: OneDrive-Profil der Administratorvorlage, das die Mindest- und Basiseinstellungen für alle Windows 10-Benutzer enthält. Dieses wurde von user@contoso.com erstellt, um zu verhindern, dass Benutzer Organisationsdaten für persönliche Konten freigeben.
 
-  **Profilname**: VPN-Profil für alle iOS-Benutzer  
-  **Profilbeschreibung**: VPN-Profil, das die Mindest- und Basiseinstellungen für alle iOS-Benutzer enthält, um eine Verbindung mit Contoso-VPN zu erstellen. Dieses wurde von user@contoso.com erstellt, sodass Benutzer sich automatisch bei VPN authentifizieren, anstatt dass der Benutzernamen und das Kennwort der Benutzer angefordert wird.
+  **Profilname**: VPN-Profil für alle iOS/iPadOS-Benutzer  
+  **Profilbeschreibung**: VPN-Profil, das die Mindest- und Basiseinstellungen für alle iOS/iPadOS-Benutzer enthält, um eine Verbindung mit Contoso-VPN zu erstellen. Dieses wurde von user@contoso.com erstellt, sodass Benutzer sich automatisch bei VPN authentifizieren, anstatt dass der Benutzernamen und das Kennwort der Benutzer angefordert wird.
 
-- Erstellen Sie Ihr Profil anhand der Aufgabe, z. B. dem Konfigurieren von Microsoft Edge-Einstellungen, dem Aktivieren von Microsoft Defender-Antivireneinstellungen, dem Blockieren von iOS-Geräten mit Jailbreak usw.
+- Erstellen Sie Ihr Profil anhand der Aufgabe, z. B. dem Konfigurieren von Microsoft Edge-Einstellungen, dem Aktivieren von Microsoft Defender-Antivireneinstellungen oder dem Blockieren von iOS/iPadOS-Geräten mit Jailbreak.
 
 - Erstellen Sie Profile, die für bestimmte Gruppen wie Marketing, Vertrieb, IT oder Administratoren gelten, oder nach Standort oder Schulsystem.
 

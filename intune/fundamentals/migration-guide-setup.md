@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c705e8863ef4e01906a773d528f9ae2f40461c71
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 08041a57ab52f395283e57cda596d00ba168aba1
+ms.sourcegitcommit: 3964e6697b4d43e2c69a15e97c8d16f8c838645b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885853"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77556481"
 ---
 # <a name="basic-setup"></a>Grundlegende Einrichtung
 
@@ -53,20 +53,13 @@ Wenn Sie Zertifikat-basierte Authentifizierung für VPN-, WLAN- oder E-Mail-Prof
 
 - [Konfigurieren der Zertifikatinfrastruktur für PFX](/intune/certficates-pfx-configure)
 
-
 ## <a name="task-list-for-an-intune-setup"></a>Aufgabenliste für die Einrichtung von Intune
 
 ### <a name="task-1-intune-subscription"></a>Aufgabe 1: Intune-Abonnement
 
-Bevor Sie zu Intune migrieren können, brauchen Sie ein Intune-Abonnement.
+Bevor Sie zu Intune migrieren können, brauchen Sie ein [Intune-Abonnement](account-sign-up.md).
 
-- Suchen Sie [diese Seite](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) auf, um Informationen zu den folgenden Vorgängen zu erhalten:
-
-  - Erstellen eines neuen Intune-Abonnements, das mit einem neuen AAD-Mandanten verknüpft ist
-
-  - Verknüpfen eines Intune-Abonnements, indem Sie sich als bereits vorhandener AAD-Mandant anmelden
-
-### <a name="task-2-assign-intune-user-licenses"></a>Aufgabe 2: Zuweisen von Intune-Benutzerlizenzen
+### <a name="task-2-assign-intune-user-licenses"></a>Aufgabe 2: Zuweisen von Intune-Benutzerlizenzen
 
 - Erfahren Sie, wie Sie [Intune-Benutzerlizenzen zuweisen](licenses-assign.md) können.
 

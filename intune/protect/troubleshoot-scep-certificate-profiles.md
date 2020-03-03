@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38bc86b1b9ba85eb7885a0e00673e551821063c1
-ms.sourcegitcommit: 459b0ee01eb6e69cc0ce66d4c4b81d73f510f96d
+ms.openlocfilehash: 4496a5bbc6d5ee5134dc4e6a795494710ea6865d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77034242"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515219"
 ---
 # <a name="overview-for-troubleshooting-scep-certificate-profiles-with-microsoft-intune"></a>Übersicht zur Problembehandlung bei SCEP-Zertifikatprofilen in Microsoft Intune
 
@@ -123,9 +123,9 @@ Unterstützung finden Sie auch unter [Hochladen und E-Mail-Versand von Protokoll
 
 ### <a name="logs-for-ios-and-ipados-devices"></a>Protokolle für iOS- und iPadOS-Geräte
 
-Bei Geräten, auf denen iOS oder iPadOS ausgeführt wird, verwenden Sie Debugprotokolle und **Xcode**, der auf einem Macintosh-Computer ausgeführt wird:
+Bei Geräten, auf denen iOS/iPadOS ausgeführt wird, verwenden Sie Debugprotokolle und **Xcode**, der auf einem Macintosh-Computer ausgeführt wird:
 
-1. Verbinden Sie das iOS-Gerät mit dem Mac, und wechseln Sie dann zu **Anwendungen** > **Hilfsprogramme**, um die Konsolen-App zu öffnen. 
+1. Verbinden Sie das iOS/iPadOS-Gerät mit dem Mac, und wechseln Sie dann zu **Anwendungen** > **Hilfsprogramme**, um die Konsolen-App zu öffnen. 
 
 2. Wählen Sie unter **Aktion** die Option **Include Info Messages** (Informationsmeldungen einschließen) und **Include Debug Messages** (Debugmeldungen einschließen) aus.
 

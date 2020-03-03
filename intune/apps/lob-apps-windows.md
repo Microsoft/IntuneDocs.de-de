@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2020
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3deb9f3c96a4c2c2de72b7016aca855f679bbd7
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: ceb4d2354ca073cf05f526df7638aebf8f16d5b7
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755125"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569488"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Hinzufügen branchenspezifischer Windows-Apps zu Microsoft Intune
 
@@ -32,7 +32,7 @@ ms.locfileid: "76755125"
 Branchenspezifische Apps werden über eine App-Installationsdatei hinzugefügt. Diese Art von App wird in der Regel intern geschrieben. Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer LOB-Windows-App mit Microsoft Intune.
 
 > [!IMPORTANT]
-> Wenn Sie Win32-Apps mithilfe einer Installationsdatei mit der Erweiterung *.msi* bereitstellen, sollten Sie die Verwendung der [Intune-Verwaltungserweiterung](../apps/intune-management-extension.md) in Erwägung ziehen. Wenn Sie die Installation von Win32- und branchenspezifischen Apps während der Autopilot-Registrierung kombinieren, kann die App-Installation fehlschlagen.  
+> Wenn Sie Win32-Apps mithilfe einer Installationsdatei mit der Erweiterung „.msi“ bereitstellen (mithilfe des Content Prep Tools in eine .intunewin-Datei gepackt), sollten Sie die Verwendung der [Intune-Verwaltungserweiterung](../apps/intune-management-extension.md) in Erwägung ziehen. Wenn Sie die Installation von Win32- und branchenspezifischen Apps während der Autopilot-Registrierung kombinieren, kann die App-Installation fehlschlagen.  
 
 ## <a name="select-the-app-type"></a>Auswählen des App-Typs
 

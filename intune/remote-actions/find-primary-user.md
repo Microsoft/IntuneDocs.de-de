@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbafca746c43dada6281ffbfe1e34f01afa8ab91
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 7ff03682ab406b92e3ea7f1e416188119913cc87
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413681"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569454"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Suchen des primären Benutzers eines Intune-Geräts
 
 Der primäre Benutzer – auch als Affinität zwischen Benutzer und Gerät bezeichnet – ist eine Eigenschaft jedes Intune-Geräts. Einem Intune-Gerät kann einer oder kein primärer Benutzer zugewiesen sein. Wenn kein primärer Benutzer zugewiesen ist, wird das Gerät als „gemeinsam genutztes Gerät“ bezeichnet.
 
-## <a name="how-to-find-a-devices-primary-user"></a>So suchen Sie den primären Benutzer eines Geräts
+## <a name="find-a-devices-primary-user"></a>Den primären Benutzer eines Geräts herausfinden
 
 1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 2. Klicken Sie auf **Geräte**, und wählen Sie ein Gerät aus.
@@ -38,7 +38,7 @@ Der primäre Benutzer – auch als Affinität zwischen Benutzer und Gerät bezei
 Die Eigenschaft des primären Benutzers wird verwendet, um einen lizenzierten Intune-Benutzer an folgenden Stellen seinen Geräten zuzuordnen:
 - Unternehmensportal-App.
 - Endbenutzer-Website.
-- Benutzeroberflächen für IT-Experten, z.B. Seiten für die Problembehandlung im Azure-Portal. Auf diesen Seiten werden Benutzerkonten mithilfe des primären Benutzers zu Geräten zugeordnet.    
+- Benutzeroberflächen für IT-Experten, z.B. Seiten für die Problembehandlung im Azure-Portal. Auf diesen Seiten werden Benutzerkonten mithilfe des primären Benutzers zu Geräten zugeordnet. 
 
 ### <a name="company-portal-app"></a>Unternehmensportal-App
 Die Unternehmensportal-App erwartet, dass das am Unternehmensportal angemeldete Benutzerkonto der primäre Benutzer dieses Geräts ist. Wenn ein anderer Benutzer als primärer Benutzer zugewiesen wurde, zeigt das Unternehmensportal eine Warnung an:

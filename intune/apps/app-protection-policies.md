@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7a6914e8174023704cfc593ec08a525ec5889f3
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 7d1a55f758be50c342a5c8851106f0c37e6aec50
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437901"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513723"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Erstellen und Zuweisen von App-Schutzrichtlinien
 
@@ -74,21 +74,21 @@ Befolgen Sie beim Erstellen neuer App-Schutzrichtlinien für iOS-/iPadOS- und An
     Auf dieser Seite finden Sie Einstellungen für Steuerelemente zur Verhinderung von Datenverlust (DLP) einschließlich Einschränkungen für „Ausschneiden“, „Kopieren“, „Einfügen“ und „Speichern unter“. Diese Einstellungen bestimmen, wie Benutzer mit Daten in den Apps interagieren können, für die diese Schutzrichtlinie gilt.
 
     **Datenschutzeinstellungen:**<br>
-    - **Datenschutz bei iOS-/iPadOS-Apps:** Weitere Informationen finden Sie unter [Einstellungen für iOS-App-Schutzrichtlinien – Datenschutz](~/apps/app-protection-policy-settings-ios.md#data-protection).
+    - **Datenschutz bei iOS-/iPadOS-Apps:** Weitere Informationen finden Sie unter [Datenschutz](~/apps/app-protection-policy-settings-ios.md#data-protection).
     - **Datenschutz für Android-Apps:** Weitere Informationen finden Sie unter [Einstellungen für Android-App-Schutzrichtlinien – Datenschutz](~/apps/app-protection-policy-settings-android.md#data-protection).
 
 7. Klicken Sie auf **Weiter**, um die Seite **Zugriffsanforderungen** anzuzeigen.<br>
     Auf dieser Seite finden Sie Einstellungen, mit denen Sie die PIN und die Anforderungen bezüglich der Anmeldeinformationen konfigurieren können, die Benutzer für den Zugriff auf Apps in einem Arbeitskontext erfüllen müssen. 
  
     **Einstellungen für Zugriffsanforderungen:**<br>
-    - **Zugriffsanforderungen für iOS-/iPadOS-Apps:** Weitere Informationen finden Sie unter [Einstellungen für iOS-App-Schutzrichtlinien – Zugriffsanforderungen](~/apps/app-protection-policy-settings-ios.md#access-requirements).
+    - **Zugriffsanforderungen für iOS-/iPadOS-Apps:** Weitere Informationen finden Sie unter [Erforderliche Zugriffsberechtigungen](~/apps/app-protection-policy-settings-ios.md#access-requirements).
     - **Zugriffsanforderungen für Android-Apps:** Weitere Informationen finden Sie unter [Einstellungen für Android-App-Schutzrichtlinien – Zugriffsanforderungen](~/apps/app-protection-policy-settings-android.md#access-requirements).
 
 8. Klicken Sie auf **Weiter**, um die Seite **Conditional launch (Bedingter Start)** anzuzeigen.<br>
     Auf dieser Seite finden Sie Einstellungen zum Festlegen der Sicherheitsanforderungen für Anmeldeinformationen für die App-Schutzrichtlinien. Wählen Sie eine **Einstellung** aus, und geben Sie den **Wert** an, den Benutzer erfüllen müssen, um sich bei Ihrer Unternehmens-App anzumelden. Klicken Sie dann auf die **Aktion**, die Benutzer ausführen sollen, wenn Sie Ihre Anforderungen nicht erfüllen. In einigen Fällen können mehrere Aktionen für eine einzelne Einstellung konfiguriert werden.
 
     **Einstellungen für den bedingten Start:**<br>
-    - **Bedingter Start von iOS-/iPadOS-Apps:** Weitere Informationen finden Sie unter [Einstellungen für Schutzrichtlinien für iOS-Apps](~/apps/app-protection-policy-settings-ios.md#conditional-launch).
+    - **Bedingter Start von iOS-/iPadOS-Apps:** Weitere Informationen finden Sie unter [Bedingter Start](~/apps/app-protection-policy-settings-ios.md#conditional-launch).
     - **Bedingter Start von Android-Apps:** Weitere Informationen finden Sie unter [Einstellungen für Schutzrichtlinien für Android-Apps](~/apps/app-protection-policy-settings-android.md#conditional-launch).
 
 9. Klicken Sie auf **Weiter**, um die Seite **Zuweisungen** anzuzeigen.<br>
@@ -180,7 +180,7 @@ Um diese Richtlinien zu erstellen, navigieren Sie in der Intune-Konsole zu **App
 > [!NOTE]
 > Android-Geräte fordern dazu auf, die Intune-Unternehmensportal-App zu installieren, unabhängig davon, welcher Gerätetyp gewählt wurde. Wenn Sie beispielsweise „Android Enterprise“ auswählen, werden Benutzer mit nicht verwalteten Android-Geräten weiterhin dazu aufgefordert.
 
-Für iOS sind zusätzliche App-Konfigurationseinstellungen erforderlich, um App-Schutzrichtlinieneinstellungen für Apps auf in Intune registrierten Geräten bereitzustellen:
+Für iOS/iPadOS sind zusätzliche App-Konfigurationseinstellungen erforderlich, um App-Schutzrichtlinieneinstellungen für Apps auf in Intune registrierten Geräten bereitzustellen:
 
 - **IntuneMAMUPN** muss für alle mit MDM verwalteten Anwendungen konfiguriert sein. Weitere Informationen finden Sie unter [Verwalten der Datenübertragung zwischen iOS-/iPadOS-Apps in Microsoft Intune](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
 - **IntuneMAMDeviceID** muss für alle mit MDM verwalteten Drittanbieter- und Branchenanwendungen konfiguriert sein. **IntuneMAMDeviceID** sollte auf das Geräte-ID-Token konfiguriert sein. Beispiel: `key=IntuneMAMDeviceID, value={{deviceID}}`. Weitere Informationen finden Sie unter [Hinzufügen von App-Konfigurationsrichtlinien für verwaltete iOS-/iPadOS-Geräte](app-configuration-policies-use-ios.md).
@@ -192,7 +192,7 @@ Für iOS sind zusätzliche App-Konfigurationseinstellungen erforderlich, um App-
 ## <a name="policy-settings"></a>Richtlinieneinstellungen
 Eine vollständige Liste der Richtlinieneinstellungen für iOS/iPadOS und Android finden Sie unter den folgenden Links:
 
-- [iOS-Richtlinien](app-protection-policy-settings-ios.md)
+- [Einstellungen für App-Schutzrichtlinien für iOS](app-protection-policy-settings-ios.md)
 - [Android-Richtlinien](app-protection-policy-settings-android.md)
 
 ## <a name="next-steps"></a>Nächste Schritte

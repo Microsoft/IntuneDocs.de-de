@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e93e69b5cce2c54ae07410309b33870dd828f563
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bd204271b9ae3e57e15a101647444913749f4109
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509083"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514233"
 ---
 # <a name="data-collection-in-intune"></a>Datensammlung in Intune
 
@@ -60,7 +60,7 @@ Zu den identifizierten Daten, die von Intune gesammelt werden, zählen unter and
   - ICCID
   - Telefonnummer
 - Überwachungsprotokollinformationen, einschließlich Daten zu folgenden Aktivitäten:
-  - Verwalten von
+  - Verwalten
   - Erstellen
   - Aktualisieren (Bearbeiten)
   - Löschen
@@ -112,7 +112,7 @@ Zu den pseudonymisierten Daten, die von Intune gesammelt werden, zählen unter a
   - Konto-ID
   - EAS-Geräte-ID
   - Plattformspezifische IDs
-  - Apple-ID für iOS-Geräte
+  - Apple-ID für iOS/iPadOS-Geräte
   - MAC-Adressen für Mac-Geräte
   - Windows-ID für Windows-Geräte
 - Verwaltete Anwendungsinformationen

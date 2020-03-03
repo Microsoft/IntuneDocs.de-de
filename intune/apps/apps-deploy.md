@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15d6a67cb41455a1e3c0830e9ed242bfa52b0269
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: cee415174d68f3e6c9e72f0f0e06aa0d5d80ad91
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912657"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511853"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Zuweisen von Apps zu Gruppen mit Microsoft Intune
 
@@ -49,7 +49,7 @@ In der folgenden Tabelle werden die verschiedenen Optionen für die Zuweisung vo
 | Endbenutzer installieren verfügbare Apps über das webbasierte Unternehmensportal | Ja | Ja |
 
 > [!NOTE]
-> Derzeit können Sie iOS- und Android-Apps (Branchen-Apps und Apps aus dem Store) Geräten zuweisen, die nicht bei Intune registriert sind.
+> Derzeit können Sie iOS/iPadOS- und Android-Apps (Branchen-Apps und Apps aus dem Store) Geräten zuweisen, die nicht bei Intune registriert sind.
 >
 > Um App-Updates zu Geräten zu erhalten, die nicht bei Intune registriert sind, müssen Gerätebenutzer zum Unternehmensportal Ihrer Organisation navigieren und App-Updates manuell installieren.
 
@@ -67,9 +67,9 @@ In der folgenden Tabelle werden die verschiedenen Optionen für die Zuweisung vo
    - **Deinstallieren**: Die App wird auf Geräten in den ausgewählten Gruppen deinstalliert, wenn Intune die App zuvor über eine Zuweisung vom Typ „Für registrierte Geräte verfügbar“ oder „Erforderlich“ in der gleichen Bereitstellung auf dem Gerät installiert hat. Weblinks können nach der Bereitstellung nicht entfernt werden.
 
      > [!NOTE]
-     > **Nur für iOS-Apps**:
+     > **Nur für iOS/iPadOS-Apps:**
      > - Sie können die Vorgehensweise für verwaltete Apps konfigurieren, wenn die Geräte nicht mehr verwaltet werden. Wählen Sie hierzu unter **Deinstallieren beim Entfernen des Geräts** die gewünschte Einstellung aus. Weitere Informationen finden Sie im Abschnitt [Einstellung zum Deinstallieren von Apps für verwaltete iOS-Apps](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps).
-     > - Wenn Sie ein iOS-VPN-Profil erstellt haben, das VPN-Einstellungen pro App enthält, können Sie dieses unter **VPN** auswählen. Wenn die App ausgeführt wird, wird die VPN-Verbindung geöffnet. Weitere Informationen finden Sie unter [VPN-Einstellungen für iOS-Geräte](../vpn-settings-ios.md).
+     > - Wenn Sie ein iOS/iPadOS-VPN-Profil erstellt haben, das VPN-Einstellungen pro App enthält, können Sie dieses unter **VPN** auswählen. Wenn die App ausgeführt wird, wird die VPN-Verbindung geöffnet. Weitere Informationen finden Sie unter [Hinzufügen von VPN-Einstellungen auf iOS- und iPadOS-Geräten in Microsoft Intune](../vpn-settings-ios.md).
      >
      > **Nur für Android-Apps**: Wenn Sie eine Android-App als **Verfügbar mit oder ohne Registrierung** bereitstellen, ist der Berichtsstatus nur auf registrierten Geräten verfügbar.
      >
@@ -114,7 +114,7 @@ Verwenden Sie die folgende Tabelle, um die resultierende Absicht bei einem entst
 
 > [!NOTE]
 > Nur für verwaltete iOS Store-Apps: Wenn Sie diese Apps Microsoft Intune hinzufügen und als **Erforderlich** zuweisen, werden sie automatisch sowohl mit der Absicht **Erforderlich** als auch mit der Absicht **Verfügbar** erstellt.<br><br>
-> iOS Store-Apps (keine iOS-VPP-Apps), die mit der Absicht „Erforderlich“ als Ziel verwendet werden, werden auf dem Gerät beim Check-In erzwungen und in der Unternehmensportal-App angezeigt.<br><br>
+> iOS Store-Apps (keine iOS/iPadOS-VPP-Apps), die mit der Absicht „Erforderlich“ als Ziel verwendet werden, werden auf dem Gerät beim Check-In erzwungen und in der Unternehmensportal-App angezeigt.<br><br>
 > Treten bei der Einstellung **Deinstallieren beim Entfernen des Geräts** Konflikte auf, wird die App von einem nicht mehr verwalteten Gerät nicht entfernt.
 
 ## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>Verwaltete Google Play-App-Bereitstellung für nicht verwaltete Geräte
@@ -132,7 +132,7 @@ Schritte zum Zuweisen einer verwalteten Google Play-App zu nicht verwalteten Ger
 Wenn ein selektiver APP-Löschbefehl in der Intune-Konsole ausgegeben wird, wird das Geschäftskonto automatisch aus der Play Store-App entfernt, und der Endbenutzer sieht ab diesem Zeitpunkt keine Geschäfts-Apps mehr im Play Store-App-Katalog. Wenn das Geschäftskonto von einem Gerät entfernt wird, bleiben aus dem Play Store installierte Apps auf dem Gerät installiert und werden nicht deinstalliert. 
 
 ## <a name="app-uninstall-setting-for-ios-managed-apps"></a>Einstellung zum Deinstallieren von Apps für verwaltete iOS-Apps
-Bei iOS-Geräten können Sie auswählen, was mit verwalteten Apps geschehen soll, wenn die Registrierung des Geräts bei Intune aufgehoben oder das Verwaltungsprofil mithilfe der Einstellung **Deinstallieren beim Entfernen des Geräts** entfernt wird. Diese Einstellung gilt nur für Apps auf einem registrierten Gerät und erst nach deren Installation als verwaltete Apps. Die Einstellung kann nicht für Web-Apps oder Weblinks konfiguriert werden. Nur durch die mobile Anwendungsverwaltung (Mobile Application Management, MAM) geschützte Daten werden nach der Deaktivierung durch eine selektive App-Zurücksetzung entfernt.
+Bei iOS/iPadOS-Geräten können Sie auswählen, was mit verwalteten Apps geschehen soll, wenn die Registrierung des Geräts bei Intune aufgehoben oder das Verwaltungsprofil mithilfe der Einstellung **Deinstallieren beim Entfernen des Geräts** entfernt wird. Diese Einstellung gilt nur für Apps auf einem registrierten Gerät und erst nach deren Installation als verwaltete Apps. Die Einstellung kann nicht für Web-Apps oder Weblinks konfiguriert werden. Nur durch die mobile Anwendungsverwaltung (Mobile Application Management, MAM) geschützte Daten werden nach der Deaktivierung durch eine selektive App-Zurücksetzung entfernt.
 
 Folgende Standardwerte werden bei neuen Zuweisungen vorab für die Einstellung aufgefüllt:
 

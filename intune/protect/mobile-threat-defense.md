@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b67e3b14fd94376fb6dacad88fa58ddc460a6bc5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f056f665ebee0d1e2315129a4fe739b2c490ca98
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73057580"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514845"
 ---
 # <a name="mobile-threat-defense-integration-with-intune"></a>Integration von Mobile Threat Defense in Intune
 
@@ -50,7 +50,7 @@ Wenn die Einstellung aktiviert ist, erfasst Intune sowohl von privaten als auch 
 Dieser Dienst muss aktiviert werden. Informationen zum App-Bestand werden nicht standardmäßig freigegeben. Die **App-Synchronisierung für iOS-Geräte** muss in den MTD-Connectoreinstellungen von einem Intune-Administrator aktiviert werden, bevor Informationen zum App-Bestand freigegeben werden.
 
 **App-Bestand**  
-Wenn Sie die App-Synchronisierung für iOS-Geräte aktivieren, werden die Bestände der unternehmenseigenen und privaten iOS-Geräte an Ihren MTD-Dienstanbieter gesendet. Die Daten in den App-Beständen umfassen:
+Wenn Sie die App-Synchronisierung für iOS/iPadOS-Geräte aktivieren, werden die Bestände der unternehmenseigenen und privaten iOS/iPadOS-Geräte an Ihren MTD-Dienstanbieter gesendet. Die Daten in den App-Beständen umfassen:
 
 - App-ID
 - App-Version
@@ -63,28 +63,28 @@ Wenn Sie die App-Synchronisierung für iOS-Geräte aktivieren, werden die Bestä
 
 ## <a name="sample-scenarios-for-enrolled-devices-using-device-compliance-policies"></a>Beispielszenarios für registrierte Geräte mit Gerätekonformitätsrichtlinien
 
-Wenn ein Gerät von der Mobile Threat Defense-Lösung als gefährdet eingestuft wird:
+Wenn ein Gerät von der Mobile Threat Defense-Lösung als infiziert eingestuft wird:
 
 ![Abbildung: mit Mobile Threat Defense geschütztes, gefährdetes Gerät](./media/mobile-threat-defense/MTD-image-1.png)
 
-Der Zugriff wird gewährt, wenn das Gerät wiederhergestellt ist:
+Der Zugriff wird ermöglicht, wenn das Gerät wiederhergestellt ist:
 
 ![Abbildung: Mobile Threat Defense – Zugriff gewährt](./media/mobile-threat-defense/MTD-image-2.png)
 
 ## <a name="sample-scenarios-for-unenrolled-devices-using-intune-app-protection-policies"></a>Beispielszenarios für nicht registrierte Geräte mit Intune-App-Schutzrichtlinien
 
-Wenn ein Gerät von der Mobile Threat Defense-Lösung als gefährdet eingestuft wird:<br>
+Wenn ein Gerät von der Mobile Threat Defense-Lösung als infiziert eingestuft wird:<br>
 ![Abbildung: mit Mobile Threat Defense geschütztes, gefährdetes Gerät](./media/mobile-threat-defense/MTD-image-3.png)
 
-Der Zugriff wird gewährt, wenn das Gerät wiederhergestellt ist:<br>
+Der Zugriff wird ermöglicht, wenn das Gerät wiederhergestellt ist:<br>
 ![Abbildung: Mobile Threat Defense-Zugriff gewährt](./media/mobile-threat-defense/MTD-image-4.png)
 
 > [!NOTE]
 > Sie können mehrere Mobile Threat Defense-Anbieter mit einem einzelnen Intune-Mandanten verwenden. Wenn jedoch zwei oder mehr Anbieter für die Verwendung auf derselben Plattform konfiguriert sind, müssen alle Geräte, auf denen diese Plattform ausgeführt wird, jede MTD-App installieren und nach Bedrohungen suchen. Wenn Sie eine Überprüfung von einer konfigurierten App nicht übermitteln, wird das Gerät als nicht kompatibel gekennzeichnet. 
 
-## <a name="mobile-threat-defense-partners"></a>Mobile Threat Defense-Partner
+## <a name="mobile-threat-defense-partners"></a>Partner von Mobile Threat Defense
 
-Lernen Sie, wie Sie den Zugriffs auf Unternehmensressourcen auf der Basis von Geräte-, Netzwerk- und Anwendungsrisiko schützen:
+Erfahren Sie, wie Sie den Zugriff auf Unternehmensressourcen basierend auf Gerät, Netzwerk und Anwendungsrisiko schützen können mithilfe von:
 
 - [Lookout for Work](lookout-mobile-threat-defense-connector.md)
 - [Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md)

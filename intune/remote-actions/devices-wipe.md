@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ba66469dfff004c3cd6a60284ec7466e8b9f00
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 41a46bd400c5901f0352709f6057bddac262ff9e
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415511"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609374"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Entfernen von Geräten durch Zurücksetzen, Abkoppeln oder manuelles Aufheben der Registrierung des Geräts
 
@@ -47,7 +47,7 @@ Die Aktion **Zurücksetzen** setzt das Gerät auf die Werkseinstellungen zurück
 
 Die Option **Registrierungszustand und Benutzerkonto beibehalten** steht Ihnen nur für Windows 10, Version 1709 oder höher, zur Verfügung.
 
-Mit der Option **Perform protected wipe** (Geschütztes Zurücksetzen ausführen) wird sichergestellt, dass die Zurücksetzung nicht umgangen werden kann, indem das Gerät ausgeschaltet wird. Beim geschützten Zurücksetzen wird solange versucht, das Gerät zurückzusetzen, bis der Vorgang erfolgreich ist. In manchen Konfigurationen kann das Gerät aufgrund dieser Aktion nicht neu gestartet werden.
+Mit der Option **Perform protected wipe** (Geschütztes Zurücksetzen ausführen) wird sichergestellt, dass die Zurücksetzung nicht umgangen werden kann, indem das Gerät ausgeschaltet wird. Beim geschützten Zurücksetzen wird solange versucht, das Gerät zurückzusetzen, bis der Vorgang erfolgreich ist. In manchen Konfigurationen kann das Gerät aufgrund dieser Aktion [nicht neu gestartet werden](troubleshoot-device-actions.md#wipe-action).
 
 MDM-Richtlinien werden beim nächsten Herstellen einer Verbindung des Geräts mit Intune erneut angewendet.
 
@@ -197,7 +197,10 @@ Wenn Sie ein Apple-DEP-Gerät vollständig aus der Intune-Verwaltung entfernen m
 
     ![Screenshot für die Neuzuweisung für Apple](./media/devices-wipe/apple-reassign.png)
 
-## <a name="fresh-start"></a>Sauberer Start
+## <a name="device-states"></a>Gerätestatus
+Eine Beschreibung der Gerätestatus finden Sie in der [managementStates-Auflistung](https://docs.microsoft.com/intune/developer/intune-data-warehouse-collections.md#managementstates).
+
+## <a name="fresh-start"></a>Sauber starten
 
 Gilt für Geräte mit Windows 10 Weitere Informationen finden Sie unter [Verwenden der Aktion „Sauberer Start“ zum Zurücksetzen von Windows 10-Geräten mit Intune](device-fresh-start.md).
 

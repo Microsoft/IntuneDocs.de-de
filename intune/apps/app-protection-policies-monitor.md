@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 899e2d2dc8458d0909f01e9dfcc1056874ef0fa7
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 317f39b28909196d03ef5e7c68c7980f5fdfea3f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437969"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512210"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Überwachen von App-Schutzrichtlinien
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -48,7 +48,7 @@ Die Beibehaltungsdauer für den Schutz von App-Daten beträgt 90 Tage. Alle App-
    ![Screenshot der Zusammenfassungskachel des Bereichs der mobilen Anwendungsverwaltung mit Intune](./media/app-protection-policies-monitor/app-protection-user-status-summary.png)
 
 - **Zugewiesene Benutzer:** Die Gesamtzahl von zugewiesenen Benutzern in Ihrem Unternehmen, die eine App verwenden, die einer Richtlinie in einem geschäftlichen Kontext zugeordnet ist, und geschützt und lizenziert sind, sowie die zugewiesenen Benutzer, die nicht geschützt und lizenziert sind.
-- **Gekennzeichnete Benutzer:** Die Anzahl von Benutzern, bei deren Geräten Probleme auftreten. Geräte mit Jailbreak (iOS) oder Rooting (Android) werden unter **Gekennzeichnete Benutzer** gemeldet. Hier werden auch Benutzer gemeldet, deren Geräte von der Google-SafetyNet-Überprüfung beim Gerätenachweis gekennzeichnet wurden (wenn diese vom IT-Administrator aktiviert wurde). 
+- **Gekennzeichnete Benutzer:** Die Anzahl von Benutzern, bei deren Geräten Probleme auftreten. Geräte mit Jailbreak (iOS/iPadOS) oder Rootzugriff (Android) werden unter **Gekennzeichnete Benutzer** gemeldet. Hier werden auch Benutzer gemeldet, deren Geräte von der Google-SafetyNet-Überprüfung beim Gerätenachweis gekennzeichnet wurden (wenn diese vom IT-Administrator aktiviert wurde). 
 - **Benutzer mit potenziell schädlichen Apps**: Die Anzahl der Benutzer, die eine schädliche App auf ihrem Android-Gerät haben könnten, wird von Google Play Protect erkannt. 
 - **Benutzerstatus für iOS** und **Benutzerstatus für Android**: Die Anzahl von Benutzern, die eine App verwendet haben und denen eine Richtlinie in einem geschäftlichen Kontext für die entsprechende Plattform zugewiesen ist. Diese Informationen zeigen die Anzahl der von der Richtlinie verwalteten Benutzer sowie die Anzahl der Benutzer an, die eine App verwenden, die von keiner Richtlinie in einem geschäftlichen Kontext erfasst wird. Sie sollten erwägen, diese Benutzer zur Richtlinie hinzuzufügen.
 - **Beliebteste geschützte iOS-/iPadOS-Apps** und **Beliebteste geschützte Android-Apps**: Auf Grundlage der am meisten verwendeten iOS-/iPadOS- und Android-Apps wird hier die Anzahl von geschützten und nicht geschützten Apps nach Plattform angezeigt.
@@ -61,7 +61,7 @@ Die Beibehaltungsdauer für den Schutz von App-Daten beträgt 90 Tage. Alle App-
 Sie gelangen zu einer detaillierten Ansicht der Zusammenfassung, indem Sie auf die Kachel **Gekennzeichnete Benutzer** und dann auf die Kachel **Benutzer mit potenziell schädlichen Apps** klicken.
 
 ### <a name="flagged-users"></a>Gekennzeichnete Benutzer
-In der Detailansicht werden die Fehlermeldung, die App, auf die bei Auftreten des Fehlers zugegriffen wurde, die betroffene Betriebssystemplattform des Geräts und ein Zeitstempel angezeigt. Der Fehler tritt in der Regel bei Geräten mit Jailbreak (iOS) oder Rootzugriff (Android) auf. Hier werden auch Benutzer gemeldet, deren Geräte bei der bedingten Startüberprüfung vom „SafetyNet-Gerätenachweis“ gekennzeichnet wurden. Außerdem werden die von Google angegebenen Gründe aufgeführt. Damit ein Benutzer aus dem Bericht entfernt werden kann, muss der Status des Geräts selbst geändert werden. Dies geschieht nach der nächsten Stammerkennungsüberprüfung (bzw. Jailbreak-/SafetyNet-Überprüfung), die ein positives Ergebnis melden muss. Wenn das Gerät tatsächlich wiederhergestellt wird, wird die Aktualisierung des Berichts über gekennzeichnete Benutzer durchgeführt, wenn der Bereich erneut geladen wird.
+In der Detailansicht werden die Fehlermeldung, die App, auf die bei Auftreten des Fehlers zugegriffen wurde, die betroffene Betriebssystemplattform des Geräts und ein Zeitstempel angezeigt. Der Fehler tritt in der Regel bei Geräten mit Jailbreak (iOS/iPadOS) oder Rootzugriff (Android) auf. Hier werden auch Benutzer gemeldet, deren Geräte bei der bedingten Startüberprüfung vom „SafetyNet-Gerätenachweis“ gekennzeichnet wurden. Außerdem werden die von Google angegebenen Gründe aufgeführt. Damit ein Benutzer aus dem Bericht entfernt werden kann, muss der Status des Geräts selbst geändert werden. Dies geschieht nach der nächsten Stammerkennungsüberprüfung (bzw. Jailbreak-/SafetyNet-Überprüfung), die ein positives Ergebnis melden muss. Wenn das Gerät tatsächlich wiederhergestellt wird, wird die Aktualisierung des Berichts über gekennzeichnete Benutzer durchgeführt, wenn der Bereich erneut geladen wird.
 
 ### <a name="users-with-potentially-harmful-apps"></a>Benutzer mit potenziell schädlichen Apps
 Hier werden Benutzer gemeldet, deren Geräte bei der bedingten Startüberprüfung mit **Bedrohungsüberprüfung für Apps erzwingen** gekennzeichnet wurden. Außerdem werden die von Google angegebenen Bedrohungskategorien aufgeführt. Wenn in diesem Bericht Apps aufgeführt sind, die über Intune bereitgestellt werden, wenden Sie sich bezüglich der App an den App-Entwickler, oder entfernen Sie die App aus der Zuweisung an Ihre Benutzer. Die ausführliche Ansicht zeigt Folgendes:
@@ -170,7 +170,7 @@ Führen Sie diese Schritte aus, um eine App-Schutzdatei (CSV) oder eine App-Konf
     ![Screenshot des Dialogfelds „Bericht speichern“ zur Bestätigung](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
    
 > [!NOTE]
-> Intune bietet zusätzliche Felder zur Geräteberichtserstellung, einschließlich Feldern für App-Registrierungs-ID, Android-Hersteller, Modell und Sicherheitspatchversion sowie iOS-/iPadOS-Modell. In Intune greifen Sie auf diese Felder zu, indem Sie **Apps** > **Status des App-Schutzes** > **Bericht zum App-Schutz: iOS/iPadOS, Android** auswählen. Darüber hinaus bieten diese Parameter Unterstützung bei der Konfiguration der Liste **Zulassen** für den Gerätehersteller (Android), der Liste **Zulassen** für das Gerätemodell (Android und iOS) sowie der Einstellung **Niedrigste zulässige Android-Sicherheitsversion**.   
+> Intune bietet zusätzliche Felder zur Geräteberichtserstellung, einschließlich Feldern für App-Registrierungs-ID, Android-Hersteller, Modell und Sicherheitspatchversion sowie iOS-/iPadOS-Modell. In Intune greifen Sie auf diese Felder zu, indem Sie **Apps** > **Status des App-Schutzes** > **Bericht zum App-Schutz: iOS/iPadOS, Android** auswählen. Darüber hinaus bieten diese Parameter Unterstützung bei der Konfiguration der Liste **Zulassen** für den Gerätehersteller (Android), der Liste **Zulassen** für das Gerätemodell (Android und iOS/iPadOS) sowie der Einstellung **minimum Android security patch version** (Niedrigste zulässige Android-Sicherheitsversion).   
  
 ## <a name="see-also"></a>Weitere Informationen:
 - [Verwalten der Datenübertragung zwischen iOS-/iPadOS-Apps](data-transfer-between-apps-manage-ios.md)

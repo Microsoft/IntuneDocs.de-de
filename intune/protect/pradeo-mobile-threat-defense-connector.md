@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 563b117583f8b8c1f4da08d5d4e3399d5939bf97
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fd2f03edeb1e402401911ab2c80fa0d699e2628c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504371"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514879"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Mobile Threat Defense-Connector Pradeo in Intune
 
@@ -30,11 +30,11 @@ Sie können Richtlinien für bedingten Zugriff basierend auf der Pradeo-Risikobe
 
 ## <a name="how-do-intune-and-pradeo-help-protect-your-company-resources"></a>Wie helfen Intune und Pradeo beim Schutz von Unternehmensressourcen?
 
-Die Pradeo-App für Android oder iOS erfasst Telemetriedaten des Dateisystems, Netzwerkstapels sowie von Geräten und Anwendungen, sofern verfügbar, und sendet diese dann an den Pradeo-Clouddienst, mit dessen Hilfe die Anfälligkeit des Geräts für mobile Bedrohungen bewertet wird.
+Die Pradeo-App für Android oder iOS/iPadOS erfasst Telemetriedaten des Dateisystems, Netzwerkstapels sowie von Geräten und Anwendungen, sofern verfügbar, und sendet diese dann an den Pradeo-Clouddienst, mit dessen Hilfe die Anfälligkeit des Geräts für mobile Bedrohungen bewertet wird.
 
 Die Intune-Gerätekonformitätsrichtlinie enthält eine Regel für Pradeo Mobile Threat Defense, die auf der Pradeo-Risikobewertung basiert. Wenn diese Regel aktiviert ist, bewertet Intune die Gerätekompatibilität mit der von Ihnen aktivierten Richtlinie. Wird das Gerät als nicht kompatibel eingestuft, wird der Zugriff auf Ressourcen wie Exchange Online und SharePoint Online für Benutzer blockiert. Benutzer erhalten zudem einen Leitfaden von der auf ihren Geräten installierten Pradeo-App, um das Problem zu beheben und den Zugriff auf Unternehmensressourcen zurückzuerlangen.
 
-## <a name="sample-scenarios"></a>Beispielszenarien
+## <a name="sample-scenarios"></a>Beispielszenarios
 
 Es folgen einige gängige Szenarios.
 
@@ -56,7 +56,7 @@ Wenn Apps, die Schadsoftware enthalten, auf Geräten erkannt werden, können Sie
 
 ![Apps mit Schadsoftware entdeckt, Zugriff gewährt](./media/pradeo-mobile-threat-defense-connector/pradeo_maliciousapps_unblocked.png)
 
-### <a name="control-access-based-on-threat-to-network"></a>Steuern des Zugriffs basierend auf der Bedrohung für das Netzwerk
+### <a name="control-access-based-on-threat-to-network"></a>Steuern des Zugriffs basierend auf Bedrohung für das Netzwerk
 
 Erkennen von Bedrohungen wie **Man-in-the-Middle-Angriffe** für Ihr Netzwerk und Schützen des Zugriffs auf WLAN-Netzwerke basierend auf dem Geräterisiko.
 
@@ -68,7 +68,7 @@ Erkennen von Bedrohungen wie **Man-in-the-Middle-Angriffe** für Ihr Netzwerk un
 
 ![Darstellung des Szenarios, wenn der Zugriff nach der Behebung wieder erteilt wird](./media/pradeo-mobile-threat-defense-connector/pradeo_network_wifi_unblocked.png)
 
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Steuern des Zugriffs auf SharePoint Online basierend auf der Bedrohung für das Netzwerk
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Steuern des Zugriffs auf SharePoint Online basierend auf Netzwerkbedrohungen
 
 Erkennen von Bedrohungen wie **Man-in-the-Middle-Angriffe** für Ihr Netzwerk und Verhindern der Synchronisierung von Unternehmensdateien basierend auf dem Geräterisiko.
 

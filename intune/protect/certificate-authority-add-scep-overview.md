@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d05e33dbc28707bc6f929be72ba4a77c2e0641c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 85aac54a81d81dc138dd12612db183aae839b72b
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206056"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575984"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Hinzufügen einer Partnerzertifizierungsstelle in Intune mithilfe von SCEP
 
-Verwenden Sie Zertifizierungsstellen von Drittanbietern mit Intune. Zertifizierungsstellen von Drittanbietern stellen neue oder erneuerte Zertifikate für mobile Geräte über das Simple Certificate Enrollment-Protokoll (SCEP) aus und können Windows-, iOS-, Android- und macOS-Geräte unterstützen.
+Verwenden Sie Zertifizierungsstellen von Drittanbietern mit Intune. Zertifizierungsstellen von Drittanbietern stellen neue oder erneuerte Zertifikate für mobile Geräte über das Simple Certificate Enrollment-Protokoll (SCEP) aus und können Windows-, iOS-/iPadOS-, Android- und macOS-Geräte unterstützen.
 
 Die Nutzung des Features umfasst zwei Aspekte: die Verwendung einer Open Source-API und die Durchführung von Intune-Administratoraufgaben.
 
@@ -83,7 +83,7 @@ Achten Sie darauf, dass Sie über die erforderlichen Berechtigungen zum Registri
 
 3. Wählen Sie **Registrieren** aus, um die Anwendung zu erstellen und die Seite „Übersicht“ für die neue App zu öffnen.  
 
-4. Kopieren Sie auf der App-Seite **Übersicht** den Wert der **Anwendungs-ID (Client)** , und notieren Sie ihn zur späteren Verwendung. Sie benötigen diesen Wert später.  
+4. Kopieren Sie auf der App-Seite **Übersicht** den Wert der **Anwendungs-ID (Client)**, und notieren Sie ihn zur späteren Verwendung. Sie benötigen diesen Wert später.  
 
 5. Navigieren Sie im Navigationsbereich der App unter **Verwalten** zu **Zertifikate und Geheimnisse**. Wählen Sie die Schaltfläche **Neuer geheimer Clientschlüssel** aus. Geben Sie einen Wert in „Beschreibung“ ein, wählen Sie eine Option für **Gültig bis** aus, und wählen Sie **Hinzufügen** aus, um einen *Wert* für den geheimen Clientschlüssel zu generieren. 
    > [!IMPORTANT]  

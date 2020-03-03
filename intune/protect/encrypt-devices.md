@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 02/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5209ce7fba30a156de055503751104f9090d49d7
-ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
+ms.openlocfilehash: a5c844377dcd69b6caf5ef9f72fcb8dbb4ef8bd0
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75756004"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609313"
 ---
 # <a name="use-device-encryption-with-intune"></a>Verwenden der Geräteverschlüsselung mit Intune
 
@@ -39,7 +39,7 @@ Intune beinhaltet auch einen integrierten [Verschlüsselungsbericht](encryption-
 
 Verwenden Sie Intune, um die FileVault-Datenträgerverschlüsselung auf macOS-Geräten zu konfigurieren. Verwenden Sie anschließend den Intune-Verschlüsselungsbericht, um die Verschlüsselungsdetails für diese Geräte anzuzeigen und Wiederherstellungsschlüssel für mit FileVault verschlüsselte Geräte zu verwalten.
 
-Beachten Sie, dass die vom Benutzer genehmigte Geräteregistrierung erforderlich ist, damit FileVault auf dem Gerät funktioniert. Der Benutzer muss das Verwaltungsprofil manuell anhand von Systemeinstellungen genehmigen, damit die Registrierung als vom Benutzer genehmigt angesehen wird. 
+Damit FileVault auf dem Gerät funktioniert, ist eine vom Benutzer genehmigte Geräteregistrierung erforderlich. Der Benutzer muss das Verwaltungsprofil manuell anhand von Systemeinstellungen genehmigen, damit die Registrierung als vom Benutzer genehmigt angesehen wird.
 
 FileVault ist ein Verschlüsselungsprogramm für ganze Datenträger, das im Lieferumfang von macOS enthalten ist. Verwenden Sie Intune, um FileVault auf Geräten zu konfigurieren, auf denen **macOS 10.13 oder höher** ausgeführt wird.
 
@@ -50,6 +50,19 @@ Sobald Sie eine Richtlinie für die Geräteverschlüsselung mit FileVault erstel
 ![FileVault-Einstellungen](./media/encrypt-devices/filevault-settings.png)
 
 Ausführliche Informationen zur FileVault-Einstellung, die Sie mit Intune verwalten können, finden Sie unter [FileVault](endpoint-protection-macos.md#filevault) im Intune-Artikel für Endpoint Protection-Einstellungen unter macOS.
+
+### <a name="permissions-to-manage-filevault"></a>Berechtigungen zum Verwalten von FileVault
+
+Damit Sie FileVault in Intune verwalten können, muss Ihr Konto in Intune über die entsprechenden Berechtigungen für die [rollenbasierte Zugriffssteuerung](../fundamentals/role-based-access-control.md) (RBAC) verfügen.
+
+Im Folgenden sind die FileVault-Berechtigungen aufgelistet, die zur Kategorie der **Remoteaufgaben** gehören, sowie die integrierten RBAC-Rollen für das Erteilen der jeweiligen Berechtigung:
+ 
+- **Get FileVault key** (FileVault-Schlüssel erhalten):
+  - Helpdesk-Operator
+  - Endpoint security manager (Endpunktsicherheits-Manager)
+
+- **Rotate FileVault key** (FileVault-Schlüssel rotieren)
+  - Helpdesk-Operator
 
 ### <a name="how-to-configure-macos-filevault"></a>Konfigurieren von FileVault unter macOS
 
@@ -84,7 +97,7 @@ Nachdem Intune ein macOS-Gerät mit FileVault verschlüsselt hat, können Sie de
 
 ### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices"></a>Abrufen eines persönlichen Wiederherstellungsschlüssels von MEM-verschlüsselten macOS-Geräten
 
-Endbenutzer können mithilfe der Unternehmensportal-App für iOS ihren persönlichen Wiederherstellungsschlüssel (FileVault-Schlüssel) abrufen. Das Gerät mit dem persönlichen Wiederherstellungsschlüssel muss bei Intune registriert und über Intune mit FileVault verschlüsselt sein. Mithilfe der iOS-Unternehmensportal-App können die Endbenutzer eine Webseite öffnen, die den persönlichen FileVault-Wiederherstellungsschlüssel umfasst. Sie können den Wiederherstellungsschlüssel auch aus Intune abrufen, indem Sie **Geräte** > *das verschlüsselte und registrierte macOS-Gerät* > **Wiederherstellungsschlüssel abrufen** auswählen. 
+Endbenutzer rufen ihren persönlichen Wiederherstellungsschlüssel (FileVault-Schlüssel) mithilfe der Unternehmensportal-App für iOS ab. Das Gerät mit dem persönlichen Wiederherstellungsschlüssel muss bei Intune registriert und über Intune mit FileVault verschlüsselt sein. Mithilfe der iOS-Unternehmensportal-App können die Endbenutzer eine Webseite öffnen, die den persönlichen FileVault-Wiederherstellungsschlüssel umfasst. Sie können den Wiederherstellungsschlüssel auch aus Intune abrufen, indem Sie **Geräte** > *das verschlüsselte und registrierte macOS-Gerät* > **Wiederherstellungsschlüssel abrufen** auswählen. 
 
 ## <a name="bitlocker-encryption-for-windows-10"></a>BitLocker-Verschlüsselung für Windows 10
 
@@ -131,7 +144,7 @@ Geräte müssen die folgenden Voraussetzungen erfüllen, damit der BitLocker-Wie
 
   - **Rotation von clientgesteuerten Wiederherstellungskennwörtern**
 
-  Diese Einstellung finden Sie unter *Windows-Verschlüsselung* als Teil einer Gerätekonfigurationsrichtlinie für Windows 10 Endpoint Protection.
+  Diese Einstellung finden Sie unter *Windows-Verschlüsselung* als Teil einer Gerätekonfigurationsrichtlinie für Windows 10 Endpoint Protection.
   
 #### <a name="to-rotate-the-bitlocker-recovery-key"></a>So drehen Sie den BitLocker-Wiederherstellungsschlüssel
 

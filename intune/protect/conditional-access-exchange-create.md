@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d04897d38c1b46f27fe86e72ecfa6856aa9eece2
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 4962b4c75460b129f9df7729b5a34485d8ee0760
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755652"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576069"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Erstellen einer Richtlinie für bedingten Zugriff auf Exchange lokal und das ältere Exchange Online Dedicated
 
@@ -63,12 +63,12 @@ Bevor Sie den bedingten Zugriff konfigurieren, überprüfen Sie, ob folgende Kon
 ### <a name="support-for-mobile-devices"></a>Unterstützung für mobile Geräte
 
 - Windows Phone 8.1 und höher
-- Systemeigene E-Mail-App unter iOS.
+- Die native E-Mail-App unter iOS/iPadOS.
 - EAS-E-Mail-Clients wie Gmail unter Android 4 oder höher.
 - EAS-E-Mail-Clients für **Android-Arbeitsprofilgeräte:** Nur **Gmail** und **Nine Work for Android Enterprise** im **Arbeitsprofil** werden auf Android-Arbeitsprofilgeräten unterstützt. Damit der bedingte Zugriff mit Android-Arbeitsprofilen funktioniert, müssen Sie ein E-Mail-Profil für die Gmail- oder Nine Work for Android Enterprise-App erstellen und diese Apps als erforderliche Installation bereitstellen.
 
 > [!NOTE]
-> Microsoft Outlook für Android und iOS wird nicht über den lokalen Exchange-Connector unterstützt. Wenn Sie Richtlinien für den bedingten Azure Active Directory-Zugriff und Intune-App-Schutzrichtlinien mit Outlook für iOS und Android für Ihre lokale Postfächer nutzen möchten, lesen Sie [Verwendung der modernen Hybridauthentifizierung mit Outlook für iOS und Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
+> Microsoft Outlook für Android und iOS/iPadOS wird nicht über den lokalen Exchange-Connector unterstützt. Wenn Sie Richtlinien für den bedingten Azure Active Directory-Zugriff und Intune-App-Schutzrichtlinien mit Outlook für iOS/iPadOS und Android für Ihre lokale Postfächer nutzen möchten, lesen Sie [Verwendung der modernen Hybridauthentifizierung mit Outlook für iOS und Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
 
 ### <a name="support-for-pcs"></a>Unterstützung für PCs
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40e8dd8409f70a70934684c56ed9e9729f4ebf0f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 231b30e93a3e56811e1569c32cc1286e02320f0d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414607"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514403"
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Wie Ihre Android-Benutzer Apps erhalten
 
@@ -38,7 +38,7 @@ Dieser Artikel bietet grundlegende Informationen dazu, wie und wo Ihre Android-E
 Ihre Benutzer müssen die Installation aus unbekannten Quellen zulassen, damit [branchenspezifische Apps](../apps/lob-apps-android.md) installiert werden können. Diese Einstellung befindet sich normalerweise an zwei verschiedenen Stellen:
 
 * **Android 7.1.2 und höher:** **Einstellungen** > **Sicherheit** > **Unknown sources** (Unbekannte Quellen)
-* **Android 8.0 und höher:** **Einstellungen** > **Apps & Benachrichtigungen** > **Special app access** > **Install unknown apps**  > **Unternehmensportal** > **Allow from this source** (Spezieller App-Zugriff > Unbekannte App installieren > Unternehmensportal > Aus dieser Quelle zulassen)
+* **Android 8.0 und höher:** **Einstellungen** > **Apps & Benachrichtigungen** > **Special app access** > **Install unknown apps** > **Unternehmensportal** > **Allow from this source** (Spezieller App-Zugriff > Unbekannte App installieren > Unternehmensportal > Aus dieser Quelle zulassen)
 
 In diesem Fall informiert die Unternehmensportal-App den Benutzer und führt ihn zur entsprechenden Einstellung. 
 
@@ -61,10 +61,10 @@ Intune verwendet das Zebra Mobility Extensions-Toolkit (MX), um Apps unbeaufsich
 
 Auf Zebra-Geräten bereitgestellte branchenspezifische Apps müssen über einen öffentlichen Ort auf dem Gerät installiert werden. Möglicherweise greifen andere Apps und Dienste, die auch Zugriff auf den öffentlichen Speicher auf dem Gerät haben, auf das APK-App-Paket zu. In der Regel erfolgt dieser Zugriff in einem kleinen Zeitfenster zwischen dem Abschluss des App-Downloads und dem Start der Installation. Dieses Fenster kann für einen zeitgesteuerten Angriff missbraucht werden. Beispielsweise kann während dieses Zeitfensters ein APK-Paket geändert werden. Intune minimiert den Zeitraum, für den sich die APK-Datei im öffentlichen Speicher befindet, und lässt keine Installation nicht signierter Apps zu. Um das Sicherheitsrisiko so weit wie möglich zu reduzieren, stellen Sie sicher, dass die APK-Dateien, die Sie hochladen, keine vertraulichen Informationen enthalten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 [Hinzufügen von Apps mit Microsoft Intune](../apps/apps-add.md)
 
-[Wie Ihre iOS-Benutzer Apps erhalten](end-user-apps-ios.md)
+[Wie Ihre iOS-/iPadOS-Benutzer Apps erhalten](end-user-apps-ios.md)
 
 [Wie Ihre Windows-Benutzer Apps erhalten](end-user-apps-windows.md)

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f67a08ef3cbfae4a801333e5f8ffb5469e723ed
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 65a13c2690f08c2244f31854556a88b6301c6ac5
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77438054"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576010"
 ---
 # <a name="disable-activation-lock-on-supervised-iosipados-devices-with-intune"></a>Deaktivieren der Aktivierungssperre auf überwachten iOS-/iPadOS-Geräten mit Intune
 
@@ -63,7 +63,7 @@ Intune kann den Status der Aktivierungssperre von überwachten Geräten anforder
 Bevor Sie die Aktivierungssperre auf Geräten deaktivieren können, müssen Sie sie aktivieren, indem Sie dieser Anleitung folgen:
 
 1. Konfigurieren Sie ein Intune-Profil für die Einschränkung von Geräten für iOS/iPadOS. Verwenden Sie dafür die Informationen unter [So konfigurieren Sie Einstellungen für Geräteeinschränkungen](/intune-azure/configure-devices/how-to-configure-device-restrictions).
-2. Aktivieren Sie in den [Einstellungen für Geräteeinschränkungen für iOS](../configuration/device-restrictions-ios.md) unter **Allgemein** die Option **Aktivierungssperre**.
+2. Aktivieren Sie in den [Einstellungen für Geräteeinschränkungen für iOS/iPadOS](../configuration/device-restrictions-ios.md) unter **Allgemein** die Option **Aktivierungssperre**.
 3. Speichern Sie das Profil, und [weisen Sie es den Geräten zu](../configuration/device-profile-assign.md), auf denen Sie die Deaktivierung der Aktivierungssperre verwalten möchten.
 
 

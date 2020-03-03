@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96ebae46fd4935c3070319f16d35d5b53888e94c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3f432ab20170dc702d2014bbac68ced06e51082e
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505177"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514896"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Bestimmen von Szenarien für Anwendungsfälle für die Verwaltung von Mobilgeräten
 
@@ -79,15 +79,15 @@ Jetzt müssen Sie die Organisationsgruppen festlegen, die den einzelnen Szenarie
 
 Im nächsten Schritt bestimmen Sie die Plattformen für mobile Geräte , die den einzelnen Anwendungsfallszenarien zugeordnet sind. Es gibt möglicherweise mehr als eine.
 
-Nehmen wir beispielsweise an, im Anwendungsfallszenario Ihres Unternehmens werden die Geräteplattformen iOS und Android Samsung KNOX unterstützt. Ihre BYOD-Richtlinie sieht ggf. Unterstützung für weitere Plattformen für mobile Geräte wie Android (nicht Samsung KNOX) und Windows 10 Mobile vor. Ausgehend von den genannten Beispielen haben wir jedem Anwendungsfallszenario Plattformen für mobile Geräte zugeordnet.
+Angenommen, im Anwendungsfallszenario Ihres Unternehmens werden die Geräteplattformen iOS/iPadOS und Android Samsung KNOX unterstützt. Ihre BYOD-Richtlinie sieht ggf. Unterstützung für weitere Plattformen für mobile Geräte wie Android (nicht Samsung KNOX) und Windows 10 Mobile vor. Ausgehend von den genannten Beispielen haben wir jedem Anwendungsfallszenario Plattformen für mobile Geräte zugeordnet.
 
 | **Anwendungsfälle** | **Untergeordnete Anwendungsfälle** | **Gruppen** | **Geräteplattformen** |   
 |:---:|:---:|:---:|:---:|
-| Unternehmen | Information-Worker | Personalabteilung, Finanzabteilung | iOS |                                                           
-| Unternehmen | Führungskräfte | Personalabteilung, Finanzabteilung | iOS |                                                           
+| Unternehmen | Information-Worker | Personalabteilung, Finanzabteilung | iOS/iPadOS |                                                           
+| Unternehmen | Führungskräfte | Personalabteilung, Finanzabteilung | iOS/iPadOS |                                                           
 | Unternehmen | Kiosk | Einzelhandel | Android |
-| BYOD | Information-Worker | Marketing, Vertrieb | iOS |                                                           
-| BYOD | Führungskräfte | Marketing, Vertrieb | iOS |
+| BYOD | Information-Worker | Marketing, Vertrieb | iOS/iPadOS |                                                           
+| BYOD | Führungskräfte | Marketing, Vertrieb | iOS/iPadOS |
 
 ## <a name="next-steps"></a>Nächste Schritte
 

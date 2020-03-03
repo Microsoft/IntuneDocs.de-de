@@ -6,24 +6,24 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
-ms.reviewer: elocholi
+ms.reviewer: jinyoon
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01dae8f6c90155e649211ab226cf24eeade29b42
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: 9dab1025e283ed1591c22b03ed4e3a61d40a20c3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946681"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515083"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrieren von Jamf Pro in Intune zu Konformitätszwecken
 
@@ -83,28 +83,26 @@ So stellen Sie eine Verbindung zwischen Intune und Jamf Pro her:
 
 3. Wählen Sie **Registrieren** aus, um die Anwendung zu erstellen und die Seite **Übersicht** für die neue App zu öffnen.
 
-4. Kopieren Sie auf der App-Seite **Übersicht** den Wert der **Anwendungs-ID (Client)** , und notieren Sie ihn zur späteren Verwendung. Sie benötigen diesen Wert bei späteren Prozeduren.
+4. Kopieren Sie auf der App-Seite **Übersicht** den Wert der **Anwendungs-ID (Client)**, und notieren Sie ihn zur späteren Verwendung. Sie benötigen diesen Wert bei späteren Prozeduren.
 
-5. Wählen Sie unter **Verwalten** **Zertifikate und Geheimnisse** aus. Wählen Sie die Schaltfläche **Neuer geheimer Clientschlüssel** aus. Geben Sie einen Wert in **Beschreibung** ein, wählen Sie eine Option für **Gültig bis** aus, und wählen Sie **Hinzufügen** aus.
+5. Wählen Sie unter **Verwalten****Zertifikate und Geheimnisse** aus. Wählen Sie die Schaltfläche **Neuer geheimer Clientschlüssel** aus. Geben Sie einen Wert in **Beschreibung** ein, wählen Sie eine Option für **Gültig bis** aus, und wählen Sie **Hinzufügen** aus.
 
    > [!IMPORTANT]
    > Bevor Sie diese Seite verlassen, kopieren Sie den Wert für den geheimen Clientschlüssel, und notieren Sie ihn zur späteren Verwendung. Sie benötigen diesen Wert bei späteren Prozeduren. Dieser Wert ist nicht noch mal verfügbar, ohne die App-Registrierung neu zu erstellen.
 
 6. Wählen Sie unter **Verwalten** die Option **API-Berechtigungen** aus. 
 
-7. Wählen Sie auf der API-Berechtigungsseite **Berechtigung hinzufügen** aus, um eine neue Berechtigung hinzuzufügen. Wählen Sie auf der Seite **API-Berechtigungen anfordern** den Eintrag **Intune** aus, und wählen Sie dann **Anwendungsberechtigungen** aus. Aktivieren Sie nur das Kontrollkästchen für **update_device_attributes**.
+7. Entfernen Sie auf der Seite „API-Berechtigungen“ alle Berechtigungen von dieser App, indem Sie auf das **…**-Symbol neben den einzelnen Berechtigungen klicken. Dieses Vorgehen ist erforderlich. Wenn es unerwartete zusätzliche Berechtigungen in dieser App-Registrierung gibt, ist die Integration nicht erfolgreich.
 
-8. Warten Sie einige Minuten, bis die neue Berechtigung in Kraft tritt. Wählen Sie dann **Administratoreinwilligung hinzufügen für _\<Ihr Mandat>_** aus. Authentifizieren Sie Ihr Konto im neuen Fenster, und gewähren Sie der Anwendung Zugriff, indem Sie die Anweisungen befolgen.  
+8. Als nächsten Schritt fügen Sie Berechtigungen hinzu, um die Geräteattribute zu aktualisieren. Wählen Sie auf der Seite **API-Berechtigungen** die Option **Berechtigung hinzufügen** aus, um eine neue Berechtigung hinzuzufügen. 
 
-9. Möglicherweise müssen Sie einige Minuten warten, damit die Zustimmung des Administrators wirksam werden kann.
+9. Wählen Sie auf der Seite **API-Berechtigungen anfordern** den Eintrag **Intune** aus, und wählen Sie dann **Anwendungsberechtigungen** aus. Aktivieren Sie nur das Kontrollkästchen für **update_device_attributes**, und speichern Sie die neue Berechtigung.
 
-10. Aktualisieren Sie die Seite, indem Sie oben auf der Seite auf die Schaltfläche **Aktualisieren** klicken. Vergewissern Sie sich, dass die Administratoreinwilligung für die Berechtigung **update_device_attributes** erteilt wurde. 
+10. Gewähren Sie dieser App als nächsten Schritt die Zustimmung des Administrators, indem Sie oben links auf der Seite **API-Berechtigungen** auf **Administratorzustimmung für _\<Ihr Mandant>_ erteilen** klicken. Möglicherweise müssen Sie Ihr Konto im neuen Fenster erneut authentifizieren und der Anwendung Zugriff gewähren, indem Sie die folgenden Anweisungen befolgen.  
 
-11. Entfernen Sie die Administratoreinwilligung von der Berechtigung **User.Read**, indem Sie das Menü **...** und dann **Administratoreinwilligung widerrufen** auswählen.
+11. Aktualisieren Sie die Seite, indem Sie oben auf der Seite auf die Schaltfläche **Aktualisieren** klicken. Vergewissern Sie sich, dass die Administratoreinwilligung für die Berechtigung **update_device_attributes** erteilt wurde. 
 
-12. Außerdem müssen Sie die Berechtigung **User.Read** entfernen. Wählen Sie das Menü **...** mit **User.Read** aus, und wählen Sie dann **Berechtigung entfernen** aus. 
-
-8. Nachdem die App erfolgreich registriert wurde, sollten die API-Berechtigungen nur eine Berechtigung namens **update_device_attributes** enthalten, die wie folgt aussehen sollte:
+12. Nachdem die App erfolgreich registriert wurde, sollten die API-Berechtigungen nur eine Berechtigung namens **update_device_attributes** enthalten, die wie folgt aussehen sollte:
 
    ![Erfolgreiche Berechtigungen](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 

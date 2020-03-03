@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b7c0a7dfa4337983c12ada2d0f415c771bd0548
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 507c7ecff9715ebf9f24567c735592f3f255ccc9
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755186"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609181"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Hinzufügen von branchenspezifischen iOS-Apps zu Microsoft Intune
 
@@ -31,10 +31,13 @@ ms.locfileid: "76755186"
 
 Fügen Sie mithilfe der Informationen in diesem Artikel branchenspezifische (LOB) iOS-Apps zu Microsoft Intune hinzu. Eine branchenspezifische App (LOB) ist eine App, die Sie aus einer IPA-App-Installationsdatei zu Intune hinzufügen. Diese Art von App wird in der Regel intern geschrieben. Sie müssen zunächst dem iOS Developer Enterprise Program beitreten. Weitere Informationen hierzu finden Sie auf der [Apple-Website](https://developer.apple.com/programs/ios/enterprise/).
 
->[!NOTE]
->Benutzer von iOS-Geräten können einige der integrierten iOS-Apps wie Stocks und Maps entfernen. Über Intune können diese Apps jedoch nicht erneut bereitgestellt werden. Wenn Benutzer diese Apps löschen, müssen sie zum App Store navigieren und die Apps manuell erneut installieren.
+> [!NOTE]
+> Benutzer von iOS-Geräten können einige der integrierten iOS-Apps wie Stocks und Maps entfernen. Über Intune können diese Apps jedoch nicht erneut bereitgestellt werden. Wenn Benutzer diese Apps löschen, müssen sie zum App Store navigieren und die Apps manuell erneut installieren.
 >
->Für branchenspezifische iOS-Apps gilt das Größenlimit von maximal 4 GB pro App.
+> Für branchenspezifische iOS-Apps gilt das Größenlimit von maximal 4 GB pro App.
+
+> [!NOTE]
+> Bundle-IDs (z. B. *com.contoso.app*) sollen eindeutige Bezeichner einer App sein. Wenn Sie beispielsweise eine Betaversion einer branchenspezifischen App parallel zu einer Produktionsversion für Testzwecke installieren möchten, muss die Betaversion einen anderen eindeutigen Bezeichner haben, z. B. *com.contoso.app-beta*. Andernfalls kommt es zu einer Überlappung der Betaversion mit der Produktion, und sie wird wie ein Upgrade behandelt. Ein Umbenennen der IPA-Datei wirkt sich auf dieses Verhalten nicht aus.
 
 ## <a name="select-the-app-type"></a>Auswählen des App-Typs
 

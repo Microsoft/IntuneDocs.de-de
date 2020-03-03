@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd0a4b0c5e0b4cbaa7ef43ec40cddb3ab30d3070
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: f5045e78eaca19e5a78468c7c4b6698e4e1a5019
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415479"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511547"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Tutorial: Konfigurieren von Slack zur Verwendung von Intune für EMM und die App-Konfiguration
 
@@ -32,8 +32,8 @@ Slack ist eine App für die Zusammenarbeit, die Sie mit Microsoft Intune verwend
 Inhalt des Tutorials:
 > [!div class="checklist"]
 > - Sie legen Intune in Ihrem Slack Enterprise Grid als EMM-Anbieter (Enterprise Mobility Management) fest. Sie können den Zugriff auf die Arbeitsbereiche Ihres Grid-Plans auf von Intune verwaltete Geräte beschränken.
-> - Sie erstellen App-Konfigurationsrichtlinien zur Verwaltung der Slack for EMM-App unter iOS und der Slack-App für Geräte mit Android-Arbeitsprofil.
-> - Sie erstellen Intune-Gerätekonformitätsrichtlinien zum Festlegen der Bedingungen, die iOS- und Android-Gerät erfüllen müssen, um als konform angesehen zu werden.
+> - Sie erstellen App-Konfigurationsrichtlinien zur Verwaltung der Slack for EMM-App unter iOS/iPadOS und der Slack-App für Geräte mit Android-Arbeitsprofil.
+> - Sie erstellen Intune-Gerätekonformitätsrichtlinien zum Festlegen der Bedingungen, die iOS/iPadOS- und Android-Gerät erfüllen müssen, um als konform angesehen zu werden.
 
 Wenn Sie über kein Intune-Abonnement verfügen, [registrieren Sie sich für eine kostenlose Testversion](../fundamentals/free-trial-sign-up.md).
 
@@ -51,10 +51,10 @@ Aktivieren Sie EMM für Ihren Slack Enterprise Grid-Plan, indem Sie die [Anweisu
 Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) als globaler Administrator oder Intune-Dienstadministrator an. Wenn Sie ein Testabonnement für Intune erstellt haben, besitzt das Konto, mit dem Sie das Abonnement erstellt haben, die Rolle des globalen Administrators.
 
 ## <a name="set-up-slack-for-emm-on-ios-devices"></a>Einrichten von Slack for EMM auf iOS-Geräten
-Fügen Sie die iOS App „Slack for EMM“ zu Ihrem Intune-Mandanten hinzu, und erstellen Sie eine App-Konfigurationsrichtlinie, um den iOS-Benutzern Ihrer Organisation den Zugriff auf Slack mit Intune als EMM-Anbieter zu ermöglichen.
+Fügen Sie die iOS/iPadOS-App „Slack for EMM“ zu Ihrem Intune-Mandanten hinzu, und erstellen Sie eine App-Konfigurationsrichtlinie, um den iOS/iPadOS-Benutzern Ihrer Organisation den Zugriff auf Slack mit Intune als EMM-Anbieter zu ermöglichen.
 
 ### <a name="add-slack-for-emm-to-intune"></a>Hinzufügen von Slack for EMM zu Intune
-Fügen Sie Slack for EMM als verwaltete iOS-App zu Intune hinzu, und weisen Sie Slack-Benutzer zu. Apps sind plattformspezifisch, daher müssen Sie für Ihre Slack-Benutzer mit Android-Geräten eine separate Intune-App hinzufügen.
+Fügen Sie Slack for EMM als verwaltete iOS/iPadOS-App zu Intune hinzu, und weisen Sie Slack-Benutzer zu. Apps sind plattformspezifisch, daher müssen Sie für Ihre Slack-Benutzer mit Android-Geräten eine separate Intune-App hinzufügen.
 1. Wählen Sie im Admin Center **Apps** > **Alle Apps** > **Hinzufügen** aus.
 2. Wählen Sie unter **App-Typ** die Option **iOS**-Store-App aus.
 3. Wählen Sie **App Store durchsuchen** aus. Geben Sie den Suchbegriff „Slack for EMM“ ein, und wählen Sie die App aus. Klicken Sie im Bereich **App Store durchsuchen** auf **Auswählen**.
@@ -84,7 +84,7 @@ Fügen Sie eine App-Konfigurationsrichtlinie für Slack for EMM unter iOS/iPadOS
 12. Klicken Sie auf **Speichern**.
 
 ### <a name="optional-create-an-ios-device-compliance-policy"></a>(Optional) Erstellen einer iOS-Gerätekonformitätsrichtlinie
-Richten Sie eine Intune-Gerätekonformitätsrichtlinie ein, um die Bedingungen festzulegen, die ein Gerät erfüllen muss, um als konform angesehen zu werden. Für dieses Tutorial erstellen wir eine Gerätekonformitätsrichtlinie für iOS-Geräte. Konformitätsrichtlinien sind plattformspezifisch, daher müssen Sie für Ihre Slack-Benutzer mit Android-Geräten eine separate Richtlinie erstellen.
+Richten Sie eine Intune-Gerätekonformitätsrichtlinie ein, um die Bedingungen festzulegen, die ein Gerät erfüllen muss, um als konform angesehen zu werden. Für dieses Tutorial erstellen wir eine Gerätekonformitätsrichtlinie für iOS/iPadOS-Geräte. Konformitätsrichtlinien sind plattformspezifisch, daher müssen Sie für Ihre Slack-Benutzer mit Android-Geräten eine separate Richtlinie erstellen.
 1. Wählen Sie im Admin Center **Gerätekonformität** > **Richtlinien** > **Richtlinie erstellen** aus.
 2. Geben Sie als Namen „Test für iOS-Konformitätsrichtlinie“ ein.
 3. Geben Sie als Beschreibung „Test für iOS-Konformitätsrichtlinie“ ein.
@@ -105,7 +105,7 @@ Richten Sie eine Intune-Gerätekonformitätsrichtlinie ein, um die Bedingungen f
 Fügen Sie die verwaltete Google Play-App „Slack“ zu Ihrem Intune-Mandanten hinzu, und erstellen Sie eine App-Konfigurationsrichtlinie, um den Android-Benutzern Ihrer Organisation den Zugriff auf Slack mit Intune als EMM-Anbieter zu ermöglichen.
 
 ### <a name="add-slack-to-intune"></a>Hinzufügen von Slack zu Intune
-Fügen Sie Slack als verwaltete Google Play-App zu Intune hinzu, und weisen Sie Slack-Benutzer zu. Apps sind plattformspezifisch, daher müssen Sie für Ihre Slack-Benutzer mit iOS-Geräten eine separate Intune-App hinzufügen.
+Fügen Sie Slack als verwaltete Google Play-App zu Intune hinzu, und weisen Sie Slack-Benutzer zu. Apps sind plattformspezifisch, daher müssen Sie für Ihre Slack-Benutzer mit iOS/iPadOS-Geräten eine separate Intune-App hinzufügen.
 1. Wählen Sie in Intune **Apps** > **Alle Apps** > **Hinzufügen** aus.
 2. Wählen Sie unter „App-Typ“ die Option **Store-App – verwaltetes Google Play** aus.
 3. Wählen Sie **Verwaltetes Google Play – genehmigen** aus. Geben Sie den Suchbegriff „Slack for EMM“ ein, und wählen Sie die App aus.
@@ -120,7 +120,7 @@ Fügen Sie Slack als verwaltete Google Play-App zu Intune hinzu, und weisen Sie 
 10. Klicken Sie auf **Speichern**.
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Hinzufügen einer App-Konfigurationsrichtlinie für Slack
-Fügen Sie eine App-Konfigurationsrichtlinie für Slack hinzu. App-Konfigurationsrichtlinien für verwaltete Geräte sind plattformspezifisch, daher müssen Sie für Ihre Slack-Benutzer mit iOS-Geräten eine separate Richtlinie hinzufügen.
+Fügen Sie eine App-Konfigurationsrichtlinie für Slack hinzu. App-Konfigurationsrichtlinien für verwaltete Geräte sind plattformspezifisch, daher müssen Sie für Ihre Slack-Benutzer mit iOS/iPadOS-Geräten eine separate Richtlinie hinzufügen.
 1. Wählen Sie in Intune**Apps** > **App-Konfigurationsrichtlinien** > **Hinzufügen** aus.
 2. Geben Sie als Namen „Test der Konfigurationsrichtlinie für Slack-App“ ein.
 3. Wählen Sie unter „Geräteregistrierungstyp“ die Option **Verwaltete Geräte** aus.
@@ -136,7 +136,7 @@ Fügen Sie eine App-Konfigurationsrichtlinie für Slack hinzu. App-Konfiguration
 12. Klicken Sie auf **Speichern**.
 
 ### <a name="optional-create-an-android-device-compliance-policy"></a>(Optional) Erstellen einer Android-Gerätekonformitätsrichtlinie
-Richten Sie eine Intune-Gerätekonformitätsrichtlinie ein, um die Bedingungen festzulegen, die ein Gerät erfüllen muss, um als konform angesehen zu werden. Für dieses Tutorial erstellen wir eine Gerätekonformitätsrichtlinie für Android-Geräte. Konformitätsrichtlinien sind plattformspezifisch, daher müssen Sie für Ihre Slack-Benutzer mit iOS-Geräten eine separate Richtlinie erstellen.
+Richten Sie eine Intune-Gerätekonformitätsrichtlinie ein, um die Bedingungen festzulegen, die ein Gerät erfüllen muss, um als konform angesehen zu werden. Für dieses Tutorial erstellen wir eine Gerätekonformitätsrichtlinie für Android-Geräte. Konformitätsrichtlinien sind plattformspezifisch, daher müssen Sie für Ihre Slack-Benutzer mit iOS/iPadOS-Geräten eine separate Richtlinie erstellen.
 1. Wählen Sie in Intune **Gerätekonformität** > **Richtlinien** > **Richtlinie erstellen** aus.
 2. Geben Sie als Namen „Test für Android-Konformitätsrichtlinie“ ein.
 3. Geben Sie als Beschreibung „Test für Android-Konformitätsrichtlinie“ ein.
@@ -155,13 +155,13 @@ Richten Sie eine Intune-Gerätekonformitätsrichtlinie ein, um die Bedingungen f
 
 ## <a name="launch-slack"></a>Starten von Slack
 
-Mit den Richtlinien, die Sie soeben erstellt haben, müssen alle Geräte mit iOS- oder Android-Arbeitsprofil, die versuchen, sich bei einem Ihrer Arbeitsbereiche anzumelden, bei Intune registriert sein. Um dieses Szenario zu testen, versuchen Sie, Slack for EMM auf einem bei Intune registrierten Gerät mit iOS-Arbeitsprofil oder Slack auf einem bei Intune registrierten Gerät mit Android-Arbeitsprofil zu starten. 
+Mit den Richtlinien, die Sie soeben erstellt haben, müssen alle Geräte mit iOS/iPadOS- oder Android-Arbeitsprofil, die versuchen, sich bei einem Ihrer Arbeitsbereiche anzumelden, bei Intune registriert sein. Versuchen Sie, Slack for EMM auf einem bei Intune registrierten Gerät mit iOS/iPadOS-Arbeitsprofil oder Slack auf einem bei Intune registrierten Gerät mit Android-Arbeitsprofil zu starten, um dieses Szenario zu testen. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 In diesem Tutorial:
 - Sie haben Intune in Ihrem Slack Enterprise Grid als EMM-Anbieter (Enterprise Mobility Management) festgelegt. 
-- Sie haben App-Konfigurationsrichtlinien zur Verwaltung der Slack for EMM-App unter iOS und der Slack-App für Geräte mit Android-Arbeitsprofil erstellt.
-- Sie haben Intune-Gerätekonformitätsrichtlinien zum Festlegen der Bedingungen erstellt, die iOS- und Android-Gerät erfüllen müssen, um als konform angesehen zu werden.
+- Sie haben App-Konfigurationsrichtlinien zur Verwaltung der Slack for EMM-App unter iOS/iPadOS und der Slack-App für Geräte mit Android-Arbeitsprofil erstellt.
+- Sie haben Intune-Gerätekonformitätsrichtlinien zum Festlegen der Bedingungen erstellt, die iOS/iPadOS- und Android-Gerät erfüllen müssen, um als konform angesehen zu werden.
 
 Weitere Informationen zu App-Konfigurationsrichtlinien finden Sie unter [App-Konfigurationsrichtlinien für Microsoft Intune](app-configuration-policies-overview.md). Weitere Informationen zu Gerätekonformitätsrichtlinien finden Sie unter [Legen Sie mit Intune Regeln auf Geräten fest, um Zugriff auf Ressourcen in Ihrer Organisation zu gewähren](../protect/device-compliance-get-started.md).

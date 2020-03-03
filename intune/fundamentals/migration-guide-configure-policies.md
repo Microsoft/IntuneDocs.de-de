@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 191be009f8d9e6fc448126834ef48f0bc6e2edc4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c8e4671790b72583219f1df64a0ef3491d707ea7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505344"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515032"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Konfigurieren der Richtlinien für die Gerätekompatibilität und die App-Verwaltung während einer Migration zu Microsoft Intune
 
@@ -44,7 +44,7 @@ Jede Geräteplattform hat möglicherweise unterschiedliche Einstellungen, aber G
 
 ## <a name="task-list-for-device-compliance-policies"></a>Aufgabenliste für Gerätekompatibilitätsrichtlinien
 
-### <a name="task-1-add-device-groups-optional"></a>Aufgabe 1: Hinzufügen von Gerätegruppen (optional)
+### <a name="task-1-add-device-groups-optional"></a>Aufgabe 1: Hinzufügen von Gerätegruppen (optional)
 
 Sie können Gerätegruppen erstellen, wenn Sie Verwaltungsaufgaben basierend auf Geräteidentität statt auf Benutzeridentität durchführen müssen.
 
@@ -52,19 +52,19 @@ Benutzergruppen sind nützlich bei der Verwaltung von Geräten ohne dedizierte B
 
 Wenn Sie Gerätegruppen schon vor der Geräteregistrierung konfigurieren, können Sie Gerätekategorien nutzen, um Geräte automatisch mit Gruppen vor der Registrierung zu verknüpfen. Dann erhalten Sie automatisch die Geräterichtlinien ihrer Gruppe. [Erste Schritte mit Gruppen](groups-get-started.md).
 
-### <a name="task-2-use-resource-access-profiles-wi-fi-vpn-and-email-certificates"></a>Aufgabe 2: Verwenden von Profilen für den Ressourcenzugriff (WLAN, VPN und E-Mail-Zertifikate)
+### <a name="task-2-use-resource-access-profiles-wi-fi-vpn-and-email-certificates"></a>Aufgabe 2: Verwenden von Profilen für den Ressourcenzugriff (WLAN, VPN und E-Mail-Zertifikate)
 
 Profile für den Ressourcenzugriff stellen Zertifikate und Zugriffskonfigurationen für die Geräteregistrierung bereit. Wenn Sie eine zertifikatbasierte Authentifizierung nutzen, [konfigurieren Sie Zertifikate](../protect/certificates-configure.md).
 
-### <a name="task-3-create-and-deploy-device-configuration-profiles"></a>Aufgabe 3: Erstellen und Bereitstellen von Gerätekonfigurationsprofilen
+### <a name="task-3-create-and-deploy-device-configuration-profiles"></a>Aufgabe 3: Erstellen und Bereitstellen von Gerätekonfigurationsprofilen
 
 Sie müssen ein Gerätekonfigurationsprofil erstellen, um Einstellungen auf der Geräteebene zu erzwingen, wie z.B. Deaktivieren der Kamera, App Store, Konfigurieren des Einzelanwendungsmodus, Startbildschirm, etc. Erfahren Sie mehr über [Geräteprofile](../configuration/device-profiles.md).
 
-#### <a name="directly-import-ios-configuration-profiles-optional"></a>Direkter Import von iOS-Konfigurationsprofilen (optional)
+#### <a name="directly-import-iosipados-configuration-profiles-optional"></a>Direkter Import von iOS-/iPadOS-Konfigurationsprofilen (optional)
 
-- **iOS-Profile von Apple Configurator (iOS 7.1 und höher)** : Wenn Ihre vorhandene MDM-Lösung Apple Configurator-Profile verwendet (MOBILECONFIG-Dateien), kann Intune diese direkt als benutzerdefinierte Konfigurationsrichtlinien importieren.
+- **iOS-Profile von Apple Configurator (iOS 7.1 und höher)**: Wenn Ihre vorhandene MDM-Lösung Apple Configurator-Profile verwendet (MOBILECONFIG-Dateien), kann Intune diese direkt als benutzerdefinierte Konfigurationsrichtlinien importieren.
 
-- **Richtlinien für die Konfiguration von mobilen iOS-Anwendungen**: Wenn Ihre vorhandene MDM-Lösung Richtlinien für die Konfiguration von mobilen iOS-Anwendungen verwendet, kann Intune diese direkt importieren, sofern sie dem XML-Format entsprechen, das von Apple für Eigenschaftenlisten festgelegt wurde.
+- **Richtlinien für die Konfiguration von mobilen iOS-Anwendungen**: Wenn Ihre vorhandene MDM-Lösung Richtlinien für die Konfiguration von mobilen Anwendungen für iOS/iPadOS verwendet, kann Intune diese direkt importieren, sofern sie dem XML-Format entsprechen, das von Apple für Eigenschaftenlisten festgelegt wurde.
 
 - Erfahren Sie, wie Sie eine benutzerdefinierte Richtlinie für [iOS](../configuration/custom-settings-ios.md) hinzufügen können.
 

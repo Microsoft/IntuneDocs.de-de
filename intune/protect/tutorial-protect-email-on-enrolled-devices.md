@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9deee0dca675d7fd95445131ed98ea195972c6ac
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: c134eb1fc413a32f2a27034d8c3a993f18f8a9c9
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74409821"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576273"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Tutorial: Schützen des Exchange Online-E-Mail-Diensts auf verwalteten Geräten
 
@@ -45,7 +45,7 @@ Sie benötigen für dieses Tutorial einen Testmandanten mit den folgenden Abonne
 
 - Office 365 Business-Abonnement, das Exchange Server ([kostenlose Testversion](https://go.microsoft.com/fwlink/p/?LinkID=510938)) umfasst
 
-Bevor Sie beginnen, erstellen Sie ein Testgeräteprofil für iOS-Geräte, indem Sie die Schritte unter [Schnellstart: Erstellen eines E-Mail-Geräteprofils für iOS](../configuration/quickstart-email-profile.md) ausführen.
+Bevor Sie beginnen, erstellen Sie ein Testgeräteprofil für iOS-Geräte, indem Sie die Schritte unter [Schnellstart: Erstellen eines E-Mail-Geräteprofils für iOS/iPadOS](../configuration/quickstart-email-profile.md).
 
 ## <a name="sign-in-to-intune"></a>Anmelden bei Intune
 
@@ -57,9 +57,9 @@ Richten Sie eine Intune-Gerätekonformitätsrichtlinie ein, um die Bedingungen f
 
 1. Klicken Sie in Intune auf **Geräte** > **Konformitätsrichtlinien** > **Richtlinie erstellen**.
 
-2. Geben Sie als **Namen** **Test für iOS-Konformitätsrichtlinie** ein.
+2. Geben Sie als **Namen****Test für iOS-Konformitätsrichtlinie** ein.
 
-3. Geben Sie als **Beschreibung** **Test für iOS-Konformitätsrichtlinie** ein.
+3. Geben Sie als **Beschreibung****Test für iOS-Konformitätsrichtlinie** ein.
 
 4. Wählen Sie als **Plattform** die Option **iOS/iPadOS** aus.
 
@@ -67,7 +67,7 @@ Richten Sie eine Intune-Gerätekonformitätsrichtlinie ein, um die Bedingungen f
 
    1. Klicken Sie neben **Verlangen, dass Mobilgeräte über ein verwaltetes E-Mail-Profil verfügen** auf **Erfordern**.
 
-   2. Wählen Sie **OK** aus.
+   2. Klicken Sie auf **OK**.
 
    ![Festlegen der E-Mail-Konformitätsrichtlinie, um ein verwaltetes E-Mail-Profil zu erfordern](./media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-email.png)
 
@@ -75,22 +75,22 @@ Richten Sie eine Intune-Gerätekonformitätsrichtlinie ein, um die Bedingungen f
 
 7. Klicken Sie auf **Systemsicherheit**, und geben Sie die **Kennwort**-Einstellungen an. Legen Sie für dieses Tutorial die folgenden empfohlenen Einstellungen fest:
 
-   - Wählen Sie für **Ein Kennwort zum Entsperren von Mobilgeräten anfordern** **Erfordern** aus.
+   - Wählen Sie für **Ein Kennwort zum Entsperren von Mobilgeräten anfordern****Erfordern** aus.
 
-   - Wählen Sie für **Einfache Kennwörter** **Blockieren** aus.
+   - Wählen Sie für **Einfache Kennwörter****Blockieren** aus.
 
-   - Wählen Sie für **Minimale Kennwortlänge** **4** aus.
+   - Wählen Sie für **Minimale Kennwortlänge****4** aus.
 
      > [!TIP]
      > Standardwerte, die ausgegraut und kursiv sind, stellen nur Empfehlungen dar. Sie müssen Empfehlungswerte ersetzen, um Einstellungen zu konfigurieren.
 
-   - Wählen Sie für **Erforderlicher Kennworttyp** **Alphanumerisch** aus.
+   - Wählen Sie für **Erforderlicher Kennworttyp****Alphanumerisch** aus.
 
-   - Wählen Sie für **Maximaler Zeitraum, bevor ein Kennwort erforderlich ist** **Sofort** aus.
+   - Wählen Sie für **Maximaler Zeitraum, bevor ein Kennwort erforderlich ist****Sofort** aus.
 
-   - Geben Sie für **Kennwortablauf (Tage)** **41** ein.
+   - Geben Sie für **Kennwortablauf (Tage)****41** ein.
 
-   - Geben Sie für **Anzahl vorheriger Kennwörter zum Verhindern der Wiederverwendung** **5** ein.
+   - Geben Sie für **Anzahl vorheriger Kennwörter zum Verhindern der Wiederverwendung****5** ein.
  
    ![Festlegen der Kennworteinstellungen für die E-Mail-Konformitätsrichtlinie](./media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-system-security.png)
 
@@ -156,13 +156,13 @@ Jetzt erstellen wir eine Richtlinie für bedingten Zugriff, die erzwingt, dass a
 
 8. Klicken Sie unter **Richtlinie aktivieren** auf **Ein**.
 
-   ![Aktivieren einer Richtlinie](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
+   ![Aktivieren der Richtlinie](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
 
 9. Wählen Sie **Erstellen** aus.
 
 ## <a name="try-it-out"></a>Probieren Sie es aus
 
-Mit den von Ihnen erstellten Richtlinien müssen iOS-Geräte, die sich beim Office 365-E-Mail-Dienst anmelden, bei Intune registrieren und die mobile Outlook-App für iOS verwenden. Um dieses Szenario auf iOS-Geräten zu testen, melden Sie sich bei Exchange Online mit den Anmeldeinformationen für einen Benutzer auf Ihrem Testmandanten an. Sie werden aufgefordert, das Gerät zu registrieren und die mobile Outlook-App zu installieren.
+Mit den von Ihnen erstellten Richtlinien müssen iOS-Geräte, die sich beim Office 365-E-Mail-Dienst anmelden, bei Intune registrieren und die mobile Outlook-App für iOS/iPadOS verwenden. Um dieses Szenario auf iOS-Geräten zu testen, melden Sie sich bei Exchange Online mit den Anmeldeinformationen für einen Benutzer auf Ihrem Testmandanten an. Sie werden aufgefordert, das Gerät zu registrieren und die mobile Outlook-App zu installieren.
 
 1. Um dies auf einem iPhone zu testen, navigieren Sie zu **Einstellungen** > **Kennwörter & Konten** > **Konto hinzufügen** > **Exchange**.
 
@@ -181,11 +181,11 @@ Wenn die Testrichtlinien nicht mehr benötigt werden, können Sie diese entferne
 
 2. Wählen Sie **Geräte** > **Konformitätsrichtlinien** aus.
 
-3. Rufen Sie in der Liste **Richtlinienname** das Kontextmenü ( **...** ) für Ihre Testrichtlinie auf, und klicken Sie dann auf **Löschen**. Klicken Sie zum Bestätigen auf **OK**.
+3. Rufen Sie in der Liste **Richtlinienname** das Kontextmenü (**...**) für Ihre Testrichtlinie auf, und klicken Sie dann auf **Löschen**. Wählen Sie zum Bestätigen **OK** aus.
 
 4. Klicken Sie auf **Endpunktsicherheit** > **Bedingter Zugriff**.
 
-5. Rufen Sie in der Liste **Richtlinienname** das Kontextmenü ( **...** ) für Ihre Testrichtlinie auf, und klicken Sie dann auf **Löschen**. Klicken Sie zum Bestätigen auf **Ja**.
+5. Rufen Sie in der Liste **Richtlinienname** das Kontextmenü (**...**) für Ihre Testrichtlinie auf, und klicken Sie dann auf **Löschen**. Klicken Sie zum Bestätigen auf **Ja**.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

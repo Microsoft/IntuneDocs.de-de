@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 237eca2f8e00f00fda5fa3cf401be87de9602743
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 183e8cc5924f6ce1f002225150d808841924e20c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956257"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514641"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Hinzufügen von Gruppen zum Organisieren von Benutzern und Geräten
 
@@ -34,7 +34,7 @@ Sie können die folgenden Gruppentypen hinzufügen:
 - **Zugewiesene Gruppen:** Fügen Sie manuell Benutzer oder Geräten zu einer statischen Gruppe hinzu. 
 - **Dynamische Gruppen** (erfordert Azure AD Premium): Lassen Sie automatisch auf Basis eines von Ihnen erstellen Ausdrucks Benutzer oder Geräte zu Benutzer- oder Gerätegruppen hinzufügen.
 
-  Wenn z. B. ein Benutzer mit dem Titel „Manager“ hinzugefügt wird, wird er automatisch der Benutzergruppe **Alle Manager** hinzugefügt. Wenn ein Gerät hingegen den Betriebssystemtyp „iOS-Gerät“ aufweist, wird es automatisch zur Benutzergruppe **Alle iOS-Geräte** hinzugefügt.
+  Wenn z. B. ein Benutzer mit dem Titel „Manager“ hinzugefügt wird, wird er automatisch der Benutzergruppe **Alle Manager** hinzugefügt. Wenn ein Gerät hingegen den Betriebssystemtyp „iOS/iPadOS-Gerät“ aufweist, wird es automatisch zur Benutzergruppe **All iOS/iPadOS devices** (Alle iOS/iPadOS-Geräte) hinzugefügt.
 
 ## <a name="add-a-new-group"></a>Hinzufügen einer neuen Gruppe
 
@@ -47,7 +47,7 @@ Führen Sie die folgenden Schritte aus, um eine neue Gruppe zu erstellen:
 
 3. Wählen Sie unter **Gruppentyp** eine der folgenden Optionen aus:
 
-    - **Sicherheit**: Mithilfe von Sicherheitsgruppen wird definiert, wer auf Ressourcen zugreifen kann. Sie sollten sie für Ihre Gruppen in Intune verwenden. Sie können einerseits Gruppen für Benutzer erstellen, z. B. **Alle Mitarbeiter in Charlotte** oder **Remotemitarbeiter**. Zum Anderen können Sie auch Gruppen für Geräte erstellen, z. B. **Alle iOS-Geräte** oder **Alle Geräte von Schülern mit Windows 10**.
+    - **Sicherheit**: Mithilfe von Sicherheitsgruppen wird definiert, wer auf Ressourcen zugreifen kann. Sie sollten sie für Ihre Gruppen in Intune verwenden. Sie können einerseits Gruppen für Benutzer erstellen, z. B. **Alle Mitarbeiter in Charlotte** oder **Remotemitarbeiter**. Zum Anderen können Sie auch Gruppen für Geräte erstellen, z. B. **Alle iOS/iPadOS-Geräte** oder **Alle Geräte von Schülern mit Windows 10**.
 
         > [!TIP]
         > Die erstellten Benutzer und Gruppen können auch im [Microsoft 365 Admin Center](https://admin.microsoft.com), im Azure Active Directory Admin Center und im [Azure-Portal unter Microsoft Intune](https://go.microsoft.com/fwlink/?linkid=2090973) angezeigt werden. Im Organisationsmandanten können Sie Gruppen in all diesen Bereichen erstellen und verwalten.

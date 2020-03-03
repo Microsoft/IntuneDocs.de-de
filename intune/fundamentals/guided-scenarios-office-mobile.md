@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3399cf006543c0a3554c4c6ec812554462d74231
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 0232855773626693d848f77e561c51d281739215
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691822"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514607"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>Geführtes Szenario: Sichere mobile Microsoft Office-Apps 
 
-Wenn Sie dieses geführte Szenario im Geräteverwaltungsportal befolgen, können Sie den Intune-App-Standardschutz auf iOS- und Android-Geräten aktivieren.
+Wenn Sie dieses geführte Szenario im Geräteverwaltungsportal befolgen, können Sie den Intune-App-Standardschutz auf iOS/iPadOS- und Android-Geräten aktivieren.
 
 Der App-Schutz, den Sie aktivieren, erzwingt die folgenden Aktionen: 
 - Verschlüsselung von Arbeitsdateien.
@@ -51,7 +51,7 @@ Sie können die App-Schutzrichtlinien verwenden, um zu verhindern, dass Benutzer
 
 Mit App-basiertem bedingten Zugriff und der Verwaltung von Client-Apps wird eine Sicherheitsschicht hinzugefügt, indem sichergestellt wird, dass nur Client-Apps, die Intune-App-Schutzrichtlinien unterstützen, auf Exchange Online und andere Office 365-Dienste zugreifen können.
 
-Wenn Sie nur für die Microsoft Outlook-App den Zugriff auf Exchange Online zulassen, können Sie die integrierten E-Mail-Apps von iOS und Android blockieren. Darüber hinaus können Sie für Apps, auf die keine Intune-App-Schutzrichtlinien angewendet wurden, den Zugriff auf SharePoint Online blockieren.
+Wenn Sie nur für die Microsoft Outlook-App den Zugriff auf Exchange Online zulassen, können Sie die integrierten E-Mail-Apps von iOS/iPadOS und Android blockieren. Darüber hinaus können Sie für Apps, auf die keine Intune-App-Schutzrichtlinien angewendet wurden, den Zugriff auf SharePoint Online blockieren.
 
 In diesem Beispiel hat der Administrator App-Schutzrichtlinien auf die Outlook-App angewendet. Zudem gilt eine Regel für bedingten Zugriff, mit der die Outlook-App einer genehmigten Liste von Apps hinzugefügt wird, die beim Zugriff auf Unternehmens-E-Mails verwendet werden kann.
 
@@ -69,7 +69,7 @@ Sie benötigen die folgenden Intune-Administrationsberechtigungen:
 
 Wenn Sie das geführte Szenario **Intune-App-Schutz** befolgen, verhindern Sie, dass Daten außerhalb Ihres Unternehmens geteilt oder weitergegeben werden. 
 
-Zugewiesene iOS- und Android-Benutzer müssen bei jedem Öffnen einer Office-App eine PIN eingeben. Nach 5 fehlgeschlagenen Versuchen die PIN einzugeben, müssen die Benutzer ihre PIN zurücksetzen. Wenn Sie bereits eine Geräte-PIN anfordern, werden die Benutzer nicht beeinträchtigt.
+Zugewiesene iOS/iPadOS- und Android-Benutzer müssen bei jedem Öffnen einer Office-App eine PIN eingeben. Nach fünf fehlgeschlagenen Versuchen der PIN-Eingabe müssen die Benutzer ihre PIN zurücksetzen. Wenn Sie bereits eine Geräte-PIN anfordern, werden die Benutzer nicht beeinträchtigt.
 
 ### <a name="what-you-will-need-to-continue"></a>Voraussetzungen zum Fortfahren
 
@@ -86,7 +86,7 @@ In diesem Schritt müssen Sie ein **Präfix** und eine **Beschreibung** für Ihr
 
 ## <a name="step-3---apps"></a>Schritt 3: Apps
 
-Dieses Szenario wählt zuvor die folgenden mobilen Apps zum Schutz auf iOS- und Android-Geräten aus, um Ihnen den Einstieg zu erleichtern:
+Dieses Szenario wählt zuvor die folgenden mobilen Apps zum Schutz auf iOS-/iPadOS- und Android-Geräten aus, um Ihnen den Einstieg zu erleichtern:
 - Microsoft Excel 
 - Microsoft Word 
 - Microsoft Teams 

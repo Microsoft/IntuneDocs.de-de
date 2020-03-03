@@ -1,7 +1,7 @@
 ---
-title: Registrieren von macOS-Geräten – Programm zur Geräteregistrierung oder Apple School Manager
+title: 'Registrieren von macOS-Geräten: Apple Business Manager oder Apple School Manager'
 titleSuffix: ''
-description: Hier erfahren Sie, wie Sie unternehmenseigene macOS-Geräte mit dem Programm zur Geräteregistrierung (Device Enrollment Program, DEP) registrieren.
+description: Informieren Sie sich, wie Sie unternehmenseigene macOS-Geräte registrieren.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,22 +18,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d55139a106599664f801a6bf73b0e0e8db24b57a
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6ef08ea65a4976bcf77154108e415634dbae8e05
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414492"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514335"
 ---
-# <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>Automatisches Registrieren von macOS-Geräten mit dem Programm zur Geräteregistrierung oder Apple School Manager
+# <a name="automatically-enroll-macos-devices-with-the-apple-business-manager-or-apple-school-manager"></a>Automatisches Registrieren von macOS-Geräten mit Apple Business Manager oder Apple School Manager
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Sie können die Intune-Registrierung für macOS-Geräte einrichten, die über das [Programm zur Geräteregistrierung](https://deploy.apple.com) oder [Apple School Manager](https://school.apple.com/) von Apple erworben wurden. Sie können jedes dieser Programme zur Geräteregistrierung für eine große Anzahl von Geräten verwenden, ohne diese physisch berühren zu müssen. Sie können macOS-Geräte direkt an Benutzer senden. Wenn ein Benutzer das Gerät einschaltet, wird der Setup-Assistent mit vordefinierten Einstellungen ausgeführt, und das Gerät wird bei der Intune-Verwaltung registriert.
+Sie können die Intune-Registrierung für macOS-Geräte einrichten, die über [Apple Business Manager](https://business.apple.com/) oder [Apple School Manager](https://school.apple.com/) von Apple erworben wurden. Sie können jedes dieser Programme zur Geräteregistrierung für eine große Anzahl von Geräten verwenden, ohne diese physisch berühren zu müssen. Sie können macOS-Geräte direkt an Benutzer senden. Wenn ein Benutzer das Gerät einschaltet, wird der Setup-Assistent mit vordefinierten Einstellungen ausgeführt, und das Gerät wird bei der Intune-Verwaltung registriert.
 
-Zum Einrichten der Registrierung können Sie sowohl das Intune-Portal als auch das Apple DEP-Portal verwenden. Sie erstellen Registrierungsprofile, die Einstellungen enthalten, die für Geräte während der Registrierung gelten.
+Zum Einrichten der Registrierung können Sie sowohl das Intune-Portal als auch das Apple-Portal verwenden. Sie erstellen Registrierungsprofile, die Einstellungen enthalten, die für Geräte während der Registrierung gelten.
 
-Weder die Registrierung mit DEP noch mit dem Apple School Manager funktioniert mit dem [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md).
+Weder die Registrierung mit Apple Business Manager noch mit Apple School Manager funktioniert mit dem [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md).
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -74,8 +74,8 @@ Verwenden Sie das Apple-Portal, um ein Token zu erstellen. Sie verwenden das App
 ### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>Schritt 2: Verwenden Sie Ihren Schlüssel, um ein Token von Apple herunterzuladen.
 
 1. Wählen Sie **Token für das Programm zur Geräteregistrierung von Apple erstellen** oder **Token über Apple School Manager erstellen** aus, um das Portal des Bereitstellungsprogramms von Apple zu öffnen. Melden Sie sich mit der Apple-ID Ihres Unternehmens an. Diese Apple-ID kann später zum Erneuern Ihres Tokens verwendet werden.
-2. Wählen Sie im Apple-Portal für DEP **Get Started (Einstieg)** für **Device Enrollment Program (Programm zur Geräteregistrierung)**  > **Manage Servers (Server verwalten)**  > **Add MDM Server (MDM-Server hinzufügen)** aus.
-3. Wählen Sie im Apple-Portal für Apple School Manager **MDM Servers (MDM-Server)**  > **Add MDM Server (MDM-Server hinzufügen)** aus.
+2. Wählen Sie im Apple-Portal für DEP **Get Started (Einstieg)** für **Device Enrollment Program (Programm zur Geräteregistrierung)** > **Manage Servers (Server verwalten)** > **Add MDM Server (MDM-Server hinzufügen)** aus.
+3. Wählen Sie im Apple-Portal für Apple School Manager **MDM Servers (MDM-Server)** > **Add MDM Server (MDM-Server hinzufügen)** aus.
 4. Geben Sie den **MDM-Servernamen** ein, und wählen Sie anschließend **Weiter** aus. Der Servername dient als Referenz zum Identifizieren des MDM-Servers (mobile device management, Verwaltung mobiler Geräte). Es handelt sich nicht um den Namen oder die URL des Microsoft Intune-Servers.
 
 5. Das Dialogfeld **&lt;Servername&gt; hinzufügen** wird geöffnet, und die Meldung **Laden Sie Ihren öffentlichen Schlüssel hoch** wird angezeigt. Wählen Sie **Datei auswählen** aus, um die PEM-Datei hochzuladen, und wählen Sie anschließend **Weiter** aus.

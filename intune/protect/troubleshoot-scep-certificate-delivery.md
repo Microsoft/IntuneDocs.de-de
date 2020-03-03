@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77be59d126dc7e73bee468ca938938c6bb1b2e1a
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 40075ad3c90f9ce5131d88780d15eec5c258e276
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76915875"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515253"
 ---
 # <a name="troubleshoot-the-delivery-of-certificates-provisioned-by-scep-to-devices-in-microsoft-intune"></a>Behandeln von Problemen bei der Übermittlung von Zertifikaten, die von SCEP auf Geräten in Microsoft Intune bereitgestellt werden
 
@@ -73,7 +73,7 @@ Sie können auch das [Geräte-OMADM-Protokoll](troubleshoot-scep-certificate-pro
 2018-02-27T05:20:15.3520000    INFO    Event     com.microsoft.omadm.platforms.android.certmgr.state.NativeScepCertInstallStateMachine    18327       21    SCEP cert 'ModelName=AC_51…%2FLogicalName_39907…;Hash=1677525787' state changed from CERT_ACCESS_REQUESTED to CERT_ACCESS_GRANTED
 ```
 
-### <a name="ios-and-ipados"></a>iOS und iPadOS
+### <a name="iosipados"></a>iOS/iPadOS
 
 Auf dem iOS-oder iPadOS-Gerät können Sie das Zertifikat unter dem Geräteverwaltungsprofil anzeigen. Um weitere Informationen zu installierten Zertifikaten zu erhalten, führen Sie einen Drilldown durch.
 
@@ -99,7 +99,7 @@ Default 18:30:57.320616 -0500 profiled Profile \'93www.windowsintune.com.SCEP.Mo
 
 Um das Zertifikat auf dem Gerät anzuzeigen, führen Sie **certmgr.msc** aus, um die Zertifikate-MMC zu öffnen und zu überprüfen, ob die Stamm- und SCEP-Zertifikate ordnungsgemäß im persönlichen Informationsspeicher auf dem Gerät installiert sind:
 
-   1. Wechseln Sie zu **Zertifikate (lokaler Computer)**  > **Vertrauenswürdige Stammzertifizierungsstellen** > **Zertifikate**, und vergewissern Sie sich, dass das Stammzertifikat der Zertifizierungsstelle vorhanden ist. Die Werte für *Ausgestellt für* und *Ausgestellt von* sind identisch.
+   1. Wechseln Sie zu **Zertifikate (lokaler Computer)** > **Vertrauenswürdige Stammzertifizierungsstellen** > **Zertifikate**, und vergewissern Sie sich, dass das Stammzertifikat der Zertifizierungsstelle vorhanden ist. Die Werte für *Ausgestellt für* und *Ausgestellt von* sind identisch.
    2. Wechseln Sie in der Zertifikate-MMC zu **Zertifikate – Aktueller Benutzer** > **Persönlich** > **Zertifikate**, und vergewissern Sie sich, dass das angeforderte Zertifikat vorhanden ist, wobei *Ausgestellt von* dem Namen der Zertifizierungsstelle entspricht.
 
 ## <a name="troubleshoot-failures"></a>Beheben von Fehlern
@@ -108,7 +108,7 @@ Um das Zertifikat auf dem Gerät anzuzeigen, führen Sie **certmgr.msc** aus, um
 
 Um Probleme mit diesem Schritt zu behandeln, überprüfen Sie die Fehler, die im OMA DM-Protokoll protokolliert werden.
 
-### <a name="ios-and-ipados"></a>iOS und iPadOS
+### <a name="iosipados"></a>iOS/iPadOS
 
 Um Probleme mit diesem Schritt zu behandeln, überprüfen Sie die Fehler, die im Gerätedebugprotokoll protokolliert werden.
 

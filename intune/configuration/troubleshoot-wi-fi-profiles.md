@@ -1,11 +1,11 @@
 ---
 title: Behandeln von Problemen und Überprüfen von WLAN-Geräteprofilprotokollen in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Verstehen und beheben Sie Probleme mit WLAN-Gerätekonfigurationsprofilen auf Android-, iOS- und Windows-Geräten in Microsoft Intune. Überprüfen Sie Protokolle, und sehen Sie sich einige häufige Probleme und mögliche Lösungen an.
+description: Verstehen und beheben Sie Probleme mit WLAN-Gerätekonfigurationsprofilen auf Android-, iOS-/iPadOS- und Windows-Geräten in Microsoft Intune. Überprüfen Sie Protokolle, und sehen Sie sich einige häufige Probleme und mögliche Lösungen an.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70f471e7f4db7ddce89d8956474822375c684944
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: db663f96f1e4fe84c506395b98c52956069e5426
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547975"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512822"
 ---
 # <a name="troubleshoot-wi-fi-device-configuration-profiles-in-microsoft-intune"></a>Behandeln von Problemen mit Gerätekonfigurationsprofilen in Microsoft Intune
 
-In Intune können Sie Gerätekonfigurationsprofile erstellen, die Verbindungseinstellungen für Ihr WLAN-Netzwerk enthalten. Verwenden Sie diese Einstellungen, um die Android-, iOS- und Windows-Geräte der Benutzer mit Ihrem Organisationsnetzwerk zu verbinden.
+In Intune können Sie Gerätekonfigurationsprofile erstellen, die Verbindungseinstellungen für Ihr WLAN-Netzwerk enthalten. Verwenden Sie diese Einstellungen, um die Android-, iOS-/iPadOS- und Windows-Geräte der Benutzer mit Ihrem Organisationsnetzwerk zu verbinden.
 
 In diesem Artikel wird gezeigt, wie ein WLAN-Profil bei der erfolgreichen Anwendung auf Geräte aussieht. Er enthält auch Protokollinformationen, häufige Probleme und vieles mehr. Verwenden Sie diesen Artikel, um die Problembehandlung für Ihre WLAN-Profile zu unterstützen.
 
@@ -100,25 +100,25 @@ Im folgenden Protokoll werden die Suchergebnisse und die erfolgreiche Anwendung 
 
 ```
 
-## <a name="ios"></a>iOS
+## <a name="iosipados"></a>iOS/iPadOS
 
 Nachdem das WLAN-Profil auf dem Gerät installiert wurde, wird es im **Verwaltungsprofil** angezeigt:
 
 > [!div class="mx-imgBorder"]
-> ![Verwaltungsprofil auf einem iOS-Gerät](./media/troubleshoot-wi-fi-profiles/ios-management-profile.png)
+> ![Verwaltungsprofil auf einem iOS-/iPadOS-Gerät in Intune](./media/troubleshoot-wi-fi-profiles/ios-management-profile.png)
 
 > [!div class="mx-imgBorder"]
-> ![Anzeigen der WLAN-Verbindung als WLAN-Netzwerk auf einem iOS-Gerät](./media/troubleshoot-wi-fi-profiles/ios-wifi-connection-in-management-profile.png)
+> ![Anzeigen der WLAN-Verbindung als WLAN-Netzwerk in Intune auf einem iOS-/iPadOS-Gerät](./media/troubleshoot-wi-fi-profiles/ios-wifi-connection-in-management-profile.png)
 
-### <a name="review-the-ios-console-and-device-logs"></a>Überprüfen der iOS-Konsole und der Geräteprotokolle
+### <a name="review-the-iosipados-console-and-device-logs"></a>Überprüfen der iOS-/iPadOS-Konsole und der Geräteprotokolle
 
-Auf iOS-Geräten enthält das Protokoll der Unternehmensportal-App keine Informationen zu WLAN-Profilen. Verwenden Sie zum Anzeigen der Installationsdetails für Ihre WLAN-Profile die Konsolen-/Geräteprotokolle:
+Auf iOS-/iPadOS-Geräten enthält das Protokoll der Unternehmensportal-App keine Informationen zu WLAN-Profilen. Verwenden Sie zum Anzeigen der Installationsdetails für Ihre WLAN-Profile die Konsolen-/Geräteprotokolle:
 
-1. Verbinden Sie das iOS-Gerät mit Mac. Gehen Sie zu **Anwendungen** > **Dienstprogramme**, und öffnen Sie die Konsolen-App.
+1. Verbinden Sie das iOS-/iPadOS-Gerät mit Mac. Gehen Sie zu **Anwendungen** > **Dienstprogramme**, und öffnen Sie die Konsolen-App.
 2. Wählen Sie unter **Aktion** die Option **Include Info Messages** (Informationsmeldungen einschließen) und **Include Debug Messages** (Debugmeldungen einschließen) aus:
 
     > [!div class="mx-imgBorder"]
-    > ![Informationsmeldungen und Debugmeldungen in der iOS-Konsolen-App einschließen](./media/troubleshoot-wi-fi-profiles/ios-console-app-include-info-messages-debug-messages.png)
+    > ![„Include Info Messages“ (Informationsmeldungen einschließen) und „Include Debug Messages“ (Debugmeldungen einschließen) in der iOS-/iPadOS-Konsolen-App](./media/troubleshoot-wi-fi-profiles/ios-console-app-include-info-messages-debug-messages.png)
 
 3. Reproduzieren Sie das Szenario, und speichern Sie die Protokolle in einer Textdatei:
 
@@ -263,7 +263,7 @@ In der Regel wird dieses Problem durch etwas außerhalb von Intune verursacht. D
 
 - Weitere Informationen zu WLAN-Profilen in Microsoft Intune finden Sie in den folgenden Artikeln:
 
-  - Hinzufügen von WLAN-Einstellungen für Geräte mit [Android](wi-fi-settings-android.md), [iOS](wi-fi-settings-ios.md) und [Windows 10 und höher](wi-fi-settings-windows.md).
+  - Hinzufügen von WLAN-Einstellungen für Geräte mit [Android](wi-fi-settings-android.md), [iOS/iPadOS](wi-fi-settings-ios.md) und [Windows 10 und höher](wi-fi-settings-windows.md).
   - [Tipp zur Unterstützung: Konfigurieren von NDES für SCEP-Zertifikatbereitstellungen in Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-How-to-configure-NDES-for-SCEP-certificate/ba-p/455125)
   - Problembehandlung bei der [Bereitstellung des SCEP-Zertifikatprofils](https://support.microsoft.com/help/4526725/troubleshooting-scep-profile-deployment-to-android-devices-in-intune) und der [NDES-Konfiguration](https://support.microsoft.com/help/4459540/troubleshoot-ndes-configuration-for-use-with-intune).
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c1627ba89ad50b2053187a20fee6cbc7a9064e8
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 6faaa800d8dedc53ab20f1dae2c3049132642b7d
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562495"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609158"
 ---
 # <a name="how-to-manage-volume-purchased-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Verwalten von VPP-Apps (Apple Volume Purchase Program) aus Microsoft Store für Unternehmen mit Microsoft Intune
 
@@ -48,7 +48,7 @@ Im [Microsoft Store für Unternehmen](https://www.microsoft.com/business-store) 
 - Sowohl online als auch offline lizenzierte Apps, die Sie aus dem Microsoft Store für Unternehmen erworben haben, werden mit dem Intune-Portal synchronisiert. Sie können diese Apps dann für Geräte- oder Benutzergruppen bereitstellen. 
 - Die Installation von Online-Apps wird über den Store verwaltet.
 - Kostenlose Offline-Apps können ebenfalls mit Intune synchronisiert werden. Diese Apps werden durch Intune und nicht durch den Store installiert.
-- Geräte müssen mit Active Directory Domain Services oder einem Arbeitsbereich verknüpft sein, damit diese Funktion verwendet werden kann.
+- Geräte müssen mit Active Directory Domain Services, Azure AD oder einem Arbeitsbereich verknüpft sein, damit diese Funktion verwendet werden kann.
 - Registrierte Geräte müssen die Version 1511 oder höher von Windows 10 verwenden.
 
 Ferner werden zugehörige Lizenzen und offline lizenzierte Apps aus dem Microsoft Store für Unternehmen ab sofort in der Benutzeroberfläche in einem App-Eintrag zusammengefasst. Bereitstellungsdetails aus den einzelnen Paketen werden in den jeweiligen Eintrag migriert. Wenn Sie verwandte Lizenzen im Azure-Portal abrufen möchten, wählen Sie im Azure-Portal im Bereich **Apps** die Option **App-Lizenzen** aus.

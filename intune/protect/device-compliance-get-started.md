@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 867873c78b34d5573084a3a6e44d7d4d67846423
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: b593cab8a9a89f895c668b2b49583b73cbfccffa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413643"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515168"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Legen Sie mit Intune Regeln auf Geräten fest, um Zugriff auf Ressourcen in Ihrer Organisation zu gewähren
 
@@ -95,16 +95,16 @@ Intune umfasst zudem einige integrierte Konformitätsrichtlinieneinstellungen. D
 
 
 > [!NOTE]
-> Die erweiterte Jailbreakerkennung für iOS-Geräte wurde in Intune vorübergehend deaktiviert.
+> Die erweiterte Jailbreakerkennung für iOS/iPadOS-Geräte wurde in Intune vorübergehend deaktiviert.
 
-- **Verbesserte Erkennung von Jailbreaks**: Ist diese Einstellung aktiviert, werden iOS-Geräte bei Intune regelmäßiger eingecheckt. Durch die Aktivierung dieser Eigenschaft werden die Ortungsdienste des Gerätes verwendet und der Akkuverbrauch wird beeinflusst. Die Standortdaten des Benutzers werden nicht in Intune gespeichert.
+- **Verbesserte Erkennung von Jailbreaks**: Ist diese Einstellung aktiviert, werden iOS/iPadOS-Geräte bei Intune regelmäßiger eingecheckt. Durch die Aktivierung dieser Eigenschaft werden die Ortungsdienste des Gerätes verwendet und der Akkuverbrauch wird beeinflusst. Die Standortdaten des Benutzers werden nicht in Intune gespeichert.
 
   Für die Aktivierung dieser Einstellung müssen Geräte:
   - Ortungsdienste auf Betriebssystemebene aktivieren
   - dem Unternehmensportal erlauben, die Ortungsdienste zu nutzen
   - den Jailbreak-Status mindestens alle 72 Stunden bewerten und Intune melden. Andernfalls wird das Gerät als nicht konform gekennzeichnet. Sie können den Auswertungsvorgang auslösen, indem Sie die Unternehmensportal-App öffnen oder indem Sie das Gerät an einem anderen Ort positionieren, der mindestens 500 m entfernt ist. Wenn das Gerät nicht innerhalb von 72 Stunden um 500 Meter verlagert wird, muss der Benutzer die Unternehmensportal-App für eine erweiterte Bewertung des Jailbreak-Status öffnen.
 
-- **Gültigkeitszeitraum des Konformitätsstatus (Tage)** : Geben Sie den Zeitraum an, in dem Geräte den Status für alle empfangenen Konformitätsrichtlinien melden müssen. Geräte, die innerhalb dieses Zeitraums keine Statusmeldung abgeben, werden als nicht konform behandelt. Der Standardwert beträgt 30 Tage. Der Mindestwert ist 1 Tag.
+- **Gültigkeitszeitraum des Konformitätsstatus (Tage)**: Geben Sie den Zeitraum an, in dem Geräte den Status für alle empfangenen Konformitätsrichtlinien melden müssen. Geräte, die innerhalb dieses Zeitraums keine Statusmeldung abgeben, werden als nicht konform behandelt. Der Standardwert beträgt 30 Tage. Der Mindestwert ist 1 Tag.
 
   Diese Einstellung wird als Standardkompatibilitäts-Richtlinie **Ist aktiv** (**Geräte** > **Überwachen** > **Einstellungskompatibilität**) angezeigt. Die Hintergrundaufgabe für diese Richtlinie wird einmal täglich ausgeführt.
 

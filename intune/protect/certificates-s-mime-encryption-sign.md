@@ -15,24 +15,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: adea17c0e013d922c0bc3ccf06ed590828bd79dd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 15147a1d9ffd82e2f900d15c4a9d2b4d23ad23e3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801492"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515151"
 ---
 # <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>S/MIME-Übersicht zum Signieren und Verschlüsseln von E-Mails in Intune
 
 E-Mail-Zertifikate, auch bekannt als S/MIME-Zertifikate, bieten zusätzliche Sicherheit für Ihre E-Mail-Kommunikation durch Ver- und Entschlüsselung. Microsoft Intune kann S/MIME-Zertifikate verwenden, um E-Mails auf mobilen Geräten mit den folgenden Plattformen zu signieren und zu verschlüsseln:
 
 - Android
-- iOS
+- iOS/iPadOS
 - macOS
 - Windows 10 und höher
 - Windows Phone
 
-Auf iOS-Geräten können Sie ein von Intune verwaltetes E-Mail-Profil erstellen, das S/MIME und Zertifikate zum Signieren und Verschlüsseln eingehender und ausgehender E-Mails verwendet. Für andere Plattformen wird S/MIME möglicherweise nicht unterstützt. Wenn S/MIME unterstützt wird, installieren Sie Zertifikate, welche die S/MIME-Signatur und -Verschlüsselung verwenden. Anschließend aktiviert ein Endbenutzer S/MIME in seiner E-Mail-Anwendung.
+Auf iOS/iPadOS-Geräten können Sie ein von Intune verwaltetes E-Mail-Profil erstellen, das S/MIME und Zertifikate zum Signieren und Verschlüsseln eingehender und ausgehender E-Mails verwendet. Für andere Plattformen wird S/MIME möglicherweise nicht unterstützt. Wenn S/MIME unterstützt wird, installieren Sie Zertifikate, welche die S/MIME-Signatur und -Verschlüsselung verwenden. Anschließend aktiviert ein Endbenutzer S/MIME in seiner E-Mail-Anwendung.
 
 Weitere Informationen zur S/MIME-E-Mail-Signatur und -Verschlüsselung finden Sie unter [S/MIME for message signing and encryption (S/MIME für die Nachrichtensignatur und -verschlüsselung)](https://docs.microsoft.com/Exchange/policy-and-compliance/smime).
 
@@ -44,13 +44,13 @@ Mithilfe von Signaturzertifikaten kann die E-Mail-App des Clients sicher mit dem
 
 Für die Verwendung von Signaturzertifikaten müssen Sie eine Vorlage in Ihrer Zertifizierungsstelle erstellen, deren Schwerpunkt auf dem Signieren liegt. In der Zertifizierungsstelle von Microsoft Active Directory werden unter [Konfigurieren der Zertifikatvorlage des Servers](https://docs.microsoft.com/windows-server/networking/core-network-guide/cncg/server-certs/configure-the-server-certificate-template) die Schritte für die Erstellung der Zertifikatvorlagen aufgeführt.
 
-Signaturzertifikate in Intune verwenden PKCS-Zertifikate. Unter [Konfigurieren und Verwenden von PKCS-Zertifikate](certficates-pfx-configure.md) wird beschrieben, wie PKCS-Zertifikate in Ihrer Intune-Umgebung bereitgestellt und verwendet werden. Diese Schritte umfassen:
+Signaturzertifikate in Intune verwenden PKCS-Zertifikate. Unter [Konfigurieren und Verwenden von PKCS-Zertifikate](certficates-pfx-configure.md) wird beschrieben, wie PKCS-Zertifikate in Ihrer Intune-Umgebung bereitgestellt und verwendet werden. Hierzu gehören folgende Schritte:
 
 - Das Herunterladen und Installieren von Microsoft Intune Certificate Connector zur Unterstützung von PKCS-Zertifikatanforderungen.
 - Das Erstellen eines vertrauenswürdigen Stammzertifikatprofil für Ihre Geräte. Dieser Schritt beinhaltet die Verwendung von vertrauenswürdigen Stamm- und Zwischenzertifikaten für Ihre Zertifizierungsstelle und die Bereitstellung des Profils für Geräte.
 - Erstellen Sie mit der von Ihnen erstellten Zertifikatvorlage ein PKCS-Zertifikatprofil. Dieses Profil stellt Signaturzertifikate für Geräte aus und stellt das PKCS-Zertifikatprofil für Geräte bereit.
 
-Sie können ein Signaturzertifikat auch für einen bestimmten Benutzer importieren. Das Signaturzertifikat wird auf allen Geräten bereitgestellt, die von einem Benutzer registriert werden. Verwenden Sie zum Importieren von Zertifikaten in Intune die [PowerShell-Cmdlets in GitHub](https://github.com/Microsoft/Intune-Resource-Access). Wenn Sie ein PKCS-Zertifikat bereitstellen möchten, das in Intune für die E-Mail-Signierung importiert wurde, müssen Sie die Schritte unter [Konfigurieren und Verwenden von PKCS-Zertifikaten mit Intune](certficates-pfx-configure.md) ausführen. Diese Schritte umfassen:
+Sie können ein Signaturzertifikat auch für einen bestimmten Benutzer importieren. Das Signaturzertifikat wird auf allen Geräten bereitgestellt, die von einem Benutzer registriert werden. Verwenden Sie zum Importieren von Zertifikaten in Intune die [PowerShell-Cmdlets in GitHub](https://github.com/Microsoft/Intune-Resource-Access). Wenn Sie ein PKCS-Zertifikat bereitstellen möchten, das in Intune für die E-Mail-Signierung importiert wurde, müssen Sie die Schritte unter [Konfigurieren und Verwenden von PKCS-Zertifikaten mit Intune](certficates-pfx-configure.md) ausführen. Hierzu gehören folgende Schritte:
 
 - Das Herunterladen und Installieren von PFX Certificate Connector für Microsoft Intune. Dieser Connector stellt importierte PKCS-Zertifikate für Geräte bereit.
 - Das Importieren von S/MIME-E-Mail-Signaturzertifikaten in Intune.
@@ -66,7 +66,7 @@ Es wird empfohlen, E-Mail-Verschlüsselungszertifikate nicht in Intune zu erstel
 
 Zum Bereitstellen von S/MIME-Zertifikate mit Intune müssen Sie sämtliche Verschlüsselungszertifikate eines Benutzers in Intune importieren. Anschließend stellt Intune alle diese Zertifikate für die einzelnen Geräte bereit, die vom Benutzer registriert werden. Verwenden Sie zum Importieren von Zertifikaten in Intune die [PowerShell-Cmdlets in GitHub](https://github.com/Microsoft/Intune-Resource-Access).
 
-Wenn Sie ein PKCS-Zertifikat bereitstellen möchten, das in Intune für die E-Mail-Verschlüsselung importiert wurde, müssen Sie die Schritte unter [Konfigurieren und Verwenden von PKCS-Zertifikaten mit Intune](certficates-pfx-configure.md) ausführen. Diese Schritte umfassen:
+Wenn Sie ein PKCS-Zertifikat bereitstellen möchten, das in Intune für die E-Mail-Verschlüsselung importiert wurde, müssen Sie die Schritte unter [Konfigurieren und Verwenden von PKCS-Zertifikaten mit Intune](certficates-pfx-configure.md) ausführen. Hierzu gehören folgende Schritte:
 
 - Das Herunterladen und Installieren von PFX Certificate Connector für Microsoft Intune. Dieser Connector stellt importierte PKCS-Zertifikate für Geräte bereit.
 - Das Importieren von S/MIME-E-Mail-Verschlüsselungszertifikaten in Intune.
@@ -77,7 +77,7 @@ Wenn Sie ein PKCS-Zertifikat bereitstellen möchten, das in Intune für die E-Ma
 
 ## <a name="smime-email-profiles"></a>S/MIME-E-Mail-Profile
 
-Nachdem Sie S/MIME-Zertifikatprofile für die Signierung und Verschlüsselung erstellt haben, können Sie [S/MIME für native iOS-E-Mails aktivieren](../configuration/email-settings-ios.md).
+Nachdem Sie S/MIME-Zertifikatprofile für die Signierung und Verschlüsselung erstellt haben, können Sie [S/MIME für native iOS/iPadOS-E-Mails aktivieren](../configuration/email-settings-ios.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

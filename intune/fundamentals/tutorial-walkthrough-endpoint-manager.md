@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 267f09c3dc16aab10fbe64f0e8662ee6f7c7ffa0
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: 1d8950e57c2427c522d337807d315ed5c399c0d5
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907991"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514080"
 ---
 # <a name="tutorial-walkthrough-intune-in-microsoft-endpoint-manager"></a>Tutorial: Exemplarische Vorgehensweise für Intune in Microsoft Endpoint Manager
 
@@ -70,7 +70,7 @@ Befolgen Sie die folgenden Schritte, um Intune im Microsoft Endpoint Manager Adm
     
     Intune ermöglicht es Ihnen, die Geräte und Apps Ihrer Mitarbeiter sowie deren Zugriff auf Ihre Unternehmensdaten zu verwalten. Damit diese mobile Geräteverwaltung (Mobile Device Management, MDM) genutzt werden kann, müssen die Geräte zunächst bei Intune registriert werden. Wenn ein Gerät registriert ist, wird ein MDM-Zertifikat für das Gerät ausgestellt. Dieses Zertifikat wird für die Kommunikation mit dem Intune-Dienst verwendet. 
 
-    Es gibt verschiedene Methoden, um die Geräte Ihrer Mitarbeiter in Intune zu registrieren. Die einzelnen Methoden hängen vom Gerätebesitz (persönlich oder unternehmenseigen), vom Gerätetyp (iOS, Windows, Android) und den Verwaltungsanforderungen (Zurücksetzungen, Affinität, Sperren) ab. Bevor Sie die Geräteregistrierung aktivieren können, müssen Sie jedoch Ihre Intune-Infrastruktur einrichten. Besonders für die Geräteregistrierung ist es erforderlich, dass Sie [die MDM-Autorität festlegen](mdm-authority-set.md). Weitere Informationen zum Einrichten Ihrer Intune-Umgebung (d.h. Ihres Intune-Mandanten) finden Sie unter [Einrichten von Intune](setup-steps.md). Sobald Ihr Intune-Mandant eingerichtet ist, können Sie Geräte registrieren. Weitere Informationen finden Sie unter [What is device enrollment? (Was ist eine Geräteregistrierung?)](../enrollment/device-enrollment.md)
+    Es gibt verschiedene Methoden, um die Geräte Ihrer Mitarbeiter in Intune zu registrieren. Die einzelnen Methoden hängen vom Gerätebesitz (persönlich oder unternehmenseigen), vom Gerätetyp (iOS/iPadOS, Windows, Android) und den Verwaltungsanforderungen (Zurücksetzungen, Affinität, Sperren) ab. Bevor Sie die Geräteregistrierung aktivieren können, müssen Sie jedoch Ihre Intune-Infrastruktur einrichten. Besonders für die Geräteregistrierung ist es erforderlich, dass Sie [die MDM-Autorität festlegen](mdm-authority-set.md). Weitere Informationen zum Einrichten Ihrer Intune-Umgebung (d.h. Ihres Intune-Mandanten) finden Sie unter [Einrichten von Intune](setup-steps.md). Sobald Ihr Intune-Mandant eingerichtet ist, können Sie Geräte registrieren. Weitere Informationen finden Sie unter [What is device enrollment? (Was ist eine Geräteregistrierung?)](../enrollment/device-enrollment.md)
 
 3. Wählen Sie im Navigationsbereich **Geräte** aus, um Details zu registrierten Geräten in Ihrem Intune-Mandanten zu erhalten. 
 
@@ -117,7 +117,7 @@ Befolgen Sie die folgenden Schritte, um Intune im Microsoft Endpoint Manager Adm
     > [!TIP]
     > Wenn Sie im Azure-Portal zuvor bereits Intune verwendet haben, befanden sich die oben aufgeführten Details im Azure-Portal, indem Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) angemeldet und **Gerätekonfiguration** ausgewählt haben.
 
-    Intune umfasst Einstellungen und Features, die Sie auf unterschiedlichen Geräten in Ihrer Organisation aktivieren oder deaktivieren können. Diese Einstellungen und Funktionen werden zu „Konfigurationsprofilen“ hinzugefügt. Sie können Profile für unterschiedliche Geräte und Plattformen erstellen, z. B. für iOS, Android, macOS und Windows. Anschließend können Sie Intune verwenden, um das Profil auf die Geräte in Ihrer Organisation anzuwenden.   
+    Intune umfasst Einstellungen und Features, die Sie auf unterschiedlichen Geräten in Ihrer Organisation aktivieren oder deaktivieren können. Diese Einstellungen und Funktionen werden zu „Konfigurationsprofilen“ hinzugefügt. Sie können Profile für unterschiedliche Geräte und Plattformen erstellen, z. B. für iOS/iPadOS, Android, macOS und Windows. Anschließend können Sie Intune verwenden, um das Profil auf die Geräte in Ihrer Organisation anzuwenden.   
 
     Weitere Informationen zur Gerätekonfiguration finden Sie unter [Anwenden von Einstellungen für Funktionen auf Ihren Geräten mit Geräteprofilen in Microsoft Intune](../configuration/device-profiles.md).
 

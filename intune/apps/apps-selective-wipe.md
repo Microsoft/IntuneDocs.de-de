@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c0ca82b434b83937c7962b2676ce3c2a12c1424
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1f6992aa93e1ca5a095b1e92a16a07bd0eb1c2f5
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74564004"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513638"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Zurücksetzen nur von Unternehmensdaten in einer in Intune verwalteten App
 
@@ -32,7 +32,7 @@ ms.locfileid: "74564004"
 Wenn ein Gerät verloren geht oder gestohlen wird oder wenn der Mitarbeiter das Unternehmen verlässt, müssen Sie sicherstellen, dass Unternehmensdaten in Apps vom Gerät entfernt werden. Allerdings sollten Sie persönliche Daten nicht vom Gerät entfernen, insbesondere dann nicht, wenn das Gerät dem Mitarbeiter gehört.
 
 >[!NOTE]
-> Für das Zurücksetzen von Unternehmensdaten von mit Intune verwalteten Apps werden derzeit nur die iOS-, Android- und Windows 10-Plattform unterstützt. Von Intune verwaltete Apps sind Anwendungen, die das Intune-App-SDK beinhalten und über ein lizenziertes Benutzerkonto für Ihre Organisation verfügen. Die Bereitstellung von Richtlinien für den Anwendungsschutz ist nicht erforderlich, um ein selektives Zurücksetzen von Apps zu aktivieren.
+> Das Löschen von Unternehmensdaten aus mit Intune verwalteten Apps wird derzeit nur für die Plattformen iOS/iPadOS, Android und Windows 10 unterstützt. Von Intune verwaltete Apps sind Anwendungen, die das Intune-App-SDK beinhalten und über ein lizenziertes Benutzerkonto für Ihre Organisation verfügen. Die Bereitstellung von Richtlinien für den Anwendungsschutz ist nicht erforderlich, um ein selektives Zurücksetzen von Apps zu aktivieren.
 
 Um Unternehmensdaten aus Apps selektiv zu entfernen, erstellen Sie mithilfe der Schritte in diesem Thema eine Zurücksetzungsanforderung. Nach Abschluss der Anforderung werden die Unternehmensdaten beim nächsten Ausführen der Anwendung aus der App entfernt. Wenn die in den APP-Zugriffseinstellungen festgelegten Bedingungen nicht erfüllt sind, können Sie neben dem Erstellen von Anforderungen des Zurücksetzens auch durch eine neue Aktion ausgewählte Organisationsdaten zurücksetzen. Dieses Feature hilft Ihnen dabei, vertrauliche Organisationsdaten mithilfe festgelegter Kriterien automatisch zu schützen und aus Anwendungen zu entfernen.
 
@@ -86,7 +86,7 @@ Zurücksetzungen mit Status „Ausstehend“ werden angezeigt, bis Sie sie manue
 
 3. Sie werden aufgefordert, den Löschvorgang zu bestätigen. Wählen Sie **Ja** oder **Nein** aus, und klicken Sie dann auf **OK**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 [Was sind App-Schutzrichtlinien?](app-protection-policy.md)
 
 [Was ist die App-Verwaltung?](app-management.md)

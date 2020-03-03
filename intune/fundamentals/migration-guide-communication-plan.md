@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f617e85e78ac5436567790d416c988742a2abe4c
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: c880251d59810dc02446020ed02fd6049878262c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956223"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515015"
 ---
 # <a name="plan-communications"></a>Planen der Kommunikation
 
@@ -52,7 +52,7 @@ Wir haben kurze schrittweise Videos erstellt, die Ihren Benutzern beim einfachen
 
 - [Registrierung Ihres Android-Geräts](https://www.youtube.com/watch?v=k0Q_sGLSx6o&t=1s)
 - [Registrieren Ihres Android-Arbeitsprofilgeräts](https://www.youtube.com/watch?v=9Dl8HsGk4tI&t=3s)
-- [Registrieren Ihres iOS-Geräts](https://www.youtube.com/watch?v=mJyv6YcHi7c)
+- [Registrieren Ihres iOS/iPadOS-Geräts](https://www.youtube.com/watch?v=mJyv6YcHi7c)
 - [Registrieren Ihres macOS-Geräts](https://www.youtube.com/watch?v=Pa2pfhwq_yk)
 - [Registrieren Ihres Windows-Geräts](https://www.youtube.com/watch?v=TKQxEckBHiE)
 
@@ -61,5 +61,5 @@ Wir haben kurze schrittweise Videos erstellt, die Ihren Benutzern beim einfachen
 Intune verfügt über zusätzliche Ressourcen, die Sie zur Förderung der Geräteregistrierung für Ihre Benutzer verwenden können:
 
 - Weitere Anleitungen zu den Registrierungsschritten für die mobile Betriebssystemplattform finden Sie unter [So informieren sie Ihre Endbenutzer über Microsoft Intune](end-user-educate.md).
-- In [Intune device enrollment for IT administrators](../enrollment/device-enrollment.md) (Intune-Geräteregistrierung für IT-Administratoren) wird erläutert, wie Android-, iOS- und Mac-Geräte in Intune registriert werden.
-- Geben Sie die Unternehmensportal-App für Ihre Android-, iOS- und Windows-Benutzer frei.
+- Unter [Was ist die Geräteregistrierung?](../enrollment/device-enrollment.md) wird erläutert, wie Android-, iOS/iPadOS- und Mac-Geräte in Intune registriert werden.
+- Geben Sie die Unternehmensportal-App für Ihre Android-, iOS/iPadOS- und Windows-Benutzer frei.

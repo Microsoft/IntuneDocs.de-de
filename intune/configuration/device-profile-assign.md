@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b61c333f41054194b44c7517e508fe1ef6d28d4
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: c6678c3fbc247ac0595775c0ccc72c7bdb9c55e1
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812372"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513094"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune
 
@@ -89,7 +89,7 @@ Fazit: Verwenden Sie Gerätegruppen immer dann, wenn es keine Rolle spielt, wer 
 
 ### <a name="user-groups"></a>Benutzergruppen
 
-Profileinstellungen, die auf Benutzergruppen angewendet werden, gelten immer für den jeweiligen Benutzer – auch wenn er mehrere Geräte verwendet. Es ist normal, dass Benutzer mehrere Geräte verwenden, z. B. ein Surface Pro für die Arbeit und ein iOS-Gerät für den Privatgebrauch. In der Regel greifen diese Benutzer dann auch über ihre verschiedenen Geräte auf ihre E-Mails und andere Unternehmensressourcen zu.
+Profileinstellungen, die auf Benutzergruppen angewendet werden, gelten immer für den jeweiligen Benutzer – auch wenn er mehrere Geräte verwendet. Es ist normal, dass Benutzer mehrere Geräte verwenden, z. B. ein Surface Pro für die Arbeit und ein iOS/iPadOS-Gerät für den Privatgebrauch. In der Regel greifen diese Benutzer dann auch über ihre verschiedenen Geräte auf ihre E-Mails und andere Unternehmensressourcen zu.
 
 Beispiel:
 

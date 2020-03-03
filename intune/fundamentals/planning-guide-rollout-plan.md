@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 777267f10edac5bbdbe23ceb3068d4366a8df7b7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d5a51d82551795ed8ad5c740d5fb852ff292e1b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509949"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514913"
 ---
 # <a name="develop-a-rollout-plan"></a>Entwickeln eines Rolloutplans
 
@@ -58,7 +58,7 @@ Nach einem erfolgreichen Pilotprojekt sind Sie bereit für den vollständigen Ro
 
 - **Geografie** <br/>Diese Art der Bereitstellung erfolgt für alle Benutzer an einem bestimmten geografischen Ort, ob auf demselben Kontinent, in demselben Land, derselben Region oder demselben Unternehmensgebäude. Diese Art gestaffelter Bereitstellung ermöglicht, sich auf einen bestimmten Benutzerstandort zu konzentrieren. Hierdurch wird ein Ansatz mit mehr [Benutzerunterstützung](#user-assisted-enrollment) ermöglicht, weil Intune an einer geringeren Anzahl von Standorten gleichzeitig bereitgestellt wird. Da verschiedene Abteilungen oder Anwendungsfälle sich möglicherweise am selben Ort befinden, könnten verschiedene Anwendungsfälle gleichzeitig bereitgestellt werden.
 
-- **Plattform** <br/>Bei dieser Art der Bereitstellung werden ähnliche Plattformen gleichzeitig bereitgestellt. Beispielsweise werden im ersten Monat alle iOS-Geräte verwendet, gefolgt von Android und dann von Windows. Diese Art gestaffelter Bereitstellung vereinfacht die Unterstützung durch das Helpdesk, da das Helpdesk immer nur eine Plattform gleichzeitig unterstützen muss.
+- **Plattform** <br/>Bei dieser Art der Bereitstellung werden ähnliche Plattformen gleichzeitig bereitgestellt. Beispielsweise findet im ersten Monat die Bereitstellung für alle iOS-/iPadOS-Geräte statt, gefolgt von Android und dann von Windows. Diese Art gestaffelter Bereitstellung vereinfacht die Unterstützung durch das Helpdesk, da das Helpdesk immer nur eine Plattform gleichzeitig unterstützen muss.
 
 Dieses Beispiel zeigt einen Intune-Rolloutplan, der Zielgruppen und Zeitrahmen umfasst:
 

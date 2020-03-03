@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/10/2020
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4db1a1a74c1a19f310aba0f1c10ed5d01869073f
-ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
+ms.openlocfilehash: 02fa3acdaf0dc450afee97dfaaf5870166013356
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77258129"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569522"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Konfigurieren und Verwenden importierter PKCS-Zertifikate mit Intune
 
@@ -31,6 +31,17 @@ Microsoft Intune unterstützt die Verwendung importierter PKCS-Zertifikate mit P
 Die S/MIME-Verschlüsselung ist schwierig, weil E-Mail mit einem bestimmten Zertifikat verschlüsselt wird. Zum Entschlüsseln der E-Mail müssen Sie auf dem Gerät, auf dem Sie die E-Mail lesen, über den privaten Schlüssel des Zertifikats verfügen, mit dem die E-Mail verschlüsselt wurde. Verschlüsselungszertifikate werden regelmäßig erneuert. Dies bedeutet, dass Sie Ihren Verschlüsselungsverlauf möglicherweise auf sämtlichen Geräten benötigen, um sicherzustellen, dass Sie ältere E-Mails lesen können.  Da auf allen Geräten das gleiche Zertifikat verwendet werden muss, können zu diesem Zweck keine [SCEP](certificates-scep-configure.md)- oder [PKCS](certficates-pfx-configure.md)-Zertifikatprofile verwendet werden, weil diese Zertifikatübermittlungsmechanismen pro Gerät eindeutige Zertifikate übermitteln.
 
 Weitere Informationen zur Verwendung von S/MIME mit Intune finden Sie unter [Verwenden von S/MIME zum Verschlüsseln von E-Mails](certificates-s-mime-encryption-sign.md).
+
+## <a name="supported-platforms"></a>Unterstützte Plattformen
+
+Intune unterstützt den Import von PFX-Zertifikaten für die folgenden Plattformen:
+
+- Android: Geräteadministrator
+- Android Enterprise: vollständig verwaltet
+- Android Enterprise: Arbeitsprofil
+- iOS
+- Mac
+- Windows 10
 
 ## <a name="requirements"></a>Anforderungen
 
@@ -49,6 +60,8 @@ Wenn Sie importierte PKCS-Zertifikate mit Intune verwenden möchten, müssen Sie
 - **Windows Server:**
 
   Sie verwenden einen Windows-Server zum Hosten des PFX-Zertifikatconnectors für Microsoft Intune.  Der Connector wird zum Verarbeiten von Anforderungen für Zertifikate verwendet, die in Intune importiert werden.
+  
+  Der Connector erfordert Zugriff auf die gleichen Ports wie für verwaltete Geräte. Informationen hierzu finden Sie unter [Netzwerkendpunkte für Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/intune-endpoints#access-for-managed-devices).
 
   Intune unterstützt die Installation des *Microsoft Intune-Zertifikatconnectors* auf demselben Server, auf dem auch der *PFX-Zertifikatconnector für Microsoft Intune* installiert ist.
 
@@ -207,7 +220,7 @@ Nach dem Importieren der Zertifikate in Intune erstellen Sie ein Profil für ein
 
    - **Beabsichtigter Zweck**: Geben Sie den Zweck der Zertifikate an, die für dieses Profil importiert werden. Administratoren können Zertifikate zu unterschiedlichen Zwecken importieren, z. B. zum Signieren oder Verschlüsseln mit S/MIME. Der Zweck, der im Zertifikatprofil ausgewählt wird, entspricht demjenigen des Zertifikatprofils mit den korrekten importierten Zertifikaten. Der beabsichtigte Zweck ist ein Tag zum Gruppieren importierter Zertifikate. Diese Angabe garantiert nicht, dass die mit diesem Tag importierten Zertifikate den beabsichtigten Zweck erfüllen.  
    - **Gültigkeitsdauer des Zertifikats**: Wenn die Gültigkeitsdauer in der Zertifikatvorlage nicht geändert wurde, ist diese Option standardmäßig auf ein Jahr festgelegt.
-   - **Schlüsselspeicheranbieter (KSP)** : Wählen Sie für Windows den Schlüsselspeicherort auf dem Gerät aus.
+   - **Schlüsselspeicheranbieter (KSP)**: Wählen Sie für Windows den Schlüsselspeicherort auf dem Gerät aus.
 
 5. Wählen Sie **OK** > **Erstellen** aus, um Ihr Profil zu speichern.
 

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c61449e17b96151d2717365e5193fd6c4bdaae3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5b38df90e47e709e02f12a6ccdab68714d04ca93
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509895"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575859"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Schnellstart: Erstellen und Zuweisen einer benutzerdefinierten Rolle
 
@@ -42,7 +42,7 @@ Wenn Sie eine benutzerdefinierte Rolle erstellen, können Sie Berechtigungen fü
 
 1. Wählen Sie in Intune die Option **Rollen** > **Alle Rollen** > **Hinzufügen** aus.
 ![Browser](./media/quickstart-create-custom-role/add-custom-role.png)
-2. Geben Sie im Feld **Name** unter **Benutzerdefinierte Rolle hinzufügen** *Sicherheitsvorgänge* ein.
+2. Geben Sie im Feld **Name** unter **Benutzerdefinierte Rolle hinzufügen***Sicherheitsvorgänge* ein.
 3. Geben Sie *This role lets a security operator monitor device configuration and compliance information.* (Mit dieser Rolle kann ein Sicherheitsmitarbeiter die Gerätekonfiguration und Kompatibilitätsinformationen überwachen.) im Feld **Beschreibung** ein.
 4. Klicken Sie neben **Lesen** > **OK** auf **Konfigurieren** > **Bezeichner von Unternehmensgeräten** > **Ja**.
 ![Browser](./media/quickstart-create-custom-role/corp-device-id-read.png)
@@ -57,11 +57,11 @@ Bevor Ihr Sicherheitsoperator die neuen Berechtigungen verwenden kann, müssen S
 
 1. Wählen Sie in Intune die Optionen **Rollen** > **Alle Rollen** > **Sicherheitsvorgänge** aus.
 2. Klicken Sie unter **Intune-Rollen** auf **Zuweisungen** > **Zuweisen**.
-3. Geben Sie im Feld **Zuweisungsname** *Sec ops* ein.
-4. Klicken Sie auf **Mitglied (Gruppen)**  > **Hinzufügen**.
+3. Geben Sie im Feld **Zuweisungsname***Sec ops* ein.
+4. Klicken Sie auf **Mitglied (Gruppen)** > **Hinzufügen**.
 5. Wählen Sie die Gruppe **Contoso Tester** aus.
 6. Klicken Sie auf **Auswählen** > **OK**.
-7. Klicken Sie auf **Bereich (Gruppen)**  > **Wählen Sie die Gruppen aus, die eingeschlossen werden sollen.**  > **Contoso Tester**.
+7. Klicken Sie auf **Bereich (Gruppen)** > **Wählen Sie die Gruppen aus, die eingeschlossen werden sollen.** > **Contoso Tester**.
 8. Klicken Sie auf **Auswählen** > **OK** > **OK**.
 
 Nun ist jeder in der Gruppe ein Mitglied der Rolle *Sicherheitsvorgänge* und kann die folgenden Informationen über ein Gerät überprüfen: Unternehmensgerätebezeichner, Gerätekompatibilitätsrichtlinien, Gerätekonfigurationen und Organisationsinformationen.
@@ -77,4 +77,4 @@ In diesem Schnellstart haben Sie eine benutzerdefinierte Sicherheitsvorgangsroll
 Weitere Informationen zu Intune erhalten Sie im nächsten Schnellstart.
 
 > [!div class="nextstepaction"]
-> [Schnellstart: Erstellen eines E-Mail-Geräteprofils für iOS](../configuration/quickstart-email-profile.md)
+> [Schnellstart: Erstellen eines E-Mail-Geräteprofils für iOS/iPadOS](../configuration/quickstart-email-profile.md)

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c959102383f44eb35e1a923f39325007c6624b5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 94c52257072bc713cfd3b7a44f342d5d9a4ba2f8
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502894"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514675"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>So informieren sie Ihre Endbenutzer über Microsoft Intune
 
@@ -68,8 +68,8 @@ Sehen Sie sich die folgende Liste mit Tipps an, um die Intune-Bereitstellung in 
   * [Wie Ihre Android-Benutzer Apps erhalten](end-user-apps-android.md)
 
 * **iOS**
-  * [Ein iOS-Gerät mit Intune verwenden](https://docs.microsoft.com/intune-user-help/using-your-ios-device-with-intune)
-  * [Wie Ihre iOS-Benutzer Apps erhalten](end-user-apps-ios.md)
+  * [Verwenden Ihres iOS-Geräts mit dem Intune-Unternehmensportal](https://docs.microsoft.com/intune-user-help/using-your-ios-device-with-intune)
+  * [Wie Ihre iOS-/iPadOS-Benutzer Apps erhalten](end-user-apps-ios.md)
 
 * **Windows**
   * [Ein Windows-Gerät mit Intune verwenden](https://docs.microsoft.com/intune-user-help/using-your-windows-device-with-intune)

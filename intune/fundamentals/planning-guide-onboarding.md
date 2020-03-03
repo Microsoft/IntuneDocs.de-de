@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fdc704d1971dfcc46ee2c3f5550e201d7a8e89fb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1cdfc7d42d3bffe1abe21deddfe146af953b150a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505186"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514947"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Implementieren Ihres Microsoft Intune-Plans
 
@@ -39,7 +39,7 @@ Die wichtigsten Anforderungen der eigenständigen Intune-Version lauten wie folg
 
 - Office 365-Abonnement (für Office-Apps und über die durch die App-Schutzrichtlinie verwalteten Apps)
 
-- Apple APNs-Zertifikat (zum Aktivieren der Verwaltung der iOS-Geräteplattform)
+- APNs-Zertifikat (zum Aktivieren der Verwaltung der iOS-/iPadOS-Geräteplattform)
 
 - Azure AD Connect (zur Verzeichnissynchronisierung)
 
@@ -88,7 +88,7 @@ Bevor Sie mit dem Einrichten, Konfigurieren, Verwalten und Registrieren von Ger�
 
 ### <a name="task-6-enable-device-platforms"></a>Aufgabe 6: Aktivieren von Geräteplattformen
 
-Die meisten Geräteplattformen sind standardmäßig aktiviert, mit Ausnahme von Apple-Geräten (iOS und Mac). Damit iOS-Geräte registriert und in Intune verwaltet werden können, muss die Geräteplattform aktiviert sein. Zu diesem Zweck müssen Sie ein MDM-Push-Zertifikat erstellen und zu Intune hinzufügen.
+Die meisten Geräteplattformen sind standardmäßig aktiviert, mit Ausnahme von Apple-Geräten (iOS/iPadOS und Mac). Damit iOS-/iPadOS-Geräte registriert und in Intune verwaltet werden können, muss die Geräteplattform aktiviert sein. Zu diesem Zweck müssen Sie ein MDM-Push-Zertifikat erstellen und zu Intune hinzufügen.
 
 - Weitere Informationen zum [Aktivieren von Apple-Geräten für die Registrierung](../enrollment/apple-mdm-push-certificate-get.md).
 
@@ -130,7 +130,7 @@ Intune unterstützt den bedingten Zugriff für Exchange Online und lokal, ShareP
 
 ### <a name="task-13-enroll-devices"></a>Aufgabe 13: Registrieren von Geräten
 
-Intune unterstützt die Geräteplattformen iOS, Mac OS, Android, Windows Desktop und Windows Mobile. Registrieren Sie Mobilgeräteplattformen nach Bedarf basierend auf den Anwendungsfällen und Anforderungen Ihrer Intune-Bereitstellung.
+Intune unterstützt die Geräteplattformen iOS/iPadOS, Mac OS, Android, Windows Desktop und Windows Mobile. Registrieren Sie Mobilgeräteplattformen nach Bedarf basierend auf den Anwendungsfällen und Anforderungen Ihrer Intune-Bereitstellung.
 
 - Weitere Informationen zum [Registrieren von Geräten](../enrollment/device-enrollment.md).
 

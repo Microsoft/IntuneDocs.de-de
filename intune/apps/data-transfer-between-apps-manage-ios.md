@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef9810f9414af4d1f57fa71189a6960b491800c0
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 2a1ba4a5e6096f77c87560554fd2c9cd601a33e4
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414888"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511717"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Verwalten der Datenübertragung zwischen iOS-Apps in Microsoft Intune
 
@@ -81,12 +81,12 @@ Die Konfiguration der Benutzer-UPN-Einstellung ist **erforderlich**, damit Gerä
    |ManageEngine Mobile Device Manager | IntuneMAMUPN | Zeichenfolge | %upn% |
 
 > [!NOTE]  
-> Wenn Sie für Outlook für iOS eine App-Konfigurationsrichtlinie für verwaltete Geräte mit der Option zum Verwenden des Konfigurations-Designers bereitstellen und **Nur Geschäfts-, Schul- oder Unikonten zulassen** aktivieren, wird im Hintergrund automatisch der Konfigurationsschlüssel „IntuneMAMUPN“ für die Richtlinie konfiguriert. Weitere Informationen finden Sie im Abschnitt mit häufig gestellten Fragen des Artikels [Neue Funktionen bei Konfigurationsrichtlinien für Outlook für iOS und Android – allgemeine App-Konfiguration](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481). 
+> Wenn Sie für Outlook für iOS/iPadOS eine App-Konfigurationsrichtlinie für verwaltete Geräte mit der Option zum Verwenden des Konfigurations-Designers bereitstellen und **Nur Geschäfts-, Schul- oder Unikonten zulassen** aktivieren, wird im Hintergrund automatisch der Konfigurationsschlüssel „IntuneMAMUPN“ für die Richtlinie konfiguriert. Weitere Informationen finden Sie im Abschnitt mit häufig gestellten Fragen des Artikels [Neue Funktionen bei Konfigurationsrichtlinien für Outlook für iOS und Android – allgemeine App-Konfiguration](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481). 
 
 
 ### <a name="example-2-end-user-experience"></a>Beispiel 2: Ablauf für Endbenutzer
 
-*Freigabe aus einer* per Richtlinie verwalteten App *für andere Anwendungen per Freigabe über das Betriebssystem*
+*Freigabe aus einer *per Richtlinie verwalteten App* für andere Anwendungen per Freigabe über das Betriebssystem*
 
 1. Ein Benutzer öffnet die Microsoft OneDrive-App auf einem registrierten iOS-Gerät und meldet sich bei seinem Geschäftskonto an.  Das vom Benutzer angegebene Konto muss dem in den App-Konfigurationseinstellungen für die Microsoft OneDrive-App festgelegten Konto-UPN entsprechen.
 
@@ -96,7 +96,7 @@ Die Konfiguration der Benutzer-UPN-Einstellung ist **erforderlich**, damit Gerä
 
 4. Die Daten werden erfolgreich übertragen und sind jetzt durch **Open-in Management** in der verwalteten iOS-App geschützt.  Die Intune-Anwendungsschutzrichtlinien gelten nicht für Anwendungen, bei denen es sich nicht um *per Richtlinie verwaltete Apps* handelt.
 
-*Freigabe aus einer* verwalteten iOS-App*für eine*per Richtlinie verwaltete App *mit eingehenden Organisationsdaten*
+*Freigabe aus einer *verwalteten iOS-App* für eine *per Richtlinie verwaltete App* mit eingehenden Organisationsdaten*
 
 1. Ein Benutzer öffnet eine native E-Mail auf einem registrierten iOS-Gerät mit einem verwalteten E-Mail-Profil.  
 

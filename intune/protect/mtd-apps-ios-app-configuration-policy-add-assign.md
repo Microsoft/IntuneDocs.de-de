@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04a18befe73ce63f5619c3efc6def4189db9c8df
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: efdb1912fdbb2f28c6859fae4407116173daa99d
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188481"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576289"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Hinzufügen und Zuweisen von Mobile Threat Defense-Apps (MTD) mit Intune
 
@@ -71,7 +71,7 @@ Wählen Sie den Abschnitt aus, der Ihrem MTD-Anbieter entspricht:
   - Sehen Sie sich die Anleitungen für [das Hinzufügen von iOS Store-Apps zu Microsoft Intune](../apps/store-apps-ios.md) an. Verwenden Sie diese [App Store-URL zu Lookout for Work für iOS](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8) für die **App Store-URL**.
 
 - **Lookout for Work-App außerhalb des Apple Stores**
-  - Sie müssen nun die Lookout for Work-App für iOS erneut signieren. Lookout verteilt die Lookout for Work-App für iOS außerhalb von iOS App Store. Bevor Sie die App verteilen, müssen Sie die App mit Ihrem iOS Enterprise Developer Certificate neu signieren.  
+  - Sie müssen nun die Lookout for Work-App für iOS erneut signieren. Lookout verteilt seine Lookout for Work iOS-App außerhalb des iOS App Store. Bevor Sie die App verteilen, müssen Sie die App mit Ihrem iOS Enterprise Developer Certificate neu signieren.  
   - Ausführliche Anweisungen zum erneuten Signieren der Lookout for Work-Apps für iOS finden Sie unter [iOS App Re-Signing Process (Erneute Signatur bei iOS-Apps)](https://personal.support.lookout.com/hc/articles/114094038714) auf der Lookout-Website.
 
   - **Aktivieren der Azure AD-Authentifizierung für Benutzer der Lookout for Work-iOS-App**
@@ -164,11 +164,11 @@ Verwenden Sie dasselbe Azure AD-Konto, das zuvor in der [Symantec Endpoint Prote
 
   - Wechseln Sie zu **Einstellungen**, und wählen Sie unter **Integrationen** die Option **Intune** aus. Wählen Sie **EMM Integration Selection** (EMM-Integrationsauswahl) aus. Wählen Sie **Microsoft** aus, und speichern Sie Ihre Auswahl.
 
-  - Klicken Sie auf den Link **Integration setup files** (Integrationssetupdateien), und speichern Sie die generierte \*.zip-Datei. Die ZIP-Datei enthält die Datei „* **.plist**“, die zum Erstellen der iOS-App-Konfigurationsrichtlinie in Intune verwendet wird.
+  - Klicken Sie auf den Link **Integration setup files** (Integrationssetupdateien), und speichern Sie die generierte \*.zip-Datei. Die ZIP-Datei enthält die Datei „***.plist**“, die zum Erstellen der iOS-App-Konfigurationsrichtlinie in Intune verwendet wird.
 
   - In den Anweisungen für [die Verwendung der iOS-App-Konfigurationsrichtlinien von Microsoft Intune](../apps/app-configuration-policies-use-ios.md) erfahren Sie, wie Sie die iOS-App-Konfigurationsrichtlinie für SEP Mobile hinzufügen.
 
-    - Wählen Sie für **Format der Konfigurationseinstellungen** **XML-Daten eingeben** aus, kopieren Sie den Inhalt aus der **.plist**-Datei, und fügen Sie diesen Inhalt in den Text der Konfigurationsrichtlinie ein.
+    - Wählen Sie für **Format der Konfigurationseinstellungen****XML-Daten eingeben** aus, kopieren Sie den Inhalt aus der **.plist**-Datei, und fügen Sie diesen Inhalt in den Text der Konfigurationsrichtlinie ein.
 
 > [!NOTE]
 > Wenn Sie die Dateien nicht abrufen können, wenden Sie sich an den [Symantec Endpoint Protection Mobile Enterprise Support](https://support.symantec.com/en_US/contact-support.html).
@@ -177,7 +177,7 @@ Verwenden Sie dasselbe Azure AD-Konto, das zuvor in der [Symantec Endpoint Prote
 
 In den Anweisungen für [die Verwendung der iOS-App-Konfigurationsrichtlinien von Microsoft Intune](../apps/app-configuration-policies-use-ios.md) erfahren Sie, wie Sie die iOS-App-Konfigurationsrichtlinie für Check Point SandBlast Mobile hinzufügen.
 
-- Wählen Sie für **Format der Konfigurationseinstellungen** **XML-Daten eingeben** aus, kopieren Sie den folgenden Inhalt, und fügen Sie diesen Inhalt in den Text der Konfigurationsrichtlinie ein.
+- Wählen Sie für **Format der Konfigurationseinstellungen****XML-Daten eingeben** aus, kopieren Sie den folgenden Inhalt, und fügen Sie diesen Inhalt in den Text der Konfigurationsrichtlinie ein.
 
   `<dict><key>MDM</key><string>INTUNE</string></dict>`
 
@@ -186,7 +186,7 @@ In den Anweisungen für [die Verwendung der iOS-App-Konfigurationsrichtlinien vo
 
 In den Anweisungen für [die Verwendung der iOS-App-Konfigurationsrichtlinien von Microsoft Intune](../apps/app-configuration-policies-use-ios.md) erfahren Sie, wie Sie die iOS-App-Konfigurationsrichtlinie für Zimperium hinzufügen.
 
-- Wählen Sie für **Format der Konfigurationseinstellungen** **XML-Daten eingeben** aus, kopieren Sie den folgenden Inhalt, und fügen Sie diesen Inhalt in den Text der Konfigurationsrichtlinie ein.
+- Wählen Sie für **Format der Konfigurationseinstellungen****XML-Daten eingeben** aus, kopieren Sie den folgenden Inhalt, und fügen Sie diesen Inhalt in den Text der Konfigurationsrichtlinie ein.
 
    ```
    <dict>
@@ -203,13 +203,13 @@ In den Anweisungen für [die Verwendung der iOS-App-Konfigurationsrichtlinien vo
 
 ### <a name="pradeo-app-configuration-policy"></a>Pradeo-App-Konfigurationsrichtlinie
 
-Pradeo unterstützt keine App-Konfigurationsrichtlinie für iOS.  Wenn Sie eine konfigurierte App erhalten möchten, arbeiten Sie stattdessen mit Pradeo zusammen, um benutzerdefinierte IPA- und APK-Dateien zu implementieren, die mit den gewünschten Einstellungen vorkonfiguriert sind.
+Pradeo unterstützt keine Anwendungskonfigurationsrichtlinien für iOS/iPadOS.  Wenn Sie eine konfigurierte App erhalten möchten, arbeiten Sie stattdessen mit Pradeo zusammen, um benutzerdefinierte IPA- und APK-Dateien zu implementieren, die mit den gewünschten Einstellungen vorkonfiguriert sind.
 
 ### <a name="better-mobile-app-configuration-policy"></a>Konfigurationsrichtlinie für Better Mobile-Apps
 
 In den Anweisungen für [die Verwendung der iOS-App-Konfigurationsrichtlinien von Microsoft Intune](../apps/app-configuration-policies-use-ios.md) erfahren Sie, wie Sie die iOS-App-Konfigurationsrichtlinie für Better Mobile hinzufügen.
 
-- Wählen Sie für **Format der Konfigurationseinstellungen** **XML-Daten eingeben** aus, kopieren Sie den folgenden Inhalt, und fügen Sie diesen Inhalt in den Text der Konfigurationsrichtlinie ein. Ersetzen Sie die URL für `https://client.bmobi.net` durch die URL für die entsprechende Konsole.
+- Wählen Sie für **Format der Konfigurationseinstellungen****XML-Daten eingeben** aus, kopieren Sie den folgenden Inhalt, und fügen Sie diesen Inhalt in den Text der Konfigurationsrichtlinie ein. Ersetzen Sie die URL für `https://client.bmobi.net` durch die URL für die entsprechende Konsole.
 
    ```
     <dict>

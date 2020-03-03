@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5092fa37f0bf6bd1320fa06fa58ac5e36f55aa3c
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 63fa9f461fc9884d8c21e40cb4b5e3831f3b4b03
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410185"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576526"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Verwenden von Zertifikaten zur Authentifizierung in Microsoft Intune
 
@@ -38,7 +38,7 @@ Verwenden Sie Zertifikate mit Intune, um Ihre Benutzer mithilfe von VPN, WLAN od
 
 Erstellen Sie Zertifikatprofile, und weisen Sie sie Geräten zu, um diese Zertifikate bereitzustellen.
 
-Jedes einzelne Zertifikatprofil, das Sie erstellen, unterstützt eine einzelne Plattform. Wenn Sie z. B. PKCS-Zertifikate verwenden, erstellen Sie ein PKCS-Zertifikatprofil für Android und ein separates PKCS-Zertifikatprofil für iOS. Wenn Sie auch SCEP-Zertifikate für diese beiden Plattformen verwenden, erstellen Sie ein SCEP-Zertifikatprofil für Android und ein weiteres für iOS.
+Jedes einzelne Zertifikatprofil, das Sie erstellen, unterstützt eine einzelne Plattform. Wenn Sie z. B. PKCS-Zertifikate verwenden, erstellen Sie ein PKCS-Zertifikatprofil für Android und ein separates PKCS-Zertifikatprofil für iOS/iPadOS. Wenn Sie auch SCEP-Zertifikate für diese beiden Plattformen verwenden, erstellen Sie ein SCEP-Zertifikatprofil für Android und ein weiteres für iOS/iPadOS.
 
 ### <a name="general-considerations-when-you-use-a-microsoft-certification-authority"></a>Allgemeine Überlegungen bei der Verwendung einer Microsoft-Zertifizierungsstelle
 
@@ -83,7 +83,7 @@ Bei der Verwendung einer Drittanbieter-Zertifizierungsstelle (Certification Auth
 | Android Enterprise <br> – Vollständig verwaltet (Gerätebesitzer)   | ![Unterstützt](./media/certificates-configure/green-check.png) |   | ![Unterstützt](./media/certificates-configure/green-check.png) |   |
 | Android Enterprise <br> – Dediziert (Gerätebesitzer)   | ![Unterstützt](./media/certificates-configure/green-check.png)  |   | ![Unterstützt](./media/certificates-configure/green-check.png)  |   |
 | Android Enterprise <br> – Arbeitsprofil    | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) |
-| iOS                   | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) |
+| iOS/iPadOS                   | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) |
 | macOS                 | ![Unterstützt](./media/certificates-configure/green-check.png) |  ![Unterstützt](./media/certificates-configure/green-check.png) |![Unterstützt](./media/certificates-configure/green-check.png)|![Unterstützt](./media/certificates-configure/green-check.png)|
 | Windows Phone 8.1     |![Unterstützt](./media/certificates-configure/green-check.png)  |  | ![Unterstützt](./media/certificates-configure/green-check.png)| ![Unterstützt](./media/certificates-configure/green-check.png) |
 | Windows 8.1 und höher |![Unterstützt](./media/certificates-configure/green-check.png)  |  |![Unterstützt](./media/certificates-configure/green-check.png) |   |

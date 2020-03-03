@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad363785888a92d1e8be4f2d28690278a2efaae9
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: 3cd153a4c602ba49a5b5135d1d6cb32a61f2668d
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966299"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576517"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Erstellen und Zuweisen eines SCEP-Zertifikatprofils in Intune
 
@@ -60,7 +60,7 @@ Nachdem Sie [Ihre Infrastruktur für die Unterstützung von SCEP-Zertifikaten (S
 
    - **Zertifikattyp**:
 
-     *(Gilt für:  Android, Android Enterprise, iOS, macOS, Windows 8.1 und höher sowie Windows 10 und höher)*
+     *(Gilt für:  Android, Android Enterprise, iOS/iPadOS, macOS, Windows 8.1 und höher sowie Windows 10 und höher)*
 
      Wählen Sie je nach Verwendung des Zertifikatprofils einen Typ aus:
 
@@ -92,15 +92,15 @@ Nachdem Sie [Ihre Infrastruktur für die Unterstützung von SCEP-Zertifikaten (S
        - **Seriennummer**
        - **Benutzerdefiniert**: Bei Auswahl dieser Option wird auch ein **benutzerdefiniertes** Textfeld angezeigt. In dieses Feld können Sie ein benutzerdefiniertes Format für den Antragstellernamen, einschließlich Variablen, eingeben. Das benutzerdefinierte Format unterstützt zwei Variablen: **Common Name (CN)** (Allgemeiner Name) und **Email (E)** (E-Mail-Adresse). **Allgemeiner Name (CN)** kann auf eine der folgenden Variablen festgelegt werden:
 
-         - **CN={{UserName}}** : Der Benutzerprinzipalname des Benutzers (z. B. janedoe@contoso.com)
-         - **CN={{AAD_Device_ID}}** : Eine ID, die zugewiesen wird, wenn Sie ein Gerät in Azure Active Directory (AD) registrieren. Diese ID wird in der Regel für die Authentifizierung bei Azure Active Directory verwendet.
-         - **CN={{SERIALNUMBER}}** : Die eindeutige Seriennummer (SN), die in der Regel vom Hersteller zum Identifizieren eines Geräts verwendet wird.
-         - **CN={{IMEINumber}}** : Die eindeutige IMEI-Nummer (International Mobile Equipment Identity), die verwendet wird, um ein Mobiltelefon zu identifizieren.
-         - **CN={{OnPrem_Distinguished_Name}}** : Eine Sequenz von durch Kommas getrennte relative definierte Namen wie *CN=Jane Doe, OU=UserAccounts, DC=corp, DC=contoso, DC=com*.
+         - **CN={{UserName}}**: Der Benutzerprinzipalname des Benutzers (z. B. janedoe@contoso.com)
+         - **CN={{AAD_Device_ID}}**: Eine ID, die zugewiesen wird, wenn Sie ein Gerät in Azure Active Directory (AD) registrieren. Diese ID wird in der Regel für die Authentifizierung bei Azure Active Directory verwendet.
+         - **CN={{SERIALNUMBER}}**: Die eindeutige Seriennummer (SN), die in der Regel vom Hersteller zum Identifizieren eines Geräts verwendet wird.
+         - **CN={{IMEINumber}}**: Die eindeutige IMEI-Nummer (International Mobile Equipment Identity), die verwendet wird, um ein Mobiltelefon zu identifizieren.
+         - **CN={{OnPrem_Distinguished_Name}}**: Eine Sequenz von durch Kommas getrennte relative definierte Namen wie *CN=Jane Doe, OU=UserAccounts, DC=corp, DC=contoso, DC=com*.
 
            Stellen Sie sicher, dass Sie das Benutzerattribut *onpremisesdistinguishedname* mithilfe von [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) mit Azure AD synchronisieren, um die Variable *{{OnPrem_Distinguished_Name}}* zu verwenden.
 
-         - **CN={{onPremisesSamAccountName}}** : Administratoren können das Attribut „samAccountName“ aus Active Directory mithilfe von Azure AD Connect in einem Attribut mit dem Namen *onPremisesSamAccountName* mit Azure AD synchronisieren. Intune kann diese Variable als Teil einer Zertifikatsausstellungsanforderung im Antragsteller eines Zertifikats ersetzen. Das Attribut „samAccountName“ ist der zur Unterstützung von Clients und Servern aus einer früheren Version von Windows (vor Windows 2000) verwendete Benutzeranmeldename. Das Format des Benutzeranmeldenamens lautet wie folgt: *DomainName\testUser*oder nur *testUser*.
+         - **CN={{onPremisesSamAccountName}}**: Administratoren können das Attribut „samAccountName“ aus Active Directory mithilfe von Azure AD Connect in einem Attribut mit dem Namen *onPremisesSamAccountName* mit Azure AD synchronisieren. Intune kann diese Variable als Teil einer Zertifikatsausstellungsanforderung im Antragsteller eines Zertifikats ersetzen. Das Attribut „samAccountName“ ist der zur Unterstützung von Clients und Servern aus einer früheren Version von Windows (vor Windows 2000) verwendete Benutzeranmeldename. Das Format des Benutzeranmeldenamens lautet wie folgt: *DomainName\testUser*oder nur *testUser*.
 
             Stellen Sie sicher, dass Sie das Benutzerattribut *onPremisesSamAccountName* mithilfe von [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) mit Azure AD synchronisieren, um die Variable *{{onPremisesSamAccountName}}* zu verwenden.
 
@@ -113,7 +113,7 @@ Nachdem Sie [Ihre Infrastruktur für die Unterstützung von SCEP-Zertifikaten (S
 
         Formatoptionen für das Format des Antragstellernamens umfassen die folgenden Variablen:
 
-        - **{{AAD_Device_ID}}** oder **{{AzureADDeviceId}}** : Beide Variablen können zum Identifizieren eines Geräts über die zugehörige Azure AD-ID verwendet werden.
+        - **{{AAD_Device_ID}}** oder **{{AzureADDeviceId}}**: Beide Variablen können zum Identifizieren eines Geräts über die zugehörige Azure AD-ID verwendet werden.
         - **{{Device_Serial}}**
         - **{{Device_IMEI}}**
         - **{{SerialNumber}}**
@@ -154,7 +154,7 @@ Nachdem Sie [Ihre Infrastruktur für die Unterstützung von SCEP-Zertifikaten (S
 
         Mit dem Zertifikattyp *Gerät* können Sie die folgenden Gerätzertifikatvariablen für den Wert verwenden:
 
-        - **{{AAD_Device_ID}}** oder **{{AzureADDeviceId}}** : Beide Variablen können zum Identifizieren eines Geräts über die zugehörige Azure AD-ID verwendet werden.
+        - **{{AAD_Device_ID}}** oder **{{AzureADDeviceId}}**: Beide Variablen können zum Identifizieren eines Geräts über die zugehörige Azure AD-ID verwendet werden.
         - **{{Device_Serial}}**
         - **{{Device_IMEI}}**
         - **{{SerialNumber}}**
@@ -169,7 +169,7 @@ Nachdem Sie [Ihre Infrastruktur für die Unterstützung von SCEP-Zertifikaten (S
 
         > [!IMPORTANT]
         > - Wenn Sie eine Gerätezertifikatvariable verwenden, schließen Sie den Variablennamen in geschweifte Klammern ein („{ }“).
-        > - Verwenden Sie für den Text nach der Variable keine geschweiften Klammern **{ }** , senkrechten Striche **|** und Semikolons **;** .
+        > - Verwenden Sie für den Text nach der Variable keine geschweiften Klammern **{ }**, senkrechten Striche **|** und Semikolons **;**.
         > - Geräteeigenschaften, die im *Betreff* oder *alternativen Antragstellernamen* eines Gerätezertifikats wie **IMEI**, **SerialNumber** oder **FullyQualifiedDomainName** verwendet werden, sind Eigenschaften, die von einer Person mit Zugriff auf das Gerät gespooft sein könnten.
         > - Ein Gerät muss alle in einem Zertifikatprofil für dieses Profil angegebenen Variablen unterstützen, um auf diesem Gerät installiert werden zu können.  Wenn **{{IMEI}}** beispielsweise im alternativen Antragstellernamen eines SCEP-Profils verwendet wird und einem Gerät ohne IMEI-Nummer zugewiesen ist, tritt bei der Profilinstallation ein Fehler auf.
 
@@ -179,7 +179,7 @@ Nachdem Sie [Ihre Infrastruktur für die Unterstützung von SCEP-Zertifikaten (S
 
      Wenn die Gültigkeitsdauer des Zertifikats in der Zertifikatvorlage beispielsweise zwei Jahre beträgt, können Sie als Wert „ein Jahr“ eingeben, aber nicht „fünf Jahre“. Zudem muss der Wert niedriger als die verbleibende Gültigkeitsdauer des Zertifikats der ausstellenden Zertifizierungsstelle sein.
 
-   - **Schlüsselspeicheranbieter (KSP)** :
+   - **Schlüsselspeicheranbieter (KSP)**:
 
      *(Gilt für:  Windows 8.1 und höher sowie Windows 10 und höher)*
 
@@ -197,7 +197,7 @@ Nachdem Sie [Ihre Infrastruktur für die Unterstützung von SCEP-Zertifikaten (S
      - **Digitale Signatur**: Der Schlüsselaustausch wird nur gestattet, wenn der Schutz des Schlüssels durch eine digitale Signatur unterstützt wird.
      - **Schlüsselverschlüsselung**: Der Schlüsselaustausch wird nur gestattet, wenn der Schlüssel verschlüsselt ist.
 
-   - **Schlüsselgröße (Bits)** :
+   - **Schlüsselgröße (Bits)**:
 
      Wählen Sie die Anzahl der Bits aus, die im Schlüssel enthalten sein sollen.
 
@@ -215,7 +215,7 @@ Nachdem Sie [Ihre Infrastruktur für die Unterstützung von SCEP-Zertifikaten (S
 
      Fügen Sie Werte für den beabsichtigten Zweck des Zertifikats hinzu. In den meisten Fällen erfordert das Zertifikat *Clientauthentifizierung*, damit der Benutzer bzw. das Gerät auf einem Server authentifiziert werden kann. Sie können ggf. weitere Schlüsselverwendungen hinzufügen.
 
-   - **Verlängerungsschwellenwert (%)** :
+   - **Verlängerungsschwellenwert (%)**:
 
      Geben Sie den Prozentsatz der Zertifikatgültigkeitsdauer an, die verbleibt, bevor das Gerät eine Verlängerung des Zertifikats anfordert. Wenn Sie beispielsweise „20“ eingeben, wird versucht, das Zertifikat zu erneuern, wenn das Zertifikat bereits zu 80 % abgelaufen ist. Die Erneuerungsversuche werden fortgesetzt, bis die Erneuerung erfolgreich ist. Bei der Erneuerung wird ein neues Zertifikat generiert, das zu einem neuen öffentlichen/privaten Schlüsselpaar führt.
 
@@ -242,7 +242,7 @@ Wenn Ihr Antragstellername eines der Sonderzeichen enthält, verwenden Sie eine 
 
 **Beispielsweise** haben Sie einen Antragstellernamen, der als *Test user (TestCompany, LLC)* angezeigt wird.  Eine CSR, die einen CN mit dem Komma zwischen *TestCompany* und *LLC* umfasst, stellt ein Problem dar.  Das Problem kann vermieden werden, indem Sie den gesamten CN in Anführungszeichen setzen oder das Komma zwischen *TestCompany* und *LLC* entfernen:
 
-- **Fügen Sie Anführungszeichen hinzu**: *CN=* ”Test User (TestCompany, LLC)”,OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+- **Fügen Sie Anführungszeichen hinzu**: *CN=*”Test User (TestCompany, LLC)”,OU=UserAccounts,DC=corp,DC=contoso,DC=com*
 - **Entfernen Sie das Komma**: *CN=Test User (TestCompany LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
 
  Allerdings tritt bei Versuchen, das Komma mithilfe eines umgekehrten Schrägstrichs mit einem Escapezeichen zu versehen, ein Fehler in den CRP-Protokollen auf:
@@ -280,7 +280,7 @@ Weisen Sie SCEP-Zertifikatprofile auf die gleiche Weise zu, wie Sie [Geräteprof
 - Obwohl Sie das vertrauenswürdige Zertifikatprofil und das SCEP-Zertifikatprofil separat erstellen und zuweisen, müssen beide zugewiesen werden. Wenn nicht beide auf einem Gerät installiert sind, schlägt die SCEP-Zertifikatrichtlinie fehl. Stellen Sie sicher, dass alle vertrauenswürdigen Stammzertifikatprofile auch für dieselben Gruppen wie das SCEP-Profil bereitgestellt werden.
 
 > [!NOTE]
-> Wenn auf iOS-Geräten ein SCEP-Zertifikatprofil einem zusätzlichen Profil (z. B. einem WLAN- oder VPN-Profil) zugeordnet ist, erhält das Gerät ein Zertifikat für jedes der zusätzlichen Profile. Dadurch werden dem iOS-Gerät mehrere Zertifikate über die SCEP-Zertifikatanforderung bereitgestellt.  Wenn ein einzelnes Zertifikat gewünscht ist, müssen Sie PKCS-Zertifikate anstelle von SCEP-Zertifikaten verwenden.  Dies liegt an der unterschiedlichen Art und Weise, wie SCEP- und PKCS-Zertifikate an Geräte übermittelt werden.
+> Wenn auf iOS-/iPadOS-Geräten ein SCEP-Zertifikatprofil einem zusätzlichen Profil (z. B. einem WLAN- oder VPN-Profil) zugeordnet ist, erhält das Gerät ein Zertifikat für jedes der zusätzlichen Profile. Dadurch werden dem iOS-/iPadOS-Gerät mehrere Zertifikate über die SCEP-Zertifikatanforderung bereitgestellt.  Wenn ein einzelnes Zertifikat gewünscht ist, müssen Sie PKCS-Zertifikate anstelle von SCEP-Zertifikaten verwenden.  Dies liegt an der unterschiedlichen Art und Weise, wie SCEP- und PKCS-Zertifikate an Geräte übermittelt werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

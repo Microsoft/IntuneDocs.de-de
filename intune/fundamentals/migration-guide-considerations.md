@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86cef30c31b53c6bfd1873390fb7546cbeab2a53
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 936e4836938ddddc8e795d85de5a449ee77edaa4
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510039"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514998"
 ---
 # <a name="special-migration-considerations"></a>Besondere Überlegungen bei der Migration
 
@@ -32,7 +32,7 @@ Es gibt spezielle Aspekte bei der Migration, die je nach vorhandener Umgebung de
 
 Das Apple-Programm zur Geräteregistrierung (Device Enrollment Program, DEP) legt Gerätekonfigurationen fest, die vom Endbenutzer nicht entfernt werden können. Wenn Sie die erweiterten Verwaltungsfunktionen von DEP beibehalten möchten, muss das Gerät für die Registrierung bei Intune auf die Werkseinstellungen zurückgesetzt werden.
 
-Um die Geräte in Intune weiter mit dem Programm zur Geräteregistrierung zu verwalten, [richten Sie die iOS-Geräteregistrierung mit dem Programm zur Geräteregistrierung ein](../enrollment/device-enrollment-program-enroll-ios.md).
+Sie haben die Möglichkeit zum [automatischen Registrieren von iOS-/iPadOS-Geräten mit dem Programm zur Geräteregistrierung von Apple](../enrollment/device-enrollment-program-enroll-ios.md), um die Geräte in Intune weiter mit dem Programm zur Geräteregistrierung zu verwalten.
 
 
 ## <a name="next-steps"></a>Nächste Schritte

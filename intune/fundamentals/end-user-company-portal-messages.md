@@ -17,12 +17,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57467d3d073666c1c22ac0a412f68a258d5b3d75
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cbc4e1cc8cf7bd578690bf3e34353a60ec67cdab
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414069"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514726"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Grundlegendes zum Verständnis von Meldungen in der Unternehmensportal-App
 
@@ -117,7 +117,7 @@ Verweisen Sie Ihre Benutzer an [Senden von Protokollen an Ihren IT-Administrator
 
 ### <a name="where-it-appears"></a>Position in der Oberfläche
 
-Wenn Sie die Unternehmensportal-App nicht zur Liste **Zulässige Apps** oder **Ausgenommene Apps** hinzugefügt haben, und ein Benutzer versucht, sich anzumelden, schlägt die Anmeldung fehl. Die folgende Meldung wird angezeigt:
+Wenn Sie die Unternehmensportal-App nicht zur Liste **Zulässige Apps** oder **Ausgenommene Apps** hinzugefügt haben, und ein Benutzer versucht, sich anzumelden, schlägt die Anmeldung fehl. Es wird die folgende Meldung angezeigt:
 
 > **Der Support Ihres Unternehmens muss Ihnen Zugriff auf Unternehmensressourcen gewähren**  
 > Ihr Unternehmen verwendet Windows Information Protection-Richtlinien, um Ihr Gerät zu schützen. Der Support Ihres Unternehmens muss sicherstellen, dass die Unternehmensportal-App auf diese Ressourcen zugreifen kann.
@@ -126,7 +126,7 @@ Wenn Sie die Unternehmensportal-App nicht zur Liste **Zulässige Apps** oder **A
 
 Fügen Sie das Unternehmensportal zur Liste der **zulässigen Apps** oder **ausgenommenen Apps** hinzu, die in der Windows Information Protection-App-Schutzrichtlinie aufgeführt sind. Weitere Informationen finden Sie unter [Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune](../apps/windows-information-protection-policy-create.md).
 
-## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>Genehmigen einer iOS-Unternehmensportal-App (branchenspezifischen App) auf Ihrem iOS-Gerät 
+## <a name="approve-a-iosipados-company-app-line-of-business-app-on-your-iosipados-device"></a>Genehmigen einer iOS/iPadOS-Unternehmensportal-App (branchenspezifischen App) auf Ihrem iOS/iPadOS-Gerät 
 
 ### <a name="where-it-appears"></a>Position in der Oberfläche
 
@@ -136,7 +136,7 @@ Ihr Gerät vertraut iOS-Apps, die von Ihrer Organisation entwickelt wurden und n
 
 ### <a name="what-it-means"></a>Bedeutung
 
-Diese Meldung bedeutet, dass Sie Ihre iOS-Geräteeinstellungen bearbeiten müssen, damit eine App, die von Ihrem Unternehmen entwickelt wurde, auf Ihrem iOS-Gerät genehmigt und installiert wird.
+Diese Meldung bedeutet, dass Sie Ihre iOS/iPadOS-Geräteeinstellungen bearbeiten müssen, damit eine App, die von Ihrem Unternehmen entwickelt wurde, auf Ihrem iOS/iPadOS-Gerät genehmigt und installiert wird.
 
 Wenn Sie solche Apps über das Unternehmensportal installieren und die App dann öffnen, führen Sie folgende Schritte aus, um die App nach dem Download zu genehmigen:
 
@@ -156,5 +156,5 @@ Wenn Sie solche Apps über das Unternehmensportal installieren und die App dann 
     Sie sollten die Unternehmens-App nun öffnen und verwenden können.
 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 [Informieren der Endbenutzer über den Einsatz von Intune](end-user-educate.md)

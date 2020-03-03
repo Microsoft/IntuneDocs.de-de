@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0e2e2101706b9b9afa77553244a438a2299903b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 67d9b5df39311d58571f875b8d41c16088010fad
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414023"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514301"
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Häufige Verwendungsarten von Microsoft Intune
 
@@ -35,7 +35,7 @@ Nachfolgend finden Sie eine kurze Einführung zu den sechs häufigsten, auf Intu
 >Möchten Sie wissen, wie die Microsoft IT Intune verwendet, um Microsoft-Mitarbeitern den Zugriff auf Unternehmensressourcen auf ihren mobilen Geräten zu ermöglichen, während dabei auch die Unternehmensdaten geschützt bleiben? [Lesen Sie diese technische Fallstudie](https://www.microsoft.com/itshowcase/Article/Content/588), um ausführlich zu erfahren, wie Microsoft IT Intune und andere Dienste dazu verwendet, um Identitäten, Geräte, Apps und Daten zu verwalten.  
 
 >[!IMPORTANT]
->Wir möchten sicherstellen, dass Mobilgeräte angesichts der aktuellen „Trident“-Malware-Angriffe auf iOS-Geräte aktuell sind. Lesen Sie daher unseren Blogbeitrag [Ensuring mobile devices are up to date using Microsoft Intune (Verwenden von Microsoft Intune, um sicherzustellen, dass mobile Geräte auf dem neuesten Stand sind)](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/). Er bietet Informationen zu den verschiedenen Methoden, mit denen Intune Ihre Geräte sicher und auf dem neuesten Stand halten kann.
+>Wir möchten sicherstellen, dass Mobilgeräte angesichts der aktuellen „Trident“-Malware-Angriffe auf iOS/iPadOS-Geräte aktuell sind. Lesen Sie daher unseren Blogbeitrag [Ensuring mobile devices are up to date using Microsoft Intune (Verwenden von Microsoft Intune, um sicherzustellen, dass mobile Geräte auf dem neuesten Stand sind)](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/). Er bietet Informationen zu den verschiedenen Methoden, mit denen Intune Ihre Geräte sicher und auf dem neuesten Stand halten kann.
 
 ## <a name="protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices"></a>Schützen Ihrer lokalen E-Mails und Daten für den sicheren Zugriff über mobile Geräte
 

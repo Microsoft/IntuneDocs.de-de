@@ -1,7 +1,7 @@
 ---
 title: Verschlüsselungsbericht für verschlüsselte Berichte in Microsoft Intune
 titleSuffix: Microsoft Intune
-description: Rufen Sie einen Bericht zum Verschlüsselungsstatus Ihres iOS- oder Windows-Geräts ab, und greifen Sie über das Microsoft Intune-Portal auf die FileVault- und BitLocker-Wiederherstellungsschlüssel zu.
+description: Rufen Sie einen Bericht zum Verschlüsselungsstatus Ihres iOS/iPadOS- oder Windows-Geräts ab, und greifen Sie über das Microsoft Intune-Portal auf die FileVault- und BitLocker-Wiederherstellungsschlüssel zu.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,18 +17,18 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5d9508c5d69b0790efa37ee633f8216bfd2bb30c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: daa302813c7ea3ad35ecfa7dd8d70436bfe5e1a4
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74164656"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510502"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Überwachen der Geräteverschlüsselung mit Intune
 
 Der Microsoft Intune-Verschlüsselungsbericht enthält Details zum Verschlüsselungsstatus Ihrer verwalteten Geräte sowie Optionen zum Verwalten von Wiederherstellungsschlüsseln für Geräte. Welche Wiederherstellungsschlüsseloptionen verfügbar sind, hängt vom Typ des Geräts ab, das aufgerufen wird.
 
-Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an, um den Bericht zu finden. Wählen Sie **Geräte** > **Überwachen** aus. Wählen Sie dann unter *Konfiguration* **Verschlüsselungsbericht** aus.
+Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an, um den Bericht zu finden. Wählen Sie **Geräte** > **Überwachen** aus. Wählen Sie dann unter *Konfiguration***Verschlüsselungsbericht** aus.
 
 ## <a name="view-encryption-details"></a>Abrufen von Verschlüsselungsdetails
 
@@ -94,7 +94,7 @@ Wenn Sie im Verschlüsselungsbericht ein Gerät auswählen, zeigt Intune den Ber
 
   Sie können die Profilliste verwenden, um einzelne Richtlinien für eine Überprüfung auszuwählen, sollte die *Profilstatuszusammenfassung* auf Probleme hindeuten.
 
-- **Profilstatuszusammenfassung:** Eine Zusammenfassung der Profile, die für das Gerät gelten Die Zusammenfassung stellt die am wenigsten vorteilhafte Bedingung aller anwendbaren Profile dar. Wenn beispielsweise ein Profil von mehreren anwendbaren Profilen einen Fehler auslöst, zeigt die *Profilstatuszusammenfassung* *Fehler* an.
+- **Profilstatuszusammenfassung:** Eine Zusammenfassung der Profile, die für das Gerät gelten Die Zusammenfassung stellt die am wenigsten vorteilhafte Bedingung aller anwendbaren Profile dar. Wenn beispielsweise ein Profil von mehreren anwendbaren Profilen einen Fehler auslöst, zeigt die *Profilstatuszusammenfassung**Fehler* an.
 
   Um weitere Details eines Status anzuzeigen, wechseln Sie zu **Intune** > **Gerätekonfiguration** > **Profile**, und wählen Sie das Profil aus. Wählen Sie optional **Gerätestatus** und anschließend ein Gerät aus.
 
@@ -124,7 +124,7 @@ Wenn Sie im Verschlüsselungsbericht ein Gerät auswählen, zeigt Intune den Ber
 
     *Zu berücksichtigen: Ab macOS, Version 10.15 (Catalina) können durch den Benutzer genehmigte Registrierungseinstellungen dazu führen, dass der Benutzer die FileVault-Verschlüsselung manuell genehmigen muss. Weitere Informationen finden Sie unter [Durch den Benutzer genehmigte Registrierung](../enrollment/macos-enroll.md) in der Intune-Dokumentation.*
 
-  - Unbekannt.
+  - Unbekannt
 
     *Zu berücksichtigen: Eine mögliche Ursache für einen unbekannten Status ist, dass das Gerät gesperrt ist und Intune den Hinterlegungs-oder Verschlüsselungsvorgang nicht starten kann. Sobald das Gerät entsperrt wird, kann der Vorgang fortgesetzt werden.*
 

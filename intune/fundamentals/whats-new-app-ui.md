@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e38e4f8552b6ef217d264cfa74597bda5c665ab
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.openlocfilehash: aab10058fe507a956bb793902e6f7b09d8579966
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125046"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576546"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Updates der Benutzeroberfläche für Endbenutzer-Apps in Intune
 
@@ -59,7 +59,7 @@ Das Unternehmensportal für die macOS-Registrierung verfügt über einen einfach
 ## <a name="week-of-october-28-2019"></a>Woche vom 28. Oktober 2019  
 
 ### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>Verbessertes Prüflistendesign in der Unternehmensportal-App für Android <!-- 5550857 -->  
-Die Prüfliste für das Setup in der Unternehmensportal-App für Android wurde mit einem vereinfachten Design und neuen Symbolen aktualisiert. Die Änderungen stimmen mit den neuesten Updates überein, die an der Unternehmensportal-App für iOS vorgenommen wurden. Weitere Informationen zu den aktualisierten Registrierungsschritten finden Sie unter [Registrieren bei Android-Arbeitsprofilen](/intune-user-help/enroll-device-android-work-profile) und [Registrieren Ihres Android-Geräts](/intune-user-help/enroll-device-android-company-portal).  
+Die Prüfliste für das Setup in der Unternehmensportal-App für Android wurde mit einem vereinfachten Design und neuen Symbolen aktualisiert. Die Änderungen stimmen mit den neuesten Updates überein, die an der Unternehmensportal-App für iOS/iPadOS vorgenommen wurden. Weitere Informationen zu den aktualisierten Registrierungsschritten finden Sie unter [Registrieren bei Android-Arbeitsprofilen](/intune-user-help/enroll-device-android-work-profile) und [Registrieren Ihres Android-Geräts](/intune-user-help/enroll-device-android-company-portal).  
 
 Der folgende Bildschirm zeigt die aktualisierte Prüfliste für die Registrierung von Android-Arbeitsprofilen:
 
@@ -216,7 +216,7 @@ Die Intune-Unternehmensportal-App für Windows 10 wurde mit der [Navigationsansi
 ## <a name="week-of-april-2-2018"></a>Woche vom 2. April 2018
 
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>Update für die Benutzeroberfläche für die Unternehmensportal-App für iOS <!-- 1412866 -->
-Für die Unternehmensportal-App für iOS wurde ein großes Update für die Benutzeroberfläche veröffentlicht. Das Update enthält eine vollständige visuelle Überarbeitung, einschließlich eines moderneren Designs und einer verbesserten Handhabung. Wir haben die Funktion der App beibehalten, haben jedoch die Benutzerfreundlichkeit und Barrierefreiheit verbessert.  
+Für die Unternehmensportal-App für iOS/iPadOS wurde ein großes Update für die Benutzeroberfläche veröffentlicht. Das Update enthält eine vollständige visuelle Überarbeitung, einschließlich eines moderneren Designs und einer verbesserten Handhabung. Wir haben die Funktion der App beibehalten, haben jedoch die Benutzerfreundlichkeit und Barrierefreiheit verbessert.  
 
 Weiterhin sind enthalten:
 - Support für iPhone X
@@ -267,7 +267,7 @@ Wenn Sie [Gerätegruppenzuordnung](../enrollment/device-group-mapping.md) aktivi
 
 ### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Verbesserungen des Workflows für das Gerätesetup im Unternehmensportal für iOS in Version 2.9.0 <!-- 1417174 -->
 
-Der Workflow für die Geräteeinrichtung in der Unternehmensportal-App für iOS wurde verbessert. Die Sprache ist nun benutzerfreundlicher. Zudem haben wir Bildschirme nach Möglichkeit zusammengefasst. Zudem haben wir die Sprache speziell für Ihr Unternehmen angepasst, indem der Name Ihres Unternehmens im gesamten Setuptext verwendet wird.
+Der Workflow für die Geräteeinrichtung in der Unternehmensportal-App für iOS/iPadOS wurde verbessert. Die Sprache ist nun benutzerfreundlicher. Zudem haben wir Bildschirme nach Möglichkeit zusammengefasst. Zudem haben wir die Sprache speziell für Ihr Unternehmen angepasst, indem der Name Ihres Unternehmens im gesamten Setuptext verwendet wird.
 
 > [!NOTE]
 > Wir verwenden den Unternehmensnamen, den Sie im Azure-Portal unter **Microsoft Intune** > **Client-Apps** > **Branding des Unternehmensportals** > **Unternehmensname** festgelegt haben. Wenn Sie diesen Wert nicht festgelegt haben, verwenden wir den Namen des Mandanten, der unter **Azure Active Directory** > **Eigenschaften** > **Name** festgelegt wurde. Wenn Sie im Branding des Unternehmensportals keinen Unternehmensnamen festgelegt haben und nicht möchten, dass der Mandantennamen angezeigt wird, empfiehlt es sich, den Unternehmensnamen auf der Registerkarte „Branding des Unternehmensportals“ festzulegen. Wenn Sie nicht möchten, dass diese Zeichenfolge in der Kopfzeile im Unternehmensportal angezeigt wird, können Sie das Kontrollkästchen „Unternehmensnamen neben Logo anzeigen“ deaktivieren.
@@ -303,7 +303,7 @@ Die Funktion zur Nachverfolgung der Relevanz wird weiterhin angepasst. Geben Sie
 ### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>Verbesserungen der Suchfunktion auf der Unternehmensportal-Website <!-- 1331697 -->
 Die Suchfunktion unserer App soll verbessert werden. Dabei beginnen wir mit der [Unternehmensportal-Website](https://portal.manage.microsoft.com). Suchen werden nun neben den Feldern für Name und Beschreibung über App-Kategorien ausgeführt. Die Ergebnisse werden standardmäßig nach abnehmender Relevanz sortiert. 
 
-Auch iOS-Benutzer profitieren von dieser Änderung, da die Unternehmensportal-Website auch Teil der Unternehmensportal-App unter iOS ist. In den folgenden Monaten wird es ähnliche Updates für Unternehmensportal-Apps für Android und Windows geben.
+Auch iOS-Benutzer profitieren von dieser Änderung, da die Unternehmensportal-Website auch Teil der Unternehmensportal-App unter iOS/iPadOS ist. In den folgenden Monaten wird es ähnliche Updates für Unternehmensportal-Apps für Android und Windows geben.
 
 Die Funktion zur Nachverfolgung der Relevanz wird weiterhin angepasst. Geben Sie uns daher gerne eine Rückmeldung über den „Feedback“-Link unten auf der Unternehmensportal-Website.
 
@@ -407,7 +407,7 @@ Die Detailseite der Unternehmensportal-App für Android zeigt nun die App-Katego
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Verbesserte Anmeldefunktion für alle Unternehmensportal-Apps auf allen Plattformen <!--User Story 1132123-->
 
-Wir kündigen eine in den nächsten Monaten kommende Änderung an, durch die der Anmeldevorgang für die Intune-Unternehmensportal-Apps für Android, iOS und Windows verbessert wird. Die neue Benutzeroberfläche wird für die Unternehmensportal-App automatisch auf allen Plattformen eingeführt, sobald Azure AD die Änderung umsetzt. Darüber hinaus können Benutzer sich jetzt mithilfe eines generierten Codes zur einmaligen Verwendung von einem anderen Gerät aus beim Unternehmensportal anmelden. Dies ist besonders nützlich, wenn Benutzer sich ohne Anmeldeinformationen anmelden müssen.  
+Wir kündigen eine in den nächsten Monaten kommende Änderung an, durch die der Anmeldevorgang für die Intune-Unternehmensportal-Apps für Android, iOS/iPadOS und Windows verbessert wird. Die neue Benutzeroberfläche wird für die Unternehmensportal-App automatisch auf allen Plattformen eingeführt, sobald Azure AD die Änderung umsetzt. Darüber hinaus können Benutzer sich jetzt mithilfe eines generierten Codes zur einmaligen Verwendung von einem anderen Gerät aus beim Unternehmensportal anmelden. Dies ist besonders nützlich, wenn Benutzer sich ohne Anmeldeinformationen anmelden müssen.  
 
 Unten sehen Sie die vorherige Anmeldeoberfläche, die neue Anmeldeoberfläche mit Anmeldeinformationen und die neue Anmeldeoberfläche zur Anmeldung von einem anderen Gerät aus.
 
