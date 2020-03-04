@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 313d9f470e9467cc80bae9c2400d4cc64aacc7ea
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
-ms.translationtype: MTE75
+ms.openlocfilehash: c0cfe99f022a5e5448bdee453fb0210f6b7195fc
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886767"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181810"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Neuerungen in Microsoft Intune (vorherige Monate)
 
@@ -187,7 +187,7 @@ Intune-Registrierung und Unternehmensportal unterstützen jetzt die iOS-Versione
 Beim Umbenennen von Windows-Geräten müssen Sie neue Regeln befolgen:
 - Der Name sollte aus 15 Zeichen oder weniger (d. h. weniger als oder gleich 63 Byte ohne nachstehender NULL) bestehen.
 - Der Name sollte nicht NULL sein oder aus einer leeren Zeichenfolge bestehen.
-- Zulässige ASCII-Zeichen: Buchstaben (a–z, A–Z), Zahlen (0–9) und Bindestriche
+- Zulässiger ASCII-Code: Buchstaben (a-z, A-Z), Zahlen (0-9) und Bindestriche
 - Zulässige Unicode-Zeichen: Zeichen >= 0x80, muss eine gültige UTF-8-Codierung und die IDN-Zuordnung (RtlIdnToNameprepUnicode erfolgreich, weitere Informationen finden Sie im RFC 3492) aufweisen
 - Namen dürfen nicht nur aus Zahlen bestehen.
 - Es dürfen keine Leerzeichen im Namen enthalten sein.
@@ -341,7 +341,7 @@ In Intune können Sie Richtlinien erstellen, um überwachte iOS-Geräte als Kios
 
 In diesem Update gibt es neue Einstellungen, die Sie steuern können:
 - **Sprachsteuerung**: Aktiviert die Sprachsteuerung auf dem Gerät im Kioskmodus.
-- **Änderung der Sprachsteuerung:** Ermöglicht es Benutzern, die Sprachsteuerungseinstellung auf dem Gerät zu ändern, während sich dieses im Kioskmodus befindet.
+- **Änderung der Sprachsteuerung**: Ermöglicht es Benutzern, die Sprachsteuerungseinstellung auf dem Gerät zu ändern, während sich dieses im Kioskmodus befindet.
 
 Die aktuellen Einstellungen finden Sie unter [iOS-Kioskeinstellungen](../configuration/device-restrictions-ios.md#kiosk).
 
@@ -407,7 +407,7 @@ Gilt für:
 ### <a name="device-enrollment"></a>Geräteregistrierung
 
 #### <a name="new-tenants-will-default-away-from-android-device-administrator-management---4869790-----"></a>Neue Mandanten verwenden nicht mehr standardmäßig die Verwaltung über den Android-Geräteadministrator<!-- 4869790   -->
-Die Funktionen des Geräteadministrators von Android wurden durch Android Enterprise ersetzt. Daher wird empfohlen, für neue Registrierungen stattdessen Android Enterprise zu verwenden. Im Rahmen eines zukünftigen Updates müssen neue Mandanten die folgenden erforderlichen Schritte bei der Android-Registrierung ausführen, um die Geräteadministratorverwaltung zu verwenden: Navigieren Sie zu **Intune** > **Geräteregistrierung** > **Android-Registrierung** > **Personal and corporate-owned devices with device administration privileges** (Persönliche und unternehmenseigene Geräte mit Geräteadministratorberechtigungen)  > **Geräte über Geräteadministrator verwalten**.
+Die Funktionen des Geräteadministrators von Android wurden durch Android Enterprise ersetzt. Daher wird empfohlen, für neue Registrierungen stattdessen Android Enterprise zu verwenden. In einem zukünftigen Update müssen neue Mandanten bei der Registrierung in Android die folgenden Schritte ausführen, um die Verwaltung über den Geräteadministrator zu verwenden: Wechseln Sie zu **Intune** > **Geräteregistrierung** > **Android-Registrierung** > **Persönliche und unternehmenseigene Geräte mit Geräteverwaltungsrechten** > **Geräteadministrator zum Verwalten von Geräten verwenden**.
 
 Für vorhandene Mandanten ergeben sich keine Änderungen in ihren Umgebungen.
 
@@ -526,7 +526,7 @@ In Intune können Sie Features und Einstellungen in einer kioskartigen Umgebung 
 In diesem Update werden die folgenden Features hinzugefügt:
 
 - **Dedizierte Geräte** > **Multi-App**: Die **Virtuelle Startschaltfläche** kann angezeigt werden, indem auf dem Gerät nach oben gewischt wird oder die Schaltfläche auf dem Bildschirm schwebt, sodass Benutzer sie verschieben können.
-- **Dedizierte Geräte** > **Multi-App**: Die Option **Zugriff auf Taschenlampe** ermöglicht es Benutzern, die Taschenlampe zu verwenden. 
+- **Dedizierte Geräte** > **Multi-App**: **Flashlight-Zugriff** ermöglicht es Benutzern, die Taschenlampe zu verwenden. 
 - **Dedizierte Geräte** > **Multi-App**: **Medienlautstärkeregler** ermöglicht es Benutzern, über einen Schieberegler die Medienlautstärke des Geräts zu steuern. 
 - **Dedizierte Geräte** > **Multi-App**:  **Einen Bildschirmschoner aktivieren**, ein benutzerdefiniertes Bild hochladen und steuern, wann der Bildschirmschoner angezeigt wird.
 
@@ -580,11 +580,11 @@ Sie können Profile erstellen, um Einstellungen auf iOS-und macOS-Geräten einzu
 
 - Unter **iOS** > **Geräteeinschränkungen** gibt es einige Änderungen:
 
-  - **Integrierte Apps** > **Mein iPhone suchen (nur überwacht):** Neue Einstellung, die dieses Feature im App-Feature „Wo ist?“ blockiert. 
-  - **Integrierte Apps** > **Meine Freunde suchen (nur überwacht):** Neue Einstellung, die dieses Feature im App-Feature „Wo ist?“ blockiert. 
-  - **Drahtlos** > **Änderung des WLAN-Status (nur überwacht):** Neue Einstellung, die verhindert, dass Benutzer das WLAN auf dem Gerät ein- oder ausschalten können.
-  - **Tastatur und Wörterbuch** > **QuickPath (nur überwacht):** Neue Einstellung, die das QuickPath-Feature blockiert.
-  - **Cloud und Speicher:** die **Aktivitätsfortsetzung** wird in **Handoff** umbenannt.
+  - **Integrierte Apps** > **Mein iPhone suchen (nur überwacht)** : Neue Einstellung, die diese Funktion im App-Feature für die Suche blockiert. 
+  - **Integrierte Apps** > **Meine Freunde suchen (nur überwacht)** : Neue Einstellung, die diese Funktion im App-Feature für die Suche blockiert. 
+  - **Drahtlosnetzwerke** > **Änderung des WLAN-Status (nur überwacht)** : Neue Einstellung, die verhindert, dass Benutzer WLAN auf dem Gerät ein- oder ausschalten können.
+  - **Tastatur und Wörterbuch** > **QuickPath (nur überwacht)** : Neue Einstellung, die die QuickPath-Funktion blockiert.
+  - **Cloud und Speicher**: **Aktivitätsfortsetzung** wurde in **Handoff** umbenannt.
 
   Die aktuellen Einstellungen finden Sie unter [iOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune](../configuration/device-restrictions-ios.md).
 
@@ -1002,7 +1002,7 @@ Gilt für: Windows 10 und höher
 #### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices---4097904-----"></a>Hindern von Endbenutzern am Ändern ihres privaten Hotspots und Deaktivieren der Siri-Serverprotokollierung auf iOS-Geräten<!-- 4097904   -->  
 Sie können auf einem iOS-Gerät ein Geräteeinschränkungsprofil einrichten (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **iOS** als Plattform > **Geräteeinschränkungen** als Profiltyp). Dieses Update umfasst neue Einstellungen, die Sie konfigurieren können:
 
-- **Integrierte Apps:** serverseitige Protokollierung für Siri-Befehle
+- **Integrierte Apps**: Serverseitige Protokollierung für Siri-Befehle
 - **Drahtlos**: Benutzeränderung des persönlichen Hotspots (nur überwacht)
 
 Zum Anzeigen dieser Einstellungen wechseln Sie zu [built-in app settings for iOS](../configuration/device-restrictions-ios.md#built-in-apps) (Integrierte App-Einstellungen für iOS) und [wireless settings for iOS](../configuration/device-restrictions-ios.md#wireless) (Drahtloseinstellungen für iOS).
@@ -1444,7 +1444,7 @@ Eine Liste dieser Einstellungen finden Sie unter:
 
 - [Geräteeinstellungen bei Windows 10 (und höher) zur Ausführung als Kiosk in Intune](../configuration/kiosk-settings-windows.md)
 - [Microsoft Edge-Browser](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser)
-- [Einstellungen für Windows 10-Geräte (und höher) zum Zulassen oder Einschränken von Features mit Intune](../configuration/device-restrictions-windows-10.md##favorites-and-search)
+- [Einstellungen für Windows 10-Geräte (und höher) zum Zulassen oder Einschränken von Features mit Intune](../configuration/device-restrictions-windows-10.md#favorites-and-search)
 
 Gilt für: Windows 10 und höher
 
@@ -1639,7 +1639,7 @@ Bei der Erstellung eines Konfigurationsprofils für iOS-Geräte können Sie **Ko
 In den [Einstellungen zur Anzeige von Nachrichten auf dem Sperrbildschirm](../configuration/ios-device-features-settings.md#lock-screen-message) werden die aktuellen Einstellungen aufgelistet.
 
 #### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices---2827760--"></a>Neue Einstellungen für App Store, Dokumentanzeige, Gaminggeräteeinschränkungen auf iOS-Geräten<!-- 2827760-->
-Unter **Gerätekonfiguration** > **Profile** > **Profil erstellen** > **iOS**, für „Plattform“ > **Geräteeinschränkungen** und für „Profiltyp“ > **App Store, Dokumentanzeige, Gaming** werden die folgenden Einstellungen hinzugefügt: „Schreiben von Kontakten in nicht verwaltete Kontaktkonten für verwaltete Apps zulassen“ und „Lesen aus verwalteten Kontaktkonten für nicht verwaltete Apps zulassen“. Diese Einstellungen finden Sie unter [iOS device restrictions](../configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming) (iOS-Geräteeinschränkungen).
+Unter **Gerätekonfiguration** > **Profile** > **Profil erstellen** > **iOS** als Plattform, **Geräteeinschränkungen** als Profiltyp und **App Store, Dokumentanzeige, Spiele** wurden die folgenden Einstellungen hinzugefügt: „Verwaltete Apps können Kontakt in nicht verwaltete Kontaktkonten schreiben“, „Nicht verwaltete Apps können aus verwalteten Kontaktkonten lesen“. In der [Liste der Einstellungen für iOS-Geräteeinschränkungen](../configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming) können Sie sich diese Einstellungen ansehen.
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices---3201839-3201843---"></a>Neue Benachrichtigungen, Hinweise und Keyguard-Einstellungen für Geräte von Android Enterprise-Gerätebesitzern<!-- 3201839 3201843 -->
 Dieses Update umfasst mehrere neue Features für Android Enterprise-Geräte bei Ausführung als Gerätebesitzer. Um diese Features zu verwenden, wechseln Sie zu **Gerätekonfiguration** > **Profile** > **Profil erstellen**, wählen Sie als **Plattform** **Android Enterprise** und als **Profiltyp** **Nur Gerätebesitzer** > **Geräteeinschränkungen** aus.

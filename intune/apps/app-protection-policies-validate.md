@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/27/2020
 ms.service: microsoft-intune
 ms.subservice: apps
 ms.localizationpriority: high
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9c3e775773ab08721cb3a65858f3d8c8402104f
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: ae6bfd71cb6730c9e71075df5ea2f45aa514178a
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563737"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781694"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup-in-microsoft-intune"></a>Überprüfen der Einrichtung von App-Schutzrichtlinien in Microsoft Intune
 
@@ -56,7 +56,7 @@ Hier sind die Aktionen, die basierend auf den Benutzerstatus durchgeführt werde
 - Wenn die App eines Benutzer als **Nicht eingecheckt** aufgelistet ist, überprüfen Sie, ob Sie die [App-Schutzrichtlinie](app-protection-policies-validate.md) für diese App ordnungsgemäß konfiguriert haben.
 - Stellen Sie sicher, dass diese Bedingungen auf alle Benutzer angewendet werden, für die die [App-Schutzrichtlinien](app-protection-policies-monitor.md) gelten sollen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 - [Was sind Intune-App-Schutzrichtlinien?](app-protection-policies.md)
 - [Licenses that include Intune (Lizenzen, die Intune enthalten)](../fundamentals/licenses.md)

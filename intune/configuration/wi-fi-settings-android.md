@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/24/2020
+ms.date: 02/26/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ea0a60537bb488d3280990747d3e337e73fddc0
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
-ms.translationtype: MTE75
+ms.openlocfilehash: 955d9931779752e8736435555db7f7aba777b430
+ms.sourcegitcommit: 8b716db3c0fdbb7dff62497ec283902a5069a343
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754557"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652401"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Hinzufügen von WLAN-Einstellungen für Android-Geräte in Microsoft Intune
 
@@ -39,13 +39,13 @@ Dieser Artikel beschreibt diese Einstellungen.
 ## <a name="basic"></a>Basic
 
 - **WLAN-Typ**: Wählen Sie **Standard**.
-- **SSID**: Geben Sie den **Service Set Identifier** ein. Dabei handelt es sich um den Namen des Drahtlosnetzwerks, mit dem Geräte eine Verbindung herstellen. Den Benutzern wird beim Auswählen der Verbindung jedoch nur der **Netzwerkname** angezeigt, den Sie konfiguriert haben.
+- **SSID**: Geben Sie den **Service Set Identifier** ein. Dabei handelt es sich um den tatsächlichen Namen des Drahtlosnetzwerks, mit dem Geräte eine Verbindung herstellen. Den Benutzern wird beim Auswählen der Verbindung jedoch nur der **Netzwerkname** angezeigt, den Sie konfiguriert haben.
 - **Ausgeblendetes Netzwerk**: Wählen Sie **Aktivieren** aus, um dieses Netzwerk in der Liste der verfügbaren Netzwerke auf dem Gerät auszublenden. Die SSID wird nicht übertragen. Wählen Sie **Deaktivieren** aus, um dieses Netzwerk in der Liste der verfügbaren Netzwerke auf dem Gerät anzuzeigen.
 
 ## <a name="enterprise"></a>Enterprise
 
 - **WLAN-Typ**: Wählen Sie **Unternehmen** aus.
-- **SSID**: Geben Sie den **Service Set Identifier** ein. Dabei handelt es sich um den Namen des Drahtlosnetzwerks, mit dem Geräte eine Verbindung herstellen. Den Benutzern wird beim Auswählen der Verbindung jedoch nur der **Netzwerkname** angezeigt, den Sie konfiguriert haben.
+- **SSID**: Geben Sie den **Service Set Identifier** ein. Dabei handelt es sich um den tatsächlichen Namen des Drahtlosnetzwerks, mit dem Geräte eine Verbindung herstellen. Den Benutzern wird beim Auswählen der Verbindung jedoch nur der **Netzwerkname** angezeigt, den Sie konfiguriert haben.
 - **Ausgeblendetes Netzwerk**: Wählen Sie **Aktivieren** aus, um dieses Netzwerk in der Liste der verfügbaren Netzwerke auf dem Gerät auszublenden. Die SSID wird nicht übertragen. Wählen Sie **Deaktivieren** aus, um dieses Netzwerk in der Liste der verfügbaren Netzwerke auf dem Gerät anzuzeigen.
 - **EAP-Typ**: Wählen Sie die den EAP-Typ (Extensible Authentication-Protokoll) zur Authentifizierung von gesicherten Drahtlosverbindungen aus. Folgende Optionen sind verfügbar:
 
@@ -56,19 +56,6 @@ Dieser Artikel beschreibt diese Einstellungen.
     - **Clientauthentifizierung** - **Clientzertifikat zur Clientauthentifizierung (Identitätszertifikat)** : Wählen Sie das SCEP- oder PKCS-Clientzertifikatprofil aus, das auch auf dem Gerät bereitgestellt wird. Dieses Zertifikat ist die Identität, die das Gerät dem Server zur Authentifizierung der Verbindung bereitstellt.
 
     - **Identitätsschutz (äußere Identität)** : Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet werden soll. Dieser Text kann einen beliebigen Wert haben, z.B. `anonymous`. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel.
-
-    - **Proxyeinstellungen:** Geben Sie die von Ihrer Organisation verwendete Proxykonfiguration an. Folgende Optionen sind verfügbar:
-
-      - **Keine:** Sie verwenden keinen Proxyserver.
-      - **Automatisch:** Wählen Sie diese Option aus, um die Einstellung für die *Proxyserver-URL* zur Verfügung zu stellen, mit der Sie den Proxyserver oder eine Datei für die automatische Proxykonfiguration (Proxy Auto-Configuration, PAC) angeben, die eine Liste Ihrer Proxyserver enthält.
-
-    - **Proxyserver-URL**: Diese Einstellung ist verfügbar, wenn Sie die *Proxyeinstellungen* auf *Automatisch* festlegen. Geben Sie eine der folgenden Optionen an, um Geräte an Ihren Proxyserver weiterzuleiten:
-
-      - IP-Adresse. Beispiel: `10.0.0.11`
-      - Eine URL. Beispiel: `http://proxyserver.contoso.com`.
-      - Die URL einer PAC-Datei. Beispiel: `http://proxy.contoso.com/proxy.pac`.
-
-      Weitere Informationen zu PAC-Dateien finden Sie unter [Proxy Auto-Configuration (PAC) file (Datei für die automatische Proxykonfiguration)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (öffnet eine Drittanbieterwebsite).
 
   - **EAP-TTLS**: Geben Sie außerdem Folgendes ein:
 
@@ -88,19 +75,6 @@ Dieser Artikel beschreibt diese Einstellungen.
 
       - **Identitätsschutz (äußere Identität)** : Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet werden soll. Dieser Text kann einen beliebigen Wert haben, z.B. `anonymous`. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel.
 
-    - **Proxyeinstellungen:** Geben Sie die von Ihrer Organisation verwendete Proxykonfiguration an. Folgende Optionen sind verfügbar:
-
-      - **Keine:** Sie verwenden keinen Proxyserver.
-      - **Automatisch:** Wählen Sie diese Option aus, um die Einstellung für die *Proxyserver-URL* zur Verfügung zu stellen, mit der Sie den Proxyserver oder eine Datei für die automatische Proxykonfiguration (Proxy Auto-Configuration, PAC) angeben, die eine Liste Ihrer Proxyserver enthält.
-
-    - **Proxyserver-URL**: Diese Einstellung ist verfügbar, wenn Sie die *Proxyeinstellungen* auf *Automatisch* festlegen. Geben Sie eine der folgenden Optionen an, um Geräte an Ihren Proxyserver weiterzuleiten:
-
-      - IP-Adresse. Beispiel: `10.0.0.11`
-      - Eine URL. Beispiel: `http://proxyserver.contoso.com`.
-      - Die URL einer PAC-Datei. Beispiel: `http://proxy.contoso.com/proxy.pac`.
-
-      Weitere Informationen zu PAC-Dateien finden Sie unter [Proxy Auto-Configuration (PAC) file (Datei für die automatische Proxykonfiguration)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (öffnet eine Drittanbieterwebsite).
-
   - **PEAP**: Geben Sie außerdem Folgendes ein:
 
     - **Serververtrauensstellung** - **Stammzertifikat zur Servervalidierung**: Wählen Sie ein vorhandenes, vertrauenswürdiges Stammzertifikatprofil aus. Dieses Zertifikat wird dem Server bereitgestellt, wenn der Client eine Verbindung mit dem Netzwerk herstellt. Es wird verwendet, um die Verbindung zu authentifizieren.
@@ -116,19 +90,6 @@ Dieser Artikel beschreibt diese Einstellungen.
       - **Zertifikate:** Wählen Sie das SCEP- oder PKCS-Clientzertifikatprofil aus, das auch auf dem Gerät bereitgestellt wird. Dieses Zertifikat ist die Identität, die das Gerät dem Server zur Authentifizierung der Verbindung bereitstellt.
 
       - **Identitätsschutz (äußere Identität)** : Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet werden soll. Dieser Text kann einen beliebigen Wert haben, z.B. `anonymous`. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel.
-
-      - **Proxyeinstellungen:** Geben Sie die von Ihrer Organisation verwendete Proxykonfiguration an. Folgende Optionen sind verfügbar:
-
-        - **Keine:** Sie verwenden keinen Proxyserver.
-        - **Automatisch:** Wählen Sie diese Option aus, um die Einstellung für die *Proxyserver-URL* zur Verfügung zu stellen, mit der Sie den Proxyserver oder eine Datei für die automatische Proxykonfiguration (Proxy Auto-Configuration, PAC) angeben, die eine Liste Ihrer Proxyserver enthält.
-
-      - **Proxyserver-URL**: Diese Einstellung ist verfügbar, wenn Sie die *Proxyeinstellungen* auf *Automatisch* festlegen. Geben Sie eine der folgenden Optionen an, um Geräte an Ihren Proxyserver weiterzuleiten:
-
-        - IP-Adresse. Beispiel: `10.0.0.11`
-        - Eine URL. Beispiel: `http://proxyserver.contoso.com`.
-        - Die URL einer PAC-Datei. Beispiel: `http://proxy.contoso.com/proxy.pac`.
-
-        Weitere Informationen zu PAC-Dateien finden Sie unter [Proxy Auto-Configuration (PAC) file (Datei für die automatische Proxykonfiguration)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (öffnet eine Drittanbieterwebsite).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e478402f826809bda4f81315d5a1a4ff6e1a8b88
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: c9245ca028bdb5589df8c76b10560d9130a1108c
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886798"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181720"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Verwalten von Windows 10-Softwareupdates in Intune
 
@@ -77,14 +77,14 @@ In Windows 10-Updateringen werden [Bereichstags](../fundamentals/scope-tags.md) 
 
 ### <a name="create-and-assign-update-rings"></a>Erstellen und Zuweisen von Updateringen
 
-1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center]( https://go.microsoft.com/fwlink/?linkid=2109431) an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 
 2. Wählen Sie **Geräte** > **Windows** > **Windows 10-Updateringe** > **Erstellen** aus.
 
 3. Geben Sie unter *Grundeinstellungen* einen Namen und eine Beschreibung (optional) an, und klicken Sie dann auf **Weiter**.
-  ![Erstellen eines Updaterings]( ./media/windows-update-for-business-configure/basics-tab.png)
-  
-4. Konfigurieren Sie die Einstellungen unter **Einstellungen für Updatering** gemäß Ihrer Geschäftsanforderungen. Weitere Informationen über die verfügbaren Einstellungen finden Sie unter den Windows-Updateeinstellungen. Klicken Sie auf **Weiter**, nachdem Sie die Einstellungen für *Update und Benutzeroberfläche* konfiguriert haben.
+  ![Erstellen eines Updaterings](./media/windows-update-for-business-configure/basics-tab.png)
+
+4. Konfigurieren Sie die Einstellungen unter **Einstellungen für Updatering** gemäß Ihrer Geschäftsanforderungen. Weitere Informationen über die verfügbaren Einstellungen finden Sie unter [Windows-Updateeinstellungen für Intune](../protect/windows-update-settings.md). Klicken Sie auf **Weiter**, nachdem Sie die Einstellungen für *Update und Benutzeroberfläche* konfiguriert haben.
 
 5. Klicken Sie unter **Bereichstags** auf **Bereichstags auswählen**, um den Bereich *Tags auswählen* zu öffnen, wenn Sie sie auf den Updatering anwenden möchten. Wählen Sie mindestens einen Tag aus, und klicken Sie dann auf **Auswählen**, um sie zum Updatering hinzuzufügen und zum Bereich *Bereichstags* zurückzukehren.
 
