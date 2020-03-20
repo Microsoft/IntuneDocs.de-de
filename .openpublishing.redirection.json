@@ -7,7 +7,7 @@
         },        
         {
             "source_path": "intune-classic",
-            "redirect_url": "mem/intune",
+            "redirect_url": "/mem/intune",
             "redirect_document_id": false
         },
         {
