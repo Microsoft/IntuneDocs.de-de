@@ -4,6 +4,11 @@
             "source_path": "intune-user-help/your-computer-is-already-enrolled.md",
             "redirect_url": "/intune-user-help/use-managed-devices-to-get-work-done",
             "redirect_document_id": false
+        },        
+        {
+            "source_path": "intune-classic",
+            "redirect_url": "mem/intune",
+            "redirect_document_id": false
         },
         {
             "source_path": "intune/apps/app-configuration-policies-outlook-smime.md",
