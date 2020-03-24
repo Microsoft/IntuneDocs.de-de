@@ -6,7 +6,7 @@
             "redirect_document_id": false
         },        
         {
-            "source_path": "intune-classic",
+            "source_path": "intune-classic/index.md",
             "redirect_url": "/mem/intune",
             "redirect_document_id": false
         },
